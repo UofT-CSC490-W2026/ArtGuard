@@ -1,0 +1,186 @@
+name: Deploy Frontend to S3
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main  # Production
+      - dev   # Development
+    paths:
+      - "src/apps/frontend/**"
+      - ".github/workflows/frontend-deploy.yml"
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  build-and-deploy:
+    name: Build and Deploy Frontend
+    runs-on: ubuntu-latest
+
+    # Dynamically select environment based on branch
+    environment: ${{ github.ref == 'refs/heads/main' && 'prod' || 'dev' }}
+
+    env:
+      AWS_REGION: us-east-1
+      ENVIRONMENT: ${{ github.ref == 'refs/heads/main' && 'prod' || 'dev' }}
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+          cache-dependency-path: src/apps/frontend/package-lock.json
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Clean previous builds
+        working-directory: src/apps/frontend
+        run: |
+          echo "Cleaning previous build artifacts..."
+          rm -rf build node_modules/.cache
+          echo "Clean complete"
+
+      - name: Install dependencies
+        working-directory: src/apps/frontend
+        run: |
+          echo "Installing dependencies with clean install..."
+          npm ci
+          echo "Dependencies installed"
+
+      - name: Build React application
+        working-directory: src/apps/frontend
+        env:
+          REACT_APP_API_BASE_URL: ${{ secrets.REACT_APP_API_BASE_URL }}
+          REACT_APP_ENVIRONMENT: ${{ env.ENVIRONMENT }}
+          NODE_ENV: production
+        run: |
+          echo "🔨 Building React frontend..."
+          echo "Environment: $REACT_APP_ENVIRONMENT"
+          echo "API Base URL: $REACT_APP_API_BASE_URL"
+          npm run build
+          echo "Build complete"
+
+          # Verify build output
+          if [ ! -d "build" ]; then
+            echo "❌ Error: 'build' directory not found after build"
+            exit 1
+          fi
+
+          echo "Build output contents:"
+          ls -la build/
+
+          # Check for critical files
+          if [ ! -f "build/index.html" ]; then
+            echo "❌ Error: index.html not found in build output"
+            exit 1
+          fi
+
+          echo "✅ Build verification complete"
+
+      - name: Get infrastructure outputs
+        id: infra
+        run: |
+          # Environment-specific bucket names from Terraform
+          BUCKET_NAME="artguard-frontend-${{ env.ENVIRONMENT }}"
+          echo "bucket_name=${BUCKET_NAME}" >> $GITHUB_OUTPUT
+          echo "S3 Bucket: ${BUCKET_NAME}"
+          echo "Environment: ${{ env.ENVIRONMENT }}"
+
+      - name: Deploy to S3
+        working-directory: src/apps/frontend
+        env:
+          BUCKET_NAME: ${{ steps.infra.outputs.bucket_name }}
+        run: |
+          echo "Deploying to S3 bucket: $BUCKET_NAME"
+
+          echo "Step 1: Syncing static assets with long cache..."
+          # Sync static assets (JS, CSS, images) with long cache (1 year)
+          aws s3 sync build/ s3://$BUCKET_NAME/ \
+            --delete \
+            --cache-control "public, max-age=31536000, immutable" \
+            --exclude "*.html" \
+            --exclude "*.json" \
+            --exclude "*.txt" \
+            --exclude "*.xml" \
+            --exclude "asset-manifest.json" \
+            --exclude "manifest.json"
+          echo "✅ Static assets synced"
+
+          echo "Step 2: Syncing HTML and metadata files with short cache..."
+          # Sync HTML, JSON, and text files with short cache for SPA routing
+          aws s3 sync build/ s3://$BUCKET_NAME/ \
+            --cache-control "public, max-age=0, must-revalidate" \
+            --exclude "*" \
+            --include "*.html" \
+            --include "*.json" \
+            --include "*.txt" \
+            --include "*.xml"
+          echo "✅ HTML and metadata files synced"
+
+          echo "Deployment to S3 complete!"
+
+      - name: Get CloudFront Distribution ID
+        id: cloudfront
+        run: |
+          echo "Fetching CloudFront Distribution ID for ${{ env.ENVIRONMENT }}..."
+
+          # Get the CloudFront distribution ID from AWS
+          DISTRIBUTION_ID=$(aws cloudformation list-exports \
+            --query "Exports[?Name=='artguard-cloudfront-id-${{ env.ENVIRONMENT }}'].Value" \
+            --output text 2>/dev/null || echo "")
+
+          # Fallback: Get distribution ID by looking for the S3 bucket origin
+          if [ -z "$DISTRIBUTION_ID" ]; then
+            BUCKET_NAME="${{ steps.infra.outputs.bucket_name }}"
+            DISTRIBUTION_ID=$(aws cloudfront list-distributions \
+              --query "DistributionList.Items[?contains(Origins.Items[].DomainName, '${BUCKET_NAME}')].Id" \
+              --output text | head -n 1)
+          fi
+
+          if [ -z "$DISTRIBUTION_ID" ]; then
+            echo "⚠️ Warning: Could not find CloudFront distribution ID"
+            echo "distribution_id=" >> $GITHUB_OUTPUT
+          else
+            echo "distribution_id=${DISTRIBUTION_ID}" >> $GITHUB_OUTPUT
+            echo "✅ Distribution ID: ${DISTRIBUTION_ID}"
+          fi
+
+      - name: Invalidate CloudFront Cache
+        if: steps.cloudfront.outputs.distribution_id != ''
+        env:
+          DISTRIBUTION_ID: ${{ steps.cloudfront.outputs.distribution_id }}
+        run: |
+          echo "Invalidating CloudFront cache for distribution: $DISTRIBUTION_ID"
+
+          INVALIDATION_OUTPUT=$(aws cloudfront create-invalidation \
+            --distribution-id $DISTRIBUTION_ID \
+            --paths "/*" \
+            --output json)
+
+          INVALIDATION_ID=$(echo $INVALIDATION_OUTPUT | jq -r '.Invalidation.Id')
+          echo "✅ Invalidation ID: $INVALIDATION_ID"
+          echo "Cache invalidation initiated (typically takes 1-5 minutes)"
+
+      - name: Deployment summary
+        run: |
+          echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+          echo "✅ Frontend Deployment Complete"
+          echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+          echo "Branch: ${{ github.ref_name }}"
+          echo "Environment: ${{ env.ENVIRONMENT }}"
+          echo "S3 Bucket: ${{ steps.infra.outputs.bucket_name }}"
+          echo "CloudFront: ${{ steps.cloudfront.outputs.distribution_id }}"
+          echo ""
+          echo "Your frontend will be live in ~2-5 minutes"
+          echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"

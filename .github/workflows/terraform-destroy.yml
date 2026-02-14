@@ -1,0 +1,163 @@
+name: Terraform Destroy 
+
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Environment to destroy (dev or prod)'
+        required: true
+        type: choice
+        options:
+          - dev
+          - prod
+      confirm_environment:
+        description: 'Type the environment name again to confirm'
+        required: true
+        type: string
+      destroy_confirmation:
+        description: 'Type "DESTROY" in all caps to confirm deletion'
+        required: true
+        type: string
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  terraform-destroy:
+    name: ⚠️ Destroy ${{ inputs.environment }} Infrastructure
+    runs-on: ubuntu-latest
+
+    environment: ${{ inputs.environment }}
+
+    env:
+      AWS_REGION: us-east-1
+      TF_VERSION: "1.10.0"
+      ENVIRONMENT: ${{ inputs.environment }}
+
+    steps:
+      - name: Validate confirmations
+        run: |
+          echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+          echo "⚠️ DANGER: TERRAFORM DESTROY"
+          echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+
+          # Validate destroy confirmation
+          if [ "${{ inputs.destroy_confirmation }}" != "DESTROY" ]; then
+            echo "❌ Confirmation failed. You must type 'DESTROY' in all caps."
+            exit 1
+          fi
+
+          # Validate environment name confirmation
+          if [ "${{ inputs.confirm_environment }}" != "${{ inputs.environment }}" ]; then
+            echo "❌ Environment confirmation failed."
+            echo "   You entered: ${{ inputs.confirm_environment }}"
+            echo "   Expected: ${{ inputs.environment }}"
+            exit 1
+          fi
+
+          echo "✅ Confirmations validated"
+          echo "⚠️ Proceeding to destroy ${{ inputs.environment }} infrastructure..."
+          echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: ${{ env.TF_VERSION }}
+          terraform_wrapper: false
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Display destroy info
+        run: |
+          echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+          echo "⚠️ TERRAFORM DESTROY"
+          echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+          echo "Environment: ${{ env.ENVIRONMENT }}"
+          echo "Backend Config: backend-${{ env.ENVIRONMENT }}.hcl"
+          echo "Variables File: ${{ env.ENVIRONMENT }}.tfvars"
+          echo "Region: ${{ env.AWS_REGION }}"
+          echo ""
+          echo "⚠️ This will destroy ALL resources including:"
+          echo "   - CloudFront distribution"
+          echo "   - ECS service"
+          echo "   - S3 buckets (frontend, images, knowledge base)"
+          echo "   - DynamoDB tables"
+          echo "   - Lambda functions"
+          echo "   - IAM roles"
+          echo "   - CloudWatch logs"
+          echo "   - OpenSearch collection"
+          echo "   - All associated resources"
+          echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+
+      - name: Terraform Init
+        working-directory: infra/terraform
+        run: |
+          echo "🔧 Initializing Terraform with ${{ env.ENVIRONMENT }} backend..."
+          terraform init -backend-config=backend-${{ env.ENVIRONMENT }}.hcl
+
+      - name: Terraform Plan Destroy
+        working-directory: infra/terraform
+        run: |
+          echo "📋 Creating destroy plan for ${{ env.ENVIRONMENT }}..."
+          terraform plan -destroy -var-file=${{ env.ENVIRONMENT }}.tfvars -out=destroy.tfplan
+
+          echo ""
+          echo "⚠️ REVIEW THE PLAN ABOVE CAREFULLY"
+          echo "⏸ Waiting 30 seconds before proceeding..."
+          sleep 30
+
+      - name: Terraform Destroy
+        working-directory: infra/terraform
+        run: |
+          echo "Destroying ${{ env.ENVIRONMENT }} infrastructure..."
+          echo "⚠️ This action is IRREVERSIBLE"
+          echo ""
+
+          terraform apply -auto-approve destroy.tfplan
+
+          echo ""
+          echo "✅ Infrastructure destroyed"
+
+      - name: Cleanup backend (Optional)
+        working-directory: infra/terraform
+        run: |
+          echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+          echo "🧹 Backend Cleanup (Optional)"
+          echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+          echo ""
+          echo "⚠️ State file still exists in S3:"
+          echo "   s3://artguard-terraform-state/${{ env.ENVIRONMENT }}/terraform.tfstate"
+          echo ""
+          echo "To completely remove the backend, run manually:"
+          echo "   aws s3 rm s3://artguard-terraform-state/${{ env.ENVIRONMENT }}/terraform.tfstate"
+          echo ""
+          echo "If you want to delete the entire backend (affects ALL environments):"
+          echo "   aws s3 rb s3://artguard-terraform-state --force"
+          echo "   aws dynamodb delete-table --table-name artguard-terraform-locks"
+          echo ""
+          echo "⚠️ Only delete the backend if BOTH dev AND prod are destroyed!"
+          echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+
+      - name: Destruction summary
+        run: |
+          echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+          echo "💥 Infrastructure Destroyed"
+          echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+          echo "Environment: ${{ env.ENVIRONMENT }}"
+          echo "Timestamp: $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+          echo ""
+          echo "✅ All AWS resources have been deleted"
+          echo "⚠️ This action cannot be undone"
+          echo ""
+          echo "To recreate the environment, run:"
+          echo "   terraform-bootstrap.yml workflow"
+          echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"

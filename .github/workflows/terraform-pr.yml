@@ -1,0 +1,129 @@
+name: Terraform PR Check
+
+on:
+  pull_request:
+    branches:
+      - main  # PRs to production
+      - dev   # PRs to development
+    paths:
+      - "infra/terraform/**"
+      - ".github/workflows/terraform-pr.yml"
+
+permissions:
+  id-token: write
+  contents: read
+  pull-requests: write
+
+jobs:
+  terraform-validate:
+    name: Terraform Validate & Plan
+    runs-on: ubuntu-latest
+
+    # Determine environment from PR base branch
+    env:
+      AWS_REGION: us-east-1
+      TF_VERSION: "1.10.0"
+      ENVIRONMENT: ${{ github.base_ref == 'main' && 'prod' || 'dev' }}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: ${{ env.TF_VERSION }}
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Display environment info
+        run: |
+          echo "PR Target: ${{ github.base_ref }}"
+          echo "Environment: ${{ env.ENVIRONMENT }}"
+          echo "Backend Config: backend-${{ env.ENVIRONMENT }}.hcl"
+          echo "Variables File: ${{ env.ENVIRONMENT }}.tfvars"
+
+      # Optional: Install TFLint for linting
+      - name: Cache TFLint plugin dir
+        uses: actions/cache@v4
+        with:
+          path: ~/.tflint.d/plugins
+          key: tflint-${{ hashFiles('infra/terraform/.tflint.hcl') }}
+
+      - name: Setup TFLint
+        uses: terraform-linters/setup-tflint@v4
+        with:
+          tflint_version: v0.52.0
+
+      - name: Init TFLint
+        working-directory: infra/terraform
+        run: tflint --init
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        continue-on-error: true
+
+      - name: Run TFLint
+        working-directory: infra/terraform
+        run: tflint -f compact
+        continue-on-error: true
+
+      - name: Terraform Format Check
+        working-directory: infra/terraform
+        run: |
+          echo "Checking Terraform formatting..."
+          terraform fmt -check -recursive
+        continue-on-error: true
+
+      - name: Terraform Init
+        working-directory: infra/terraform
+        run: |
+          echo "Initializing Terraform with ${{ env.ENVIRONMENT }} backend..."
+          terraform init -backend-config=backend-${{ env.ENVIRONMENT }}.hcl
+
+      - name: Terraform Validate
+        working-directory: infra/terraform
+        run: |
+          echo "Validating Terraform configuration..."
+          terraform validate
+
+      - name: Terraform Plan
+        working-directory: infra/terraform
+        run: |
+          echo "Creating Terraform plan for ${{ env.ENVIRONMENT }}..."
+          terraform plan -var-file=${{ env.ENVIRONMENT }}.tfvars -out=tfplan -no-color | tee plan.txt
+
+      - name: Comment PR with Plan
+        uses: actions/github-script@v7
+        if: github.event_name == 'pull_request'
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const fs = require('fs');
+            const plan = fs.readFileSync('infra/terraform/plan.txt', 'utf8');
+            const output = `### Terraform Plan for \`${{ env.ENVIRONMENT }}\` 📋
+
+            <details><summary>Show Plan</summary>
+
+            \`\`\`terraform
+            ${plan}
+            \`\`\`
+
+            </details>
+
+            **Environment:** \`${{ env.ENVIRONMENT }}\`
+            **Backend:** \`backend-${{ env.ENVIRONMENT }}.hcl\`
+            **Variables:** \`${{ env.ENVIRONMENT }}.tfvars\`
+
+            *Triggered by @${{ github.actor }} • Action: \`${{ github.event_name }}\`*`;
+
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: output
+            });
