@@ -14,12 +14,12 @@ terraform {
   # Remote state backend configuration
   backend "s3" {
     bucket         = "artguard-terraform-state"
-    region         = "us-east-1"
+    region         = "ca-central-1"
     encrypt        = true
     dynamodb_table = "artguard-terraform-locks"
     # Key is specified per environment using -backend-config flag:
-    #   Dev:  terraform init -backend-config="key=dev/terraform.tfstate" -var-file=dev.tfvars
-    #   Prod: terraform init -backend-config="key=prod/terraform.tfstate" -var-file=prod.tfvars
+    #   Dev:  terraform init -backend-config=backend-dev.hcl
+    #   Prod: terraform init -backend-config=backend-prod.hcl
   }
 }
 

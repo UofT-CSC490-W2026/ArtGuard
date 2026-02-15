@@ -27,7 +27,7 @@ jobs:
     environment: ${{ inputs.environment }}
 
     env:
-      AWS_REGION: us-east-1
+      AWS_REGION: ca-central-1
       TF_VERSION: "1.10.0"
       ENVIRONMENT: ${{ inputs.environment }}
 
@@ -56,93 +56,15 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ env.AWS_REGION }}
 
-      - name: Display bootstrap info
+      - name: Make scripts executable
+        run: chmod +x scripts/*.sh
+
+      - name: Run bootstrap script
         run: |
-          echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-          echo "Terraform Bootstrap - ONE TIME SETUP"
-          echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-          echo "Environment: ${{ env.ENVIRONMENT }}"
-          echo "Region: ${{ env.AWS_REGION }}"
-          echo ""
-          echo "This will:"
-          echo "  1. Create S3 bucket for Terraform state"
-          echo "  2. Create DynamoDB table for state locking"
-          echo "  3. Initialize Terraform backend"
-          echo "  4. Create all infrastructure resources"
-          echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-
-      - name: Check if backend already exists
-        id: check-backend
-        run: |
-          BUCKET_NAME="artguard-terraform-state"
-
-          # Check if S3 bucket exists
-          if aws s3 ls "s3://$BUCKET_NAME" 2>/dev/null; then
-            echo "bucket_exists=true" >> $GITHUB_OUTPUT
-            echo "⚠️ S3 bucket already exists: $BUCKET_NAME"
-          else
-            echo "bucket_exists=false" >> $GITHUB_OUTPUT
-            echo "✅ S3 bucket does not exist yet"
-          fi
-
-          # Check if state file exists for this environment
-          STATE_KEY="${{ env.ENVIRONMENT }}/terraform.tfstate"
-          if aws s3 ls "s3://$BUCKET_NAME/$STATE_KEY" 2>/dev/null; then
-            echo "state_exists=true" >> $GITHUB_OUTPUT
-            echo "⚠️ State file already exists: $STATE_KEY"
-          else
-            echo "state_exists=false" >> $GITHUB_OUTPUT
-            echo "✅ State file does not exist yet"
-          fi
-
-      - name: Setup backend (S3 + DynamoDB)
-        run: |
-          cd infra/terraform
-          chmod +x setup-backend.sh
-
-          echo "Running setup-backend.sh..."
-          ./setup-backend.sh
-
-          echo "✅ Backend setup complete!"
-
-      - name: Terraform Init
-        working-directory: infra/terraform
-        run: |
-          echo "🔧 Initializing Terraform..."
-
-          if [ "${{ steps.check-backend.outputs.state_exists }}" == "true" ]; then
-            # State already exists, just initialize
-            echo "⚠️ State file exists, initializing without migration..."
-            terraform init -backend-config=backend-${{ env.ENVIRONMENT }}.hcl
-          else
-            # First time setup, initialize backend
-            echo "✅ First time setup, initializing backend..."
-            terraform init -backend-config=backend-${{ env.ENVIRONMENT }}.hcl
-          fi
-
-      - name: Terraform Validate
-        working-directory: infra/terraform
-        run: |
-          echo "✅ Validating Terraform configuration..."
-          terraform validate
-
-      - name: Terraform Plan
-        working-directory: infra/terraform
-        run: |
-          echo "Creating Terraform plan for ${{ env.ENVIRONMENT }}..."
-          terraform plan -var-file=${{ env.ENVIRONMENT }}.tfvars -out=tfplan
-
-          echo ""
-          echo "⚠️ IMPORTANT: Review the plan above before proceeding"
-          echo ""
-
-      - name: Terraform Apply
-        working-directory: infra/terraform
-        run: |
-          echo "Applying Terraform configuration..."
-          terraform apply -auto-approve tfplan
-
-          echo "✅ Infrastructure created!"
+          # Auto-confirm by providing "yes" responses
+          echo "yes" | ./scripts/bootstrap.sh ${{ env.ENVIRONMENT }}
+        env:
+          AWS_REGION: ${{ env.AWS_REGION }}
 
       - name: Save Terraform Outputs
         working-directory: infra/terraform
@@ -155,11 +77,13 @@ jobs:
           echo "✅ Bootstrap Complete!"
           echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
           echo ""
+          echo "📊 Key Outputs:"
+          echo ""
           echo "Frontend URL:"
           terraform output -raw cloudfront_distribution_url || echo "Not available"
           echo ""
-          echo "Backend API:"
-          terraform output -raw apprunner_service_url || echo "Not available"
+          echo "Backend API (ALB):"
+          terraform output -raw backend_url || echo "Not available"
           echo ""
           echo "S3 Frontend Bucket:"
           terraform output -raw s3_frontend_bucket_name || echo "Not available"
@@ -167,9 +91,17 @@ jobs:
           echo "CloudFront Distribution ID:"
           terraform output -raw cloudfront_distribution_id || echo "Not available"
           echo ""
+          echo "ECR Repository:"
+          terraform output -raw ecr_repository_url || echo "Not available"
+          echo ""
           echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
           echo ""
-          echo " Your ${{ env.ENVIRONMENT }} environment is ready!"
+          echo "📝 Next Steps:"
+          echo "  1. Set Modal API key: ./scripts/setup-secrets.sh ${{ env.ENVIRONMENT }}"
+          echo "  2. Build and deploy backend: ./scripts/build-and-push-docker.sh ${{ env.ENVIRONMENT }}"
+          echo "  3. Deploy frontend: ./scripts/deploy-frontend.sh ${{ env.ENVIRONMENT }}"
+          echo ""
+          echo "🎉 Your ${{ env.ENVIRONMENT }} environment is ready!"
           echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 
       - name: Upload outputs artifact
