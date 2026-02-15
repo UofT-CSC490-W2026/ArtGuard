@@ -7,6 +7,7 @@ import json
 import boto3
 import os
 from PIL import Image, ImageOps
+from aws_xray_sdk.core import xray_recorder
 from io import BytesIO
 
 s3_client = boto3.client('s3')
@@ -62,7 +63,11 @@ def handler(event, context):
             'body': json.dumps({'error': error_msg})
         }
 
+# TODO: CHANGE WHAT PROCESSING IS DONE, DEPENDING ON WHAT'S NEEDED
 
+# X-Ray automatically traces Lambda handler
+# Manually trace subsegments for detail
+# @xray_recorder.capture('process_image')
 def preprocess_image(image):
     """
     Image preprocessing pipeline:

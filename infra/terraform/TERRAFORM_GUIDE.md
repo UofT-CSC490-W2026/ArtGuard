@@ -2,6 +2,7 @@
 
 ## Table of Contents
 
+0. [File Structure](#file-structure)
 1. [Where Outputs Are Saved](#where-outputs-are-saved)
 2. [Why Bootstrap is Necessary](#why-bootstrap-is-necessary)
 3. [Why S3 + DynamoDB for State](#why-s3--dynamodb-for-state)
@@ -10,6 +11,25 @@
 5. [Terraform Commands](#terraform-commands)
 
 ---
+
+## File Structure
+
+- `main.tf` - Provider configuration and backend setup
+- `variables.tf` - Input variables and validation rules
+- `outputs.tf` - Output values (URLs, IDs, ARNs)
+- `networking.tf` - VPC, subnets, NAT gateways, routing tables
+- `security_groups.tf` - Security groups for ECS, ALB, Lambda
+- `app.tf` - ECS Fargate cluster, services, ALB, auto-scaling
+- `lambda.tf` - Lambda functions (image processor, ECS scheduler)
+- `scheduler.tf` - EventBridge rules for ECS pause/resume
+- `s3.tf` - S3 buckets (images, frontend, knowledge base)
+- `cloudfront.tf` - CloudFront distribution for frontend + API
+- `database.tf` - DynamoDB tables and indexes
+- `bedrock.tf` - Amazon Bedrock Knowledge Base for RAG
+- `iam.tf` - IAM roles and policies (ECS, Lambda, Bedrock)
+- `secrets.tf` - AWS Secrets Manager (Modal API key)
+- `monitoring.tf` - CloudWatch alarms and dashboards
+- `route53.tf` - DNS configuration (optional custom domain)
 
 ## Where Outputs Are Saved
 
@@ -198,12 +218,17 @@ Normal Deployment (Updates):
 ## Remote State (S3 + DynamoDB)
 
 **Store state in AWS S3:**
+Always run `terraform init -backend-config=backend-<env>.hcl -reconfigure` when switching between dev and prod to ensure you're using the correct state file.
 
 ```
 S3 Bucket: artguard-terraform-state
 ├── dev/terraform.tfstate
 └── prod/terraform.tfstate
+
 ```
+
+- Dev: `s3://artguard-terraform-state/dev/terraform.tfstate`
+- Prod: `s3://artguard-terraform-state/prod/terraform.tfstate`
 
 **Configure in backend-dev.hcl:**
 ```hcl
@@ -261,6 +286,10 @@ terraform fmt -recursive
 
 # 3. Validate configuration
 terraform validate
+
+# 3a. (Optional) Run TFLint for advanced validation
+tflint --init  # First time only - downloads plugins
+tflint         # Checks for bugs, cloud-specific errors, best practices
 
 # 4. Plan changes
 terraform plan -var-file=dev.tfvars
@@ -330,8 +359,9 @@ terraform output environment  # Should show: dev or prod
 # 1. ALWAYS format before committing
 terraform fmt -recursive
 
-# 2. ALWAYS validate
+# 2. ALWAYS validate and run linter
 terraform validate
+tflint
 
 # 3. ALWAYS review plan before apply
 terraform plan -var-file=dev.tfvars | less
@@ -350,9 +380,31 @@ terraform init -backend-config=backend-dev.hcl
 # (Use Secrets Manager or environment variables)
 ```
 
+### TFLint - Advanced Terraform Validation
+
+**What is TFLint?**
+
+The `.tflint.hcl` file is the configuration file for TFLint, a linter for Terraform. While `terraform validate` only checks for basic syntax errors, TFLint checks for:
+- Potential bugs and errors
+- Cloud-specific best practices (AWS, Azure, GCP)
+- Deprecated syntax and resources
+- Performance optimizations
+- Security issues
+
+**Installation:**
+```bash
+# macOS
+brew install tflint
+
+# Linux
+curl -s https://raw.githubusercontent.com/terraform-linters/tflint/master/install_linux.sh | bash
+
+# Windows
+choco install tflint
+```
+
 ---
 
 **Related Docs:**
 - [DEPLOYMENT.md](DEPLOYMENT.md) - Complete deployment guide
-- [DEVELOPMENT.md](DEVELOPMENT.md) - Development commands and workflows
 - [scripts/README.md](scripts/README.md) - Script documentation
