@@ -253,7 +253,7 @@ dynamodb_table = "artguard-terraform-locks"
 # Navigate to Terraform directory
 cd infra/terraform
 
-# 1. Initialize (when connecting to backend for first time)
+# 1. Initialize (when connecting to backend for first time / switching between prod and dev environments)
 terraform init -backend-config=backend-dev.hcl
 
 # 2. Format code

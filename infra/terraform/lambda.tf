@@ -79,6 +79,7 @@ resource "aws_lambda_function" "ecs_scheduler" {
       CLUSTER_NAME = aws_ecs_cluster.main.name
       SERVICE_NAME = aws_ecs_service.backend.name
       MIN_CAPACITY = var.ecs_min_capacity
+      MAX_CAPACITY = var.ecs_max_capacity
       PROJECT_NAME = local.project_name
       ENVIRONMENT  = var.environment
     }
