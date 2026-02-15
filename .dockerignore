@@ -1,0 +1,39 @@
+# Git
+.git
+.gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Terraform
+infra/
+*.tfstate
+*.tfstate.backup
+.terraform/
+
+# Documentation
+*.md
+reports/
+a1/
+a2/
+a3/
+a4/
+a5/
+
+# OS
+.DS_Store
+Thumbs.db
