@@ -32,7 +32,7 @@ resource "aws_cloudfront_origin_access_control" "frontend" {
   signing_protocol                  = "sigv4"
 }
 
-# CloudFront Distribution - Serves Frontend from S3 and API from App Runner
+# CloudFront Distribution - Serves Frontend from S3 and API from ECS via ALB
 resource "aws_cloudfront_distribution" "frontend" {
   enabled             = true
   is_ipv6_enabled     = true

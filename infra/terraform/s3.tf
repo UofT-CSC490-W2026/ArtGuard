@@ -152,7 +152,6 @@ resource "aws_s3_bucket_lifecycle_configuration" "images_raw" {
 }
 
 # Resource-Based Policy for Raw Images Bucket
-# Restricts access to only App Runner and Lambda roles
 resource "aws_s3_bucket_policy" "images_raw" {
   bucket = aws_s3_bucket.images_raw.id
 
@@ -323,7 +322,7 @@ resource "aws_s3_bucket_lifecycle_configuration" "images_processed" {
 }
 
 # Resource-Based Policy for Processed Images Bucket
-# Restricts access to only Lambda (write) and App Runner (read)
+# Restricts access to only Lambda (write) and ECS (read)
 resource "aws_s3_bucket_policy" "images_processed" {
   bucket = aws_s3_bucket.images_processed.id
 

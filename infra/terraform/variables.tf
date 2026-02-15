@@ -207,13 +207,13 @@ variable "s3_training_ia_transition_days" {
 
 # Scheduler Configuration
 variable "scheduler_pause_cron" {
-  description = "Cron expression for pausing App Runner (UTC timezone)"
+  description = "Cron expression for pausing ECS (UTC timezone)"
   type        = string
   default     = "cron(0 3 * * ? *)" # 10 PM EST = 3 AM UTC
 }
 
 variable "scheduler_resume_cron" {
-  description = "Cron expression for resuming App Runner (UTC timezone)"
+  description = "Cron expression for resuming ECS (UTC timezone)"
   type        = string
   default     = "cron(0 13 * * ? *)" # 8 AM EST = 1 PM UTC
 }
