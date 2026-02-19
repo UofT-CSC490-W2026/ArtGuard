@@ -62,11 +62,6 @@ ecs_health_check_timeout             = 5  # Health check timeout in seconds
 ecs_health_check_healthy_threshold   = 2  # Consecutive successful checks = healthy
 ecs_health_check_unhealthy_threshold = 3  # Consecutive failed checks = unhealthy
 
-# Lambda Configuration
-lambda_timeout = 60            # Seconds (max 900)
-lambda_memory  = 512           # MB (128-10240)
-lambda_runtime = "python3.11"  # Python version
-
 # DynamoDB Configuration
 dynamodb_billing_mode  = "PAY_PER_REQUEST" # Or "PROVISIONED"
 enable_dynamodb_pitr   = true              # Point-in-time recovery (enable for prod)

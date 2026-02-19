@@ -1,57 +1,35 @@
-# EventBridge Scheduler - Auto Scale ECS Service
+# AppAutoScaling Scheduled Actions - Auto Pause/Resume ECS Service
 # Saves costs by scaling ECS service to 0 tasks during off-hours
 # NOTE: Only enabled for dev environment. Production runs 24/7.
 
-# EventBridge Rule: Scale ECS to 0 at 10:00 PM (22:00) EST
-resource "aws_cloudwatch_event_rule" "pause_ecs" {
+# Pause ECS at 10:00 PM EST (03:00 UTC) - Scale to 0
+resource "aws_appautoscaling_scheduled_action" "pause_ecs" {
   count = var.environment == "dev" ? 1 : 0
 
-  name                = "${local.project_name}-pause-ecs"
-  description         = "Scale ECS service to 0 to save costs"
-  schedule_expression = var.scheduler_pause_cron
+  name               = "${local.project_name}-pause-ecs"
+  service_namespace  = aws_appautoscaling_target.ecs.service_namespace
+  resource_id        = aws_appautoscaling_target.ecs.resource_id
+  scalable_dimension = aws_appautoscaling_target.ecs.scalable_dimension
+  schedule           = var.scheduler_pause_cron
 
-  tags = {
-    Name        = "${local.project_name}-pause-ecs-rule"
-    Environment = var.environment
+  scalable_target_action {
+    min_capacity = 0
+    max_capacity = 0
   }
 }
 
-# EventBridge Rule: Resume ECS at 8:00 AM EST
-resource "aws_cloudwatch_event_rule" "resume_ecs" {
+# Resume ECS at 8:00 AM EST (13:00 UTC) - Restore capacity
+resource "aws_appautoscaling_scheduled_action" "resume_ecs" {
   count = var.environment == "dev" ? 1 : 0
 
-  name                = "${local.project_name}-resume-ecs"
-  description         = "Resume ECS service"
-  schedule_expression = var.scheduler_resume_cron
+  name               = "${local.project_name}-resume-ecs"
+  service_namespace  = aws_appautoscaling_target.ecs.service_namespace
+  resource_id        = aws_appautoscaling_target.ecs.resource_id
+  scalable_dimension = aws_appautoscaling_target.ecs.scalable_dimension
+  schedule           = var.scheduler_resume_cron
 
-  tags = {
-    Name        = "${local.project_name}-resume-ecs-rule"
-    Environment = var.environment
+  scalable_target_action {
+    min_capacity = var.ecs_min_capacity
+    max_capacity = var.ecs_max_capacity
   }
-}
-
-# EventBridge Target: Trigger Lambda to pause (scale to 0)
-resource "aws_cloudwatch_event_target" "pause_ecs" {
-  count = var.environment == "dev" ? 1 : 0
-
-  rule      = aws_cloudwatch_event_rule.pause_ecs[0].name
-  target_id = "PauseECS"
-  arn       = aws_lambda_function.ecs_scheduler.arn
-
-  input = jsonencode({
-    action = "pause"
-  })
-}
-
-# EventBridge Target: Trigger Lambda to resume
-resource "aws_cloudwatch_event_target" "resume_ecs" {
-  count = var.environment == "dev" ? 1 : 0
-
-  rule      = aws_cloudwatch_event_rule.resume_ecs[0].name
-  target_id = "ResumeECS"
-  arn       = aws_lambda_function.ecs_scheduler.arn
-
-  input = jsonencode({
-    action = "resume"
-  })
 }

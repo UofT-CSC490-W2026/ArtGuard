@@ -124,7 +124,6 @@ resource "aws_route_table_association" "private" {
 # - aws_security_group.alb
 # - aws_security_group.ecs_tasks
 # - aws_security_group.vpc_endpoints
-# - aws_security_group.lambda
 
 # VPC Endpoints for AWS Services 
 # S3 VPC Endpoint

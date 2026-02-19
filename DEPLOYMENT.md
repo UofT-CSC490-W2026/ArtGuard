@@ -124,23 +124,7 @@ After infrastructure exists, deploy your applications.
 ./scripts/ecs-control.sh status dev
 ```
 
-### Step 7: Deploy Lambda Functions
-
-```bash
-./scripts/deploy-lambda.sh dev
-```
-
-**Expected duration:** 2-3 minutes
-
-### Step 8: Deploy Frontend
-
-```bash
-./scripts/deploy-frontend.sh dev
-```
-
-**Expected duration:** 5-10 minutes
-
-### Step 9: (Optional) Update Knowledge Base
+### Step 7: (Optional) Update Knowledge Base
 
 If you have documentation for RAG:
 
@@ -260,7 +244,6 @@ Example: Infrastructure Update
 | **Scale ECS tasks up/down** | ecs-manage.yml | GitHub UI → Actions → Select "scale" → Enter count | `./scripts/ecs-control.sh scale dev 3` |
 | **View ECS service status** | ecs-manage.yml | GitHub UI → Actions → Select "status" | `./scripts/ecs-control.sh status dev` |
 | **View ECS logs** | ecs-manage.yml | GitHub UI → Actions → Select "logs" | `./scripts/ecs-control.sh logs dev` |
-| **Deploy Lambda function changes** | lambda-deploy.yml | Just push to `dev` or `main` - automatic | `./scripts/deploy-lambda.sh dev` |
 | **Update documentation for RAG** | update-knowledge-base.yml | Edit docs/, push to `main` - automatic | `./scripts/update-knowledge-base.sh dev ./docs` |
 | **Validate infrastructure changes** | terraform-pr.yml | Create PR with .tf changes - automatic | `./scripts/terraform-validate.sh dev` |
 | **Destroy all infrastructure** | terraform-destroy.yml | GitHub UI → Actions → Run workflow → Type "DESTROY" ⚠️ | `cd infra/terraform && ./scripts/terraform-deploy.sh dev destroy` |
@@ -395,9 +378,6 @@ aws cloudfront list-distributions --region us-east-1
 
 # VPC
 aws ec2 describe-vpcs --region ca-central-1 | grep artguard
-
-# Lambda Functions
-aws lambda list-functions --region ca-central-1 | grep artguard
 ```
 
 ---
@@ -541,27 +521,7 @@ aws logs tail /ecs/artguard-backend \
   --region ca-central-1 > backend-logs.txt
 ```
 
-### Lambda Logs
-
-```bash
-# View image processor logs
-aws logs tail /aws/lambda/artguard-image-processor \
-  --follow \
-  --region ca-central-1
-
-# View ECS scheduler logs
-aws logs tail /aws/lambda/artguard-ecs-scheduler \
-  --follow \
-  --region ca-central-1
-
-# View recent errors
-aws logs tail /aws/lambda/artguard-image-processor \
-  --since 1h \
-  --filter-pattern "ERROR" \
-  --region ca-central-1
-```
-
-**Testing:**
+### Testing
 ```bash
 
 # Get backend URL

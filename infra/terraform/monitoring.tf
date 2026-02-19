@@ -33,39 +33,15 @@ resource "aws_cloudwatch_dashboard" "main" {
           period = 300
         }
       },
-      # Lambda Invocations and Errors
-      {
-        type = "metric"
-        properties = {
-          metrics = [
-            ["AWS/Lambda", "Invocations", { FunctionName = aws_lambda_function.image_processor.function_name, stat = "Sum" }],
-            [".", "Errors", { FunctionName = aws_lambda_function.image_processor.function_name, stat = "Sum" }],
-            [".", "Throttles", { FunctionName = aws_lambda_function.image_processor.function_name, stat = "Sum" }]
-          ]
-          region = var.aws_region
-          title  = "Lambda - Invocations & Errors"
-          period = 300
-        }
-      },
-      # Lambda Duration
-      {
-        type = "metric"
-        properties = {
-          metrics = [
-            ["AWS/Lambda", "Duration", { FunctionName = aws_lambda_function.image_processor.function_name, stat = "Average", label = "Avg Duration (ms)" }]
-          ]
-          region = var.aws_region
-          title  = "Lambda - Duration"
-          period = 300
-        }
-      },
       # DynamoDB Read/Write Capacity
       {
         type = "metric"
         properties = {
           metrics = [
-            ["AWS/DynamoDB", "ConsumedReadCapacityUnits", { TableName = aws_dynamodb_table.image_analysis.name, stat = "Sum" }],
-            [".", "ConsumedWriteCapacityUnits", { TableName = aws_dynamodb_table.image_analysis.name, stat = "Sum" }]
+            ["AWS/DynamoDB", "ConsumedReadCapacityUnits", { TableName = aws_dynamodb_table.inference_records.name, stat = "Sum", label = "Inferences Read" }],
+            [".", "ConsumedWriteCapacityUnits", { TableName = aws_dynamodb_table.inference_records.name, stat = "Sum", label = "Inferences Write" }],
+            [".", "ConsumedReadCapacityUnits", { TableName = aws_dynamodb_table.users.name, stat = "Sum", label = "Users Read" }],
+            [".", "ConsumedWriteCapacityUnits", { TableName = aws_dynamodb_table.users.name, stat = "Sum", label = "Users Write" }]
           ]
           region = var.aws_region
           title  = "DynamoDB - Consumed Capacity"

@@ -67,7 +67,6 @@ resource "aws_s3_bucket_policy" "frontend_cloudfront" {
 
 
 # S3 Bucket for Raw/Uploaded Images
-# Users upload images here, Lambda processes them
 resource "aws_s3_bucket" "images_raw" {
   bucket        = "${local.project_name}-images-raw-${var.environment}"
   force_destroy = false
@@ -181,26 +180,6 @@ resource "aws_s3_bucket_policy" "images_raw" {
         Resource = aws_s3_bucket.images_raw.arn
       },
       {
-        Sid    = "AllowLambdaReadAccess"
-        Effect = "Allow"
-        Principal = {
-          AWS = aws_iam_role.lambda_execution.arn
-        }
-        Action = [
-          "s3:GetObject"
-        ]
-        Resource = "${aws_s3_bucket.images_raw.arn}/*"
-      },
-      {
-        Sid    = "AllowLambdaListBucket"
-        Effect = "Allow"
-        Principal = {
-          AWS = aws_iam_role.lambda_execution.arn
-        }
-        Action   = "s3:ListBucket"
-        Resource = aws_s3_bucket.images_raw.arn
-      },
-      {
         Sid       = "DenyUnencryptedObjectUploads"
         Effect    = "Deny"
         Principal = "*"
@@ -237,7 +216,6 @@ resource "aws_s3_bucket_policy" "images_raw" {
 
 
 # S3 Bucket for Processed Images
-# Lambda writes processed images here
 
 resource "aws_s3_bucket" "images_processed" {
   bucket        = "${local.project_name}-images-processed-${var.environment}"
@@ -245,7 +223,7 @@ resource "aws_s3_bucket" "images_processed" {
 
   tags = {
     Name    = "${local.project_name}-images-processed"
-    Purpose = "Processed Image Storage (After Lambda)"
+    Purpose = "Processed Image Storage"
   }
 }
 
@@ -322,7 +300,7 @@ resource "aws_s3_bucket_lifecycle_configuration" "images_processed" {
 }
 
 # Resource-Based Policy for Processed Images Bucket
-# Restricts access to only Lambda (write) and ECS (read)
+# Restricts access to ECS tasks only
 resource "aws_s3_bucket_policy" "images_processed" {
   bucket = aws_s3_bucket.images_processed.id
 
@@ -330,34 +308,15 @@ resource "aws_s3_bucket_policy" "images_processed" {
     Version = "2012-10-17"
     Statement = [
       {
-        Sid    = "AllowLambdaWriteAccess"
-        Effect = "Allow"
-        Principal = {
-          AWS = aws_iam_role.lambda_execution.arn
-        }
-        Action = [
-          "s3:PutObject",
-          "s3:DeleteObject"
-        ]
-        Resource = "${aws_s3_bucket.images_processed.arn}/*"
-      },
-      {
-        Sid    = "AllowLambdaListBucket"
-        Effect = "Allow"
-        Principal = {
-          AWS = aws_iam_role.lambda_execution.arn
-        }
-        Action   = "s3:ListBucket"
-        Resource = aws_s3_bucket.images_processed.arn
-      },
-      {
-        Sid    = "AllowECSTaskReadAccess"
+        Sid    = "AllowECSTaskAccess"
         Effect = "Allow"
         Principal = {
           AWS = aws_iam_role.ecs_task.arn
         }
         Action = [
-          "s3:GetObject"
+          "s3:GetObject",
+          "s3:PutObject",
+          "s3:DeleteObject"
         ]
         Resource = "${aws_s3_bucket.images_processed.arn}/*"
       },
@@ -403,20 +362,6 @@ resource "aws_s3_bucket_policy" "images_processed" {
   depends_on = [
     aws_s3_bucket_public_access_block.images_processed
   ]
-}
-
-
-# S3 Event Notifications to Lambda
-resource "aws_s3_bucket_notification" "images_raw_notification" {
-  bucket = aws_s3_bucket.images_raw.id
-
-  lambda_function {
-    lambda_function_arn = aws_lambda_function.image_processor.arn
-    events              = ["s3:ObjectCreated:*"]
-    filter_prefix       = "training/" # Process training data for Modal model
-    filter_suffix       = [".jpg", ".jpeg", ".png"]
-  }
-  depends_on = [aws_lambda_permission.allow_s3_invoke]
 }
 
 

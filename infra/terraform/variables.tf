@@ -34,33 +34,6 @@ variable "enable_custom_domain" {
 
 # ECS Fargate configuration is defined at the end of this file
 
-# Lambda Configuration
-variable "lambda_timeout" {
-  description = "Lambda function timeout in seconds"
-  type        = number
-  default     = 900 # Max timeout (15 minutes) 
-  validation {
-    condition     = var.lambda_timeout >= 1 && var.lambda_timeout <= 900
-    error_message = "Timeout must be between 1 and 900 seconds."
-  }
-}
-
-variable "lambda_memory" {
-  description = "Lambda function memory in MB"
-  type        = number
-  default     = 512
-  validation {
-    condition     = var.lambda_memory >= 128 && var.lambda_memory <= 10240
-    error_message = "Memory must be between 128 and 10240 MB."
-  }
-}
-
-variable "lambda_runtime" {
-  description = "Lambda runtime version"
-  type        = string
-  default     = "python3.11"
-}
-
 # DynamoDB Configuration
 
 variable "dynamodb_billing_mode" {

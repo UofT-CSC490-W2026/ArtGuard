@@ -15,10 +15,6 @@ override.tf.json
 *_override.tf
 *_override.tf.json
 
-# Lambda deployment packages
-lambda_function.zip
-*.zip
-
 # Backup files
 *.backup
 *.bak

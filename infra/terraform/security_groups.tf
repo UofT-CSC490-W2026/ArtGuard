@@ -93,37 +93,3 @@ resource "aws_security_group" "vpc_endpoints" {
     Name = "${local.project_name}-vpc-endpoints-sg"
   }
 }
-
-
-# Security Group for Lambda
-# Controls Lambda's network access within VPC
-
-resource "aws_security_group" "lambda" {
-  name        = "${local.project_name}-lambda-sg"
-  description = "Security group for Lambda image processor"
-  vpc_id      = aws_vpc.main.id
-
-  # Egress Rules
-
-  # Allow Lambda to communicate with S3 via VPC endpoint
-  egress {
-    description = "Allow HTTPS to S3"
-    from_port   = 443
-    to_port     = 443
-    protocol    = "tcp"
-    cidr_blocks = [var.vpc_cidr]
-  }
-
-  # Allow Lambda to reach internet if needed (e.g., for dependencies)
-  egress {
-    description = "Allow all outbound traffic"
-    from_port   = 0
-    to_port     = 0
-    protocol    = "-1"
-    cidr_blocks = ["0.0.0.0/0"]
-  }
-
-  tags = {
-    Name = "${local.project_name}-lambda-sg"
-  }
-}

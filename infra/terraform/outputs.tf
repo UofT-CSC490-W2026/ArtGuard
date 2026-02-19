@@ -46,43 +46,7 @@ output "ecr_repository_arn" {
   value       = aws_ecr_repository.backend.arn
 }
 
-# Lambda Outputs
-output "lambda_function_name" {
-  description = "Name of the Lambda function"
-  value       = aws_lambda_function.image_processor.function_name
-}
-
-output "lambda_function_arn" {
-  description = "ARN of the Lambda function"
-  value       = aws_lambda_function.image_processor.arn
-}
-
-output "lambda_log_group_name" {
-  description = "Name of the Lambda CloudWatch log group"
-  value       = aws_cloudwatch_log_group.lambda.name
-}
-
 # DynamoDB Outputs
-output "dynamodb_table_name" {
-  description = "Name of the main DynamoDB table (legacy)"
-  value       = aws_dynamodb_table.main.name
-}
-
-output "dynamodb_table_arn" {
-  description = "ARN of the main DynamoDB table (legacy)"
-  value       = aws_dynamodb_table.main.arn
-}
-
-output "dynamodb_image_analysis_table_name" {
-  description = "Name of the Image Analysis DynamoDB table"
-  value       = aws_dynamodb_table.image_analysis.name
-}
-
-output "dynamodb_image_analysis_table_arn" {
-  description = "ARN of the Image Analysis DynamoDB table"
-  value       = aws_dynamodb_table.image_analysis.arn
-}
-
 output "dynamodb_users_table_name" {
   description = "Name of the Users DynamoDB table"
   value       = aws_dynamodb_table.users.name
@@ -91,6 +55,36 @@ output "dynamodb_users_table_name" {
 output "dynamodb_users_table_arn" {
   description = "ARN of the Users DynamoDB table"
   value       = aws_dynamodb_table.users.arn
+}
+
+output "dynamodb_inference_records_table_name" {
+  description = "Name of the InferenceRecords DynamoDB table"
+  value       = aws_dynamodb_table.inference_records.name
+}
+
+output "dynamodb_inference_records_table_arn" {
+  description = "ARN of the InferenceRecords DynamoDB table"
+  value       = aws_dynamodb_table.inference_records.arn
+}
+
+output "dynamodb_image_records_table_name" {
+  description = "Name of the ImageRecords DynamoDB table"
+  value       = aws_dynamodb_table.image_records.name
+}
+
+output "dynamodb_image_records_table_arn" {
+  description = "ARN of the ImageRecords DynamoDB table"
+  value       = aws_dynamodb_table.image_records.arn
+}
+
+output "dynamodb_patch_records_table_name" {
+  description = "Name of the PatchRecords DynamoDB table"
+  value       = aws_dynamodb_table.patch_records.name
+}
+
+output "dynamodb_patch_records_table_arn" {
+  description = "ARN of the PatchRecords DynamoDB table"
+  value       = aws_dynamodb_table.patch_records.arn
 }
 
 # Bedrock Knowledge Base Outputs
@@ -122,13 +116,6 @@ output "opensearch_collection_arn" {
 output "knowledge_base_data_source_id" {
   description = "ID of the Knowledge Base data source (S3)"
   value       = aws_bedrockagent_data_source.s3_documents.id
-}
-
-# IAM Outputs
-
-output "lambda_execution_role_arn" {
-  description = "ARN of the Lambda execution role"
-  value       = aws_iam_role.lambda_execution.arn
 }
 
 # Secrets Manager Outputs
@@ -308,9 +295,12 @@ output "summary" {
     alb_dns_name      = aws_lb.backend.dns_name
 
     # Storage
-    frontend_bucket   = aws_s3_bucket.frontend.id
-    images_raw_bucket = aws_s3_bucket.images_raw.id
-    dynamodb_table    = aws_dynamodb_table.main.name
+    frontend_bucket          = aws_s3_bucket.frontend.id
+    images_raw_bucket        = aws_s3_bucket.images_raw.id
+    dynamodb_users_table     = aws_dynamodb_table.users.name
+    dynamodb_inferences_table = aws_dynamodb_table.inference_records.name
+    dynamodb_images_table    = aws_dynamodb_table.image_records.name
+    dynamodb_patches_table   = aws_dynamodb_table.patch_records.name
 
     # Bedrock RAG
     knowledge_base_id = aws_bedrockagent_knowledge_base.main.id

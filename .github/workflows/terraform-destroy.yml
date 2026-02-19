@@ -91,7 +91,6 @@ jobs:
           echo "   - ECS service"
           echo "   - S3 buckets (frontend, images, knowledge base)"
           echo "   - DynamoDB tables"
-          echo "   - Lambda functions"
           echo "   - IAM roles"
           echo "   - CloudWatch logs"
           echo "   - OpenSearch collection"

@@ -18,15 +18,14 @@
 - `variables.tf` - Input variables and validation rules
 - `outputs.tf` - Output values (URLs, IDs, ARNs)
 - `networking.tf` - VPC, subnets, NAT gateways, routing tables
-- `security_groups.tf` - Security groups for ECS, ALB, Lambda
+- `security_groups.tf` - Security groups for ECS, ALB
 - `app.tf` - ECS Fargate cluster, services, ALB, auto-scaling
-- `lambda.tf` - Lambda functions (image processor, ECS scheduler)
 - `scheduler.tf` - EventBridge rules for ECS pause/resume
 - `s3.tf` - S3 buckets (images, frontend, knowledge base)
 - `cloudfront.tf` - CloudFront distribution for frontend + API
 - `database.tf` - DynamoDB tables and indexes
 - `bedrock.tf` - Amazon Bedrock Knowledge Base for RAG
-- `iam.tf` - IAM roles and policies (ECS, Lambda, Bedrock)
+- `iam.tf` - IAM roles and policies (ECS, Bedrock)
 - `secrets.tf` - AWS Secrets Manager (Modal API key)
 - `monitoring.tf` - CloudWatch alarms and dashboards
 - `route53.tf` - DNS configuration (optional custom domain)
