@@ -79,7 +79,8 @@ resource "aws_opensearchserverless_access_policy" "knowledge_base" {
         }
       ]
       Principal = [
-        aws_iam_role.bedrock_knowledge_base.arn
+        aws_iam_role.bedrock_knowledge_base.arn,
+        data.aws_caller_identity.current.arn
       ]
     }
   ])
@@ -101,6 +102,43 @@ resource "aws_opensearchserverless_collection" "knowledge_base" {
   }
 }
 
+
+# Create vector index inside the OpenSearch Serverless collection
+resource "null_resource" "opensearch_index" {
+  depends_on = [
+    aws_opensearchserverless_collection.knowledge_base,
+    aws_opensearchserverless_access_policy.knowledge_base
+  ]
+
+  triggers = {
+    collection_endpoint = aws_opensearchserverless_collection.knowledge_base.collection_endpoint
+    index_name          = var.bedrock_vector_index_name
+  }
+
+  provisioner "local-exec" {
+    command = <<-EOT
+      awscurl --service aoss --region ${var.aws_region} \
+        -X PUT "${aws_opensearchserverless_collection.knowledge_base.collection_endpoint}/${var.bedrock_vector_index_name}" \
+        -H "Content-Type: application/json" \
+        -d '{
+          "settings": {
+            "index": { "knn": true, "knn.algo_param.ef_search": 512 }
+          },
+          "mappings": {
+            "properties": {
+              "${var.bedrock_vector_index_name}-vector": {
+                "type": "knn_vector",
+                "dimension": 1536,
+                "method": { "engine": "faiss", "name": "hnsw" }
+              },
+              "AMAZON_BEDROCK_TEXT_CHUNK": { "type": "text" },
+              "AMAZON_BEDROCK_METADATA": { "type": "text" }
+            }
+          }
+        }'
+    EOT
+  }
+}
 
 # Bedrock Knowledge Base
 resource "aws_bedrockagent_knowledge_base" "main" {
@@ -135,7 +173,7 @@ resource "aws_bedrockagent_knowledge_base" "main" {
   }
 
   depends_on = [
-    aws_opensearchserverless_collection.knowledge_base,
+    null_resource.opensearch_index,
     aws_iam_role_policy.bedrock_kb_s3_access,
     aws_iam_role_policy.bedrock_kb_opensearch_access,
     aws_iam_role_policy.bedrock_kb_model_access
