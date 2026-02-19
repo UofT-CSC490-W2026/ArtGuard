@@ -1,5 +1,5 @@
 # DynamoDB Tables
-# 4 tables: Users, InferenceRecords, ImageRecords, PatchRecords
+# 6 tables: Users, InferenceRecords, ImageRecords, PatchRecords, RunRecords, ConfigRecords
 
 # Table 1: Users
 resource "aws_dynamodb_table" "users" {
@@ -171,6 +171,107 @@ resource "aws_dynamodb_table" "patch_records" {
 
   tags = {
     Name        = "${local.project_name}-patch-records"
+    Environment = var.environment
+  }
+}
+
+# Table 5: RunRecords
+# Stores each training run's metadata, split config, and averaged metrics across folds
+resource "aws_dynamodb_table" "run_records" {
+  name         = "${local.project_name}-run-records-${var.environment}"
+  billing_mode = "PAY_PER_REQUEST"
+  hash_key     = "run_id"
+
+  attribute {
+    name = "run_id"
+    type = "S"
+  }
+
+  attribute {
+    name = "status"
+    type = "S"
+  }
+
+  attribute {
+    name = "created_at"
+    type = "N" # Unix timestamp in milliseconds
+  }
+
+  attribute {
+    name = "dataset_version"
+    type = "S"
+  }
+
+  # GSI for querying runs by status (e.g., all "running" or "completed" runs, sorted by time)
+  global_secondary_index {
+    name            = "StatusIndex"
+    hash_key        = "status"
+    range_key       = "created_at"
+    projection_type = "ALL"
+  }
+
+  # GSI for querying runs by dataset version (sorted by time)
+  global_secondary_index {
+    name            = "DatasetVersionIndex"
+    hash_key        = "dataset_version"
+    range_key       = "created_at"
+    projection_type = "ALL"
+  }
+
+  point_in_time_recovery {
+    enabled = var.environment == "prod"
+  }
+
+  server_side_encryption {
+    enabled = true
+  }
+
+  tags = {
+    Name        = "${local.project_name}-run-records"
+    Environment = var.environment
+  }
+}
+
+# Table 6: ConfigRecords
+# Stores each hyperparameter config per fold, including metrics and best-in-fold flag
+resource "aws_dynamodb_table" "config_records" {
+  name         = "${local.project_name}-config-records-${var.environment}"
+  billing_mode = "PAY_PER_REQUEST"
+  hash_key     = "config_id"
+
+  attribute {
+    name = "config_id"
+    type = "S"
+  }
+
+  attribute {
+    name = "run_id"
+    type = "S"
+  }
+
+  attribute {
+    name = "fold_id"
+    type = "N"
+  }
+
+  # GSI for querying all configs belonging to a run (sorted by fold)
+  global_secondary_index {
+    name            = "RunConfigsIndex"
+    hash_key        = "run_id"
+    range_key       = "fold_id"
+    projection_type = "ALL"
+  }
+
+  point_in_time_recovery {
+    enabled = var.environment == "prod"
+  }
+
+  server_side_encryption {
+    enabled = true
+  }
+
+  tags = {
+    Name        = "${local.project_name}-config-records"
     Environment = var.environment
   }
 }

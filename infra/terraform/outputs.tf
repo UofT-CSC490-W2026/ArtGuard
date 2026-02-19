@@ -87,6 +87,26 @@ output "dynamodb_patch_records_table_arn" {
   value       = aws_dynamodb_table.patch_records.arn
 }
 
+output "dynamodb_run_records_table_name" {
+  description = "Name of the RunRecords DynamoDB table"
+  value       = aws_dynamodb_table.run_records.name
+}
+
+output "dynamodb_run_records_table_arn" {
+  description = "ARN of the RunRecords DynamoDB table"
+  value       = aws_dynamodb_table.run_records.arn
+}
+
+output "dynamodb_config_records_table_name" {
+  description = "Name of the ConfigRecords DynamoDB table"
+  value       = aws_dynamodb_table.config_records.name
+}
+
+output "dynamodb_config_records_table_arn" {
+  description = "ARN of the ConfigRecords DynamoDB table"
+  value       = aws_dynamodb_table.config_records.arn
+}
+
 # Bedrock Knowledge Base Outputs
 output "knowledge_base_id" {
   description = "ID of the Bedrock Knowledge Base for RAG"
@@ -301,6 +321,8 @@ output "summary" {
     dynamodb_inferences_table = aws_dynamodb_table.inference_records.name
     dynamodb_images_table    = aws_dynamodb_table.image_records.name
     dynamodb_patches_table   = aws_dynamodb_table.patch_records.name
+    dynamodb_runs_table      = aws_dynamodb_table.run_records.name
+    dynamodb_configs_table   = aws_dynamodb_table.config_records.name
 
     # Bedrock RAG
     knowledge_base_id = aws_bedrockagent_knowledge_base.main.id

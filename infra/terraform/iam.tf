@@ -116,10 +116,18 @@ resource "aws_iam_policy" "ecs_task_policy" {
           "dynamodb:BatchWriteItem"
         ]
         Resource = [
-          aws_dynamodb_table.image_analysis.arn,
-          "${aws_dynamodb_table.image_analysis.arn}/index/*",
           aws_dynamodb_table.users.arn,
-          "${aws_dynamodb_table.users.arn}/index/*"
+          "${aws_dynamodb_table.users.arn}/index/*",
+          aws_dynamodb_table.inference_records.arn,
+          "${aws_dynamodb_table.inference_records.arn}/index/*",
+          aws_dynamodb_table.image_records.arn,
+          "${aws_dynamodb_table.image_records.arn}/index/*",
+          aws_dynamodb_table.patch_records.arn,
+          "${aws_dynamodb_table.patch_records.arn}/index/*",
+          aws_dynamodb_table.run_records.arn,
+          "${aws_dynamodb_table.run_records.arn}/index/*",
+          aws_dynamodb_table.config_records.arn,
+          "${aws_dynamodb_table.config_records.arn}/index/*"
         ]
       },
       # Bedrock Access
