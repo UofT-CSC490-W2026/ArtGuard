@@ -221,7 +221,7 @@ async def rag_query(body: RAGQueryRequest):
             "type": "KNOWLEDGE_BASE",
             "knowledgeBaseConfiguration": {
                 "knowledgeBaseId": knowledge_base_id,
-                "modelArn": f"arn:aws:bedrock:{region}::foundation-model/anthropic.claude-3-haiku-20240307-v1:0",
+                "modelArn": f"arn:aws:bedrock:{region}::foundation-model/anthropic.claude-sonnet-4-5-20250929-v1:0",
             },
         },
     )
