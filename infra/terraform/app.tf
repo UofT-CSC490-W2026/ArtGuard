@@ -240,10 +240,7 @@ resource "aws_ecs_task_definition" "backend" {
           name  = "AWS_REGION"
           value = var.aws_region
         },
-        {
-          name  = "DYNAMODB_TABLE_NAME"
-          value = aws_dynamodb_table.image_records.name
-        },
+        # S3 Buckets
         {
           name  = "S3_IMAGES_RAW_BUCKET"
           value = aws_s3_bucket.images_raw.id
@@ -253,9 +250,45 @@ resource "aws_ecs_task_definition" "backend" {
           value = aws_s3_bucket.images_processed.id
         },
         {
+          name  = "S3_KNOWLEDGE_BASE_BUCKET"
+          value = aws_s3_bucket.knowledge_base.id
+        },
+        # DynamoDB Tables
+        {
+          name  = "DDB_USERS_TABLE"
+          value = aws_dynamodb_table.users.name
+        },
+        {
+          name  = "DDB_INFERENCES_TABLE"
+          value = aws_dynamodb_table.inference_records.name
+        },
+        {
+          name  = "DDB_IMAGES_TABLE"
+          value = aws_dynamodb_table.image_records.name
+        },
+        {
+          name  = "DDB_PATCHES_TABLE"
+          value = aws_dynamodb_table.patch_records.name
+        },
+        {
+          name  = "DDB_RUNS_TABLE"
+          value = aws_dynamodb_table.run_records.name
+        },
+        {
+          name  = "DDB_CONFIGS_TABLE"
+          value = aws_dynamodb_table.config_records.name
+        },
+        # Legacy (for backward compatibility)
+        {
+          name  = "DYNAMODB_TABLE_NAME"
+          value = aws_dynamodb_table.image_records.name
+        },
+        # Bedrock
+        {
           name  = "KNOWLEDGE_BASE_ID"
           value = aws_bedrockagent_knowledge_base.main.id
         },
+        # Monitoring
         {
           name  = "AWS_XRAY_TRACING_ENABLED"
           value = var.enable_xray_tracing ? "true" : "false"
