@@ -1,9 +1,11 @@
 import pandas as pd
 import json
 import os
+from datasets import load_dataset
 
-INPUT_FILE = "METObjects.csv"
-OUTPUT_FILE = "output/met_data.jsonl"
+INPUT_FILE = "metmuseum/openaccess"
+# INPUT_FILE = "preprocessing/METObjects.csv"
+OUTPUT_FILE = "preprocessing/output/met_data.jsonl"
 
 ARTIST_COLUMNS = [
     "Artist Display Name",
@@ -33,7 +35,10 @@ ARTWORK_COLUMNS = [
 
 def load_and_filter_data(filepath):
     print("Loading MET dataset...")
-    df = pd.read_csv(filepath, encoding="utf-8", dtype=str, low_memory=False)
+    ds = load_dataset(filepath, split="train")
+    df = ds.to_pandas()
+    # df = pd.read_csv(filepath, low_memory=False, dtype=str)
+    
     df = df.replace("", pd.NA)
 
     df = df[ARTIST_COLUMNS + ARTWORK_COLUMNS].copy()
