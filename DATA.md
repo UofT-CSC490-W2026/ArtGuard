@@ -293,6 +293,117 @@ artguard-images-processed-{env}/
 
 ### Workflow C: Bedrock Upload
 
+(another version of same workflows, but might have additional details )
+### Workflow A: Real-Time Forgery Detection (Recommended)
+
+**Use Case**: Interactive user uploads, immediate feedback needed
+
+```
+1. User uploads image
+   POST /detect-forgery
+   Content-Type: multipart/form-data
+
+2. CloudFront → ALB → ECS Task (main.py)
+
+3. Preprocessing (in-memory, main.py:62)
+   - Resize to 2048px max
+   - Convert to RGB
+   - Normalize format
+   - <1 second processing time
+
+4. Parallel API calls (main.py:106, 155)
+   ├─ Bedrock (Claude 3.5 Sonnet)
+   │  - Vision analysis
+   │  - Forgery detection
+   │  - Evidence extraction
+   │  - ~3-5 seconds
+   │
+   └─ Modal (optional, ?use_modal=true)
+      - Custom vision model
+      - Forensic analysis
+      - ~2-4 seconds
+
+5. RAG Enhancement (optional)
+   - Query Bedrock Knowledge Base
+   - Retrieve relevant documentation
+   - Augment Claude prompt with context
+   - +0.5-1 second
+
+6. Result aggregation
+   - Combine Bedrock + Modal responses
+   - Calculate ensemble confidence
+   - Generate evidence report
+
+7. DynamoDB storage
+   - Store analysis results
+   - user_id + analysis_id
+   - TTL: 90 days
+
+8. Response to user
+   {
+     "is_forgery": true,
+     "confidence": 0.89,
+     "evidence": [...],
+     "analysis_id": "...",
+     "models_used": ["bedrock-claude", "modal"]
+   }
+
+Total latency: 4-7 seconds
+```
+
+**Implementation**:
+- **File**: [src/apps/main.py](src/apps/main.py)
+- **Preprocessing**: [main.py:62](src/apps/main.py#L62) `preprocess_image_for_inference()`
+- **Bedrock call**: [main.py:106](src/apps/main.py#L106) `analyze_with_bedrock()`
+- **Modal call**: [main.py:155](src/apps/main.py#L155) `analyze_with_modal()`
+- **No S3 upload**: Image stays in memory, no Lambda triggered
+
+**When to use**:
+- Real-time user requests
+- Interactive web/mobile apps
+- Immediate feedback required
+- Single image analysis
+
+---
+
+### Workflow B: Training Data Upload & Preprocessing
+
+**Use Case**: Building training datasets, model fine-tuning
+
+```
+1. Run data pipeline script (locally or via GitHub Actions)
+   python -m src.apps.data_pipeline.upload_training_data \
+     --dataset-path ./data/authentic_images \
+     --dataset-name authentic_v1
+
+2. Script uploads to S3
+   - Path: s3://artguard-images-raw-dev/training/authentic_v1/*.jpg
+   - Metadata tags: dataset_name, upload_date, source
+   - Progress bar displayed
+
+3. Preprocessing runs in-pipeline
+   - EXIF rotation correction
+   - Resize to 2048px max
+   - Convert to RGB (handle RGBA/PNG)
+   - JPEG optimization (quality 95)
+   - Upload processed images to processed bucket
+   - Path: s3://artguard-images-processed-dev/processed/authentic_v1/*.jpg
+
+4. Training dataset ready
+   - Location: processed bucket
+   - Use for: Model fine-tuning, evaluation, benchmarking
+```
+
+**Implementation**:
+- **Data pipeline**: [src/apps/data_pipeline/](src/apps/data_pipeline/)
+
+**When to use**:
+- Building training datasets
+- Model fine-tuning data preparation
+- Batch preprocessing (1000+ images)
+- Ground truth annotations
+
+---
 
 ---
 

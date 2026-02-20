@@ -186,7 +186,7 @@ aws iam create-access-key --user-name github-actions-artguard
 └─────────────────────────────────────────────────────────────┘
 
 1. Edit Code Locally
-   ├── src/apps/backend/        → Triggers app-docker.yml
+   ├── src/**                    → Triggers app-docker.yml
    ├── src/apps/frontend/       → Triggers frontend-deploy.yml
    ├── infra/terraform/         → Triggers terraform-deploy.yml
    └── docs/                    → Triggers update-knowledge-base.yml
@@ -318,14 +318,14 @@ docker system prune -a
 ./scripts/ecs-control.sh logs dev
 
 # Common causes:
-# - Application not listening on port 8080
+# - Application not listening on port 8000
 # - Application takes too long to start (increase health check grace period)
 # - Missing environment variables
 # - Modal API key not configured
 
 # Verify Modal API key
 aws secretsmanager get-secret-value \
-  --secret-id artguard-modal-api-key \
+  --secret-id artguard/modal-api-key-dev \
   --region ca-central-1
 ```
 
