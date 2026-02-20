@@ -20,19 +20,16 @@
 ### Key Technologies
 
 - **Compute**: ECS Fargate (serverless containers)
-- **Storage**: S3 (images, frontend), DynamoDB (metadata), OpenSearch Serverless (vector embeddings)
-- **ML/AI**: Amazon Bedrock, Modal (vision model)
+- **Storage**: S3 (images, frontend, docs needed for the RAG model), DynamoDB (for storing metadata), OpenSearch Serverless (vector embeddings)
+- **ML/AI**: Amazon Bedrock (for the RAG model), Modal (for the vision model)
 - **Networking**: VPC, ALB, CloudFront CDN, VPC Endpoints
 - **Monitoring**: CloudWatch (metrics, logs, dashboards), X-Ray (distributed tracing)
 - **IaC**: Terraform with environment-specific configs (dev/prod)
 
 ### What Gets Deployed
-
-Your infrastructure deployment creates:
-
 | Component | Description | Quantity |
 |-----------|-------------|----------|
-| **VPC** | Multi-AZ network with public/private subnets | 1 VPC, 2 AZs |
+| **VPC** | Multi-AZ network with public/private subnets | 1 VPC, 2-3 AZs (2 dev, 3 prod) |
 | **ECS Fargate** | Serverless container cluster and service | 1 cluster, 1 service |
 | **ALB** | Application Load Balancer with health checks | 1 load balancer |
 | **ECR** | Docker registry for backend images | 1 repository |
@@ -42,6 +39,25 @@ Your infrastructure deployment creates:
 | **CloudFront** | Global CDN distribution | 1 distribution |
 | **VPC Endpoints** | Private AWS service access | 5 endpoints |
 | **Secrets Manager** | Encrypted secrets storage | 1 secret |
+
+### Resource Details
+
+**S3 Buckets** (4 total):
+- `artguard-frontend-{env}` - Frontend static files (served via CloudFront)
+- `artguard-images-raw-{env}` - Raw uploaded images (training + inference)
+- `artguard-images-processed-{env}` - Processed images and patches
+- `artguard-knowledge-base-{env}` - Bedrock Knowledge Base documents (RAG)
+
+**DynamoDB Tables** (6 total):
+- `artguard-users-{env}` - User accounts and authentication
+- `artguard-inference-records-{env}` - AI inference requests and results
+- `artguard-image-records-{env}` - Image metadata and training data
+- `artguard-patch-records-{env}` - Image patch metadata
+- `artguard-run-records-{env}` - Training run metadata
+- `artguard-config-records-{env}` - Hyperparameter configurations per fold
+
+**Secrets Manager** (1 total):
+- `artguard/modal-api-key-{env}` - Modal API key for ML model inference
 
 ---
 
@@ -58,11 +74,13 @@ VPC: 10.0.0.0/16 (ca-central-1)
 │
 ├── Public Subnets (Internet Gateway)
 │   ├── 10.0.0.0/24 (ca-central-1a) - ALB, NAT Gateway
-│   └── 10.0.1.0/24 (ca-central-1b) - ALB, NAT Gateway
+│   ├── 10.0.1.0/24 (ca-central-1b) - ALB, NAT Gateway
+│   └── 10.0.4.0/24 (ca-central-1c) - ALB, NAT Gateway (prod only)
 │
 ├── Private Subnets (NAT Gateway)
 │   ├── 10.0.2.0/24 (ca-central-1a) - ECS Tasks
-│   └── 10.0.3.0/24 (ca-central-1b) - ECS Tasks
+│   ├── 10.0.3.0/24 (ca-central-1b) - ECS Tasks
+│   └── 10.0.5.0/24 (ca-central-1c) - ECS Tasks (prod only)
 │
 └── VPC Endpoints (PrivateLink)
     ├── S3 (Gateway Endpoint)
@@ -100,19 +118,12 @@ VPC: 10.0.0.0/16 (ca-central-1)
 └─────────────────────────────────────────────────────────────┘
 ```
 
-
-See [COMPONENT_DESCRIPTION.md](COMPONENT_DESCRIPTION.md) 
-
 ___
 
 ## Architecture Decisions
 
 
-### 1. Why Bedrock + Modal?
-
-**Decision**: Support both Bedrock and Modal
-
-**Rationale**:
+### 1. Why we chose to use both AWS Bedrock and Modal
 
 **Bedrock (Claude 3.5 Sonnet)**:
 - Native AWS integration (no VPC egress needed)
@@ -126,42 +137,22 @@ ___
 - Faster inference (~2s vs 3-5s)
 - Custom fine tuning
 - Ensemble with Bedrock for higher explainability
----
-
-### 2. Why DynamoDB On-Demand vs Provisioned?
-
-**Decision**: Use on-demand billing mode
-
-**Rationale**:
-- **Unpredictable traffic**: Can't forecast request patterns in early stages. Too unpredicatable for now.
-- **Cost savings**: No wasted capacity during low usage
-- **No throttling**: Automatic scaling to any load
-- **Simplicity**: No capacity planning, no auto-scaling alarms
-
-**Files**: [infra/terraform/database.tf:20](infra/terraform/database.tf#L20)
 
 ---
 
-### 5. Why VPC Endpoints Despite Extra Cost?
+### 2. Why VPC Endpoints Despite Extra Cost?
 
-**Decision**: Enable VPC endpoints for S3, ECR, CloudWatch, Secrets Manager
-
-**Rationale**:
+We enabled VPC endpoints for S3, ECR, CloudWatch, Secrets Manager due to the following reasons:
 
 **Security benefits**:
 - **Private connectivity**: No internet exposure for AWS API calls
 - **Reduced attack surface**: No NAT gateway for AWS services
 
-
-**Files**: [infra/terraform/networking.tf:180-280](infra/terraform/networking.tf#L180-L280)
+**Files**: [terraform/networking.tf](terraform/networking.tf)
 
 ---
 
-### 6. Why Auto-Pause Scheduler Only in Dev?
-
-**Decision**: AppAutoScaling scheduled actions only created for `environment == "dev"`
-
-**Rationale**:
+### 3. Why Auto-Pause Scheduler Only in Dev
 
 - **Cost savings**: $35/mo (10 hours × 30 days)
 - **No 24/7 availability needed**
@@ -169,41 +160,34 @@ ___
 - **Risk acceptable**: Dev outages don't affect users
 - **Production environment**: 24/7 availability required. Global users across time zones
 
-**Manual pause/resume**: Available via GitHub Actions (`ecs-manage.yml`) or AWS CLI
-
-**Files**: [infra/terraform/scheduler.tf](infra/terraform/scheduler.tf)
+**Files**: [terraform/scheduler.tf](terraform/scheduler.tf)
 
 ---
 
 
-### 7. Why Data Pipeline Shares the Backend ECS
+### 4. Why Data Pipeline Shares the Backend ECS
 
-**Decision**: The data pipeline code lives in the same Docker image and ECS cluster as the backend API.
+The data pipeline code lives in the same Docker image and ECS cluster as the backend API due to the following:
 
-**Rationale**:
 -  **It's a one-off script, not a long-running service** — The data pipeline uploads docs to S3 and triggers Bedrock ingestion, then it's done. A separate ECS service would idle 24/7 costing money for nothing.
 -  **Separate ECS services make sense for always-running workloads** with different scaling needs (e.g., an API server vs a queue worker). That's not this case.
 - **$0 extra cost** — Reuses the existing ECS task. No additional compute, no additional ALB, no additional auto-scaling config.
 
 **How the pipeline runs**:
 - Locally via `python -m src.apps.data_pipeline.upload_training_data`
-- Via GitHub Actions when docs change in the repo
 - Optionally as a FastAPI endpoint on the existing backend
 
 ---
 
-### 8. DynamoDB vs RDS for Your Use Case
-
-#### Why DynamoDB Works for You
+### 5. DynamoDB vs RDS: Why we chose to go with DynamoDB
 
 1. **Simple relationships**: Only 2 foreign keys (user_id, image_id)
 2. **No complex joins**: All "joins" are 1-to-many lookups (inference→user, patch→image)
 3. **Known query patterns**: All queries can be optimized with GSIs
 4. **High read/write throughput**: Image analysis generates lots of writes
 5. **Serverless scaling**: Handles spiky workloads automatically
-6. **Pay-per-request**: Only pay for what you use
+6. **Pay-per-request**: Only pay for what we use
 7. **Cheaper**: Massive cost savings
-
 
 ---
 
@@ -310,39 +294,29 @@ Outbound:
 - OpenSearch: `aoss:APIAccessAll` on knowledge base collection only
 - Bedrock: `bedrock:InvokeModel` on `amazon.titan-embed-text-v1` model only
 
-**Files**: [infra/terraform/iam.tf](infra/terraform/iam.tf)
+**Files**: [terraform/iam.tf](terraform/iam.tf)
 
 ---
 
 #### Resource-Based Policies
 
 **Secrets Manager Secret**:
+Access is controlled via IAM role policy. The ECS Execution Role has an inline policy that grants `secretsmanager:GetSecretValue` on the Modal API key secret only:
+
 ```json
 {
+  "Version": "2012-10-17",
   "Statement": [
     {
-      "Sid": "AllowECSExecutionAccess",
       "Effect": "Allow",
-      "Principal": {"AWS": "<ecs-execution-role-arn>"},
-      "Action": ["secretsmanager:GetSecretValue", "secretsmanager:DescribeSecret"]
-    },
-    {
-      "Sid": "AllowAccountRootAccess",
-      "Effect": "Allow",
-      "Principal": {"AWS": "<account-root-arn>"},
-      "Action": "secretsmanager:*"
-    },
-    {
-      "Sid": "DenyAllOthersGetValue",
-      "Effect": "Deny",
-      "NotPrincipal": {"AWS": ["<ecs-execution-role-arn>", "<account-root-arn>"]},
-      "Action": "secretsmanager:GetSecretValue"
+      "Action": ["secretsmanager:GetSecretValue"],
+      "Resource": ["<modal-api-key-secret-arn>*"]
     }
   ]
 }
 ```
 
-**Files**: [infra/terraform/secrets.tf:27-68](infra/terraform/secrets.tf#L27-L68)
+**Files**: [terraform/secrets.tf](terraform/secrets.tf), [terraform/iam.tf](terraform/iam.tf)
 
 ---
 
@@ -372,14 +346,6 @@ Outbound:
 - Stored in Secrets Manager (encrypted)
 - Injected as environment variable into ECS tasks
 
-**Access control**:
-- Only ECS Execution Role can read
-- Resource-based policy denies all other principals
-- AWS root account can rotate (for disaster recovery)
-
-**Files**: [infra/disaster_recovery/secret_recovery.sh](infra/disaster_recovery/secret_recovery.sh)
-
-
 ---
 
 ## Monitoring & Observability
@@ -387,7 +353,7 @@ Outbound:
 ### 1. CloudWatch Logs
 
 **ECS Tasks**:
-- **Log group**: `/ecs/artguard-backend-{env}`
+- **Log group**: `/ecs/artguard-backend`
 - **Retention**: 7 days (dev), 30 days (prod)
 - **Contents**: Application logs, errors, request traces
 
@@ -396,14 +362,14 @@ Outbound:
 
 **Status**: Disabled (dev), Enabled (prod)
 
-**Configuration**: Controlled via `var.enable_xray_tracing` in [variables.tf](infra/terraform/variables.tf)
+**Configuration**: Controlled via `var.enable_xray_tracing` in [variables.tf](terraform/variables.tf)
 
 **Benefits**:
 - Trace requests across ECS → Bedrock → DynamoDB
 - Identify slow API calls
 - Visualize service dependencies
 
-**Files**: [infra/terraform/variables.tf:280](infra/terraform/variables.tf#L280)
+**Files**: [terraform/variables.tf](terraform/variables.tf)
 
 ---
 
@@ -417,7 +383,7 @@ Outbound:
 - Storage I/O (ephemeral disk)
 - Task restart count
 
-**Files**: [infra/terraform/app.tf:15-17](infra/terraform/app.tf#L15-L17)
+**Files**: [terraform/app.tf](terraform/app.tf)
 
 ---
 
@@ -431,26 +397,32 @@ Outbound:
    - CPU Utilization (average)
    - Memory Utilization (average)
    - 5-minute intervals
+   - Dimensions: Cluster name, Service name
 
-2. **ALB - Request Metrics**
-   - Total request count
-   - 2xx successful responses
-   - 4xx client errors
-   - 5xx server errors
+2. **ALB - Request & Success Metrics**
+   - Total request count (sum)
+   - 2xx successful responses (sum)
+   - 5-minute intervals
+   - Dimensions: Load balancer
+
+3. **ALB - Error Metrics**
+   - 4xx client errors (sum)
+   - 5xx server errors (sum)
+   - 5-minute intervals
+   - Dimensions: Load balancer
+
+4. **DynamoDB - Consumed Capacity**
+   - Read capacity units consumed (sum, all tables)
+   - Write capacity units consumed (sum, all tables)
+   - Tracks on-demand usage across all 6 tables
    - 5-minute intervals
 
-3. **DynamoDB - Consumed Capacity**
-   - Read capacity units consumed
-   - Write capacity units consumed
-   - Tracks on-demand usage
-   - 5-minute intervals
+5. **S3 - Bucket Size**
+   - Bucket size in bytes (average)
+   - Daily intervals (86400 seconds)
+   - Note: S3 bucket metrics are configured for all 4 buckets (frontend, images_raw, images_processed, knowledge_base)
 
-4. **S3 - Bucket Size**
-   - Images raw bucket size
-   - Images processed bucket size
-   - Daily intervals
-
-**Files**: [infra/terraform/monitoring.tf:3-90](infra/terraform/monitoring.tf#L3-L90)
+**Files**: [terraform/monitoring.tf](terraform/monitoring.tf)
 
 
 ---
@@ -461,7 +433,7 @@ Outbound:
 
 ECS service scales to 0 tasks at 10 PM EST, resumes at 8 AM EST (dev only). Saves ~14 hours/day of compute costs.
 
-**Files**: [infra/terraform/scheduler.tf](infra/terraform/scheduler.tf)
+**Files**: [terraform/scheduler.tf](terraform/scheduler.tf)
 
 ---
 
@@ -469,7 +441,7 @@ ECS service scales to 0 tasks at 10 PM EST, resumes at 8 AM EST (dev only). Save
 
 All 6 tables use `PAY_PER_REQUEST` billing. No wasted provisioned capacity during low usage. Only pay for actual reads/writes.
 
-**Files**: [infra/terraform/database.tf](infra/terraform/database.tf)
+**Files**: [terraform/database.tf](terraform/database.tf)
 
 ---
 
@@ -481,7 +453,7 @@ All 6 tables use `PAY_PER_REQUEST` billing. No wasted provisioned capacity durin
 
 Savings: ~60% cheaper in Glacier vs Standard for archived training data.
 
-**Files**: [infra/terraform/s3.tf](infra/terraform/s3.tf)
+**Files**: [terraform/s3.tf](terraform/s3.tf)
 
 ---
 
@@ -489,7 +461,7 @@ Savings: ~60% cheaper in Glacier vs Standard for archived training data.
 
 Retention set to 7 days (dev), 30 days (prod) instead of indefinite retention.
 
-**Files**: [infra/terraform/app.tf:204-207](infra/terraform/app.tf#L204-L207)
+**Files**: [terraform/app.tf](terraform/app.tf)
 
 ---
 
@@ -497,114 +469,17 @@ Retention set to 7 days (dev), 30 days (prod) instead of indefinite retention.
 
 S3 traffic from private subnets uses the free Gateway Endpoint instead of going through NAT Gateway, avoiding data transfer charges.
 
-**Files**: [infra/terraform/networking.tf:130-137](infra/terraform/networking.tf#L130-L137)
-
----
-
-#### 6. CloudFront PriceClass_100
-
-Restricts edge locations to North America and Europe only (cheapest tier) instead of global distribution.
-
-**Files**: [infra/terraform/cloudfront.tf](infra/terraform/cloudfront.tf)
+**Files**: [terraform/networking.tf](terraform/networking.tf)
 
 ---
 
 ### Disaster Recovery
 
-TO DO 
+We followed an IaaC approach and used terraform to provision AWS resources for our infrastructure. In the case of an infrastructure failure, running `terraform apply` along with running a couple of scripts to repopulate data within the S3 buckets and dynamo DB tables can help us restore to a functional state.
 
-#### Backup Strategy
-
-TO DO 
-
----
-
-#### Recovery Procedures
-(IDK IF THIS IS USEFUL, KEEP OR DELETE)
-
-**Scenario 1: ECS service down**:
-```bash
-# Check service status
-aws ecs describe-services \
-  --cluster artguard-cluster-prod \
-  --services artguard-backend-prod
-
-# Force new deployment (rolling restart)
-aws ecs update-service \
-  --cluster artguard-cluster-prod \
-  --service artguard-backend-prod \
-  --force-new-deployment
-
-# If still failing, scale to 0 then back to min capacity
-aws ecs update-service --desired-count 0 ...
-aws ecs update-service --desired-count 2 ...
-```
-
----
-
-**Scenario 2: Terraform state corrupted**:
-```bash
-# List available state versions
-aws s3api list-object-versions \
-  --bucket artguard-terraform-state \
-  --prefix env/prod/terraform.tfstate
-
-# Download specific version
-aws s3api get-object \
-  --bucket artguard-terraform-state \
-  --key env/prod/terraform.tfstate \
-  --version-id <version-id> \
-  terraform.tfstate.backup
-
-# Restore to S3
-aws s3 cp terraform.tfstate.backup \
-  s3://artguard-terraform-state/env/prod/terraform.tfstate
-```
-
----
-
-**Scenario 3: DynamoDB table accidentally deleted**:
-```bash
-# Restore from point-in-time recovery (within 35 days)
-aws dynamodb restore-table-to-point-in-time \
-  --source-table-name artguard-inference-records-prod \
-  --target-table-name artguard-inference-records-prod-restored \
-  --restore-date-time 2024-02-07T10:00:00Z
-
-# Or restore from on-demand backup
-aws dynamodb restore-table-from-backup \
-  --target-table-name artguard-inference-records-prod-restored \
-  --backup-arn arn:aws:dynamodb:ca-central-1:...:backup/...
-```
-
----
-
-**Scenario 4: Modal API key leaked**:
-```bash
-# Rotate immediately
-# 1. Generate new key in Modal dashboard
-# 2. Update Secrets Manager
-aws secretsmanager put-secret-value \
-  --secret-id artguard/modal-api-key-prod \
-  --secret-string '{"api_key":"modal-NEW-KEY-HERE"}'
-
-# 3. Force ECS service restart (picks up new secret)
-aws ecs update-service \
-  --cluster artguard-cluster-prod \
-  --service artguard-backend-prod \
-  --force-new-deployment
-
-# 4. Revoke old key in Modal dashboard
-```
-
-**Files**: [infra/disaster_recovery/secret_recovery.sh](infra/disaster_recovery/secret_recovery.sh)
-
----
+Here's a video demo where we simulate an infrasture failure by deleting all our resources and then recreate them using terraform: [ADD VIDEO LINK]
 
 ## Environment Differences
-
-TO DO 
-
 
 ### Dev vs Prod Configuration
 
@@ -629,6 +504,3 @@ TO DO
 |--------|-----|------|-------|
 | **Max RPS** | ~50 | ~200 | Assuming 5s avg response time |
 | **Cold start** | ~60s | ~30s | Time from 0 tasks to healthy |
-
-
-**Files**: [infra/terraform/dev.tfvars](infra/terraform/dev.tfvars), [infra/terraform/prod.tfvars](infra/terraform/prod.tfvars)
