@@ -159,7 +159,7 @@ ___
 - **No throttling**: Automatic scaling to any load
 - **Simplicity**: No capacity planning, no auto-scaling alarms
 
-**Files**: [terraform/database.tf:20](terraform/database.tf#L20)
+**Files**: [terraform/database.tf](terraform/database.tf)
 
 ---
 
@@ -174,7 +174,7 @@ ___
 - **Reduced attack surface**: No NAT gateway for AWS services
 
 
-**Files**: [terraform/networking.tf:180-280](terraform/networking.tf#L180-L280)
+**Files**: [terraform/networking.tf](terraform/networking.tf)
 
 ---
 
@@ -189,8 +189,6 @@ ___
 - **Fast resume**: ~2 minutes from cold start
 - **Risk acceptable**: Dev outages don't affect users
 - **Production environment**: 24/7 availability required. Global users across time zones
-
-**Manual pause/resume**: Available via GitHub Actions (`ecs-manage.yml`) or AWS CLI
 
 **Files**: [terraform/scheduler.tf](terraform/scheduler.tf)
 
@@ -208,7 +206,6 @@ ___
 
 **How the pipeline runs**:
 - Locally via `python -m src.apps.data_pipeline.upload_training_data`
-- Via GitHub Actions when docs change in the repo
 - Optionally as a FastAPI endpoint on the existing backend
 
 ---
@@ -353,7 +350,7 @@ Access is controlled via IAM role policy. The ECS Execution Role has an inline p
 }
 ```
 
-**Files**: [terraform/secrets.tf](terraform/secrets.tf), [terraform/iam.tf:33-51](terraform/iam.tf#L33-L51)
+**Files**: [terraform/secrets.tf](terraform/secrets.tf), [terraform/iam.tf](terraform/iam.tf)
 
 ---
 
@@ -414,7 +411,7 @@ Access is controlled via IAM role policy. The ECS Execution Role has an inline p
 - Identify slow API calls
 - Visualize service dependencies
 
-**Files**: [terraform/variables.tf:280](terraform/variables.tf#L280)
+**Files**: [terraform/variables.tf](terraform/variables.tf)
 
 ---
 
@@ -428,7 +425,7 @@ Access is controlled via IAM role policy. The ECS Execution Role has an inline p
 - Storage I/O (ephemeral disk)
 - Task restart count
 
-**Files**: [terraform/app.tf:15-17](terraform/app.tf#L15-L17)
+**Files**: [terraform/app.tf](terraform/app.tf)
 
 ---
 
@@ -467,7 +464,7 @@ Access is controlled via IAM role policy. The ECS Execution Role has an inline p
    - Daily intervals (86400 seconds)
    - Note: S3 bucket metrics are configured for all 4 buckets (frontend, images_raw, images_processed, knowledge_base)
 
-**Files**: [terraform/monitoring.tf:3-90](terraform/monitoring.tf#L3-L90)
+**Files**: [terraform/monitoring.tf](terraform/monitoring.tf)
 
 
 ---
@@ -506,7 +503,7 @@ Savings: ~60% cheaper in Glacier vs Standard for archived training data.
 
 Retention set to 7 days (dev), 30 days (prod) instead of indefinite retention.
 
-**Files**: [terraform/app.tf:204-207](terraform/app.tf#L204-L207)
+**Files**: [terraform/app.tf](terraform/app.tf)
 
 ---
 
@@ -514,7 +511,7 @@ Retention set to 7 days (dev), 30 days (prod) instead of indefinite retention.
 
 S3 traffic from private subnets uses the free Gateway Endpoint instead of going through NAT Gateway, avoiding data transfer charges.
 
-**Files**: [terraform/networking.tf:130-137](terraform/networking.tf#L130-L137)
+**Files**: [terraform/networking.tf](terraform/networking.tf)
 
 ---
 
