@@ -292,6 +292,27 @@ resource "aws_ecs_task_definition" "backend" {
         {
           name  = "AWS_XRAY_TRACING_ENABLED"
           value = var.enable_xray_tracing ? "true" : "false"
+        },
+        # Data Processing (ECS run_task for /process_data endpoint)
+        {
+          name  = "ECS_CLUSTER"
+          value = aws_ecs_cluster.main.name
+        },
+        {
+          name  = "ECS_PROCESS_TASK_DEF_ARN"
+          value = aws_ecs_task_definition.backend.arn
+        },
+        {
+          name  = "ECS_PRIVATE_SUBNETS"
+          value = join(",", aws_subnet.private[*].id)
+        },
+        {
+          name  = "ECS_TASK_SECURITY_GROUPS"
+          value = aws_security_group.ecs_tasks.id
+        },
+        {
+          name  = "ECS_PROCESS_CONTAINER_NAME"
+          value = "backend"
         }
       ]
 

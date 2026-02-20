@@ -11,17 +11,10 @@ from PIL import Image
 from io import BytesIO
 import base64
 import requests
-from preprocessing.process import process_inference_image
+from src.apps.data_pipeline.process import process_inference_image
 
 app = FastAPI(title="ArtGuard API", version="1.0.0")
 
-PIPELINE_SCRIPTS = [
-    "preprocessing/met_pipeline.py",
-    "preprocessing/wikidata_pipeline.py"
-]
-UPDATE_KB_SCRIPT = "./update-knowledge-base.sh"
-
-DOCS_DIR = "preprocessing/output"
 ENVIRONMENT = "dev"
 
 @app.get("/health")
@@ -41,48 +34,30 @@ async def root():
         }
     }
 
-# This class tells FastAPI the minimum information to send in a training request.
-class TrainRequest(BaseModel):
-    dataset_version: str
-    k_folds: int = 5
-    outer_split_seed: int = 17
-    inner_split_seed: int = 99
-
-
-# This class tells FastAPI the minimum information to receive from a training request.
-class TrainRunResponse(BaseModel):
+class ProcessDataResponse(BaseModel):
     run_id: str
-    task_arn: str # unique identifier for running job
+    task_arn: str
 
-@app.post("/train", response_model=TrainRunResponse)
-async def train(body: TrainRequest):
-    # TODO: This will configure the environment to carry out the training job.
-    # You should provide these via environment variables in your ECS service/task.
-    # You can wire them from Terraform outputs.
-    cluster = os.getenv("ECS_CLUSTER", "artguard-cluster")         # matches script defaults :contentReference[oaicite:2]{index=2}
-    task_def = os.getenv("ECS_TRAIN_TASK_DEF_ARN")                # a task definition that contains your training code
-    subnets = os.getenv("ECS_PRIVATE_SUBNETS", "")                # comma-separated subnet IDs
-    security_groups = os.getenv("ECS_TASK_SECURITY_GROUPS", "")   # comma-separated security group IDs
-    container_name = os.getenv("ECS_TRAIN_CONTAINER_NAME", "backend")
+@app.post("/process_data", response_model=ProcessDataResponse)
+async def process_data():
+    cluster = os.getenv("ECS_CLUSTER", "artguard-cluster")
+    task_def = os.getenv("ECS_PROCESS_TASK_DEF_ARN")
+    subnets = os.getenv("ECS_PRIVATE_SUBNETS", "")
+    security_groups = os.getenv("ECS_TASK_SECURITY_GROUPS", "")
+    container_name = os.getenv("ECS_PROCESS_CONTAINER_NAME", "backend")
 
     if not task_def:
-        raise HTTPException(status_code=500, detail="ECS_TRAIN_TASK_DEF_ARN not configured")
+        raise HTTPException(status_code=500, detail="ECS_PROCESS_TASK_DEF_ARN not configured")
     if not subnets or not security_groups:
         raise HTTPException(status_code=500, detail="ECS_PRIVATE_SUBNETS / ECS_TASK_SECURITY_GROUPS not configured")
 
     run_id = str(uuid.uuid4())
     command = [
-        "python",
-        "model/cross_validation.py",
+        "python", "-m",
+        "src.apps.data_pipeline.driver",
         "--run_id", run_id,
-        "--dataset_version", body.dataset_version,
-        "--k_folds", str(body.k_folds),
-        "--outer_split_seed", str(body.outer_split_seed),
-        "--inner_split_seed", str(body.inner_split_seed),
     ]
 
-    # TODO:
-    # Launch and run a Fargate training job.
     ecs = boto3.client("ecs", region_name=os.getenv("AWS_REGION"))
     resp = ecs.run_task(
         cluster=cluster,
@@ -102,7 +77,6 @@ async def train(body: TrainRequest):
                     "command": command,
                     "environment": [
                         {"name": "RUN_ID", "value": run_id},
-                        {"name": "DATASET_VERSION", "value": body.dataset_version},
                     ],
                 }
             ]
@@ -118,7 +92,7 @@ async def train(body: TrainRequest):
         raise HTTPException(status_code=500, detail="No ECS task started")
 
     task_arn = tasks[0]["taskArn"]
-    return TrainRunResponse(run_id=run_id, task_arn=task_arn)
+    return ProcessDataResponse(run_id=run_id, task_arn=task_arn)
 
 # This class tells FastAPI the minimum information to receive from an inference request.
 class InferenceResponse(BaseModel):
@@ -137,8 +111,8 @@ async def infer(file: UploadFile = File(...)):
     raw_bucket = os.getenv("S3_IMAGES_RAW_BUCKET")
     processed_bucket = os.getenv("S3_IMAGES_PROCESSED_BUCKET")
 
-    raw_prefix = os.getenv("S3_RAW_PREFIX", "inference/raw")
-    processed_prefix = os.getenv("S3_PROCESSED_PREFIX", "inference/processed")
+    raw_prefix = os.getenv("S3_RAW_PREFIX", "inference")
+    processed_prefix = os.getenv("S3_PROCESSED_PREFIX", "inference")
 
     inference_table_name = os.getenv("DDB_INFERENCES_TABLE")
     img_table_name = os.getenv("DDB_IMAGES_TABLE")
@@ -222,22 +196,44 @@ async def infer(file: UploadFile = File(...)):
     explanation = "This is a sample response."
 
     return InferenceResponse(inference_id=inference_id, score=score, explanation=explanation)
-def run_pipeline(script_path: str):
-    """Run a Python preprocessing pipeline."""
-    if not os.path.exists(script_path):
-        raise FileNotFoundError(f"Pipeline script not found: {script_path}")
-    subprocess.run(["python", script_path], check=True)
 
-def run_update_knowledge_base():
-    """Call the existing Bash script to upload docs to S3 and trigger ingestion."""
-    if not os.path.exists(UPDATE_KB_SCRIPT):
-        raise FileNotFoundError(f"Update script not found: {UPDATE_KB_SCRIPT}")
-    subprocess.run([UPDATE_KB_SCRIPT, ENVIRONMENT, DOCS_DIR], check=True)
+class RAGQueryRequest(BaseModel):
+    query: str
 
-@app.post("/upload-rag-data")
-async def upload_rag_data(background_tasks: BackgroundTasks):
-    # Create endpoint to trigger RAG pipeline (both met_pipeline.py and wikidata_pipeline.py) and upload data to S3 via the update_knowledge_base.py script
-    for script in PIPELINE_SCRIPTS:
-        background_tasks.add_task(run_pipeline, script)
-    background_tasks.add_task(run_update_knowledge_base)
-    return {"status": "RAG data upload initiated. Pipelines are running in the background."}
+class RAGQueryResponse(BaseModel):
+    answer: str
+    sources: List[dict]
+
+@app.post("/rag-query", response_model=RAGQueryResponse)
+async def rag_query(body: RAGQueryRequest):
+    """Test endpoint to query the Bedrock Knowledge Base."""
+    region = os.getenv("AWS_REGION")
+    knowledge_base_id = os.getenv("KNOWLEDGE_BASE_ID")
+
+    if not knowledge_base_id:
+        raise HTTPException(status_code=500, detail="KNOWLEDGE_BASE_ID not configured")
+
+    bedrock = boto3.client("bedrock-agent-runtime", region_name=region)
+
+    resp = bedrock.retrieve_and_generate(
+        input={"text": body.query},
+        retrieveAndGenerateConfiguration={
+            "type": "KNOWLEDGE_BASE",
+            "knowledgeBaseConfiguration": {
+                "knowledgeBaseId": knowledge_base_id,
+                "modelArn": f"arn:aws:bedrock:{region}::foundation-model/anthropic.claude-3-haiku-20240307-v1:0",
+            },
+        },
+    )
+
+    answer = resp.get("output", {}).get("text", "")
+    citations = resp.get("citations", [])
+    sources = []
+    for citation in citations:
+        for ref in citation.get("retrievedReferences", []):
+            loc = ref.get("location", {})
+            s3_uri = loc.get("s3Location", {}).get("uri", "")
+            snippet = ref.get("content", {}).get("text", "")[:200]
+            sources.append({"s3_uri": s3_uri, "snippet": snippet})
+
+    return RAGQueryResponse(answer=answer, sources=sources)

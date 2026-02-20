@@ -5,7 +5,7 @@ from datasets import load_dataset
 
 INPUT_FILE = "metmuseum/openaccess"
 # INPUT_FILE = "preprocessing/METObjects.csv"
-OUTPUT_FILE = "preprocessing/output/met_data.jsonl"
+OUTPUT_FILE = "src/apps/data_pipeline/output/met_data.jsonl"
 
 ARTIST_COLUMNS = [
     "Artist Display Name",

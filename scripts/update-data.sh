@@ -2,7 +2,7 @@
 set -euo pipefail
 
 # Usage:
-#   ./update-data.sh --data-dir ./data --metadata ./metadata.csv
+#   ./scripts/update-data.sh --data-dir ./data --metadata ./data/metadata.csv
 #
 # Required env vars (match your app):
 #   AWS_REGION
@@ -10,18 +10,18 @@ set -euo pipefail
 #   DDB_IMAGES_TABLE
 #
 # Optional:
-#   S3_RAW_TRAIN_PREFIX (default: training/raw)
+#   S3_RAW_PREFIX (default: training/unprocessed)
 #   DRY_RUN=1 (do not upload or write to DDB)
 #   FORCE_UPLOAD=1 (upload even if object exists)
 #
 # Example:
-#   export AWS_REGION=us-west-2
+#   export AWS_REGION=ca-central-1
 #   export S3_IMAGES_RAW_BUCKET=artguard-images-raw-dev
 #   export DDB_IMAGES_TABLE=artguard-image-records-dev
-#   ./update-data.sh --data-dir ./data --metadata ./metadata.csv
+#   ./scripts/update-data.sh --data-dir ./data --metadata ./data/metadata.csv
 
 DATA_DIR="./data"
-METADATA_CSV="/mnt/data/metadata.csv"
+METADATA_CSV="./data/metadata.csv"
 
 while [[ $# -gt 0 ]]; do
   case "$1" in
@@ -43,7 +43,7 @@ done
 : "${AWS_REGION:?Must set AWS_REGION}"
 : "${S3_IMAGES_RAW_BUCKET:?Must set S3_IMAGES_RAW_BUCKET}"
 : "${DDB_IMAGES_TABLE:?Must set DDB_IMAGES_TABLE}"
-S3_RAW_TRAIN_PREFIX="${S3_RAW_TRAIN_PREFIX:-training/raw}"
+S3_RAW_PREFIX="${S3_RAW_PREFIX:-training/unprocessed}"
 
 if [[ ! -d "$DATA_DIR" ]]; then
   echo "DATA_DIR not found: $DATA_DIR" >&2
@@ -55,11 +55,14 @@ if [[ ! -f "$METADATA_CSV" ]]; then
   exit 1
 fi
 
+# Export for the embedded Python script
+export DATA_DIR METADATA_CSV S3_RAW_PREFIX
+
 echo "DATA_DIR:      $DATA_DIR"
 echo "METADATA_CSV:  $METADATA_CSV"
 echo "AWS_REGION:    $AWS_REGION"
 echo "RAW_BUCKET:    $S3_IMAGES_RAW_BUCKET"
-echo "RAW_PREFIX:    $S3_RAW_TRAIN_PREFIX"
+echo "RAW_PREFIX:    $S3_RAW_PREFIX"
 echo "DDB_TABLE:     $DDB_IMAGES_TABLE"
 echo "DRY_RUN:       ${DRY_RUN:-0}"
 echo "FORCE_UPLOAD:  ${FORCE_UPLOAD:-0}"
@@ -73,35 +76,20 @@ from typing import Dict, List, Optional, Tuple
 import boto3
 from botocore.exceptions import ClientError
 
-DATA_DIR = os.environ.get("DATA_DIR", "./data")
-METADATA_CSV = os.environ.get("METADATA_CSV", "/mnt/data/metadata.csv")
+DATA_DIR = os.path.abspath(os.environ.get("DATA_DIR", "./data"))
+METADATA_CSV = os.path.abspath(os.environ.get("METADATA_CSV", "./data/metadata.csv"))
 AWS_REGION = os.environ["AWS_REGION"]
 RAW_BUCKET = os.environ["S3_IMAGES_RAW_BUCKET"]
 DDB_TABLE = os.environ["DDB_IMAGES_TABLE"]
-RAW_PREFIX = os.environ.get("S3_RAW_TRAIN_PREFIX", "training/raw").strip().strip("/")
+RAW_PREFIX = os.environ.get("S3_RAW_PREFIX", "training/unprocessed").strip().strip("/")
 DRY_RUN = os.environ.get("DRY_RUN", "0") == "1"
 FORCE_UPLOAD = os.environ.get("FORCE_UPLOAD", "0") == "1"
 
-# Pass args from bash via env
-# (bash already validated paths exist)
-DATA_DIR = os.path.abspath(DATA_DIR)
-METADATA_CSV = os.path.abspath(METADATA_CSV)
-
 IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".webp", ".tif", ".tiff", ".bmp"}
 
-def parse_s3_uri(uri: str) -> Tuple[str, str]:
-    # s3://bucket/key...
-    if not uri.startswith("s3://"):
-        raise ValueError(f"Not an s3 uri: {uri}")
-    rest = uri[5:]
-    bucket, _, key = rest.partition("/")
-    return bucket, key
 
 def build_filename_index(root_dir: str) -> Dict[str, List[str]]:
-    """
-    Map filename -> [full paths...]
-    If duplicates exist, you'll get multiple entries.
-    """
+    """Map filename -> [full local paths...]"""
     idx: Dict[str, List[str]] = {}
     for base, _, files in os.walk(root_dir):
         for fn in files:
@@ -110,6 +98,7 @@ def build_filename_index(root_dir: str) -> Dict[str, List[str]]:
                 full = os.path.join(base, fn)
                 idx.setdefault(fn, []).append(full)
     return idx
+
 
 def s3_object_exists(s3, bucket: str, key: str) -> bool:
     try:
@@ -121,8 +110,8 @@ def s3_object_exists(s3, bucket: str, key: str) -> bool:
             return False
         raise
 
+
 def upload_file(s3, local_path: str, bucket: str, key: str) -> None:
-    # Enforce AES256 like your bucket policy requires
     s3.upload_file(
         Filename=local_path,
         Bucket=bucket,
@@ -130,16 +119,12 @@ def upload_file(s3, local_path: str, bucket: str, key: str) -> None:
         ExtraArgs={"ServerSideEncryption": "AES256"},
     )
 
-def to_ddb_item(row: dict) -> dict:
+
+def to_ddb_item(row: dict, s3_uri: str) -> dict:
     """
-    DynamoDB is schemaless beyond keys + indexed attrs.
-    Your table/GSI references: image_id (PK), label, split (for GSI)
-    We write:
-      - all metadata.csv fields
-      - split="unassigned" (so LabelSplitIndex works if you ever query it)
+    Build a DynamoDB ImageRecord item from a CSV row.
+    Uses the actual uploaded S3 URI (not the CSV's original path).
     """
-    # Normalize empties: DynamoDB doesn't allow empty string for some types in older configs;
-    # generally best to omit fields if empty. We'll omit optional empties.
     def nonempty(v: Optional[str]) -> Optional[str]:
         if v is None:
             return None
@@ -150,22 +135,18 @@ def to_ddb_item(row: dict) -> dict:
         "image_id": row["image_id"],
         "created_at": int(row["created_at"]) if row.get("created_at") else 0,
         "image_name": row.get("image_name", ""),
-        "image_path": row.get("image_path", ""),
+        "image_path": s3_uri,
         "image_width": int(row["image_width"]) if row.get("image_width") else 0,
         "image_height": int(row["image_height"]) if row.get("image_height") else 0,
-        # indexed attr
         "label": row.get("label", ""),
-        # indexed attr (your tf expects it to exist for the GSI entries)
         "split": "unassigned",
     }
 
-    # Optional fields
-    for k in ["sublabel", "run_id", "dataset_version", "fold_id", "attributed_creator", "actual_creator"]:
+    for k in ["sublabel", "run_id", "fold_id", "attributed_creator", "actual_creator"]:
         v = nonempty(row.get(k))
         if v is None:
             continue
         if k == "fold_id":
-            # might be numeric or blank
             try:
                 item[k] = int(v)
             except ValueError:
@@ -174,6 +155,7 @@ def to_ddb_item(row: dict) -> dict:
             item[k] = v
 
     return item
+
 
 def main() -> int:
     print("Indexing local images (by filename)...", flush=True)
@@ -196,7 +178,6 @@ def main() -> int:
 
     print(f"Loaded {len(rows)} metadata rows", flush=True)
 
-    # Batch writer handles 25-item batching automatically
     if DRY_RUN:
         batch_ctx = None
     else:
@@ -206,10 +187,9 @@ def main() -> int:
         for row in rows:
             image_id = row.get("image_id", "").strip()
             image_name = row.get("image_name", "").strip()
-            image_path = row.get("image_path", "").strip()
 
-            if not image_id or not image_name or not image_path:
-                print(f"[WARN] Skipping row with missing required fields: image_id/image_name/image_path", flush=True)
+            if not image_id or not image_name:
+                print("[WARN] Skipping row with missing image_id or image_name", flush=True)
                 continue
 
             # Find local file by filename
@@ -219,39 +199,30 @@ def main() -> int:
                 missing_local += 1
                 continue
             if len(matches) > 1:
-                # Don’t guess silently; upload first match but warn loudly
                 print(f"[WARN] Multiple local files named {image_name}. Using first:\n  {matches[0]}\n  others={len(matches)-1}", flush=True)
                 ambiguous_local += 1
 
             local_path = matches[0]
 
-            # Upload to S3 using the exact URI from CSV (but ensure bucket matches RAW_BUCKET)
-            bkt, key = parse_s3_uri(image_path)
+            # Always upload to training/unprocessed/{image_id}/{filename}
+            key = f"{RAW_PREFIX}/{image_id}/{image_name}"
+            s3_uri = f"s3://{RAW_BUCKET}/{key}"
 
-            if bkt != RAW_BUCKET:
-                print(f"[WARN] CSV bucket {bkt} != env RAW_BUCKET {RAW_BUCKET}. Using env bucket.", flush=True)
-                bkt = RAW_BUCKET
-                # rewrite key to expected training layout if needed
-                # If CSV already had training/raw/<image_id>/<name>, keep it.
-                # Otherwise fall back to RAW_PREFIX.
-                if not key.startswith(RAW_PREFIX + "/"):
-                    key = f"{RAW_PREFIX}/{image_id}/{image_name}"
-
-            do_upload = FORCE_UPLOAD or (not s3_object_exists(s3, bkt, key))
+            do_upload = FORCE_UPLOAD or (not s3_object_exists(s3, RAW_BUCKET, key))
             if DRY_RUN:
-                print(f"[DRY_RUN] Would upload: {local_path} -> s3://{bkt}/{key}", flush=True)
+                print(f"[DRY_RUN] Would upload: {local_path} -> {s3_uri}", flush=True)
             else:
                 if do_upload:
-                    upload_file(s3, local_path, bkt, key)
+                    upload_file(s3, local_path, RAW_BUCKET, key)
                     uploaded += 1
                 else:
                     skipped_upload_exists += 1
 
-            # Write ImageRecord item to DynamoDB
-            item = to_ddb_item(row)
+            # Write ImageRecord to DynamoDB with the actual S3 URI
+            item = to_ddb_item(row, s3_uri)
 
             if DRY_RUN:
-                print(f"[DRY_RUN] Would write DDB item: image_id={item['image_id']} label={item.get('label')} split={item.get('split')}", flush=True)
+                print(f"[DRY_RUN] Would write DDB item: image_id={item['image_id']} label={item.get('label')}", flush=True)
             else:
                 batch_ctx.put_item(Item=item)
                 ddb_written += 1

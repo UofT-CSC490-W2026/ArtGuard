@@ -38,10 +38,10 @@ class ImageRecord:
     label: Optional[str] = None         
     sublabel: Optional[str] = None       
     run_id: Optional[str] = None
-    dataset_version: Optional[str] = None
-    fold_id: Optional[int] = None 
-    attributed_creator: Optional[str] = None  
-    actual_creator: Optional[str] = None      
+    fold_id: Optional[int] = None
+    split: Optional[str] = None               # train / val / test / unassigned (used by LabelSplitIndex GSI)
+    attributed_creator: Optional[str] = None
+    actual_creator: Optional[str] = None
 
 # We will store each patch's id, path and associated image. We will also store
 # it's type (is it a grid patch, or center patch), dimensions and location.
@@ -63,8 +63,7 @@ class PatchRecord:
 class RunRecord:
     run_id: str = field(default_factory=lambda: str(uuid.uuid4()))
     created_at: int = field(default_factory=lambda: int(time.time() * 1000))
-    status: str = "running"     
-    dataset_version: str = ""  
+    status: str = "running"
     modal_volume_path: Optional[str] = None
     best_config_id: Optional[str] = None
     k_folds: int = 5
@@ -90,7 +89,6 @@ class ConfigRecord:
     config_id: str = field(default_factory=lambda: str(uuid.uuid4()))
     created_at: int = field(default_factory=lambda: int(time.time() * 1000))
     run_id: str = ""
-    dataset_version: str = ""
     fold_id: int = 0
     hyperparameters: Dict[str, Any] = field(default_factory=dict)
     best_epoch: Optional[int] = None
