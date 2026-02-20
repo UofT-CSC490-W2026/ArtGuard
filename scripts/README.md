@@ -5,13 +5,13 @@ These scripts can be run **locally from CLI** or **from GitHub Actions workflows
 All scripts support both environments with the same commands.
 
 ## Table of Contents
-1. [Quick Reference](#-quick-reference)
-2. [Detailed Documentation](#-detailed-documentation-detailed-)
-4. [Github Actions](#-github-actions-integration)
+1. [Quick Reference](#quick-reference)
+2. [Detailed Documentation](#detailed-documentation)
+4. [Github Actions](#github-actions-integration)
 
 ---
 
-## 📋 Quick Reference
+## Quick Reference
 
 ### **Build & Deploy Backend**
 ```bash
@@ -59,12 +59,6 @@ All scripts support both environments with the same commands.
 ./scripts/deploy-frontend.sh dev
 ```
 
-### **Lambda Functions**
-```bash
-# Deploy both Lambda functions
-./scripts/deploy-lambda.sh dev
-```
-
 ### **Knowledge Base**
 ```bash
 # Update Bedrock Knowledge Base with docs
@@ -91,7 +85,7 @@ All scripts support both environments with the same commands.
 
 ---
 
-## 📚 Detailed Documentation
+## Detailed Documentation
 
 ### All Available Scripts
 
@@ -100,7 +94,6 @@ All scripts support both environments with the same commands.
 | **build-and-push-docker.sh** | Build Docker image and push to ECR | Backend |
 | **deploy-ecs.sh** | Force ECS service deployment | Backend |
 | **deploy-frontend.sh** | Build React and deploy to S3/CloudFront | Frontend |
-| **deploy-lambda.sh** | Package and deploy Lambda functions | Lambda |
 | **bootstrap.sh** | One-time infrastructure setup | Infrastructure |
 | **terraform-deploy.sh** | Apply Terraform changes | Infrastructure |
 | **terraform-validate.sh** | Validate Terraform config (PRs) | Infrastructure |
@@ -289,42 +282,6 @@ Builds React application and deploys to S3 + CloudFront.
 
 ---
 
-### **deploy-lambda.sh**
-Packages and deploys Lambda functions.
-
-**Usage:**
-```bash
-./scripts/deploy-lambda.sh [environment]
-```
-
-**Environment Variables:**
-- `AWS_REGION` - AWS region (default: ca-central-1)
-
-**What it does:**
-1. **image_processor Lambda:**
-   - Packages Python dependencies from requirements.txt
-   - Creates deployment zip with lambda_function.py
-   - Updates `artguard-image-processor` function
-2. **ecs_scheduler Lambda:**
-   - Packages lambda_function.py
-   - Creates deployment zip
-   - Updates `artguard-ecs-scheduler` function
-
-**Examples:**
-```bash
-# Deploy both Lambdas to dev
-./scripts/deploy-lambda.sh dev
-
-# Deploy to prod
-./scripts/deploy-lambda.sh prod
-```
-
-**Deployed Functions:**
-- `artguard-image-processor` - Processes S3 image uploads (triggered by training/*.jpg)
-- `artguard-ecs-scheduler` - Scales ECS tasks based on schedule
-
----
-
 ### **bootstrap.sh**
 One-time infrastructure setup for new environments.
 
@@ -361,10 +318,10 @@ One-time infrastructure setup for new environments.
 ```
 
 **When to Use:**
-- ✅ First-time setup for dev environment
-- ✅ First-time setup for prod environment
-- ✅ Recreating destroyed infrastructure
-- ❌ DO NOT use for regular updates (use terraform-deploy.sh instead)
+- First-time setup for dev environment
+- First-time setup for prod environment
+- Recreating destroyed infrastructure
+- DO NOT use for regular updates (use terraform-deploy.sh instead)
 
 **Duration:** ~15-20 minutes
 
@@ -399,10 +356,10 @@ Validates Terraform configuration for Pull Requests and manual checks.
 ```
 
 **Use Cases:**
-- ✅ Before creating Pull Requests
-- ✅ Manual validation before applying changes
-- ✅ CI/CD validation in GitHub Actions
-- ✅ Checking if Terraform changes are valid
+- Before creating Pull Requests
+- Manual validation before applying changes
+- CI/CD validation in GitHub Actions
+- Checking if Terraform changes are valid
 
 **Output:**
 - Shows formatting issues (if any)
@@ -455,12 +412,12 @@ Updates Bedrock Knowledge Base with documentation for RAG.
 - Ingestion: Automatic (2-10 minutes)
 
 **Use Cases:**
-- ✅ Refreshing knowledge base content
-- ✅ Initial setup of RAG system
+- Refreshing knowledge base content
+- Initial setup of RAG system
 
 ---
 
-## 🤖 GitHub Actions Integration
+## GitHub Actions Integration
 
 All scripts are designed to work both locally and in GitHub Actions:
 
@@ -468,16 +425,15 @@ All scripts are designed to work both locally and in GitHub Actions:
 |----------|-------------|---------|
 | **app-docker.yml** | `build-and-push-docker.sh` + `deploy-ecs.sh` | Push to `dev` branch / Merge dev to main (backend changes) |
 | **frontend-deploy.yml** | `deploy-frontend.sh` | Push to `dev` branch (frontend changes) / Merge dev to main |
-| **lambda-deploy.yml** | `deploy-lambda.sh` | Push to `dev` branch (lambda changes) / Merge dev to main |
 | **terraform-bootstrap.yml** | `bootstrap.sh` | Manual workflow dispatch |
-| **terraform-deploy.yml** | `terraform-deploy.sh` | Manual workflow dispatch |
+| **terraform-deploy.yml** | `terraform-deploy.sh` | Push to `dev`/`main` (terraform changes) + Manual |
 | **terraform-pr.yml** | `terraform-validate.sh` | Pull Request (terraform changes) |
-| **ecs-control.yml** | `ecs-control.sh` | Manual workflow dispatch |
+| **ecs-manage.yml** | `ecs-control.sh` | Manual workflow dispatch |
 | **update-knowledge-base.yml** | `update-knowledge-base.sh` | Push to `dev` branch (docs changes) / Merge dev to main|
 
 ---
 
-## 💡 Tips
+## Tips
 
 **Save time with aliases:**
 ```bash
@@ -498,10 +454,6 @@ alias deploy-all-dev="./scripts/build-and-push-docker.sh dev && ./scripts/deploy
 alias ecs-logs="./scripts/ecs-control.sh logs dev"
 alias ecs-status="./scripts/ecs-control.sh status dev"
 alias ecs-deploy="./scripts/ecs-control.sh deploy dev"
-
-# Lambda operations
-alias deploy-lambda-dev="./scripts/deploy-lambda.sh dev"
-alias deploy-lambda-prod="./scripts/deploy-lambda.sh prod"
 
 # Knowledge Base
 alias update-kb="./scripts/update-knowledge-base.sh dev ./docs"
