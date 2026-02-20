@@ -20,16 +20,13 @@
 ### Key Technologies
 
 - **Compute**: ECS Fargate (serverless containers)
-- **Storage**: S3 (images, frontend), DynamoDB (metadata), OpenSearch Serverless (vector embeddings)
-- **ML/AI**: Amazon Bedrock, Modal (vision model)
+- **Storage**: S3 (images, frontend, docs needed for the RAG model), DynamoDB (for storing metadata), OpenSearch Serverless (vector embeddings)
+- **ML/AI**: Amazon Bedrock (for the RAG model), Modal (for the vision model)
 - **Networking**: VPC, ALB, CloudFront CDN, VPC Endpoints
 - **Monitoring**: CloudWatch (metrics, logs, dashboards), X-Ray (distributed tracing)
 - **IaC**: Terraform with environment-specific configs (dev/prod)
 
 ### What Gets Deployed
-
-Your infrastructure deployment creates:
-
 | Component | Description | Quantity |
 |-----------|-------------|----------|
 | **VPC** | Multi-AZ network with public/private subnets | 1 VPC, 2-3 AZs (2 dev, 3 prod) |
@@ -126,11 +123,7 @@ ___
 ## Architecture Decisions
 
 
-### 1. Why Bedrock + Modal?
-
-**Decision**: Support both Bedrock and Modal
-
-**Rationale**:
+### 1. Why we chose to use both AWS Bedrock and Modal
 
 **Bedrock (Claude 3.5 Sonnet)**:
 - Native AWS integration (no VPC egress needed)
@@ -144,42 +137,22 @@ ___
 - Faster inference (~2s vs 3-5s)
 - Custom fine tuning
 - Ensemble with Bedrock for higher explainability
----
-
-### 2. Why DynamoDB On-Demand vs Provisioned?
-
-**Decision**: Use on-demand billing mode
-
-**Rationale**:
-- **Unpredictable traffic**: Can't forecast request patterns in early stages. Too unpredicatable for now.
-- **Cost savings**: No wasted capacity during low usage
-- **No throttling**: Automatic scaling to any load
-- **Simplicity**: No capacity planning, no auto-scaling alarms
-
-**Files**: [terraform/database.tf](terraform/database.tf)
 
 ---
 
-### 5. Why VPC Endpoints Despite Extra Cost?
+### 2. Why VPC Endpoints Despite Extra Cost?
 
-**Decision**: Enable VPC endpoints for S3, ECR, CloudWatch, Secrets Manager
-
-**Rationale**:
+We enabled VPC endpoints for S3, ECR, CloudWatch, Secrets Manager due to the following reasons:
 
 **Security benefits**:
 - **Private connectivity**: No internet exposure for AWS API calls
 - **Reduced attack surface**: No NAT gateway for AWS services
 
-
 **Files**: [terraform/networking.tf](terraform/networking.tf)
 
 ---
 
-### 6. Why Auto-Pause Scheduler Only in Dev?
-
-**Decision**: AppAutoScaling scheduled actions only created for `environment == "dev"`
-
-**Rationale**:
+### 3. Why Auto-Pause Scheduler Only in Dev
 
 - **Cost savings**: $35/mo (10 hours × 30 days)
 - **No 24/7 availability needed**
@@ -192,11 +165,10 @@ ___
 ---
 
 
-### 7. Why Data Pipeline Shares the Backend ECS
+### 4. Why Data Pipeline Shares the Backend ECS
 
-**Decision**: The data pipeline code lives in the same Docker image and ECS cluster as the backend API.
+The data pipeline code lives in the same Docker image and ECS cluster as the backend API due to the following:
 
-**Rationale**:
 -  **It's a one-off script, not a long-running service** — The data pipeline uploads docs to S3 and triggers Bedrock ingestion, then it's done. A separate ECS service would idle 24/7 costing money for nothing.
 -  **Separate ECS services make sense for always-running workloads** with different scaling needs (e.g., an API server vs a queue worker). That's not this case.
 - **$0 extra cost** — Reuses the existing ECS task. No additional compute, no additional ALB, no additional auto-scaling config.
@@ -207,18 +179,15 @@ ___
 
 ---
 
-### 8. DynamoDB vs RDS for Your Use Case
-
-#### Why DynamoDB Works for You
+### 5. DynamoDB vs RDS: Why we chose to go with DynamoDB
 
 1. **Simple relationships**: Only 2 foreign keys (user_id, image_id)
 2. **No complex joins**: All "joins" are 1-to-many lookups (inference→user, patch→image)
 3. **Known query patterns**: All queries can be optimized with GSIs
 4. **High read/write throughput**: Image analysis generates lots of writes
 5. **Serverless scaling**: Handles spiky workloads automatically
-6. **Pay-per-request**: Only pay for what you use
+6. **Pay-per-request**: Only pay for what we use
 7. **Cheaper**: Massive cost savings
-
 
 ---
 
@@ -377,14 +346,6 @@ Access is controlled via IAM role policy. The ECS Execution Role has an inline p
 - Stored in Secrets Manager (encrypted)
 - Injected as environment variable into ECS tasks
 
-**Access control**:
-- Only ECS Execution Role can read
-- Resource-based policy denies all other principals
-- AWS root account can rotate (for disaster recovery)
-
-**Files**: [infra/disaster_recovery/secret_recovery.sh](infra/disaster_recovery/secret_recovery.sh)
-
-
 ---
 
 ## Monitoring & Observability
@@ -509,14 +470,6 @@ Retention set to 7 days (dev), 30 days (prod) instead of indefinite retention.
 S3 traffic from private subnets uses the free Gateway Endpoint instead of going through NAT Gateway, avoiding data transfer charges.
 
 **Files**: [terraform/networking.tf](terraform/networking.tf)
-
----
-
-#### 6. CloudFront PriceClass_100
-
-Restricts edge locations to North America and Europe only (cheapest tier) instead of global distribution.
-
-**Files**: [terraform/cloudfront.tf](terraform/cloudfront.tf)
 
 ---
 
