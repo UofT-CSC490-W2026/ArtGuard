@@ -10,6 +10,12 @@ set -e
 #   ./ecs-control.sh status dev
 #   ./ecs-control.sh logs dev
 
+# Ensure standard PATH directories are included
+# export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:$HOME/.local/bin:$PATH"
+
+# Disable AWS CLI pager (works with both v1 and v2)
+export AWS_PAGER=""
+
 ACTION=${1:-status}
 ENVIRONMENT=${2:-dev}
 DESIRED_COUNT=${3:-1}
@@ -24,8 +30,7 @@ case $ACTION in
       --cluster $ECS_CLUSTER \
       --service $ECS_SERVICE \
       --force-new-deployment \
-      --region $AWS_REGION \
-      --no-cli-pager
+      --region $AWS_REGION
 
     echo "✅ Deployment initiated successfully!"
     echo "New tasks will start in ~2-3 minutes"
@@ -37,8 +42,7 @@ case $ACTION in
       --cluster $ECS_CLUSTER \
       --service $ECS_SERVICE \
       --desired-count $DESIRED_COUNT \
-      --region $AWS_REGION \
-      --no-cli-pager
+      --region $AWS_REGION
 
     echo "✅ Scale operation initiated!"
     if [ "$DESIRED_COUNT" -eq "0" ]; then
@@ -54,17 +58,41 @@ case $ACTION in
     echo "Checking ECS service status..."
     echo ""
 
-    SERVICE_JSON=$(aws ecs describe-services \
+    # Get service status
+    DESIRED=$(aws ecs describe-services \
       --cluster $ECS_CLUSTER \
       --services $ECS_SERVICE \
       --region $AWS_REGION \
-      --no-cli-pager)
+      --query 'services[0].desiredCount' \
+      --output text)
 
-    DESIRED=$(echo $SERVICE_JSON | jq -r '.services[0].desiredCount')
-    RUNNING=$(echo $SERVICE_JSON | jq -r '.services[0].runningCount')
-    PENDING=$(echo $SERVICE_JSON | jq -r '.services[0].pendingCount')
-    STATUS=$(echo $SERVICE_JSON | jq -r '.services[0].status')
-    DEPLOYMENTS=$(echo $SERVICE_JSON | jq -r '.services[0].deployments | length')
+    RUNNING=$(aws ecs describe-services \
+      --cluster $ECS_CLUSTER \
+      --services $ECS_SERVICE \
+      --region $AWS_REGION \
+      --query 'services[0].runningCount' \
+      --output text)
+
+    PENDING=$(aws ecs describe-services \
+      --cluster $ECS_CLUSTER \
+      --services $ECS_SERVICE \
+      --region $AWS_REGION \
+      --query 'services[0].pendingCount' \
+      --output text)
+
+    STATUS=$(aws ecs describe-services \
+      --cluster $ECS_CLUSTER \
+      --services $ECS_SERVICE \
+      --region $AWS_REGION \
+      --query 'services[0].status' \
+      --output text)
+
+    DEPLOYMENTS=$(aws ecs describe-services \
+      --cluster $ECS_CLUSTER \
+      --services $ECS_SERVICE \
+      --region $AWS_REGION \
+      --query 'length(services[0].deployments)' \
+      --output text)
 
     echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
     echo "ECS Service Status"
@@ -95,7 +123,21 @@ case $ACTION in
 
     echo ""
     echo "Recent Events (last 5):"
-    echo $SERVICE_JSON | jq -r '.services[0].events[:5][] | "[\(.createdAt)] \(.message)"'
+    # Get events - format as table for readability
+    aws ecs describe-services \
+      --cluster $ECS_CLUSTER \
+      --services $ECS_SERVICE \
+      --region $AWS_REGION \
+      --query 'services[0].events[:5].[createdAt,message]' \
+      --output text | \
+      awk 'BEGIN {count=0} {
+        if (count % 2 == 0) {
+          date=$0
+        } else {
+          print "["date"] "$0
+        }
+        count++
+      }'
     ;;
 
   logs)

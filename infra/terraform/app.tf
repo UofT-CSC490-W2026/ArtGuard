@@ -2,12 +2,8 @@
 
 resource "aws_ecr_repository" "backend" {
   name                 = "${local.project_name}-backend"
-  image_tag_mutability = "IMMUTABLE_WITH_EXCLUSION"
-
-  image_tag_mutability_exclusion_filter {
-    filter      = "latest"
-    filter_type = "WILDCARD"
-  }
+  image_tag_mutability = "MUTABLE"
+  force_delete         = var.environment != "prod" # Allow deletion with images in non-prod environments
 
   image_scanning_configuration {
     scan_on_push = var.ecr_scan_on_push
@@ -246,7 +242,7 @@ resource "aws_ecs_task_definition" "backend" {
         },
         {
           name  = "DYNAMODB_TABLE_NAME"
-          value = aws_dynamodb_table.image_analysis.name
+          value = aws_dynamodb_table.image_records.name
         },
         {
           name  = "S3_IMAGES_RAW_BUCKET"

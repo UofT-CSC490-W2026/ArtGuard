@@ -73,7 +73,7 @@ resource "aws_s3_bucket" "images_raw" {
 
   tags = {
     Name    = "${local.project_name}-images-raw"
-    Purpose = "Raw Image Storage (User Uploads)"
+    Purpose = "Raw Image Storage - User Uploads"
   }
 }
 
@@ -287,6 +287,8 @@ resource "aws_s3_bucket_lifecycle_configuration" "images_processed" {
     id     = "archive-old-processed-images"
     status = "Enabled"
 
+    filter {}
+
     transition {
       days          = 90
       storage_class = "STANDARD_IA"
@@ -372,7 +374,7 @@ resource "aws_s3_bucket" "knowledge_base" {
 
   tags = {
     Name    = "${local.project_name}-knowledge-base"
-    Purpose = "Bedrock Knowledge Base Documents (RAG)"
+    Purpose = "Bedrock Knowledge Base Documents - RAG"
   }
 }
 

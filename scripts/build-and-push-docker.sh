@@ -5,6 +5,9 @@ set -e
 # Usage: ./build-and-push-docker.sh [environment]
 # Example: ./build-and-push-docker.sh dev
 
+# Ensure standard PATH directories are included
+# export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:$HOME/.local/bin:$PATH"
+
 ENVIRONMENT=${1:-dev}
 AWS_REGION=${AWS_REGION:-ca-central-1}
 ECR_REPOSITORY=${ECR_REPOSITORY:-artguard-backend}

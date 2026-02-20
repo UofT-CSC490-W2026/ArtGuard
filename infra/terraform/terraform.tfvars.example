@@ -93,6 +93,10 @@ bedrock_chunk_overlap_percentage  = 20 # Overlap between chunks (preserves conte
 bedrock_vector_index_name         = "bedrock-knowledge-base-index" # OpenSearch index name
 # Usually no need to change this unless you have multiple knowledge bases
 
+bedrock_ingest_test_data          = false # Auto-upload test data and create index
+# Dev: true (creates index automatically for demos)
+# Prod: false (use real data via update-knowledge-base.sh script)
+
 # ECR (Docker Registry) Configuration
 ecr_image_retention_count = 10   # Number of tagged images to keep
 # Dev: 5 (save storage costs)

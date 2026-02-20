@@ -5,6 +5,12 @@ set -e
 # Usage: ./setup-secrets.sh [environment]
 # Example: ./setup-secrets.sh dev
 
+# Ensure standard PATH directories are included
+# export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:$HOME/.local/bin:$PATH"
+
+# Disable AWS CLI pager (works with both v1 and v2)
+export AWS_PAGER=""
+
 ENVIRONMENT=${1:-dev}
 AWS_REGION=${AWS_REGION:-ca-central-1}
 SECRET_NAME="artguard/modal-api-key-$ENVIRONMENT"
@@ -32,8 +38,7 @@ echo "📤 Uploading secret to AWS Secrets Manager..."
 aws secretsmanager put-secret-value \
   --secret-id $SECRET_NAME \
   --secret-string "$MODAL_API_KEY" \
-  --region $AWS_REGION \
-  --no-cli-pager
+  --region $AWS_REGION
 
 echo ""
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"

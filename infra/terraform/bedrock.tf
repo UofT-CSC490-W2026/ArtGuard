@@ -93,7 +93,8 @@ resource "aws_opensearchserverless_collection" "knowledge_base" {
 
   depends_on = [
     aws_opensearchserverless_security_policy.knowledge_base_encryption,
-    aws_opensearchserverless_security_policy.knowledge_base_network
+    aws_opensearchserverless_security_policy.knowledge_base_network,
+    aws_opensearchserverless_access_policy.knowledge_base
   ]
 
   tags = {
@@ -116,27 +117,8 @@ resource "null_resource" "opensearch_index" {
   }
 
   provisioner "local-exec" {
-    command = <<-EOT
-      awscurl --service aoss --region ${var.aws_region} \
-        -X PUT "${aws_opensearchserverless_collection.knowledge_base.collection_endpoint}/${var.bedrock_vector_index_name}" \
-        -H "Content-Type: application/json" \
-        -d '{
-          "settings": {
-            "index": { "knn": true, "knn.algo_param.ef_search": 512 }
-          },
-          "mappings": {
-            "properties": {
-              "${var.bedrock_vector_index_name}-vector": {
-                "type": "knn_vector",
-                "dimension": 1536,
-                "method": { "engine": "faiss", "name": "hnsw" }
-              },
-              "AMAZON_BEDROCK_TEXT_CHUNK": { "type": "text" },
-              "AMAZON_BEDROCK_METADATA": { "type": "text" }
-            }
-          }
-        }'
-    EOT
+    interpreter = ["/bin/bash", "-c"]
+    command     = "set -e; echo '========================================'; echo 'Creating OpenSearch index structure'; echo '========================================'; if ! command -v awscurl &> /dev/null; then echo 'Warning: awscurl not found. Installing...'; pip3 install --quiet awscurl || { echo 'Error: Could not install awscurl'; echo 'Please run: pip3 install awscurl'; exit 1; }; fi; echo 'Creating index: ${var.bedrock_vector_index_name}'; RESPONSE=$(awscurl --service aoss --region ${var.aws_region} -X PUT '${aws_opensearchserverless_collection.knowledge_base.collection_endpoint}/${var.bedrock_vector_index_name}' -H 'Content-Type: application/json' -d '{\"settings\":{\"index\":{\"knn\":true,\"knn.algo_param.ef_search\":512}},\"mappings\":{\"properties\":{\"${var.bedrock_vector_index_name}-vector\":{\"type\":\"knn_vector\",\"dimension\":1536,\"method\":{\"engine\":\"faiss\",\"name\":\"hnsw\"}},\"AMAZON_BEDROCK_TEXT_CHUNK\":{\"type\":\"text\"},\"AMAZON_BEDROCK_METADATA\":{\"type\":\"object\"}}}}' 2>&1); EXIT_CODE=$?; if [ $EXIT_CODE -eq 0 ]; then echo 'Success: Index created successfully'; else if echo \"$RESPONSE\" | grep -q 'resource_already_exists_exception\\|already exists'; then echo 'Warning: Index already exists - this is fine'; else echo 'Warning: Index creation warning (exit code: $EXIT_CODE)'; echo \"Response: $RESPONSE\"; echo 'Continuing - Bedrock will validate or create index during sync'; fi; fi; echo '========================================'"
   }
 }
 

@@ -130,6 +130,12 @@ variable "bedrock_vector_index_name" {
   default     = "bedrock-knowledge-base-index"
 }
 
+variable "bedrock_ingest_test_data" {
+  description = "Whether to automatically upload and ingest test data into the Knowledge Base (creates the OpenSearch index)"
+  type        = bool
+  default     = false
+}
+
 # ECR Configuration
 variable "ecr_image_retention_count" {
   description = "Number of tagged images to retain in ECR"

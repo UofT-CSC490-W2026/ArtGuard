@@ -5,6 +5,9 @@ set -e
 # Usage: ./deploy-frontend.sh [environment]
 # Example: ./deploy-frontend.sh dev
 
+# Ensure standard PATH directories are included
+# export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:$HOME/.local/bin:$PATH"
+
 ENVIRONMENT=${1:-dev}
 AWS_REGION=${AWS_REGION:-ca-central-1}
 FRONTEND_DIR="src/apps/frontend"

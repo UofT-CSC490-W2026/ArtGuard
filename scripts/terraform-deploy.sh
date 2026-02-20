@@ -10,6 +10,9 @@ set -e
 #   ./terraform-deploy.sh dev apply
 #   ./terraform-deploy.sh prod apply
 
+# Ensure standard PATH directories are included
+# export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:$HOME/.local/bin:$PATH"
+
 ENVIRONMENT=${1:-dev}
 ACTION=${2:-plan}
 AWS_REGION=${AWS_REGION:-ca-central-1}
