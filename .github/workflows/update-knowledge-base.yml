@@ -61,4 +61,4 @@ jobs:
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "**Documents synced and embeddings created**" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "📊 The RAG system will have the updated documentation in ~2-10 minutes." >> $GITHUB_STEP_SUMMARY
+          echo "The RAG system will have the updated documentation in ~2-10 minutes." >> $GITHUB_STEP_SUMMARY
