@@ -3,7 +3,7 @@ import json
 import os
 import time
 
-OUTPUT_FILE = "output/wikidata_data.jsonl"
+OUTPUT_FILE = "preprocessing/output/wikidata_data.jsonl"
 
 SPARQL_ENDPOINT = "https://query.wikidata.org/sparql"
 
