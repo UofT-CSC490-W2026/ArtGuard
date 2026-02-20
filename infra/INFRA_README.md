@@ -121,9 +121,6 @@ VPC: 10.0.0.0/16 (ca-central-1)
 └─────────────────────────────────────────────────────────────┘
 ```
 
-
-See [COMPONENT_DESCRIPTION.md](COMPONENT_DESCRIPTION.md) 
-
 ___
 
 ## Architecture Decisions
