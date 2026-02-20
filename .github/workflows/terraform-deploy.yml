@@ -1,0 +1,62 @@
+name: Terraform Deploy
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main  # Production
+      - dev   # Development
+    paths:
+      - "infra/terraform/**"
+      - ".github/workflows/terraform-deploy.yml"
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  terraform-deploy:
+    name: Terraform Apply
+    runs-on: ubuntu-latest
+
+    # Dynamically select environment based on branch
+    environment: ${{ github.ref == 'refs/heads/main' && 'prod' || 'dev' }}
+
+    env:
+      AWS_REGION: ca-central-1
+      TF_VERSION: "1.10.0"
+      ENVIRONMENT: ${{ github.ref == 'refs/heads/main' && 'prod' || 'dev' }}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: ${{ env.TF_VERSION }}
+          terraform_wrapper: false
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Display deployment info
+        run: |
+          echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+          echo "Terraform Deployment"
+          echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+          echo "Branch: ${{ github.ref_name }}"
+          echo "Environment: ${{ env.ENVIRONMENT }}"
+          echo "Backend Config: backend-${{ env.ENVIRONMENT }}.hcl"
+          echo "Variables File: ${{ env.ENVIRONMENT }}.tfvars"
+          echo "Region: ${{ env.AWS_REGION }}"
+          echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+
+      - name: Deploy infrastructure with Terraform
+        run: |
+          ./scripts/terraform-deploy.sh ${{ env.ENVIRONMENT }} init
+          ./scripts/terraform-deploy.sh ${{ env.ENVIRONMENT }} apply
