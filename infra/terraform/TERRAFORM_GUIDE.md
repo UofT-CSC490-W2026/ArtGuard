@@ -20,14 +20,14 @@
 - `networking.tf` - VPC, subnets, NAT gateways, routing tables
 - `security_groups.tf` - Security groups for ECS, ALB
 - `app.tf` - ECS Fargate cluster, services, ALB, auto-scaling
-- `scheduler.tf` - EventBridge rules for ECS pause/resume
+- `scheduler.tf` - AppAutoScaling scheduled actions for ECS pause/resume
 - `s3.tf` - S3 buckets (images, frontend, knowledge base)
 - `cloudfront.tf` - CloudFront distribution for frontend + API
 - `database.tf` - DynamoDB tables and indexes
 - `bedrock.tf` - Amazon Bedrock Knowledge Base for RAG
 - `iam.tf` - IAM roles and policies (ECS, Bedrock)
 - `secrets.tf` - AWS Secrets Manager (Modal API key)
-- `monitoring.tf` - CloudWatch alarms and dashboards
+- `monitoring.tf` - CloudWatch dashboards
 - `route53.tf` - DNS configuration (optional custom domain)
 
 ## Where Outputs Are Saved
@@ -43,8 +43,8 @@ When Terraform creates infrastructure, it generates outputs (URLs, IDs, etc.). T
   "version": 4,
   "terraform_version": "1.10.0",
   "outputs": {
-    "backend_url": {
-      "value": "http://artguard-alb-dev-123456789.ca-central-1.elb.amazonaws.com",
+    "alb_dns_name": {
+      "value": "artguard-alb-dev-123456789.ca-central-1.elb.amazonaws.com",
       "type": "string"
     },
     "cloudfront_distribution_url": {
@@ -66,7 +66,7 @@ When Terraform creates infrastructure, it generates outputs (URLs, IDs, etc.). T
 terraform output
 
 # Get specific output
-terraform output -raw backend_url
+terraform output -raw alb_dns_name
 
 # Get JSON format
 terraform output -json > outputs.json
@@ -307,7 +307,7 @@ terraform output
 terraform output
 
 # View specific output
-terraform output -raw backend_url
+terraform output -raw alb_dns_name
 terraform output -raw cloudfront_distribution_url
 terraform output -raw ecr_repository_url
 
@@ -349,7 +349,7 @@ terraform init -backend-config=backend-prod.hcl
 terraform output
 
 # Always verify which environment you're in!
-terraform output environment  # Should show: dev or prod
+terraform output -json summary | jq '.environment'  # Should show: dev or prod
 ```
 
 ### Terraform Best Practices
