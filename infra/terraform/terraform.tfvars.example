@@ -1,0 +1,133 @@
+# Terraform Variables Configuration Example
+# Copy this file to dev.tfvars or prod.tfvars and update with your values
+
+# Project Configuration
+environment  = "dev" # Options: dev or prod
+
+# AWS Configuration
+aws_region = "us-east-1"
+
+# Custom Domain
+enable_custom_domain = false # Set to true after domain registration
+domain_name          = ""    # e.g., "artguard.com" (leave empty if not using custom domain)
+
+# VPC and Networking Configuration
+vpc_cidr             = "10.0.0.0/16" # VPC CIDR block (10.0.0.0/16 provides 65,536 IP addresses)
+az_count             = 2             # Number of availability zones (2 for dev, 3 for prod HA)
+enable_vpc_endpoints = true          # Enable VPC endpoints for cost optimization and security
+
+# ECS Fargate Configuration
+ecs_cpu           = 1024  # vCPU units (256, 512, 1024, 2048, 4096)
+# Dev: 1024 (1 vCPU)
+# Prod: 2048 (2 vCPU)
+
+ecs_memory        = 2048  # Memory in MB (must be compatible with CPU)
+# Dev: 2048 (2 GB)
+# Prod: 4096 (4 GB)
+# Valid CPU/Memory combinations:
+#   256 CPU: 512, 1024, 2048 MB
+#   512 CPU: 1024-4096 MB
+#   1024 CPU: 2048-8192 MB
+#   2048 CPU: 4096-16384 MB
+#   4096 CPU: 8192-30720 MB
+
+ecs_desired_count = 1     # Number of tasks to run
+# Dev: 1 (single task)
+# Prod: 2+ (for high availability)
+
+ecs_min_capacity  = 1     # Minimum tasks for auto-scaling
+# Dev: 1
+# Prod: 2+ (for HA)
+
+ecs_max_capacity  = 5     # Maximum tasks for auto-scaling
+# Dev: 5
+# Prod: 10+
+
+use_fargate_spot  = false # Use Fargate Spot for 70% cost savings (can be interrupted)
+# Dev: true (save costs, interruptions acceptable)
+# Prod: false (reliability over cost)
+
+# ECS Auto Scaling Configuration
+ecs_cpu_target            = 70   # Target CPU utilization % for scaling
+ecs_memory_target         = 80   # Target memory utilization % for scaling
+ecs_request_count_target  = 1000 # Target requests per task for scaling
+enable_container_insights = true # Enable CloudWatch Container Insights
+
+# ALB Health Check Configuration
+ecs_health_check_interval            = 30 # Health check interval in seconds
+# Dev: 30 seconds
+# Prod: 10 seconds (more frequent)
+
+ecs_health_check_timeout             = 5  # Health check timeout in seconds
+ecs_health_check_healthy_threshold   = 2  # Consecutive successful checks = healthy
+ecs_health_check_unhealthy_threshold = 3  # Consecutive failed checks = unhealthy
+
+# DynamoDB Configuration
+dynamodb_billing_mode  = "PAY_PER_REQUEST" # Or "PROVISIONED"
+enable_dynamodb_pitr   = true              # Point-in-time recovery (enable for prod)
+
+# S3 Configuration
+s3_lifecycle_glacier_days   = 180  # Days before moving to Glacier (cheaper storage)
+s3_lifecycle_expiration_days = 0   # Days before deletion (0 = disabled)
+
+# CloudWatch Configuration
+log_retention_days        = 7    # Log retention in days (7 for dev, 30+ for prod)
+
+# Feature Flags
+enable_xray_tracing = false # Enable X-Ray distributed tracing (optional)
+
+# Bedrock Knowledge Base Configuration (RAG)
+bedrock_embedding_model           = "amazon.titan-embed-text-v1" # Embedding model
+
+bedrock_chunking_strategy         = "FIXED_SIZE" # How documents are split
+# Options: "FIXED_SIZE" (recommended) or "NONE" (use whole document)
+
+bedrock_chunk_max_tokens          = 300 # Tokens per chunk
+# Dev: 300 (faster, less context)
+# Prod: 512 (slower, more context per chunk)
+# Range: 20-8000 tokens
+
+bedrock_chunk_overlap_percentage  = 20 # Overlap between chunks (preserves context)
+# Range: 1-99%
+
+bedrock_vector_index_name         = "bedrock-knowledge-base-index" # OpenSearch index name
+# Usually no need to change this unless you have multiple knowledge bases
+
+bedrock_ingest_test_data          = false # Auto-upload test data and create index
+# Dev: true (creates index automatically for demos)
+# Prod: false (use real data via update-knowledge-base.sh script)
+
+# ECR (Docker Registry) Configuration
+ecr_image_retention_count = 10   # Number of tagged images to keep
+# Dev: 5 (save storage costs)
+# Prod: 20 (more history for rollbacks)
+
+ecr_untagged_image_days   = 7    # Days before deleting untagged images
+# Dev: 3 (clean up faster)
+# Prod: 7 (standard retention)
+
+ecr_scan_on_push          = true # Scan images for vulnerabilities on push
+# Dev: false (faster pushes)
+# Prod: true (security requirement)
+
+
+# S3 Lifecycle Configuration
+s3_inference_expiration_days   = 30 # Days before deleting inference images
+# GDPR/privacy compliance - adjust based on your requirements
+# Dev: 7 days (faster cleanup)
+# Prod: 30 days (standard compliance)
+
+s3_training_ia_transition_days = 90 # Days before moving training images to Standard-IA
+# Cost optimization - transition to cheaper storage tier
+# Dev: 30 days (faster transition)
+# Prod: 90 days (keep in Standard longer)
+
+# Scheduler Configuration (Auto Pause/Resume)
+
+scheduler_pause_cron  = "cron(0 3 * * ? *)"  # Pause time (default: 10 PM EST = 3 AM UTC)
+scheduler_resume_cron = "cron(0 13 * * ? *)" # Resume time (default: 8 AM EST = 1 PM UTC)
+
+# Secrets Manager Configuration
+secrets_recovery_window_days = 7 # Days before permanent deletion of secrets
+# Dev: 7 days (faster cleanup)
+# Prod: 30 days (security policy, more time to recover)

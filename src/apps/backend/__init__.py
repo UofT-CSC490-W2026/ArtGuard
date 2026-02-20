@@ -1,0 +1,1 @@
+"""ArtGuard FastAPI Application"""

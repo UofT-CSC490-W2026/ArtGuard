@@ -1,0 +1,112 @@
+name: Terraform Bootstrap (One-Time Setup)
+
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Environment to bootstrap (dev or prod)'
+        required: true
+        type: choice
+        options:
+          - dev
+          - prod
+      confirm:
+        description: 'Type "BOOTSTRAP" to confirm (this creates infrastructure)'
+        required: true
+        type: string
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  bootstrap:
+    name: Bootstrap ${{ inputs.environment }} Environment
+    runs-on: ubuntu-latest
+
+    environment: ${{ inputs.environment }}
+
+    env:
+      AWS_REGION: ca-central-1
+      TF_VERSION: "1.10.0"
+      ENVIRONMENT: ${{ inputs.environment }}
+
+    steps:
+      - name: Validate confirmation
+        run: |
+          if [ "${{ inputs.confirm }}" != "BOOTSTRAP" ]; then
+            echo "❌ Confirmation failed. You must type 'BOOTSTRAP' to proceed."
+            exit 1
+          fi
+          echo "✅ Confirmation validated"
+
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: ${{ env.TF_VERSION }}
+          terraform_wrapper: false
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Make scripts executable
+        run: chmod +x scripts/*.sh
+
+      - name: Run bootstrap script
+        run: |
+          # Auto-confirm by providing "yes" responses
+          echo "yes" | ./scripts/bootstrap.sh ${{ env.ENVIRONMENT }}
+        env:
+          AWS_REGION: ${{ env.AWS_REGION }}
+
+      - name: Save Terraform Outputs
+        working-directory: infra/terraform
+        run: |
+          echo "Saving Terraform outputs..."
+          terraform output -json > outputs.json
+
+          echo ""
+          echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+          echo "✅ Bootstrap Complete!"
+          echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+          echo ""
+          echo "📊 Key Outputs:"
+          echo ""
+          echo "Frontend URL:"
+          terraform output -raw cloudfront_distribution_url || echo "Not available"
+          echo ""
+          echo "Backend API (ALB):"
+          terraform output -raw backend_url || echo "Not available"
+          echo ""
+          echo "S3 Frontend Bucket:"
+          terraform output -raw s3_frontend_bucket_name || echo "Not available"
+          echo ""
+          echo "CloudFront Distribution ID:"
+          terraform output -raw cloudfront_distribution_id || echo "Not available"
+          echo ""
+          echo "ECR Repository:"
+          terraform output -raw ecr_repository_url || echo "Not available"
+          echo ""
+          echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+          echo ""
+          echo "📝 Next Steps:"
+          echo "  1. Set Modal API key: ./scripts/setup-secrets.sh ${{ env.ENVIRONMENT }}"
+          echo "  2. Build and deploy backend: ./scripts/build-and-push-docker.sh ${{ env.ENVIRONMENT }}"
+          echo "  3. Deploy frontend: ./scripts/deploy-frontend.sh ${{ env.ENVIRONMENT }}"
+          echo ""
+          echo "🎉 Your ${{ env.ENVIRONMENT }} environment is ready!"
+          echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+
+      - name: Upload outputs artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: terraform-outputs-${{ env.ENVIRONMENT }}
+          path: infra/terraform/outputs.json
+          retention-days: 30

@@ -1,0 +1,64 @@
+name: Update Knowledge Base
+
+# Trigger when documentation changes
+on:
+  push:
+    branches:
+      - dev
+      - main
+    paths:
+      - 'docs/**'  # Only trigger when docs/ folder changes
+  workflow_dispatch:  # Allow manual trigger from GitHub UI
+    inputs:
+      environment:
+        description: 'Environment (dev/prod)'
+        required: true
+        default: 'dev'
+        type: choice
+        options:
+          - dev
+          - prod
+
+jobs:
+  upload-documents:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ca-central-1
+
+      - name: Determine environment
+        id: env
+        run: |
+          if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+            echo "environment=${{ inputs.environment }}" >> $GITHUB_OUTPUT
+          elif [ "${{ github.ref }}" == "refs/heads/main" ]; then
+            echo "environment=prod" >> $GITHUB_OUTPUT
+          else
+            echo "environment=dev" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Upload documents to Knowledge Base
+        run: |
+          chmod +x scripts/update-knowledge-base.sh
+          ./scripts/update-knowledge-base.sh ${{ steps.env.outputs.environment }} ./docs
+
+      - name: Summary
+        if: success()
+        run: |
+          echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" >> $GITHUB_STEP_SUMMARY
+          echo "## ✅ Knowledge Base Updated Successfully!" >> $GITHUB_STEP_SUMMARY
+          echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Environment:** \`${{ steps.env.outputs.environment }}\`" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Documents synced and embeddings created**" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "The RAG system will have the updated documentation in ~2-10 minutes." >> $GITHUB_STEP_SUMMARY
