@@ -73,7 +73,7 @@ async def train(body: TrainRequest):
     run_id = str(uuid.uuid4())
     command = [
         "python",
-        "model/cross_validation.py",
+        "model/driver.py",
         "--run_id", run_id,
         "--dataset_version", body.dataset_version,
         "--k_folds", str(body.k_folds),
