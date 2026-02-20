@@ -1,6 +1,7 @@
-from fastapi import FastAPI, UploadFile, File, HTTPException, Header
+from fastapi import FastAPI, UploadFile, File, HTTPException, Header, BackgroundTasks
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
+import subprocess
 import boto3
 import json
 import os, time
@@ -13,6 +14,15 @@ import requests
 from preprocessing.process import process_inference_image
 
 app = FastAPI(title="ArtGuard API", version="1.0.0")
+
+PIPELINE_SCRIPTS = [
+    "preprocessing/met_pipeline.py",
+    "preprocessing/wikidata_pipeline.py"
+]
+UPDATE_KB_SCRIPT = "./update-knowledge-base.sh"
+
+DOCS_DIR = "preprocessing/output"
+ENVIRONMENT = "dev"
 
 @app.get("/health")
 async def health_check():
@@ -212,3 +222,22 @@ async def infer(file: UploadFile = File(...)):
     explanation = "This is a sample response."
 
     return InferenceResponse(inference_id=inference_id, score=score, explanation=explanation)
+def run_pipeline(script_path: str):
+    """Run a Python preprocessing pipeline."""
+    if not os.path.exists(script_path):
+        raise FileNotFoundError(f"Pipeline script not found: {script_path}")
+    subprocess.run(["python", script_path], check=True)
+
+def run_update_knowledge_base():
+    """Call the existing Bash script to upload docs to S3 and trigger ingestion."""
+    if not os.path.exists(UPDATE_KB_SCRIPT):
+        raise FileNotFoundError(f"Update script not found: {UPDATE_KB_SCRIPT}")
+    subprocess.run([UPDATE_KB_SCRIPT, ENVIRONMENT, DOCS_DIR], check=True)
+
+@app.post("/upload-rag-data")
+async def upload_rag_data(background_tasks: BackgroundTasks):
+    # Create endpoint to trigger RAG pipeline (both met_pipeline.py and wikidata_pipeline.py) and upload data to S3 via the update_knowledge_base.py script
+    for script in PIPELINE_SCRIPTS:
+        background_tasks.add_task(run_pipeline, script)
+    background_tasks.add_task(run_update_knowledge_base)
+    return {"status": "RAG data upload initiated. Pipelines are running in the background."}
