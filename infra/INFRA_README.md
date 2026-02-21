@@ -476,7 +476,7 @@ S3 traffic from private subnets uses the free Gateway Endpoint instead of going 
 
 We followed an IaaC approach and used terraform to provision AWS resources for our infrastructure. In the case of an infrastructure failure, running `terraform apply` along with running a couple of scripts to repopulate data within the S3 buckets and dynamo DB tables can help us restore to a functional state.
 
-Here's a video demo where we simulate an infrasture failure by deleting all our resources and then recreate them using terraform: [ADD VIDEO LINK]
+Here's a video demo where we simulate an infrasture failure by deleting all our resources and then recreate them using terraform: ![Disaster Recovery](./disaster_recovery.mp4)
 
 ## Environment Differences
 
