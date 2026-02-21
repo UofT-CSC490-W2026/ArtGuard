@@ -298,10 +298,8 @@ resource "aws_ecs_task_definition" "backend" {
           name  = "ECS_CLUSTER"
           value = aws_ecs_cluster.main.name
         },
-        {
-          name  = "ECS_PROCESS_TASK_DEF_ARN"
-          value = aws_ecs_task_definition.backend.arn
-        },
+        # Note: ECS_PROCESS_TASK_DEF_ARN removed - cannot reference self
+        # Application can construct ARN from family name: arn:aws:ecs:${region}:${account}:task-definition/artguard-backend
         {
           name  = "ECS_PRIVATE_SUBNETS"
           value = join(",", aws_subnet.private[*].id)
