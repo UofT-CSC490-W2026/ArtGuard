@@ -5,13 +5,11 @@
 1. [Overview](#overview)
 2. [Architecture Diagrams](#architecture-diagrams)
 3. [Architecture Decisions](#architecture-decisions)
-4. [Performance & Scalability](#performance--scalability)
-5. [Security](#security)
-6. [Monitoring & Observability](#monitoring--observability)
-7. [Cost Management](#cost-management)
-8. [Deployment & Operations](#deployment--operations)
-9. [Environment Differences](#environment-differences)
-
+4. [Security](#security)
+5. [Monitoring & Observability](#monitoring-observability)
+6. [Cost Management](#cost-management)
+7. [Disaster Recovery](#disaster-recovery)
+8. [Environment Differences](#environment-differences)
 ---
 
 ## Overview
@@ -426,6 +424,8 @@ Access is controlled via IAM role policy. The ECS Execution Role has an inline p
 
 ---
 
+## Cost Management
+
 ### Implemented Cost Optimizations
 
 #### 1. Dev Auto-Pause Scheduler
@@ -472,7 +472,7 @@ S3 traffic from private subnets uses the free Gateway Endpoint instead of going 
 
 ---
 
-### Disaster Recovery
+## Disaster Recovery
 
 We followed an IaaC approach and used terraform to provision AWS resources for our infrastructure. In the case of an infrastructure failure, running `terraform apply` along with running a couple of scripts to repopulate data within the S3 buckets and dynamo DB tables can help us restore to a functional state.
 
