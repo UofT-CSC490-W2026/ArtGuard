@@ -62,7 +62,7 @@
 ## Architecture Diagrams
 
 ### High-Level Architecture
-![Infra Architecture Diagram](./readme_images/infra_architecture_diagram.png)
+![Infra Architecture Diagram](./infrastructure_architecture_diagram)
 
 ### Network Architecture
 
