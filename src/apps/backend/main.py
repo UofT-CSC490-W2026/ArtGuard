@@ -222,6 +222,7 @@ async def infer(file: UploadFile = File(...)):
     explanation = "This is a sample response."
 
     return InferenceResponse(inference_id=inference_id, score=score, explanation=explanation)
+
 def run_pipeline(script_path: str):
     """Run a Python preprocessing pipeline."""
     if not os.path.exists(script_path):
