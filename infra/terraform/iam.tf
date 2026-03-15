@@ -211,7 +211,7 @@ resource "aws_iam_role_policy" "ecs_exec" {
   })
 }
 
-# Bedrock Knowledge Base IAM Role 
+# Bedrock Knowledge Base IAM Role
 resource "aws_iam_role" "bedrock_knowledge_base" {
   name = "${local.project_name}-bedrock-kb-role"
 
@@ -288,7 +288,7 @@ resource "aws_iam_role_policy" "bedrock_kb_model_access" {
         Action = [
           "bedrock:InvokeModel"
         ]
-        Resource = "arn:aws:bedrock:${var.aws_region}::foundation-model/amazon.titan-embed-text-v1"
+        Resource = "arn:aws:bedrock:${var.aws_region}::foundation-model/${var.bedrock_embedding_model}"
       }
     ]
   })

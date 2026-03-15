@@ -91,7 +91,7 @@ variable "enable_xray_tracing" {
 variable "bedrock_embedding_model" {
   description = "Bedrock embedding model for Knowledge Base"
   type        = string
-  default     = "amazon.titan-embed-text-v1"
+  default     = "amazon.titan-embed-text-v2:0"
 }
 
 variable "bedrock_chunking_strategy" {

@@ -1,0 +1,98 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# Upload local RAG pipeline output to the Knowledge Base S3 bucket
+# and trigger a Bedrock Knowledge Base ingestion job.
+#
+# Usage:
+#   ./scripts/upload-rag-data.sh
+#
+# Prerequisites:
+#   - AWS credentials configured
+#   - Terraform deployed (reads outputs for bucket name and KB ID)
+#   - Pipeline output exists in one or both of:
+#       src/apps/data_pipeline/output/
+#       preprocessing/output/
+
+DOCS_DIRS=(
+  "src/apps/data_pipeline/output"
+)
+TERRAFORM_DIR="infra/terraform"
+S3_PREFIX="documents"
+
+echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+echo "Upload RAG Data to S3"
+echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+
+# Get config from Terraform outputs
+BUCKET=$(terraform -chdir="$TERRAFORM_DIR" output -raw knowledge_base_s3_bucket 2>/dev/null) || {
+  echo "Error: Could not read knowledge_base_s3_bucket from Terraform outputs." >&2
+  echo "Make sure you have deployed with: cd $TERRAFORM_DIR && terraform apply" >&2
+  exit 1
+}
+KB_ID=$(terraform -chdir="$TERRAFORM_DIR" output -raw knowledge_base_id 2>/dev/null) || {
+  echo "Warning: Could not read knowledge_base_id. Skipping ingestion trigger." >&2
+  KB_ID=""
+}
+AWS_REGION=$(terraform -chdir="$TERRAFORM_DIR" output -raw aws_region 2>/dev/null || echo "ca-central-1")
+
+echo "Bucket:    $BUCKET"
+echo "KB ID:     ${KB_ID:-<not set>}"
+echo "Region:    $AWS_REGION"
+echo "Docs dirs: ${DOCS_DIRS[*]}"
+echo ""
+
+# Upload files from all output directories
+UPLOADED=0
+for DOCS_DIR in "${DOCS_DIRS[@]}"; do
+  if [[ ! -d "$DOCS_DIR" ]] || [[ -z "$(ls -A "$DOCS_DIR" 2>/dev/null)" ]]; then
+    echo "Skipping $DOCS_DIR (not found or empty)"
+    continue
+  fi
+  for file in "$DOCS_DIR"/*.jsonl; do
+    [[ -f "$file" ]] || continue
+    fname=$(basename "$file")
+    echo "Uploading $fname -> s3://$BUCKET/$S3_PREFIX/$fname"
+    aws s3 cp "$file" "s3://$BUCKET/$S3_PREFIX/$fname" --region "$AWS_REGION"
+    UPLOADED=$((UPLOADED + 1))
+  done
+done
+
+if [[ $UPLOADED -eq 0 ]]; then
+  echo "Error: No .jsonl files found in any output directory." >&2
+  exit 1
+fi
+
+echo ""
+echo "Uploaded $UPLOADED file(s) to s3://$BUCKET/$S3_PREFIX/"
+
+# Trigger Knowledge Base ingestion
+if [[ -n "$KB_ID" ]]; then
+  echo ""
+  echo "Triggering Knowledge Base ingestion..."
+  DS_ID=$(aws bedrock-agent list-data-sources \
+    --knowledge-base-id "$KB_ID" \
+    --region "$AWS_REGION" \
+    --query "dataSourceSummaries[0].dataSourceId" \
+    --output text)
+
+  if [[ -n "$DS_ID" && "$DS_ID" != "None" ]]; then
+    JOB_ID=$(aws bedrock-agent start-ingestion-job \
+      --knowledge-base-id "$KB_ID" \
+      --data-source-id "$DS_ID" \
+      --region "$AWS_REGION" \
+      --query "ingestionJob.ingestionJobId" \
+      --output text)
+    echo "Ingestion job started: $JOB_ID"
+    echo ""
+    echo "Monitor with:"
+    echo "  aws bedrock-agent get-ingestion-job --knowledge-base-id $KB_ID --data-source-id $DS_ID --ingestion-job-id $JOB_ID --region $AWS_REGION"
+  else
+    echo "Warning: No data source found for KB $KB_ID. Skipping ingestion." >&2
+  fi
+fi
+
+echo ""
+echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+echo "Done"
+echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"

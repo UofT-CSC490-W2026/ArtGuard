@@ -1,11 +1,15 @@
-import pandas as pd
+import csv
 import json
 import os
-from datasets import load_dataset
+import shutil
+import tempfile
+import urllib.request
 
-INPUT_FILE = "metmuseum/openaccess"
-# INPUT_FILE = "preprocessing/METObjects.csv"
 OUTPUT_FILE = "src/apps/data_pipeline/output/met_data.jsonl"
+MAX_RECORDS = int(os.environ.get("MET_MAX_RECORDS", "50000"))
+
+# Direct CSV URL from the MET's GitHub repo (no HuggingFace dependency)
+CSV_URL = "https://github.com/metmuseum/openaccess/raw/master/MetObjects.csv"
 
 ARTIST_COLUMNS = [
     "Artist Display Name",
@@ -33,17 +37,7 @@ ARTWORK_COLUMNS = [
     "Classification"
 ]
 
-def load_and_filter_data(filepath):
-    print("Loading MET dataset...")
-    ds = load_dataset(filepath, split="train")
-    df = ds.to_pandas()
-    # df = pd.read_csv(filepath, low_memory=False, dtype=str)
-    
-    df = df.replace("", pd.NA)
-
-    df = df[ARTIST_COLUMNS + ARTWORK_COLUMNS].copy()
-
-    return df
+COLUMNS = ARTIST_COLUMNS + ARTWORK_COLUMNS
 
 def build_rag_document(row):
     return f"""
@@ -65,35 +59,38 @@ Dimensions: {row.get('Dimensions') or 'Unknown'}
 Credit Line: {row.get('Credit Line') or 'Unknown'}
 """.strip()
 
-def transform_to_rag(df):
-    print("Transforming rows into RAG documents...")
-    df = df.copy()
-    df["rag_text"] = df.apply(build_rag_document, axis=1)
-
-    # Add stable ID for traceability
-    df["doc_id"] = df.index.astype(str)
-
-    return df
-
-def export_jsonl(df, output_path):
-    print("Exporting JSONL for Bedrock ingestion...")
-
-    os.makedirs(os.path.dirname(output_path), exist_ok=True)
-
-    with open(output_path, "w", encoding="utf-8") as f:
-        for _, row in df.iterrows():
-            record = {
-                "id": row["doc_id"],
-                "text": row["rag_text"]
-            }
-            f.write(json.dumps(record, ensure_ascii=False) + "\n")
-
 def main():
-    df = load_and_filter_data(INPUT_FILE)
-    df = transform_to_rag(df)
-    export_jsonl(df, OUTPUT_FILE)
+    os.makedirs(os.path.dirname(OUTPUT_FILE), exist_ok=True)
 
-    print("Pipeline complete.")
+    # Download CSV to a temp file first to avoid buffering ~250MB in memory
+    tmp_csv = os.path.join(tempfile.gettempdir(), "MetObjects.csv")
+    print("Downloading MET CSV to disk...", flush=True)
+    with urllib.request.urlopen(CSV_URL) as response:
+        with open(tmp_csv, "wb") as tmp:
+            shutil.copyfileobj(response, tmp, length=1024 * 1024)
+    print("Download complete. Processing...", flush=True)
+
+    count = 0
+    with open(tmp_csv, "r", encoding="utf-8") as csvfile, \
+         open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+        reader = csv.DictReader(csvfile)
+        for i, row in enumerate(reader):
+            artist = row.get("Artist Display Name")
+            if not artist or not str(artist).strip():
+                continue
+            filtered = {col: row.get(col) for col in COLUMNS}
+            text = build_rag_document(filtered)
+            record = {"id": str(i), "text": text}
+            f.write(json.dumps(record, ensure_ascii=False) + "\n")
+            count += 1
+            if count % 10000 == 0:
+                print(f"  Processed {count} records...", flush=True)
+            if count >= MAX_RECORDS:
+                print(f"  Reached limit of {MAX_RECORDS} records.", flush=True)
+                break
+
+    os.remove(tmp_csv)
+    print(f"Pipeline complete. Wrote {count} records to {OUTPUT_FILE}", flush=True)
 
 
 if __name__ == "__main__":
