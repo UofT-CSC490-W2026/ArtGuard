@@ -1,0 +1,99 @@
+Artist: Vincent van Gogh
+Description: Dutch painter (1853–1890)
+
+Born: 1853-03-30T00:00:00Z
+Died: 1890-07-29T00:00:00Z
+Citizenship: Kingdom of the Netherlands
+
+Movements: Post-impressionism, Expressionism
+Genres: still life, cityscape, Christian art, portrait, landscape painting, self-portrait, interior view
+Occupations: painter, printmaker, draftsperson
+Fields: painting
+
+Influenced By: Peter Paul Rubens, Anton Mauve, Jean-François Millet, Paul Gauguin, Paul Cézanne, Willem Roelofs, Katsushika Hokusai
+Notable Works: The Starry Night, The Potato Eaters, Wheatfield with Crows
+
+---
+
+Artist: Johannes Vermeer
+Description: Dutch painter (1632–1675)
+
+Born: 1632-10-01T00:00:00Z
+Died: 1675-01-01T00:00:00Z
+Citizenship: Dutch Republic
+
+Movements: Baroque painting, Dutch Golden Age painting
+Genres: cityscape, genre painting, portrait
+Occupations: painter, art collector, art dealer
+Fields: painting
+
+Influenced By: Dirck van Baburen, Carel Fabritius, Leonaert Bramer, Gabriel Metsu
+Notable Works: A Girl Asleep, The Procuress, The Milkmaid, View of Delft, Girl with a Pearl Earring, The Geographer, Christ in the House of Martha and Mary, The Astronomer, Diana and her Nymphs
+
+---
+
+Artist: Frans Hals
+Description: Dutch painter (1580—1666)
+
+Born: 1582-01-01T00:00:00Z
+Died: 1666-08-26T00:00:00Z
+Citizenship: Dutch Republic
+
+Movements: Baroque, Dutch Golden Age painting
+Genres: portrait painting, genre painting, schutterstuk
+Occupations: architectural draftsperson, painter, visual artist, printmaker
+Fields: Unknown
+
+Influenced By: Unknown
+Notable Works: Portrait of Isaak Abrahamsz. Massa, Militia Company of District XI under the Command of Captain Reynier Reael, Laughing boy, Regentesses of the Old Men's Alms House, Two laughing boys with mug of beer, Malle Babbe, Portrait of a young man with a skull, Peeckelhaeringh, The Officers of the St George Militia Company in 1639, Merrymakers at Shrovetide, Portrait of Dorothea Berck, The Officers of the St Adrian Militia Company in 1633, Regents of the Old Men's Almshouse, Willem van Heythuysen posing with a sword, The Banquet of the Officers of the St George Militia Company in 1616, Young Man and Woman in an Inn, A Militiaman Holding a Berkemeyer, Known as the ‘Merry Drinker’, Laughing Cavalier, Jester with lute
+
+---
+
+Artist: Gerard ter Borch
+Description: Dutch Golden Age painter (1617–1681)
+
+Born: 1617-01-01T00:00:00Z
+Died: 1681-12-08T00:00:00Z
+Citizenship: Dutch Republic
+
+Movements: Baroque
+Genres: genre art, genre painting
+Occupations: painter, visual artist
+Fields: Unknown
+
+Influenced By: Unknown
+Notable Works: The messenger, Portrait of Helena van der Schalcke, The Gallant Conversation, known as Paternal Admonition
+
+---
+
+Artist: Otto Wacker
+Description: German art dealer who became infamous for commissioning and selling forgeries of paintings by Vincent van Gogh (1898-1970)
+
+Born: 1898-08-11T00:00:00Z
+Died: 1970-10-13T00:00:00Z
+Citizenship: Germany
+
+Movements: Unknown
+Genres: Unknown
+Occupations: art historian, art dealer, art forger
+Fields: Unknown
+
+Influenced By: Unknown
+Notable Works: Unknown
+
+---
+
+Artist: Han van Meegeren
+Description: Dutch painter and art forger (1889-1947)
+
+Born: 1889-10-10T00:00:00Z
+Died: 1947-12-30T00:00:00Z
+Citizenship: Kingdom of the Netherlands
+
+Movements: Unknown
+Genres: landscape painting
+Occupations: collector, counterfeiter, art forger, draftsperson, painter, copyist, restorer, watercolorist
+Fields: painting, young adult literature
+
+Influenced By: Unknown
+Notable Works: Cisterspelende vrouw, The foot washing, Woman reading music

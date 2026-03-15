@@ -14,9 +14,8 @@ set -euo pipefail
 #       src/apps/data_pipeline/output/
 #       preprocessing/output/
 
-DOCS_DIRS=(
-  "src/apps/data_pipeline/output"
-)
+JSONL_DIR="src/apps/data_pipeline/output"
+TXT_DIR="src/apps/data_pipeline/output/txt"
 TERRAFORM_DIR="infra/terraform"
 S3_PREFIX="documents"
 
@@ -39,27 +38,29 @@ AWS_REGION=$(terraform -chdir="$TERRAFORM_DIR" output -raw aws_region 2>/dev/nul
 echo "Bucket:    $BUCKET"
 echo "KB ID:     ${KB_ID:-<not set>}"
 echo "Region:    $AWS_REGION"
-echo "Docs dirs: ${DOCS_DIRS[*]}"
 echo ""
 
-# Upload files from all output directories
+# Convert JSONL to TXT for Bedrock (Bedrock doesn't support .jsonl natively)
+echo "Converting JSONL files to TXT..."
+python3 scripts/convert-jsonl-to-txt.py
+echo ""
+
+# Clear old documents from S3 first
+echo "Clearing old documents from s3://$BUCKET/$S3_PREFIX/..."
+aws s3 rm "s3://$BUCKET/$S3_PREFIX/" --recursive --region "$AWS_REGION" 2>/dev/null || true
+
+# Upload .txt files
 UPLOADED=0
-for DOCS_DIR in "${DOCS_DIRS[@]}"; do
-  if [[ ! -d "$DOCS_DIR" ]] || [[ -z "$(ls -A "$DOCS_DIR" 2>/dev/null)" ]]; then
-    echo "Skipping $DOCS_DIR (not found or empty)"
-    continue
-  fi
-  for file in "$DOCS_DIR"/*.jsonl; do
-    [[ -f "$file" ]] || continue
-    fname=$(basename "$file")
-    echo "Uploading $fname -> s3://$BUCKET/$S3_PREFIX/$fname"
-    aws s3 cp "$file" "s3://$BUCKET/$S3_PREFIX/$fname" --region "$AWS_REGION"
-    UPLOADED=$((UPLOADED + 1))
-  done
+for file in "$TXT_DIR"/*.txt; do
+  [[ -f "$file" ]] || continue
+  fname=$(basename "$file")
+  echo "Uploading $fname -> s3://$BUCKET/$S3_PREFIX/$fname"
+  aws s3 cp "$file" "s3://$BUCKET/$S3_PREFIX/$fname" --region "$AWS_REGION"
+  UPLOADED=$((UPLOADED + 1))
 done
 
 if [[ $UPLOADED -eq 0 ]]; then
-  echo "Error: No .jsonl files found in any output directory." >&2
+  echo "Error: No .txt files found in $TXT_DIR." >&2
   exit 1
 fi
 
