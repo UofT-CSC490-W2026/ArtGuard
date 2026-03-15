@@ -176,7 +176,7 @@ resource "aws_dynamodb_table" "patch_records" {
 }
 
 # Table 5: RunRecords
-# Stores each training run's metadata, split config, and averaged metrics across folds
+# Stores each data processing or training run's metadata and status
 resource "aws_dynamodb_table" "run_records" {
   name         = "${local.project_name}-run-records-${var.environment}"
   billing_mode = "PAY_PER_REQUEST"
@@ -197,23 +197,10 @@ resource "aws_dynamodb_table" "run_records" {
     type = "N" # Unix timestamp in milliseconds
   }
 
-  attribute {
-    name = "dataset_version"
-    type = "S"
-  }
-
   # GSI for querying runs by status (e.g., all "running" or "completed" runs, sorted by time)
   global_secondary_index {
     name            = "StatusIndex"
     hash_key        = "status"
-    range_key       = "created_at"
-    projection_type = "ALL"
-  }
-
-  # GSI for querying runs by dataset version (sorted by time)
-  global_secondary_index {
-    name            = "DatasetVersionIndex"
-    hash_key        = "dataset_version"
     range_key       = "created_at"
     projection_type = "ALL"
   }
