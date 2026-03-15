@@ -6,6 +6,7 @@ import numpy as np
 import dataclasses
 
 s3 = boto3.client("s3")
+dynamodb = boto3.resource("dynamodb")
 PATCH_SIZE = 256
 CENTER_SIZE = 224
 DOWN_SIZE = 244
@@ -57,6 +58,15 @@ def upload_image_to_s3(bucket: str, key: str, img: np.ndarray) -> str:
 
     return f"s3://{bucket}/{key}"
 
+def upload_patch_record_to_dynamodb(record: PatchRecord, table_name: str) -> None:
+    """Store a PatchRecord in DynamoDB.
+ 
+    Converts the PatchRecord to a dictionary and writes it to the given
+    DynamoDB table using the patch_id as the primary key.
+    """
+    table = dynamodb.Table(table_name)
+    table.put_item(Item=dataclasses.asdict(record))
+
 
 def remove_background(image_record: ImageRecord) -> ImageRecord:
     """Return a new ImageRecord whose image has been cropped to its largest contour.
@@ -93,7 +103,7 @@ def remove_background(image_record: ImageRecord) -> ImageRecord:
     return updated
 
 
-def split_into_patches(image_record: ImageRecord, image_bucket: str, patch_bucket: str) -> list[PatchRecord]:
+def split_into_patches(image_record: ImageRecord, image_bucket: str, patch_bucket: str, patch_table_name: str) -> list[PatchRecord]:
     """Return PatchRecords for all patches and center crops tiled from the image.
 
     Divides the image into an approximately PATCH_SIZE x PATCH_SIZE grid.
@@ -137,7 +147,7 @@ def split_into_patches(image_record: ImageRecord, image_bucket: str, patch_bucke
             center_key = f"{image_record.image_id}/{i}_{j}_centered.jpg"
             center_path = upload_image_to_s3(patch_bucket, center_key, center_img)
 
-            patch_records.append(PatchRecord(
+            center_record =PatchRecord(
                 patch_path=center_path,
                 image_id=image_record.image_id,
                 patch_type="centered",
@@ -145,7 +155,9 @@ def split_into_patches(image_record: ImageRecord, image_bucket: str, patch_bucke
                 patch_y=y + cy,
                 patch_width=CENTER_SIZE,
                 patch_height=CENTER_SIZE,
-            ))
+            )
+            upload_patch_record_to_dynamodb(center_record, patch_table_name)
+            patch_records.append(center_record)
 
             # Resize the tile to DOWN_SIZE x DOWN_SIZE and upload after the center
             # crop has been taken from the original resolution.
@@ -154,7 +166,7 @@ def split_into_patches(image_record: ImageRecord, image_bucket: str, patch_bucke
             key = f"{image_record.image_id}/{i}_{j}.jpg"
             patch_path = upload_image_to_s3(patch_bucket, key, down_img)
 
-            patch_records.append(PatchRecord(
+            down_sized_record = PatchRecord(
                 patch_path=patch_path,
                 image_id=image_record.image_id,
                 patch_type="down-sized",
@@ -162,6 +174,8 @@ def split_into_patches(image_record: ImageRecord, image_bucket: str, patch_bucke
                 patch_y=y,
                 patch_width=DOWN_SIZE,
                 patch_height=DOWN_SIZE,
-            ))
+            )
+            upload_patch_record_to_dynamodb(down_sized_record, patch_table_name)
+            patch_records.append(down_sized_record)
 
     return patch_records
