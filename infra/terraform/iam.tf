@@ -148,6 +148,15 @@ resource "aws_iam_policy" "ecs_task_policy" {
         ]
         Resource = aws_bedrockagent_knowledge_base.main.arn
       },
+      # AWS Marketplace (required for Anthropic model access)
+      {
+        Effect = "Allow"
+        Action = [
+          "aws-marketplace:ViewSubscriptions",
+          "aws-marketplace:Subscribe"
+        ]
+        Resource = "*"
+      },
       # CloudWatch Logs
       {
         Effect = "Allow"

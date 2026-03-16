@@ -7,7 +7,7 @@ import os
 
 INPUT_DIR = "src/apps/data_pipeline/output"
 OUTPUT_DIR = "src/apps/data_pipeline/output/txt"
-MAX_RECORDS_PER_FILE = 5000
+MAX_RECORDS_PER_FILE = 500
 
 
 def convert_jsonl(input_path, base_name):
