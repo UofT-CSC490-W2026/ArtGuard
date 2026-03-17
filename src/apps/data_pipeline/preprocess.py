@@ -300,6 +300,7 @@ def process_image_to_patches(
     if img.mode != "RGB":
         img = img.convert("RGB")
 
+    # TODO: Modify this to run different ablations.
     config = PreprocessConfig()
 
     grid_size = choose_grid_size(img.width, img.height)
