@@ -1,16 +1,40 @@
 from __future__ import annotations
 
-from dataclasses import asdict
+from dataclasses import asdict, dataclass, field
 from io import BytesIO
 from typing import List, Tuple
 
 import boto3
-from PIL import Image
+from PIL import Image, ImageFilter
 
 from schemas import ImageRecord, PatchRecord
 
 
 TARGET_PATCH_SIZE = 224
+GRID_4X4_THRESHOLD = 1024
+GRID_2X2_THRESHOLD = 512
+
+
+@dataclass
+class PreprocessConfig:
+    """Store preprocessing options for baseline and ablation experiments.
+
+    apply_gaussian_blur controls whether each grid patch is blurred before
+    derived 224x224 patches are created.
+
+    gaussian_blur_radius is the radius used by PIL's Gaussian blur filter.
+
+    rotation_angles contains the rotation angles, in degrees, applied to each
+    grid patch before derived patches are created. The baseline setting is [0].
+
+    >>> config = PreprocessConfig()
+    >>> config.rotation_angles
+    [0]
+    """
+    apply_gaussian_blur: bool = False
+    gaussian_blur_radius: float = 1.0
+    rotation_angles: List[int] = field(default_factory=lambda: [0])
+
 
 def load_image_record_from_dynamodb(table_name: str, image_id: str) -> ImageRecord:
     """Return the ImageRecord stored in DynamoDB.
@@ -29,9 +53,7 @@ def load_image_record_from_dynamodb(table_name: str, image_id: str) -> ImageReco
     if "Item" not in response:
         raise ValueError(f"ImageRecord with id {image_id} not found.")
 
-    item = response["Item"]
-
-    return ImageRecord(**item)
+    return ImageRecord(**response["Item"])
 
 
 def load_image_from_s3(bucket_name: str, key: str) -> Image.Image:
@@ -50,12 +72,11 @@ def load_image_from_s3(bucket_name: str, key: str) -> Image.Image:
 
 
 def choose_grid_size(image_width: int, image_height: int) -> int:
-    """Return the number of rows and columns for patching the image.
+    """Return the number of rows and columns used to split the image.
 
     If the smaller side is:
     - greater than 1024: use a 4 x 4 grid
-    - greater than 512 and smaller than 1024: use a 2 x 2 grid
-    - otherwise: use a 1 x 1 grid
+    - greater than 512 and less than or equal to 1024: use a 2 x 2 grid
 
     >>> choose_grid_size(1600, 1400)
     4
@@ -64,11 +85,10 @@ def choose_grid_size(image_width: int, image_height: int) -> int:
     """
     smaller_side = min(image_width, image_height)
 
-    if smaller_side > 1024:
+    if smaller_side > GRID_4X4_THRESHOLD:
         return 4
-    if 512 < smaller_side < 1024:
+    if GRID_2X2_THRESHOLD < smaller_side <= GRID_4X4_THRESHOLD:
         return 2
-
 
 def compute_grid_boxes(
     image_width: int, image_height: int, grid_size: int
@@ -150,6 +170,65 @@ def downsample_to_square(image: Image.Image, size: int) -> Image.Image:
     return image.resize((size, size), resample=Image.Resampling.BICUBIC)
 
 
+def apply_gaussian_blur(image: Image.Image, radius: float) -> Image.Image:
+    """Return a blurred copy of image using Gaussian blur.
+
+    >>> image = Image.new("RGB", (300, 300))
+    >>> blurred = apply_gaussian_blur(image, 1.5)
+    >>> blurred.size
+    (300, 300)
+    """
+    return image.filter(ImageFilter.GaussianBlur(radius=radius))
+
+
+def rotate_patch(image: Image.Image, angle: int) -> Image.Image:
+    """Return image rotated by angle degrees.
+
+    expand=True is used so the full rotated image is preserved.
+
+    >>> image = Image.new("RGB", (300, 200))
+    >>> rotate_patch(image, 90).size
+    (200, 300)
+    """
+    if angle == 0:
+        return image.copy()
+
+    return image.rotate(angle, expand=True)
+
+
+def generate_patch_variants(
+    patch_image: Image.Image,
+    config: PreprocessConfig,
+) -> List[Tuple[Image.Image, str]]:
+    """Return transformed variants of patch_image for preprocessing.
+
+    Each result is (variant_image, variant_suffix). The suffix is appended
+    to the patch_type so ablation outputs can be distinguished.
+
+    >>> patch = Image.new("RGB", (300, 300))
+    >>> variants = generate_patch_variants(patch, PreprocessConfig())
+    >>> variants[0][1]
+    'orig'
+    """
+    variants = []
+
+    for angle in config.rotation_angles:
+        rotated = rotate_patch(patch_image, angle)
+
+        if angle == 0:
+            suffix = "orig"
+        else:
+            suffix = f"rot{angle}"
+
+        if config.apply_gaussian_blur:
+            rotated = apply_gaussian_blur(rotated, config.gaussian_blur_radius)
+            suffix = f"{suffix}_blur"
+
+        variants.append((rotated, suffix))
+
+    return variants
+
+
 def build_patch_s3_key(
     prefix: str,
     image_id: str,
@@ -200,7 +279,6 @@ def upload_patch_record_to_dynamodb(record: PatchRecord, table_name: str) -> Non
     """
     dynamodb = boto3.resource("dynamodb")
     table = dynamodb.Table(table_name)
-
     table.put_item(Item=asdict(record))
 
 
@@ -240,6 +318,7 @@ def create_center_crop_patch(
     patch_bucket: str,
     patch_prefix: str,
     patch_table_name: str,
+    patch_type_suffix: str = "",
 ) -> PatchRecord:
     """Create, save, and return a center-cropped 224x224 PatchRecord.
 
@@ -255,7 +334,10 @@ def create_center_crop_patch(
     PatchRecord(...)
     """
     cropped = center_crop_to_square(source_patch, TARGET_PATCH_SIZE)
+
     patch_type = "center_crop"
+    if patch_type_suffix:
+        patch_type = f"{patch_type}_{patch_type_suffix}"
 
     patch_key = build_patch_s3_key(
         patch_prefix,
@@ -287,46 +369,8 @@ def create_downsample_patch(
     patch_y: int,
     patch_bucket: str,
     patch_prefix: str,
-    record_bucket: str,
-    record_prefix: str,
-) -> PatchRecord:
-    """Create, save, and return a bicubic-downsampled 224x224 PatchRecord.
-
-    >>> patch = Image.new("RGB", (300, 500))
-    >>> create_downsample_patch(  # doctest: +SKIP
-    ...     patch, "img123", 0, 0,
-    ...     "patch-bucket", "patches",
-    ...     "record-bucket", "records"
-    ... )
-    PatchRecord(...)
-    """
-    resized = downsample_to_square(source_patch, TARGET_PATCH_SIZE)
-    patch_type = "downsample"
-    patch_key = build_patch_s3_key(patch_prefix, image_id, patch_x, patch_y, patch_type)
-    upload_image_to_s3(resized, patch_bucket, patch_key)
-
-    record = make_patch_record(
-        image_id=image_id,
-        patch_path=patch_key,
-        patch_type=patch_type,
-        patch_x=patch_x,
-        patch_y=patch_y,
-        patch_width=TARGET_PATCH_SIZE,
-        patch_height=TARGET_PATCH_SIZE,
-    )
-    record_key = f"{record_prefix.rstrip('/')}/{record.patch_id}.json"
-    upload_patch_record_to_s3(record, record_bucket, record_key)
-    return record
-
-
-def create_downsample_patch(
-    source_patch: Image.Image,
-    image_id: str,
-    patch_x: int,
-    patch_y: int,
-    patch_bucket: str,
-    patch_prefix: str,
     patch_table_name: str,
+    patch_type_suffix: str = "",
 ) -> PatchRecord:
     """Create, save, and return a bicubic-downsampled 224x224 PatchRecord.
 
@@ -342,7 +386,10 @@ def create_downsample_patch(
     PatchRecord(...)
     """
     resized = downsample_to_square(source_patch, TARGET_PATCH_SIZE)
+
     patch_type = "downsample"
+    if patch_type_suffix:
+        patch_type = f"{patch_type}_{patch_type_suffix}"
 
     patch_key = build_patch_s3_key(
         patch_prefix,
@@ -367,18 +414,80 @@ def create_downsample_patch(
     return record
 
 
- def preprocess_image_record(
+def process_single_grid_patch(
+    patch_image: Image.Image,
+    image_id: str,
+    patch_x: int,
+    patch_y: int,
+    patch_bucket: str,
+    patch_prefix: str,
+    patch_table_name: str,
+    config: PreprocessConfig,
+) -> List[PatchRecord]:
+    """Return PatchRecords created from one grid patch.
+
+    For each transformed patch variant:
+    - create a center crop when possible
+    - create a bicubic-downsampled patch
+
+    >>> patch = Image.new("RGB", (300, 300))
+    >>> records = process_single_grid_patch(  # doctest: +SKIP
+    ...     patch, "img123", 0, 0,
+    ...     "patch-bucket", "patches",
+    ...     "PatchTable",
+    ...     PreprocessConfig()
+    ... )
+    >>> len(records)  # doctest: +SKIP
+    2
+    """
+    records = []
+
+    for variant_image, variant_suffix in generate_patch_variants(patch_image, config):
+        if variant_image.width >= TARGET_PATCH_SIZE and variant_image.height >= TARGET_PATCH_SIZE:
+            records.append(
+                create_center_crop_patch(
+                    source_patch=variant_image,
+                    image_id=image_id,
+                    patch_x=patch_x,
+                    patch_y=patch_y,
+                    patch_bucket=patch_bucket,
+                    patch_prefix=patch_prefix,
+                    patch_table_name=patch_table_name,
+                    patch_type_suffix=variant_suffix,
+                )
+            )
+
+        records.append(
+            create_downsample_patch(
+                source_patch=variant_image,
+                image_id=image_id,
+                patch_x=patch_x,
+                patch_y=patch_y,
+                patch_bucket=patch_bucket,
+                patch_prefix=patch_prefix,
+                patch_table_name=patch_table_name,
+                patch_type_suffix=variant_suffix,
+            )
+        )
+
+    return records
+
+
+def preprocess_image_record(
     image_record: ImageRecord,
     image_bucket: str,
     patch_bucket: str,
     patch_prefix: str,
     patch_table_name: str,
+    config: PreprocessConfig,
 ) -> List[PatchRecord]:
     """Preprocess the image referenced by image_record and return PatchRecords.
 
     The image is retrieved from S3 using image_record.image_path.
     Then:
-    - choose 1x1, 2x2, or 4x4 grid based on the smaller side
+    - choose 2x2, or 4x4 grid based on the smaller side
+    - optionally rotate each grid patch
+    - optionally blur each grid patch
     - derive center-cropped 224x224 patches
     - derive bicubic-downsampled 224x224 patches
     - save patch images to S3
@@ -386,11 +495,12 @@ def create_downsample_patch(
 
     >>> image_record = ImageRecord(image_id="img123", image_path="images/sample.jpg")
     >>> preprocess_image_record(  # doctest: +SKIP
-    ...     image_record,
+    ...     image_record=image_record,
     ...     image_bucket="image-bucket",
     ...     patch_bucket="patch-bucket",
     ...     patch_prefix="patches",
     ...     patch_table_name="PatchTable",
+    ...     config=PreprocessConfig(),
     ... )
     [PatchRecord(...)]
     """
@@ -410,10 +520,12 @@ def create_downsample_patch(
                 patch_bucket=patch_bucket,
                 patch_prefix=patch_prefix,
                 patch_table_name=patch_table_name,
+                config=config,
             )
         )
 
     return patch_records
+
 
 def preprocess_image_record_from_dynamodb(
     image_table_name: str,
@@ -422,6 +534,7 @@ def preprocess_image_record_from_dynamodb(
     patch_bucket: str,
     patch_prefix: str,
     patch_table_name: str,
+    config: PreprocessConfig,
 ) -> List[PatchRecord]:
     """Load an ImageRecord from DynamoDB, preprocess its image, and return PatchRecords.
 
@@ -432,6 +545,7 @@ def preprocess_image_record_from_dynamodb(
     ...     patch_bucket="patch-bucket",
     ...     patch_prefix="patches",
     ...     patch_table_name="PatchTable",
+    ...     config=PreprocessConfig(),
     ... )
     [PatchRecord(...)]
     """
@@ -442,4 +556,5 @@ def preprocess_image_record_from_dynamodb(
         patch_bucket=patch_bucket,
         patch_prefix=patch_prefix,
         patch_table_name=patch_table_name,
+        config=config,
     )
