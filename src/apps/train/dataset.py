@@ -27,11 +27,6 @@ from PIL import Image
 from torch.utils.data import Dataset
 from torchvision import transforms
 
-
-# ---------------------------------------------------------------------------
-# Default transforms  (paper: 256×256 patches → bicubic down to 224×224)
-# ---------------------------------------------------------------------------
-
 IMAGENET_MEAN = [0.485, 0.456, 0.406]
 IMAGENET_STD  = [0.229, 0.224, 0.225]
 
@@ -50,10 +45,6 @@ def default_val_transforms() -> transforms.Compose:
         transforms.Normalize(mean=IMAGENET_MEAN, std=IMAGENET_STD),
     ])
 
-
-# ---------------------------------------------------------------------------
-# S3 helper
-# ---------------------------------------------------------------------------
 
 def _s3_path_to_bucket_key(s3_path: str) -> tuple[str, str]:
     """'s3://bucket/a/b/c.png' → ('bucket', 'a/b/c.png')"""
@@ -81,10 +72,6 @@ def _stream_patch_from_s3(s3_client, patch_path: str, fallback_bucket: str = "")
     img_bytes = resp["Body"].read()
     return Image.open(BytesIO(img_bytes)).convert("RGB")
 
-
-# ---------------------------------------------------------------------------
-# DynamoDB scan helpers
-# ---------------------------------------------------------------------------
 
 def _scan_all(table, **kwargs) -> list[dict]:
     """Paginate through a full table scan, returning all items."""
@@ -151,11 +138,13 @@ class PatchDataset(Dataset):
         transform: Optional[transforms.Compose] = None,
         imitation_weight: float = 10.0,
         label_field: str = "label",
+        split: Optional[str] = None,
     ) -> None:
         self.transform = transform or default_train_transforms()
         self.imitation_weight = imitation_weight
         self.label_field = label_field
         self.processed_bucket = processed_bucket
+        self.split = split  # "train" | "val" | "test" | None (all records)
 
         self._s3  = boto3.client("s3", region_name=region)
         ddb       = boto3.resource("dynamodb", region_name=region)
@@ -166,13 +155,21 @@ class PatchDataset(Dataset):
         self._build_index(img_table, patch_table)
 
     def _build_index(self, img_table, patch_table) -> None:
-        print("Building dataset index from DynamoDB...")
+        split_msg = f" (split='{self.split}')" if self.split else " (all splits)"
+        print(f"Building dataset index from DynamoDB{split_msg}...")
 
-        image_records = _scan_all(
-            img_table,
-            ProjectionExpression=f"image_id, #{self.label_field}",
-            ExpressionAttributeNames={f"#{self.label_field}": self.label_field},
+        scan_kwargs = dict(
+            ProjectionExpression=f"image_id, #{self.label_field}, #sp",
+            ExpressionAttributeNames={
+                f"#{self.label_field}": self.label_field,
+                "#sp": "split",
+            },
         )
+        if self.split:
+            from boto3.dynamodb.conditions import Attr
+            scan_kwargs["FilterExpression"] = Attr("split").eq(self.split)
+
+        image_records = _scan_all(img_table, **scan_kwargs)
 
         skipped = 0
         for rec in image_records:
@@ -180,7 +177,13 @@ class PatchDataset(Dataset):
                 skipped += 1
                 continue
 
-            label = int(rec[self.label_field])  # 1=authentic, 0=contrast
+            raw_label = rec[self.label_field]
+            # schemas.py stores label as str: "authentic" | "inauthentic"
+            if isinstance(raw_label, str):
+                label = 1 if raw_label == "authentic" else 0
+            else:
+                label = int(raw_label)  # fallback for legacy int labels
+
             # Paper: imitation patches carry wim=10 weight; authentic patches weight=1
             weight = 1.0 if label == 1 else self.imitation_weight
 
@@ -205,6 +208,7 @@ class PatchDataset(Dataset):
             img = self.transform(img)
         return img, label, weight
 
+    # ------------------------------------------------------------------
     @property
     def authentic_count(self) -> int:
         return sum(1 for _, l, _ in self._samples if l == 1)
