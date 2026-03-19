@@ -33,6 +33,7 @@ async def root():
         "endpoints": {
             "/health": "Health check",
             "/train": "Start a training run (POST)",
+            "/evaluate": "Start an evaluation run (POST)",
         }
     }
 

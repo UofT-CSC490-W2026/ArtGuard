@@ -1,9 +1,13 @@
 """
-routes/train.py — Training endpoints.
+routes/train.py — Training and evaluation endpoints.
 
 Registered in main.py via:
     from src.apps.backend.routes.train import router as train_router
     app.include_router(train_router)
+
+Endpoints:
+    POST /train     — spawn a Modal training run, returns run_id immediately
+    POST /evaluate  — spawn a Modal evaluation run, returns results path immediately
 """
 
 from __future__ import annotations
@@ -18,19 +22,24 @@ from pydantic import BaseModel
 
 from src.schemas import RunRecord
 from src.apps.training.train import DEFAULT_CONFIG, train_swin_base, train_swin_tiny
+from src.apps.training.evaluate import evaluate
 
 router = APIRouter()
 
 
+# ---------------------------------------------------------------------------
+# /train
+# ---------------------------------------------------------------------------
+
 class TrainRequest(BaseModel):
-    variant: str            # "tiny" | "base"
+    variant: str                    # "tiny" | "base"
     config: Optional[dict] = None   # overrides DEFAULT_CONFIG; omit to use defaults
 
 
 class TrainResponse(BaseModel):
     run_id: str
     variant: str
-    status: str             # always "started" on success
+    status: str                     # always "started" on success
 
 
 @router.post("/train", response_model=TrainResponse)
@@ -92,3 +101,62 @@ async def start_training(body: TrainRequest):
         raise HTTPException(status_code=500, detail=f"Failed to spawn Modal run: {exc}")
 
     return TrainResponse(run_id=run.run_id, variant=body.variant, status="started")
+
+
+# ---------------------------------------------------------------------------
+# /evaluate
+# ---------------------------------------------------------------------------
+
+class EvaluateRequest(BaseModel):
+    variant: str        # "tiny" | "base"
+    checkpoint: str     # full path inside Modal Volume, e.g. /checkpoints/tiny/best.pt
+
+
+class EvaluateResponse(BaseModel):
+    variant: str
+    checkpoint: str
+    status: str         # always "started" on success
+
+
+@router.post("/evaluate", response_model=EvaluateResponse)
+async def start_evaluation(body: EvaluateRequest):
+    """
+    Kick off a Modal evaluation run for the specified checkpoint.
+
+    - Spawns the Modal evaluate Function asynchronously and returns immediately.
+    - Results (metrics JSON + patch log JSON) are written to the Modal Volume
+      at /checkpoints/{variant}/eval_{checkpoint_stem}_metrics.json and
+      /checkpoints/{variant}/eval_{checkpoint_stem}_patches.json.
+
+    Request body:
+        variant    : "tiny" or "base"
+        checkpoint : path to checkpoint inside Modal Volume,
+                     e.g. "/checkpoints/tiny/best.pt"
+
+    Response:
+        variant    : echoed back
+        checkpoint : echoed back
+        status     : "started"
+    """
+    if body.variant not in ("tiny", "base"):
+        raise HTTPException(
+            status_code=400,
+            detail=f"variant must be 'tiny' or 'base', got '{body.variant}'",
+        )
+
+    if not body.checkpoint.startswith("/checkpoints/"):
+        raise HTTPException(
+            status_code=400,
+            detail="checkpoint must be a full Modal Volume path, e.g. /checkpoints/tiny/best.pt",
+        )
+
+    try:
+        evaluate.spawn(variant=body.variant, checkpoint_path=body.checkpoint)
+    except Exception as exc:
+        raise HTTPException(status_code=500, detail=f"Failed to spawn Modal evaluation: {exc}")
+
+    return EvaluateResponse(
+        variant=body.variant,
+        checkpoint=body.checkpoint,
+        status="started",
+    )
