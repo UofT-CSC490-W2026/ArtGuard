@@ -43,7 +43,9 @@ class ProcessDataResponse(BaseModel):
 @app.post("/process_data", response_model=ProcessDataResponse)
 async def process_data():
     cluster = os.getenv("ECS_CLUSTER", "artguard-cluster")
-    task_def = os.getenv("ECS_PROCESS_TASK_DEF_ARN")
+    region = os.getenv("AWS_REGION", "ca-central-1")
+    account_id = boto3.client("sts").get_caller_identity()["Account"]
+    task_def = f"arn:aws:ecs:{region}:{account_id}:task-definition/artguard-backend"
     subnets = os.getenv("ECS_PRIVATE_SUBNETS", "")
     security_groups = os.getenv("ECS_TASK_SECURITY_GROUPS", "")
     container_name = os.getenv("ECS_PROCESS_CONTAINER_NAME", "backend")
@@ -145,6 +147,7 @@ async def infer(file: UploadFile = File(...)):
         Key=raw_key,
         Body=content,
         ContentType=file.content_type or "application/octet-stream",
+        ServerSideEncryption="AES256",
     )
     raw_s3_uri = f"s3://{raw_bucket}/{raw_key}"
 

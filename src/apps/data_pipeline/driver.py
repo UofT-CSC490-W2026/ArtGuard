@@ -104,6 +104,7 @@ def move_to_processed(s3_client, bucket: str, key: str) -> None:
         Bucket=bucket,
         CopySource={"Bucket": bucket, "Key": key},
         Key=dest_key,
+        ServerSideEncryption="AES256",
     )
     s3_client.delete_object(Bucket=bucket, Key=key)
 

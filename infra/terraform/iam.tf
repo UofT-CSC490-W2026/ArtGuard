@@ -303,3 +303,39 @@ resource "aws_iam_role_policy" "bedrock_kb_model_access" {
   })
 }
 
+resource "aws_iam_role_policy" "ecs_task_run_process_task" {
+  name = "${local.project_name}-ecs-run-task-policy"
+  role = aws_iam_role.ecs_task.id
+
+  policy = jsonencode({
+    Version = "2012-10-17"
+    Statement = [
+      {
+        Sid    = "AllowRunTask"
+        Effect = "Allow"
+        Action = [
+          "ecs:RunTask"
+        ]
+        Resource = [
+          "arn:aws:ecs:${var.aws_region}:${data.aws_caller_identity.current.account_id}:task-definition/*"
+        ]
+      },
+      {
+        Sid    = "AllowPassRolesToEcsTasks"
+        Effect = "Allow"
+        Action = [
+          "iam:PassRole"
+        ]
+        Resource = [
+          aws_iam_role.ecs_execution.arn,
+          aws_iam_role.ecs_task.arn
+        ]
+        Condition = {
+          StringEquals = {
+            "iam:PassedToService" = "ecs-tasks.amazonaws.com"
+          }
+        }
+      }
+    ]
+  })
+}
