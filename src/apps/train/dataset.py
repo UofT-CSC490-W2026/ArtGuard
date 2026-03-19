@@ -2,27 +2,31 @@
 dataset.py — Patch dataset for art authentication training.
 
 Data flow:
-  1. Scan DynamoDB Images table  → collect {image_id, label} for all records
+  1. Scan DynamoDB Images table  → collect {image_id, label, sublabel} for all records
   2. Query DynamoDB Patches table → collect {patch_id, patch_path} per image
   3. On __getitem__              → stream patch bytes from S3 via boto3
 
-DynamoDB schema assumed:
-  Images  table PK: image_id  (str)  — must have a "label" field (0 = contrast, 1 = authentic)
-  Patches table PK: patch_id  (str)  — must have "image_id" (str) and "patch_path" (str, s3://...)
+DynamoDB schema assumed (matches schemas.py):
+  Images  table PK: image_id  (str)
+    - label    : "authentic" | "inauthentic"   (binary classification target)
+    - sublabel : "original"  | "forgery" | "imitation" | "proxy"  (fine-grained group)
+    - split    : "train" | "val" | "test" | "unassigned"
+  Patches table PK: patch_id  (str)
+    - image_id  : str
+    - patch_path: bare S3 key (e.g. "training/{image_id}/x0_y0_downsample_orig.jpg")
 
-Label convention (matches paper):
+Label convention:
   1 → authentic
-  0 → contrast (imitation / proxy)
+  0 → inauthentic (forgery / imitation / proxy)
 """
 
 from __future__ import annotations
 
-import os
 from io import BytesIO
 from typing import Optional
 
 import boto3
-from boto3.dynamodb.conditions import Key
+from boto3.dynamodb.conditions import Attr, Key
 from PIL import Image
 from torch.utils.data import Dataset
 from torchvision import transforms
@@ -57,8 +61,8 @@ def _s3_path_to_bucket_key(s3_path: str) -> tuple[str, str]:
 def _stream_patch_from_s3(s3_client, patch_path: str, fallback_bucket: str = "") -> Image.Image:
     """
     Fetch a patch from S3. Handles two path formats:
-      - Full URI:  s3://bucket/key   (from image_path in ImageRecord)
-      - Bare key:  patches/img123/x0_y0_downsample.jpg  (from build_patch_s3_key)
+      - Full URI:  s3://bucket/key
+      - Bare key:  training/img123/x0_y0_downsample_orig.jpg  (from build_patch_s3_key)
 
     For bare keys, fallback_bucket must be supplied (your processed S3 bucket).
     """
@@ -87,8 +91,7 @@ def _scan_all(table, **kwargs) -> list[dict]:
 def _query_patches_for_image(patch_table, image_id: str) -> list[dict]:
     """
     Query the Patches table by image_id using a GSI named 'image_id-index'.
-    Assumes GSI: image_id-index on the patches table.
-    Falls back to a full scan with filter if the GSI doesn't exist.
+    Falls back to a full scan with filter if the GSI doesn't exist (dev only).
     """
     try:
         resp = patch_table.query(
@@ -98,13 +101,26 @@ def _query_patches_for_image(patch_table, image_id: str) -> list[dict]:
         )
         return resp.get("Items", [])
     except Exception:
-        # fallback: scan with filter (slow, for dev only)
-        items = _scan_all(
+        return _scan_all(
             patch_table,
             FilterExpression=Key("image_id").eq(image_id),
             ProjectionExpression="patch_id, patch_path",
         )
-        return items
+
+
+# ---------------------------------------------------------------------------
+# Sample type
+# ---------------------------------------------------------------------------
+# Each entry in _samples is:
+#   (patch_path, label, weight, sublabel, image_id)
+#
+#   patch_path : bare S3 key
+#   label      : 1 = authentic, 0 = inauthentic
+#   weight     : imitation_weight for inauthentic, 1.0 for authentic
+#   sublabel   : "original" | "forgery" | "imitation" | "proxy" | None
+#   image_id   : str  (used for painting-level aggregation in evaluate.py)
+
+Sample = tuple[str, int, float, Optional[str], str]
 
 
 # ---------------------------------------------------------------------------
@@ -115,18 +131,21 @@ class PatchDataset(Dataset):
     """
     Streams 224×224 patches from S3, labelled via DynamoDB ImageRecord.
 
-    Patches are already 224×224 — preprocess.py writes them at TARGET_PATCH_SIZE=224.
-    patch_path in DynamoDB is a bare S3 key (e.g. "training/img123/x0_y0_downsample.jpg"),
-    so processed_bucket must be provided to resolve the full object location.
+    Each __getitem__ returns:
+        (image_tensor, label, weight, sublabel, patch_path)
+
+    sublabel and patch_path are passed through so evaluate.py can produce
+    per-sublabel metric breakdowns and a full per-patch prediction log
+    without any extra DynamoDB lookups.
 
     Args:
         img_table_name   : DynamoDB Images table name
         patch_table_name : DynamoDB Patches table name
-        processed_bucket : S3 bucket where patches are stored (your processed bucket)
+        processed_bucket : S3 bucket where patches live
         region           : AWS region
         transform        : torchvision transform applied to each patch
-        imitation_weight : Per-sample weight for contrast patches (paper wim=10)
-        label_field      : Field name on the ImageRecord that holds the label
+        imitation_weight : Per-sample weight for inauthentic patches (paper wim=10)
+        split            : "train" | "val" | "test" | None (all records)
     """
 
     def __init__(
@@ -137,64 +156,64 @@ class PatchDataset(Dataset):
         region: str,
         transform: Optional[transforms.Compose] = None,
         imitation_weight: float = 10.0,
-        label_field: str = "label",
         split: Optional[str] = None,
     ) -> None:
-        self.transform = transform or default_train_transforms()
+        self.transform        = transform or default_train_transforms()
         self.imitation_weight = imitation_weight
-        self.label_field = label_field
         self.processed_bucket = processed_bucket
-        self.split = split  # "train" | "val" | "test" | None (all records)
+        self.split            = split
 
-        self._s3  = boto3.client("s3", region_name=region)
-        ddb       = boto3.resource("dynamodb", region_name=region)
+        self._s3    = boto3.client("s3", region_name=region)
+        ddb         = boto3.resource("dynamodb", region_name=region)
         img_table   = ddb.Table(img_table_name)
         patch_table = ddb.Table(patch_table_name)
 
-        self._samples: list[tuple[str, int, float]] = []
+        self._samples: list[Sample] = []
         self._build_index(img_table, patch_table)
 
     def _build_index(self, img_table, patch_table) -> None:
         split_msg = f" (split='{self.split}')" if self.split else " (all splits)"
         print(f"Building dataset index from DynamoDB{split_msg}...")
 
-        scan_kwargs = dict(
-            ProjectionExpression=f"image_id, #{self.label_field}, #sp",
+        scan_kwargs: dict = dict(
+            ProjectionExpression="image_id, #lb, #sl, #sp",
             ExpressionAttributeNames={
-                f"#{self.label_field}": self.label_field,
+                "#lb": "label",
+                "#sl": "sublabel",
                 "#sp": "split",
             },
         )
         if self.split:
-            from boto3.dynamodb.conditions import Attr
             scan_kwargs["FilterExpression"] = Attr("split").eq(self.split)
 
         image_records = _scan_all(img_table, **scan_kwargs)
 
         skipped = 0
         for rec in image_records:
-            if self.label_field not in rec:
+            if "label" not in rec:
                 skipped += 1
                 continue
 
-            raw_label = rec[self.label_field]
             # schemas.py stores label as str: "authentic" | "inauthentic"
-            if isinstance(raw_label, str):
-                label = 1 if raw_label == "authentic" else 0
-            else:
-                label = int(raw_label)  # fallback for legacy int labels
+            label    = 1 if rec["label"] == "authentic" else 0
+            weight   = 1.0 if label == 1 else self.imitation_weight
+            sublabel = rec.get("sublabel", None)
+            image_id = rec["image_id"]
 
-            # Paper: imitation patches carry wim=10 weight; authentic patches weight=1
-            weight = 1.0 if label == 1 else self.imitation_weight
-
-            patches = _query_patches_for_image(patch_table, rec["image_id"])
+            patches = _query_patches_for_image(patch_table, image_id)
             for p in patches:
-                self._samples.append((p["patch_path"], label, weight))
+                self._samples.append((
+                    p["patch_path"],
+                    label,
+                    weight,
+                    sublabel,
+                    image_id,
+                ))
 
         print(
-            f"Index built: {len(self._samples)} patches "
-            f"({sum(1 for _,l,_ in self._samples if l==1)} authentic, "
-            f"{sum(1 for _,l,_ in self._samples if l==0)} contrast). "
+            f"Index built: {len(self._samples):,} patches "
+            f"({sum(1 for s in self._samples if s[1]==1):,} authentic, "
+            f"{sum(1 for s in self._samples if s[1]==0):,} inauthentic). "
             f"Skipped {skipped} records with no label."
         )
 
@@ -202,17 +221,27 @@ class PatchDataset(Dataset):
         return len(self._samples)
 
     def __getitem__(self, idx: int):
-        patch_path, label, weight = self._samples[idx]
+        patch_path, label, weight, sublabel, image_id = self._samples[idx]
         img = _stream_patch_from_s3(self._s3, patch_path, fallback_bucket=self.processed_bucket)
         if self.transform:
             img = self.transform(img)
-        return img, label, weight
+        # sublabel and patch_path returned as strings so DataLoader can collate
+        # without a custom collate_fn (empty string used in place of None)
+        return img, label, weight, sublabel or "", patch_path
 
     # ------------------------------------------------------------------
     @property
     def authentic_count(self) -> int:
-        return sum(1 for _, l, _ in self._samples if l == 1)
+        return sum(1 for s in self._samples if s[1] == 1)
 
     @property
     def contrast_count(self) -> int:
-        return sum(1 for _, l, _ in self._samples if l == 0)
+        return sum(1 for s in self._samples if s[1] == 0)
+
+    @property
+    def sublabel_counts(self) -> dict[str, int]:
+        counts: dict[str, int] = {}
+        for s in self._samples:
+            sl = s[3] or "unlabelled"
+            counts[sl] = counts.get(sl, 0) + 1
+        return counts

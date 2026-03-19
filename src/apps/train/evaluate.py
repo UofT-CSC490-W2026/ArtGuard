@@ -3,22 +3,23 @@ evaluate.py — Evaluation script for art authentication models.
 Based on: "Art Authentication with Vision Transformers" (Schaerf et al., 2023)
 
 Loads a checkpoint from a Modal Volume, runs inference on the test split,
-and reports accuracy, precision, recall, F1, and confusion matrix.
-Results are printed to stdout and saved as a JSON file locally.
+and reports accuracy, precision, recall, F1, and confusion matrix —
+overall and broken down by sublabel (original / forgery / imitation / proxy).
+
+Results are printed to stdout and saved locally as two JSON files:
+  - eval_{variant}_{checkpoint_stem}_metrics.json  — aggregated metrics
+  - eval_{variant}_{checkpoint_stem}_patches.json  — per-patch prediction log
 
 Usage:
     modal run evaluate.py --variant tiny --checkpoint /checkpoints/tiny/best.pt
-    modal run evaluate.py --variant base --checkpoint /checkpoints/base/epoch_042.pt
-
-Output:
-    - Printed metrics table to stdout
-    - JSON results file saved locally as eval_{variant}_{checkpoint_stem}.json
+    modal run evaluate.py --variant base --checkpoint /checkpoints/base/epoch_042.pt --output-dir ./results
 """
 
 from __future__ import annotations
 
 import json
 import os
+from collections import defaultdict
 from pathlib import Path
 from typing import Optional
 
@@ -47,15 +48,62 @@ image = (
 
 aws_secret = modal.Secret.from_name("artguard-aws")
 
-def _evaluate(variant: str, checkpoint_path: str) -> dict:
-    import torch
+
+# ---------------------------------------------------------------------------
+# Metric helpers
+# ---------------------------------------------------------------------------
+
+def _compute_metrics(labels: list[int], preds: list[int]) -> dict:
+    """Return accuracy, precision, recall, F1, and confusion matrix."""
     from sklearn.metrics import (
-        accuracy_score,
-        precision_score,
-        recall_score,
-        f1_score,
-        confusion_matrix,
+        accuracy_score, confusion_matrix,
+        f1_score, precision_score, recall_score,
     )
+    if not labels:
+        return {
+            "n": 0,
+            "accuracy": None, "precision": None,
+            "recall": None,   "f1": None,
+            "confusion_matrix": None,
+        }
+
+    cm = confusion_matrix(labels, preds, labels=[0, 1]).tolist()
+    return {
+        "n":          len(labels),
+        "accuracy":   accuracy_score(labels, preds),
+        "precision":  precision_score(labels, preds, zero_division=0),
+        "recall":     recall_score(labels, preds, zero_division=0),
+        "f1":         f1_score(labels, preds, zero_division=0),
+        "confusion_matrix": cm,   # [[TN, FP], [FN, TP]]
+    }
+
+
+def _print_metrics(title: str, m: dict) -> None:
+    if m["n"] == 0:
+        print(f"  {title}: no samples")
+        return
+    cm = m["confusion_matrix"]
+    print(f"  {title}  (n={m['n']:,})")
+    print(f"    Accuracy  : {m['accuracy']:.4f}")
+    print(f"    Precision : {m['precision']:.4f}")
+    print(f"    Recall    : {m['recall']:.4f}")
+    print(f"    F1        : {m['f1']:.4f}")
+    print(f"    Confusion matrix (rows=actual, cols=predicted):")
+    print(f"      [TN={cm[0][0]:>5}  FP={cm[0][1]:>5}]")
+    print(f"      [FN={cm[1][0]:>5}  TP={cm[1][1]:>5}]")
+
+
+# ---------------------------------------------------------------------------
+# Core evaluation logic
+# ---------------------------------------------------------------------------
+
+def _evaluate(variant: str, checkpoint_path: str) -> tuple[dict, list[dict]]:
+    """
+    Returns:
+        metrics_results : aggregated metrics dict (saved as _metrics.json)
+        patch_log       : list of per-patch dicts  (saved as _patches.json)
+    """
+    import torch
     from torch.utils.data import DataLoader
     from tqdm import tqdm
 
@@ -71,21 +119,20 @@ def _evaluate(variant: str, checkpoint_path: str) -> dict:
         raise FileNotFoundError(f"Checkpoint not found: {checkpoint_path}")
 
     print(f"[{variant}] Loading checkpoint: {ckpt_path}")
-    checkpoint = torch.load(ckpt_path, map_location=device)
-
-    # ---- Build model and load weights ------------------------------------
-    model = ArtAuthenticator(variant=variant, pretrained=False).to(device)
-    model.load_state_dict(checkpoint["state_dict"])
-    model.eval()
-
+    checkpoint     = torch.load(ckpt_path, map_location=device)
     trained_epoch  = checkpoint.get("epoch", "unknown")
     ckpt_val_loss  = checkpoint.get("val_loss", None)
     ckpt_val_acc   = checkpoint.get("val_acc", None)
     ckpt_config    = checkpoint.get("config", {})
 
-    print(f"[{variant}] Checkpoint epoch: {trained_epoch}")
+    print(f"[{variant}] Checkpoint epoch : {trained_epoch}")
     if ckpt_val_loss is not None:
-        print(f"[{variant}] Checkpoint val_loss: {ckpt_val_loss:.4f}  val_acc: {ckpt_val_acc:.4f}")
+        print(f"[{variant}] Checkpoint val   : loss={ckpt_val_loss:.4f}  acc={ckpt_val_acc:.4f}")
+
+    # ---- Model -----------------------------------------------------------
+    model = ArtAuthenticator(variant=variant, pretrained=False).to(device)
+    model.load_state_dict(checkpoint["state_dict"])
+    model.eval()
 
     # ---- Dataset (test split only) ---------------------------------------
     region           = os.environ["AWS_REGION"]
@@ -104,7 +151,14 @@ def _evaluate(variant: str, checkpoint_path: str) -> dict:
     )
 
     if len(test_dataset) == 0:
-        raise RuntimeError("Test dataset is empty — check your DynamoDB split field.")
+        raise RuntimeError("Test dataset is empty — check the split field in DynamoDB.")
+
+    print(
+        f"[{variant}] Test patches : {len(test_dataset):,} "
+        f"({test_dataset.authentic_count:,} authentic, "
+        f"{test_dataset.contrast_count:,} inauthentic)"
+    )
+    print(f"[{variant}] Sublabel breakdown: {test_dataset.sublabel_counts}")
 
     test_loader = DataLoader(
         test_dataset,
@@ -114,114 +168,135 @@ def _evaluate(variant: str, checkpoint_path: str) -> dict:
         pin_memory=(device == "cuda"),
     )
 
-    print(
-        f"[{variant}] Test patches: {len(test_dataset):,} "
-        f"({test_dataset.authentic_count:,} authentic, "
-        f"{test_dataset.contrast_count:,} contrast)"
-    )
-
     # ---- Inference -------------------------------------------------------
-    all_preds  : list[int] = []
-    all_labels : list[int] = []
-    all_probs  : list[float] = []
+    # Accumulators keyed by patch index
+    all_patch_paths : list[str]   = []
+    all_labels      : list[int]   = []
+    all_preds       : list[int]   = []
+    all_probs       : list[float] = []
+    all_sublabels   : list[str]   = []
 
     with torch.no_grad():
-        for imgs, labels, _ in tqdm(test_loader, desc=f"[{variant}] Evaluating"):
+        for imgs, labels, _, sublabels, patch_paths in tqdm(
+            test_loader, desc=f"[{variant}] Evaluating"
+        ):
             imgs   = imgs.to(device)
-            logits = model(imgs).squeeze(-1)          # (B,)
+            logits = model(imgs).squeeze(-1)       # (B,)
             probs  = torch.sigmoid(logits).cpu()
             preds  = (probs > 0.5).long()
 
             all_probs.extend(probs.tolist())
             all_preds.extend(preds.tolist())
             all_labels.extend(labels.tolist())
+            all_sublabels.extend(sublabels)        # list of str
+            all_patch_paths.extend(patch_paths)    # list of str
 
-    # ---- Metrics ---------------------------------------------------------
-    # Patch-level metrics
-    patch_acc  = accuracy_score(all_labels, all_preds)
-    patch_prec = precision_score(all_labels, all_preds, zero_division=0)
-    patch_rec  = recall_score(all_labels, all_preds, zero_division=0)
-    patch_f1   = f1_score(all_labels, all_preds, zero_division=0)
-    patch_cm   = confusion_matrix(all_labels, all_preds).tolist()
+    # ---- Patch-level metrics (overall + per sublabel) --------------------
+    patch_overall = _compute_metrics(all_labels, all_preds)
 
-    # Painting-level metrics (paper reports these — mean prob across patches per image)
-    # Requires patch→image mapping from the dataset index
-    from collections import defaultdict
-    img_probs : dict[str, list[float]] = defaultdict(list)
-    img_label : dict[str, int] = {}
+    # Group by sublabel
+    sublabel_patch_labels : dict[str, list[int]] = defaultdict(list)
+    sublabel_patch_preds  : dict[str, list[int]] = defaultdict(list)
+    for lbl, pred, sl in zip(all_labels, all_preds, all_sublabels):
+        key = sl if sl else "unlabelled"
+        sublabel_patch_labels[key].append(lbl)
+        sublabel_patch_preds[key].append(pred)
 
-    for idx, (prob, label) in enumerate(zip(all_probs, all_labels)):
-        patch_path, lbl, _ = test_dataset._samples[idx]
-        # Use patch_path as a proxy key grouped by image folder
-        # patch_path format: {prefix}/{image_id}/x{x}_y{y}_{type}.jpg
+    patch_by_sublabel = {
+        sl: _compute_metrics(sublabel_patch_labels[sl], sublabel_patch_preds[sl])
+        for sl in sublabel_patch_labels
+    }
+
+    # ---- Painting-level metrics (mean prob per image → threshold at 0.5) -
+    # image_id extracted from patch_path: {prefix}/{image_id}/filename.jpg
+    img_probs   : dict[str, list[float]] = defaultdict(list)
+    img_label   : dict[str, int]         = {}
+    img_sublabel: dict[str, str]         = {}
+
+    for prob, lbl, sl, patch_path in zip(all_probs, all_labels, all_sublabels, all_patch_paths):
         image_id = Path(patch_path).parent.name
         img_probs[image_id].append(prob)
-        img_label[image_id] = lbl
+        img_label[image_id]    = lbl
+        img_sublabel[image_id] = sl if sl else "unlabelled"
 
-    painting_labels = []
-    painting_preds  = []
+    painting_labels   : list[int] = []
+    painting_preds    : list[int] = []
+    painting_sublabels: list[str] = []
+
     for image_id, probs in img_probs.items():
         mean_prob = sum(probs) / len(probs)
         painting_labels.append(img_label[image_id])
         painting_preds.append(1 if mean_prob > 0.5 else 0)
+        painting_sublabels.append(img_sublabel[image_id])
 
-    paint_acc  = accuracy_score(painting_labels, painting_preds)
-    paint_prec = precision_score(painting_labels, painting_preds, zero_division=0)
-    paint_rec  = recall_score(painting_labels, painting_preds, zero_division=0)
-    paint_f1   = f1_score(painting_labels, painting_preds, zero_division=0)
-    paint_cm   = confusion_matrix(painting_labels, painting_preds).tolist()
+    painting_overall = _compute_metrics(painting_labels, painting_preds)
+
+    sublabel_paint_labels: dict[str, list[int]] = defaultdict(list)
+    sublabel_paint_preds : dict[str, list[int]] = defaultdict(list)
+    for lbl, pred, sl in zip(painting_labels, painting_preds, painting_sublabels):
+        sublabel_paint_labels[sl].append(lbl)
+        sublabel_paint_preds[sl].append(pred)
+
+    painting_by_sublabel = {
+        sl: _compute_metrics(sublabel_paint_labels[sl], sublabel_paint_preds[sl])
+        for sl in sublabel_paint_labels
+    }
 
     # ---- Print results ---------------------------------------------------
-    print(f"\n{'='*60}")
+    sep = "=" * 64
+    print(f"\n{sep}")
     print(f"  Evaluation Results — Swin-{variant.capitalize()}")
     print(f"  Checkpoint : {ckpt_path.name}  (epoch {trained_epoch})")
-    print(f"{'='*60}")
-    print(f"  PATCH-LEVEL  ({len(all_labels):,} patches)")
-    print(f"    Accuracy  : {patch_acc:.4f}")
-    print(f"    Precision : {patch_prec:.4f}")
-    print(f"    Recall    : {patch_rec:.4f}")
-    print(f"    F1        : {patch_f1:.4f}")
-    print(f"    Confusion matrix (rows=actual, cols=predicted):")
-    print(f"      [TN={patch_cm[0][0]:>5}  FP={patch_cm[0][1]:>5}]")
-    print(f"      [FN={patch_cm[1][0]:>5}  TP={patch_cm[1][1]:>5}]")
-    print(f"\n  PAINTING-LEVEL  ({len(painting_labels):,} paintings)")
-    print(f"    Accuracy  : {paint_acc:.4f}")
-    print(f"    Precision : {paint_prec:.4f}")
-    print(f"    Recall    : {paint_rec:.4f}")
-    print(f"    F1        : {paint_f1:.4f}")
-    print(f"    Confusion matrix (rows=actual, cols=predicted):")
-    print(f"      [TN={paint_cm[0][0]:>5}  FP={paint_cm[0][1]:>5}]")
-    print(f"      [FN={paint_cm[1][0]:>5}  TP={paint_cm[1][1]:>5}]")
-    print(f"{'='*60}\n")
+    print(sep)
 
-    # ---- Assemble results dict -------------------------------------------
-    results = {
-        "variant":         variant,
-        "checkpoint":      str(ckpt_path),
-        "checkpoint_name": ckpt_path.name,
-        "trained_epoch":   trained_epoch,
-        "checkpoint_val_loss": ckpt_val_loss,
-        "checkpoint_val_acc":  ckpt_val_acc,
-        "train_config":    ckpt_config,
+    print("\n  PATCH-LEVEL")
+    _print_metrics("Overall", patch_overall)
+    for sl, m in sorted(patch_by_sublabel.items()):
+        _print_metrics(sl.capitalize(), m)
+
+    print("\n  PAINTING-LEVEL")
+    _print_metrics("Overall", painting_overall)
+    for sl, m in sorted(painting_by_sublabel.items()):
+        _print_metrics(sl.capitalize(), m)
+
+    print(f"{sep}\n")
+
+    # ---- Build output dicts ----------------------------------------------
+    metrics_results = {
+        "variant":              variant,
+        "checkpoint":           str(ckpt_path),
+        "checkpoint_name":      ckpt_path.name,
+        "trained_epoch":        trained_epoch,
+        "checkpoint_val_loss":  ckpt_val_loss,
+        "checkpoint_val_acc":   ckpt_val_acc,
+        "train_config":         ckpt_config,
         "patch_level": {
-            "n_patches":  len(all_labels),
-            "accuracy":   patch_acc,
-            "precision":  patch_prec,
-            "recall":     patch_rec,
-            "f1":         patch_f1,
-            "confusion_matrix": patch_cm,
+            "overall":      patch_overall,
+            "by_sublabel":  patch_by_sublabel,
         },
         "painting_level": {
-            "n_paintings": len(painting_labels),
-            "accuracy":    paint_acc,
-            "precision":   paint_prec,
-            "recall":      paint_rec,
-            "f1":          paint_f1,
-            "confusion_matrix": paint_cm,
+            "overall":      painting_overall,
+            "by_sublabel":  painting_by_sublabel,
         },
     }
 
-    return results
+    # Per-patch log — one entry per patch
+    patch_log = [
+        {
+            "patch_path":   patch_path,
+            "image_id":     Path(patch_path).parent.name,
+            "true_label":   lbl,                          # 1=authentic, 0=inauthentic
+            "pred_label":   pred,
+            "prob":         round(prob, 6),               # P(authentic)
+            "correct":      lbl == pred,
+            "sublabel":     sl if sl else None,
+        }
+        for patch_path, lbl, pred, prob, sl in zip(
+            all_patch_paths, all_labels, all_preds, all_probs, all_sublabels
+        )
+    ]
+
+    return metrics_results, patch_log
 
 
 # ---------------------------------------------------------------------------
@@ -241,7 +316,7 @@ def _evaluate(variant: str, checkpoint_path: str) -> dict:
         )
     ],
 )
-def evaluate(variant: str, checkpoint_path: str) -> dict:
+def evaluate(variant: str, checkpoint_path: str) -> tuple[dict, list[dict]]:
     return _evaluate(variant=variant, checkpoint_path=checkpoint_path)
 
 
@@ -258,21 +333,27 @@ def main(
     """
     Args:
         variant    : "tiny" or "base"
-        checkpoint : Full path to checkpoint inside the Modal Volume,
+        checkpoint : Full path to checkpoint inside Modal Volume,
                      e.g. /checkpoints/tiny/best.pt
-        output_dir : Local directory to write the JSON results file (default: cwd)
+        output_dir : Local directory to write JSON output (default: cwd)
     """
     if variant not in ("tiny", "base"):
         raise ValueError(f"variant must be 'tiny' or 'base', got '{variant}'")
 
-    results = evaluate.remote(variant=variant, checkpoint_path=checkpoint)
+    metrics, patch_log = evaluate.remote(variant=variant, checkpoint_path=checkpoint)
 
-    # Save JSON locally
-    ckpt_stem   = Path(checkpoint).stem
-    output_path = Path(output_dir) / f"eval_{variant}_{ckpt_stem}.json"
-    output_path.parent.mkdir(parents=True, exist_ok=True)
+    stem        = Path(checkpoint).stem
+    output_path = Path(output_dir)
+    output_path.mkdir(parents=True, exist_ok=True)
 
-    with open(output_path, "w") as f:
-        json.dump(results, f, indent=2)
+    metrics_file = output_path / f"eval_{variant}_{stem}_metrics.json"
+    patches_file = output_path / f"eval_{variant}_{stem}_patches.json"
 
-    print(f"Results saved to {output_path}")
+    with open(metrics_file, "w") as f:
+        json.dump(metrics, f, indent=2)
+
+    with open(patches_file, "w") as f:
+        json.dump(patch_log, f, indent=2)
+
+    print(f"Metrics saved to  : {metrics_file}")
+    print(f"Patch log saved to: {patches_file}")

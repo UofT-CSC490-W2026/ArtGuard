@@ -64,12 +64,12 @@ aws_secret = modal.Secret.from_name("artguard-aws")
 
 DEFAULT_CONFIG = dict(
     num_epochs       = 100,
-    batch_size       = 32,
-    lr               = 1e-4,     
-    early_stop_patience = 20,    
-    early_stop_min_delta = 1e-3, 
-    imitation_weight = 10.0,  
-    val_split        = 0.1,     
+    batch_size       = 32,        # paper Section 3.3
+    lr               = 1e-4,      # paper Section 3.3
+    early_stop_patience = 20,     # paper Section 3.3
+    early_stop_min_delta = 1e-3,  # paper Section 3.3
+    imitation_weight = 10.0,      # paper Section 3.2 (wim=10 for standard contrast)
+    val_split        = 0.1,       # ~10% validation
     num_workers      = 4,
 )
 
@@ -150,7 +150,7 @@ def _train(variant: str, config: dict) -> None:
         train_loss = 0.0
         train_correct = 0
 
-        for imgs, labels, weights in tqdm(train_loader, desc=f"[{variant}] Epoch {epoch} train"):
+        for imgs, labels, weights, _, __ in tqdm(train_loader, desc=f"[{variant}] Epoch {epoch} train"):
             imgs    = imgs.to(device)
             labels  = labels.float().to(device)
             weights = weights.float().to(device)
@@ -175,7 +175,7 @@ def _train(variant: str, config: dict) -> None:
         val_correct = 0
 
         with torch.no_grad():
-            for imgs, labels, weights in val_loader:
+            for imgs, labels, weights, _, __ in val_loader:
                 imgs   = imgs.to(device)
                 labels = labels.float().to(device)
                 logits = model(imgs).squeeze(-1)
