@@ -21,7 +21,6 @@ import json
 import os
 from collections import defaultdict
 from pathlib import Path
-from typing import Optional
 
 import modal
 
@@ -44,6 +43,10 @@ image = (
         "scikit-learn",
         "tqdm",
     )
+    .add_local_python_source(
+        "src.apps.train.dataset",
+        "src.apps.train.model",
+    )
 )
 
 aws_secret = modal.Secret.from_name("artguard-aws")
@@ -56,25 +59,31 @@ aws_secret = modal.Secret.from_name("artguard-aws")
 def _compute_metrics(labels: list[int], preds: list[int]) -> dict:
     """Return accuracy, precision, recall, F1, and confusion matrix."""
     from sklearn.metrics import (
-        accuracy_score, confusion_matrix,
-        f1_score, precision_score, recall_score,
+        accuracy_score,
+        confusion_matrix,
+        f1_score,
+        precision_score,
+        recall_score,
     )
+
     if not labels:
         return {
             "n": 0,
-            "accuracy": None, "precision": None,
-            "recall": None,   "f1": None,
+            "accuracy": None,
+            "precision": None,
+            "recall": None,
+            "f1": None,
             "confusion_matrix": None,
         }
 
     cm = confusion_matrix(labels, preds, labels=[0, 1]).tolist()
     return {
-        "n":          len(labels),
-        "accuracy":   accuracy_score(labels, preds),
-        "precision":  precision_score(labels, preds, zero_division=0),
-        "recall":     recall_score(labels, preds, zero_division=0),
-        "f1":         f1_score(labels, preds, zero_division=0),
-        "confusion_matrix": cm,   # [[TN, FP], [FN, TP]]
+        "n": len(labels),
+        "accuracy": accuracy_score(labels, preds),
+        "precision": precision_score(labels, preds, zero_division=0),
+        "recall": recall_score(labels, preds, zero_division=0),
+        "f1": f1_score(labels, preds, zero_division=0),
+        "confusion_matrix": cm,  # [[TN, FP], [FN, TP]]
     }
 
 
@@ -82,13 +91,14 @@ def _print_metrics(title: str, m: dict) -> None:
     if m["n"] == 0:
         print(f"  {title}: no samples")
         return
+
     cm = m["confusion_matrix"]
     print(f"  {title}  (n={m['n']:,})")
     print(f"    Accuracy  : {m['accuracy']:.4f}")
     print(f"    Precision : {m['precision']:.4f}")
     print(f"    Recall    : {m['recall']:.4f}")
     print(f"    F1        : {m['f1']:.4f}")
-    print(f"    Confusion matrix (rows=actual, cols=predicted):")
+    print("    Confusion matrix (rows=actual, cols=predicted):")
     print(f"      [TN={cm[0][0]:>5}  FP={cm[0][1]:>5}]")
     print(f"      [FN={cm[1][0]:>5}  TP={cm[1][1]:>5}]")
 
@@ -107,8 +117,8 @@ def _evaluate(variant: str, checkpoint_path: str) -> tuple[dict, list[dict]]:
     from torch.utils.data import DataLoader
     from tqdm import tqdm
 
-    from src.apps.training.dataset import PatchDataset, default_val_transforms
-    from src.apps.training.model import ArtAuthenticator
+    from src.apps.train.dataset import PatchDataset, default_val_transforms
+    from src.apps.train.model import ArtAuthenticator
 
     device = "cuda" if torch.cuda.is_available() else "cpu"
     print(f"[{variant}] Device: {device}")
@@ -119,14 +129,14 @@ def _evaluate(variant: str, checkpoint_path: str) -> tuple[dict, list[dict]]:
         raise FileNotFoundError(f"Checkpoint not found: {checkpoint_path}")
 
     print(f"[{variant}] Loading checkpoint: {ckpt_path}")
-    checkpoint     = torch.load(ckpt_path, map_location=device)
-    trained_epoch  = checkpoint.get("epoch", "unknown")
-    ckpt_val_loss  = checkpoint.get("val_loss", None)
-    ckpt_val_acc   = checkpoint.get("val_acc", None)
-    ckpt_config    = checkpoint.get("config", {})
+    checkpoint = torch.load(ckpt_path, map_location=device)
+    trained_epoch = checkpoint.get("epoch", "unknown")
+    ckpt_val_loss = checkpoint.get("val_loss", None)
+    ckpt_val_acc = checkpoint.get("val_acc", None)
+    ckpt_config = checkpoint.get("config", {})
 
     print(f"[{variant}] Checkpoint epoch : {trained_epoch}")
-    if ckpt_val_loss is not None:
+    if ckpt_val_loss is not None and ckpt_val_acc is not None:
         print(f"[{variant}] Checkpoint val   : loss={ckpt_val_loss:.4f}  acc={ckpt_val_acc:.4f}")
 
     # ---- Model -----------------------------------------------------------
@@ -134,9 +144,9 @@ def _evaluate(variant: str, checkpoint_path: str) -> tuple[dict, list[dict]]:
     model.load_state_dict(checkpoint["state_dict"])
     model.eval()
 
-    # ---- Dataset (test split only) ---------------------------------------
-    region           = os.environ["AWS_REGION"]
-    img_table_name   = os.environ["DDB_IMAGES_TABLE"]
+    # ---- Dataset (test split only) --------------------------------------
+    region = os.environ["AWS_REGION"]
+    img_table_name = os.environ["DDB_IMAGES_TABLE"]
     patch_table_name = os.environ["DDB_PATCHES_TABLE"]
     processed_bucket = os.environ["S3_IMAGES_PROCESSED_BUCKET"]
 
@@ -146,7 +156,7 @@ def _evaluate(variant: str, checkpoint_path: str) -> tuple[dict, list[dict]]:
         processed_bucket=processed_bucket,
         region=region,
         transform=default_val_transforms(),
-        imitation_weight=1.0,   # no weighting at eval time
+        imitation_weight=1.0,
         split="test",
     )
 
@@ -169,34 +179,32 @@ def _evaluate(variant: str, checkpoint_path: str) -> tuple[dict, list[dict]]:
     )
 
     # ---- Inference -------------------------------------------------------
-    # Accumulators keyed by patch index
-    all_patch_paths : list[str]   = []
-    all_labels      : list[int]   = []
-    all_preds       : list[int]   = []
-    all_probs       : list[float] = []
-    all_sublabels   : list[str]   = []
+    all_patch_paths: list[str] = []
+    all_labels: list[int] = []
+    all_preds: list[int] = []
+    all_probs: list[float] = []
+    all_sublabels: list[str] = []
 
     with torch.no_grad():
         for imgs, labels, _, sublabels, patch_paths in tqdm(
             test_loader, desc=f"[{variant}] Evaluating"
         ):
-            imgs   = imgs.to(device)
-            logits = model(imgs).squeeze(-1)       # (B,)
-            probs  = torch.sigmoid(logits).cpu()
-            preds  = (probs > 0.5).long()
+            imgs = imgs.to(device)
+            logits = model(imgs).squeeze(-1)
+            probs = torch.sigmoid(logits).cpu()
+            preds = (probs > 0.5).long()
 
             all_probs.extend(probs.tolist())
             all_preds.extend(preds.tolist())
             all_labels.extend(labels.tolist())
-            all_sublabels.extend(sublabels)        # list of str
-            all_patch_paths.extend(patch_paths)    # list of str
+            all_sublabels.extend(sublabels)
+            all_patch_paths.extend(patch_paths)
 
-    # ---- Patch-level metrics (overall + per sublabel) --------------------
+    # ---- Patch-level metrics --------------------------------------------
     patch_overall = _compute_metrics(all_labels, all_preds)
 
-    # Group by sublabel
-    sublabel_patch_labels : dict[str, list[int]] = defaultdict(list)
-    sublabel_patch_preds  : dict[str, list[int]] = defaultdict(list)
+    sublabel_patch_labels: dict[str, list[int]] = defaultdict(list)
+    sublabel_patch_preds: dict[str, list[int]] = defaultdict(list)
     for lbl, pred, sl in zip(all_labels, all_preds, all_sublabels):
         key = sl if sl else "unlabelled"
         sublabel_patch_labels[key].append(lbl)
@@ -207,20 +215,19 @@ def _evaluate(variant: str, checkpoint_path: str) -> tuple[dict, list[dict]]:
         for sl in sublabel_patch_labels
     }
 
-    # ---- Painting-level metrics (mean prob per image → threshold at 0.5) -
-    # image_id extracted from patch_path: {prefix}/{image_id}/filename.jpg
-    img_probs   : dict[str, list[float]] = defaultdict(list)
-    img_label   : dict[str, int]         = {}
-    img_sublabel: dict[str, str]         = {}
+    # ---- Painting-level metrics -----------------------------------------
+    img_probs: dict[str, list[float]] = defaultdict(list)
+    img_label: dict[str, int] = {}
+    img_sublabel: dict[str, str] = {}
 
     for prob, lbl, sl, patch_path in zip(all_probs, all_labels, all_sublabels, all_patch_paths):
         image_id = Path(patch_path).parent.name
         img_probs[image_id].append(prob)
-        img_label[image_id]    = lbl
+        img_label[image_id] = lbl
         img_sublabel[image_id] = sl if sl else "unlabelled"
 
-    painting_labels   : list[int] = []
-    painting_preds    : list[int] = []
+    painting_labels: list[int] = []
+    painting_preds: list[int] = []
     painting_sublabels: list[str] = []
 
     for image_id, probs in img_probs.items():
@@ -232,7 +239,7 @@ def _evaluate(variant: str, checkpoint_path: str) -> tuple[dict, list[dict]]:
     painting_overall = _compute_metrics(painting_labels, painting_preds)
 
     sublabel_paint_labels: dict[str, list[int]] = defaultdict(list)
-    sublabel_paint_preds : dict[str, list[int]] = defaultdict(list)
+    sublabel_paint_preds: dict[str, list[int]] = defaultdict(list)
     for lbl, pred, sl in zip(painting_labels, painting_preds, painting_sublabels):
         sublabel_paint_labels[sl].append(lbl)
         sublabel_paint_preds[sl].append(pred)
@@ -261,35 +268,34 @@ def _evaluate(variant: str, checkpoint_path: str) -> tuple[dict, list[dict]]:
 
     print(f"{sep}\n")
 
-    # ---- Build output dicts ----------------------------------------------
+    # ---- Build output dicts ---------------------------------------------
     metrics_results = {
-        "variant":              variant,
-        "checkpoint":           str(ckpt_path),
-        "checkpoint_name":      ckpt_path.name,
-        "trained_epoch":        trained_epoch,
-        "checkpoint_val_loss":  ckpt_val_loss,
-        "checkpoint_val_acc":   ckpt_val_acc,
-        "train_config":         ckpt_config,
+        "variant": variant,
+        "checkpoint": str(ckpt_path),
+        "checkpoint_name": ckpt_path.name,
+        "trained_epoch": trained_epoch,
+        "checkpoint_val_loss": ckpt_val_loss,
+        "checkpoint_val_acc": ckpt_val_acc,
+        "train_config": ckpt_config,
         "patch_level": {
-            "overall":      patch_overall,
-            "by_sublabel":  patch_by_sublabel,
+            "overall": patch_overall,
+            "by_sublabel": patch_by_sublabel,
         },
         "painting_level": {
-            "overall":      painting_overall,
-            "by_sublabel":  painting_by_sublabel,
+            "overall": painting_overall,
+            "by_sublabel": painting_by_sublabel,
         },
     }
 
-    # Per-patch log — one entry per patch
     patch_log = [
         {
-            "patch_path":   patch_path,
-            "image_id":     Path(patch_path).parent.name,
-            "true_label":   lbl,                          # 1=authentic, 0=inauthentic
-            "pred_label":   pred,
-            "prob":         round(prob, 6),               # P(authentic)
-            "correct":      lbl == pred,
-            "sublabel":     sl if sl else None,
+            "patch_path": patch_path,
+            "image_id": Path(patch_path).parent.name,
+            "true_label": lbl,
+            "pred_label": pred,
+            "prob": round(prob, 6),
+            "correct": lbl == pred,
+            "sublabel": sl if sl else None,
         }
         for patch_path, lbl, pred, prob, sl in zip(
             all_patch_paths, all_labels, all_preds, all_probs, all_sublabels
@@ -309,12 +315,6 @@ def _evaluate(variant: str, checkpoint_path: str) -> tuple[dict, list[dict]]:
     timeout=60 * 60 * 2,
     volumes={CHECKPOINT_DIR: volume},
     secrets=[aws_secret],
-    mounts=[
-        modal.Mount.from_local_python_packages(
-            "src.apps.training.dataset",
-            "src.apps.training.model",
-        )
-    ],
 )
 def evaluate(variant: str, checkpoint_path: str) -> tuple[dict, list[dict]]:
     return _evaluate(variant=variant, checkpoint_path=checkpoint_path)
@@ -342,7 +342,7 @@ def main(
 
     metrics, patch_log = evaluate.remote(variant=variant, checkpoint_path=checkpoint)
 
-    stem        = Path(checkpoint).stem
+    stem = Path(checkpoint).stem
     output_path = Path(output_dir)
     output_path.mkdir(parents=True, exist_ok=True)
 

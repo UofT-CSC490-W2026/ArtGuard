@@ -11,7 +11,7 @@ from io import BytesIO
 import base64
 import requests
 from src.apps.data_pipeline.process import process_inference_image
-from src.apps.backend.routes.train import router as train_router
+from src.apps.backend.routes.train_router import router as train_router
 
 app = FastAPI(title="ArtGuard API", version="1.0.1")
 app.include_router(train_router)

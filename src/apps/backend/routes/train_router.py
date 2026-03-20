@@ -20,9 +20,7 @@ import boto3
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
 
-from src.schemas import RunRecord
-from src.apps.training.train import DEFAULT_CONFIG, train_swin_base, train_swin_tiny
-from src.apps.training.evaluate import evaluate
+from src.apps.data_pipeline.schemas import RunRecord
 
 router = APIRouter()
 
@@ -61,6 +59,8 @@ async def start_training(body: TrainRequest):
         variant : echoed back
         status  : "started"
     """
+    from src.apps.train.train import DEFAULT_CONFIG, train_swin_base, train_swin_tiny
+
     if body.variant not in ("tiny", "base"):
         raise HTTPException(
             status_code=400,
@@ -138,6 +138,8 @@ async def start_evaluation(body: EvaluateRequest):
         checkpoint : echoed back
         status     : "started"
     """
+    from src.apps.train.evaluate import evaluate
+    
     if body.variant not in ("tiny", "base"):
         raise HTTPException(
             status_code=400,

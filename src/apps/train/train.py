@@ -28,7 +28,6 @@ Environment variables expected (set as Modal Secrets):
 from __future__ import annotations
 
 import os
-import time
 from typing import Optional
 
 import modal
@@ -43,7 +42,7 @@ app = modal.App("artguard-training")
 volume = modal.Volume.from_name("artguard-checkpoints", create_if_missing=True)
 CHECKPOINT_DIR = "/checkpoints"
 
-# Container image — install all deps
+# Container image — install all deps and include local python source
 image = (
     modal.Image.debian_slim(python_version="3.11")
     .pip_install(
@@ -52,6 +51,10 @@ image = (
         "boto3",
         "pillow",
         "tqdm",
+    )
+    .add_local_python_source(
+        "src.apps.train.dataset",
+        "src.apps.train.model",
     )
 )
 
@@ -63,16 +66,15 @@ aws_secret = modal.Secret.from_name("artguard-aws")
 # ---------------------------------------------------------------------------
 
 DEFAULT_CONFIG = dict(
-    num_epochs       = 100,
-    batch_size       = 32,        # paper Section 3.3
-    lr               = 1e-4,      # paper Section 3.3
-    early_stop_patience = 20,     # paper Section 3.3
-    early_stop_min_delta = 1e-3,  # paper Section 3.3
-    imitation_weight = 10.0,      # paper Section 3.2 (wim=10 for standard contrast)
-    val_split        = 0.1,       # ~10% validation
-    num_workers      = 4,
+    num_epochs=100,
+    batch_size=32,         # paper Section 3.3
+    lr=1e-4,               # paper Section 3.3
+    early_stop_patience=20,
+    early_stop_min_delta=1e-3,
+    imitation_weight=10.0, # paper Section 3.2
+    val_split=0.1,
+    num_workers=4,
 )
-
 
 # ---------------------------------------------------------------------------
 # Core training logic (shared between both variants)
@@ -83,19 +85,21 @@ def _train(variant: str, config: dict) -> None:
     from torch.utils.data import DataLoader, random_split
     from tqdm import tqdm
 
-    # Local imports — these files are mounted into the Modal container
-    from src.apps.training.dataset import PatchDataset, default_train_transforms, default_val_transforms
-    from src.apps.training.model import ArtAuthenticator
+    from src.apps.train.dataset import (
+        PatchDataset,
+        default_train_transforms,
+        default_val_transforms,
+    )
+    from src.apps.train.model import ArtAuthenticator
 
     device = "cuda" if torch.cuda.is_available() else "cpu"
     print(f"[{variant}] Device: {device}")
 
-    region           = os.environ["AWS_REGION"]
-    img_table_name   = os.environ["DDB_IMAGES_TABLE"]
+    region = os.environ["AWS_REGION"]
+    img_table_name = os.environ["DDB_IMAGES_TABLE"]
     patch_table_name = os.environ["DDB_PATCHES_TABLE"]
     processed_bucket = os.environ["S3_IMAGES_PROCESSED_BUCKET"]
 
-    # ---- Dataset ---------------------------------------------------------
     full_dataset = PatchDataset(
         img_table_name=img_table_name,
         patch_table_name=patch_table_name,
@@ -105,11 +109,10 @@ def _train(variant: str, config: dict) -> None:
         imitation_weight=config["imitation_weight"],
     )
 
-    val_size   = max(1, int(len(full_dataset) * config["val_split"]))
+    val_size = max(1, int(len(full_dataset) * config["val_split"]))
     train_size = len(full_dataset) - val_size
     train_ds, val_ds = random_split(full_dataset, [train_size, val_size])
 
-    # Apply val transforms to val split
     val_ds.dataset.transform = default_val_transforms()
 
     train_loader = DataLoader(
@@ -132,62 +135,57 @@ def _train(variant: str, config: dict) -> None:
         f"[{variant}] Authentic: {full_dataset.authentic_count:,}  |  Contrast: {full_dataset.contrast_count:,}"
     )
 
-    # ---- Model -----------------------------------------------------------
     model = ArtAuthenticator(variant=variant, pretrained=True).to(device)
     optimizer = model.configure_optimizer(lr=config["lr"])
-    # Use reduction="none" so we can apply per-sample imitation weights
     criterion = torch.nn.BCEWithLogitsLoss(reduction="none")
 
-    # ---- Training loop ---------------------------------------------------
-    best_val_loss   = float("inf")
+    best_val_loss = float("inf")
     epochs_no_improve = 0
-    checkpoint_dir  = os.path.join(CHECKPOINT_DIR, variant)
+    checkpoint_dir = os.path.join(CHECKPOINT_DIR, variant)
     os.makedirs(checkpoint_dir, exist_ok=True)
 
     for epoch in range(1, config["num_epochs"] + 1):
-        # -- Train --
         model.train()
         train_loss = 0.0
         train_correct = 0
 
         for imgs, labels, weights, _, __ in tqdm(train_loader, desc=f"[{variant}] Epoch {epoch} train"):
-            imgs    = imgs.to(device)
-            labels  = labels.float().to(device)
+            imgs = imgs.to(device)
+            labels = labels.float().to(device)
             weights = weights.float().to(device)
 
             optimizer.zero_grad()
-            logits = model(imgs).squeeze(-1)          # (B,)
-            losses = criterion(logits, labels)        # (B,) unreduced
-            loss   = (losses * weights).mean()        # apply imitation weighting
+            logits = model(imgs).squeeze(-1)
+            losses = criterion(logits, labels)
+            loss = (losses * weights).mean()
             loss.backward()
             optimizer.step()
 
-            train_loss    += loss.item() * imgs.size(0)
-            preds          = (torch.sigmoid(logits) > 0.5).long()
+            train_loss += loss.item() * imgs.size(0)
+            preds = (torch.sigmoid(logits) > 0.5).long()
             train_correct += (preds == labels.long()).sum().item()
 
         train_loss /= train_size
-        train_acc   = train_correct / train_size
+        train_acc = train_correct / train_size
 
-        # -- Validate --
         model.eval()
-        val_loss    = 0.0
+        val_loss = 0.0
         val_correct = 0
 
         with torch.no_grad():
             for imgs, labels, weights, _, __ in val_loader:
-                imgs   = imgs.to(device)
+                imgs = imgs.to(device)
                 labels = labels.float().to(device)
                 logits = model(imgs).squeeze(-1)
                 losses = criterion(logits, labels)
-                loss   = losses.mean()               # no weighting at val time
+                loss = losses.mean()
 
-                val_loss    += loss.item() * imgs.size(0)
-                preds        = (torch.sigmoid(logits) > 0.5).long()
+                val_loss += loss.item() * imgs.size(0)
+                preds = (torch.sigmoid(logits) > 0.5).long()
                 val_correct += (preds == labels.long()).sum().item()
 
         val_loss /= val_size
-        val_acc   = val_correct / val_size
+        val_acc = val_correct / val_size
 
         print(
             f"[{variant}] Epoch {epoch:03d} | "
@@ -195,33 +193,37 @@ def _train(variant: str, config: dict) -> None:
             f"val_loss={val_loss:.4f}  val_acc={val_acc:.4f}"
         )
 
-        # -- Checkpoint every epoch --
         epoch_ckpt = os.path.join(checkpoint_dir, f"epoch_{epoch:03d}.pt")
-        torch.save({
-            "epoch":      epoch,
-            "variant":    variant,
-            "state_dict": model.state_dict(),
-            "optimizer":  optimizer.state_dict(),
-            "val_loss":   val_loss,
-            "val_acc":    val_acc,
-            "config":     config,
-        }, epoch_ckpt)
-        volume.commit()  # flush to Modal Volume
+        torch.save(
+            {
+                "epoch": epoch,
+                "variant": variant,
+                "state_dict": model.state_dict(),
+                "optimizer": optimizer.state_dict(),
+                "val_loss": val_loss,
+                "val_acc": val_acc,
+                "config": config,
+            },
+            epoch_ckpt,
+        )
+        volume.commit()
 
-        # -- Early stopping --
         if val_loss < best_val_loss - config["early_stop_min_delta"]:
             best_val_loss = val_loss
             epochs_no_improve = 0
-            # Save best separately for easy loading
+
             best_ckpt = os.path.join(checkpoint_dir, "best.pt")
-            torch.save({
-                "epoch":      epoch,
-                "variant":    variant,
-                "state_dict": model.state_dict(),
-                "val_loss":   val_loss,
-                "val_acc":    val_acc,
-                "config":     config,
-            }, best_ckpt)
+            torch.save(
+                {
+                    "epoch": epoch,
+                    "variant": variant,
+                    "state_dict": model.state_dict(),
+                    "val_loss": val_loss,
+                    "val_acc": val_acc,
+                    "config": config,
+                },
+                best_ckpt,
+            )
             volume.commit()
             print(f"[{variant}]   ✓ New best val_loss={best_val_loss:.4f} — saved to {best_ckpt}")
         else:
@@ -234,7 +236,6 @@ def _train(variant: str, config: dict) -> None:
     print(f"[{variant}] Training complete. Best val_loss={best_val_loss:.4f}")
     print(f"[{variant}] Checkpoints saved to Modal Volume at {checkpoint_dir}/")
 
-
 # ---------------------------------------------------------------------------
 # Modal Functions — one per variant so they can run in parallel
 # ---------------------------------------------------------------------------
@@ -242,15 +243,9 @@ def _train(variant: str, config: dict) -> None:
 @app.function(
     image=image,
     gpu="A10G",
-    timeout=60 * 60 * 12,          # 12 hours max
+    timeout=60 * 60 * 12,
     volumes={CHECKPOINT_DIR: volume},
     secrets=[aws_secret],
-    mounts=[
-        modal.Mount.from_local_python_packages(
-            "src.apps.training.dataset",
-            "src.apps.training.model",
-        )
-    ],
 )
 def train_swin_tiny(config: Optional[dict] = None) -> None:
     _train(variant="tiny", config=config or DEFAULT_CONFIG)
@@ -262,16 +257,9 @@ def train_swin_tiny(config: Optional[dict] = None) -> None:
     timeout=60 * 60 * 12,
     volumes={CHECKPOINT_DIR: volume},
     secrets=[aws_secret],
-    mounts=[
-        modal.Mount.from_local_python_packages(
-            "src.apps.training.dataset",
-            "src.apps.training.model",
-        )
-    ],
 )
 def train_swin_base(config: Optional[dict] = None) -> None:
     _train(variant="base", config=config or DEFAULT_CONFIG)
-
 
 # ---------------------------------------------------------------------------
 # Local entrypoint — triggers both variants in parallel
