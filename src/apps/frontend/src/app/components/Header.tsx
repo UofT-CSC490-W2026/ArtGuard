@@ -1,7 +1,7 @@
 import { Link } from "react-router";
 import { useAuth } from "../contexts/AuthContext";
 import { Button } from "./ui/button";
-import { Shield, User, LogOut, Upload, History, UserCircle, Sparkles } from "lucide-react";
+import { Shield, User, LogOut, Upload, History, UserCircle, Sparkles, Terminal } from "lucide-react";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -53,6 +53,12 @@ export function Header({ showAuthLinks = false, authLinkText, authLinkTo }: Head
                   <Link to="/advanced">
                     <Sparkles className="size-4 mr-2" />
                     Batch Analysis
+                  </Link>
+                </Button>
+                <Button variant="ghost" asChild className="rounded-md">
+                  <Link to="/developer">
+                    <Terminal className="size-4 mr-2" />
+                    API tools
                   </Link>
                 </Button>
               </nav>

@@ -1,4 +1,5 @@
 import { useState, useRef } from "react";
+import { useAuth } from "../contexts/AuthContext";
 import { Header } from "../components/Header";
 import { Button } from "../components/ui/button";
 import { Input } from "../components/ui/input";
@@ -24,11 +25,13 @@ interface UploadedFile {
 }
 
 export function AdvancedPage() {
+  const { user } = useAuth();
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   const [batchFiles, setBatchFiles] = useState<UploadedFile[]>([]);
   const [isAnalyzingBatch, setIsAnalyzingBatch] = useState(false);
   const [batchProgress, setBatchProgress] = useState(0);
+  const [batchError, setBatchError] = useState("");
 
   const handleBatchFileSelect = (files: FileList) => {
     Array.from(files).forEach((file) => {
@@ -54,18 +57,48 @@ export function AdvancedPage() {
 
     setIsAnalyzingBatch(true);
     setBatchProgress(0);
+    setBatchError("");
 
-    // Simulate analyzing each file
+    if (hasApiBackend()) {
+      try {
+        for (let i = 0; i < batchFiles.length; i++) {
+          const row = batchFiles[i];
+          if (!row.artistName.trim() || !row.artworkName.trim()) {
+            setBatchError(
+              "Each image needs both artist name and artwork name (same as single upload)."
+            );
+            setIsAnalyzingBatch(false);
+            return;
+          }
+          const res = await analyzeArtwork({
+            file: row.file,
+            artistName: row.artistName.trim(),
+            artworkName: row.artworkName.trim(),
+            userId: user?.id ?? "",
+          });
+          setBatchFiles((prev) =>
+            prev.map((file, index) =>
+              index === i ? { ...file, score: res.score } : file
+            )
+          );
+          setBatchProgress(((i + 1) / batchFiles.length) * 100);
+        }
+      } catch (e) {
+        setBatchError(getErrorMessage(e));
+      } finally {
+        setIsAnalyzingBatch(false);
+      }
+      return;
+    }
+
     for (let i = 0; i < batchFiles.length; i++) {
       await new Promise((resolve) => setTimeout(resolve, 1000));
-
       const score = Math.random() * 0.9;
       setBatchFiles((prev) =>
         prev.map((file, index) =>
           index === i ? { ...file, score } : file
         )
       );
-
       setBatchProgress(((i + 1) / batchFiles.length) * 100);
     }
 
@@ -103,7 +136,7 @@ export function AdvancedPage() {
           <div className="mb-8">
             <h1 className="text-3xl mb-2">Batch Analysis</h1>
             <p className="text-gray-600">
-              Upload and analyze multiple artworks simultaneously
+              Upload multiple images; each row needs both artist and artwork name before analysis.
             </p>
           </div>
 
@@ -111,7 +144,7 @@ export function AdvancedPage() {
             <CardHeader>
               <CardTitle>Batch Forgery Detection</CardTitle>
               <CardDescription>
-                Select multiple images to run forgery analysis on all of them at once
+                Select multiple images, fill in artist and artwork for each, then analyze all.
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
@@ -163,22 +196,24 @@ export function AdvancedPage() {
                               <div className="flex items-start justify-between">
                                 <div className="space-y-1 flex-1">
                                   <Input
-                                    placeholder="Artwork name"
-                                    value={file.artworkName}
-                                    onChange={(e) =>
-                                      updateBatchFile(file.id, "artworkName", e.target.value)
-                                    }
-                                    disabled={isAnalyzingBatch}
-                                    className="max-w-xs"
-                                  />
-                                  <Input
-                                    placeholder="Artist name (optional)"
+                                    placeholder="Artist name (required)"
                                     value={file.artistName}
                                     onChange={(e) =>
                                       updateBatchFile(file.id, "artistName", e.target.value)
                                     }
                                     disabled={isAnalyzingBatch}
                                     className="max-w-xs"
+                                    required
+                                  />
+                                  <Input
+                                    placeholder="Artwork name (required)"
+                                    value={file.artworkName}
+                                    onChange={(e) =>
+                                      updateBatchFile(file.id, "artworkName", e.target.value)
+                                    }
+                                    disabled={isAnalyzingBatch}
+                                    className="max-w-xs"
+                                    required
                                   />
                                 </div>
 
@@ -208,6 +243,12 @@ export function AdvancedPage() {
                     })}
                   </div>
 
+                  {batchError && (
+                    <Alert variant="destructive">
+                      <AlertDescription>{batchError}</AlertDescription>
+                    </Alert>
+                  )}
+
                   {isAnalyzingBatch && (
                     <div className="space-y-2">
                       <div className="flex justify-between text-sm">
@@ -221,7 +262,13 @@ export function AdvancedPage() {
                   <div className="flex gap-4">
                     <Button
                       onClick={handleBatchAnalyze}
-                      disabled={isAnalyzingBatch || batchFiles.some(f => f.score !== undefined)}
+                      disabled={
+                        isAnalyzingBatch ||
+                        batchFiles.some((f) => f.score !== undefined) ||
+                        !batchFiles.every(
+                          (f) => f.artistName.trim().length > 0 && f.artworkName.trim().length > 0
+                        )
+                      }
                       className="flex-1"
                     >
                       {isAnalyzingBatch ? (

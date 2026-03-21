@@ -1,7 +1,7 @@
 import { createContext, useContext, useState, useEffect, useCallback, type ReactNode } from "react";
-import type { User } from "../types";
+import type { User, AuthApiResponse } from "../types";
 import { getErrorMessage } from "../types";
-import { hasApiBackend, api } from "../api/client";
+import { hasApiBackend, api, setAccessToken, getAccessToken } from "../api/client";
 
 const STORAGE_USER = "artguard_user";
 const STORAGE_USERS = "artguard_users";
@@ -69,19 +69,51 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    try {
-      const stored = localStorage.getItem(STORAGE_USER);
-      if (stored) {
-        const parsed = JSON.parse(stored) as User;
-        if (parsed?.id && parsed?.username && parsed?.email) {
-          setUser(parsed);
+    let cancelled = false;
+
+    async function init() {
+      if (!hasApiBackend()) {
+        try {
+          const stored = localStorage.getItem(STORAGE_USER);
+          if (stored) {
+            const parsed = JSON.parse(stored) as User;
+            if (parsed?.id && parsed?.username && parsed?.email) {
+              setUser(parsed);
+            }
+          }
+        } catch {
+          localStorage.removeItem(STORAGE_USER);
+        } finally {
+          if (!cancelled) setIsLoading(false);
         }
+        return;
       }
-    } catch {
-      localStorage.removeItem(STORAGE_USER);
-    } finally {
-      setIsLoading(false);
+
+      const token = getAccessToken();
+      if (!token) {
+        localStorage.removeItem(STORAGE_USER);
+        if (!cancelled) setIsLoading(false);
+        return;
+      }
+
+      try {
+        const me = await api.get<User>("/auth/me");
+        if (!cancelled) {
+          setUser(me);
+          persistUser(me);
+        }
+      } catch {
+        setAccessToken(null);
+        localStorage.removeItem(STORAGE_USER);
+      } finally {
+        if (!cancelled) setIsLoading(false);
+      }
     }
+
+    void init();
+    return () => {
+      cancelled = true;
+    };
   }, []);
 
   const signup = useCallback(async (username: string, email: string, password: string) => {
@@ -90,7 +122,12 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     if (password.length < 6) throw new Error("Password must be at least 6 characters");
 
     if (hasApiBackend()) {
-      const res = await api.post<{ user: User }>("/auth/signup", { username, email, password });
+      const res = await api.post<AuthApiResponse>(
+        "/auth/signup",
+        { username, email, password },
+        { skipAuth: true }
+      );
+      setAccessToken(res.access_token);
       setUser(res.user);
       persistUser(res.user);
       return;
@@ -118,7 +155,12 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   const login = useCallback(async (email: string, password: string) => {
     if (hasApiBackend()) {
-      const res = await api.post<{ user: User }>("/auth/login", { email, password });
+      const res = await api.post<AuthApiResponse>(
+        "/auth/login",
+        { email, password },
+        { skipAuth: true }
+      );
+      setAccessToken(res.access_token);
       setUser(res.user);
       persistUser(res.user);
       return;
@@ -153,6 +195,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const logout = useCallback(() => {
     setUser(null);
     localStorage.removeItem(STORAGE_USER);
+    setAccessToken(null);
   }, []);
 
   const updateProfile = useCallback(async (username: string, email: string) => {
@@ -160,7 +203,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) throw new Error("Invalid email format");
 
     if (hasApiBackend()) {
-      const res = await api.put<{ user: User }>("/auth/profile", { username, email });
+      const res = await api.put<AuthApiResponse>("/auth/profile", { username, email });
+      setAccessToken(res.access_token);
       setUser(res.user);
       persistUser(res.user);
       return;

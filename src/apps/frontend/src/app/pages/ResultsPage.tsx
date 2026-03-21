@@ -41,10 +41,19 @@ export function ResultsPage() {
         return;
       }
       setResult(parsedResult);
-      setTimeout(() => {
-        setExplanation(generateExplanation(parsedResult.score));
+      const backendExplanation =
+        typeof parsedResult.explanation === "string" && parsedResult.explanation.trim().length > 0
+          ? parsedResult.explanation.trim()
+          : null;
+      if (backendExplanation) {
+        setExplanation(backendExplanation);
         setIsLoadingExplanation(false);
-      }, 1500);
+      } else {
+        setTimeout(() => {
+          setExplanation(generateExplanation(parsedResult.score));
+          setIsLoadingExplanation(false);
+        }, 1500);
+      }
     } catch {
       navigate("/upload");
     } finally {
@@ -181,11 +190,17 @@ Always consult certified art experts for professional verification.
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="aspect-square w-full overflow-hidden rounded-lg bg-gray-100">
-                    <img
-                      src={result.image}
-                      alt="Analyzed artwork"
-                      className="size-full object-cover"
-                    />
+                    {result.image ? (
+                      <img
+                        src={result.image}
+                        alt="Analyzed artwork"
+                        className="size-full object-cover"
+                      />
+                    ) : (
+                      <div className="size-full flex items-center justify-center text-sm text-muted-foreground p-4 text-center">
+                        Image preview unavailable (open history to refresh a signed URL).
+                      </div>
+                    )}
                   </div>
 
                   <div className="space-y-3 text-sm">

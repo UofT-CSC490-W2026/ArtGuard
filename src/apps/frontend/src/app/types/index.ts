@@ -6,6 +6,13 @@ export interface User {
   email: string;
 }
 
+/** Backend POST /auth/login and /auth/signup */
+export interface AuthApiResponse {
+  access_token: string;
+  token_type: string;
+  user: User;
+}
+
 export interface AnalysisResult {
   id: string;
   score: number;
@@ -15,6 +22,8 @@ export interface AnalysisResult {
   timestamp: string;
   fileName: string;
   fileSize: number;
+  /** When present, from POST /inference (backend explanation text). */
+  explanation?: string | null;
 }
 
 export interface ApiError {

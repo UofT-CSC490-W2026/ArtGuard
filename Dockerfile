@@ -5,9 +5,9 @@ FROM python:3.11-slim
 WORKDIR /app
 
 # Copy requirements first for better Docker layer caching
-COPY requirements.txt .
+COPY requirements.txt ./
 
-# Install Python dependencies
+# Install Python dependencies (includes PyJWT, bcrypt for /auth)
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy application code (backend + data pipeline only, frontend deployed separately)

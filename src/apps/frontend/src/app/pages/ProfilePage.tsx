@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useAuth } from "../contexts/AuthContext";
+import { hasApiBackend, api } from "../api/client";
 import { Header } from "../components/Header";
 import { Button } from "../components/ui/button";
 import { Input } from "../components/ui/input";
@@ -32,6 +33,33 @@ export function ProfilePage() {
       setEmail(user.email);
     }
   }, [user]);
+
+  useEffect(() => {
+    if (!user?.id) return;
+    if (!hasApiBackend()) {
+      try {
+        const n = JSON.parse(
+          localStorage.getItem(`artguard_history_${user.id}`) || "[]"
+        ).length;
+        setTotalAnalyses(typeof n === "number" ? n : 0);
+      } catch {
+        setTotalAnalyses(0);
+      }
+      return;
+    }
+    let cancelled = false;
+    api
+      .get<{ count: number }>("/inferences/stats")
+      .then((r) => {
+        if (!cancelled) setTotalAnalyses(r.count);
+      })
+      .catch(() => {
+        if (!cancelled) setTotalAnalyses(null);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [user?.id]);
 
   const handleUpdateProfile = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -182,7 +210,7 @@ export function ProfilePage() {
                   <div className="flex justify-between items-center">
                     <span className="text-gray-600">Total Analyses</span>
                     <span className="font-semibold">
-                      {JSON.parse(localStorage.getItem(`artguard_history_${user?.id}`) || "[]").length}
+                      {totalAnalyses === null ? "—" : totalAnalyses}
                     </span>
                   </div>
                 </div>

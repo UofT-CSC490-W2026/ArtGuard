@@ -128,7 +128,7 @@ fi
 # Initialize Terraform
 echo ""
 echo "🔧 Initializing Terraform..."
-terraform init -backend-config="key=$STATE_KEY" -backend-config="region=$AWS_REGION"
+terraform init -backend-config="key=$STATE_KEY" -backend-config="region=$AWS_REGION" -reconfigure
 
 # Validate
 echo ""

@@ -52,6 +52,9 @@ Complete documentation of DynamoDB schemas, S3 storage structure, and data workf
 | `created_at` | Number | GSI-SK | - | Unix timestamp in milliseconds |
 | `image_name` | String | - | Optional | Name of analyzed image |
 | `image_path` | String | - | - | S3 path to image |
+| `artist_name` | String | - | Optional | Artist label from the client |
+| `artwork_name` | String | - | Optional | Artwork title from the client |
+| `file_size` | Number | - | Optional | Upload size in bytes |
 | `score` | Number | - | - | Forgery confidence score 0.0-1.0 |
 | `explanation` | String | - | Optional | AI analysis explanation |
 | `ttl` | Number | - | Optional | Auto-delete timestamp (90 days) |

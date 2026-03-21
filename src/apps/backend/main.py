@@ -1,4 +1,4 @@
-from fastapi import FastAPI, UploadFile, File, HTTPException, Header
+from fastapi import FastAPI, UploadFile, File, HTTPException, Header, Depends, Form
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 import boto3
@@ -12,8 +12,29 @@ import base64
 import requests
 from src.apps.data_pipeline.process import process_inference_image
 from src.apps.backend.routes.train_router import router as train_router
+from src.apps.backend.routes.auth_router import router as auth_router
+from src.apps.backend.routes.inferences_router import router as inferences_router
+from src.apps.backend.deps.auth import get_current_user_id
+from src.apps.backend.services.s3_presign import presigned_get_url
 
 app = FastAPI(title="ArtGuard API", version="1.0.1")
+
+# CORS: comma-separated origins, or * for any (no cookies; Bearer header is fine).
+_cors_raw = os.getenv("CORS_ALLOW_ORIGINS", "*").strip()
+if _cors_raw == "*":
+    _cors_list = ["*"]
+else:
+    _cors_list = [o.strip() for o in _cors_raw.split(",") if o.strip()] or ["*"]
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=_cors_list,
+    allow_credentials=False,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+app.include_router(auth_router)
+app.include_router(inferences_router)
 app.include_router(train_router)
 
 ENVIRONMENT = "dev"
@@ -32,6 +53,9 @@ async def root():
         "version": "1.0.0",
         "endpoints": {
             "/health": "Health check",
+            "/auth/*": "Signup, login, profile, change-password (JWT)",
+            "/inference": "Multipart image + artist/artwork (Bearer required)",
+            "/inferences/*": "List, stats, get, delete inference history (Bearer)",
             "/train": "Start a training run (POST)",
             "/evaluate": "Start an evaluation run (POST)",
         }
@@ -104,12 +128,26 @@ class InferenceResponse(BaseModel):
     inference_id: str
     score: float
     explanation: Optional[str] = None
+    image_url: Optional[str] = None
+
 
 @app.post("/inference", response_model=InferenceResponse)
-async def infer(file: UploadFile = File(...)):
+async def infer(
+    file: UploadFile = File(...),
+    artist_name: str = Form(...),
+    artwork_name: str = Form(...),
+    user_id: str = Depends(get_current_user_id),
+):
     content = await file.read()
     if not content:
         raise HTTPException(status_code=400, detail="Empty upload")
+    artist_name = artist_name.strip()
+    artwork_name = artwork_name.strip()
+    if not artist_name or not artwork_name:
+        raise HTTPException(
+            status_code=400,
+            detail="artist_name and artwork_name are required",
+        )
     
     # TODO: Initialize the S3 buckets.
     region = os.getenv("AWS_REGION")
@@ -162,17 +200,6 @@ async def infer(file: UploadFile = File(...)):
         "image_height": h,
     })
 
-    # TODO: Write the inference's metadata to DynamoDB
-    inference_table.put_item(Item={
-        "inference_id": inference_id,
-        "user_id": "anonymous", 
-        "created_at": created_at,
-        "image_name": filename,
-        "image_path": raw_s3_uri,
-        "score": 0.0,
-        "explanation": None,
-    })
-   
     patches_info = process_inference_image(
         img=img,
         image_id=image_id,
@@ -197,11 +224,41 @@ async def infer(file: UploadFile = File(...)):
 
     # TODO: Load the model from Modal volume with hyperparameter configs from DynamoDB
     # TODO: Make prediction
-    # TODO: Update InferenceRecord in DynamoDB
     score = 1.0
     explanation = "This is a sample response."
 
-    return InferenceResponse(inference_id=inference_id, score=score, explanation=explanation)
+    ttl_days = int(os.getenv("INFERENCE_TTL_DAYS", "90"))
+    ttl_ts = int(time.time()) + ttl_days * 86400
+
+    inference_table.put_item(
+        Item={
+            "inference_id": inference_id,
+            "user_id": user_id,
+            "created_at": created_at,
+            "image_name": filename,
+            "image_path": raw_s3_uri,
+            "score": score,
+            "explanation": explanation,
+            "artist_name": artist_name,
+            "artwork_name": artwork_name,
+            "file_size": len(content),
+            "ttl": ttl_ts,
+        }
+    )
+
+    presign_expires = int(os.getenv("S3_INFERENCE_PRESIGN_EXPIRES", "86400"))
+    image_url: Optional[str] = None
+    try:
+        image_url = presigned_get_url(s3, raw_s3_uri, presign_expires)
+    except Exception:
+        image_url = None
+
+    return InferenceResponse(
+        inference_id=inference_id,
+        score=score,
+        explanation=explanation,
+        image_url=image_url,
+    )
 
 class RAGQueryRequest(BaseModel):
     query: str

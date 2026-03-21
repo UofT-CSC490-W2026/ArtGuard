@@ -1,5 +1,6 @@
 import type { AnalysisResult } from "../types";
-import { hasApiBackend, api } from "./client";
+import { hasApiBackend, postFormData } from "./client";
+import type { InferenceApiResponse } from "./backendApi";
 
 export interface AnalyzeInput {
   file: File;
@@ -8,19 +9,33 @@ export interface AnalyzeInput {
   userId: string;
 }
 
+function mapInferenceToResult(
+  raw: InferenceApiResponse,
+  input: AnalyzeInput
+): AnalysisResult {
+  const presigned = raw.image_url?.trim();
+  return {
+    id: raw.inference_id,
+    score: raw.score,
+    image: presigned ?? "",
+    artistName: input.artistName || "Unknown",
+    artworkName: input.artworkName || "Untitled",
+    timestamp: new Date().toISOString(),
+    fileName: input.file.name,
+    fileSize: input.file.size,
+    explanation: raw.explanation ?? undefined,
+  };
+}
+
 export async function analyzeArtwork(input: AnalyzeInput): Promise<AnalysisResult> {
   if (hasApiBackend()) {
     const form = new FormData();
-    form.append("image", input.file);
-    form.append("artistName", input.artistName);
-    form.append("artworkName", input.artworkName);
-    form.append("userId", input.userId);
-    const base = import.meta.env.VITE_API_URL as string;
-    const url = `${base.replace(/\/$/, "")}/analyze`;
-    const res = await fetch(url, { method: "POST", body: form });
-    const data = await res.json().catch(() => ({}));
-    if (!res.ok) throw new Error((data as { message?: string })?.message ?? res.statusText);
-    return data as AnalysisResult;
+    // FastAPI: infer(file: UploadFile = File(...)) → field name "file"
+    form.append("file", input.file);
+    form.append("artist_name", input.artistName);
+    form.append("artwork_name", input.artworkName);
+    const raw = await postFormData<InferenceApiResponse>("/inference", form);
+    return mapInferenceToResult(raw, input);
   }
 
   await new Promise((r) => setTimeout(r, 2000));

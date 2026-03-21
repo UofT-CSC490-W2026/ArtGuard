@@ -9,6 +9,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../co
 import { Alert, AlertDescription } from "../components/ui/alert";
 import { getErrorMessage } from "../types";
 import { analyzeArtwork } from "../api/analysis";
+import { hasApiBackend } from "../api/client";
 import { Upload, X, Image as ImageIcon, FileImage, Loader2 } from "lucide-react";
 
 export function UploadPage() {
@@ -93,8 +94,8 @@ export function UploadPage() {
       return;
     }
 
-    if (!artistName.trim() && !artworkName.trim()) {
-      setError("Please provide at least Artist Name or Artwork Name");
+    if (!artistName.trim() || !artworkName.trim()) {
+      setError("Please enter both Artist Name and Artwork Name");
       return;
     }
 
@@ -113,10 +114,12 @@ export function UploadPage() {
 
       localStorage.setItem("artguard_latest_result", JSON.stringify(analysisResult));
 
-      const historyKey = `artguard_history_${user?.id}`;
-      const existingHistory = JSON.parse(localStorage.getItem(historyKey) || "[]");
-      existingHistory.unshift(analysisResult);
-      localStorage.setItem(historyKey, JSON.stringify(existingHistory));
+      if (!hasApiBackend()) {
+        const historyKey = `artguard_history_${user?.id}`;
+        const existingHistory = JSON.parse(localStorage.getItem(historyKey) || "[]");
+        existingHistory.unshift(analysisResult);
+        localStorage.setItem(historyKey, JSON.stringify(existingHistory));
+      }
 
       navigate("/results");
     } catch (err) {
@@ -126,7 +129,8 @@ export function UploadPage() {
     }
   };
 
-  const isFormValid = selectedFile && (artistName.trim() || artworkName.trim());
+  const isFormValid =
+    Boolean(selectedFile) && Boolean(artistName.trim()) && Boolean(artworkName.trim());
 
   return (
     <div className="min-h-screen bg-background">
@@ -137,7 +141,7 @@ export function UploadPage() {
           <div className="mb-8">
             <h1 className="text-3xl mb-2">Upload Artwork</h1>
             <p className="text-gray-600">
-              Upload an image and provide at least artist name or artwork name for analysis
+              Upload an image and enter both the artist and artwork name for analysis
             </p>
           </div>
 
@@ -236,12 +240,7 @@ export function UploadPage() {
                 {/* Metadata Form */}
                 <div className="space-y-4 pt-4 border-t">
                   <div className="space-y-2">
-                    <Label htmlFor="artistName">
-                      Artist Name
-                      <span className="text-sm text-gray-500 ml-2">
-                        (Preferred if known)
-                      </span>
-                    </Label>
+                    <Label htmlFor="artistName">Artist Name *</Label>
                     <Input
                       id="artistName"
                       type="text"
@@ -249,16 +248,12 @@ export function UploadPage() {
                       value={artistName}
                       onChange={(e) => setArtistName(e.target.value)}
                       disabled={isUploading}
+                      required
                     />
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="artworkName">
-                      Artwork Name
-                      <span className="text-sm text-gray-500 ml-2">
-                        (Use if artist name unknown)
-                      </span>
-                    </Label>
+                    <Label htmlFor="artworkName">Artwork Name *</Label>
                     <Input
                       id="artworkName"
                       type="text"
@@ -266,13 +261,14 @@ export function UploadPage() {
                       value={artworkName}
                       onChange={(e) => setArtworkName(e.target.value)}
                       disabled={isUploading}
+                      required
                     />
                   </div>
 
                   <Alert>
                     <ImageIcon className="size-4" />
                     <AlertDescription>
-                      Please provide at least one: Artist Name or Artwork Name
+                      Both artist name and artwork name are required before you can analyze.
                     </AlertDescription>
                   </Alert>
                 </div>

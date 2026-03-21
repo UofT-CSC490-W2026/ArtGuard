@@ -318,6 +318,10 @@ resource "aws_ecs_task_definition" "backend" {
         {
           name      = "MODAL_API_KEY"
           valueFrom = aws_secretsmanager_secret.modal_api_key.arn
+        },
+        {
+          name      = "JWT_SECRET_KEY"
+          valueFrom = aws_secretsmanager_secret.jwt_secret.arn
         }
       ]
 

@@ -35,6 +35,15 @@ import {
   Eye,
 } from "lucide-react";
 import type { AnalysisResult } from "../types";
+import { hasApiBackend } from "../api/client";
+import {
+  deleteAllInferences,
+  deleteInference,
+  inferenceToAnalysisResult,
+  listInferences,
+} from "../api/inferencesApi";
+import { getErrorMessage } from "../types";
+import { Loader2 } from "lucide-react";
 
 export function HistoryPage() {
   const navigate = useNavigate();
@@ -44,15 +53,51 @@ export function HistoryPage() {
   const [searchQuery, setSearchQuery] = useState("");
   const [scoreFilter, setScoreFilter] = useState<string>("all");
   const [sortBy, setSortBy] = useState<string>("newest");
+  const [loadError, setLoadError] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+  const [isLoadingMore, setIsLoadingMore] = useState(false);
+  const [nextCursor, setNextCursor] = useState<string | null>(null);
 
   useEffect(() => {
-    // Load history from localStorage
-    const storedHistory = localStorage.getItem(`artguard_history_${user?.id}`);
-    if (storedHistory) {
-      const parsedHistory = JSON.parse(storedHistory);
-      setHistory(parsedHistory);
-      setFilteredHistory(parsedHistory);
+    if (!user) return;
+
+    if (!hasApiBackend()) {
+      const storedHistory = localStorage.getItem(`artguard_history_${user.id}`);
+      if (storedHistory) {
+        try {
+          const parsedHistory = JSON.parse(storedHistory) as AnalysisResult[];
+          setHistory(parsedHistory);
+        } catch {
+          setHistory([]);
+        }
+      } else {
+        setHistory([]);
+      }
+      setLoadError("");
+      setNextCursor(null);
+      return;
     }
+
+    let cancelled = false;
+    (async () => {
+      setIsLoading(true);
+      setLoadError("");
+      setNextCursor(null);
+      try {
+        const res = await listInferences(50);
+        if (cancelled) return;
+        setHistory(res.items.map(inferenceToAnalysisResult));
+        setNextCursor(res.next_cursor ?? null);
+      } catch (e) {
+        if (!cancelled) setLoadError(getErrorMessage(e));
+      } finally {
+        if (!cancelled) setIsLoading(false);
+      }
+    })();
+
+    return () => {
+      cancelled = true;
+    };
   }, [user]);
 
   useEffect(() => {
@@ -127,16 +172,51 @@ export function HistoryPage() {
     navigate("/results");
   };
 
-  const handleDeleteItem = (id: string) => {
+  const handleDeleteItem = async (id: string) => {
+    if (hasApiBackend()) {
+      try {
+        await deleteInference(id);
+        setHistory((prev) => prev.filter((item) => item.id !== id));
+      } catch (e) {
+        setLoadError(getErrorMessage(e));
+      }
+      return;
+    }
     const updated = history.filter((item) => item.id !== id);
     setHistory(updated);
     localStorage.setItem(`artguard_history_${user?.id}`, JSON.stringify(updated));
   };
 
-  const clearAllHistory = () => {
+  const clearAllHistory = async () => {
+    if (hasApiBackend()) {
+      try {
+        await deleteAllInferences();
+        setHistory([]);
+        setFilteredHistory([]);
+        setNextCursor(null);
+      } catch (e) {
+        setLoadError(getErrorMessage(e));
+      }
+      return;
+    }
     setHistory([]);
     setFilteredHistory([]);
     localStorage.removeItem(`artguard_history_${user?.id}`);
+  };
+
+  const handleLoadMore = async () => {
+    if (!nextCursor || !hasApiBackend()) return;
+    setIsLoadingMore(true);
+    setLoadError("");
+    try {
+      const res = await listInferences(50, nextCursor);
+      setHistory((prev) => [...prev, ...res.items.map(inferenceToAnalysisResult)]);
+      setNextCursor(res.next_cursor ?? null);
+    } catch (e) {
+      setLoadError(getErrorMessage(e));
+    } finally {
+      setIsLoadingMore(false);
+    }
   };
 
   return (
@@ -152,7 +232,7 @@ export function HistoryPage() {
                 View and manage your past forgery detection analyses
               </p>
             </div>
-            {history.length > 0 && (
+            {history.length > 0 && !isLoading && (
               <AlertDialog>
                 <AlertDialogTrigger asChild>
                   <Button variant="outline">
@@ -169,7 +249,7 @@ export function HistoryPage() {
                   </AlertDialogHeader>
                   <AlertDialogFooter>
                     <AlertDialogCancel>Cancel</AlertDialogCancel>
-                    <AlertDialogAction onClick={clearAllHistory}>
+                    <AlertDialogAction onClick={() => void clearAllHistory()}>
                       Clear All
                     </AlertDialogAction>
                   </AlertDialogFooter>
@@ -221,8 +301,23 @@ export function HistoryPage() {
             </CardContent>
           </Card>
 
+          {loadError && (
+            <div className="mb-4 rounded-lg border border-destructive/50 bg-destructive/10 px-4 py-3 text-sm text-destructive">
+              {loadError}
+            </div>
+          )}
+
+          {isLoading ? (
+            <Card>
+              <CardContent className="py-16 flex flex-col items-center justify-center gap-3 text-muted-foreground">
+                <Loader2 className="size-10 animate-spin" />
+                <p>Loading history…</p>
+              </CardContent>
+            </Card>
+          ) : null}
+
           {/* History List */}
-          {filteredHistory.length === 0 ? (
+          {!isLoading && filteredHistory.length === 0 ? (
             <Card>
               <CardContent className="py-16 text-center">
                 <div className="text-gray-400 mb-4">
@@ -243,7 +338,7 @@ export function HistoryPage() {
                 )}
               </CardContent>
             </Card>
-          ) : (
+          ) : !isLoading ? (
             <div className="space-y-4">
               {filteredHistory.map((item) => {
                 const badge = getScoreBadge(item.score);
@@ -254,11 +349,17 @@ export function HistoryPage() {
                     <CardContent className="p-4">
                       <div className="flex gap-4">
                         <div className="size-24 flex-shrink-0 rounded overflow-hidden bg-gray-100">
-                          <img
-                            src={item.image}
-                            alt={item.artworkName}
-                            className="size-full object-cover"
-                          />
+                          {item.image ? (
+                            <img
+                              src={item.image}
+                              alt={item.artworkName}
+                              className="size-full object-cover"
+                            />
+                          ) : (
+                            <div className="size-full flex items-center justify-center text-xs text-muted-foreground p-1 text-center">
+                              No preview
+                            </div>
+                          )}
                         </div>
 
                         <div className="flex-1 min-w-0">
@@ -299,7 +400,7 @@ export function HistoryPage() {
                             <Button
                               size="sm"
                               variant="outline"
-                              onClick={() => handleDeleteItem(item.id)}
+                              onClick={() => void handleDeleteItem(item.id)}
                             >
                               <Trash2 className="size-4 mr-2" />
                               Delete
@@ -311,10 +412,28 @@ export function HistoryPage() {
                   </Card>
                 );
               })}
+              {hasApiBackend() && nextCursor && (
+                <div className="flex justify-center pt-4">
+                  <Button
+                    variant="outline"
+                    disabled={isLoadingMore}
+                    onClick={() => void handleLoadMore()}
+                  >
+                    {isLoadingMore ? (
+                      <>
+                        <Loader2 className="size-4 mr-2 animate-spin" />
+                        Loading…
+                      </>
+                    ) : (
+                      "Load more"
+                    )}
+                  </Button>
+                </div>
+              )}
             </div>
-          )}
+          ) : null}
 
-          {filteredHistory.length > 0 && (
+          {!isLoading && filteredHistory.length > 0 && (
             <div className="mt-6 text-center text-sm text-gray-500">
               Showing {filteredHistory.length} of {history.length} results
             </div>

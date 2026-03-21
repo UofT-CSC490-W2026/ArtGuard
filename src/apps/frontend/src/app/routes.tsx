@@ -7,6 +7,7 @@ import { ResultsPage } from "./pages/ResultsPage";
 import { HistoryPage } from "./pages/HistoryPage";
 import { ProfilePage } from "./pages/ProfilePage";
 import { AdvancedPage } from "./pages/AdvancedPage";
+import { DeveloperPage } from "./pages/DeveloperPage";
 import { RootLayout } from "./components/RootLayout";
 import { ProtectedRoute } from "./components/ProtectedRoute";
 
@@ -64,6 +65,14 @@ export const router = createBrowserRouter([
         element: (
           <ProtectedRoute>
             <AdvancedPage />
+          </ProtectedRoute>
+        ),
+      },
+      {
+        path: "developer",
+        element: (
+          <ProtectedRoute>
+            <DeveloperPage />
           </ProtectedRoute>
         ),
       },

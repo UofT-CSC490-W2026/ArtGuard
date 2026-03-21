@@ -43,3 +43,7 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
+
+# Frontend (Node / Vite)
+node_modules/
+src/apps/frontend/dist/
