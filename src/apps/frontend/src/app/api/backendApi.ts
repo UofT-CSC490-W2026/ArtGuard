@@ -39,6 +39,8 @@ export interface EvaluateResponse {
 
 export interface InferenceApiResponse {
   inference_id: string;
+  /** 1 = authentic, 0 = forgery (from Modal). */
+  prediction?: number;
   score: number;
   explanation?: string | null;
   /** Presigned GET for the raw upload (short-lived). */
