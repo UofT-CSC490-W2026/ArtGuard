@@ -1,10 +1,11 @@
-from fastapi import FastAPI, UploadFile, File, HTTPException, Header
+from fastapi import FastAPI, Form, UploadFile, File, HTTPException, Header
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 import boto3
 import json
 import os, time
 import uuid
+from decimal import Decimal
 from typing import Optional, List
 from PIL import Image
 from io import BytesIO
@@ -12,6 +13,17 @@ import base64
 import requests
 from src.apps.data_pipeline.process import process_inference_image
 from src.apps.backend.routes.train_router import router as train_router
+
+# Modal auth: ECS injects MODAL_API_KEY as JSON {"token_id": "...", "token_secret": "..."}
+# Set the env vars Modal expects before any Modal imports happen.
+_modal_key = os.getenv("MODAL_API_KEY", "")
+if _modal_key.startswith("{"):
+    try:
+        _mk = json.loads(_modal_key)
+        os.environ["MODAL_TOKEN_ID"] = _mk["token_id"]
+        os.environ["MODAL_TOKEN_SECRET"] = _mk["token_secret"]
+    except (json.JSONDecodeError, KeyError):
+        pass
 
 app = FastAPI(title="ArtGuard API", version="1.0.1")
 app.include_router(train_router)
@@ -102,11 +114,16 @@ async def process_data():
 # This class tells FastAPI the minimum information to receive from an inference request.
 class InferenceResponse(BaseModel):
     inference_id: str
-    score: float
+    prediction: int          # 1 = authentic, 0 = forgery
+    score: float             # mean probability across patches
     explanation: Optional[str] = None
 
 @app.post("/inference", response_model=InferenceResponse)
-async def infer(file: UploadFile = File(...)):
+async def infer(
+    file: UploadFile = File(...),
+    artist_name: str = Form(...),
+    title: str = Form(...),
+):
     content = await file.read()
     if not content:
         raise HTTPException(status_code=400, detail="Empty upload")
@@ -152,26 +169,33 @@ async def infer(file: UploadFile = File(...)):
     )
     raw_s3_uri = f"s3://{raw_bucket}/{raw_key}"
 
-    # TODO: Write the image's metadata to DynamoDB
-    img_table.put_item(Item={
+    # Write the image's metadata to DynamoDB
+    img_item = {
         "image_id": image_id,
         "created_at": created_at,
         "image_name": filename,
         "image_path": raw_s3_uri,
         "image_width": w,
         "image_height": h,
-    })
+        "artist_name": artist_name,
+        "title": title,
+    }
+    img_table.put_item(Item=img_item)
 
-    # TODO: Write the inference's metadata to DynamoDB
-    inference_table.put_item(Item={
+    # Write the inference's metadata to DynamoDB
+    inference_item = {
         "inference_id": inference_id,
-        "user_id": "anonymous", 
+        "image_id": image_id,
+        "user_id": "anonymous",
         "created_at": created_at,
         "image_name": filename,
         "image_path": raw_s3_uri,
-        "score": 0.0,
-        "explanation": None,
-    })
+        "score": Decimal("0.0"),
+        "prediction": -1,
+        "artist_name": artist_name,
+        "title": title,
+    }
+    inference_table.put_item(Item=inference_item)
    
     patches_info = process_inference_image(
         img=img,
@@ -195,13 +219,85 @@ async def infer(file: UploadFile = File(...)):
             "created_at": created_at,
         })
 
-    # TODO: Load the model from Modal volume with hyperparameter configs from DynamoDB
-    # TODO: Make prediction
-    # TODO: Update InferenceRecord in DynamoDB
-    score = 1.0
-    explanation = "This is a sample response."
+    # Collect S3 URIs for all patches to send to Modal
+    patch_s3_uris = [p["patch_path"] for p in patches_info]
 
-    return InferenceResponse(inference_id=inference_id, score=score, explanation=explanation)
+    # Run inference on Modal (loads model from artguard-checkpoints volume)
+    try:
+        import modal
+
+        predict_patches = modal.Function.from_name("artguard-inference", "predict_patches")
+        modal_result = predict_patches.remote(
+            patch_s3_uris=patch_s3_uris,
+            variant="tiny",
+            checkpoint_name="best.pt",
+        )
+    except Exception as exc:
+        raise HTTPException(status_code=500, detail=f"Modal inference failed: {exc}")
+
+    score = modal_result["mean_prob"]
+    prediction = modal_result["prediction"]
+
+    # Store per-patch predictions in DynamoDB
+    for p_info, prob, pred in zip(
+        patches_info,
+        modal_result["patch_probs"],
+        modal_result["patch_preds"],
+    ):
+        patch_table.update_item(
+            Key={"patch_id": p_info["patch_id"]},
+            UpdateExpression="SET score = :s, prediction = :p",
+            ExpressionAttributeValues={":s": Decimal(str(prob)), ":p": pred},
+        )
+
+    # Call RAG for explanation
+    rag_prompt = (
+        f"The forgery detection model analyzed an artwork and predicted it is "
+        f"{'authentic' if prediction == 1 else 'a potential forgery'} "
+        f"with a confidence score of {score:.2f}. "
+        f"Provide context about art forgery detection techniques and what this result might mean."
+    )
+
+    explanation = None
+    try:
+        knowledge_base_id = os.getenv("KNOWLEDGE_BASE_ID")
+        if knowledge_base_id:
+            bedrock = boto3.client("bedrock-agent-runtime", region_name=region)
+            rag_resp = bedrock.retrieve_and_generate(
+                input={"text": rag_prompt},
+                retrieveAndGenerateConfiguration={
+                    "type": "KNOWLEDGE_BASE",
+                    "knowledgeBaseConfiguration": {
+                        "knowledgeBaseId": knowledge_base_id,
+                        "modelArn": f"arn:aws:bedrock:{region}::foundation-model/anthropic.claude-3-haiku-20240307-v1:0",
+                    },
+                },
+            )
+            explanation = rag_resp.get("output", {}).get("text", "")
+    except Exception as exc:
+        explanation = f"RAG unavailable: {exc}"
+
+    # Update inference record in DynamoDB with final results
+    update_expr = "SET score = :s, prediction = :p"
+    expr_values = {
+        ":s": Decimal(str(score)),
+        ":p": prediction,
+    }
+    if explanation is not None:
+        update_expr += ", explanation = :e"
+        expr_values[":e"] = explanation
+    inference_table.update_item(
+        Key={"inference_id": inference_id},
+        UpdateExpression=update_expr,
+        ExpressionAttributeValues=expr_values,
+    )
+
+    return InferenceResponse(
+        inference_id=inference_id,
+        prediction=prediction,
+        score=score,
+        explanation=explanation,
+    )
 
 class RAGQueryRequest(BaseModel):
     query: str
