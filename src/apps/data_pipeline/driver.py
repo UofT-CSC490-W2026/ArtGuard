@@ -22,7 +22,7 @@ import boto3
 from PIL import Image
 from io import BytesIO
 
-from src.apps.data_pipeline.process import process_image_to_patches
+from src.apps.data_pipeline.preprocess import process_image_to_patches
 
 IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".bmp", ".tiff", ".webp"}
 
@@ -104,6 +104,7 @@ def move_to_processed(s3_client, bucket: str, key: str) -> None:
         Bucket=bucket,
         CopySource={"Bucket": bucket, "Key": key},
         Key=dest_key,
+        ServerSideEncryption="AES256",
     )
     s3_client.delete_object(Bucket=bucket, Key=key)
 

@@ -15,6 +15,7 @@ COPY src/__init__.py ./src/
 COPY src/apps/__init__.py ./src/apps/
 COPY src/apps/backend/ ./src/apps/backend/
 COPY src/apps/data_pipeline/ ./src/apps/data_pipeline/
+COPY src/apps/train/ ./src/apps/train/
 
 # Expose port 8000 for FastAPI
 EXPOSE 8000

@@ -11,8 +11,10 @@ from io import BytesIO
 import base64
 import requests
 from src.apps.data_pipeline.process import process_inference_image
+from src.apps.backend.routes.train_router import router as train_router
 
 app = FastAPI(title="ArtGuard API", version="1.0.1")
+app.include_router(train_router)
 
 ENVIRONMENT = "dev"
 
@@ -30,6 +32,8 @@ async def root():
         "version": "1.0.0",
         "endpoints": {
             "/health": "Health check",
+            "/train": "Start a training run (POST)",
+            "/evaluate": "Start an evaluation run (POST)",
         }
     }
 
@@ -40,7 +44,9 @@ class ProcessDataResponse(BaseModel):
 @app.post("/process_data", response_model=ProcessDataResponse)
 async def process_data():
     cluster = os.getenv("ECS_CLUSTER", "artguard-cluster")
-    task_def = os.getenv("ECS_PROCESS_TASK_DEF_ARN")
+    region = os.getenv("AWS_REGION", "ca-central-1")
+    account_id = boto3.client("sts").get_caller_identity()["Account"]
+    task_def = f"arn:aws:ecs:{region}:{account_id}:task-definition/artguard-backend"
     subnets = os.getenv("ECS_PRIVATE_SUBNETS", "")
     security_groups = os.getenv("ECS_TASK_SECURITY_GROUPS", "")
     container_name = os.getenv("ECS_PROCESS_CONTAINER_NAME", "backend")
@@ -142,6 +148,7 @@ async def infer(file: UploadFile = File(...)):
         Key=raw_key,
         Body=content,
         ContentType=file.content_type or "application/octet-stream",
+        ServerSideEncryption="AES256",
     )
     raw_s3_uri = f"s3://{raw_bucket}/{raw_key}"
 

@@ -1,12 +1,3 @@
-fastapi==0.109.0
-uvicorn[standard]==0.27.0
-pydantic==2.5.3
-python-multipart==0.0.6
-Pillow==10.1.0
-aws-xray-sdk==2.11.0
-boto3>=1.34.0
-requests>=2.32.2
-modal==1.0.0
-numpy<2.0
-pandas==2.1.0
-datasets==3.2.0
+version https://git-lfs.github.com/spec/v1
+oid sha256:a08d6198a40a777e3aa88f3049ebc897c7a9ef5ee4ba426ba42b9011395cd6c7
+size 203
