@@ -24,18 +24,19 @@ import {
   SelectTrigger,
   SelectValue,
 } from "../components/ui/select";
-import {
-  AlertCircle,
-  CheckCircle,
-  AlertTriangle,
-  Search,
-  Filter,
-  Calendar,
-  Trash2,
-  Eye,
-} from "lucide-react";
+import { Search, Filter, Calendar, Trash2, Eye } from "lucide-react";
 import type { AnalysisResult } from "../types";
 import { hasApiBackend } from "../api/client";
+import {
+  formatAnalysisScorePercent,
+  getBatchIndicator,
+  isInferenceFailed,
+  matchesAuthenticFilter,
+  matchesFailedInferenceFilter,
+  matchesForgedFilter,
+  matchesUncertainFilter,
+  usesAuthenticitySemantics,
+} from "../lib/analysisDisplay";
 import {
   deleteAllInferences,
   deleteInference,
@@ -114,12 +115,14 @@ export function HistoryPage() {
       );
     }
 
-    // Score filter
+    // Score filter (per-item semantics: API = authenticity; old localStorage = legacy forgery scale)
     if (scoreFilter !== "all") {
       filtered = filtered.filter((item) => {
-        if (scoreFilter === "authentic") return item.score < 0.3;
-        if (scoreFilter === "uncertain") return item.score >= 0.3 && item.score < 0.7;
-        if (scoreFilter === "forged") return item.score >= 0.7;
+        if (scoreFilter === "failed") return matchesFailedInferenceFilter(item);
+        if (isInferenceFailed(item)) return false;
+        if (scoreFilter === "authentic") return matchesAuthenticFilter(item);
+        if (scoreFilter === "uncertain") return matchesUncertainFilter(item);
+        if (scoreFilter === "forged") return matchesForgedFilter(item);
         return true;
       });
     }
@@ -141,29 +144,19 @@ export function HistoryPage() {
     setFilteredHistory(filtered);
   }, [searchQuery, scoreFilter, sortBy, history]);
 
-  const getScoreBadge = (score: number) => {
-    if (score < 0.3) {
-      return {
-        label: "Authentic",
-        variant: "default" as const,
-        className: "bg-green-100 text-green-700 hover:bg-green-100",
-        icon: CheckCircle,
-      };
-    } else if (score < 0.7) {
-      return {
-        label: "Uncertain",
-        variant: "secondary" as const,
-        className: "bg-yellow-100 text-yellow-700 hover:bg-yellow-100",
-        icon: AlertTriangle,
-      };
-    } else {
-      return {
-        label: "Forged",
-        variant: "destructive" as const,
-        className: "bg-red-100 text-red-700 hover:bg-red-100",
-        icon: AlertCircle,
-      };
-    }
+  const getHistoryBadge = (item: AnalysisResult) => {
+    const { icon, color, label } = getBatchIndicator(item, item.score);
+    const classNameByColor: Record<string, string> = {
+      "text-green-600": "bg-green-100 text-green-700 hover:bg-green-100",
+      "text-yellow-600": "bg-yellow-100 text-yellow-700 hover:bg-yellow-100",
+      "text-red-600": "bg-red-100 text-red-700 hover:bg-red-100",
+      "text-gray-700": "bg-gray-200 text-gray-800 hover:bg-gray-200",
+    };
+    return {
+      label,
+      className: classNameByColor[color] ?? "bg-gray-100 text-gray-700 hover:bg-gray-100",
+      icon,
+    };
   };
 
   const handleViewResult = (item: AnalysisResult) => {
@@ -229,7 +222,7 @@ export function HistoryPage() {
             <div>
               <h1 className="text-3xl mb-2">Analysis History</h1>
               <p className="text-gray-600">
-                View and manage your past forgery detection analyses
+                View and manage your past analyses (authenticity confidence from the API, or legacy score scale for older saves)
               </p>
             </div>
             {history.length > 0 && !isLoading && (
@@ -279,9 +272,10 @@ export function HistoryPage() {
                   </SelectTrigger>
                   <SelectContent>
                     <SelectItem value="all">All Results</SelectItem>
-                    <SelectItem value="authentic">Authentic (0.0-0.3)</SelectItem>
-                    <SelectItem value="uncertain">Uncertain (0.3-0.7)</SelectItem>
-                    <SelectItem value="forged">Forged (0.7-1.0)</SelectItem>
+                    <SelectItem value="authentic">Likely authentic</SelectItem>
+                    <SelectItem value="uncertain">Uncertain</SelectItem>
+                    <SelectItem value="forged">Likely forgery / forged</SelectItem>
+                    <SelectItem value="failed">Inference failed</SelectItem>
                   </SelectContent>
                 </Select>
 
@@ -341,7 +335,7 @@ export function HistoryPage() {
           ) : !isLoading ? (
             <div className="space-y-4">
               {filteredHistory.map((item) => {
-                const badge = getScoreBadge(item.score);
+                const badge = getHistoryBadge(item);
                 const BadgeIcon = badge.icon;
 
                 return (
@@ -372,14 +366,20 @@ export function HistoryPage() {
                                 by {item.artistName}
                               </p>
                             </div>
-                            <Badge className={badge.className}>
+                            <Badge variant="secondary" className={badge.className}>
                               <BadgeIcon className="size-3 mr-1" />
                               {badge.label}
                             </Badge>
                           </div>
 
                           <div className="flex items-center gap-4 text-sm text-gray-500 mb-3">
-                            <span>Score: {(item.score * 100).toFixed(1)}%</span>
+                            <span>
+                              {isInferenceFailed(item)
+                                ? "No score — inference failed"
+                                : usesAuthenticitySemantics(item)
+                                  ? `Authenticity: ${formatAnalysisScorePercent(item)}%`
+                                  : `Score: ${formatAnalysisScorePercent(item)}%`}
+                            </span>
                             <span>•</span>
                             <span>
                               {new Date(item.timestamp).toLocaleDateString()} at{" "}

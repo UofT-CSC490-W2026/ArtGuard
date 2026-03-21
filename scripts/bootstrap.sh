@@ -89,46 +89,46 @@ else
   echo "   Will attempt to create backend if needed"
 fi
 
-# Setup backend (S3 + DynamoDB)
-echo ""
-echo "Setting up backend..."
-# Try Python script first (works even if AWS CLI is broken)
-# From infra/terraform, scripts are at ../../scripts/
-if [ -f "../../scripts/setup-backend.py" ]; then
-  echo "Using Python backend setup script..."
-  python3 ../../scripts/setup-backend.py
-elif [ -f "../scripts/setup-backend.py" ]; then
-  echo "Using Python backend setup script..."
-  python3 ../scripts/setup-backend.py
-elif [ -f "setup-backend.py" ]; then
-  echo "Using Python backend setup script..."
-  python3 setup-backend.py
-elif [ -f "../../scripts/setup-backend.sh" ]; then
-  chmod +x ../../scripts/setup-backend.sh
-  ../../scripts/setup-backend.sh
-elif [ -f "../scripts/setup-backend.sh" ]; then
-  chmod +x ../scripts/setup-backend.sh
-  ../scripts/setup-backend.sh
-elif [ -f "setup-backend.sh" ]; then
-  chmod +x setup-backend.sh
-  ./setup-backend.sh
-else
-  echo "⚠️  No backend setup script found!"
-  echo "   Please create the backend manually:"
-  echo "   1. S3 bucket: artguard-terraform-state"
-  echo "   2. DynamoDB table: artguard-terraform-locks"
-  echo ""
-  read -p "Continue anyway? (yes/no): " CONTINUE
-  if [ "$CONTINUE" != "yes" ]; then
-    echo "❌ Aborted"
-    exit 1
-  fi
-fi
+# # Setup backend (S3 + DynamoDB)
+# echo ""
+# echo "Setting up backend..."
+# # Try Python script first (works even if AWS CLI is broken)
+# # From infra/terraform, scripts are at ../../scripts/
+# if [ -f "../../scripts/setup-backend.py" ]; then
+#   echo "Using Python backend setup script..."
+#   python3 ../../scripts/setup-backend.py
+# elif [ -f "../scripts/setup-backend.py" ]; then
+#   echo "Using Python backend setup script..."
+#   python3 ../scripts/setup-backend.py
+# elif [ -f "setup-backend.py" ]; then
+#   echo "Using Python backend setup script..."
+#   python3 setup-backend.py
+# elif [ -f "../../scripts/setup-backend.sh" ]; then
+#   chmod +x ../../scripts/setup-backend.sh
+#   ../../scripts/setup-backend.sh
+# elif [ -f "../scripts/setup-backend.sh" ]; then
+#   chmod +x ../scripts/setup-backend.sh
+#   ../scripts/setup-backend.sh
+# elif [ -f "setup-backend.sh" ]; then
+#   chmod +x setup-backend.sh
+#   ./setup-backend.sh
+# else
+#   echo "⚠️  No backend setup script found!"
+#   echo "   Please create the backend manually:"
+#   echo "   1. S3 bucket: artguard-terraform-state"
+#   echo "   2. DynamoDB table: artguard-terraform-locks"
+#   echo ""
+#   read -p "Continue anyway? (yes/no): " CONTINUE
+#   if [ "$CONTINUE" != "yes" ]; then
+#     echo "❌ Aborted"
+#     exit 1
+#   fi
+# fi
 
-# Initialize Terraform
-echo ""
-echo "🔧 Initializing Terraform..."
-terraform init -backend-config="key=$STATE_KEY" -backend-config="region=$AWS_REGION" -reconfigure
+# # Initialize Terraform
+# echo ""
+# echo "🔧 Initializing Terraform..."
+# terraform init -backend-config="key=$STATE_KEY" -backend-config="region=$AWS_REGION" -reconfigure
 
 # Validate
 echo ""

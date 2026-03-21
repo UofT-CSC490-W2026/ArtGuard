@@ -4,11 +4,14 @@ set -e
 # Build and deploy Vite frontend to S3 + CloudFront
 # Usage: ./deploy-frontend.sh [environment]
 # Example:
-#   export VITE_API_URL=https://dxxxx.cloudfront.net/api
+#   export VITE_API_URL=https://dxxxx.cloudfront.net
+#   (Same CloudFront URL as the site; API paths /auth, /inference, etc. are routed to the ALB.)
 #   ./scripts/deploy-frontend.sh dev
 #
 # VITE_API_URL is required (baked in at build time). No trailing slash.
-# If CloudFront serves the API under /api/*, include that path in the URL.
+# Use the same https://…cloudfront.net origin as the UI so API calls stay HTTPS (no mixed content).
+#
+# Optional: CLOUDFRONT_DISTRIBUTION_ID=E123... if Terraform is unavailable (skips auto lookup).
 
 ENVIRONMENT=${1:-dev}
 AWS_REGION=${AWS_REGION:-ca-central-1}
@@ -27,7 +30,7 @@ echo ""
 if [ -z "${VITE_API_URL:-}" ]; then
   echo "❌ VITE_API_URL is not set. It is compiled into the bundle at build time."
   echo "   Example:"
-  echo "     export VITE_API_URL=https://\$(terraform -chdir=infra/terraform output -raw cloudfront_distribution_url)/api"
+  echo "     export VITE_API_URL=\$(terraform -chdir=infra/terraform output -raw cloudfront_distribution_url)"
   echo "   Or point at your ALB URL if the browser calls the API directly."
   echo "   Do not use a trailing slash."
   exit 1
@@ -97,15 +100,27 @@ echo "✅ S3 deployment complete!"
 echo ""
 echo "Invalidating CloudFront cache..."
 
-DISTRIBUTION_ID=$(aws cloudfront list-distributions \
-  --query "DistributionList.Items[?contains(Origins.Items[].DomainName, '$BUCKET_NAME')].Id" \
-  --output text \
-  --region us-east-1 \
-  | head -n 1)
+# Resolve distribution ID (JMESPath contains(Origins.Items[].DomainName, ...) is invalid — use terraform / jq)
+DISTRIBUTION_ID="${CLOUDFRONT_DISTRIBUTION_ID:-}"
+if [ -z "$DISTRIBUTION_ID" ] && command -v terraform >/dev/null 2>&1; then
+  DISTRIBUTION_ID=$(terraform -chdir="$REPO_ROOT/infra/terraform" output -raw cloudfront_distribution_id 2>/dev/null) || true
+fi
+if [ -z "$DISTRIBUTION_ID" ]; then
+  if command -v jq >/dev/null 2>&1; then
+    DISTRIBUTION_ID=$(aws cloudfront list-distributions --output json --region us-east-1 \
+      | jq -r --arg b "$BUCKET_NAME" '
+          .DistributionList.Items[]?
+          | select(any(.Origins.Items[]?; .DomainName | contains($b)))
+          | .Id' 2>/dev/null | head -n 1)
+  fi
+fi
 
 if [ -z "$DISTRIBUTION_ID" ]; then
-  echo "⚠️  Warning: Could not find CloudFront distribution ID"
-  echo "   Manual cache invalidation may be required"
+  echo "⚠️  Warning: Could not find CloudFront distribution ID (cache not invalidated)."
+  echo "   Set CLOUDFRONT_DISTRIBUTION_ID, or run from repo with Terraform state:"
+  echo "     export CLOUDFRONT_DISTRIBUTION_ID=\$(terraform -chdir=infra/terraform output -raw cloudfront_distribution_id)"
+  echo "   Then re-run this script, or invalidate manually:"
+  echo "     aws cloudfront create-invalidation --distribution-id \"\$CLOUDFRONT_DISTRIBUTION_ID\" --paths \"/*\" --region us-east-1"
 else
   echo "  Distribution ID: $DISTRIBUTION_ID"
   INVALIDATION_ID=$(aws cloudfront create-invalidation \

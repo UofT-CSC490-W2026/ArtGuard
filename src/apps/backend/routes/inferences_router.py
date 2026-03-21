@@ -95,8 +95,14 @@ async def inference_stats(user_id: str = Depends(get_current_user_id)):
 class InferenceListItem(BaseModel):
     inference_id: str
     created_at: int
+    # Mean patch probability of authenticity (0–1); higher = more evidence of authenticity.
     score: float
+    # 1 = authentic, 0 = forgery, -1 = pending/unknown; omitted on very old rows.
+    prediction: Optional[int] = None
     explanation: Optional[str] = None
+    # processing → completed | failed (older rows may omit this field)
+    inference_status: Optional[str] = None
+    error_message: Optional[str] = None
     artist_name: str
     artwork_name: str
     image_name: str
@@ -117,11 +123,27 @@ def _item_to_list_item(item: dict[str, Any], s3) -> InferenceListItem:
             url = presigned_get_url(s3, uri, PRESIGN_EXPIRES)
         except Exception:
             url = ""
+    pred_raw = item.get("prediction")
+    prediction: Optional[int] = None
+    if pred_raw is not None:
+        try:
+            prediction = int(pred_raw)
+        except (TypeError, ValueError):
+            prediction = None
+
+    status_raw = item.get("inference_status")
+    inference_status: Optional[str] = None
+    if status_raw is not None:
+        inference_status = str(status_raw)
+
     return InferenceListItem(
         inference_id=item["inference_id"],
         created_at=int(item["created_at"]),
         score=_float_score(item.get("score")),
+        prediction=prediction,
         explanation=item.get("explanation"),
+        inference_status=inference_status,
+        error_message=item.get("error_message"),
         artist_name=str(item.get("artist_name") or ""),
         artwork_name=str(item.get("artwork_name") or ""),
         image_name=str(item.get("image_name") or ""),

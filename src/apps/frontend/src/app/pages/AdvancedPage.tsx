@@ -5,15 +5,12 @@ import { Button } from "../components/ui/button";
 import { Input } from "../components/ui/input";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../components/ui/card";
 import { Progress } from "../components/ui/progress";
-import {
-  Upload,
-  X,
-  FileImage,
-  Loader2,
-  CheckCircle,
-  AlertCircle,
-  AlertTriangle,
-} from "lucide-react";
+import { Alert, AlertDescription } from "../components/ui/alert";
+import { Upload, X, FileImage, Loader2 } from "lucide-react";
+import { hasApiBackend } from "../api/client";
+import { analyzeArtwork } from "../api/analysis";
+import { getErrorMessage, type AnalysisResult, type ScoreSemantics } from "../types";
+import { getBatchIndicator } from "../lib/analysisDisplay";
 
 interface UploadedFile {
   id: string;
@@ -22,6 +19,8 @@ interface UploadedFile {
   artistName: string;
   artworkName: string;
   score?: number;
+  prediction?: number;
+  scoreSemantics?: ScoreSemantics;
 }
 
 export function AdvancedPage() {
@@ -78,7 +77,14 @@ export function AdvancedPage() {
           });
           setBatchFiles((prev) =>
             prev.map((file, index) =>
-              index === i ? { ...file, score: res.score } : file
+              index === i
+                ? {
+                    ...file,
+                    score: res.score,
+                    prediction: res.prediction ?? undefined,
+                    scoreSemantics: res.scoreSemantics ?? "authenticity",
+                  }
+                : file
             )
           );
           setBatchProgress(((i + 1) / batchFiles.length) * 100);
@@ -93,10 +99,14 @@ export function AdvancedPage() {
 
     for (let i = 0; i < batchFiles.length; i++) {
       await new Promise((resolve) => setTimeout(resolve, 1000));
-      const score = Math.random() * 0.9;
+      const prediction = Math.random() > 0.5 ? 1 : 0;
+      const score =
+        prediction === 1 ? 0.55 + Math.random() * 0.45 : Math.random() * 0.45;
       setBatchFiles((prev) =>
         prev.map((file, index) =>
-          index === i ? { ...file, score } : file
+          index === i
+            ? { ...file, score, prediction, scoreSemantics: "authenticity" }
+            : file
         )
       );
       setBatchProgress(((i + 1) / batchFiles.length) * 100);
@@ -117,14 +127,21 @@ export function AdvancedPage() {
     );
   };
 
-  const getScoreIndicator = (score: number) => {
-    if (score < 0.3) {
-      return { icon: CheckCircle, color: "text-green-600", label: "Authentic" };
-    } else if (score < 0.7) {
-      return { icon: AlertTriangle, color: "text-yellow-600", label: "Uncertain" };
-    } else {
-      return { icon: AlertCircle, color: "text-red-600", label: "Forged" };
-    }
+  const indicatorForFile = (file: UploadedFile) => {
+    if (file.score === undefined) return null;
+    const pseudo: AnalysisResult = {
+      id: file.id,
+      score: file.score,
+      image: "",
+      artistName: file.artistName,
+      artworkName: file.artworkName,
+      timestamp: "",
+      fileName: file.file.name,
+      fileSize: file.file.size,
+      prediction: file.prediction,
+      scoreSemantics: file.scoreSemantics ?? "legacy_forgery",
+    };
+    return getBatchIndicator(pseudo, file.score);
   };
 
   return (
@@ -142,9 +159,9 @@ export function AdvancedPage() {
 
           <Card>
             <CardHeader>
-              <CardTitle>Batch Forgery Detection</CardTitle>
+              <CardTitle>Batch analysis</CardTitle>
               <CardDescription>
-                Select multiple images, fill in artist and artwork for each, then analyze all.
+                Same inference as single upload: authenticity confidence (higher = more authentic) and model prediction when available.
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
@@ -178,7 +195,7 @@ export function AdvancedPage() {
                 <>
                   <div className="space-y-4">
                     {batchFiles.map((file) => {
-                      const indicator = file.score !== undefined ? getScoreIndicator(file.score) : null;
+                      const indicator = indicatorForFile(file);
                       const ScoreIcon = indicator?.icon;
 
                       return (

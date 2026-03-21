@@ -26,6 +26,8 @@ export function ProfilePage() {
   
   const [profileError, setProfileError] = useState("");
   const [passwordError, setPasswordError] = useState("");
+  /** null = loading or stats unavailable; number = count from API or local history */
+  const [totalAnalyses, setTotalAnalyses] = useState<number | null>(null);
 
   useEffect(() => {
     if (user) {

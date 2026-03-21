@@ -24,6 +24,8 @@ function mapInferenceToResult(
     fileName: input.file.name,
     fileSize: input.file.size,
     explanation: raw.explanation ?? undefined,
+    prediction: typeof raw.prediction === "number" ? raw.prediction : undefined,
+    scoreSemantics: "authenticity",
   };
 }
 
@@ -45,14 +47,19 @@ export async function analyzeArtwork(input: AnalyzeInput): Promise<AnalysisResul
     r.onerror = () => reject(new Error("Failed to read file"));
     r.readAsDataURL(input.file);
   });
+  const prediction = Math.random() > 0.5 ? 1 : 0;
+  const score =
+    prediction === 1 ? 0.55 + Math.random() * 0.45 : Math.random() * 0.45;
   return {
     id: `${Date.now()}-${Math.random().toString(36).slice(2)}`,
-    score: Math.random() * 0.9,
+    score,
     image: preview,
     artistName: input.artistName || "Unknown",
     artworkName: input.artworkName || "Untitled",
     timestamp: new Date().toISOString(),
     fileName: input.file.name,
     fileSize: input.file.size,
+    prediction,
+    scoreSemantics: "authenticity",
   };
 }

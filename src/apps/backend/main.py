@@ -229,6 +229,7 @@ async def infer(
             "image_path": raw_s3_uri,
             "score": Decimal("0.0"),
             "prediction": -1,
+            "inference_status": "processing",
             "artist_name": artist_name,
             "artwork_name": artwork_name,
             "title": artwork_name,
@@ -273,6 +274,18 @@ async def infer(
             checkpoint_name="best.pt",
         )
     except Exception as exc:
+        err_msg = str(exc)[:3500]
+        try:
+            inference_table.update_item(
+                Key={"inference_id": inference_id},
+                UpdateExpression="SET inference_status = :st, error_message = :em",
+                ExpressionAttributeValues={
+                    ":st": "failed",
+                    ":em": err_msg,
+                },
+            )
+        except Exception:
+            pass
         raise HTTPException(status_code=500, detail=f"Modal inference failed: {exc}")
 
     score = modal_result["mean_prob"]
@@ -318,17 +331,18 @@ async def infer(
         explanation = f"RAG unavailable: {exc}"
 
     # Update inference record in DynamoDB with final results
-    update_expr = "SET score = :s, prediction = :p"
+    update_expr = "SET score = :s, prediction = :p, inference_status = :ist"
     expr_values = {
         ":s": Decimal(str(score)),
         ":p": prediction,
+        ":ist": "completed",
     }
     if explanation is not None:
         update_expr += ", explanation = :e"
         expr_values[":e"] = explanation
     inference_table.update_item(
         Key={"inference_id": inference_id},
-        UpdateExpression=update_expr,
+        UpdateExpression=update_expr + " REMOVE error_message",
         ExpressionAttributeValues=expr_values,
     )
 

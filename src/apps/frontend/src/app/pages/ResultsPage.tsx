@@ -20,6 +20,16 @@ import {
 } from "lucide-react";
 import { toast } from "sonner";
 import type { AnalysisResult } from "../types";
+import {
+  formatAnalysisScorePercent,
+  generateFallbackExplanation,
+  getAnalysisBarColor,
+  getAnalysisVerdict,
+  isInferenceFailed,
+  primaryScoreDescription,
+  primaryScoreTitle,
+  usesAuthenticitySemantics,
+} from "../lib/analysisDisplay";
 
 export function ResultsPage() {
   const navigate = useNavigate();
@@ -41,18 +51,23 @@ export function ResultsPage() {
         return;
       }
       setResult(parsedResult);
-      const backendExplanation =
-        typeof parsedResult.explanation === "string" && parsedResult.explanation.trim().length > 0
-          ? parsedResult.explanation.trim()
-          : null;
-      if (backendExplanation) {
-        setExplanation(backendExplanation);
+      if (isInferenceFailed(parsedResult)) {
+        setExplanation(generateFallbackExplanation(parsedResult));
         setIsLoadingExplanation(false);
       } else {
-        setTimeout(() => {
-          setExplanation(generateExplanation(parsedResult.score));
+        const backendExplanation =
+          typeof parsedResult.explanation === "string" && parsedResult.explanation.trim().length > 0
+            ? parsedResult.explanation.trim()
+            : null;
+        if (backendExplanation) {
+          setExplanation(backendExplanation);
           setIsLoadingExplanation(false);
-        }, 1500);
+        } else {
+          setTimeout(() => {
+            setExplanation(generateFallbackExplanation(parsedResult));
+            setIsLoadingExplanation(false);
+          }, 1500);
+        }
       }
     } catch {
       navigate("/upload");
@@ -60,50 +75,6 @@ export function ResultsPage() {
       setIsLoading(false);
     }
   }, [navigate]);
-
-  const generateExplanation = (score: number): string => {
-    if (score < 0.3) {
-      return `Based on our comprehensive AI analysis, this artwork shows strong characteristics consistent with authentic pieces. The brushstroke patterns, aging indicators, and material composition align well with expected authenticity markers. The pigment distribution and canvas texture demonstrate natural aging processes typical of genuine artworks. However, we recommend consulting with certified art experts for a definitive authentication, especially for high-value pieces.`;
-    } else if (score < 0.7) {
-      return `Our analysis reveals mixed indicators that make definitive authentication challenging. While some characteristics suggest authenticity, there are certain anomalies in the brushwork consistency and material composition that warrant further investigation. The artwork displays both authentic and questionable features. We strongly recommend professional verification by certified art historians and forensic experts before making any authentication claims or purchase decisions.`;
-    } else {
-      return `Our AI analysis has detected several concerning indicators that may suggest this artwork could be a forgery or reproduction. Notable issues include inconsistencies in brushstroke patterns, unusual pigment composition, and aging characteristics that don't align with expected authentic markers. The technical execution shows patterns commonly associated with reproductions or modern forgeries. However, false positives can occur, and we strongly advise seeking multiple expert opinions and conducting forensic laboratory testing before reaching final conclusions.`;
-    }
-  };
-
-  const getVerdict = (score: number) => {
-    if (score < 0.3) {
-      return {
-        text: "Likely Authentic",
-        icon: CheckCircle,
-        color: "text-green-600",
-        bgColor: "bg-green-50",
-        borderColor: "border-green-200",
-      };
-    } else if (score < 0.7) {
-      return {
-        text: "Uncertain / Needs Review",
-        icon: AlertTriangle,
-        color: "text-yellow-600",
-        bgColor: "bg-yellow-50",
-        borderColor: "border-yellow-200",
-      };
-    } else {
-      return {
-        text: "Likely Forged",
-        icon: AlertCircle,
-        color: "text-red-600",
-        bgColor: "bg-red-50",
-        borderColor: "border-red-200",
-      };
-    }
-  };
-
-  const getProgressColor = (score: number) => {
-    if (score < 0.3) return "bg-green-600";
-    if (score < 0.7) return "bg-yellow-500";
-    return "bg-red-600";
-  };
 
   if (isLoading || !result) {
     return (
@@ -113,12 +84,26 @@ export function ResultsPage() {
     );
   }
 
-  const verdict = getVerdict(result.score);
+  const verdict = getAnalysisVerdict(result);
   const VerdictIcon = verdict.icon;
-  const scorePercentage = (result.score * 100).toFixed(1);
+  const scorePercentage = formatAnalysisScorePercent(result);
+  const predLabel =
+    !isInferenceFailed(result) &&
+    usesAuthenticitySemantics(result) &&
+    typeof result.prediction === "number"
+      ? result.prediction === 1
+        ? "Authentic"
+        : result.prediction === 0
+          ? "Forgery"
+          : "Pending"
+      : null;
 
   const handleShare = async () => {
-    const shareText = `ArtGuard Analysis Results\n\nArtwork: ${result.artworkName}\nArtist: ${result.artistName}\nForgery Score: ${scorePercentage}%\nVerdict: ${verdict.text}`;
+    const scoreLine = usesAuthenticitySemantics(result)
+      ? `Authenticity confidence: ${scorePercentage}%`
+      : `Score: ${scorePercentage}%`;
+    const predLine = predLabel ? `Model prediction: ${predLabel}\n` : "";
+    const shareText = `ArtGuard Analysis Results\n\nArtwork: ${result.artworkName}\nArtist: ${result.artistName}\n${scoreLine}\n${predLine}Verdict: ${verdict.text}`;
 
     if (navigator.share) {
       try {
@@ -148,8 +133,8 @@ Artwork Details:
 - Analyzed: ${new Date(result.timestamp).toLocaleString()}
 
 Analysis Results:
-- Forgery Score: ${scorePercentage}%
-- Verdict: ${verdict.text}
+- ${usesAuthenticitySemantics(result) ? `Authenticity confidence: ${scorePercentage}%` : `Score: ${scorePercentage}%`}
+${predLabel ? `- Model prediction: ${predLabel}\n` : ""}- Verdict: ${verdict.text}
 
 Explanation:
 ${explanation}
@@ -177,7 +162,9 @@ Always consult certified art experts for professional verification.
           <div className="mb-8">
             <h1 className="text-3xl mb-2">Analysis Results</h1>
             <p className="text-gray-600">
-              Forgery detection analysis for your artwork
+              {usesAuthenticitySemantics(result)
+                ? "Authenticity confidence and model prediction from patch-level inference"
+                : "Analysis using a legacy score scale (older saved result)"}
             </p>
           </div>
 
@@ -249,26 +236,43 @@ Always consult certified art experts for professional verification.
               {/* Score Section */}
               <Card>
                 <CardHeader>
-                  <CardTitle>Forgery Detection Score</CardTitle>
-                  <CardDescription>
-                    AI-powered analysis result (0.0 = Authentic, 1.0 = Forged)
-                  </CardDescription>
+                  <CardTitle>{primaryScoreTitle(result)}</CardTitle>
+                  <CardDescription>{primaryScoreDescription(result)}</CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-6">
+                  {predLabel && (
+                    <p className="text-center text-sm text-muted-foreground">
+                      Model prediction:{" "}
+                      <span className="font-semibold text-foreground">{predLabel}</span>
+                    </p>
+                  )}
                   {/* Large Score Display */}
                   <div className="text-center py-6">
-                    <div className="text-6xl mb-4 tabular-nums">
-                      {scorePercentage}
-                      <span className="text-3xl text-gray-500">%</span>
-                    </div>
-                    <div className="relative h-4 bg-gray-200 rounded-full overflow-hidden">
-                      <div
-                        className={`absolute left-0 top-0 h-full ${getProgressColor(
-                          result.score
-                        )} transition-all`}
-                        style={{ width: `${result.score * 100}%` }}
-                      />
-                    </div>
+                    {isInferenceFailed(result) ? (
+                      <>
+                        <div className="text-2xl mb-4 text-muted-foreground font-medium">
+                          No authenticity score
+                        </div>
+                        <div className="relative h-4 bg-gray-200 rounded-full overflow-hidden">
+                          <div className="absolute left-0 top-0 h-full w-0 bg-gray-400" />
+                        </div>
+                      </>
+                    ) : (
+                      <>
+                        <div className="text-6xl mb-4 tabular-nums">
+                          {scorePercentage}
+                          <span className="text-3xl text-gray-500">%</span>
+                        </div>
+                        <div className="relative h-4 bg-gray-200 rounded-full overflow-hidden">
+                          <div
+                            className={`absolute left-0 top-0 h-full ${getAnalysisBarColor(
+                              result
+                            )} transition-all`}
+                            style={{ width: `${result.score * 100}%` }}
+                          />
+                        </div>
+                      </>
+                    )}
                   </div>
 
                   {/* Verdict */}
@@ -286,9 +290,13 @@ Always consult certified art experts for professional verification.
               {/* Explanation Section */}
               <Card>
                 <CardHeader>
-                  <CardTitle>Analysis Explanation</CardTitle>
+                  <CardTitle>
+                    {isInferenceFailed(result) ? "Details" : "Analysis Explanation"}
+                  </CardTitle>
                   <CardDescription>
-                    Detailed AI-generated interpretation of the results
+                    {isInferenceFailed(result)
+                      ? "Why no score was produced for this upload"
+                      : "Detailed AI-generated interpretation of the results"}
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -306,54 +314,111 @@ Always consult certified art experts for professional verification.
               {/* Legend Section */}
               <Card>
                 <CardHeader>
-                  <CardTitle>Score Interpretation</CardTitle>
+                  <CardTitle>Score interpretation</CardTitle>
                   <CardDescription>
-                    Understanding your forgery detection score
+                    {isInferenceFailed(result)
+                      ? "Score ranges below do not apply when inference did not complete."
+                      : usesAuthenticitySemantics(result)
+                        ? "Authenticity confidence is the mean patch probability from the model (same signal as /inference)."
+                        : "Older analyses used a forgery-oriented scale."}
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="space-y-3">
-                    <div className="flex gap-3">
-                      <div className="size-8 rounded bg-green-100 flex items-center justify-center flex-shrink-0">
-                        <CheckCircle className="size-5 text-green-600" />
-                      </div>
-                      <div>
-                        <p className="font-medium text-green-700">
-                          0.0 - 0.3: Likely Authentic
-                        </p>
-                        <p className="text-sm text-gray-600">
-                          Characteristics consistent with authentic pieces
-                        </p>
-                      </div>
-                    </div>
-
-                    <div className="flex gap-3">
-                      <div className="size-8 rounded bg-yellow-100 flex items-center justify-center flex-shrink-0">
-                        <AlertTriangle className="size-5 text-yellow-600" />
-                      </div>
-                      <div>
-                        <p className="font-medium text-yellow-700">
-                          0.3 - 0.7: Uncertain / Needs Review
-                        </p>
-                        <p className="text-sm text-gray-600">
-                          Inconclusive. Professional verification recommended
-                        </p>
-                      </div>
-                    </div>
-
-                    <div className="flex gap-3">
-                      <div className="size-8 rounded bg-red-100 flex items-center justify-center flex-shrink-0">
-                        <AlertCircle className="size-5 text-red-600" />
-                      </div>
-                      <div>
-                        <p className="font-medium text-red-700">
-                          0.7 - 1.0: Likely Forged
-                        </p>
-                        <p className="text-sm text-gray-600">
-                          Shows signs that may indicate forgery
-                        </p>
-                      </div>
-                    </div>
+                    {isInferenceFailed(result) ? (
+                      <Alert>
+                        <AlertTriangle className="size-4" />
+                        <AlertDescription>
+                          This analysis did not finish successfully, so any placeholder values in
+                          storage should be ignored. Try uploading again after the model service is
+                          available.
+                        </AlertDescription>
+                      </Alert>
+                    ) : usesAuthenticitySemantics(result) ? (
+                      <>
+                        <div className="flex gap-3">
+                          <div className="size-8 rounded bg-green-100 flex items-center justify-center flex-shrink-0">
+                            <CheckCircle className="size-5 text-green-600" />
+                          </div>
+                          <div>
+                            <p className="font-medium text-green-700">
+                              ~70–100% or prediction: Authentic
+                            </p>
+                            <p className="text-sm text-gray-600">
+                              Stronger cues consistent with authentic work
+                            </p>
+                          </div>
+                        </div>
+                        <div className="flex gap-3">
+                          <div className="size-8 rounded bg-yellow-100 flex items-center justify-center flex-shrink-0">
+                            <AlertTriangle className="size-5 text-yellow-600" />
+                          </div>
+                          <div>
+                            <p className="font-medium text-yellow-700">
+                              Middle range — uncertain
+                            </p>
+                            <p className="text-sm text-gray-600">
+                              Mixed patch signals; expert review recommended
+                            </p>
+                          </div>
+                        </div>
+                        <div className="flex gap-3">
+                          <div className="size-8 rounded bg-red-100 flex items-center justify-center flex-shrink-0">
+                            <AlertCircle className="size-5 text-red-600" />
+                          </div>
+                          <div>
+                            <p className="font-medium text-red-700">
+                              ~0–30% or prediction: Forgery
+                            </p>
+                            <p className="text-sm text-gray-600">
+                              Cues more consistent with forgery or reproduction
+                            </p>
+                          </div>
+                        </div>
+                      </>
+                    ) : (
+                      <>
+                        <div className="flex gap-3">
+                          <div className="size-8 rounded bg-green-100 flex items-center justify-center flex-shrink-0">
+                            <CheckCircle className="size-5 text-green-600" />
+                          </div>
+                          <div>
+                            <p className="font-medium text-green-700">
+                              0.0 - 0.3: Likely Authentic
+                            </p>
+                            <p className="text-sm text-gray-600">
+                              Lower score on legacy scale
+                            </p>
+                          </div>
+                        </div>
+                        <div className="flex gap-3">
+                          <div className="size-8 rounded bg-yellow-100 flex items-center justify-center flex-shrink-0">
+                            <AlertTriangle className="size-5 text-yellow-600" />
+                          </div>
+                          <div>
+                            <p className="font-medium text-yellow-700">
+                              0.3 - 0.7: Uncertain
+                            </p>
+                            <p className="text-sm text-gray-600">
+                              Inconclusive on legacy scale
+                            </p>
+                          </div>
+                        </div>
+                        <div className="flex gap-3">
+                          <div className="size-8 rounded bg-red-100 flex items-center justify-center flex-shrink-0">
+                            <AlertCircle className="size-5 text-red-600" />
+                          </div>
+                          <div>
+                            <p className="font-medium text-red-700">
+                              0.7 - 1.0: Likely Forged
+                            </p>
+                            <p className="text-sm text-gray-600">
+                              Higher score suggested forgery risk (legacy)
+                            </p>
+                          </div>
+                        </div>
+                      </>
+                    )}
                   </div>
 
                   <Alert>

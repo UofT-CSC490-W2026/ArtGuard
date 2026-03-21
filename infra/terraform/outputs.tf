@@ -183,6 +183,12 @@ output "backend_custom_url" {
   value       = var.enable_custom_domain ? "https://api.${var.domain_name}" : null
 }
 
+# Browser-safe API base (HTTPS). Without custom domain, same host as the frontend CloudFront URL.
+output "backend_url" {
+  description = "HTTPS origin for VITE_API_URL / curl (CloudFront → ALB when not using api.* custom domain)"
+  value       = var.enable_custom_domain ? "https://api.${var.domain_name}" : "https://${aws_cloudfront_distribution.frontend.domain_name}"
+}
+
 output "acm_certificate_cloudfront_arn" {
   description = "ARN of CloudFront ACM certificate (if custom domain enabled)"
   value       = var.enable_custom_domain ? aws_acm_certificate.cloudfront[0].arn : null
@@ -304,8 +310,8 @@ output "summary" {
     frontend_www_url    = var.enable_custom_domain ? "https://www.${var.domain_name}" : null
     frontend_cloudfront = "https://${aws_cloudfront_distribution.frontend.domain_name}"
 
-    # Backend URLs
-    backend_url     = var.enable_custom_domain ? "https://api.${var.domain_name}" : "http://${aws_lb.backend.dns_name}"
+    # Backend URLs (use HTTPS in browser; raw ALB is http-only unless custom domain + ACM on ALB)
+    backend_url = var.enable_custom_domain ? "https://api.${var.domain_name}" : "https://${aws_cloudfront_distribution.frontend.domain_name}"
     backend_alb_dns = aws_lb.backend.dns_name
 
     # Compute Infrastructure
