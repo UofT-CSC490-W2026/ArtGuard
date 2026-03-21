@@ -64,6 +64,7 @@ def _upload_patch(
         Key=key,
         Body=body,
         ContentType="image/jpeg",
+        ServerSideEncryption="AES256",
     )
     return f"s3://{processed_bucket}/{key}"
 
