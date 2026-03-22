@@ -245,22 +245,22 @@ Upload secrets to AWS Secrets Manager.
 ---
 
 ### **deploy-frontend.sh**
-Builds React application and deploys to S3 + CloudFront.
+Builds the **Vite** SPA (`npm run build` → `dist/`) and deploys to S3 + CloudFront.
 
 **Usage:**
 ```bash
+export VITE_API_URL="https://YOUR_CLOUDFRONT_OR_API_BASE"   # required, no trailing slash
 ./scripts/deploy-frontend.sh [environment]
 ```
 
 **Environment Variables:**
-- `AWS_REGION` - AWS region (default: ca-central-1)
-- `NODE_ENV` - Node environment (set to production)
-- `REACT_APP_ENVIRONMENT` - React app environment variable
+- **`VITE_API_URL`** (required) — Public API base URL compiled into the bundle (e.g. `https://dxxxx.cloudfront.net/api` if the API is under `/api/*` on CloudFront).
+- `AWS_REGION` — S3 sync region (default: `ca-central-1`)
 
 **What it does:**
-1. Cleans previous builds
+1. Cleans previous `dist/` output
 2. Installs npm dependencies with `npm ci`
-3. Builds React production bundle
+3. Builds Vite production bundle
 4. Syncs static assets to S3 with long cache (31536000s)
 5. Syncs HTML/JSON with short cache (0s, must-revalidate)
 6. Invalidates CloudFront cache for immediate updates
@@ -268,10 +268,10 @@ Builds React application and deploys to S3 + CloudFront.
 
 **Examples:**
 ```bash
-# Deploy to dev
+export VITE_API_URL="https://d1234567890.cloudfront.net/api"
 ./scripts/deploy-frontend.sh dev
 
-# Deploy to prod
+export VITE_API_URL="https://d1234567890.cloudfront.net/api"
 ./scripts/deploy-frontend.sh prod
 ```
 

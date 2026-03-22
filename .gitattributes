@@ -8,3 +8,5 @@ preprocessing/output/met_data.jsonl filter=lfs diff=lfs merge=lfs -text
 *.tiff filter=lfs diff=lfs merge=lfs -text
 *.jsonl filter=lfs diff=lfs merge=lfs -text
 *.txt filter=lfs diff=lfs merge=lfs -text
+# Python dependency list must be plain text for Docker / pip (overrides *.txt above)
+requirements.txt !filter !diff !merge text

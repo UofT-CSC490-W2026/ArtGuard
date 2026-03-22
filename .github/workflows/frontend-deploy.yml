@@ -1,3 +1,6 @@
+# Builds Vite app to dist/ and syncs to S3. Requires secret VITE_API_URL (API base, no trailing slash).
+# Legacy: if VITE_API_URL is unset, falls back to REACT_APP_API_BASE_URL until you migrate the secret name.
+
 name: Deploy Frontend to S3
 
 on:
@@ -48,7 +51,7 @@ jobs:
         working-directory: src/apps/frontend
         run: |
           echo "Cleaning previous build artifacts..."
-          rm -rf build node_modules/.cache
+          rm -rf dist node_modules/.cache
           echo "Clean complete"
 
       - name: Install dependencies
@@ -105,21 +108,19 @@ jobs:
           echo "Deploying to S3 bucket: $BUCKET_NAME"
 
           echo "Step 1: Syncing static assets with long cache..."
-          # Sync static assets (JS, CSS, images) with long cache (1 year)
-          aws s3 sync build/ s3://$BUCKET_NAME/ \
+          aws s3 sync dist/ s3://$BUCKET_NAME/ \
             --delete \
+            --region ${{ env.AWS_REGION }} \
             --cache-control "public, max-age=31536000, immutable" \
             --exclude "*.html" \
             --exclude "*.json" \
             --exclude "*.txt" \
-            --exclude "*.xml" \
-            --exclude "asset-manifest.json" \
-            --exclude "manifest.json"
+            --exclude "*.xml"
           echo "✅ Static assets synced"
 
           echo "Step 2: Syncing HTML and metadata files with short cache..."
-          # Sync HTML, JSON, and text files with short cache for SPA routing
-          aws s3 sync build/ s3://$BUCKET_NAME/ \
+          aws s3 sync dist/ s3://$BUCKET_NAME/ \
+            --region ${{ env.AWS_REGION }} \
             --cache-control "public, max-age=0, must-revalidate" \
             --exclude "*" \
             --include "*.html" \

@@ -217,10 +217,10 @@ Example: Backend Update
   5. New version live in ~15 minutes
 
 Example: Frontend Update
-  1. Edit src/apps/frontend/src/App.js
+  1. Edit src/apps/frontend (Vite + React)
   2. git push origin dev
   3. frontend-deploy.yml triggers automatically
-  4. Builds React → Syncs to S3 → Invalidates CloudFront
+  4. Builds Vite (`dist/`) → Syncs to S3 → Invalidates CloudFront
   5. New version live in ~10 minutes
 
 Example: Infrastructure Update
@@ -393,7 +393,8 @@ git push origin dev                              # Deploy everything automatical
 # Manual backend deployment
 ./scripts/build-and-push-docker.sh dev && ./scripts/deploy-ecs.sh dev
 
-# Manual frontend deployment
+# Manual frontend deployment (VITE_API_URL required — baked in at build time)
+export VITE_API_URL="https://YOUR_CLOUDFRONT_DOMAIN/api"   # or ALB URL; no trailing slash
 ./scripts/deploy-frontend.sh dev
 
 # Check status
