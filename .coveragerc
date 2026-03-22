@@ -1,5 +1,12 @@
 [run]
 source = src
+omit =
+    # Modal GPU code — requires PyTorch + CUDA, tested via Modal infrastructure
+    src/apps/train/train.py
+    src/apps/train/evaluate.py
+    src/apps/train/inference.py
+    src/apps/train/dataset.py
+    src/apps/train/model.py
 
 [report]
 exclude_lines =
