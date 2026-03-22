@@ -62,7 +62,7 @@ All scripts support both environments with the same commands.
 ### **Knowledge Base**
 ```bash
 # Update Bedrock Knowledge Base with docs
-./scripts/update-knowledge-base.sh dev ./docs
+./scripts/upload-rag-data.sh dev ./docs
 ```
 
 ### **Bootstrap (First-Time Setup)**
@@ -83,23 +83,88 @@ All scripts support both environments with the same commands.
 ./scripts/setup-secrets.sh dev
 ```
 
+### **Benchmarking (Model Training & Evaluation)**
+```bash
+# Train + evaluate Swin-Tiny (default)
+./scripts/run-benchmarks.sh tiny
+
+# Evaluate only (uses existing checkpoint on Modal Volume)
+./scripts/run-benchmarks.sh tiny eval
+
+# Train only (skip evaluation)
+./scripts/run-benchmarks.sh tiny train
+
+# Both variants (Swin-Tiny + Swin-Base)
+./scripts/run-benchmarks.sh
+```
+
 ---
 
 ## Detailed Documentation
 
-### All Available Scripts
+### Entry Point Scripts (run these directly)
 
-| Script | Purpose | Type |
-|--------|---------|------|
-| **build-and-push-docker.sh** | Build Docker image and push to ECR | Backend |
-| **deploy-ecs.sh** | Force ECS service deployment | Backend |
-| **deploy-frontend.sh** | Build React and deploy to S3/CloudFront | Frontend |
-| **bootstrap.sh** | One-time infrastructure setup | Infrastructure |
-| **terraform-deploy.sh** | Apply Terraform changes | Infrastructure |
-| **terraform-validate.sh** | Validate Terraform config (PRs) | Infrastructure |
-| **ecs-control.sh** | Manual ECS service control | Operations |
-| **setup-secrets.sh** | Upload secrets to Secrets Manager | Configuration |
-| **update-knowledge-base.sh** | Sync docs to Bedrock Knowledge Base | AI/RAG |
+These are the main scripts you invoke from the command line or CI. They orchestrate the full workflow.
+
+| Script | Purpose | Used by CI |
+|--------|---------|------------|
+| **deploy-all.sh** | Full end-to-end deployment (7 steps: infra + secrets + Docker + ECS + RAG + data + verify) | No (manual) |
+| **destroy-all.sh** | Tear down infrastructure (full wipe or `--preserve-data` for DR) | `terraform-destroy.yml` |
+| **disaster-recovery.sh** | One-command DR demo (destroy + prove data survived + recover) | No (manual demo) |
+| **deploy-frontend.sh** | Build Vite React app and deploy to S3/CloudFront | `frontend-deploy.yml` |
+| **ecs-control.sh** | Manual ECS service operations (deploy, scale, status, logs) | `ecs-manage.yml` |
+| **terraform-validate.sh** | Validate Terraform config and create plan (for PRs) | `terraform-pr.yml` |
+| **run-benchmarks.sh** | Train and/or evaluate Swin models on Modal GPUs | No (manual) |
+| **demo-rag-bugs.sh** | Interactive video demo of RAG deployment bugs and fixes | No (manual demo) |
+| **download-data.sh** | Download training/test/val images from Google Drive | No (manual) |
+
+### Building Block Scripts (called by other scripts)
+
+These scripts are designed to do one thing well. They are called by the entry point scripts above and by CI workflows, but can also be run standalone.
+
+| Script | Purpose | Called by |
+|--------|---------|----------|
+| **bootstrap.sh** | One-time Terraform infrastructure setup | `deploy-all.sh`, `terraform-bootstrap.yml` |
+| **build-and-push-docker.sh** | Build Docker image and push to ECR | `deploy-all.sh`, `recover-prod.sh`, `app-docker.yml` |
+| **deploy-ecs.sh** | Force ECS rolling deployment | `deploy-all.sh`, `recover-prod.sh`, `app-docker.yml` |
+| **setup-secrets.sh** | Upload Modal API key to Secrets Manager | `deploy-all.sh`, `recover-prod.sh` |
+| **terraform-deploy.sh** | Terraform init/plan/apply/destroy wrapper | `terraform-validate.sh`, `terraform-deploy.yml` |
+| **upload-rag-data.sh** | Convert JSONL to TXT and sync to S3 for Bedrock KB | `deploy-all.sh`, `update-knowledge-base.yml` |
+| **update-data.sh** | Upload local images + metadata to S3 and DynamoDB | `deploy-all.sh` |
+| **recover-prod.sh** | 10-step disaster recovery automation | `disaster-recovery.sh` |
+
+### Shared Utilities
+
+| Script | Purpose |
+|--------|---------|
+| **_colors.sh** | Color definitions and output helpers (`info`, `success`, `warn`, `error`, `step`, `header`, `require_tool`). Sourced by all other scripts. |
+
+---
+
+## Data & Git LFS
+
+Training, test, and validation images (`data/`) are **not stored in the Git repo** — they are too large (~2.1 GB) for Git or Git LFS free tier.
+
+**What's included in the repo (cloned automatically):**
+- `vangogh/` — sample test image (1.8 MB)
+- `src/apps/data_pipeline/output/` — RAG knowledge base text/jsonl (41 MB)
+- `src/apps/data_pipeline/output/` — RAG knowledge base text/jsonl
+- All source code, Terraform configs, scripts, etc.
+
+**What's NOT in the repo (must be downloaded separately):**
+- `data/train/` — training images (class_0 = forgery, class_1 = authentic)
+- `data/test/` — test images
+- `data/val/` — validation images
+
+### Downloading the dataset
+
+```bash
+./scripts/download-data.sh
+```
+
+This downloads a zip from Google Drive and extracts it to `data/`. Requires `gdown` (`pip install gdown`).
+
+> **Note:** The deployed application works without `data/` — training images are already in S3 and model weights are on Modal. The download is only needed for local training/evaluation or dataset inspection.
 
 ---
 
@@ -369,12 +434,12 @@ Validates Terraform configuration for Pull Requests and manual checks.
 
 ---
 
-### **update-knowledge-base.sh**
+### **upload-rag-data.sh**
 Updates Bedrock Knowledge Base with documentation for RAG.
 
 **Usage:**
 ```bash
-./scripts/update-knowledge-base.sh [environment] [docs_directory]
+./scripts/upload-rag-data.sh [environment] [docs_directory]
 ```
 
 **Environment Variables:**
@@ -397,13 +462,13 @@ Updates Bedrock Knowledge Base with documentation for RAG.
 **Examples:**
 ```bash
 # Update dev knowledge base with docs folder
-./scripts/update-knowledge-base.sh dev ./docs
+./scripts/upload-rag-data.sh dev ./docs
 
 # Update prod knowledge base
-./scripts/update-knowledge-base.sh prod ./docs
+./scripts/upload-rag-data.sh prod ./docs
 
 # Update with different directory
-./scripts/update-knowledge-base.sh dev ./documentation
+./scripts/upload-rag-data.sh dev ./documentation
 ```
 
 **Output:**
@@ -427,9 +492,12 @@ All scripts are designed to work both locally and in GitHub Actions:
 | **frontend-deploy.yml** | `deploy-frontend.sh` | Push to `dev` branch (frontend changes) / Merge dev to main |
 | **terraform-bootstrap.yml** | `bootstrap.sh` | Manual workflow dispatch |
 | **terraform-deploy.yml** | `terraform-deploy.sh` | Push to `dev`/`main` (terraform changes) + Manual |
+| **terraform-destroy.yml** | `destroy-all.sh` | Manual workflow dispatch (double confirmation) |
 | **terraform-pr.yml** | `terraform-validate.sh` | Pull Request (terraform changes) |
 | **ecs-manage.yml** | `ecs-control.sh` | Manual workflow dispatch |
-| **update-knowledge-base.yml** | `update-knowledge-base.sh` | Push to `dev` branch (docs changes) / Merge dev to main|
+| **update-knowledge-base.yml** | `upload-rag-data.sh` | Push to `dev` branch (docs changes) / Merge dev to main |
+| **test-coverage.yml** | pytest + pytest-cov | Push to main / Pull Request |
+| **secret.yml** | (inline) | Manual workflow dispatch (DR secret injection) |
 
 ---
 
@@ -456,7 +524,7 @@ alias ecs-status="./scripts/ecs-control.sh status dev"
 alias ecs-deploy="./scripts/ecs-control.sh deploy dev"
 
 # Knowledge Base
-alias update-kb="./scripts/update-knowledge-base.sh dev ./docs"
+alias update-kb="./scripts/upload-rag-data.sh dev ./docs"
 
 # Terraform operations
 alias tf-validate="./scripts/terraform-validate.sh dev"

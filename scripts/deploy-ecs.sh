@@ -5,10 +5,8 @@ set -e
 # Usage: ./deploy-ecs.sh [environment]
 # Example: ./deploy-ecs.sh dev
 
-# Ensure standard PATH directories are included
-# export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:$HOME/.local/bin:$PATH"
+source "$(dirname "$0")/_colors.sh"
 
-# Disable AWS CLI pager (works with both v1 and v2)
 export AWS_PAGER=""
 
 ENVIRONMENT=${1:-dev}
@@ -16,16 +14,14 @@ AWS_REGION=${AWS_REGION:-ca-central-1}
 ECS_CLUSTER=${ECS_CLUSTER:-artguard-cluster}
 ECS_SERVICE=${ECS_SERVICE:-artguard-backend}
 
-echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-echo "Deploying ECS Service"
-echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-echo "Environment: $ENVIRONMENT"
-echo "Region: $AWS_REGION"
-echo "Cluster: $ECS_CLUSTER"
-echo "Service: $ECS_SERVICE"
+header "Deploying ECS Service"
+echo -e "  Environment: ${CYAN}$ENVIRONMENT${NC}"
+echo -e "  Region:      ${CYAN}$AWS_REGION${NC}"
+echo -e "  Cluster:     ${CYAN}$ECS_CLUSTER${NC}"
+echo -e "  Service:     ${CYAN}$ECS_SERVICE${NC}"
 echo ""
 
-echo "Forcing new deployment..."
+step "Forcing new deployment..."
 aws ecs update-service \
   --cluster $ECS_CLUSTER \
   --service $ECS_SERVICE \
@@ -33,18 +29,13 @@ aws ecs update-service \
   --region $AWS_REGION
 
 echo ""
-echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-echo "✅ Deployment Initiated"
-echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-echo "ECS will perform a rolling deployment:"
-echo "  1. Start new tasks with latest image"
-echo "  2. Wait for health checks to pass"
-echo "  3. Drain and stop old tasks"
+header "Deployment Initiated"
+success "ECS will perform a rolling deployment:"
+echo -e "  ${DIM}1. Start new tasks with latest image${NC}"
+echo -e "  ${DIM}2. Wait for health checks to pass${NC}"
+echo -e "  ${DIM}3. Drain and stop old tasks${NC}"
 echo ""
-echo "Expected time: ~2-3 minutes"
+info "Expected time: ~2-3 minutes"
 echo ""
-echo "Monitor deployment:"
-echo "   ./scripts/ecs-control.sh status $ENVIRONMENT"
-echo "   or"
-echo "   aws ecs describe-services --cluster $ECS_CLUSTER --services $ECS_SERVICE --region $AWS_REGION"
-echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+echo -e "Monitor deployment:"
+echo -e "  ${GREEN}./scripts/ecs-control.sh status $ENVIRONMENT${NC}"

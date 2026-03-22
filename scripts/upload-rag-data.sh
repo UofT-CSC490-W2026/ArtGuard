@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+source "$(dirname "$0")/_colors.sh"
+
 # Upload local RAG pipeline output to the Knowledge Base S3 bucket
 # and trigger a Bedrock Knowledge Base ingestion job.
 #
@@ -41,8 +43,14 @@ echo "Region:    $AWS_REGION"
 echo ""
 
 # Convert JSONL to TXT for Bedrock (Bedrock doesn't support .jsonl natively)
-echo "Converting JSONL files to TXT..."
-python3 scripts/convert-jsonl-to-txt.py
+# Skip if TXT files already exist (e.g. from a previous run or checked into git)
+TXT_COUNT=$(find "$TXT_DIR" -name "*.txt" 2>/dev/null | wc -l | tr -d ' ')
+if [[ "$TXT_COUNT" -gt 0 ]]; then
+  echo "Found $TXT_COUNT existing TXT files in $TXT_DIR — skipping JSONL conversion."
+else
+  echo "Converting JSONL files to TXT..."
+  python3 scripts/convert-jsonl-to-txt.py
+fi
 echo ""
 
 # Clear old documents from S3 first

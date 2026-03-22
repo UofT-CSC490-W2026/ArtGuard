@@ -116,15 +116,34 @@ pip install -r requirements.txt
 
 ## Full Deployment From Scratch
 
-### Option A: One-Command Deployment
+### Option A: Deploy the App (model already trained)
+
+Use this if the Swin model has already been trained and checkpoints exist on the Modal Volume (this is the normal case — the model only needs to be trained once). This deploys the full application stack so users can upload artwork images and get forgery predictions.
 
 ```bash
+# 1. Deploy backend infrastructure + ECS + RAG data (~30-45 min)
+#    You will be prompted for your Modal API key.
 ./scripts/deploy-all.sh dev
+
+# 2. Deploy frontend (needs CloudFront URL from step 1)
+export VITE_API_URL=$(terraform -chdir=infra/terraform output -raw cloudfront_distribution_url)
+./scripts/deploy-frontend.sh dev
 ```
 
-This runs all 7 steps below automatically. Takes ~30-45 minutes. You will be prompted for your Modal API key.
+The frontend is deployed separately because `VITE_API_URL` is baked into the JavaScript bundle at build time and the URL isn't known until infrastructure is created.
 
-### Option B: Step by Step
+**Your app is now live at:**
+```bash
+# Frontend (user-facing)
+terraform -chdir=infra/terraform output -raw cloudfront_distribution_url
+
+# Backend API
+terraform -chdir=infra/terraform output -json summary | jq -r '.backend_url'
+```
+
+### Option B: Full Setup From Scratch (including model training)
+
+This is the complete process our team followed to set up the entire system from zero — infrastructure, data upload, patch processing, model training, RAG knowledge base, and frontend. Follow this if you need to reproduce everything, including training the model for the first time.
 
 #### Step 1: Bootstrap Infrastructure (~15-20 min)
 
@@ -177,11 +196,13 @@ Upload Met Museum + Wikidata documents to the Bedrock Knowledge Base:
 # This converts JSONL → TXT, uploads to S3, and triggers Bedrock ingestion
 ```
 
-#### Step 7: Upload Training Data
-
-If you have the training images locally (requires `git lfs pull` first):
+#### Step 7: Download and Upload Training Data
 
 ```bash
+# Download training images from Google Drive (~2 GB)
+./scripts/download-data.sh
+
+# Upload images to S3 and write metadata to DynamoDB
 export S3_IMAGES_RAW_BUCKET=$(terraform -chdir=infra/terraform output -raw s3_images_raw_bucket)
 export DDB_IMAGES_TABLE=$(terraform -chdir=infra/terraform output -raw dynamodb_image_records_table_name)
 export AWS_REGION=ca-central-1
@@ -189,17 +210,44 @@ export AWS_REGION=ca-central-1
 ./scripts/update-data.sh --data-dir ./data --metadata ./data/metadata.csv
 ```
 
-If you don't have the images locally:
+#### Step 8: Process Training Data Into Patches
+
+Splits each raw image into 224x224 patches (grid crops + center crops at multiple scales) for model input. This spawns an ECS Fargate task.
 
 ```bash
-./scripts/download-data.sh   # Downloads from Google Drive (~2 GB)
-# Then run the upload command above
+BACKEND_URL=$(terraform -chdir=infra/terraform output -json summary | jq -r '.backend_url')
+
+curl -sS -X POST "${BACKEND_URL}/process_data" | jq .
+# Returns: {"run_id": "...", "task_arn": "arn:aws:ecs:..."}
+```
+
+Monitor progress:
+```bash
+./scripts/ecs-control.sh logs dev
+```
+
+#### Step 9: Train the Model (~2-4 hours)
+
+Train the Swin-Tiny vision transformer on Modal GPUs. This reads patches from S3, trains with early stopping, and saves the best checkpoint to a Modal Volume.
+
+```bash
+./scripts/run-benchmarks.sh tiny train
+```
+
+#### Step 10: Evaluate the Model
+
+Run evaluation on the held-out test set to generate accuracy, F1, precision, recall, and confusion matrix metrics:
+
+```bash
+./scripts/run-benchmarks.sh tiny eval
+# Results saved to benchmarks/eval_tiny_best_metrics.json
 ```
 
 #### Verify Deployment
 
 ```bash
 BACKEND_URL=$(terraform -chdir=infra/terraform output -json summary | jq -r '.backend_url')
+FRONTEND_URL=$(terraform -chdir=infra/terraform output -raw cloudfront_distribution_url)
 
 # Health check
 curl -sS "${BACKEND_URL}/health" | jq .
@@ -208,7 +256,13 @@ curl -sS "${BACKEND_URL}/health" | jq .
 curl -sS -X POST "${BACKEND_URL}/rag-query" \
   -H "Content-Type: application/json" \
   -d '{"query": "Tell me about Van Gogh"}' | jq .
+
+echo ""
+echo "Frontend: ${FRONTEND_URL}"
+echo "Backend:  ${BACKEND_URL}"
 ```
+
+**Your app is now live.** Open the Frontend URL in a browser to sign up, upload artwork, and get forgery predictions.
 
 ---
 

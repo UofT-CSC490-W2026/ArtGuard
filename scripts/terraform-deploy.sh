@@ -10,8 +10,7 @@ set -e
 #   ./terraform-deploy.sh dev apply
 #   ./terraform-deploy.sh prod apply
 
-# Ensure standard PATH directories are included
-# export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:$HOME/.local/bin:$PATH"
+source "$(dirname "$0")/_colors.sh"
 
 ENVIRONMENT=${1:-dev}
 ACTION=${2:-plan}
@@ -20,97 +19,91 @@ TERRAFORM_DIR="infra/terraform"
 
 cd $TERRAFORM_DIR
 
-echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-echo "🏗️  Terraform Deployment"
-echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-echo "Environment: $ENVIRONMENT"
-echo "Action: $ACTION"
-echo "Region: $AWS_REGION"
-echo "Backend Config: backend-$ENVIRONMENT.hcl"
-echo "Variables File: $ENVIRONMENT.tfvars"
-echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+header "Terraform Deployment"
+echo -e "  Environment:    ${CYAN}$ENVIRONMENT${NC}"
+echo -e "  Action:         ${BOLD}$ACTION${NC}"
+echo -e "  Region:         ${CYAN}$AWS_REGION${NC}"
+echo -e "  Backend Config: ${CYAN}backend-$ENVIRONMENT.hcl${NC}"
+echo -e "  Variables File: ${CYAN}$ENVIRONMENT.tfvars${NC}"
 echo ""
 
 case $ACTION in
   init)
-    echo "Initializing Terraform..."
+    step "Initializing Terraform..."
     terraform init -backend-config=backend-$ENVIRONMENT.hcl
-    echo "✅ Terraform initialized!"
+    success "Terraform initialized!"
     ;;
 
   plan)
-    echo "Creating Terraform plan..."
+    step "Creating Terraform plan..."
     terraform plan -var-file=$ENVIRONMENT.tfvars -out=tfplan
     echo ""
-    echo "✅ Plan created successfully!"
+    success "Plan created successfully!"
     echo "Plan saved to: tfplan"
     echo ""
-    echo "To apply this plan, run:"
-    echo "   ./scripts/terraform-deploy.sh $ENVIRONMENT apply"
+    echo -e "To apply this plan, run:"
+    echo -e "  ${GREEN}./scripts/terraform-deploy.sh $ENVIRONMENT apply${NC}"
     ;;
 
   apply)
     if [ -f "tfplan" ]; then
-      echo "✅ Applying saved plan..."
+      step "Applying saved plan..."
       terraform apply tfplan
       rm tfplan
     else
-      echo "⚠️  No saved plan found. Creating and applying..."
+      warn "No saved plan found. Creating and applying..."
       terraform apply -var-file=$ENVIRONMENT.tfvars -auto-approve
     fi
 
     echo ""
-    echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-    echo "✅ Terraform Deployment Complete"
-    echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+    header "Terraform Deployment Complete"
     echo ""
-    echo "Key Outputs:"
+    info "Key Outputs:"
     echo ""
-    echo "Frontend:"
-    terraform output cloudfront_distribution_url || echo "  CloudFront URL not available"
+    echo -e "  ${BOLD}Frontend:${NC}"
+    terraform output cloudfront_distribution_url || echo -e "  ${DIM}Not available${NC}"
     echo ""
-    echo "Backend API:"
-    terraform output backend_url || echo "  Backend URL not available"
-    terraform output alb_dns_name || echo "  ALB DNS not available"
+    echo -e "  ${BOLD}Backend API:${NC}"
+    terraform output backend_url || echo -e "  ${DIM}Not available${NC}"
+    terraform output alb_dns_name || echo -e "  ${DIM}Not available${NC}"
     echo ""
-    echo "ECS:"
-    terraform output ecs_cluster_name || echo "  ECS cluster not available"
-    terraform output ecs_service_name || echo "  ECS service not available"
-    echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+    echo -e "  ${BOLD}ECS:${NC}"
+    terraform output ecs_cluster_name || echo -e "  ${DIM}Not available${NC}"
+    terraform output ecs_service_name || echo -e "  ${DIM}Not available${NC}"
     ;;
 
   destroy)
-    echo "⚠️  DESTRUCTIVE ACTION: This will destroy all infrastructure!"
-    echo "Environment: $ENVIRONMENT"
+    echo -e "${RED}DESTRUCTIVE ACTION: This will destroy all infrastructure!${NC}"
+    echo -e "Environment: ${CYAN}$ENVIRONMENT${NC}"
     echo ""
     read -p "Type 'yes' to confirm: " CONFIRM
 
     if [ "$CONFIRM" != "yes" ]; then
-      echo "❌ Aborted"
+      error "Aborted"
       exit 1
     fi
 
     echo ""
-    echo "Destroying infrastructure..."
+    step "Destroying infrastructure..."
     terraform destroy -var-file=$ENVIRONMENT.tfvars -auto-approve
-    echo "✅ Infrastructure destroyed"
+    success "Infrastructure destroyed"
     ;;
 
   *)
-    echo "❌ Invalid action: $ACTION"
+    error "Invalid action: $ACTION"
     echo ""
-    echo "Usage: ./terraform-deploy.sh [environment] [action]"
+    echo -e "Usage: ${CYAN}./terraform-deploy.sh [environment] [action]${NC}"
     echo ""
     echo "Actions:"
-    echo "  init    - Initialize Terraform backend"
-    echo "  plan    - Create execution plan"
-    echo "  apply   - Apply changes"
-    echo "  destroy - Destroy all infrastructure"
+    echo -e "  ${GREEN}init${NC}    - Initialize Terraform backend"
+    echo -e "  ${GREEN}plan${NC}    - Create execution plan"
+    echo -e "  ${GREEN}apply${NC}   - Apply changes"
+    echo -e "  ${RED}destroy${NC} - Destroy all infrastructure"
     echo ""
     echo "Examples:"
-    echo "  ./terraform-deploy.sh dev init"
-    echo "  ./terraform-deploy.sh dev plan"
-    echo "  ./terraform-deploy.sh dev apply"
+    echo -e "  ${DIM}./terraform-deploy.sh dev init${NC}"
+    echo -e "  ${DIM}./terraform-deploy.sh dev plan${NC}"
+    echo -e "  ${DIM}./terraform-deploy.sh dev apply${NC}"
     exit 1
     ;;
 esac

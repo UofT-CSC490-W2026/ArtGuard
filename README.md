@@ -85,36 +85,41 @@ cd src/apps/frontend && npm ci && cd ../../..
 
 ## Quick Access (Already Deployed)
 
-If the infrastructure is already running, you can access the system immediately:
+If the infrastructure is already deployed, you can use the app immediately without any setup.
+
+**Frontend (browser):** Open the CloudFront URL in your browser to sign up, upload artwork images, and view forgery detection results.
+
+**Backend API (curl):** Use the same CloudFront URL as the API base:
 
 ```bash
-# Get URLs from Terraform
-cd infra/terraform && terraform output -json summary | jq .
-
-# Or use the deployed URLs directly:
-export API_BASE="https://YOUR_CLOUDFRONT_URL"
+export API_BASE="https://YOUR_CLOUDFRONT_URL"   # Ask a team member for the URL
 
 # Health check
 curl -sS "${API_BASE}/health" | jq .
 
-# Sign up
+# Sign up and get a token
 curl -sS -X POST "${API_BASE}/auth/signup" \
   -H "Content-Type: application/json" \
   -d '{"username":"demo","email":"demo@example.com","password":"demopass1"}' | jq .
 
-# Run inference on an artwork
 TOKEN=$(curl -sS -X POST "${API_BASE}/auth/login" \
   -H "Content-Type: application/json" \
   -d '{"email":"demo@example.com","password":"demopass1"}' | jq -r '.access_token')
 
+# Run inference on an artwork image
 curl -sS -X POST "${API_BASE}/inference" \
   -H "Authorization: Bearer ${TOKEN}" \
   -F "file=@path/to/painting.jpg" \
   -F "artist_name=Vincent van Gogh" \
   -F "artwork_name=Starry Night" | jq .
+
+# Query the RAG knowledge base
+curl -sS -X POST "${API_BASE}/rag-query" \
+  -H "Content-Type: application/json" \
+  -d '{"query": "How are art forgeries detected?"}' | jq .
 ```
 
-For the full list of endpoints see [docs/API_REFERENCE.md](docs/API_REFERENCE.md). For service management (scale up/down, logs, status) see [DEPLOYMENT.md](DEPLOYMENT.md).
+For the full list of all 17 endpoints see [docs/API_REFERENCE.md](docs/API_REFERENCE.md). For deployment and service management see [DEPLOYMENT.md](DEPLOYMENT.md).
 
 ---
 
@@ -338,9 +343,13 @@ For the complete guide including data upload, model training, RAG setup, and tro
 ### Full Deployment From Scratch (all-in-one)
 
 ```bash
-# Deploys everything: infra, secrets, Docker, ECS, frontend, RAG data
+# Deploys backend: infra, secrets, Docker, ECS, RAG data
 # Takes ~30-45 minutes. You will be prompted for your Modal API key.
 ./scripts/deploy-all.sh dev
+
+# Then deploy frontend (needs the CloudFront URL from step above)
+export VITE_API_URL=$(terraform -chdir=infra/terraform output -raw cloudfront_distribution_url)
+./scripts/deploy-frontend.sh dev
 ```
 
 ### Step-by-Step Deployment

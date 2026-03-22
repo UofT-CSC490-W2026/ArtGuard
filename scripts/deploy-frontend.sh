@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e
 
+source "$(dirname "$0")/_colors.sh"
+
 # Build and deploy Vite frontend to S3 + CloudFront
 # Usage: ./deploy-frontend.sh [environment]
 # Example:
@@ -9,7 +11,7 @@ set -e
 #   ./scripts/deploy-frontend.sh dev
 #
 # VITE_API_URL is required (baked in at build time). No trailing slash.
-# Use the same https://…cloudfront.net origin as the UI so API calls stay HTTPS (no mixed content).
+# Use the same https://...cloudfront.net origin as the UI so API calls stay HTTPS (no mixed content).
 #
 # Optional: CLOUDFRONT_DISTRIBUTION_ID=E123... if Terraform is unavailable (skips auto lookup).
 
@@ -19,63 +21,66 @@ FRONTEND_DIR="src/apps/frontend"
 BUCKET_NAME="artguard-frontend-$ENVIRONMENT"
 DIST_DIR="dist"
 
-echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-echo "Building and Deploying Frontend (Vite)"
-echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-echo "Environment: $ENVIRONMENT"
-echo "Region: $AWS_REGION"
-echo "Bucket: $BUCKET_NAME"
+header "Building and Deploying Frontend (Vite)"
+echo -e "  Environment: ${CYAN}$ENVIRONMENT${NC}"
+echo -e "  Region:      ${CYAN}$AWS_REGION${NC}"
+echo -e "  Bucket:      ${CYAN}$BUCKET_NAME${NC}"
 echo ""
 
+# ─── Validate VITE_API_URL ────────────────────────────────────────────────────
 if [ -z "${VITE_API_URL:-}" ]; then
-  echo "❌ VITE_API_URL is not set. It is compiled into the bundle at build time."
-  echo "   Example:"
-  echo "     export VITE_API_URL=\$(terraform -chdir=infra/terraform output -raw cloudfront_distribution_url)"
-  echo "   Or point at your ALB URL if the browser calls the API directly."
-  echo "   Do not use a trailing slash."
+  error "VITE_API_URL is not set. It is compiled into the bundle at build time."
+  echo -e "  Example:"
+  echo -e "    ${GREEN}export VITE_API_URL=\$(terraform -chdir=infra/terraform output -raw cloudfront_distribution_url)${NC}"
+  echo -e "  ${DIM}Or point at your ALB URL if the browser calls the API directly.${NC}"
+  echo -e "  ${DIM}Do not use a trailing slash.${NC}"
   exit 1
 fi
 
-echo "VITE_API_URL: $VITE_API_URL"
+info "VITE_API_URL: ${BOLD}$VITE_API_URL${NC}"
 echo ""
 
-# Resolve paths from repo root (where this script is usually run)
+# ─── Resolve paths from repo root ────────────────────────────────────────────
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 FRONTEND_ABS="$REPO_ROOT/$FRONTEND_DIR"
 
 if [ ! -d "$FRONTEND_ABS" ]; then
-  echo "❌ Frontend directory not found: $FRONTEND_ABS"
+  error "Frontend directory not found: $FRONTEND_ABS"
   exit 1
 fi
 
 cd "$FRONTEND_ABS"
 
-echo "🧹 Cleaning previous builds..."
+# ─── Build ────────────────────────────────────────────────────────────────────
+step "Cleaning previous builds..."
 rm -rf "$DIST_DIR" node_modules/.cache 2>/dev/null || true
 
-echo "Installing dependencies..."
+step "Installing dependencies..."
 npm ci --quiet
 
-echo "Building Vite production bundle..."
+step "Building Vite production bundle..."
 export NODE_ENV=production
 npm run build
 
 if [ ! -d "$DIST_DIR" ]; then
-  echo "❌ Error: '$DIST_DIR' directory not found after build"
+  error "'$DIST_DIR' directory not found after build."
   exit 1
 fi
 
 if [ ! -f "$DIST_DIR/index.html" ]; then
-  echo "❌ Error: index.html not found in build output"
+  error "index.html not found in build output."
   exit 1
 fi
 
-echo "✅ Build complete!"
+success "Build complete!"
 echo ""
 
-echo "Deploying to S3..."
-echo "  Step 1: Syncing static assets with long cache..."
+# ─── Deploy to S3 ────────────────────────────────────────────────────────────
+step "Deploying to S3..."
+
+# Static assets (JS, CSS, images) — long cache, content-hashed filenames
+info "Syncing static assets with long cache (1 year, immutable)..."
 aws s3 sync "$DIST_DIR/" "s3://$BUCKET_NAME/" \
   --delete \
   --cache-control "public, max-age=31536000, immutable" \
@@ -85,7 +90,8 @@ aws s3 sync "$DIST_DIR/" "s3://$BUCKET_NAME/" \
   --exclude "*.xml" \
   --region "$AWS_REGION"
 
-echo "  Step 2: Syncing HTML and metadata with short cache..."
+# HTML and metadata — short cache, must-revalidate so CloudFront checks origin
+info "Syncing HTML and metadata with short cache (must-revalidate)..."
 aws s3 sync "$DIST_DIR/" "s3://$BUCKET_NAME/" \
   --cache-control "public, max-age=0, must-revalidate" \
   --exclude "*" \
@@ -95,12 +101,13 @@ aws s3 sync "$DIST_DIR/" "s3://$BUCKET_NAME/" \
   --include "*.xml" \
   --region "$AWS_REGION"
 
-echo "✅ S3 deployment complete!"
+success "S3 deployment complete!"
 
+# ─── CloudFront invalidation ─────────────────────────────────────────────────
 echo ""
-echo "Invalidating CloudFront cache..."
+step "Invalidating CloudFront cache..."
 
-# Resolve distribution ID (JMESPath contains(Origins.Items[].DomainName, ...) is invalid — use terraform / jq)
+# Try to resolve the distribution ID: env var → Terraform output → AWS API lookup
 DISTRIBUTION_ID="${CLOUDFRONT_DISTRIBUTION_ID:-}"
 if [ -z "$DISTRIBUTION_ID" ] && command -v terraform >/dev/null 2>&1; then
   DISTRIBUTION_ID=$(terraform -chdir="$REPO_ROOT/infra/terraform" output -raw cloudfront_distribution_id 2>/dev/null) || true
@@ -116,29 +123,26 @@ if [ -z "$DISTRIBUTION_ID" ]; then
 fi
 
 if [ -z "$DISTRIBUTION_ID" ]; then
-  echo "⚠️  Warning: Could not find CloudFront distribution ID (cache not invalidated)."
-  echo "   Set CLOUDFRONT_DISTRIBUTION_ID, or run from repo with Terraform state:"
-  echo "     export CLOUDFRONT_DISTRIBUTION_ID=\$(terraform -chdir=infra/terraform output -raw cloudfront_distribution_id)"
-  echo "   Then re-run this script, or invalidate manually:"
-  echo "     aws cloudfront create-invalidation --distribution-id \"\$CLOUDFRONT_DISTRIBUTION_ID\" --paths \"/*\" --region us-east-1"
+  warn "Could not find CloudFront distribution ID (cache not invalidated)."
+  echo -e "  Set ${CYAN}CLOUDFRONT_DISTRIBUTION_ID${NC}, or run from repo with Terraform state:"
+  echo -e "    ${GREEN}export CLOUDFRONT_DISTRIBUTION_ID=\$(terraform -chdir=infra/terraform output -raw cloudfront_distribution_id)${NC}"
+  echo -e "  Or invalidate manually:"
+  echo -e "    ${DIM}aws cloudfront create-invalidation --distribution-id \"\$ID\" --paths \"/*\" --region us-east-1${NC}"
 else
-  echo "  Distribution ID: $DISTRIBUTION_ID"
+  info "Distribution ID: ${BOLD}$DISTRIBUTION_ID${NC}"
   INVALIDATION_ID=$(aws cloudfront create-invalidation \
     --distribution-id "$DISTRIBUTION_ID" \
     --paths "/*" \
     --query 'Invalidation.Id' \
     --output text \
     --region us-east-1)
-  echo "✅ Invalidation created: $INVALIDATION_ID"
-  echo "Cache invalidation typically takes 1-5 minutes"
+  success "Invalidation created: $INVALIDATION_ID"
+  echo -e "  ${DIM}Cache invalidation typically takes 1-5 minutes.${NC}"
 fi
 
 echo ""
-echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-echo "✅ Frontend Deployment Complete"
-echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-echo "Environment: $ENVIRONMENT"
-echo "S3 Bucket: $BUCKET_NAME"
+header "Frontend Deployment Complete"
+echo -e "  Environment: ${CYAN}$ENVIRONMENT${NC}"
+echo -e "  S3 Bucket:   ${CYAN}$BUCKET_NAME${NC}"
 echo ""
-echo "Your frontend will be live in ~2-5 minutes"
-echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+info "Your frontend will be live in ~2-5 minutes."
