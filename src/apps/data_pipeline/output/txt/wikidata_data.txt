@@ -1,3 +1,99 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d23539f14eeb068cdd697a09f671df25467a8b2e953aa7751f19c9ef92b1161e
-size 3564
+Artist: Vincent van Gogh
+Description: Dutch painter (1853–1890)
+
+Born: 1853-03-30T00:00:00Z
+Died: 1890-07-29T00:00:00Z
+Citizenship: Kingdom of the Netherlands
+
+Movements: Post-impressionism, Expressionism
+Genres: interior view, portrait, still life, cityscape, landscape painting, Christian art, self-portrait
+Occupations: draftsperson, painter, printmaker
+Fields: painting
+
+Influenced By: Jean-François Millet, Paul Cézanne, Willem Roelofs, Anton Mauve, Paul Gauguin, Peter Paul Rubens, Katsushika Hokusai
+Notable Works: Sunflowers, The Potato Eaters, The Starry Night
+
+---
+
+Artist: Johannes Vermeer
+Description: Dutch painter (1632–1675)
+
+Born: 1632-10-01T00:00:00Z
+Died: 1675-01-01T00:00:00Z
+Citizenship: Dutch Republic
+
+Movements: Dutch Golden Age painting, Baroque painting
+Genres: cityscape, portrait, genre painting
+Occupations: art dealer, painter, art collector
+Fields: painting
+
+Influenced By: Gabriel Metsu, Dirck van Baburen, Leonaert Bramer, Carel Fabritius
+Notable Works: Girl with a Pearl Earring, The Astronomer, The Milkmaid, Diana and her Nymphs, View of Delft, The Procuress, The Geographer
+
+---
+
+Artist: Frans Hals
+Description: Dutch painter (1580—1666)
+
+Born: 1582-01-01T00:00:00Z
+Died: 1666-08-26T00:00:00Z
+Citizenship: Dutch Republic
+
+Movements: Dutch Golden Age painting, Baroque
+Genres: portrait painting, genre painting, schutterstuk
+Occupations: architectural draftsperson, visual artist, painter, printmaker
+Fields: Unknown
+
+Influenced By: Unknown
+Notable Works: Portrait of Isaak Abrahamsz. Massa, Laughing Cavalier, Portrait of Dorothea Berck, Regentesses of the Old Men's Alms House, Portrait of a young man with a skull, Regents of the Old Men's Almshouse, Merrymakers at Shrovetide, Willem van Heythuysen posing with a sword, Militia Company of District XI under the Command of Captain Reynier Reael, Jester with lute, The Banquet of the Officers of the St George Militia Company in 1616, The Officers of the St Adrian Militia Company in 1633, Young Man and Woman in an Inn, The Officers of the St George Militia Company in 1639, Two laughing boys with mug of beer, Peeckelhaeringh, Laughing boy, A Militiaman Holding a Berkemeyer, Known as the ‘Merry Drinker’, Malle Babbe
+
+---
+
+Artist: Gerard ter Borch
+Description: Dutch Golden Age painter (1617–1681)
+
+Born: 1617-01-01T00:00:00Z
+Died: 1681-12-08T00:00:00Z
+Citizenship: Dutch Republic
+
+Movements: Baroque
+Genres: genre art, genre painting
+Occupations: visual artist, painter
+Fields: Unknown
+
+Influenced By: Unknown
+Notable Works: The Gallant Conversation, known as Paternal Admonition, The messenger, Portrait of Helena van der Schalcke
+
+---
+
+Artist: Otto Wacker
+Description: German art dealer who became infamous for commissioning and selling forgeries of paintings by Vincent van Gogh (1898-1970)
+
+Born: 1898-08-11T00:00:00Z
+Died: 1970-10-13T00:00:00Z
+Citizenship: Germany
+
+Movements: Unknown
+Genres: Unknown
+Occupations: art dealer, art historian, art forger
+Fields: Unknown
+
+Influenced By: Unknown
+Notable Works: Unknown
+
+---
+
+Artist: Han van Meegeren
+Description: Dutch painter and art forger (1889-1947)
+
+Born: 1889-10-10T00:00:00Z
+Died: 1947-12-30T00:00:00Z
+Citizenship: Kingdom of the Netherlands
+
+Movements: Unknown
+Genres: landscape painting
+Occupations: watercolorist, draftsperson, painter, counterfeiter, copyist, art forger, restorer, collector
+Fields: painting, young adult literature
+
+Influenced By: Unknown
+Notable Works: The foot washing, Cisterspelende vrouw, Woman reading music

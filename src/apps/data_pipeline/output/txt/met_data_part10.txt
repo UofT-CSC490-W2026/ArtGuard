@@ -1,3 +1,9521 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3aefcc4c3b8e9af193e7ca42a830d28464e46df4a1f0798c0595a4d57bb8d620
-size 191583
+Artwork Title: Roland
+Object Type: Painting
+Classification: Unknown
+
+Artist: William Merritt Chase
+Nationality: American
+Lifespan: 1849      –1916      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1899–1902
+
+Medium: Oil on canvas
+Dimensions: 20 3/8 x 16 1/4 in. (51.8 x 41.3 cm)
+
+Credit Line: Bequest of Emma T. Gary, 1934
+
+---
+
+Artwork Title: Seventeenth Century Lady
+Object Type: Painting
+Classification: Unknown
+
+Artist: William Merritt Chase
+Nationality: American
+Lifespan: 1849      –1916      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1892–1895
+
+Medium: Oil on canvas
+Dimensions: 36 1/2 x 23 3/4in. (92.7 x 60.3cm)
+
+
+Credit Line: George A. Hearn Fund, 1906
+
+---
+
+Artwork Title: Still Life: Fish
+Object Type: Painting
+Classification: Unknown
+
+Artist: William Merritt Chase
+Nationality: American
+Lifespan: 1849      –1916      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1907–1908
+
+Medium: Oil on canvas
+Dimensions: 40 1/8 x 45 1/16 in. (101.9 x 114.5 cm)
+
+Credit Line: George A. Hearn Fund, 1908
+
+---
+
+Artwork Title: View of Brattleboro, Vermont
+Object Type: Drawing
+Classification: Unknown
+
+Artist: John Cheney
+Nationality: American
+Lifespan: 1801      –1885      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1854–1854
+
+Medium: Graphite on off-white wove paper
+Dimensions: 6 15/16 x 9 5/8 in. (17.6 x 24.4 cm)
+
+Credit Line: Gift of Paul Magriel, 1962
+
+---
+
+Artwork Title: Houqua
+Object Type: Painting
+Classification: Unknown
+
+Artist: George Chinnery|Ester Speakman
+Nationality: British|American
+Lifespan: 1774      |1832      –1852      |1875      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1838–1848
+
+Medium: Oil on canvas
+Dimensions: 25 x 18 5/8 in. (63.5 x 46.3 cm)
+
+Credit Line: Bequest of W. Gedney Beatty, 1941
+
+---
+
+Artwork Title: Woman in White
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: Howard Chandler Christy
+Nationality: American
+Lifespan: 1873      –1952      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1906–1906
+
+Medium: Pastel and watercolor on cardboard
+Dimensions: 38 1/4 x 18 3/4 in. (97.2 x 47.6 cm)
+
+Credit Line: George A. Hearn Fund, 1960
+
+---
+
+Artwork Title: The Aegean Sea
+Object Type: Painting
+Classification: Unknown
+
+Artist: Frederic Edwin Church
+Nationality: American
+Lifespan: 1826      –1900      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1874–1877
+
+Medium: Oil on canvas
+Dimensions: 54 in. × 84 1/4 in. (137.2 × 214 cm)
+
+
+Credit Line: Bequest of Mrs. William H. Osborn, 1902
+
+---
+
+Artwork Title: Heart of the Andes
+Object Type: Painting
+Classification: Unknown
+
+Artist: Frederic Edwin Church
+Nationality: American
+Lifespan: 1826      –1900      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1859–1859
+
+Medium: Oil on canvas
+Dimensions: 66 1/8 x 120 3/16 in. (168 x 302.9cm)
+
+
+Credit Line: Bequest of Margaret E. Dows, 1909
+
+---
+
+Artwork Title: The Parthenon
+Object Type: Painting
+Classification: Unknown
+
+Artist: Frederic Edwin Church
+Nationality: American
+Lifespan: 1826      –1900      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1871–1871
+
+Medium: Oil on canvas
+Dimensions: 44 1/2 x 72 5/8 in. (113 x 184.5 cm)
+
+Credit Line: Bequest of Maria DeWitt Jesup, from the collection of her husband, Morris K. Jesup, 1914
+
+---
+
+Artwork Title: Dr. Samuel A. Bemis
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: Alvan Clark
+Nationality: American
+Lifespan: 1804      –1887      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1837–1840
+
+Medium: Watercolor on ivory
+Dimensions: 3 x 2 1/2 in. (7.6 x 6.4 cm)
+
+Credit Line: Fletcher Fund, 1937
+
+---
+
+Artwork Title: Portrait of a Lady
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: Alvan Clark
+Nationality: American
+Lifespan: 1804      –1887      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1832–1835
+
+Medium: Watercolor on ivory
+Dimensions: Sight: 3 7/16 x 2 9/16 in. (8.7 x 6.5 cm)
+
+Credit Line: Fletcher Fund, 1938
+
+---
+
+Artwork Title: Mrs. Alvan Clark (Maria Pease)
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: Alvan Clark
+Nationality: American
+Lifespan: 1804      –1887      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1827–1830
+
+Medium: Watercolor on ivory
+Dimensions: 2 1/4 x 1 13/16 in. (5.7 x 4.6 cm)
+
+Credit Line: The Glenn Tilley Morse Collection, Bequest of Glenn Tilley Morse, 1950
+
+---
+
+Artwork Title: Henry Clay
+Object Type: Bust
+Classification: Unknown
+
+Artist: Shobal Vail Clevenger
+Nationality: American
+Lifespan: 1812      –1843      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1837–1846
+
+Medium: Marble
+Dimensions: 24 1/2 x 19 x 10 1/2 in. (62.2 x 48.3 x 26.7 cm)
+
+Credit Line: Gift of Estate of J. Hampden Robb, 1936
+
+---
+
+Artwork Title: Boy Fishing (from McGuire Scrapbook)
+Object Type: Drawing
+Classification: Unknown
+
+Artist: James G. Clonney
+Nationality: American
+Lifespan: 1812      –1867      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1820–1820
+
+Medium: Graphite on off-white wove paper
+Dimensions: 8 7/8 x 7 7/16 in. (22.5 x 18.9 cm)
+
+Credit Line: Gift of James C. McGuire, 1926
+
+---
+
+Artwork Title: Study of a Man (from McGuire Scrapbook)
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Lewis P. Clover Jr.
+Nationality: American
+Lifespan: 1819      –1896      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1838–1838
+
+Medium: Graphite on light buff-colored wove paper
+Dimensions: 4 7/8 x 4 7/8 in. (12.4 x 12.4 cm)
+
+Credit Line: Gift of James C. McGuire, 1926
+
+---
+
+Artwork Title: Ship (from McGuire Scrapbook)
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Edmund C. Coates
+Nationality: American
+Lifespan: 1837      –1872      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1839–1839
+
+Medium: Graphite on white wove paper
+Dimensions: 6 9/16 x 6 13/16 in. (16.7 x 17.3 cm)
+
+Credit Line: Gift of James C. McGuire, 1926
+
+---
+
+Artwork Title: Bay and Harbor of New York from Bedlow's Island
+Object Type: Painting
+Classification: Unknown
+
+Artist: Edmund C. Coates
+Nationality: American
+Lifespan: 1837      –1872      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1850–1860
+
+Medium: Oil on canvas
+Dimensions: 18 x 24 in. (45.7 x 61 cm)
+
+Credit Line: The Edward W. C. Arnold Collection of New York Prints, Maps, and Pictures, Bequest of Edward W. C. Arnold, 1954
+
+---
+
+Artwork Title: Bay and Harbor of New York from Bedlow's Island
+Object Type: Painting
+Classification: Unknown
+
+Artist: Edmund C. Coates
+Nationality: American
+Lifespan: 1837      –1872      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1864–1866
+
+Medium: Oil on canvas
+Dimensions: 23 1/2 x 33 3/4 in. (59.7 x 85.7 cm)
+
+Credit Line: The Edward W. C. Arnold Collection of New York Prints, Maps, and Pictures, Bequest of Edward W. C. Arnold, 1954
+
+---
+
+Artwork Title: The Rain
+Object Type: Painting
+Classification: Unknown
+
+Artist: William Coffin
+Nationality: American
+Lifespan: 1855      –1925      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1889–1889
+
+Medium: Oil on canvas
+Dimensions: 30 x 40 in. (76.2 x 101.6 cm)
+
+Credit Line: Gift of Several Gentlemen, 1892
+
+---
+
+Artwork Title: The Fountain, No. 1: The Wounded Indian Slaking His Death Thirst
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Thomas Cole
+Nationality: American
+Lifespan: 1801      –1848      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1843–1843
+
+Medium: Graphite and white gouache on green wove paper
+Dimensions: 7 x 9 3/4 in. (17.8 x 24.8 cm)
+
+Credit Line: Gift of Erving Wolf Foundation, in memory of Diane R. Wolf, 1977
+
+---
+
+Artwork Title: Landscape with Tower (from McGuire Scrapbook)
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Thomas Cole
+Nationality: American
+Lifespan: 1801      –1848      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1801–1848
+
+Medium: Graphite on off-white wove paper
+Dimensions: 8 1/2 x 6 1/2 in. (21.6 x 16.5 cm)
+
+Credit Line: Gift of James C. McGuire, 1926
+
+---
+
+Artwork Title: The Mountain Ford
+Object Type: Painting
+Classification: Unknown
+
+Artist: Thomas Cole
+Nationality: American
+Lifespan: 1801      –1848      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1846–1846
+
+Medium: Oil on canvas
+Dimensions: 28 1/4 x 40 1/16 in. (71.8 x 101.8 cm)
+
+Credit Line: Bequest of Maria DeWitt Jesup, from the collection of her husband, Morris K. Jesup, 1914
+
+---
+
+Artwork Title: View from Mount Holyoke, Northampton, Massachusetts, after a Thunderstorm—The Oxbow
+Object Type: Painting
+Classification: Unknown
+
+Artist: Thomas Cole
+Nationality: American
+Lifespan: 1801      –1848      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1836–1836
+
+Medium: Oil on canvas
+Dimensions: 51 1/2 x 76 in. (130.8 x 193 cm)
+
+Credit Line: Gift of Mrs. Russell Sage, 1908
+
+---
+
+Artwork Title: Shipwreck
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Thomas Cole
+Nationality: American
+Lifespan: 1801      –1848      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1801–1848
+
+Medium: Graphite on off-white wove paper
+Dimensions: 4 5/8 x 6 3/8 in. (11.7 x 16.2 cm)
+
+Credit Line: Gift of Erving Wolf Foundation, in memory of Diane R. Wolf, 1977
+
+---
+
+Artwork Title: The Titan's Goblet
+Object Type: Painting
+Classification: Unknown
+
+Artist: Thomas Cole
+Nationality: American
+Lifespan: 1801      –1848      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1833–1833
+
+Medium: Oil on canvas
+Dimensions: 19 3/8 x 16 1/8 in. (49.2 x 41 cm)
+
+Credit Line: Gift of Samuel P. Avery Jr., 1904
+
+---
+
+Artwork Title: A View near Tivoli (Morning)
+Object Type: Painting
+Classification: Unknown
+
+Artist: Thomas Cole
+Nationality: American
+Lifespan: 1801      –1848      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1832–1832
+
+Medium: Oil on canvas
+Dimensions: 14 3/4 x 23 1/8in. (37.5 x 58.7cm)
+
+Credit Line: Rogers Fund, 1903
+
+---
+
+Artwork Title: View on the Catskill—Early Autumn
+Object Type: Painting
+Classification: Unknown
+
+Artist: Thomas Cole
+Nationality: American
+Lifespan: 1801      –1848      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1836–1837
+
+Medium: Oil on canvas
+Dimensions: 39 x 63 in. (99.1 x 160cm)
+
+Credit Line: Gift in memory of Jonathan Sturges by his children, 1895
+
+---
+
+Artwork Title: Alexander Stewart Wetherill
+Object Type: Painting
+Classification: Unknown
+
+Artist: Alfred Q. Collins
+Nationality: American
+Lifespan: 1855      –1903      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1887–1900
+
+Medium: Oil on canvas
+Dimensions: 59 3/4 x 37 3/4 in. (151.8 x 95.9 cm)
+
+Credit Line: Gift of Miss Kate Lefferts, Mrs. Oliver Edwards, and Mrs. Philip Bartlett, 1965
+
+---
+
+Artwork Title: Mrs. Alfred Q. Collins
+Object Type: Painting
+Classification: Unknown
+
+Artist: Alfred Q. Collins
+Nationality: American
+Lifespan: 1855      –1903      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1885–1903
+
+Medium: Oil on canvas
+Dimensions: 27 x 22 in. (68.6 x 55.9 cm)
+
+Credit Line: Gift of the artist's friends, 1905
+
+---
+
+Artwork Title: Egyptian Revival Triptych
+Object Type: Painting
+Classification: Unknown
+
+Artist: Samuel Colman
+Nationality: American
+Lifespan: 1832      –1920      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1882–1885
+
+Medium: Oil on canvas, ebony stained pine, gold leaf, velvet
+Dimensions: 31 3/8 x 40 in. (79.7 x 55.2 cm)
+
+Credit Line: Gift of Noah L. Butkin, 1978
+
+---
+
+Artwork Title: Farmington
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: Samuel Colman
+Nationality: American
+Lifespan: 1832      –1920      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1843–1843
+
+Medium: Watercolor and graphite on off-white wove paper
+Dimensions: 7 1/4 x 20 1/16 in. (18.4 x 51 cm)
+
+Credit Line: Rogers Fund, 1973
+
+---
+
+Artwork Title: Finish—First International Race for America's Cup, August 8, 1870
+Object Type: Painting
+Classification: Unknown
+
+Artist: Samuel Colman
+Nationality: American
+Lifespan: 1832      –1920      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1870–1870
+
+Medium: Oil on canvas
+Dimensions: 30 3/16 x 60 1/8 in. (76.7 x 152.7 cm)
+
+Credit Line: Arthur Hoppock Hearn Fund, 1962
+
+---
+
+Artwork Title: The Hill of the Alhambra, Granada
+Object Type: Painting
+Classification: Unknown
+
+Artist: Samuel Colman
+Nationality: American
+Lifespan: 1832      –1920      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1865–1865
+
+Medium: Oil on canvas
+Dimensions: 47 1/2 x 72 1/2 in. (120.7 x 184.2 cm)
+
+Credit Line: Gift of Mrs. Oswald C. Hering, in memory of her husband, 1968
+
+---
+
+Artwork Title: Spanish Peaks, Southern Colorado, Late Afternoon
+Object Type: Painting
+Classification: Unknown
+
+Artist: Samuel Colman
+Nationality: American
+Lifespan: 1832      –1920      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1887–1887
+
+Medium: Oil on canvas
+Dimensions: 31 1/8 x 72 1/4in. (79.1 x 183.5cm)
+Framed: 40 1/16 x 81 1/8 x 4 5/16 in. (101.8 x 206 x 11 cm)
+
+Credit Line: Gift of H. O. Havemeyer, 1893
+
+---
+
+Artwork Title: Clearing Off
+Object Type: Painting
+Classification: Unknown
+
+Artist: Charlotte Buell Coman
+Nationality: American
+Lifespan: 1833      –1924      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1888–1907
+
+Medium: Oil on canvas
+Dimensions: 27 1/8 x 36 1/4 in. (68.9 x 92.1 cm)
+
+Credit Line: Gift of friends of the artist, 1912
+
+---
+
+Artwork Title: Thetis and Achilles
+Object Type: Sculpture
+Classification: Unknown
+
+Artist: Pierce Francis Connelly
+Nationality: American
+Lifespan: 1841      –1932      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1874–1874
+
+Medium: Marble
+Dimensions: 56 x 32 x 45 1/2 in. (142.2 x 81.3 x 115.6 cm)
+
+Credit Line: Gift of Mrs. A. E. Schermerhorn, 1877
+
+---
+
+Artwork Title: Cain
+Object Type: Bust
+Classification: Unknown
+
+Artist: James Stanley Connor
+Nationality: American
+Lifespan: 1860      –1904      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1883–1883
+
+Medium: Marble
+Dimensions: 26 x 21 1/2 x 17 in. (66 x 54.6 x 43.2 cm)
+
+Credit Line: Gift of Mrs. John Anderson, 1883
+
+---
+
+Artwork Title: The Cigarette (Cover for "The Tatler," May 13th, 1931)
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: Gordon Conway
+Nationality: American
+Lifespan: 1894      –1956      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1894–1956
+
+Medium: Graphite, ink, and watercolor on paper
+Dimensions: 12 x 10 1/2 in. (30.5 x 26.7 cm)
+
+Credit Line: Gift of Mr. and Mrs. Marshall E. Allen, 1971
+
+---
+
+Artwork Title: Evening Frock (Fashion Design for "The Tatler," July 10, 1929)
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: Gordon Conway
+Nationality: American
+Lifespan: 1894      –1956      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1894–1956
+
+Medium: Graphite, ink, and watercolor on paper
+Dimensions: 8 7/8 x 7 3/4 in. (22.5 x 19.7 cm)
+
+Credit Line: Gift of Mr. and Mrs. Marshall E. Allen, 1971
+
+---
+
+Artwork Title: Morning Frock for Autumn (Fashion Design for "The Tatler," August 21st, 1929)
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: Gordon Conway
+Nationality: American
+Lifespan: 1894      –1956      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1894–1956
+
+Medium: Graphite, ink, watercolor, and gouache on paper
+Dimensions: 12 1/4 x 10 5/8 in. (31.1 x 27 cm)
+
+Credit Line: Gift of Mr. and Mrs. Marshall E. Allen, 1971
+
+---
+
+Artwork Title: James Merrill Cook
+Object Type: Painting
+Classification: Unknown
+
+Artist: Nelson Cook
+Nationality:  
+Lifespan: 1808      –1892      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1840–1840
+
+Medium: Oil on canvas
+Dimensions: 48 1/8 x 24 1/2 in. (122.2 x 62.2 cm)
+
+Credit Line: Gift of Katherine Batcheller, 1931
+
+---
+
+Artwork Title: Mrs. James Merrill Cook
+Object Type: Painting
+Classification: Unknown
+
+Artist: Nelson Cook
+Nationality:  
+Lifespan: 1808      –1892      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1840–1840
+
+Medium: Oil on canvas
+Dimensions: 48 1/8 x 24 1/2 in. (122.2 x 62.2 cm)
+
+Credit Line: Gift of Katherine Batcheller, 1931
+
+---
+
+Artwork Title: The Green Coat
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: Bertha Coolidge
+Nationality: American
+Lifespan: 1880      –1953      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1916–1916
+
+Medium: Watercolor on ivory
+Dimensions: Sight: 4 3/4 x 3 3/8 in. (12.1 x 8.6 cm)
+
+Credit Line: Gift of the artist, 1937
+
+---
+
+Artwork Title: Grand Central Station
+Object Type: Painting
+Classification: Unknown
+
+Artist: Colin Campbell Cooper
+Nationality: American
+Lifespan: 1856      –1937      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1909–1909
+
+Medium: Oil on canvas
+Dimensions: 33 x 44 3/4 in. (83.8 x 113.7 cm)
+
+Credit Line: Gift of the family of Colin Campbell Cooper, in memory of the artist and his wife, 1941
+
+---
+
+Artwork Title: View of New York City
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: Colin Campbell Cooper
+Nationality: American
+Lifespan: 1856      –1937      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1856–1937
+
+Medium: Watercolor, gouache on paper
+Dimensions: 21 3/4 x 30 in. (55.2 x 76.2 cm)
+
+Credit Line: Gift of Margaret and Raymond J. Horowitz, 1983
+
+---
+
+Artwork Title: New York from the Harbor Showing the Battery and Castle Garden
+Object Type: Painting
+Classification: Unknown
+
+Artist: Alfred Copestick
+Nationality: American
+Lifespan: 1837      –1859      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1858–1858
+
+Medium: Oil on canvas
+Dimensions: 13 7/8 x 21 in. (35.2 x 53.3 cm)
+
+Credit Line: The Edward W. C. Arnold Collection of New York Prints, Maps, and Pictures, Bequest of Edward W. C. Arnold, 1954
+
+---
+
+Artwork Title: Daniel Crommelin Verplanck
+Object Type: Painting
+Classification: Unknown
+
+Artist: John Singleton Copley
+Nationality: American
+Lifespan: 1738      –1815      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1771–1771
+
+Medium: Oil on canvas
+Dimensions: 49 1/2 x 40 in. (125.7 x 101.6 cm)
+
+Credit Line: Gift of Bayard Verplanck, 1949
+
+---
+
+Artwork Title: Study for "The Siege of Gibraltar": Figure Reaching; Sprawling Figures; Cheering Group; Dying Sailors
+Object Type: Drawing
+Classification: Unknown
+
+Artist: John Singleton Copley
+Nationality: American
+Lifespan: 1738      –1815      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1785–1786
+
+Medium: Black chalk and white-chalk heightening on light blue laid paper
+Dimensions: 14 5/8 x 23 in. (37.1 x 58.4 cm)
+
+Credit Line: Harris Brisbane Dick Fund, 1960
+
+---
+
+Artwork Title: Gulian Verplanck
+Object Type: Painting
+Classification: Unknown
+
+Artist: John Singleton Copley
+Nationality: American
+Lifespan: 1738      –1815      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1771–1771
+
+Medium: Oil on canvas
+Dimensions: 36 x 28 in. (91.4 x 71.1 cm)
+Framed: 43 1/2 x 35 3/16 x 2 5/8 in. (110.5 x 89.3 x 6.7 cm)
+
+Credit Line: Gift of Mrs. Bayard Verplanck, 1949
+
+---
+
+Artwork Title: Jeremiah Lee
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: John Singleton Copley
+Nationality: American
+Lifespan: 1738      –1815      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1766–1769
+
+Medium: Watercolor on ivory
+Dimensions: 1 1/2 x 1 1/4 in. (3.8 x 3.2 cm)
+
+Credit Line: Harris Brisbane Dick Fund, 1939
+
+---
+
+Artwork Title: Joseph Sherburne
+Object Type: Painting
+Classification: Unknown
+
+Artist: John Singleton Copley
+Nationality: American
+Lifespan: 1738      –1815      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1764–1770
+
+Medium: Oil on canvas
+Dimensions: 50 x 40 in. (127 x 101.6 cm)
+
+Credit Line: Amelia B. Lazarus Fund, 1923
+
+---
+
+Artwork Title: Midshipman Augustus Brine
+Object Type: Painting
+Classification: Unknown
+
+Artist: John Singleton Copley
+Nationality: American
+Lifespan: 1738      –1815      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1782–1782
+
+Medium: Oil on canvas
+Dimensions: 50 x 40 in. (127 x 101.6 cm)
+
+Credit Line: Bequest of Richard De Wolfe Brixey, 1943
+
+---
+
+Artwork Title: Ebenezer Storer
+Object Type: Drawing
+Classification: Unknown
+
+Artist: John Singleton Copley
+Nationality: American
+Lifespan: 1738      –1815      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1767–1769
+
+Medium: Pastel on laid paper mounted on canvas
+Dimensions: 24 x 18 in. (61 x 45.7 cm)
+
+Credit Line: Gift of Thomas J. Watson, 1940
+
+---
+
+Artwork Title: Mrs. Ebenezer Storer (Mary Edwards)
+Object Type: Drawing
+Classification: Unknown
+
+Artist: John Singleton Copley
+Nationality: American
+Lifespan: 1738      –1815      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1767–1769
+
+Medium: Pastel on laid paper, mounted on canvas
+Dimensions: 24 x 18 in. (61 x 45.7 cm)
+
+Credit Line: Gift of Thomas J. Watson, 1940
+
+---
+
+Artwork Title: Mrs. Jerathmael Bowers
+Object Type: Painting
+Classification: Unknown
+
+Artist: John Singleton Copley
+Nationality: American
+Lifespan: 1738      –1815      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1760–1763
+
+Medium: Oil on canvas
+Dimensions: 49 7/8 x 39 3/4 in. (126.7 x 101 cm)
+
+Credit Line: Rogers Fund, 1915
+
+---
+
+Artwork Title: Mrs. John Winthrop
+Object Type: Painting
+Classification: Unknown
+
+Artist: John Singleton Copley
+Nationality: American
+Lifespan: 1738      –1815      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1773–1773
+
+Medium: Oil on canvas
+Dimensions: 35 1/2 x 28 3/4 in. (90.2 x 73 cm)
+
+Credit Line: Morris K. Jesup Fund, 1931
+
+---
+
+Artwork Title: Mrs. Edward Green (Mary Storer)
+Object Type: Drawing
+Classification: Unknown
+
+Artist: John Singleton Copley
+Nationality: American
+Lifespan: 1738      –1815      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1765–1765
+
+Medium: Pastel on laid paper, mounted on canvas
+Dimensions: 23 7/8 x 17 5/8 in. (60.6 x 44.8 cm)
+
+Credit Line: Charles B. Curtis Fund, 1908
+
+---
+
+Artwork Title: Mrs. Sylvanus Bourne
+Object Type: Painting
+Classification: Unknown
+
+Artist: John Singleton Copley
+Nationality: American
+Lifespan: 1738      –1815      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1766–1766
+
+Medium: Oil on canvas
+Dimensions: 50 1/4 x 40 in. (127.6 x 101.6 cm)
+
+Credit Line: Morris K. Jesup Fund, 1924
+
+---
+
+Artwork Title: The Return of Neptune
+Object Type: Painting
+Classification: Unknown
+
+Artist: John Singleton Copley
+Nationality: American
+Lifespan: 1738      –1815      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1751–1754
+
+Medium: Oil on canvas
+Dimensions: 27 1/2 x 44 1/2 in. (69.9 x 113 cm)
+
+Credit Line: Gift of Mrs. Orme Wilson, in memory of her parents, Mr. and Mrs. J. Nelson Borland, 1959
+
+---
+
+Artwork Title: Richard Dana
+Object Type: Painting
+Classification: Unknown
+
+Artist: John Singleton Copley
+Nationality: American
+Lifespan: 1738      –1815      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1767–1770
+
+Medium: Oil on canvas
+Dimensions: 40 x 50 in. (101.6 x 127 cm)
+
+Credit Line: Purchase, Brooke Russell Astor Bequest and Ronald S. Kane Bequest, in memory of Berry B. Tracy, 2014
+
+---
+
+Artwork Title: Sailors Maneuvering a Cannon, Possibly a Study for "The Death of Sir John More at Corunna"
+Object Type: Drawing
+Classification: Unknown
+
+Artist: John Singleton Copley
+Nationality: American
+Lifespan: 1738      –1815      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1807–1810
+
+Medium: Black chalk and white-chalk heightening on blue laid paper
+Dimensions: 11 3/4 x 14 3/4 in. (29.8 x 37.5 cm)
+
+Credit Line: Purchase, Anonymous Gift, 1960
+
+---
+
+Artwork Title: Samuel Verplanck
+Object Type: Painting
+Classification: Unknown
+
+Artist: John Singleton Copley
+Nationality: American
+Lifespan: 1738      –1815      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1771–1771
+
+Medium: Oil on canvas
+Dimensions: 30 x 25 in. (76.2 x 63.5 cm)
+Framed: 39 3/16 x 34 1/2 x 2 3/4 in. (99.5 x 87.7 x 7 cm)
+
+Credit Line: Gift of James De Lancey Verplanck, 1939
+
+---
+
+Artwork Title: Study for "The Siege of Gibraltar": Three Officers, Two Standing and One Kneeling
+Object Type: Drawing
+Classification: Unknown
+
+Artist: John Singleton Copley
+Nationality: American
+Lifespan: 1738      –1815      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1785–1786
+
+Medium: Black chalk and white-chalk heightening on blue laid paper
+Dimensions: 14 5/16 x 22 5/8 in. (36.4 x 57.5 cm)
+
+Credit Line: Harris Brisbane Dick Fund, 1960
+
+---
+
+Artwork Title: Study for "The Surrender of the Dutch Admiral De Winter to Admiral Duncan, October 11, 1797": Two Studies of a Man with a Sail or Flag
+Object Type: Drawing
+Classification: Unknown
+
+Artist: John Singleton Copley
+Nationality: American
+Lifespan: 1738      –1815      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1798–1798
+
+Medium: Black and red chalk, white-chalk heightening, and graphite on blue laid paper
+Dimensions: 11 3/8 x 14 7/16 in. (28.9 x 36.7 cm)
+
+Credit Line: Harris Brisbane Dick Fund, 1960
+
+---
+
+Artwork Title: Study for "The Surrender of the Dutch Admiral De Winter to Admiral Duncan, October 11, 1797": Admiral De Winter Raising the Colors
+Object Type: Drawing
+Classification: Unknown
+
+Artist: John Singleton Copley
+Nationality: American
+Lifespan: 1738      –1815      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1798–1798
+
+Medium: Black chalk, white-chalk heightening, and gouche on blue laid paper
+Dimensions: 13 x 18 1/2 in. (33 x 47 cm)
+
+Credit Line: Harris Brisbane Dick Fund, 1960
+
+---
+
+Artwork Title: Two Equestrian Figures, Possibly a Study for "George IV,  Prince of Wales"
+Object Type: Drawing
+Classification: Unknown
+
+Artist: John Singleton Copley
+Nationality: American
+Lifespan: 1738      –1815      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1800–1813
+
+Medium: Black chalk and white-chalk heightening on blue wove paper
+Dimensions: 11 9/16 x 18 1/8 in. (29.4 x 46 cm)
+
+Credit Line: Harris Brisbane Dick Fund, 1960
+
+---
+
+Artwork Title: Study for "John Adams"
+Object Type: Drawing
+Classification: Unknown
+
+Artist: John Singleton Copley
+Nationality: American
+Lifespan: 1738      –1815      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1783–1783
+
+Medium: Black chalk, white-chalk heightening, and graphite on blue laid paper
+Dimensions: 18 7/8 x 14 1/4 in. (47.9 x 36.2 cm)
+
+Credit Line: Harris Brisbane Dick Fund, 1960
+
+---
+
+Artwork Title: Study for "The Ascension"
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: John Singleton Copley
+Nationality: American
+Lifespan: 1738      –1815      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1774–1774
+
+Medium: Ink ("Bistre") washes, pen and ink, black chalk, and graphite on off-white laid paper, watercolor
+Dimensions: 15 1/4 x 20 3/8 in. (38.7 x 51.8 cm)
+
+Credit Line: Harris Brisbane Dick Fund, 1960
+
+---
+
+Artwork Title: Study for "The Knatchbull Family": Norton Joseph Knatchbull
+Object Type: Drawing
+Classification: Unknown
+
+Artist: John Singleton Copley
+Nationality: American
+Lifespan: 1738      –1815      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1800–1802
+
+Medium: Black chalk, white-chalk heightening, and graphite on dark blue laid paper
+Dimensions: 13 7/8 x 11 3/8 in. (35.2 x 28.9 cm)
+
+Credit Line: Harris Brisbane Dick Fund, 1960
+
+---
+
+Artwork Title: Study for "The Knatchbull Family": Sir Edward Knatchbull
+Object Type: Drawing
+Classification: Unknown
+
+Artist: John Singleton Copley
+Nationality: American
+Lifespan: 1738      –1815      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1800–1802
+
+Medium: Black chalk, white-chalk heightening, and graphite on dark blue laid paper
+Dimensions: 13 13/16 x 11 3/16 in. (35.1 x 28.4 cm)
+
+Credit Line: Harris Brisbane Dick Fund, 1960
+
+---
+
+Artwork Title: Study for "The Siege of Gibraltar": Figure Astride Cannon Pulling Down Spanish Colors
+Object Type: Drawing
+Classification: Unknown
+
+Artist: John Singleton Copley
+Nationality: American
+Lifespan: 1738      –1815      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1785–1786
+
+Medium: Black chalk, white-chalk heightening, and graphite on blue laid paper
+Dimensions: 14 x 8 1/4 in. (35.6 x 21 cm)
+
+Credit Line: Harris Brisbane Dick Fund, 1960
+
+---
+
+Artwork Title: Study for "The Siege of Gibraltar": The Wrecked Longboat
+Object Type: Drawing
+Classification: Unknown
+
+Artist: John Singleton Copley
+Nationality: American
+Lifespan: 1738      –1815      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1785–1786
+
+Medium: Pen and brown ink and black chalk on off-white laid paper
+Dimensions: 10 5/8 x 20 11/16 in. (27 x 52.5 cm)
+
+Credit Line: Purchase, Louisa Eldridge McBurney Gift, 1960
+
+---
+
+Artwork Title: Study for "The Siege of Gibraltar": Figures Astride Spar
+Object Type: Drawing
+Classification: Unknown
+
+Artist: John Singleton Copley
+Nationality: American
+Lifespan: 1738      –1815      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1785–1786
+
+Medium: Black and red chalk and white-chalk heightening on dark blue laid paper
+Dimensions: 22 5/8 x 18 3/8 in. (57.5 x 46.7 cm)
+
+Credit Line: Purchase, Louisa Eldridge McBurney Gift, 1960
+
+---
+
+Artwork Title: Study for "The Siege of Gibraltar": Figures Scaling Floating Battery; Cannon
+Object Type: Drawing
+Classification: Unknown
+
+Artist: John Singleton Copley
+Nationality: American
+Lifespan: 1738      –1815      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1785–1786
+
+Medium: Black and red chalk on blue laid paper
+Dimensions: 17 1/2 x 13 1/4 in. (44.5 x 33.7 cm)
+
+Credit Line: Harris Brisbane Dick Fund, 1960
+
+---
+
+Artwork Title: Study for "The Surrender of the Dutch Admiral De Winter to Admiral Duncan, October 11, 1797": Three Figures Raising the Colors
+Object Type: Drawing
+Classification: Unknown
+
+Artist: John Singleton Copley
+Nationality: American
+Lifespan: 1738      –1815      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1798–1798
+
+Medium: Black and red chalk and white-chalk heightening on blue laid paper
+Dimensions: 12 7/16 x 9 in. (31.6 x 22.9 cm)
+
+Credit Line: Harris Brisbane Dick Fund, 1960
+
+---
+
+Artwork Title: Study for "The Surrender of the Dutch Admiral De Winter to Admiral Duncan, October 11, 1797": Lord Admiral Duncan
+Object Type: Drawing
+Classification: Unknown
+
+Artist: John Singleton Copley
+Nationality: American
+Lifespan: 1738      –1815      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1798–1798
+
+Medium: Black and red chalk and white-chalk heightening on blue laid paper
+Dimensions: 12 3/16 x 6 3/4 in. (31 x 17.1 cm)
+
+Credit Line: Purchase, Anonymous Gift, 1960
+
+---
+
+Artwork Title: Study for "Elkanah Watson"
+Object Type: Drawing
+Classification: Unknown
+
+Artist: John Singleton Copley
+Nationality: American
+Lifespan: 1738      –1815      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1782–1782
+
+Medium: Black chalk and white-chalk heightening on blue laid paper
+Dimensions: 12 1/8 x 19 3/4 in. (30.8 x 50.2 cm)
+
+Credit Line: Harris Brisbane Dick Fund, 1960
+
+---
+
+Artwork Title: Study for "The Death of Major Peirson": Group of Dying French Officers
+Object Type: Drawing
+Classification: Unknown
+
+Artist: John Singleton Copley
+Nationality: American
+Lifespan: 1738      –1815      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1782–1783
+
+Medium: Black chalk on light blue laid paper
+Dimensions: 14 3/16 x 23 in. (36 x 58.4 cm)
+
+Credit Line: Purchase, Louisa Eldridge McBurney Gift, 1960
+
+---
+
+Artwork Title: Watson and the Shark
+Object Type: Painting
+Classification: Unknown
+
+Artist: John Singleton Copley
+Nationality: American
+Lifespan: 1738      –1815      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1775–1778
+
+Medium: Oil on canvas
+Dimensions: 24 7/8 x 30 1/8 in. (63.2 x 76.5 cm)
+
+Credit Line: Gift of Mrs. Gordon Dexter, 1942
+
+---
+
+Artwork Title: The Peace Pipe
+Object Type: Painting
+Classification: Unknown
+
+Artist: Eanger Irving Couse
+Nationality: American
+Lifespan: 1866      –1936      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1901–1901
+
+Medium: Oil on canvas
+Dimensions: 26 x 32in. (66 x 81.3cm)
+Framed: 33 3/8 x 39 3/8 x 3 3/4in. (84.8 x 100 x 9.5cm)
+
+Credit Line: Gift of Mrs. Adolph Obrig, in memory of her husband, 1917
+
+---
+
+Artwork Title: Anne Goldthwaite
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: Sarah Eakin Cowan
+Nationality: American
+Lifespan: 1873      –1958      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1935–1935
+
+Medium: Watercolor on ivory
+Dimensions: Sight: 4 1/8 x 3 3/16 in. (10.5 x 8.1 cm)
+
+Credit Line: Gift of Lucille Goldthwaite, 1949
+
+---
+
+Artwork Title: Augustus Saint-Gaudens
+Object Type: Painting
+Classification: Unknown
+
+Artist: Kenyon Cox
+Nationality: American
+Lifespan: 1856      –1919      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1887–1908
+
+Medium: Oil on canvas
+Dimensions: 33 1/2 x 47 1/8 in. (85.1 x 119.7 cm)
+
+Credit Line: Gift of friends of the artist, through August F. Jaccaci, 1908
+
+---
+
+Artwork Title: Study for Ceiling Decoration
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Kenyon Cox
+Nationality: American
+Lifespan: 1856      –1919      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1891–1894
+
+Medium: Graphite on off-white laid paper for transfer
+Dimensions: 14 5/8 x 20 in. (37.1 x 50.8 cm)
+
+Credit Line: Gift of William Rothenstein, 1912
+
+---
+
+Artwork Title: The Harp Player (A Solo)
+Object Type: Painting
+Classification: Unknown
+
+Artist: Kenyon Cox
+Nationality: American
+Lifespan: 1856      –1919      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1888–1888
+
+Medium: Oil on canvas
+Dimensions: 30 x 17 7/8 in. (76.2 x 45.4 cm)
+
+Credit Line: Rogers Fund, 1912
+
+---
+
+Artwork Title: Landscape
+Object Type: Painting
+Classification: Unknown
+
+Artist: Kenyon Cox
+Nationality: American
+Lifespan: 1856      –1919      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1883–1883
+
+Medium: Oil on canvas
+Dimensions: 16 x 30 in. (40.6 x 76.2 cm)
+
+Credit Line: Gift of Leonard Opdycke, 1964
+
+---
+
+Artwork Title: Study for "Science Instructing Industry"
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Kenyon Cox
+Nationality: American
+Lifespan: 1856      –1919      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1898–1898
+
+Medium: Graphite on off-white laid paper; mounted on Egyptian linen
+Dimensions: 14 11/16 x 20 1/4 in. (37.3 x 51.4 cm)
+
+Credit Line: Francis Lathrop Fund, 1950
+
+---
+
+Artwork Title: Science Instructing Industry: Nude Study
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Kenyon Cox
+Nationality: American
+Lifespan: 1856      –1919      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1898–1898
+
+Medium: Graphite on off-white laid paper mounted on secondary support of Egyptian linen
+Dimensions: 14 7/8 x 19 7/16 in. (37.8 x 49.4 cm)
+
+Credit Line: Francis Lathrop Fund, 1950
+
+---
+
+Artwork Title: Science Instructing Industry: Drapery Study
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Kenyon Cox
+Nationality: American
+Lifespan: 1856      –1919      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1898–1898
+
+Medium: Graphite on off-white laid paper mounted on secondary support of Egyptian linen
+Dimensions: 14 7/8 x 19 7/8 in. (37.8 x 50.5 cm)
+
+Credit Line: Francis Lathrop Fund, 1950
+
+---
+
+Artwork Title: William Henry Huntington
+Object Type: Painting
+Classification: Unknown
+
+Artist: Caroline Cranch
+Nationality: American
+Lifespan: 1853      –1931      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1877–1881
+
+Medium: Oil on canvas
+Dimensions: 30 1/8 x 19 7/8 in. (76.5 x 50.5 cm)
+
+Credit Line: Gift of James W. Pinchot, 1889
+
+---
+
+Artwork Title: Child (from McGuire Scrapbook)
+Object Type: Drawing
+Classification: Unknown
+
+Artist: John Cranch
+Nationality: American
+Lifespan: 1807      –1891      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1807–1891
+
+Medium: Graphite on off-white wove paper, mounted on embossed blue paper
+Dimensions: 2 5/8 x 1 1/2 in. (6.7 x 3.8 cm)
+
+Credit Line: Gift of James C. McGuire, 1926
+
+---
+
+Artwork Title: A Girl (from McGuire Scrapbook)
+Object Type: Drawing
+Classification: Unknown
+
+Artist: John Cranch
+Nationality: American
+Lifespan: 1807      –1891      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1807–1891
+
+Medium: Graphite on off-white wove paper
+Dimensions: 5 13/16 x 4 11/16 in. (14.8 x 11.9 cm)
+
+Credit Line: Gift of James C. McGuire, 1926
+
+---
+
+Artwork Title: I Have Supped Full of Horrors (from McGuire Scrapbook)
+Object Type: Drawing
+Classification: Unknown
+
+Artist: John Cranch
+Nationality: American
+Lifespan: 1807      –1891      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1807–1891
+
+Medium: Graphite on off-white wove paper
+Dimensions: 6 1/2 x 6 1/4 in. (16.5 x 15.9 cm)
+
+Credit Line: Gift of James C. McGuire, 1926
+
+---
+
+Artwork Title: Autumn Uplands
+Object Type: Painting
+Classification: Unknown
+
+Artist: Bruce Crane
+Nationality: American
+Lifespan: 1857      –1937      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1907–1908
+
+Medium: Oil on canvas
+Dimensions: 27 x 41 in. (68.6 x 104.1 cm)
+
+Credit Line: Gift of George A. Hearn, 1909
+
+---
+
+Artwork Title: Snow Scene
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: Bruce Crane
+Nationality: American
+Lifespan: 1857      –1937      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1857–1937
+
+Medium: Watercolor and gouache on blue-gray wove paper
+Dimensions: 10 7/8 x 18 11/16 in. (27.6 x 47.5 cm)
+
+Credit Line: George A. Hearn Fund, 1968
+
+---
+
+Artwork Title: The Ohio River near Wheeling, West Virginia
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: Lefevre James Cranstone
+Nationality: British
+Lifespan: 1810      –1910      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1859–1860
+
+Medium: Watercolor and gouache on off-white wove paper
+Dimensions: 12 x 18 in. (30.5 x 45.7 cm)
+
+Credit Line: Purchase, Gifts of Mrs. Louise Lamson and Mrs. Alfred N. Lawrence, by exchange, 1984
+
+---
+
+Artwork Title: The Babes in the Wood
+Object Type: Sculpture
+Classification: Unknown
+
+Artist: Thomas Crawford
+Nationality: American 
+Lifespan: 1813      –1857      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1847–1851
+
+Medium: Marble
+Dimensions: 17 x 49 x 33 1/2 in. (43.2 x 124.5 x 85.1 cm)
+
+Credit Line: Bequest of Hamilton Fish, 1894
+
+---
+
+Artwork Title: Genius of Mirth
+Object Type: Sculpture
+Classification: Unknown
+
+Artist: Thomas Crawford
+Nationality: American 
+Lifespan: 1813      –1857      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1842–1843
+
+Medium: Marble
+Dimensions: 47 x 20 x 24 in. (119.4 x 50.8 x 61 cm)
+
+Credit Line: Bequest of Annette W. W. Hicks-Lord, 1896
+
+---
+
+Artwork Title: Mexican Girl Dying
+Object Type: Sculpture
+Classification: Unknown
+
+Artist: Thomas Crawford
+Nationality: American 
+Lifespan: 1813      –1857      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1846–1848
+
+Medium: Marble
+Dimensions: 20 1/4 x 54 1/2 x 19 1/2 in. (51.4 x 138.4 x 49.5 cm)
+
+Credit Line: Bequest of Annette W. W. Hicks-Lord, 1896
+
+---
+
+Artwork Title: Boy and Turtle
+Object Type: Sculpture
+Classification: Unknown
+
+Artist: Henri Crenier
+Nationality: American, born France
+Lifespan: 1873      –1948      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1912–1912
+
+Medium: Bronze
+Dimensions: 19 3/4 x 11 x 11 in. (50.2 x 27.9 x 27.9 cm)
+
+Credit Line: Amelia B. Lazarus Fund, 1913
+
+---
+
+Artwork Title: American Falls, Niagara
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Jasper Francis Cropsey
+Nationality: American
+Lifespan: 1823      –1900      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1855–1855
+
+Medium: Graphite and white gouache on dark buff-colored wove paper
+Dimensions: 9 13/16 x 8 15/16 in. (24.9 x 22.7 cm)
+
+Credit Line: Sheila and Richard J. Schwartz Fund, 1987
+
+---
+
+Artwork Title: Autumn Landscape, Sugar Loaf Mountain, Orange County, New York
+Object Type: Painting
+Classification: Unknown
+
+Artist: Jasper Francis Cropsey
+Nationality: American
+Lifespan: 1823      –1900      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1867–1875
+
+Medium: Oil on canvas
+Dimensions: 28 1/2 x 35 1/2 in. (72.4 x 90.2 cm)
+
+Credit Line: Purchase, The Bertram F. and Susie Brummer Foundation Inc. Gift, 1961
+
+---
+
+Artwork Title: Castel San Elmo (from Cropsey Album)
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: Jasper Francis Cropsey
+Nationality: American
+Lifespan: 1823      –1900      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1848–1848
+
+Medium: Graphite, white gouache, and watercolor on dark buff-colored wove paper
+Dimensions: 6 7/8 x 9 9/16 in. (17.5 x 24.3 cm)
+
+Credit Line: Purchase, Charles and Anita Blatt Gift, 1970
+
+---
+
+Artwork Title: Country Scene with Cottages (from Cropsey Album)
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Jasper Francis Cropsey
+Nationality: American
+Lifespan: 1823      –1900      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1866–1866
+
+Medium: Graphite on off-white wove paper
+Dimensions: 2 3/8 x 4 7/16 in. (6 x 11.3 cm)
+
+Credit Line: Purchase, Charles and Anita Blatt Gift, 1970
+
+---
+
+Artwork Title: Farm Scene with Cottages (from Cropsey Album)
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Jasper Francis Cropsey
+Nationality: American
+Lifespan: 1823      –1900      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1866–1866
+
+Medium: Graphite on off-white wove paper
+Dimensions: 2 3/8 x 4 7/16 in. (6 x 11.3 cm)
+
+Credit Line: Purchase, Charles and Anita Blatt Gift, 1970
+
+---
+
+Artwork Title: Jedburgh Abbey (from  Cropsey Album)
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Jasper Francis Cropsey
+Nationality: American
+Lifespan: 1823      –1900      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1847–1847
+
+Medium: Graphite and white gouache on blue wove paper, mounted on off-white wove paper
+Dimensions: 8 1/2 x 6 1/8 in. (21.6 x 15.6 cm)
+
+Credit Line: Purchase, Charles and Anita Blatt Gift, 1970
+
+---
+
+Artwork Title: Landscape with Tree and a Village in the Distance (from Cropsey Album)
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Jasper Francis Cropsey
+Nationality: American
+Lifespan: 1823      –1900      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1847–1847
+
+Medium: Pen and iron-gall ink, white gouache, and graphite on heavy, light brown wove paper
+Dimensions: 4 1/16 x 3 in. (10.3 x 7.6 cm)
+
+Credit Line: Purchase, Charles and Anita Blatt Gift, 1970
+
+---
+
+Artwork Title: Pompton Plains, New Jersey
+Object Type: Painting
+Classification: Unknown
+
+Artist: Jasper Francis Cropsey
+Nationality: American
+Lifespan: 1823      –1900      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1867–1867
+
+Medium: Oil on canvas
+Dimensions: 20 1/8 x 32 1/4 in. (51.1 x 81.9 cm)
+
+Credit Line: Bequest of Collis P. Huntington, 1900
+
+---
+
+Artwork Title: Torre dei Schiavi, The Roman Campagna (from Cropsey Album)
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Jasper Francis Cropsey
+Nationality: American
+Lifespan: 1823      –1900      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1853–1853
+
+Medium: Graphite, white gouache, and brown and gray ink washes on dark buff wove paper
+Dimensions: 4 1/8 x 5 11/16 in. (10.5 x 14.4 cm)
+
+Credit Line: Purchase, Charles and Anita Blatt Gift, 1970
+
+---
+
+Artwork Title: The Valley of Wyoming
+Object Type: Painting
+Classification: Unknown
+
+Artist: Jasper Francis Cropsey
+Nationality: American
+Lifespan: 1823      –1900      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1865–1865
+
+Medium: Oil on canvas
+Dimensions: 48 1/2 x 84 in. (123.2 x 213.4 cm)
+
+Credit Line: Gift of Mrs. John C. Newington, 1966
+
+---
+
+Artwork Title: View near Sherburne, Chenango County, New York
+Object Type: Painting
+Classification: Unknown
+
+Artist: Jasper Francis Cropsey
+Nationality: American
+Lifespan: 1823      –1900      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1853–1853
+
+Medium: Oil on canvas
+Dimensions: 33 1/8 x 48 3/8 in. (84.1 x 122.9 cm)
+
+Credit Line: Bequest of Sarah Ann Ludlum, 1877
+
+---
+
+Artwork Title: Village Square with Figures, Doune, Scotland (?) (from Cropsey Album)
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Jasper Francis Cropsey
+Nationality: American
+Lifespan: 1823      –1900      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1847–1847
+
+Medium: Graphite on off-white Bristol board
+Dimensions: 6 x 8 1/2 in. (15.2 x 21.6 cm)
+
+Credit Line: Purchase, Charles and Anita Blatt Gift, 1970
+
+---
+
+Artwork Title: Wyoming Valley, Pennsylvania
+Object Type: Painting
+Classification: Unknown
+
+Artist: Jasper Francis Cropsey
+Nationality: American
+Lifespan: 1823      –1900      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1864–1864
+
+Medium: Oil on canvas
+Dimensions: 15 x 24 in. (38.1 x 61 cm)
+
+Credit Line: Bequest of Collis P. Huntington, 1900
+
+---
+
+Artwork Title: Skating on the Wissahickon
+Object Type: Painting
+Classification: Unknown
+
+Artist: Johan Mengels Culverhouse
+Nationality: American
+Lifespan: 1820      –1891      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1875–1875
+
+Medium: Oil on canvas
+Dimensions: 24 x 37 1/2 in. (61 x 95.3 cm)
+
+Credit Line: Purchase, Rogers, Morris K. Jesup and Maria DeWitt Jesup Funds, and Charles and Anita Blatt Gift, 1974
+
+---
+
+Artwork Title: Benson John Lossing
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: Thomas Seir Cummings
+Nationality: American, born England
+Lifespan: 1804      –1894      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1832–1835
+
+Medium: Watercolor on ivory
+Dimensions: 3 27/32 x 2 23/32 in. (9.8 x 6.9 cm)
+
+Credit Line: Rogers Fund, 1965
+
+---
+
+Artwork Title: The Bracelet
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: Thomas Seir Cummings
+Nationality: American, born England
+Lifespan: 1804      –1894      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1835–1835
+
+Medium: Watercolor on ivory
+Dimensions: 6 13/16 x 5 3/8 in. (17.3 x 13.7 cm)
+
+Credit Line: Gift of Mrs. Richard B. Hartshorne, 1927
+
+---
+
+Artwork Title: Mrs. Thomas Streatfield Clarkson (Elizabeth Van Horne)
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: Thomas Seir Cummings
+Nationality: American, born England
+Lifespan: 1804      –1894      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1841–1844
+
+Medium: Watercolor on ivory
+Dimensions: 3 7/8 x 3 in. (9.8 x 7.6 cm)
+
+Credit Line: Gift of Mr. and Mrs. William A. Moore, 1923
+
+---
+
+Artwork Title: Family Group (from McGuire Scrapbook)
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Thomas Seir Cummings
+Nationality: American, born England
+Lifespan: 1804      –1894      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1829–1829
+
+Medium: Brown and black ink on white wove paper
+Dimensions: 4 15/16 x 5 9/16 in. (12.5 x 14.1 cm)
+
+Credit Line: Gift of James C. McGuire, 1926
+
+---
+
+Artwork Title: Gustavus Adolphus Rollins
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: Thomas Seir Cummings
+Nationality: American, born England
+Lifespan: 1804      –1894      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1832–1835
+
+Medium: Watercolor on ivory
+Dimensions: Sight: 2 7/8 x 2 3/8 in. (7.3 x 6 cm)
+
+Credit Line: Gift of E. A. Rollins, through his son, A. C. Rollins, 1933
+
+---
+
+Artwork Title: Levinus Clarkson
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: Thomas Seir Cummings
+Nationality: American, born England
+Lifespan: 1804      –1894      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1845–1845
+
+Medium: Watercolor on ivory
+Dimensions: Sight: 2 3/8 x 2 in. (6 x 5.1 cm)
+
+Credit Line: Gift of Mr. and Mrs. William A. Moore, 1923
+
+---
+
+Artwork Title: Portrait of a Gentleman
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: Thomas Seir Cummings
+Nationality: American, born England
+Lifespan: 1804      –1894      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1832–1835
+
+Medium: Watercolor on ivory
+Dimensions: 2 9/16 x 2 in. (6.5 x 5.1 cm)
+
+Credit Line: Gift of Florence Brevoort Kane, 1943
+
+---
+
+Artwork Title: A Mother's Pearls
+Object Type: Painting, miniature, necklace
+Classification: Unknown
+
+Artist: Thomas Seir Cummings
+Nationality: American, born England
+Lifespan: 1804      –1894      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1841–1841
+
+Medium: Watercolor on ivory
+Dimensions: 17 1/2 in. (44.5 cm)
+28.148.1: 1 3/16 x 1 in. (3 x 2.6 cm)
+28.148.2: 1 3/8 x 1 3/16 in. (3.5 x 3 cm)
+28.148.3: 1 9/16 x 1 3/8 in. (4 x 3.5 cm)
+28.148.4: 1 3/4 x 1 9/16 in. (4.5 x 4 cm)
+28.148.5: 1 x 7/8 in. (2.5 x 2.2 cm)
+28.148.6: 1 3/4 x 1 9/16 in. (4.5 x 4 cm)
+28.148.7: 1 9/16 x 1 3/8 in. (4 x 3.5 cm)
+28.148.8: 1 3/8 x 1 3/16 in. (3.5 x 3 cm)
+28.148.9: 1 3/16 x 1 1/8 in. (3 x 2.8 cm)
+
+Credit Line: Gift of Mrs. Richard B. Hartshorne and Miss Fanny S. Cummings, 1928
+
+---
+
+Artwork Title: Alice Cushman
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: George Hewitt Cushman
+Nationality:  
+Lifespan: 1814      –1876      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1856–1856
+
+Medium: Watercolor on ivory
+Dimensions: Sight: 1 1/4 x 1 in. (3.2 x 2.5 cm)
+
+Credit Line: Fletcher Fund, 1937
+
+---
+
+Artwork Title: Ida Cushman
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: George Hewitt Cushman
+Nationality:  
+Lifespan: 1814      –1876      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1853–1856
+
+Medium: Watercolor on ivory
+Dimensions: Sight: 4 3/8 x 3 1/4 in. (11.1 x 8.3 cm)
+
+Credit Line: Fletcher Fund, 1937
+
+---
+
+Artwork Title: Self Portrait
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: George Hewitt Cushman
+Nationality:  
+Lifespan: 1814      –1876      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1839–1839
+
+Medium: Watercolor on ivory
+Dimensions: 1 1/4 x 1 in. (3.2 x 2.5 cm)
+
+Credit Line: Fletcher Fund, 1937
+
+---
+
+Artwork Title: Rebecca Wetherill
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: George Hewitt Cushman
+Nationality:  
+Lifespan: 1814      –1876      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1849–1849
+
+Medium: Watercolor on ivory
+Dimensions: Ivory: 5 1/4 x 5 1/4 in. (13.3 x 13.3 cm)
+Sight: 4 1/4 x 3 1/4 in. (10.8 x 8.3 cm)
+
+Credit Line: Gift of Harry B. Wehle, 1950
+
+---
+
+Artwork Title: Self-Portrait
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: George Hewitt Cushman
+Nationality:  
+Lifespan: 1814      –1876      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1847–1850
+
+Medium: Watercolor on white wove paper
+Dimensions: 6 1/16 x 4 3/16 in. (15.4 x 10.6 cm)
+
+Credit Line: Fletcher Fund, 1940
+
+---
+
+Artwork Title: The Cloud
+Object Type: Painting
+Classification: Unknown
+
+Artist: Léon Dabo
+Nationality: American, born France
+Lifespan: 1868      –1960      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1904–1910
+
+Medium: Oil on canvas
+Dimensions: 30 x 33 7/8 in. (76.2 x 86 cm)
+
+Credit Line: Rogers Fund, 1912
+
+---
+
+Artwork Title: Marine
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Léon Dabo
+Nationality: American, born France
+Lifespan: 1868      –1960      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1865–1960
+
+Medium: Conté crayon on off-white wove tracing paper
+Dimensions: 13 15/16 x 16 7/8 in. (35.4 x 42.9 cm)
+
+Credit Line: Rogers Fund, 1963
+
+---
+
+Artwork Title: Moon Rising over Fog Clouds
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: Elliott Daingerfield
+Nationality: American
+Lifespan: 1859      –1932      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1859–1932
+
+Medium: Watercolor on off-white wove paper
+Dimensions: 7 7/8 x 10 1/4 in. (20 x 26 cm)
+
+Credit Line: Gift of A. W. Bahr, 1958
+
+---
+
+Artwork Title: Slumbering Fog
+Object Type: Painting
+Classification: Unknown
+
+Artist: Elliott Daingerfield
+Nationality: American
+Lifespan: 1859      –1932      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1897–1905
+
+Medium: Oil on canvas
+Dimensions: 30 5/16 x 36 1/16 in. (77 x 91.6 cm)
+
+Credit Line: Gift of George A. Hearn, 1906
+
+---
+
+Artwork Title: To Market
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Elliott Daingerfield
+Nationality: American
+Lifespan: 1859      –1932      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1889–1889
+
+Medium: Charcoal on gray, oatmeal laid paper
+Dimensions: 13 7/8 x 10 1/4 in. (35.2 x 26 cm)
+
+Credit Line: Gift of Spencer Bickerton, 1934
+
+---
+
+Artwork Title: Heart's Ease
+Object Type: Painting
+Classification: Unknown
+
+Artist: William P. W. Dana
+Nationality:  
+Lifespan: 1833      –1927      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1863–1863
+
+Medium: Oil on canvas
+Dimensions: 37 1/2 x 47 3/4 in. (95.3 x 121.3 cm)
+
+Credit Line: Gift of S. Howland Russell, 1890
+
+---
+
+Artwork Title: The Quartette (Un quatuor)
+Object Type: Painting
+Classification: Unknown
+
+Artist: William Dannat
+Nationality: American
+Lifespan: 1853      –1929      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1884–1884
+
+Medium: Oil on canvas
+Dimensions: 94 3/8 x 91 3/4 in. (239.7 x 233 cm)
+
+Credit Line: Gift of Mrs. William H. Dannat, 1886
+
+---
+
+Artwork Title: Across the Valley
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Pastel on bright blue Japanese paper
+Dimensions: 7 7/16 x 10 5/8 in. (18.9 x 27 cm)
+
+Credit Line: Gift of A. W. Bahr, 1958
+
+---
+
+Artwork Title: Adventure
+Object Type: Painting
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1914–1918
+
+Medium: Oil on canvas
+Dimensions: 18 1/8 x 30 1/8 in. (46 x 76.5 cm)
+
+Credit Line: Bequest of Lillie P. Bliss, 1931
+
+---
+
+Artwork Title: Artemis
+Object Type: Painting
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1908–1909
+
+Medium: Oil on canvas
+Dimensions: 16 1/8 x 13 1/8 in. (41 x 33.3 cm)
+
+Credit Line: Bequest of Joan Whitney Payson, 1975
+
+---
+
+Artwork Title: Athlete and Dancer
+Object Type: Painting
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1892–1897
+
+Medium: Oil on canvas
+Dimensions: 17 x 22 in. (43.2 x 55.9 cm)
+
+Credit Line: Bequest of George D. Pratt, 1935
+
+---
+
+Artwork Title: Autumn Colors
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Pastel on light buff wove paper
+Dimensions: 6 3/8 x 10 1/8 in. (16.2 x 25.7 cm)
+
+Credit Line: Gift of A. W. Bahr, 1958
+
+---
+
+Artwork Title: Autumn Trees
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Pastel on gray Japanese paper
+Dimensions: 7 3/8 x 11 in. (18.7 x 27.9 cm)
+
+Credit Line: Gift of A. W. Bahr, 1958
+
+---
+
+Artwork Title: Autumn Woods
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Pastel on dark brown wove paper
+Dimensions: 7 1/4 x 10 15/16 in. (18.4 x 27.8 cm)
+
+Credit Line: Gift of A. W. Bahr, 1958
+
+---
+
+Artwork Title: Bear Island Light
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Pastel on blue wove paper
+Dimensions: 10 1/4 x 12 7/16 in. (26 x 31.6 cm)
+
+Credit Line: Gift of A. W. Bahr, 1958
+
+---
+
+Artwork Title: Blue Landscape
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Pastel on dark blue wove paper
+Dimensions: 6 1/2 x 11 9/16 in. (16.5 x 29.4 cm)
+
+Credit Line: Gift of A. W. Bahr, 1958
+
+---
+
+Artwork Title: Blue Thicket
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Pastel on gray paper
+Dimensions: 7 5/16 x 10 15/16 in. (18.6 x 27.8 cm)
+
+Credit Line: Gift of A. W. Bahr, 1958
+
+---
+
+Artwork Title: Boat in Distress
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Pastel on dark gray wove paper
+Dimensions: 10 1/4 x 12 1/4 in. (26 x 31.1 cm)
+
+Credit Line: Gift of A. W. Bahr, 1958
+
+---
+
+Artwork Title: Boats at Evening
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Pastel on light tan wove paper
+Dimensions: 5 3/4 x 8 7/8 in. (14.6 x 22.5 cm)
+
+Credit Line: Gift of A. W. Bahr, 1958
+
+---
+
+Artwork Title: Boats at Night
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Pastel on brown wove paper
+Dimensions: 7 1/2 x 11 1/8 in. (19.1 x 28.3 cm)
+
+Credit Line: Gift of A. W. Bahr, 1958
+
+---
+
+Artwork Title: The Bright Blue Ocean
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Pastel on dark gray wove paper
+Dimensions: 10 3/8 x 12 7/16 in. (26.4 x 31.6 cm)
+
+Credit Line: Gift of A. W. Bahr, 1958
+
+---
+
+Artwork Title: Chinese Landscape
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Black crayon and white chalk on dark gray-green wove paper
+Dimensions: 7 1/4 x 10 1/4 in. (18.4 x 26 cm)
+
+Credit Line: Gift of A. W. Bahr, 1958
+
+---
+
+Artwork Title: Cliffs and Waves
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Pastel on dark gray wove paper
+Dimensions: 10 1/4 x 12 1/2 in. (26 x 31.8 cm)
+
+Credit Line: Gift of A. W. Bahr, 1958
+
+---
+
+Artwork Title: Coast Scene with Boat
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Watercolor and pastel on tan oatmeal laid paper
+Dimensions: 9 7/16 x 12 7/16 in. (24 x 31.6 cm)
+
+Credit Line: Bequest of Susan Dwight Bliss, 1966
+
+---
+
+Artwork Title: Dance—Uplift
+Object Type: Painting
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1917–1928
+
+Medium: Wax on canvas
+Dimensions: 24 x 18 in. (61 x 45.7 cm)
+
+Credit Line: Bequest of Lillie P. Bliss, 1931
+
+---
+
+Artwork Title: Dry Landscape
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Pastel on pale orange wove paper
+Dimensions: 6 1/4 x 10 1/16 in. (15.9 x 25.6 cm)
+
+Credit Line: Gift of A. W. Bahr, 1958
+
+---
+
+Artwork Title: Eleven Nudes
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1907–1910
+
+Medium: Watercolor and graphite on tan laid paper
+Dimensions: 16 5/8 x 12 3/4 in. (42.2 x 32.4 cm)
+
+Credit Line: Gift of Rita and Daniel Fraad Jr., 1978
+
+---
+
+Artwork Title: Exaltation
+Object Type: Painting
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1917–1930
+
+Medium: Oil on canvas
+Dimensions: 16 x 11 in. (40.6 x 27.9 cm)
+
+Credit Line: Bequest of Miss Adelaide Milton de Groot (1876-1967), 1967
+
+---
+
+Artwork Title: Fair Grounds
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Pastel and charcoal on brown wove paper
+Dimensions: 10 1/4 x 15 1/8 in. (26 x 38.4 cm)
+
+Credit Line: Gift of A. W. Bahr, 1958
+
+---
+
+Artwork Title: Girdle of Ares
+Object Type: Painting
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1905–1914
+
+Medium: Oil on canvas
+Dimensions: 26 x 40 1/8 in. (66 x 101.9 cm)
+
+Credit Line: George A. Hearn Fund, 1914
+
+---
+
+Artwork Title: Girl
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Pastel on brown paper
+Dimensions: 17 1/4 x 12 3/8 in. (43.8 x 31.4 cm)
+
+Credit Line: Bequest of Miss Adelaide Milton de Groot (1876-1967), 1967
+
+---
+
+Artwork Title: Girl Kneeling
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Pastel and black chalk on brown paper mounted on coated Japanese tissue
+Dimensions: 16 9/16 x 12 1/4 in. (42.1 x 31.1 cm)
+
+Credit Line: Anonymous Gift, 1909
+
+---
+
+Artwork Title: Heavy Weather
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Pastel on dark gray wove paper
+Dimensions: 9 7/16 x 12 1/2 in. (24 x 31.8 cm)
+
+Credit Line: Gift of A. W. Bahr, 1958
+
+---
+
+Artwork Title: High Point
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Pastel on gray paper
+Dimensions: 7 3/8 x 13 in. (18.7 x 33 cm)
+
+Credit Line: Gift of A. W. Bahr, 1958
+
+---
+
+Artwork Title: Hill Town
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Pastel on pale orange wove paper
+Dimensions: 10 3/16 x 12 11/16 in. (25.9 x 32.2 cm)
+
+Credit Line: Gift of A. W. Bahr, 1958
+
+---
+
+Artwork Title: House on Hillside
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Pastel on dark gray-green paper
+Dimensions: 7 11/16 x 10 in. (19.5 x 25.4 cm)
+
+Credit Line: Gift of A. W. Bahr, 1958
+
+---
+
+Artwork Title: Islands of Victories
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Pastel, blue wax containing crayon, and charcoal on paper
+Dimensions: 9 5/8 x 10 in. (24.4 x 25.4 cm)
+
+Credit Line: Gift of A. W. Bahr, 1958
+
+---
+
+Artwork Title: Italian Hill Town
+Object Type: Painting
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1922–1925
+
+Medium: Oil on canvas
+Dimensions: 25 7/8 x 39 7/8 in. (65.7 x 101.3 cm)
+
+Credit Line: Bequest of Lillie P. Bliss, 1931
+
+---
+
+Artwork Title: The Lake
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Pastel on brown wove paper
+Dimensions: 9 1/2 x 12 1/2 in. (24.1 x 31.8 cm)
+
+Credit Line: Gift of A. W. Bahr, 1958
+
+---
+
+Artwork Title: Landscape
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Black ink wash on off-white wove paper
+Dimensions: 11 1/16 x 7 5/8 in. (28.1 x 19.4 cm)
+
+Credit Line: Gift of A. W. Bahr, 1958
+
+---
+
+Artwork Title: Landscape
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Watercolor and blue-green pastel on off-white laid paper
+Dimensions: 9 5/8 x 12 3/8 in. (24.4 x 31.4 cm)
+
+Credit Line: Bequest of Susan Dwight Bliss, 1966
+
+---
+
+Artwork Title: Landscape with Cedars
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Pastel and charcoal on gray Japanese paper
+Dimensions: 6 15/16 x 10 1/4 in. (17.6 x 26 cm)
+
+Credit Line: Gift of A. W. Bahr, 1958
+
+---
+
+Artwork Title: Landscape with Clouds
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Pastel and black chalk on green-gray wove paper
+Dimensions: 6 1/8 x 10 9/16 in. (15.6 x 26.8 cm)
+
+Credit Line: Gift of A. W. Bahr, 1958
+
+---
+
+Artwork Title: Landscape with Cows
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Watercolor, pastel, graphite, and gouache on blue laid paper
+Dimensions: 12 5/8 x 9 9/16 in. (32.1 x 24.3 cm)
+
+Credit Line: Bequest of Susan Dwight Bliss, 1966
+
+---
+
+Artwork Title: Landscape with Pines and Aqueduct
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Pastel on dark gray-green wove paper
+Dimensions: 6 7/8 x 10 1/4 in. (17.5 x 26 cm)
+
+Credit Line: Gift of A. W. Bahr, 1958
+
+---
+
+Artwork Title: Landscape with Yellow Tree
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Pastel on blue wove paper
+Dimensions: 6 1/4 x 10 1/4 in. (15.9 x 26 cm)
+
+Credit Line: Gift of A. W. Bahr, 1958
+
+---
+
+Artwork Title: Landscape: Black Trees I
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Black ink wash on off-white wove paper
+Dimensions: 7 5/8 x 11 in. (19.4 x 27.9 cm)
+
+Credit Line: Gift of A. W. Bahr, 1958
+
+---
+
+Artwork Title: Landscape: Black Trees II
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Black ink wash, gray gouache, and black chalk on off-white wove paper
+Dimensions: 7 9/16 x 11 in. (19.2 x 27.9 cm)
+
+Credit Line: Gift of A. W. Bahr, 1958
+
+---
+
+Artwork Title: Landscape: Fields
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Pastel and black chalk on bright blue Japanese paper
+Dimensions: 7 3/4 x 12 3/8 in. (19.7 x 31.4 cm)
+
+Credit Line: Gift of A. W. Bahr, 1958
+
+---
+
+Artwork Title: Landscape: Two Trees
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Pastel on gray wove paper
+Dimensions: 7 3/8 x 11 1/4 in. (18.7 x 28.6 cm)
+
+Credit Line: Gift of A. W. Bahr, 1958
+
+---
+
+Artwork Title: Louvre
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Watercolor, gouache, and charcoal on blue wove paper
+Dimensions: 11 1/8 x 17 5/8 in. (28.3 x 44.8 cm)
+
+Credit Line: Bequest of Susan Dwight Bliss, 1966
+
+---
+
+Artwork Title: Louvre—Autumn Afternoon
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1925–1925
+
+Medium: Watercolor, gouache, graphite, and blue pastel on light gray paper
+Dimensions: 9 1/4 x 12 9/16 in. (23.5 x 31.9 cm)
+
+Credit Line: Bequest of Lillie P. Bliss, 1931
+
+---
+
+Artwork Title: Meadow Edge
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Pastel on off-white wove paper
+Dimensions: 5 1/4 x 10 in. (13.3 x 25.4 cm)
+
+Credit Line: Gift of A. W. Bahr, 1958
+
+---
+
+Artwork Title: Meadow Weeds
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1908–1908
+
+Medium: Pastel on blue wove paper
+Dimensions: 6 1/4 x 10 1/4 in. (15.9 x 26 cm)
+
+Credit Line: Gift of A. W. Bahr, 1958
+
+---
+
+Artwork Title: A Measure of Dreams
+Object Type: Painting
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1905–1908
+
+Medium: Oil on canvas
+Dimensions: 18 x 30 in. (45.7 x 76.2 cm)
+
+Credit Line: Gift of George A. Hearn, 1909
+
+---
+
+Artwork Title: Mountains
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Watercolor, gouache, and charcoal on light tan laid paper
+Dimensions: 10 1/4 x 14 7/8 in. (26 x 37.8 cm)
+
+Credit Line: Bequest of Lillie P. Bliss, 1931
+
+---
+
+Artwork Title: Mountains in Moonlight
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Pastel and gouache on dark blue wove paper
+Dimensions: 8 1/16 x 11 9/16 in. (20.5 x 29.4 cm)
+
+Credit Line: Gift of A. W. Bahr, 1958
+
+---
+
+Artwork Title: Mysterious Barges I
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Pastel on off-white wove paper
+Dimensions: 5 11/16 x 8 3/4 in. (14.4 x 22.2 cm)
+
+Credit Line: Gift of A. W. Bahr, 1958
+
+---
+
+Artwork Title: Mysterious Barges II
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Pastel on gray paper
+Dimensions: 5 11/16 x 8 7/8 in. (14.4 x 22.5 cm)
+
+Credit Line: Gift of A. W. Bahr, 1958
+
+---
+
+Artwork Title: Niles Davies
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Watercolor on white wove paper
+Dimensions: 8 1/2 x 13 1/2 in. (21.6 x 34.3 cm)
+
+Credit Line: Gift of Rita and Daniel Fraad Jr., 1978
+
+---
+
+Artwork Title: Nude
+Object Type: Sculpture
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1914–1918
+
+Medium: Bronze
+Dimensions: 7 1/2 x 2 1/4 x 1 in. (19.1 x 5.7 x 2.5 cm)
+
+Credit Line: Gift of Frederic Newlin Price, 1955
+
+---
+
+Artwork Title: Nude Studies
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Pastel and black chalk on oiled brown paper
+Dimensions: 16 1/2 x 12 in. (41.9 x 30.5 cm)
+
+Credit Line: Anonymous Gift, 1909
+
+---
+
+Artwork Title: Nude Study
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Pastel, black chalk, and black wash on reddish-brown Japanese paper
+Dimensions: 17 15/16 x 13 1/16 in. (45.6 x 33.2 cm)
+
+Credit Line: Anonymous Gift, 1909
+
+---
+
+Artwork Title: Ocean Swells
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Pastel on dark blue-gray wove paper
+Dimensions: 9 1/8 x 12 9/16 in. (23.2 x 31.9 cm)
+
+Credit Line: Gift of A. W. Bahr, 1958
+
+---
+
+Artwork Title: Pickerel Weed
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Pastel and charcoal on gray Japanese tissue
+Dimensions: 7 3/16 x 11 in. (18.3 x 27.9 cm)
+
+Credit Line: Gift of A. W. Bahr, 1958
+
+---
+
+Artwork Title: Pine Tree, Dogwood, and Sailboat
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Pastel on gray Japanese paper
+Dimensions: 7 1/8 x 11 1/16 in. (18.1 x 28.1 cm)
+
+Credit Line: Gift of A. W. Bahr, 1958
+
+---
+
+Artwork Title: Pine Woods
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Pastel on tan wove paper
+Dimensions: 5 5/8 x 8 7/8 in. (14.3 x 22.5 cm)
+
+Credit Line: Gift of A. W. Bahr, 1958
+
+---
+
+Artwork Title: Spring Landscape
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Pastel on gray paper
+Dimensions: 7 1/4 x 10 13/16 in. (18.4 x 27.5 cm)
+
+Credit Line: Gift of A. W. Bahr, 1958
+
+---
+
+Artwork Title: Reclining Woman
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1913–1913
+
+Medium: Pastel on gray Japanese paper
+Dimensions: 11 1/4 x 15 in. (28.6 x 38.1 cm)
+
+
+Credit Line: Alfred Stieglitz Collection, 1949
+
+---
+
+Artwork Title: Red Autumn Trees
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Pastel on dark gray-green wove paper
+Dimensions: 7 1/16 x 10 in. (17.9 x 25.4 cm)
+
+Credit Line: Gift of A. W. Bahr, 1958
+
+---
+
+Artwork Title: The Red Barn
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1895–1895
+
+Medium: Pastel, black chalk, and graphite on dark pink paper
+Dimensions: 6 3/8 x 9 3/4 in. (16.2 x 24.8 cm)
+
+Credit Line: Gift of A. W. Bahr, 1958
+
+---
+
+Artwork Title: A Road in France
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Watercolor and gouache on off-white wove paper
+Dimensions: 13 x 19 13/16 in. (33 x 50.3 cm)
+
+Credit Line: Gift of A. W. Bahr, 1958
+
+---
+
+Artwork Title: Spring
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Pastel and black chalk on dark gray-green wove paper
+Dimensions: 7 5/16 x 10 3/8 in. (18.6 x 26.4 cm)
+
+Credit Line: Gift of A. W. Bahr, 1958
+
+---
+
+Artwork Title: Spring Beauties
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1895–1895
+
+Medium: Graphite and pastel on off-white wove paper
+Dimensions: 11 7/8 x 6 in. (30.2 x 15.2 cm)
+
+Credit Line: Gift of A. W. Bahr, 1958
+
+---
+
+Artwork Title: Spring Woods
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Pastel on gray Japanese paper
+Dimensions: 7 1/8 x 10 3/4 in. (18.1 x 27.3 cm)
+
+Credit Line: Gift of A. W. Bahr, 1958
+
+---
+
+Artwork Title: Stringing the Bow
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Black and white chalk on dark blue wove paper
+Dimensions: 12 1/2 x 10 3/8 in. (31.8 x 26.4 cm)
+
+Credit Line: Anonymous Gift, 1909
+
+---
+
+Artwork Title: Study of a Man
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Black and white pastel on green wove paper
+Dimensions: 9 13/16 x 12 11/16 in. (24.9 x 32.2 cm)
+
+Credit Line: Anonymous Gift, 1909
+
+---
+
+Artwork Title: Study of a Standing Man
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Black and white pastel on gray wove paper
+Dimensions: 14 3/8 x 11 1/8 in. (36.5 x 28.3 cm)
+
+Credit Line: Anonymous Gift, 1909
+
+---
+
+Artwork Title: Surf on Rocks
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Pastel on gray wove paper
+Dimensions: 10 7/8 x 12 7/16 in. (27.6 x 31.6 cm)
+
+Credit Line: Gift of A. W. Bahr, 1958
+
+---
+
+Artwork Title: Tree Study
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Pastel and graphite on blue wove paper
+Dimensions: 7 5/16 x 11 1/2 in. (18.6 x 29.2 cm)
+
+Credit Line: Gift of A. W. Bahr, 1958
+
+---
+
+Artwork Title: Trees
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Pastel on black wove paper
+Dimensions: 7 3/16 x 10 1/4 in. (18.3 x 26 cm)
+
+Credit Line: Gift of A. W. Bahr, 1958
+
+---
+
+Artwork Title: Trees and Fields
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Pastel on blue-gray Japanese paper
+Dimensions: 7 3/8 x 11 in. (18.7 x 27.9 cm)
+
+Credit Line: Gift of A. W. Bahr, 1958
+
+---
+
+Artwork Title: Trees in Spring
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Pastel on gray-green wove paper
+Dimensions: 19 3/4 x 7 9/16 in. (50.2 x 19.2 cm)
+
+Credit Line: Gift of A. W. Bahr, 1958
+
+---
+
+Artwork Title: Two Horses Grazing
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Pastel on dark tan wove paper
+Dimensions: 7 5/8 x 10 in. (19.4 x 25.4 cm)
+
+Credit Line: Gift of A. W. Bahr, 1958
+
+---
+
+Artwork Title: Two Men Crouching
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Black, gray, and white pastel on reddish-brown Japanese paper
+Dimensions: 13 7/8 x 17 7/8 in. (35.2 x 45.4 cm)
+
+Credit Line: Anonymous Gift, 1909
+
+---
+
+Artwork Title: Unicorns (Legend—Sea Calm)
+Object Type: Painting
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1903–1906
+
+Medium: Oil on canvas
+Dimensions: 18 1/4 x 40 1/4 in. (46.4 x 102.2 cm)
+
+Credit Line: Bequest of Lillie P. Bliss, 1931
+
+---
+
+Artwork Title: View through Poplars
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Pastel on blue paper
+Dimensions: 7 5/8 x 11 in. (19.4 x 27.9 cm)
+
+Credit Line: Gift of A. W. Bahr, 1958
+
+---
+
+Artwork Title: Village on the Shore
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Pastel on blue-gray wove paper
+Dimensions: 10 3/8 x 15 1/16 in. (26.4 x 38.3 cm)
+
+Credit Line: Gift of A. W. Bahr, 1958
+
+---
+
+Artwork Title: Visions of the Sea
+Object Type: Painting
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1901–1904
+
+Medium: Oil on canvas
+Dimensions: 23 x 28 in. (58.4 x 71.1 cm)
+
+Credit Line: Bequest of Miss Adelaide Milton de Groot (1876-1967), 1967
+
+---
+
+Artwork Title: Wood Scene (The Park)
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Arthur B. Davies
+Nationality: American
+Lifespan: 1862      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1928
+
+Medium: Pastel and charcoal on green-brown wove paper
+Dimensions: 7 1/8 x 11 1/2 in. (18.1 x 29.2 cm)
+
+Credit Line: Gift of A. W. Bahr, 1958
+
+---
+
+Artwork Title: August
+Object Type: Painting
+Classification: Unknown
+
+Artist: Charles Harold Davis
+Nationality: American
+Lifespan: 1856      –1933      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1905–1908
+
+Medium: Oil on canvas
+Dimensions: 29 x 36 1/2 in. (73.7 x 92.7 cm)
+
+Credit Line: Gift of George A. Hearn, 1909
+
+---
+
+Artwork Title: Lady Seated in a Boston Rocker
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: Jane Anthony Davis
+Nationality: American
+Lifespan: 1821      –1855      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1821–1855
+
+Medium: Watercolor and graphite on smooth-surfaced tan wove paper
+Dimensions: 14 x 11 1/16 in. (35.6 x 28.1 cm)
+
+Credit Line: Gift of Edgar William and Bernice Chrysler Garbisch, 1966
+
+---
+
+Artwork Title: Mr. and Mrs. Daniel Otis and Child
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: Joseph H. Davis
+Nationality: American
+Lifespan: 1811      –1865      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1834–1834
+
+Medium: Watercolor, gum arabic, and graphite on off-white wove paper
+Dimensions: 10 3/4 x 16 5/8 in. (27.3 x 42.2 cm)
+
+Credit Line: Gift of Edgar William and Bernice Chrysler Garbisch, 1972
+
+---
+
+Artwork Title: Incense
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: Percival De Luce
+Nationality: American
+Lifespan: 1849      –1914      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1899–1899
+
+Medium: Watercolor, gouache, and graphite on wove paper laid down on illustration board
+Dimensions: 21 7/8 x 29 3/4 in. (55.6 x 75.6 cm)
+
+Credit Line: Gift of Miss Olive S. De Luce, 1922
+
+---
+
+Artwork Title: Gooseberries
+Object Type: Painting
+Classification: Unknown
+
+Artist: Joseph Decker
+Nationality: American
+Lifespan: 1853      –1924      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1896–1896
+
+Medium: Oil on canvas
+Dimensions: 8 9/16 x 14 1/16 in. (21.7 x 35.7 cm)
+
+Credit Line: Gift of Nicholas Wyeth, 1980
+
+---
+
+Artwork Title: The Fight
+Object Type: Sculpture
+Classification: Unknown
+
+Artist: Edwin Willard Deming
+Nationality: American
+Lifespan: 1860      –1942      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1903–1906
+
+Medium: Bronze
+Dimensions: 8 x 3 1/4 x 5 1/2 in. (20.3 x 8.3 x 14 cm)
+
+Credit Line: Rogers Fund, 1907
+
+---
+
+Artwork Title: Mutual Surprise
+Object Type: Sculpture
+Classification: Unknown
+
+Artist: Edwin Willard Deming
+Nationality: American
+Lifespan: 1860      –1942      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1907–1907
+
+Medium: Bronze
+Dimensions: 9 1/2 x 3 1/4 x 8 in. (24.1 x 8.3 x 20.3 cm)
+
+Credit Line: Rogers Fund, 1908
+
+---
+
+Artwork Title: The Wood Cart
+Object Type: Painting
+Classification: Unknown
+
+Artist: Louis Paul Dessar
+Nationality: American
+Lifespan: 1867      –1953      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1908–1908
+
+Medium: Oil on canvas
+Dimensions: 28 x 36 in. (71.1 x 91.4 cm)
+
+Credit Line: Gift of George A. Hearn, 1909
+
+---
+
+Artwork Title: Sun Shower
+Object Type: Painting
+Classification: Unknown
+
+Artist: Charles Melville Dewey
+Nationality: American
+Lifespan: 1849      –1937      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1911–1912
+
+Medium: Oil on canvas
+Dimensions: 36 3/4 x 52 3/8 in. (93.3 x 133 cm)
+
+Credit Line: Arthur Hoppock Hearn Fund, 1920
+
+---
+
+Artwork Title: The Evening Dress
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Thomas Wilmer Dewing
+Nationality: American
+Lifespan: 1851      –1938      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1916–1925
+
+Medium: Pastel on brown paper cardboard
+Dimensions: Sight: 14 1/4 x 11 in. (36.2 x 27.9 cm)
+
+Credit Line: George A. Hearn Fund, 1966
+
+---
+
+Artwork Title: Green and Gold
+Object Type: Painting
+Classification: Unknown
+
+Artist: Thomas Wilmer Dewing
+Nationality: American
+Lifespan: 1851      –1938      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1916–1917
+
+Medium: Oil on canvas
+Dimensions: 24 1/8 x 22 1/4 in. (61.3 x 56.5 cm)
+
+Credit Line: Gift of Elisabeth Ball, 1953
+
+---
+
+Artwork Title: The Letter
+Object Type: Painting
+Classification: Unknown
+
+Artist: Thomas Wilmer Dewing
+Nationality: American
+Lifespan: 1851      –1938      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1895–1900
+
+Medium: Oil on canvas
+Dimensions: 20 1/4 x 16 in. (51.4 x 40.6 cm)
+
+Credit Line: Rogers Fund, 1910
+
+---
+
+Artwork Title: Lilac Dress
+Object Type: Painting
+Classification: Unknown
+
+Artist: Thomas Wilmer Dewing
+Nationality: American
+Lifespan: 1851      –1938      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1918–1919
+
+Medium: Oil on canvas
+Dimensions: 24 1/16 x 20 1/16 in. (61.1 x 51 cm)
+
+Credit Line: Bequest of Miss Adelaide Milton de Groot (1876-1967), 1967
+
+---
+
+Artwork Title: Portrait of a Woman
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Thomas Wilmer Dewing
+Nationality: American
+Lifespan: 1851      –1938      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1895–1904
+
+Medium: Silverpoint on paper, mounted on pulp board
+Dimensions: 22 1/2 x 18 7/8 in. (57.2 x 47.9 cm)
+
+Credit Line: Purchase, Bequests of Eliza W. Howland, Collis P. Huntington, Vera  Ruth Miller, Lillie P. Bliss, Egbert Guernsey Rankin, and George D.  Pratt, by exchange; Gifts of George I. Seney, Mrs. George Langdon  Jewett, A. W. Bahr, Allison V. Armour, E. Everett Dickinson Jr., J.  Pierpont Morgan, John G. Agar, and George A. Hearn, by exchange; and  Vain and Harry Fish Foundation Inc. Gift, 1984
+
+---
+
+Artwork Title: Tobias and the Angel
+Object Type: Painting
+Classification: Unknown
+
+Artist: Thomas Wilmer Dewing
+Nationality: American
+Lifespan: 1851      –1938      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1887–1887
+
+Medium: Oil on canvas
+Dimensions: 24 1/8 x 40 1/8 in. (61.3 x 101.9 cm)
+
+Credit Line: Gift of Edward D. Adams, 1919
+
+---
+
+Artwork Title: Dr. Valentine Mott
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: Anson Dickinson
+Nationality: American
+Lifespan: 1779      –1852      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1817–1820
+
+Medium: Watercolor on ivory
+Dimensions: Sight: 2 7/8 x 2 1/2 in. (7.3 x 6.4 cm)
+
+Credit Line: Gift of Mrs. Louis V. Bell, in memory of her husband, 1925
+
+---
+
+Artwork Title: Edward Livingston
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: Anson Dickinson
+Nationality: American
+Lifespan: 1779      –1852      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1824–1827
+
+Medium: Watercolor on ivory
+Dimensions: 4 1/8 x 3 1/4 in. (10.5 x 8.3 cm)
+
+Credit Line: Fletcher Fund, 1938
+
+---
+
+Artwork Title: John Henry Adam
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: Anson Dickinson
+Nationality: American
+Lifespan: 1779      –1852      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1835–1835
+
+Medium: Watercolor on ivory
+Dimensions: 2 7/8 x 2 5/16 in. (7.3 x 5.9 cm)
+
+Credit Line: Gift of Mrs. Howard Slade, 1988
+
+---
+
+Artwork Title: John Payne Todd
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: Joseph Wood
+Nationality: American
+Lifespan: 1778      –1830      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1817–1817
+
+Medium: Watercolor on ivory
+Dimensions: 2 5/8 x 2 1/16 in. (6.7 x 5.26 cm)
+
+Credit Line: Gift of Miss Mary Madison McGuire, 1936
+
+---
+
+Artwork Title: Mrs. Robert Watts (Matilda Ridley)
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: Anson Dickinson
+Nationality: American
+Lifespan: 1779      –1852      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1807–1810
+
+Medium: Watercolor on ivory
+Dimensions: Sight: 2 7/8 x 2 1/4 in. (7.3 x 5.7 cm)
+
+Credit Line: Amelia B. Lazarus Fund, 1915
+
+---
+
+Artwork Title: J. W. Gale
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: Anson Dickinson
+Nationality: American
+Lifespan: 1779      –1852      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1804–1807
+
+Medium: Watercolor on ivory
+Dimensions: Sight: 2 15/16 x 2 1/4 in. (7.5 x 5.7 cm)
+
+Credit Line: Bequest of Mary Anna Palmer Draper, 1915
+
+---
+
+Artwork Title: Portrait of a Gentleman
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: Daniel Dickinson
+Nationality: American
+Lifespan: 1795      –1877      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1820–1822
+
+Medium: Watercolor on ivory in red leatherette case with green velvet lining
+Dimensions: 3 1/4 x 2 3/4 in. (8.3 x 7 cm)
+
+Credit Line: Maria DeWitt Jesup Fund, 1931
+
+---
+
+Artwork Title: George Catlin
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: John Wood Dodge
+Nationality: American
+Lifespan: 1807      –1893      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1835–1835
+
+Medium: Watercolor on ivory
+Dimensions: 2 3/16 x 1 13/16 in. (5.6 x 4.6 cm)
+
+Credit Line: Rogers Fund, 1926
+
+---
+
+Artwork Title: Kate Roselie Dodge
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: John Wood Dodge
+Nationality: American
+Lifespan: 1807      –1893      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1854–1854
+
+Medium: Watercolor on ivory
+Dimensions: Sight: 3 x 2 1/2 in. (7.6 x 6.4 cm)
+
+Credit Line: Morris K. Jesup Fund, 1988
+
+---
+
+Artwork Title: Mrs. George P. Burne
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: John Wood Dodge
+Nationality: American
+Lifespan: 1807      –1893      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1852–1852
+
+Medium: Watercolor on ivory
+Dimensions: Sight: 2 7/16 x 1 15/16 in. (6.2 x 4.9 cm)
+
+Credit Line: Rogers Fund, 1946
+
+---
+
+Artwork Title: Venus in Atrium
+Object Type: Painting
+Classification: Unknown
+
+Artist: William de Leftwich Dodge
+Nationality: American
+Lifespan: 1867      –1935      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1908–1910
+
+Medium: Oil on canvas
+Dimensions: 39 7/8 x 30 in. (99.9 x 76.2 cm)
+
+Credit Line: Gift of Mr. and Mrs. Leftwich Dodge Kimbrough, 1972
+
+---
+
+Artwork Title: Portrait of a Gentleman
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: William M. S. Doyle
+Nationality: American
+Lifespan: 1769      –1828      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1804–1804
+
+Medium: Watercolor on ivory
+Dimensions: Sight: 2 15/16 x 2 5/16 in. (7.5 x 5.9 cm)
+
+Credit Line: The Glenn Tilley Morse Collection, Bequest of Glenn Tilley Morse, 1950
+
+---
+
+Artwork Title: Portrait of a Gentleman
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: William M. S. Doyle
+Nationality: American
+Lifespan: 1769      –1828      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1814–1814
+
+Medium: Watercolor on ivory
+Dimensions: Sight: 2 15/16 x 2 7/16 in. (7.5 x 6.2 cm)
+
+Credit Line: Fletcher Fund, 1937
+
+---
+
+Artwork Title: Self Portrait
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: William M. S. Doyle
+Nationality: American
+Lifespan: 1769      –1828      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1801–1801
+
+Medium: Watercolor on ivory
+Dimensions: Sight: 2 1/2 x 2 in. (6.4 x 5.1 cm)
+
+Credit Line: Gift of J. William Middendorf II, 1968
+
+---
+
+Artwork Title: The Young Sophocles Leading the Chorus of Victory after the Battle of Salamis
+Object Type: Sculpture
+Classification: Unknown
+
+Artist: John Talbott Donoghue
+Nationality: American
+Lifespan: 1854      –1903      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1885–1927
+
+Medium: Bronze
+Dimensions: 92 1/4 x 53 x 32 1/2 in. (234.3 x 134.6 x 82.6 cm)
+
+Credit Line: Rogers Fund, 1927
+
+---
+
+Artwork Title: Windflowers
+Object Type: Painting
+Classification: Unknown
+
+Artist: Ruger Donoho
+Nationality: American
+Lifespan: 1858      –1916      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1912–1912
+
+Medium: Oil on canvas
+Dimensions: 30 x 36 in. (76.2 x 91.4 cm)
+
+Credit Line: Rogers Fund, 1917
+
+---
+
+Artwork Title: On the Hudson
+Object Type: Painting
+Classification: Unknown
+
+Artist: Thomas Doughty
+Nationality: American
+Lifespan: 1793      –1856      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1830–1835
+
+Medium: Oil on canvas
+Dimensions: 14 3/4 x 21 1/2 in. (37.5 x 54.6 cm)
+
+Credit Line: Gift of Samuel P. Avery, 1891
+
+---
+
+Artwork Title: A River Glimpse
+Object Type: Painting
+Classification: Unknown
+
+Artist: Thomas Doughty
+Nationality: American
+Lifespan: 1793      –1856      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1840–1850
+
+Medium: Oil on canvas
+Dimensions: 30 1/4 in. × 25 in. (76.8 × 63.5 cm)
+Framed: 39 1/8 × 34 1/4 × 2 3/4 in. (99.3 × 87 × 7 cm)
+
+Credit Line: Gift of Samuel P. Avery, 1895
+
+---
+
+Artwork Title: River Scene (from McGuire Scrapbook)
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Thomas Doughty
+Nationality: American
+Lifespan: 1793      –1856      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1840–1840
+
+Medium: Graphite on off-white wove paper
+Dimensions: 6 x 7 9/16 in. (15.2 x 19.2 cm)
+
+Credit Line: Gift of James C. McGuire, 1926
+
+---
+
+Artwork Title: Spring Landscape
+Object Type: Painting
+Classification: Unknown
+
+Artist: Thomas Doughty
+Nationality: American
+Lifespan: 1793      –1856      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1850–1856
+
+Medium: Oil on canvas
+Dimensions: 44 x 62 in. (111.8 x 157.5 cm)
+
+Credit Line: Gift of George F. Shelton and Mrs. F. H. Markoe, in memory of their father, Theodore B. Shelton, 1917
+
+---
+
+Artwork Title: Henry Clay
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: Savinien Edme Dubourjal
+Nationality: French
+Lifespan: 1795      –1865      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1842–1845
+
+Medium: Watercolor on ivory
+Dimensions: Sight: 3 5/16 x 2 9/16 in. (8.4 x 6.5 cm)
+
+Credit Line: Bequest of Vincenzo Botta, 1895
+
+---
+
+Artwork Title: John C. Calhoun
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: Savinien Edme Dubourjal
+Nationality: French
+Lifespan: 1795      –1865      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1846–1846
+
+Medium: Watercolor, lead-white gouache, and gum arabic on Bristol board
+Dimensions: 6 1/2 x 4 1/2 in. (16.5 x 11.4 cm)
+
+Credit Line: Bequest of Vincenzo Botta, 1895
+
+---
+
+Artwork Title: Anne Charlotte Lynch (Later Mrs. Vincenzo Botta)
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: Savinien Edme Dubourjal
+Nationality: French
+Lifespan: 1795      –1865      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1844–1847
+
+Medium: Watercolor and lead-white gouache on smooth-surfaced off-white wove paper
+Dimensions: 7 1/4 x 5 1/4 in. (18.4 x 13.3 cm)
+
+Credit Line: Bequest of Vincenzo Botta, 1895
+
+---
+
+Artwork Title: Landscape with Shepherd
+Object Type: Painting
+Classification: Unknown
+
+Artist: Robert S. Duncanson
+Nationality: American
+Lifespan: 1821      –1872      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1852–1852
+
+Medium: Oil on canvas
+Dimensions: 32 1/2 x 48 1/4 in. (82.6 x 122.6 cm)
+
+Credit Line: Purchase, Gift of Hanson K. Corning, by exchange, 1975
+
+---
+
+Artwork Title: Stephen Salisbury
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: Nathaniel Hancock
+Nationality: American
+Lifespan: 1785      –1809      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1790–1800
+
+Medium: Watercolor on ivory
+Dimensions: 1 3/4 x 1 5/16 in. (4.4 x 3.3 cm)
+
+Credit Line: Rogers Fund, 1912
+
+---
+
+Artwork Title: William Gale
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: Joseph Dunkerley
+Nationality: American
+Lifespan: 1776      –1776      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1776–1776
+
+Medium: Watercolor on ivory
+Dimensions: Sight: 1 3/8 x 1 1/8 in. (3.5 x 2.9 cm)
+
+Credit Line: Gift of J. William Middendorf II, 1968
+
+---
+
+Artwork Title: John Adams Conant
+Object Type: Painting
+Classification: Unknown
+
+Artist: William Dunlap
+Nationality: American
+Lifespan: 1766      –1839      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1829–1829
+
+Medium: Oil on wood
+Dimensions: 30 1/8 x 25 in. (76.5 x 63.5 cm)
+
+Credit Line: Gift of John A. Church, 1913
+
+---
+
+Artwork Title: Mrs. John Adams Conant
+Object Type: Painting
+Classification: Unknown
+
+Artist: William Dunlap
+Nationality: American
+Lifespan: 1766      –1839      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1829–1829
+
+Medium: Oil on wood
+Dimensions: 30 1/8 x 25 in. (76.8 x 63.5 cm)
+
+Credit Line: Gift of John A. Church, 1913
+
+---
+
+Artwork Title: Ariadne
+Object Type: Painting
+Classification: Unknown
+
+Artist: Asher Brown Durand|John Vanderlyn
+Nationality: American|American
+Lifespan: 1796      |1775      –1886      |1852      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1828–1835
+
+Medium: Oil on canvas
+Dimensions: 17 1/8 x 19 3/8 in. (43.5 x 49.2 cm)
+
+Credit Line: Gift of Samuel P. Avery, 1897
+
+---
+
+Artwork Title: The Beeches
+Object Type: Painting
+Classification: Unknown
+
+Artist: Asher Brown Durand
+Nationality: American
+Lifespan: 1796      –1886      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1845–1845
+
+Medium: Oil on canvas
+Dimensions: 60 3/8 x 48 1/8 in. (153.4 x 122.2 cm)
+
+Credit Line: Bequest of Maria DeWitt Jesup, from the collection of her husband, Morris K. Jesup, 1914
+
+---
+
+Artwork Title: Francis William Edmonds
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Asher Brown Durand
+Nationality: American
+Lifespan: 1796      –1886      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1841–1841
+
+Medium: Graphite on tan wove paper
+Dimensions: 8 1/2 x 5 1/2 in. (21.6 x 14 cm)
+
+Credit Line: Sheila and Richard J. Schwartz Fund, 1987
+
+---
+
+Artwork Title: High Point: Shandaken Mountains
+Object Type: Painting
+Classification: Unknown
+
+Artist: Asher Brown Durand
+Nationality: American
+Lifespan: 1796      –1886      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1853–1853
+
+Medium: Oil on canvas
+Dimensions: 32 3/4 x 48 in. (83.2 x 121.9 cm)
+
+Credit Line: Bequest of Sarah Ann Ludlum, 1877
+
+---
+
+Artwork Title: Three Trees, Hoboken
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Asher Brown Durand
+Nationality: American
+Lifespan: 1796      –1886      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1834–1834
+
+Medium: Graphite on yellowish buff-colored wove paper
+Dimensions: 9 9/16 x 13 1/2 in. (24.3 x 34.3 cm)
+
+Credit Line: Gift of Nathan Chaikin, 1961
+
+---
+
+Artwork Title: In the Woods
+Object Type: Painting
+Classification: Unknown
+
+Artist: Asher Brown Durand
+Nationality: American
+Lifespan: 1796      –1886      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1855–1855
+
+Medium: Oil on canvas
+Dimensions: 60 3/4 x 48 in. (154.3 x 121.9 cm)
+
+Credit Line: Gift in memory of Jonathan Sturges by his children, 1895
+
+---
+
+Artwork Title: Jonathan Sturges
+Object Type: Painting
+Classification: Unknown
+
+Artist: Asher Brown Durand
+Nationality: American
+Lifespan: 1796      –1886      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1837–1840
+
+Medium: Oil on canvas
+Dimensions: 30 1/2 x 25 in. (77.5 x 63.5 cm)
+
+Credit Line: Bequest of Frederick Sturges Jr., 1977
+
+---
+
+Artwork Title: Landscape (from McGuire Scrapbook)
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Asher Brown Durand
+Nationality: American
+Lifespan: 1796      –1886      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1796–1886
+
+Medium: Graphite on white wove paper
+Dimensions: 7 7/16 x 5 13/16 in. (18.9 x 14.8 cm)
+
+Credit Line: Gift of James C. McGuire, 1926
+
+---
+
+Artwork Title: Landscape—Scene from "Thanatopsis"
+Object Type: Painting
+Classification: Unknown
+
+Artist: Asher Brown Durand
+Nationality: American
+Lifespan: 1796      –1886      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1850–1850
+
+Medium: Oil on canvas
+Dimensions: 39 1/2 x 61 in. (100.3 x 154.9 cm)
+
+Credit Line: Gift of J. Pierpont Morgan, 1911
+
+---
+
+Artwork Title: Luman Reed
+Object Type: Painting
+Classification: Unknown
+
+Artist: Asher Brown Durand
+Nationality: American
+Lifespan: 1796      –1886      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1835–1835
+
+Medium: Oil on canvas
+Dimensions: 30 1/8 x 25 3/8 in. (76.5 x 64.5 cm)
+
+Credit Line: Bequest of Mary Fuller Wilson, 1962
+
+---
+
+Artwork Title: Mrs. Winfield Scott
+Object Type: Painting
+Classification: Unknown
+
+Artist: Asher Brown Durand
+Nationality: American
+Lifespan: 1796      –1886      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1831–1831
+
+Medium: Oil on canvas
+Dimensions: 34 x 27 in. (96.4 x 68.6 cm)
+
+Credit Line: Gift of Mrs. John C. Newington, 1965
+
+---
+
+Artwork Title: River Scene
+Object Type: Painting
+Classification: Unknown
+
+Artist: Asher Brown Durand
+Nationality: American
+Lifespan: 1796      –1886      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1854–1854
+
+Medium: Oil on canvas
+Dimensions: 24 x 34 1/8 in. (61 x 86.7 cm)
+
+Credit Line: Bequest of Mary Starr Van Winkle, 1970
+
+---
+
+Artwork Title: Sketch from Nature
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Asher Brown Durand
+Nationality: American
+Lifespan: 1796      –1886      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1855–1855
+
+Medium: Graphite on gray-green wove paper
+Dimensions: 13 13/16 x 9 7/8 in. (35.1 x 25.1 cm)
+
+Credit Line: Gift of Mrs. John Sylvester, 1936
+
+---
+
+Artwork Title: Summer Afternoon
+Object Type: Painting
+Classification: Unknown
+
+Artist: Asher Brown Durand
+Nationality: American
+Lifespan: 1796      –1886      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1865–1865
+
+Medium: Oil on canvas
+Dimensions: 22 1/2 x 35 in. (57.2 x 88.9 cm)
+
+Credit Line: Bequest of Maria DeWitt Jesup, from the collection of her husband, Morris K. Jesup, 1914
+
+---
+
+Artwork Title: View of New York from New Jersey
+Object Type: Painting
+Classification: Unknown
+
+Artist: Asher Brown Durand
+Nationality: American
+Lifespan: 1796      –1886      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1847–1850
+
+Medium: Oil on canvas
+Dimensions: 15 x 27 1/4 in. (38.1 x 68.8 cm)
+
+Credit Line: Gift of Mary Knight Arnold, 1977
+
+---
+
+Artwork Title: Boy of the Crossfield Family (Possibly Richard Crossfield)
+Object Type: Painting
+Classification: Unknown
+
+Artist: John Durand
+Nationality: American
+Lifespan: 1724      –1824      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1763–1768
+
+Medium: Oil on canvas
+Dimensions: 50 1/4 x 34 1/2 in. (127.6 x 87.6 cm)
+
+Credit Line: Gift of Edgar William and Bernice Chrysler Garbisch, 1969
+
+---
+
+Artwork Title: Susannah or Mary Bontecou
+Object Type: Painting
+Classification: Unknown
+
+Artist: John Durand
+Nationality: American
+Lifespan: 1724      –1824      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1765–1770
+
+Medium: Oil on canvas
+Dimensions: 35 1/2 x 27 5/8 in. (90.2 x 70.2 cm)
+
+Credit Line: Gift of Edgar William and Bernice Chrysler Garbisch, 1962
+
+---
+
+Artwork Title: In the Studio
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: Helen Winslow Durkee
+Nationality: American
+Lifespan: 1880      –1954      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1916–1916
+
+Medium: Watercolor on ivory
+Dimensions: Sight: 5 7/8 x 4 1/2 in. (14.9 x 11.4 cm)
+
+Credit Line: Bequest of Helen Winslow Durkee Mileham, 1954
+
+---
+
+Artwork Title: White Onions
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: Helen Winslow Durkee
+Nationality: American
+Lifespan: 1880      –1954      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1909–1909
+
+Medium: Watercolor on ivory
+Dimensions: Sight: 3 7/16 x 4 3/4 in. (8.7 x 12.1 cm)
+
+Credit Line: Bequest of Helen Winslow Durkee Mileham, 1954
+
+---
+
+Artwork Title: William Wells Durkee
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: Helen Winslow Durkee
+Nationality: American
+Lifespan: 1880      –1954      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1902–1905
+
+Medium: Watercolor on ivory
+Dimensions: Sight: 3 13/16 x 2 7/8 in. (9.7 x 7.3 cm)
+
+Credit Line: Bequest of Helen Winslow Durkee Mileham, 1954
+
+---
+
+Artwork Title: Red School House (Country Scene)
+Object Type: Painting
+Classification: Unknown
+
+Artist: George Henry Durrie
+Nationality: American
+Lifespan: 1820      –1863      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1858–1858
+
+Medium: Oil on canvas
+Dimensions: 26 x 36 1/4 in. (66 x 92.1 cm)
+
+Credit Line: Bequest of Peter H. B. Frelinghuysen, 2011
+
+---
+
+Artwork Title: Lady with Fan
+Object Type: Painting
+Classification: Unknown
+
+Artist: Frank Duveneck
+Nationality: American
+Lifespan: 1848      –1919      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1873–1873
+
+Medium: Oil on canvas
+Dimensions: 42 3/4 x 32 1/4 in. (108.6 x 81.9 cm)
+
+Credit Line: Gift of the Charles F. Williams family, 1966
+
+---
+
+Artwork Title: Tomb Effigy of Elizabeth Boott Duveneck
+Object Type: Sculpture
+Classification: Unknown
+
+Artist: Frank Duveneck
+Nationality: American
+Lifespan: 1848      –1919      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1891–1927
+
+Medium: Bronze and gold leaf
+Dimensions: 28 1/2 x 85 x 41 1/4 in. (72.4 x 215.9 x 104.8 cm)
+
+Credit Line: Rogers Fund, 1927
+
+---
+
+Artwork Title: Mrs. Augustus Jay
+Object Type: Painting
+Classification: Unknown
+
+Artist: Gerrit Duyckinck
+Nationality: American
+Lifespan: 1660      –1712      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1697–1700
+
+Medium: Oil on wood
+Dimensions: 31 3/4 x 22 1/2 in. (80.6 x 57.1 cm)
+
+Credit Line: Gift of Edgar William and Bernice Chrysler Garbisch, 1970
+
+---
+
+Artwork Title: Portrait of a Lady
+Object Type: Painting
+Classification: Unknown
+
+Artist: Gerrit Duyckinck
+Nationality: American
+Lifespan: 1660      –1712      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1705–1715
+
+Medium: Oil on wood
+Dimensions: 41 1/4 x 32 3/4 in. (104.8 x 83.2 cm)
+
+Credit Line: Gift of Edgar William and Bernice Chrysler Garbisch, 1972
+
+---
+
+Artwork Title: Arcadia
+Object Type: Painting
+Classification: Unknown
+
+Artist: Thomas Eakins
+Nationality: American
+Lifespan: 1844      –1916      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1880–1883
+
+Medium: Oil on canvas
+Dimensions: 38 5/8 x 45 in. (98.1 x 114.3 cm)
+
+Credit Line: Bequest of Miss Adelaide Milton de Groot (1876-1967), 1967
+
+---
+
+Artwork Title: The Artist's Wife and His Setter Dog
+Object Type: Painting
+Classification: Unknown
+
+Artist: Thomas Eakins
+Nationality: American
+Lifespan: 1844      –1916      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1881–1889
+
+Medium: Oil on canvas
+Dimensions: 30 x 23 in. (76.2 x 58.4 cm)
+
+Credit Line: Fletcher Fund, 1923
+
+---
+
+Artwork Title: Carmelita Requena
+Object Type: Painting
+Classification: Unknown
+
+Artist: Thomas Eakins
+Nationality: American
+Lifespan: 1844      –1916      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1869–1869
+
+Medium: Oil on canvas
+Dimensions: 21 x 17 in. (53.3 x 43.2 cm)
+
+Credit Line: Bequest of Mary Cushing Fosburgh, 1978
+
+---
+
+Artwork Title: The Chess Players
+Object Type: Painting
+Classification: Unknown
+
+Artist: Thomas Eakins
+Nationality: American
+Lifespan: 1844      –1916      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1876–1876
+
+Medium: Oil on wood
+Dimensions: 11 3/4 x 16 3/4 in. (29.8 x 42.6 cm)
+
+Credit Line: Gift of the artist, 1881
+
+---
+
+Artwork Title: Cowboy Singing
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: Thomas Eakins
+Nationality: American
+Lifespan: 1844      –1916      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1889–1892
+
+Medium: Watercolor and graphite on off-white wove paper
+Dimensions: 18 7/8 x 14 15/16 in. (47.9 x 37.9 cm)
+
+Credit Line: Fletcher Fund, 1925
+
+---
+
+Artwork Title: The Gross Clinic
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: Thomas Eakins
+Nationality: American
+Lifespan: 1844      –1916      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1875–1875
+
+Medium: India ink and watercolor on cardboard
+Dimensions: 23 3/4 x 19 1/4 in. (60.3 x 48.9 cm)
+
+Credit Line: Rogers Fund, 1923
+
+---
+
+Artwork Title: Homespun
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: Thomas Eakins
+Nationality: American
+Lifespan: 1844      –1916      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1881–1881
+
+Medium: Watercolor on off-white wove paper
+Dimensions: 13 7/8 x 10 3/4 in. (35.2 x 27.3 cm)
+
+Credit Line: Fletcher Fund, 1925
+
+---
+
+Artwork Title: James MacAlister (Sketch)
+Object Type: Painting
+Classification: Unknown
+
+Artist: Thomas Eakins
+Nationality: American
+Lifespan: 1844      –1916      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1892–1895
+
+Medium: Oil on canvas
+Dimensions: 14 1/4 x 10 1/4 in. (36.8 x 26 cm)
+
+Credit Line: Bequest of Miss Adelaide Milton de Groot (1876-1967), 1967
+
+---
+
+Artwork Title: John Biglin in a Single Scull
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: Thomas Eakins
+Nationality: American
+Lifespan: 1844      –1916      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1870–1873
+
+Medium: Watercolor on off-white wove paper
+Dimensions: 19 5/16 x 24 7/8 in. (49.1 x 63.2 cm)
+
+Credit Line: Fletcher Fund, 1924
+
+---
+
+Artwork Title: The Champion Single Sculls (Max Schmitt in a Single Scull)
+Object Type: Painting
+Classification: Unknown
+
+Artist: Thomas Eakins
+Nationality: American
+Lifespan: 1844      –1916      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1871–1871
+
+Medium: Oil on canvas
+Dimensions: 32 1/4 x 46 1/4 in. (81.9 x 117.5 cm)
+
+Credit Line: Purchase, The Alfred N. Punnett Endowment Fund and George D. Pratt Gift, 1934
+
+---
+
+Artwork Title: Mrs. Mary Arthur
+Object Type: Painting
+Classification: Unknown
+
+Artist: Thomas Eakins
+Nationality: American
+Lifespan: 1844      –1916      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1900–1900
+
+Medium: Oil on canvas
+Dimensions: 24 x 20 in. (61 x 50.8 cm)
+
+Credit Line: Gift of Mary Arthur Bates, 1965
+
+---
+
+Artwork Title: The Dancing Lesson
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: Thomas Eakins
+Nationality: American
+Lifespan: 1844      –1916      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1878–1878
+
+Medium: Watercolor on off-white wove paper
+Dimensions: 18 1/16 x 22 9/16 in. (45.9 x 57.3 cm)
+
+Credit Line: Fletcher Fund, 1925
+
+---
+
+Artwork Title: The Pathetic Song
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: Thomas Eakins
+Nationality: American
+Lifespan: 1844      –1916      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1881–1881
+
+Medium: Watercolor on off-white wove paper
+Dimensions: 16 3/4 x 11 3/16 in. (42.5 x 28.4 cm)
+
+Credit Line: Bequest of Joan Whitney Payson, 1975
+
+---
+
+Artwork Title: Perspective Drawing for the "Chess Players"
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Thomas Eakins
+Nationality: American
+Lifespan: 1844      –1916      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1875–1875
+
+Medium: Graphite and ink on cardboard
+Dimensions: 24 x 19 in. (61 x 48.3 cm)
+
+Credit Line: Fletcher Fund, 1942
+
+---
+
+Artwork Title: Pushing for Rail
+Object Type: Painting
+Classification: Unknown
+
+Artist: Thomas Eakins
+Nationality: American
+Lifespan: 1844      –1916      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1874–1874
+
+Medium: Oil on canvas
+Dimensions: 13 x 30 1/16 in. (33 x 76.4 cm)
+
+Credit Line: Arthur Hoppock Hearn Fund, 1916
+
+---
+
+Artwork Title: Signora Gomez d'Arza
+Object Type: Painting
+Classification: Unknown
+
+Artist: Thomas Eakins
+Nationality: American
+Lifespan: 1844      –1916      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1901–1902
+
+Medium: Oil on canvas
+Dimensions: 30 x 24 in. (76.2 x 61 cm)
+
+Credit Line: George A. Hearn Fund, 1927
+
+---
+
+Artwork Title: Taking Up the Net
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: Thomas Eakins
+Nationality: American
+Lifespan: 1844      –1916      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1881–1881
+
+Medium: Watercolor on off-white wove paper
+Dimensions: 9 9/16 x 14 1/8 in. (24.3 x 35.9 cm)
+
+Credit Line: Fletcher Fund, 1925
+
+---
+
+Artwork Title: The Thinker: Portrait of Louis N. Kenton
+Object Type: Painting
+Classification: Unknown
+
+Artist: Thomas Eakins
+Nationality: American
+Lifespan: 1844      –1916      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1900–1900
+
+Medium: Oil on canvas
+Dimensions: 82 x 42 in. (208.3 x 106.7 cm)
+
+Credit Line: John Stewart Kennedy Fund, 1917
+
+---
+
+Artwork Title: The Writing Master
+Object Type: Painting
+Classification: Unknown
+
+Artist: Thomas Eakins
+Nationality: American
+Lifespan: 1844      –1916      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1882–1882
+
+Medium: Oil on canvas
+Dimensions: 30 x 34 1/4 in. (76.2 x 87 cm)
+
+Credit Line: John Stewart Kennedy Fund, 1917
+
+---
+
+Artwork Title: Young Girl Meditating
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: Thomas Eakins
+Nationality: American
+Lifespan: 1844      –1916      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1877–1877
+
+Medium: Watercolor and gouache on off-white wove paper
+Dimensions: 9 9/16 x 6 1/8 in. (24.3 x 15.6 cm)
+
+Credit Line: Fletcher Fund, 1925
+
+---
+
+Artwork Title: Elijah Boardman
+Object Type: Painting
+Classification: Unknown
+
+Artist: Ralph Earl
+Nationality: American
+Lifespan: 1751      –1801      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1789–1789
+
+Medium: Oil on canvas
+Dimensions: 83 x 51 in. (210.8 x 129.5 cm)
+
+Credit Line: Bequest of Susan W. Tyler, 1979
+
+---
+
+Artwork Title: Lady Williams and Child
+Object Type: Painting
+Classification: Unknown
+
+Artist: Ralph Earl
+Nationality: American
+Lifespan: 1751      –1801      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1783–1783
+
+Medium: Oil on canvas
+Dimensions: 50 1/4 x 39 3/4 in. (127.3 x 101 cm)
+
+Credit Line: Rogers Fund, 1906
+
+---
+
+Artwork Title: Marinus Willett
+Object Type: Painting
+Classification: Unknown
+
+Artist: Ralph Earl
+Nationality: American
+Lifespan: 1751      –1801      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1788–1791
+
+Medium: Oil on canvas
+Dimensions: 91 1/4 x 56 in.  (231.8 x 142.2 cm)
+
+Credit Line: Bequest of George Willett Van Nest, 1916
+
+---
+
+Artwork Title: Master Rees Goring Thomas
+Object Type: Painting
+Classification: Unknown
+
+Artist: Ralph Earl
+Nationality: American
+Lifespan: 1751      –1801      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1780–1784
+
+Medium: Oil on canvas
+Dimensions: 66 x 47 5/8 in. (167.6 x 121 cm)
+
+Credit Line: Bequest of Maria DeWitt Jesup, from the collection of her husband, Morris K. Jesup, 1914
+
+---
+
+Artwork Title: Mrs. Noah Smith and Her Children
+Object Type: Painting
+Classification: Unknown
+
+Artist: Ralph Earl
+Nationality: American
+Lifespan: 1751      –1801      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1798–1798
+
+Medium: Oil on canvas
+Dimensions: 64 x 85 3/4 in. (162.6 x 217.8 cm)
+
+Credit Line: Gift of Edgar William and Bernice Chrysler Garbisch, 1964
+
+---
+
+Artwork Title: Mrs. Williams
+Object Type: Painting
+Classification: Unknown
+
+Artist: Ralph E. W. Earl
+Nationality: American
+Lifespan: 1785      –1838      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1837–1837
+
+Medium: Oil on canvas
+Dimensions: 37 1/2 x 30 1/2 in. (94.5 x 76.7 cm)
+
+Credit Line: Gift of Edgar William and Bernice Chrysler Garbisch, 1966
+
+---
+
+Artwork Title: The Alling Children
+Object Type: Painting
+Classification: Unknown
+
+Artist: Oliver Tarbell Eddy
+Nationality: American
+Lifespan: 1799      –1868      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1836–1839
+
+Medium: Oil on canvas
+Dimensions: 47 1/8 x 62 7/8 in. (119.7 x 159.7 cm)
+
+Credit Line: Gift of Edgar William and Bernice Chrysler Garbisch, 1966
+
+---
+
+Artwork Title: The Sensitive Plant
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: Maria Edgar
+Nationality: American
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1808–1808
+
+Medium: Watercolor and graphite on off-white wove paper
+Dimensions: 21 1/2 x 15 3/4 in. (54.6 x 40 cm)
+
+Credit Line: Bequest of Maria P. James, 1910
+
+---
+
+Artwork Title: Mother Love
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: Mira Edgerly
+Nationality: American
+Lifespan: 1872      –1954      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1911–1911
+
+Medium: Watercolor on ivory
+Dimensions: Sight: 8 3/4 x 6 3/16 in. (22.2 x 15.7 cm)
+
+Credit Line: Gift of Mrs. Henry Fairfield Osborn, 1920
+
+---
+
+Artwork Title: Dog (from McGuire Scrapbook)
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Francis William Edmonds
+Nationality: American
+Lifespan: 1806      –1863      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1806–1863
+
+Medium: Graphite on off-white wove paper
+Dimensions: 6 11/16 x 8 in. (17 x 20.3 cm)
+
+Credit Line: Gift of James C. McGuire, 1926
+
+---
+
+Artwork Title: Sketchbook of Figure and Landscape Subjects
+Object Type: Sketchbook
+Classification: Unknown
+
+Artist: Francis William Edmonds
+Nationality: American
+Lifespan: 1806      –1863      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1838–1863
+
+Medium: Drawings in graphite and pen and brown ink on off-white wove paper, bound in marbled paper with leather spine and corners
+Dimensions: Cover: 6 5/8 x 8 1/4 in. (16.8 x 21 cm)
+Sheets: 6 5/8 x 8 1/4 in. (16.8 x 21 cm)
+
+Credit Line: Sheila and Richard J. Schwartz Fund, 1987
+
+---
+
+Artwork Title: Study for Facing the Enemy (from McGuire Scrapbook)
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Francis William Edmonds
+Nationality: American
+Lifespan: 1806      –1863      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1845–1845
+
+Medium: Graphite on white wove paper
+Dimensions: 6 7/8 x 6 5/8 in. (17.5 x 16.8 cm)
+
+Credit Line: Gift of James C. McGuire, 1926
+
+---
+
+Artwork Title: The New Bonnet
+Object Type: Painting
+Classification: Unknown
+
+Artist: Francis William Edmonds
+Nationality: American
+Lifespan: 1806      –1863      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1858–1858
+
+Medium: Oil on canvas
+Dimensions: 25 x 30 1/8 in. (63.5 x 76.5 cm)
+
+Credit Line: Purchase, Erving Wolf Foundation Gift and Gift of Hanson K. Corning, by exchange, 1975
+
+---
+
+Artwork Title: Samuel Humes
+Object Type: Painting
+Classification: Unknown
+
+Artist: Jacob Eichholtz
+Nationality: American
+Lifespan: 1776      –1842      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1822–1825
+
+Medium: Oil on canvas
+Dimensions: 29 x 24 1/8 in. (73.7 x 61.3 cm)
+
+Credit Line: Maria DeWitt Jesup Fund, 1959
+
+---
+
+Artwork Title: Isaac D. Fletcher
+Object Type: Painting
+Classification: Unknown
+
+Artist: Carnig Eksergian
+Nationality: American
+Lifespan: 1859      –1931      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1914–1914
+
+Medium: Oil on canvas
+Dimensions: 40 1/4 x 30 1/4 in. (102.2 x 76.8 cm)
+
+Credit Line: Mr. and Mrs. Isaac D. Fletcher Collection, Bequest of Isaac D. Fletcher, 1917
+
+---
+
+Artwork Title: Landscape (from McGuire Scrapbook)
+Object Type: Drawing
+Classification: Unknown
+
+Artist: W. Eldridge
+Nationality: American
+Lifespan:           –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1830–1830
+
+Medium: Graphite on white wove paper
+Dimensions: 6 7/8 x 8 5/8 in. (17.5 x 21.9 cm)
+
+Credit Line: Gift of James C. McGuire, 1926
+
+---
+
+Artwork Title: Andrew Varick Stout
+Object Type: Painting
+Classification: Unknown
+
+Artist: Charles Loring Elliott
+Nationality:  
+Lifespan: 1812      –1868      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1859–1859
+
+Medium: Oil on canvas
+Dimensions: 44 x 37 5/8 in. (111.8 x 95.6 cm)
+
+Credit Line: Gift of his great-grandson, Andrew Varick Stout, 1965
+
+---
+
+Artwork Title: Caleb Gasper
+Object Type: Painting
+Classification: Unknown
+
+Artist: Charles Loring Elliott
+Nationality:  
+Lifespan: 1812      –1868      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1852–1852
+
+Medium: Oil on canvas
+Dimensions: 33 1/4 x 25 in. (84.5 x 63.5 cm)
+
+Credit Line: Gift of Mrs. Henry G. Marquand, 1900
+
+---
+
+Artwork Title: Mathew B. Brady
+Object Type: Painting
+Classification: Unknown
+
+Artist: Charles Loring Elliott
+Nationality:  
+Lifespan: 1812      –1868      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1857–1857
+
+Medium: Oil on canvas
+Dimensions: 24 x 20 in. (61 x 50.8 cm)
+
+Credit Line: Gift of the Friends of Mathew Brady, 1896
+
+---
+
+Artwork Title: Mrs. James Clinton Griswold
+Object Type: Painting
+Classification: Unknown
+
+Artist: Charles Loring Elliott
+Nationality:  
+Lifespan: 1812      –1868      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1854–1854
+
+Medium: Oil on canvas
+Dimensions: 36 1/8 x 29 1/4 in. (91.8 x 74.3 cm)
+
+Credit Line: Gift of Mrs. Henry G. Marquand, 1900
+
+---
+
+Artwork Title: Portrait of the Artist
+Object Type: Painting
+Classification: Unknown
+
+Artist: Charles Loring Elliott
+Nationality:  
+Lifespan: 1812      –1868      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1847–1850
+
+Medium: Oil on canvas
+Dimensions: 30 1/8 x 24 1/2 in. (76.5 x 62.2 cm)
+
+Credit Line: Gift of Robert Hoe Jr., 1887
+
+---
+
+Artwork Title: Preston Hodges
+Object Type: Painting
+Classification: Unknown
+
+Artist: Charles Loring Elliott
+Nationality:  
+Lifespan: 1812      –1868      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1850–1850
+
+Medium: Oil on canvas
+Dimensions: 27 x 22 in. (68.6 x 55.9 cm)
+
+Credit Line: Bequest of Seddie Boardman Aspell, 1927
+
+---
+
+Artwork Title: Julia Ward Howe
+Object Type: Drawing
+Classification: Unknown
+
+Artist: John Elliott
+Nationality: American, born England
+Lifespan: 1858      –1925      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1901–1901
+
+Medium: Red chalk on gray wove paper
+Dimensions: 29 7/8 x 21 7/16 in. (75.9 x 54.5 cm)
+
+Credit Line: Gift of several friends, 1904
+
+---
+
+Artwork Title: Portrait of an Old Lady
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: James Sanford Ellsworth
+Nationality: American
+Lifespan: 1802      –1873      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1837–1845
+
+Medium: Watercolor on paper
+Dimensions: Sight: 3 1/16 x 2 1/2 in. (7.8 x 6.4 cm)
+
+Credit Line: Bequest of Mary Martin, 1938
+
+---
+
+Artwork Title: Aqua Viva
+Object Type: Sculpture
+Classification: Unknown
+
+Artist: Frank Edwin Elwell
+Nationality: American
+Lifespan: 1858      –1922      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1884–1884
+
+Medium: Bronze
+Dimensions: 48 x 18 1/2 x 24 in. (121.9 x 47 x 61 cm)
+
+Credit Line: Gift of the artist, 1888
+
+---
+
+Artwork Title: The Tow Boat Conqueror
+Object Type: Painting
+Classification: Unknown
+
+Artist: James Guy Evans
+Nationality: American
+Lifespan: 1798      –1898      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1852–1852
+
+Medium: Oil on canvas
+Dimensions: 39 1/2 x 50 in. (100.3 x 127 cm)
+
+Credit Line: Gift of Edgar William and Bernice Chrysler Garbisch, 1962
+
+---
+
+Artwork Title: Calliope
+Object Type: Painting
+Classification: Unknown
+
+Artist: Joseph Fagnani
+Nationality:  
+Lifespan: 1819      –1873      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1869–1869
+
+Medium: Oil on canvas
+Dimensions: 43 1/2 x 33 1/2 in. (110.5 x 83.8 cm)
+
+Credit Line: Gift of an Association of Ladies and Gentlemen, 1874
+
+---
+
+Artwork Title: Clio
+Object Type: Painting
+Classification: Unknown
+
+Artist: Joseph Fagnani
+Nationality:  
+Lifespan: 1819      –1873      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1869–1869
+
+Medium: Oil on canvas
+Dimensions: 43 1/2 x 33 1/2 in. (110.5 x 83.8 cm)
+
+Credit Line: Gift of an Association of Ladies and Gentlemen, 1874
+
+---
+
+Artwork Title: Erato
+Object Type: Painting
+Classification: Unknown
+
+Artist: Joseph Fagnani
+Nationality:  
+Lifespan: 1819      –1873      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1869–1869
+
+Medium: Oil on canvas
+Dimensions: 43 1/2 x 33 1/2 in. (110.5 x 83.8 cm)
+
+Credit Line: Gift of an Association of Ladies and Gentlemen, 1874
+
+---
+
+Artwork Title: Euterpe
+Object Type: Painting
+Classification: Unknown
+
+Artist: Joseph Fagnani
+Nationality:  
+Lifespan: 1819      –1873      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1869–1869
+
+Medium: Oil on canvas
+Dimensions: 43 1/2 x 33 1/2 in. (110.5 x 83.8 cm)
+
+Credit Line: Gift of an Association of Ladies and Gentlemen, 1874
+
+---
+
+Artwork Title: Melpomene
+Object Type: Painting
+Classification: Unknown
+
+Artist: Joseph Fagnani
+Nationality:  
+Lifespan: 1819      –1873      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1869–1869
+
+Medium: Oil on canvas
+Dimensions: 43 1/2 x 33 1/2 in. (110.5 x 83.8 cm)
+
+Credit Line: Gift of an Association of Ladies and Gentlemen, 1874
+
+---
+
+Artwork Title: Polyhymnia
+Object Type: Painting
+Classification: Unknown
+
+Artist: Joseph Fagnani
+Nationality:  
+Lifespan: 1819      –1873      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1869–1869
+
+Medium: Oil on canvas
+Dimensions: 43 1/2 x 33 1/2 in. (110.5 x 83.8 cm)
+
+Credit Line: Gift of an Association of Ladies and Gentlemen, 1874
+
+---
+
+Artwork Title: Terpsichore
+Object Type: Painting
+Classification: Unknown
+
+Artist: Joseph Fagnani
+Nationality:  
+Lifespan: 1819      –1873      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1869–1869
+
+Medium: Oil on canvas
+Dimensions: 43 1/2 x 33 1/2 in. (110.5 x 83.8 cm)
+
+Credit Line: Gift of an Association of Ladies and Gentlemen, 1874
+
+---
+
+Artwork Title: Thalia
+Object Type: Painting
+Classification: Unknown
+
+Artist: Joseph Fagnani
+Nationality:  
+Lifespan: 1819      –1873      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1869–1869
+
+Medium: Oil on canvas
+Dimensions: 43 1/2 x 33 1/2 in. (110.5 x 83.8 cm)
+
+Credit Line: Gift of an Association of Ladies and Gentlemen, 1874
+
+---
+
+Artwork Title: Urania
+Object Type: Painting
+Classification: Unknown
+
+Artist: Joseph Fagnani
+Nationality:  
+Lifespan: 1819      –1873      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1869–1869
+
+Medium: Oil on canvas
+Dimensions: 43 1/2 x 33 1/2 in. (110.5 x 83.8 cm)
+
+Credit Line: Gift of an Association of Ladies and Gentlemen, 1874
+
+---
+
+Artwork Title: Union Park, New York
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: Sarah Fairchild
+Nationality: American
+Lifespan: 1795      –1895      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1845–1845
+
+Medium: Watercolor, gouache, pen and ink, and graphite on off-white wove paper
+Dimensions: 13 7/8 x 17 13/16 in. (35.2 x 45.2 cm)
+
+Credit Line: Bequest of Edgar William and Bernice Chrysler Garbisch, 1979
+
+---
+
+Artwork Title: Barracks at Fort Pitt (from Cropsey Album)
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: John Mackie Falconer
+Nationality: American
+Lifespan: 1820      –1903      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1820–1903
+
+Medium: Watercolor and graphite on smooth-surfaced white wove paper
+Dimensions: 6 1/8 x 4 1/2 in. (15.6 x 11.4 cm)
+
+Credit Line: Purchase, Charles and Anita Blatt Gift, 1970
+
+---
+
+Artwork Title: Lake Scene with Trees (from Cropsey Album)
+Object Type: Drawing
+Classification: Unknown
+
+Artist: John Mackie Falconer
+Nationality: American
+Lifespan: 1820      –1903      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1854–1854
+
+Medium: Pen and brown ink on white wove paper
+Dimensions: 3 x 2 1/2 in. (7.6 x 6.4 cm)
+
+Credit Line: Purchase, Charles and Anita Blatt Gift, 1970
+
+---
+
+Artwork Title: Montmorency Falls, Canada
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: John Mackie Falconer
+Nationality: American
+Lifespan: 1820      –1903      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1850–1850
+
+Medium: Watercolor, gouache, and graphite on light brown wove paper
+Dimensions: 13 15/16 x 9 7/8 in. (35.4 x 25.1 cm)
+
+Credit Line: Gift of Mr. and Mrs. Stuart P. Feld, 1972
+
+---
+
+Artwork Title: City and Sunset
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: Henry Farrer
+Nationality: American
+Lifespan: 1844      –1903      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1843–1903
+
+Medium: Watercolor on off-white wove paper
+Dimensions: 9 1/16 x 11 3/8 in. (23 x 28.9 cm)
+
+Credit Line: Purchase, Gifts of Mrs. Louise Lamson and Mrs. Alfred N. Lawrence, Bequest of Antoinette D. T. Throckmorton, in memory of Jules and Ella Turcas, and Bequest of May Blackstone Huntington, by exchange; Mr. and Mrs. Harry L. Koenigsberg, Walter Knight Sturges and Vain and Harry Fish Foundation Gifts and Maria DeWitt Jesup Fund, 1985
+
+---
+
+Artwork Title: Woman Walking beside a River
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: Henry Farrer
+Nationality: American
+Lifespan: 1844      –1903      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1902–1902
+
+Medium: Watercolor and graphite on white wove paper
+Dimensions: 9 1/4 x 14 3/16 in. (23.5 x 36 cm)
+
+Credit Line: Purchase, Bequest of Vera Ruth Miller, by exchange, 1983
+
+---
+
+Artwork Title: Tench Francis
+Object Type: Painting
+Classification: Unknown
+
+Artist: Robert Feke
+Nationality: American
+Lifespan: 1708      –1751      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1746–1746
+
+Medium: Oil on canvas
+Dimensions: 49 x 39 in. (124.5 x 99.1 cm)
+
+Credit Line: Maria DeWitt Jesup Fund, 1934
+
+---
+
+Artwork Title: Caesarea Philippi (Banias)
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: Harry Fenn
+Nationality: American, born England
+Lifespan: 1845      –1911      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1845–1911
+
+Medium: Watercolor, gouache, brown ink, and graphite on light brown wove paper
+Dimensions: 12 11/16 x 20 5/8 in. (32.2 x 52.4 cm)
+
+Credit Line: Maria DeWitt Jesup and Morris K. Jesup Funds, 1980
+
+---
+
+Artwork Title: The Cypress-Shingle Yard, Ocklawaha River, Florida
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: Harry Fenn
+Nationality: American, born England
+Lifespan: 1845      –1911      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1870–1870
+
+Medium: Watercolor, gouache, graphite, and gum arabic on light tan wove paper
+Dimensions: 7 5/16 x 10 3/4 in. (18.6 x 27.3 cm)
+
+Credit Line: Purchase, Frederick H. Rohlfs Gift, 1973
+
+---
+
+Artwork Title: Ethel Constance Fernow
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: Bernice Pauahi Andrews Fernow
+Nationality: American
+Lifespan: 1881      –1969      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1932–1932
+
+Medium: Watercolor on ivory
+Dimensions: Sight: 4 1/4 x 3 1/8 in. (10.8 x 7.9 cm)
+
+Credit Line: Gift of the artist, 1935
+
+---
+
+Artwork Title: The Death of the First Born
+Object Type: Painting
+Classification: Unknown
+
+Artist: Erastus Salisbury Field
+Nationality: American
+Lifespan: 1805      –1900      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1865–1880
+
+Medium: Oil on canvas
+Dimensions: 35 x 46 in. (88.9 x 116.8 cm)
+
+Credit Line: Gift of Edgar William and Bernice Chrysler Garbisch, 1966
+
+---
+
+Artwork Title: Egyptian Scene (possibly Moses and Zipporah)
+Object Type: Painting
+Classification: Unknown
+
+Artist: Erastus Salisbury Field
+Nationality: American
+Lifespan: 1805      –1900      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1865–1880
+
+Medium: Oil on canvas
+Dimensions: 35 x 46 in. (88.9 x 116.8 cm)
+
+Credit Line: Gift of Edgar William and Bernice Chrysler Garbisch, 1966
+
+---
+
+Artwork Title: Girl of the Bangs-Phelps Family
+Object Type: Painting
+Classification: Unknown
+
+Artist: Erastus Salisbury Field
+Nationality: American
+Lifespan: 1805      –1900      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1845–1848
+
+Medium: Oil on canvas
+Dimensions: 58 3/4 x 30 1/4 in. (149.2 x 76.8 cm)
+
+
+Credit Line: Gift of Edgar William and Bernice Chrysler Garbisch, 1963
+
+---
+
+Artwork Title: Sharp Delany
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: Robert Field
+Nationality: American, born England
+Lifespan: 1764      –1819      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1799–1799
+
+Medium: Watercolor on ivory
+Dimensions: 2 7/8 x 2 5/16 in. (7.3 x 5.9 cm)
+
+Credit Line: Maria DeWitt Jesup Fund, 1931
+
+---
+
+Artwork Title: George Washington
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: Robert Field
+Nationality: American, born England
+Lifespan: 1764      –1819      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1797–1800
+
+Medium: Watercolor on ivory
+Dimensions: 3 1/8 x 2 7/16 in. (7.9 x 6.2 cm)
+
+Credit Line: Bequest of Charles Allen Munn, 1924
+
+---
+
+Artwork Title: Robert Gilmor Sr.
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: Robert Field
+Nationality: American, born England
+Lifespan: 1764      –1819      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1804–1804
+
+Medium: Watercolor on ivory
+Dimensions: 3 1/2 x 2 3/4 in. (8.9 x 7 cm)
+
+Credit Line: Bequest of Charles Allen Munn, 1924
+
+---
+
+Artwork Title: Robert Stuart
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: Robert Field
+Nationality: American, born England
+Lifespan: 1764      –1819      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1804–1804
+
+Medium: Watercolor on ivory
+Dimensions: 2 7/8 x 2 5/16 in. (7.3 x 5.9 cm)
+
+Credit Line: Fletcher Fund, 1939
+
+---
+
+Artwork Title: Sarah Louisa Jenkins
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: Robert Field
+Nationality: American, born England
+Lifespan: 1764      –1819      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1804–1804
+
+Medium: Watercolor on ivory
+Dimensions: Sight: 3 1/4 x 2 5/8 in. (8.3 x 6.7 cm)
+
+Credit Line: Rogers Fund, 1946
+
+---
+
+Artwork Title: Scene with Dogs (from McGuire Scrapbook)
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Alvan Fisher
+Nationality: American
+Lifespan: 1792      –1863      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1836–1836
+
+Medium: Graphite on off-white wove paper
+Dimensions: 4 11/16 x 7 3/16 in. (11.9 x 18.3 cm)
+
+Credit Line: Gift of James C. McGuire, 1926
+
+---
+
+Artwork Title: Mark Twain
+Object Type: Painting
+Classification: Unknown
+
+Artist: Charles Noel Flagg
+Nationality: American
+Lifespan: 1848      –1916      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1890–1890
+
+Medium: Oil on canvas
+Dimensions: 40 1/4 x 32 3/8 in. (102.2 x 82.2 cm)
+
+Credit Line: Gift of Ellen Earle Flagg, 1917
+
+---
+
+Artwork Title: Augustus Saint-Gaudens
+Object Type: Bust
+Classification: Unknown
+
+Artist: John Flanagan
+Nationality: American
+Lifespan: 1865      –1952      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1905–1924
+
+Medium: Bronze
+Dimensions: 16 1/2 x 8 x 10 in., 57lb. (41.9 x 20.3 x 25.4 cm)
+
+Credit Line: Francis Lathrop Fund, 1933
+
+---
+
+Artwork Title: In the Connecticut Hills
+Object Type: Painting
+Classification: Unknown
+
+Artist: Ben Foster
+Nationality: American
+Lifespan: 1852      –1926      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1913–1914
+
+Medium: Oil on canvas
+Dimensions: 41 7/8 x 47 7/8 in. (106.4 x 121.6 cm)
+
+Credit Line: Arthur Hoppock Hearn Fund, 1914
+
+---
+
+Artwork Title: Still Life with Fruit
+Object Type: Painting
+Classification: Unknown
+
+Artist: John F. Francis
+Nationality: American
+Lifespan: 1808      –1886      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1854–1857
+
+Medium: Oil on canvas
+Dimensions: 25 1/8 x 30 in. (63.8 x 76.2 cm)
+
+Credit Line: Gift of Margaret Burnett Reheis, in memory of her mother, Helen Moffatt Burnett, 1982
+
+---
+
+Artwork Title: Portrait of a Gentleman
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: William Franks
+Nationality: American
+Lifespan: 1795      –1798      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1792–1795
+
+Medium: Watercolor on ivory
+Dimensions: Sight: 2 3/4 x 2 3/16 in. (7 x 5.6 cm)
+
+Credit Line: Rogers Fund, 1949
+
+---
+
+Artwork Title: Alphonso T. Clearwater
+Object Type: Painting
+Classification: Unknown
+
+Artist: August R. Franzen
+Nationality: American
+Lifespan: 1863      –1938      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1894–1906
+
+Medium: Oil on canvas
+Dimensions: 48 5/8 x 37 3/8 in. (123.5 x 94.9 cm)
+
+Credit Line: Bequest of Alphonso T. Clearwater, 1933
+
+---
+
+Artwork Title: Dr. Francis Kinloch Huger
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: Charles Fraser
+Nationality:  
+Lifespan: 1782      –1860      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1825–1825
+
+Medium: Watercolor on ivory
+Dimensions: 4 3/4 x 3 7/8 in. (12.1 x 9.8 cm); 10 oz. 16 dwt. (336 g)
+
+Credit Line: Harris Brisbane Dick Fund, 1938
+
+---
+
+Artwork Title: Mrs. Jean Pierre Barre
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: Charles Fraser
+Nationality:  
+Lifespan: 1782      –1860      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1817–1820
+
+Medium: Watercolor on ivory
+Dimensions: 3 13/16 x 3 1/8 in. (9.7 x 7.9 cm)
+
+Credit Line: Bequest of Emilie Dubois, 1953
+
+---
+
+Artwork Title: Powell Macrae
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: Charles Fraser
+Nationality:  
+Lifespan: 1782      –1860      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1833–1833
+
+Medium: Watercolor on ivory
+Dimensions: 3 7/8 x 3 3/16 in. (9.8 x 8.1 cm)
+
+Credit Line: Gift of Jacqueline L. Hammond, 1963
+
+---
+
+Artwork Title: Rev. Christopher Edwards Gadsden
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: Charles Fraser
+Nationality:  
+Lifespan: 1782      –1860      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1819–1819
+
+Medium: Watercolor on ivory
+Dimensions: 4 5/16 x 3 1/2 in. (11 x 8.9 cm)
+
+Credit Line: The Alfred N. Punnett Endowment Fund, 1928
+
+---
+
+Artwork Title: Henry Clay
+Object Type: Painting
+Classification: Unknown
+
+Artist: Oliver Frazer
+Nationality: American
+Lifespan: 1808      –1864      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1837–1840
+
+Medium: Oil on metal (possibly tin)
+Dimensions: 5 11/16 x 4 3/4 in. (14.4 x 12.1 cm)
+
+Credit Line: Gift of J. William Middendorf II, 1968
+
+---
+
+Artwork Title: Woman Asleep on Pillow
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Kenneth Frazier
+Nationality: American
+Lifespan: 1867      –1949      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1886–1886
+
+Medium: Pastel on gray paper
+Dimensions: 9 3/8 x 14 5/8 in. (23.8 x 37.1 cm)
+
+Credit Line: Gift of Mrs. Leonard Spencer Karp, in memory of her husband, 1981
+
+---
+
+Artwork Title: Portrait of a Lady
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: George Freeman
+Nationality:  
+Lifespan: 1789      –1868      
+
+Cultural Context: British
+Period: Unknown
+Date Range: 1847–1850
+
+Medium: Watercolor on ivory
+Dimensions: 3 7/8 x 2 7/8 in. (9.8 x 7.3 cm)
+
+Credit Line: Rogers Fund, 1927
+
+---
+
+Artwork Title: Mexicans Travelling in the Desert
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Frederick Warren Freer
+Nationality: American
+Lifespan: 1849      –1908      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1875–1875
+
+Medium: Graphite and colored wax pencil on tan wove paper
+Dimensions: 5 1/8 x 9 1/8 in. (13 x 23.2 cm)
+
+Credit Line: Gift of Mrs. William G. Peckham, 1947
+
+---
+
+Artwork Title: The Angel of Death and the Sculptor from the Milmore Memorial
+Object Type: Sculpture
+Classification: Unknown
+
+Artist: Daniel Chester French
+Nationality: American
+Lifespan: 1850      –1931      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1921–1926
+
+Medium: Marble
+Dimensions: 93 1/2 x 100 1/2 x 32 1/2 in. (237.5 x 255.3 x 82.6 cm)
+
+Credit Line: Gift of a group of Museum trustees, 1926
+
+---
+
+Artwork Title: Joe's Farewell
+Object Type: Sculpture
+Classification: Unknown
+
+Artist: Daniel Chester French
+Nationality: American
+Lifespan: 1850      –1931      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1872–1873
+
+Medium: Parian porcelain
+Dimensions: 10 x 7 x 5 in. (25.4 x 17.8 x 12.7 cm)
+
+Credit Line: Gift of Mrs. Charles Beekman Bull, in memory of her mother, Alice Hawke Reimer, 1957
+
+---
+
+Artwork Title: Memory
+Object Type: Sculpture
+Classification: Unknown
+
+Artist: Daniel Chester French
+Nationality: American
+Lifespan: 1850      –1931      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1886–1919
+
+Medium: Marble
+Dimensions: 57 1/2 x 25 x 42 1/2 in. (146.1 x 63.5 x 108 cm)
+
+Credit Line: Gift of Henry Walters, 1919
+
+---
+
+Artwork Title: Mourning Victory from the Melvin Memorial
+Object Type: Sculpture
+Classification: Unknown
+
+Artist: Daniel Chester French
+Nationality: American
+Lifespan: 1850      –1931      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1906–1915
+
+Medium: Marble
+Dimensions: 120 1/2 x 57 1/4 x 28 3/4 in. (306.1 x 145.4 x 73 cm)
+
+Credit Line: Gift of James C. Melvin, 1912
+
+---
+
+Artwork Title: Ralph Waldo Emerson
+Object Type: Bust
+Classification: Unknown
+
+Artist: Daniel Chester French
+Nationality: American
+Lifespan: 1850      –1931      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1879–1907
+
+Medium: Bronze
+Dimensions: 22 1/2 x 10 1/4 x 9 in. (57.2 x 26 x 22.9 cm)
+
+Credit Line: Gift of the artist, 1907
+
+---
+
+Artwork Title: Study for the Head of The Melvin Memorial
+Object Type: Bust
+Classification: Unknown
+
+Artist: Daniel Chester French
+Nationality: American
+Lifespan: 1850      –1931      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1907–1913
+
+Medium: Bronze
+Dimensions: 18 x 10 3/8 x 11 3/4 in. (45.7 x 26.4 x 29.8 cm)
+
+Credit Line: Purchase, Erving Wolf Foundation Gift, in memory of Diane R. Wolf, 1974
+
+---
+
+Artwork Title: Summer
+Object Type: Painting
+Classification: Unknown
+
+Artist: Frederick Carl Frieseke
+Nationality: American
+Lifespan: 1874      –1939      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1914–1914
+
+Medium: Oil on canvas
+Dimensions: 45 3/16 x 57 3/4 in. (114.3 x 146.7 cm)
+
+Credit Line: George A. Hearn Fund, 1966
+
+---
+
+Artwork Title: Woman with a Mirror (Femme qui se mire)
+Object Type: Painting
+Classification: Unknown
+
+Artist: Frederick Carl Frieseke
+Nationality: American
+Lifespan: 1874      –1939      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1911–1911
+
+Medium: Oil on canvas
+Dimensions: 31 7/8 x 32 in. (80.6 x 81 cm)
+
+Credit Line: Gift of Rodman Wanamaker, 1912
+
+---
+
+Artwork Title: Christopher Colles
+Object Type: Painting
+Classification: Unknown
+
+Artist: James Frothingham|John Wesley Jarvis
+Nationality: American|American, born England
+Lifespan: 1786      |1780      –1864      |1840      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1809–1816
+
+Medium: Oil on canvas
+Dimensions: 30 3/8 x 25 1/2 in. (77.2 x 64.8 cm)
+
+Credit Line: Gift of Dr. Christopher J. Colles, 1917
+
+---
+
+Artwork Title: La Pensierosa
+Object Type: Sculpture
+Classification: Unknown
+
+Artist: Emil Fuchs
+Nationality: American
+Lifespan: 1866      –1929      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1912–1912
+
+Medium: Bronze
+Dimensions: 17 3/4 x 4 7/8 x 4 1/2 in. (45.1 x 12.4 x 11.4 cm)
+
+Credit Line: Rogers Fund, 1919
+
+---
+
+Artwork Title: And She Was a Witch
+Object Type: Painting
+Classification: Unknown
+
+Artist: George Fuller
+Nationality: American
+Lifespan: 1822      –1884      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1877–1884
+
+Medium: Oil on canvas
+Dimensions: 30 x 40 in. (76.2 x 101.6 cm)
+
+Credit Line: Gift of George I. Seney, 1887
+
+---
+
+Artwork Title: Ideal Head of a Boy (George Spencer Fuller)
+Object Type: Painting
+Classification: Unknown
+
+Artist: George Fuller
+Nationality: American
+Lifespan: 1822      –1884      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1864–1873
+
+Medium: Oil on canvas
+Dimensions: 27 1/4 x 22 in. (69.2 x 55.9 cm)
+
+Credit Line: Gift of George I. Seney, 1887
+
+---
+
+Artwork Title: Nydia
+Object Type: Painting
+Classification: Unknown
+
+Artist: George Fuller
+Nationality: American
+Lifespan: 1822      –1884      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1882–1882
+
+Medium: Oil on canvas
+Dimensions: 50 x 32 1/4 in. (127 x 81.9 cm)
+
+Credit Line: Gift of George I. Seney, 1887
+
+---
+
+Artwork Title: The Quadroon
+Object Type: Painting
+Classification: Unknown
+
+Artist: George Fuller
+Nationality: American
+Lifespan: 1822      –1884      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1880–1880
+
+Medium: Oil on canvas
+Dimensions: 50 1/2 x 40 1/2 in. (128.3 x 102.9 cm)
+
+Credit Line: Gift of George A. Hearn, 1910
+
+---
+
+Artwork Title: Clara B. Fuller
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: Lucia Fairchild Fuller
+Nationality: American
+Lifespan: 1870      –1924      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1898–1898
+
+Medium: Watercolor on ivory
+Dimensions: 4 1/2 x 2 13/16 in. (11.4 x 7.1 cm)
+
+Credit Line: Rogers Fund, 1914
+
+---
+
+Artwork Title: Mrs. Stephen Van Rensselaer III (Cornelia Paterson)
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: Robert Fulton
+Nationality: American
+Lifespan: 1765      –1815      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1807–1810
+
+Medium: Watercolor on ivory
+Dimensions: Sight: 3 1/8 x 2 1/2 in. (7.9 x 6.4 cm)
+
+Credit Line: Bequest of Cornelia Cruger, 1923
+
+---
+
+Artwork Title: John Brown
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: Robert Fulton
+Nationality: American
+Lifespan: 1765      –1815      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1786–1786
+
+Medium: Watercolor on ivory
+Dimensions: 1 3/4 x 1 11/32 in. (4.4 x 3.4 cm)
+
+Credit Line: Morris K. Jesup Fund, 1936
+
+---
+
+Artwork Title: Mrs. Manigault Heyward (Susan Hayne Simmons)
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: Robert Fulton
+Nationality: American
+Lifespan: 1765      –1815      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1810–1813
+
+Medium: Watercolor on ivory
+Dimensions: 3 21/32 x 2 13/16 in. (9.3 x 7.1 cm)
+
+Credit Line: Rogers Fund, 1914
+
+---
+
+Artwork Title: Sir Casper Purdon Clarke
+Object Type: Painting
+Classification: Unknown
+
+Artist: Wilhelm Heinrich Funk
+Nationality: American
+Lifespan: 1866      –1966      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1903–1906
+
+Medium: Oil on canvas
+Dimensions: 25 1/8 x 21 1/8 in. (63.6 x 53.5 cm)
+
+Credit Line: Purchase, Charles Munn Bequest, 1970
+
+---
+
+Artwork Title: Cottage Garden, Warwick, England
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: Edmund Henry Garrett
+Nationality: American
+Lifespan: 1853      –1929      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1853–1929
+
+Medium: Watercolor, gouache, and graphite on off-white wove paper
+Dimensions: 13 7/8 x 10 in. (35.2 x 25.4 cm)
+
+Credit Line: Gift of Mr. and Mrs. Stuart P. Feld, 1977
+
+---
+
+Artwork Title: A Difficult Question (Une Question Difficile)
+Object Type: Painting
+Classification: Unknown
+
+Artist: Ignaz Marcel Gaugengigl
+Nationality: American
+Lifespan: 1855      –1932      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1883–1883
+
+Medium: Oil on panel
+Dimensions: 11 5/8 x 16 in. (29.5 x 40.6 cm)
+
+Credit Line: Bequest of Martha T. Fiske Collord, in memory of her first husband, Josiah M. Fiske, 1908
+
+---
+
+Artwork Title: Broad Acres
+Object Type: Painting
+Classification: Unknown
+
+Artist: Edward Gay
+Nationality: American
+Lifespan: 1837      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1887–1887
+
+Medium: Oil on canvas
+Dimensions: 47 3/4 x 71 1/4 in. (121.9 x 181 cm)
+
+Credit Line: Gift of Several Gentlemen, 1887
+
+---
+
+Artwork Title: Le Grand Salon, Musée Jacquemart-André
+Object Type: Painting
+Classification: Unknown
+
+Artist: Walter Gay
+Nationality: American
+Lifespan: 1856      –1937      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1912–1913
+
+Medium: Oil on canvas
+Dimensions: 27 3/8 x 33 7/8 in. (69.5 x 86 cm)
+
+Credit Line: Gift of Mr. and Mrs. Clarence L. Hay, 1961
+
+---
+
+Artwork Title: The Green Lacquer Room, Museo Correr, Venice
+Object Type: Painting
+Classification: Unknown
+
+Artist: Walter Gay
+Nationality: American
+Lifespan: 1856      –1937      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1909–1922
+
+Medium: Oil on canvas
+Dimensions: 21 1/2 x 18 1/4 in. (54.6 x 46.4 cm)
+
+Credit Line: Bequest of Anne D. Thomson, 1923
+
+---
+
+Artwork Title: The Green Salon
+Object Type: Painting
+Classification: Unknown
+
+Artist: Walter Gay
+Nationality: American
+Lifespan: 1856      –1937      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1911–1912
+
+Medium: Oil on canvas
+Dimensions: 25 1/2 x 21 1/2 in. (64.8 x 54.6 cm)
+
+Credit Line: Rogers Fund, 1912
+
+---
+
+Artwork Title: Interior
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: Walter Gay
+Nationality: American
+Lifespan: 1856      –1937      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1856–1937
+
+Medium: Watercolor, gouache, and graphite on off-white wove paper
+Dimensions: 18 1/16 x 21 9/16 in. (45.9 x 54.8 cm)
+
+Credit Line: Gift of James Hazen Hyde, 1952
+
+---
+
+Artwork Title: William Henry Huntington
+Object Type: Painting
+Classification: Unknown
+
+Artist: Walter Gay
+Nationality: American
+Lifespan: 1856      –1937      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1887–1887
+
+Medium: Oil on wood
+Dimensions: 8 5/8 x 6 1/4 in. (21.9 x 15.9 cm)
+
+Credit Line: Bequest of George A. Lucas
+
+---
+
+Artwork Title: Near the Coast
+Object Type: Painting
+Classification: Unknown
+
+Artist: Robert Swain Gifford
+Nationality: American
+Lifespan: 1840      –1905      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1882–1885
+
+Medium: Oil on canvas
+Dimensions: 31 1/4 x 51 in. (79.4 x 129.5 cm)
+
+Credit Line: Gift of an Association of Gentlemen, 1885
+
+---
+
+Artwork Title: Isola Bella in Lago Maggiore
+Object Type: Painting
+Classification: Unknown
+
+Artist: Sanford Robinson Gifford
+Nationality: American
+Lifespan: 1823      –1880      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1871–1871
+
+Medium: Oil on canvas
+Dimensions: 20 1/4 x 36in. (51.4 x 91.4cm)
+
+
+Credit Line: Gift of Colonel Charles A. Fowler, 1921
+
+---
+
+Artwork Title: A Gorge in the Mountains (Kauterskill Clove)
+Object Type: Painting
+Classification: Unknown
+
+Artist: Sanford Robinson Gifford
+Nationality: American
+Lifespan: 1823      –1880      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1862
+
+Medium: Oil on canvas
+Dimensions: 48 x 39 7/8 in. (121.9 x 101.3 cm)
+
+Credit Line: Bequest of Maria DeWitt Jesup, from the collection of her husband, Morris K. Jesup, 1914
+
+---
+
+Artwork Title: Tivoli
+Object Type: Painting
+Classification: Unknown
+
+Artist: Sanford Robinson Gifford
+Nationality: American
+Lifespan: 1823      –1880      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1870–1870
+
+Medium: Oil on canvas
+Dimensions: 26 3/8 x 50 3/8 in. (67 x 128 cm)
+
+Credit Line: Gift of Robert Gordon, 1912
+
+---
+
+Artwork Title: Self-portrait
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: Thomas Gimbrede
+Nationality: American, born France
+Lifespan: 1781      –1832      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1805–1805
+
+Medium: Watercolor on ivory
+Dimensions: 3 x 2 7/16 in. (7.6 x 6.2 cm)
+
+Credit Line: Fletcher Fund, 1938
+
+---
+
+Artwork Title: Portrait of a Man; Landscape (from McGuire Scrapbook)
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Glenn
+Nationality: American
+Lifespan:           –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1800–1850
+
+Medium: Graphite on buff-colored wove paper
+Dimensions: 7 3/8 x 6 3/16 in. (18.7 x 15.7 cm)
+
+Credit Line: Gift of James C. McGuire, 1926
+
+---
+
+Artwork Title: Garden Gate, Near Ascain #7
+Object Type: Painting
+Classification: Unknown
+
+Artist: Anne Goldthwaite
+Nationality: American
+Lifespan: 1869      –1944      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1912–1912
+
+Medium: Oil on canvas
+Dimensions: 24 1/4 x 18 in. (61.2 x 45.7 cm)
+
+Credit Line: Gift of Lucy Goldthwaite and Richard N. Goldthwaite, 1972
+
+---
+
+Artwork Title: Grazing
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: Anne Goldthwaite
+Nationality: American
+Lifespan: 1869      –1944      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1869–1944
+
+Medium: Watercolor and black chalk on paper
+Dimensions: 16 x 20 1/16 in. (40.6 x 51 cm)
+
+Credit Line: Gift of Estate of Anne Goldthwaite, 1945
+
+---
+
+Artwork Title: The Green Sofa
+Object Type: Painting
+Classification: Unknown
+
+Artist: Anne Goldthwaite
+Nationality: American
+Lifespan: 1869      –1944      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1927–1940
+
+Medium: Oil on canvas
+Dimensions: 30 x 36 in. (76.2 x 49.5 cm)
+
+Credit Line: Gift of Estate of Anne Goldthwaite, 1944
+
+---
+
+Artwork Title: Southern Street
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: Anne Goldthwaite
+Nationality: American
+Lifespan: 1869      –1944      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1869–1944
+
+Medium: Watercolor and graphite on off-white wove paper
+Dimensions: 15 x 20 in. (38.1 x 50.8 cm)
+
+Credit Line: Gift of Estate of Anne Goldthwaite, 1945
+
+---
+
+Artwork Title: White Mules on a Bridge
+Object Type: Painting
+Classification: Unknown
+
+Artist: Anne Goldthwaite
+Nationality: American
+Lifespan: 1869      –1944      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1927–1940
+
+Medium: Oil on canvas
+Dimensions: 24 7/8 x 30 in. (61.8 x 76.2 cm)
+
+Credit Line: Gift of Estate of Anne Goldthwaite, 1945
+
+---
+
+Artwork Title: A Window at Night
+Object Type: Painting
+Classification: Unknown
+
+Artist: Anne Goldthwaite
+Nationality: American
+Lifespan: 1869      –1944      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1930–1933
+
+Medium: Oil on canvas
+Dimensions: 44 x 26 1/4 in. (111.8 x 66.3 cm)
+
+Credit Line: George A. Hearn Fund, 1938
+
+---
+
+Artwork Title: Gilbert Stuart
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: Sarah Goodridge
+Nationality: American
+Lifespan: 1788      –1853      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1822–1825
+
+Medium: Watercolor on ivory
+Dimensions: 3 21/32 x 2 3/4 in. (9.3 x 7 cm)
+
+Credit Line: The Moses Lazarus Collection, Gift of Josephine and Sarah Lazarus, in memory of their father, 1888-95
+
+---
+
+Artwork Title: Alice Goudry
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: Eliza Goodridge
+Nationality: American
+Lifespan: 1798      –1882      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1827–1835
+
+Medium: Watercolor on ivory
+Dimensions: 3 1/2 x 2 7/8 in. (8.9 x 7.3 cm)
+
+Credit Line: Rogers Fund, 1929
+
+---
+
+Artwork Title: Portrait of a Lady
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: Sarah Goodridge
+Nationality: American
+Lifespan: 1788      –1853      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1830–1830
+
+Medium: Watercolor on ivory
+Dimensions: 3 13/16 x 2 7/8 in. (9.7 x 7.3 cm)
+
+Credit Line: Gift of J. William Middendorf II, 1968
+
+---
+
+Artwork Title: The Celebration of Armistice Day, 1918
+Object Type: Painting
+Classification: Unknown
+
+Artist: Arthur Clifton Goodwin
+Nationality: American
+Lifespan: 1864      –1929      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1919–1919
+
+Medium: Oil on canvas
+Dimensions: 50 x 40 in. (127 x 101.6 cm)
+
+Credit Line: Gift of Margaret and Raymond J. Horowitz, 1970
+
+---
+
+Artwork Title: Louis Kronberg in His Studio in Copley Hall
+Object Type: Painting
+Classification: Unknown
+
+Artist: Arthur Clifton Goodwin
+Nationality: American
+Lifespan: 1864      –1929      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1910–1913
+
+Medium: Oil on canvas
+Dimensions: 25 1/16 x 21 1/8 in. (63.7 x 53.5 cm)
+
+Credit Line: Gift of Margaret and Raymond J. Horowitz, 1975
+
+---
+
+Artwork Title: Henry O. Tanner
+Object Type: Bust
+Classification: Unknown
+
+Artist: Charles Grafly
+Nationality: American
+Lifespan: 1862      –1929      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1896–1896
+
+Medium: Painted plaster
+Dimensions: 28 x 12 x 9 3/4 in. (71.1 x 30.5 x 24.8 cm)
+
+Credit Line: Gift of J. O. Tanner, 1949
+
+---
+
+Artwork Title: Ancient Wharves
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: Gordon Grant
+Nationality: American
+Lifespan: 1875      –1962      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1950–1950
+
+Medium: Watercolor, graphite, and charcoal on white wove paper
+Dimensions: 22 1/2 x 29 5/8 in. (57.2 x 75.2 cm)
+
+Credit Line: Arthur Hoppock Hearn Fund, 1950
+
+---
+
+Artwork Title: Mackerel Boat
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: Gordon Grant
+Nationality: American
+Lifespan: 1875      –1962      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1950–1950
+
+Medium: Watercolor, gouache, charcoal, and graphite on white wove paper
+Dimensions: 22 1/4 x 29 1/2 in. (56.5 x 74.9 cm)
+
+Credit Line: Arthur Hoppock Hearn Fund, 1950
+
+---
+
+Artwork Title: The Greek Lovers
+Object Type: Painting
+Classification: Unknown
+
+Artist: Henry Peters Gray
+Nationality: American
+Lifespan: 1819      –1877      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1846–1846
+
+Medium: Oil on canvas
+Dimensions: 40 1/4 x 51 1/2 in. (102.2 x 130.8 cm)
+
+Credit Line: Gift of William Church Osborn, 1902
+
+---
+
+Artwork Title: The Pride of the Village
+Object Type: Painting
+Classification: Unknown
+
+Artist: Henry Peters Gray
+Nationality: American
+Lifespan: 1819      –1877      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1858–1859
+
+Medium: Oil on canvas
+Dimensions: 30 1/4 x 25 1/4 in. (76.8 x 64.1 cm)
+
+Credit Line: Gift of William Church Osborn, 1949
+
+---
+
+Artwork Title: The Wages of War
+Object Type: Painting
+Classification: Unknown
+
+Artist: Henry Peters Gray
+Nationality: American
+Lifespan: 1819      –1877      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1848–1848
+
+Medium: Oil on canvas
+Dimensions: 48 1/4 x 76 1/4 in. (122.6 x 193.7 cm)
+
+Credit Line: Gift of Several Ladies and Gentlemen, 1873
+
+---
+
+Artwork Title: George Washington
+Object Type: Bust
+Classification: Unknown
+
+Artist: Horatio Greenough
+Nationality: American
+Lifespan: 1805      –1852      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1827–1832
+
+Medium: Marble
+Dimensions: 26 3/8 x 19 1/2 x 12 1/2 in. (67 x 49.5 x 31.8 cm)
+
+Credit Line: Gift of Mrs. John Falconer, 1884
+
+---
+
+Artwork Title: Samuel Finley Breese Morse
+Object Type: Bust
+Classification: Unknown
+
+Artist: Horatio Greenough
+Nationality: American
+Lifespan: 1805      –1852      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1831–1928
+
+Medium: Painted plaster
+Dimensions: 22 x 11 1/2 x 6 1/2 in. (55.9 x 29.2 x 16.5 cm)
+
+Credit Line: Museum Accession
+
+---
+
+Artwork Title: Side Chair
+Object Type: Side Chair
+Classification: Unknown
+
+Artist: Karl Schmieg
+Nationality: German
+Lifespan: 1872      –1949      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1922–1925
+
+Medium: Walnut
+Dimensions: 43 1/2 x 19 13/16 x 21 in. (110.5 x 50.3 x 53.3 cm)
+
+Credit Line: Gift of Charles Schmieg, Margaret Schmieg, Helen Schmieg Fisher, and Alma Schmieg Rennau, in memory of their father, Karl Schmieg, 1994
+
+---
+
+Artwork Title: Girls Singing
+Object Type: Sculpture
+Classification: Unknown
+
+Artist: Frances Grimes
+Nationality: American
+Lifespan: 1869      –1963      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1916–1917
+
+Medium: Marble
+Dimensions: 30 3/4 x 45 x 4 in. (78.1 x 114.3 x 10.2 cm)
+
+Credit Line: Gift of Joseph Parsons, 1944
+
+---
+
+Artwork Title: Girls Singing
+Object Type: Sculpture
+Classification: Unknown
+
+Artist: Frances Grimes
+Nationality: American
+Lifespan: 1869      –1963      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1916–1917
+
+Medium: Marble
+Dimensions: 30 3/4 x 45 x 4 in. (78.1 x 114.3 x 10.2 cm)
+
+Credit Line: Gift of Joseph Parsons, 1944
+
+---
+
+Artwork Title: Silver Clouds, Arizona
+Object Type: Painting
+Classification: Unknown
+
+Artist: Albert Lorey Groll
+Nationality: American
+Lifespan: 1866      –1952      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1911–1914
+
+Medium: Oil on canvas
+Dimensions: 39 3/4 x 50 3/4 in. (99.8 x 127.8 cm)
+
+Credit Line: Arthur Hoppock Hearn Fund, 1914
+
+---
+
+Artwork Title: Charles Loring Elliott
+Object Type: Painting
+Classification: Unknown
+
+Artist: Seymour Joseph Guy
+Nationality: American, born England
+Lifespan: 1824      –1910      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1868–1868
+
+Medium: Oil on canvas
+Dimensions: 12 1/8 x 10 in. (30.8 x 25.4 cm)
+
+Credit Line: Gift of Mrs. Robert W. de Forest, 1903
+
+---
+
+Artwork Title: The Crossing Sweeper
+Object Type: Painting
+Classification: Unknown
+
+Artist: Seymour Joseph Guy
+Nationality: American, born England
+Lifespan: 1824      –1910      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1860–1870
+
+Medium: Oil on canvas
+Dimensions: 12 1/8 x 8 1/2 in. (30.8 x 21.6 cm)
+
+Credit Line: Bequest of Collis P. Huntington, 1900
+
+---
+
+Artwork Title: Accord
+Object Type: Sculpture
+Classification: Unknown
+
+Artist: Charles Oscar Haag
+Nationality: American, born Sweden
+Lifespan: 1867      –1933      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1902–1906
+
+Medium: Bronze
+Dimensions: 12 3/4 x 5 x 10 in. (32.4 x 12.7 x 25.4 cm)
+
+Credit Line: Gift of several gentlemen, 1906
+
+---
+
+Artwork Title: A Bachelor's Drawer
+Object Type: Painting
+Classification: Unknown
+
+Artist: John Haberle
+Nationality: American
+Lifespan: 1856      –1933      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1890–1894
+
+Medium: Oil on canvas
+Dimensions: 20 x 36 in. (50.8 x 91.4 cm)
+
+Credit Line: Purchase, Henry R. Luce Gift, 1970
+
+---
+
+Artwork Title: Tulips
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Lilian Westcott Hale
+Nationality: American
+Lifespan: 1881      –1963      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1881–1963
+
+Medium: Charcoal on paper
+Dimensions: 22 x 28 in. (55.9 x 71.1 cm)
+
+Credit Line: Maria DeWitt Jesup Fund, 1977
+
+---
+
+Artwork Title: Niagara Falls
+Object Type: Painting
+Classification: Unknown
+
+Artist: Philip L. Hale
+Nationality: American
+Lifespan: 1865      –1931      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1902–1902
+
+Medium: Oil on canvas
+Dimensions: 25 x 30 in. (63.5 x 76.2 cm)
+
+Credit Line: Gift of Rita and Daniel Fraad Jr., 1978
+
+---
+
+Artwork Title: Beach Scene
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: James Hamilton
+Nationality: American, born Ireland
+Lifespan: 1819      –1878      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1868
+
+Medium: Watercolor and gouache on off-white wove paper
+Dimensions: 11 7/8 x 15 3/4 in. (30.2 x 40 cm)
+
+Credit Line: Rogers Fund, 1966
+
+---
+
+Artwork Title: On Hampstead Heath
+Object Type: Painting
+Classification: Unknown
+
+Artist: James Hamilton
+Nationality: American, born Ireland
+Lifespan: 1819      –1878      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1856–1856
+
+Medium: Oil on canvas
+Dimensions: 14 x 20 in. (35.6 x 50.8 cm)
+
+Credit Line: Gift of William Sartain, 1912
+
+---
+
+Artwork Title: Pixie
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: Mary McLellan Hamilton
+Nationality: American
+Lifespan: 1891      –1939      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1926–1926
+
+Medium: Watercolor on ivory
+Dimensions: Sight: 2 3/4 x 2 1/8 in. (7 x 5.4 cm)
+
+Credit Line: George A. Hearn Fund, 1938
+
+---
+
+Artwork Title: Portrait of a Gentleman
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: Nathaniel Hancock
+Nationality: American
+Lifespan: 1785      –1809      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1785–1785
+
+Medium: Watercolor on ivory
+Dimensions: 1 3/8 x 7/8 in. (3.5 x 2.2 cm)
+
+Credit Line: Bequest of Charles Allen Munn, 1924
+
+---
+
+Artwork Title: Row Boats, Ogunquit
+Object Type: Drawing
+Classification: Unknown
+
+Artist: James Parton Haney
+Nationality: American
+Lifespan: 1869      –1923      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1915–1915
+
+Medium: Graphite on off-white wove paper
+Dimensions: 10 7/8 x 15 in. (27.6 x 38.1 cm)
+
+Credit Line: Gift of School Art League of New York City, 1924
+
+---
+
+Artwork Title: Eunice Harriet Brigham
+Object Type: Painting
+Classification: Unknown
+
+Artist: Chester (Charles) Harding
+Nationality: American
+Lifespan: 1792      –1866      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1832–1835
+
+Medium: Oil on canvas
+Dimensions: 30 x 25 in. (76.2 x 63.5 cm)
+
+Credit Line: Bequest of Helen Winslow Durkee Mileham, 1954
+
+---
+
+Artwork Title: Mrs. Francis Stanton Blake
+Object Type: Painting
+Classification: Unknown
+
+Artist: Chester (Charles) Harding
+Nationality: American
+Lifespan: 1792      –1866      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1837–1844
+
+Medium: Oil on canvas
+Dimensions: Oval: 30 x 25 in. (76.2 x 63.5 cm)
+
+Credit Line: Gift of Mrs. Waldron K. Post, 1925
+
+---
+
+Artwork Title: Mrs. Thomas Brewster Coolidge
+Object Type: Painting
+Classification: Unknown
+
+Artist: Chester (Charles) Harding
+Nationality: American
+Lifespan: 1792      –1866      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1824–1827
+
+Medium: Oil on canvas
+Dimensions: 36 1/4 x 28 in. (92.1 x 71.1 cm)
+
+Credit Line: Rogers Fund, 1920
+
+---
+
+Artwork Title: Stephen Van Rensselaer
+Object Type: Painting
+Classification: Unknown
+
+Artist: Chester (Charles) Harding
+Nationality: American
+Lifespan: 1792      –1866      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1825–1828
+
+Medium: Oil on canvas
+Dimensions: 36 x 28 in. (91.4 x 71.1 cm)
+
+Credit Line: Gift of Mrs. Goodhue Livingston, Sr., 1954
+
+---
+
+Artwork Title: The Artist's Letter Rack
+Object Type: Painting
+Classification: Unknown
+
+Artist: William Michael Harnett
+Nationality: American
+Lifespan: 1848      –1892      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1879–1879
+
+Medium: Oil on canvas
+Dimensions: 30 x 25 in. (76.2 x 63.5 cm)
+
+Credit Line: Morris K. Jesup Fund, 1966
+
+---
+
+Artwork Title: The Banker's Table
+Object Type: Painting
+Classification: Unknown
+
+Artist: William Michael Harnett
+Nationality: American
+Lifespan: 1848      –1892      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1877–1877
+
+Medium: Oil on canvas
+Dimensions: 8 x 12 in. (20.3 x 30.5 cm)
+
+Credit Line: Purchase, Elihu Root Jr. Gift, 1956
+
+---
+
+Artwork Title: New York Daily News
+Object Type: Painting
+Classification: Unknown
+
+Artist: William Michael Harnett
+Nationality: American
+Lifespan: 1848      –1892      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1888–1888
+
+Medium: Oil on wood
+Dimensions: 5 1/2 x 7 1/2 in. (14 x 19.1 cm)
+
+Credit Line: Gift of William L. and Charlotte B. McKim, 1973
+
+---
+
+Artwork Title: Still Life
+Object Type: Painting
+Classification: Unknown
+
+Artist: William Michael Harnett
+Nationality: American
+Lifespan: 1848      –1892      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1888–1888
+
+Medium: Oil on canvas
+Dimensions: 14 x 17 1/8 in. (35.6 x 43.5 cm)
+
+Credit Line: Bequest of Susan Vanderpoel Clark, 1967
+
+---
+
+Artwork Title: Still Life—Violin and Music
+Object Type: Painting
+Classification: Unknown
+
+Artist: William Michael Harnett
+Nationality: American
+Lifespan: 1848      –1892      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1888–1888
+
+Medium: Oil on canvas
+Dimensions: 40 x 30 in. (101.6 x 76.2 cm)
+
+Credit Line: Catharine Lorillard Wolfe Collection, Wolfe Fund, 1963
+
+---
+
+Artwork Title: Mercury and Turtle
+Object Type: Sculpture
+Classification: Unknown
+
+Artist: Albert E. Harnisch
+Nationality: American
+Lifespan: 1843      –1913      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1879
+
+Medium: Marble
+Dimensions: 41 1/2 x 15 x 17 in. (105.4 x 38.1 x 43.2 cm)
+
+Credit Line: Gift of Mrs. George K. Livermore, 1982
+
+---
+
+Artwork Title: Castles in Spain (Chateaux en Espagne)
+Object Type: Painting
+Classification: Unknown
+
+Artist: Alexander Harrison
+Nationality: American
+Lifespan: 1853      –1930      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1881–1882
+
+Medium: Oil on canvas
+Dimensions: 37 3/8 x 73 3/4 in. (94.9 x 187.3 cm)
+
+Credit Line: Anonymous Gift, 1912
+
+---
+
+Artwork Title: 125 Street Ferry
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: George Overbury "Pop" Hart
+Nationality: American
+Lifespan: 1868      –1933      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1868–1933
+
+Medium: Watercolor, black chalk, charcoal, and graphite on brown wood pulp cardboard
+Dimensions: 14 3/16 x 20 1/16 in. (36 x 51 cm)
+
+Credit Line: Gift of Rita and Daniel Fraad Jr., 1978
+
+---
+
+Artwork Title: An Old Courtyard in New Orleans
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: George Overbury "Pop" Hart
+Nationality: American
+Lifespan: 1868      –1933      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1868–1933
+
+Medium: Watercolor on paper
+Dimensions: 13 1/2 x 21 1/4 in. (34.3 x 54 cm)
+
+Credit Line: Rogers Fund, 1925
+
+---
+
+Artwork Title: Aurora
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: James M. Hart
+Nationality:  
+Lifespan: 1828      –1901      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1863–1863
+
+Medium: Watercolor, graphite and white gouache on tan wove paper
+Dimensions: 6 7/8 x 12 in. (17.5 x 30.5 cm)
+
+Credit Line: Rogers Fund, 1973
+
+---
+
+Artwork Title: Franklin County, New York
+Object Type: Drawing
+Classification: Unknown
+
+Artist: James M. Hart
+Nationality:  
+Lifespan: 1828      –1901      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1857–1857
+
+Medium: Graphite on off-white wove paper
+Dimensions: 9 7/8 x 13 5/8 in. (25.1 x 34.6 cm)
+
+Credit Line: Rogers Fund, 1973
+
+---
+
+Artwork Title: Godesberg
+Object Type: Painting
+Classification: Unknown
+
+Artist: James M. Hart
+Nationality:  
+Lifespan: 1828      –1901      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1852–1852
+
+Medium: Oil on wove paper
+Dimensions: 12 1/4 x 9 1/2 in. (31.1 x 24.1 cm)
+
+Credit Line: Rogers Fund, 1973
+
+---
+
+Artwork Title: Mountain Range
+Object Type: Painting
+Classification: Unknown
+
+Artist: James M. Hart
+Nationality:  
+Lifespan: 1828      –1901      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1850–1855
+
+Medium: Oil on wove paper
+Dimensions: 9 1/2 x 13 in. (24.1 x 33 cm)
+
+Credit Line: Rogers Fund, 1973
+
+---
+
+Artwork Title: Pasture Scene
+Object Type: Painting
+Classification: Unknown
+
+Artist: James M. Hart
+Nationality:  
+Lifespan: 1828      –1901      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1876–1876
+
+Medium: Oil on canvas
+Dimensions: 20 x 34 in. (50.8 x 86.4 cm)
+
+Credit Line: Gift of Colonel Charles A. Fowler, 1921
+
+---
+
+Artwork Title: Studies of Cows and Calves
+Object Type: Drawing
+Classification: Unknown
+
+Artist: James M. Hart
+Nationality:  
+Lifespan: 1828      –1901      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1872–1872
+
+Medium: Graphite and white chalk on dark gray wove paper
+Dimensions: 11 x 16 in. (27.9 x 40.6 cm)
+
+Credit Line: Gift of Mr. and Mrs. Maurice Glickman, 1979
+
+---
+
+Artwork Title: Scene at Napanoch
+Object Type: Painting
+Classification: Unknown
+
+Artist: William Hart
+Nationality: American, Scottish
+Lifespan: 1823      –1894      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1883–1883
+
+Medium: Oil on canvas
+Dimensions: 23 1/2 x 33 3/8 in. (59.7 x 84.8 cm)
+
+Credit Line: Gift of the descendants of the artist, 1897
+
+---
+
+Artwork Title: Seashore, Morning
+Object Type: Painting
+Classification: Unknown
+
+Artist: William Hart
+Nationality: American, Scottish
+Lifespan: 1823      –1894      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1866–1866
+
+Medium: Oil on canvas
+Dimensions: 23 x 41 in. (58.4 x 104.1 cm)
+
+Credit Line: Gift of the sons of William Paton, 1909
+
+---
+
+Artwork Title: Eagle
+Object Type: Sculpture
+Classification: Unknown
+
+Artist: Eli Harvey
+Nationality: American
+Lifespan: 1860      –1957      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1918–1918
+
+Medium: Bronze, gilt
+Dimensions: 11 x 14 5/8 x 5 3/8 in. (27.9 x 37.1 x 13.7 cm)
+
+Credit Line: Gift of Edward D. Adams, 1919
+
+---
+
+Artwork Title: Portrait of a Lady
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: George Harvey
+Nationality:  
+Lifespan: 1800      –1878      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1827–1830
+
+Medium: Watercolor on ivory
+Dimensions: 2 5/16 x 1 7/8 in. (5.9 x 4.8 cm)
+
+Credit Line: The Collection of Giovanni P. Morosini, presented by his daughter Giulia, 1932
+
+---
+
+Artwork Title: Castel Fusano—Near Rome
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: William Stanley Haseltine
+Nationality: American
+Lifespan: 1835      –1900      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1882–1885
+
+Medium: Watercolor, gouache, and graphite on blue wove paper
+Dimensions: 14 1/2 x 21 7/8 in. (36.8 x 55.6 cm)
+
+Credit Line: Gift of Mrs. Roger Plowden, 1967
+
+---
+
+Artwork Title: Mill Dam in Traunstein
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: William Stanley Haseltine
+Nationality: American
+Lifespan: 1835      –1900      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1894–1894
+
+Medium: Watercolor and gouache on blue wove paper
+Dimensions: 15 x 22 1/4 in. (38.1 x 56.5 cm)
+
+Credit Line: Gift of Mrs. Roger Plowden, 1967
+
+---
+
+Artwork Title: New England Coast
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: William Stanley Haseltine
+Nationality: American
+Lifespan: 1835      –1900      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1835–1900
+
+Medium: Gray watercolor wash, black ink, and graphite on off-white wove paper
+Dimensions: 15 1/8 x 22 in. (38.4 x 55.9 cm)
+
+Credit Line: Gift of John G. Agar, by exchange, 1982
+
+---
+
+Artwork Title: Olevano (Campagna Romana)
+Object Type: Drawing
+Classification: Unknown
+
+Artist: William Stanley Haseltine
+Nationality: American
+Lifespan: 1835      –1900      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1858–1858
+
+Medium: Pen, black ink, gray wash, and graphite underwriting on paper
+Dimensions: 15 x 21 5/8 in. (38.1 x 54.9 cm)
+
+Credit Line: Rogers Fund, 1967
+
+---
+
+Artwork Title: Santa Maria della Salute, Sunset
+Object Type: Painting
+Classification: Unknown
+
+Artist: William Stanley Haseltine
+Nationality: American
+Lifespan: 1835      –1900      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1870–1885
+
+Medium: Oil on canvas
+Dimensions: 23 x 36 in. (58.4 x 91.4 cm)
+
+Credit Line: Gift of Helen Haseltine Plowden, in memory of the artist, 1954
+
+---
+
+Artwork Title: Baths of Trajan (Sette Sale, Villa Brancaccio, Rome)
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: William Stanley Haseltine
+Nationality: American
+Lifespan: 1835      –1900      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1879–1882
+
+Medium: Watercolor, gouache, and charcoal on blue wove paper
+Dimensions: 15 3/16 x 22 1/16 in. (38.6 x 56 cm)
+
+Credit Line: Gift of Mrs. Roger Plowden, 1967
+
+---
+
+Artwork Title: Tivoli
+Object Type: Drawing
+Classification: Unknown
+
+Artist: William Stanley Haseltine
+Nationality: American
+Lifespan: 1835      –1900      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1858–1858
+
+Medium: Pen, black ink, washes, and graphite on beige paper
+Dimensions: 18 1/2 x 23 11/16 in. (47 x 60.2 cm)
+
+Credit Line: Gift of Mrs. Roger Plowden, 1967
+
+---
+
+Artwork Title: Vahrn in Tyrol near Brixen
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: William Stanley Haseltine
+Nationality: American
+Lifespan: 1835      –1900      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1835–1900
+
+Medium: Watercolor and gouache on blue wove paper
+Dimensions: 14 7/8 x 22 in. (37.8 x 55.9 cm)
+
+Credit Line: Gift of Mrs. Roger Plowden, 1967
+
+---
+
+Artwork Title: Avenue of the Allies, Great Britain, 1918
+Object Type: Painting
+Classification: Unknown
+
+Artist: Childe Hassam
+Nationality: American
+Lifespan: 1859      –1935      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1918–1918
+
+Medium: Oil on canvas
+Dimensions: 36 x 28 3/8 in. (91.4 x 72.1 cm)
+
+Credit Line: Bequest of Miss Adelaide Milton de Groot (1876-1967), 1967
+
+---
+
+Artwork Title: Broadway and 42nd Street
+Object Type: Painting
+Classification: Unknown
+
+Artist: Childe Hassam
+Nationality: American
+Lifespan: 1859      –1935      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1902–1902
+
+Medium: Oil on canvas
+Dimensions: 26 x 22 in. (66 x 55.9 cm)
+
+Credit Line: Bequest of Miss Adelaide Milton de Groot (1876-1967), 1967
+
+---
+
+Artwork Title: The Brush House
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: Childe Hassam
+Nationality: American
+Lifespan: 1859      –1935      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1916–1916
+
+Medium: Watercolor and graphite on off-white wove paper
+Dimensions: 15 5/16 x 22 5/16 in. (38.9 x 56.7 cm)
+
+Credit Line: Rogers Fund, 1917
+
+---
+
+Artwork Title: The Church at Gloucester
+Object Type: Painting
+Classification: Unknown
+
+Artist: Childe Hassam
+Nationality: American
+Lifespan: 1859      –1935      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1918–1918
+
+Medium: Oil on canvas
+Dimensions: 30 x 25 in. (76.2 x 63.5 cm)
+
+Credit Line: Arthur Hoppock Hearn Fund, 1925
+
+---
+
+Artwork Title: Coast Scene, Isles of Shoals
+Object Type: Painting
+Classification: Unknown
+
+Artist: Childe Hassam
+Nationality: American
+Lifespan: 1859      –1935      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1901–1901
+
+Medium: Oil on canvas
+Dimensions: 24 7/8 x 30 1/8 in. (63.2 x 76.5 cm)
+
+Credit Line: Gift of George A. Hearn, 1909
+
+---
+
+Artwork Title: Promenade
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: Childe Hassam
+Nationality: American
+Lifespan: 1859      –1935      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1883–1883
+
+Medium: Watercolor, gouache, and graphite on off-white wove paper
+Dimensions: 16 15/16 x 25 13/16 in. (43 x 65.6 cm)
+
+Credit Line: Gift of Mr. and Mrs. Arthur G. Altschul, 1971
+
+---
+
+Artwork Title: Golden Afternoon
+Object Type: Painting
+Classification: Unknown
+
+Artist: Childe Hassam
+Nationality: American
+Lifespan: 1859      –1935      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1908–1908
+
+Medium: Oil on canvas
+Dimensions: 30 1/16 x 40 3/8 in. (76.4 x 102.6 cm)
+
+Credit Line: Rogers Fund, 1911
+
+---
+
+Artwork Title: July Fourteenth, Rue Daunou, 1910
+Object Type: Painting
+Classification: Unknown
+
+Artist: Childe Hassam
+Nationality: American
+Lifespan: 1859      –1935      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1910–1910
+
+Medium: Oil on canvas
+Dimensions: 29 1/8 x 19 7/8 in. (74 x 50.5 cm)
+
+Credit Line: George A. Hearn Fund, 1929
+
+---
+
+Artwork Title: Peach Blossoms—Villiers-le-Bel
+Object Type: Painting
+Classification: Unknown
+
+Artist: Childe Hassam
+Nationality: American
+Lifespan: 1859      –1935      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1887–1889
+
+Medium: Oil on canvas
+Dimensions: 21 1/2 x 18 1/8 in. (54.6 x 46 cm)
+
+Credit Line: Gift of Mrs. J. Augustus Barnard, 1979
+
+---
+
+Artwork Title: Pont Neuf, Paris
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: Childe Hassam
+Nationality: American
+Lifespan: 1859      –1935      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1859–1935
+
+Medium: Watercolor on paper
+Dimensions: 11 3/8 x 8 3/4 in. (28.9 x 22.2 cm)
+
+Credit Line: Bequest of Susan Dwight Bliss, 1966
+
+---
+
+Artwork Title: Spring Morning in the Heart of the City
+Object Type: Painting
+Classification: Unknown
+
+Artist: Childe Hassam
+Nationality: American
+Lifespan: 1859      –1935      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1890–1899
+
+Medium: Oil on canvas
+Dimensions: 18 1/8 x 20 3/4 in. (46 x 52.7 cm)
+
+Credit Line: Gift of Ethelyn McKinney, in memory of her brother, Glenn Ford McKinney, 1943
+
+---
+
+Artwork Title: Street in Portsmouth
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: Childe Hassam
+Nationality: American
+Lifespan: 1859      –1935      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1916–1916
+
+Medium: Watercolor on off-white wove paper
+Dimensions: 15 1/8 x 22 in. (38.4 x 55.9 cm)
+
+Credit Line: Rogers Fund, 1917
+
+---
+
+Artwork Title: Molly Wales Fobes
+Object Type: Painting
+Classification: Unknown
+
+Artist: Rufus Hathaway
+Nationality: American
+Lifespan: 1770      –1822      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1790–1790
+
+Medium: Oil on canvas
+Dimensions: 34 1/4 x 32 in. (86.6 x 81.3 cm)
+
+Credit Line: Gift of Edgar William and Bernice Chrysler Garbisch, 1963
+
+---
+
+Artwork Title: View of the Bay and City of New York from Weehawken
+Object Type: Painting
+Classification: Unknown
+
+Artist: Robert Havell Jr.
+Nationality: American, born England
+Lifespan: 1793      –1878      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1840–1840
+
+Medium: Oil on canvas
+Dimensions: 24 x 33 in. (61 x 83.8 cm)
+
+Credit Line: The Edward W. C. Arnold Collection of New York Prints, Maps, and Pictures, Bequest of Edward W. C. Arnold, 1954
+
+---
+
+Artwork Title: Views of Battery Park
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: Hughson Frederick Hawley
+Nationality: American, born England
+Lifespan: 1850      –1936      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1886–1886
+
+Medium: Watercolor over traces of graphite on paper
+Dimensions: 13 15/16 x 20 in. (35.4 x 50.8 cm)
+
+Credit Line: Gift of Thomas Kensett, by exchange, 1969
+
+---
+
+Artwork Title: Alexander Petrunkevitch
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: Margaret Foote Hawley
+Nationality: American
+Lifespan: 1880      –1963      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1913–1913
+
+Medium: Watercolor on ivory
+Dimensions: 5 1/2 x 4 1/8 in. (14 x 10.5 cm)
+
+Credit Line: Rogers Fund, 1914
+
+---
+
+Artwork Title: The Trousseau
+Object Type: Painting
+Classification: Unknown
+
+Artist: Charles Webster Hawthorne
+Nationality: American
+Lifespan: 1872      –1930      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1910–1910
+
+Medium: Oil on canvas mounted on wood
+Dimensions: 40 x 40 in. (101.6 x 101.6 cm)
+
+Credit Line: George A. Hearn Fund, 1911
+
+---
+
+Artwork Title: Approaching Thunder Storm
+Object Type: Painting
+Classification: Unknown
+
+Artist: Martin Johnson Heade
+Nationality: American
+Lifespan: 1819      –1904      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1859–1859
+
+Medium: Oil on canvas
+Dimensions: 28 x 44in. (71.1 x 111.8cm)
+Framed: 42 1/2 × 58 3/8 × 5 in. (108 × 148.3 × 12.7 cm)
+
+Credit Line: Gift of Erving Wolf Foundation and Mr. and Mrs. Erving Wolf, in memory of Diane R. Wolf, 1975
+
+---
+
+Artwork Title: Hummingbird and Apple Blossoms
+Object Type: Painting
+Classification: Unknown
+
+Artist: Martin Johnson Heade
+Nationality: American
+Lifespan: 1819      –1904      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1875–1875
+
+Medium: Oil on canvas
+Dimensions: 12 3/16 x 14 1/8 in. (31 x 35.9 cm)
+
+Credit Line: Gift of Mrs. J. Augustus Barnard, 1979
+
+---
+
+Artwork Title: Hummingbird and Passionflowers
+Object Type: Painting
+Classification: Unknown
+
+Artist: Martin Johnson Heade
+Nationality: American
+Lifespan: 1819      –1904      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1872–1885
+
+Medium: Oil on canvas
+Dimensions: 20 x 12 in. (50.8 x 30.5 cm)
+
+Credit Line: Purchase, Gift of Albert Weatherby, 1946
+
+---
+
+Artwork Title: Newburyport Meadows
+Object Type: Painting
+Classification: Unknown
+
+Artist: Martin Johnson Heade
+Nationality: American
+Lifespan: 1819      –1904      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1873–1881
+
+Medium: Oil on canvas
+Dimensions: 10 1/2 x 22 in. (26.7 x 55.9 cm)
+
+Credit Line: Purchase, Mrs. Samuel P. Reed Gift, Morris K. Jesup Fund, Maria DeWitt Jesup Fund, John Osgood and Elizabeth Amis Cameron Blanchard Memorial Fund and Gifts of Robert E. Tod and William Gedney Bunce, by exchange, 1985
+
+---
+
+Artwork Title: Alexander Van Rensselaer
+Object Type: Painting
+Classification: Unknown
+
+Artist: George P. A. Healy
+Nationality: American
+Lifespan: 1813      –1894      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1837–1837
+
+Medium: Oil on canvas
+Dimensions: 36 1/4 x 28 3/8 in. (91.7 x 71.5 cm)
+
+Credit Line: Bequest of Mabel Van Rensselaer Johnson, 1959
+
+---
+
+Artwork Title: Euphemia White Van Rensselaer
+Object Type: Painting
+Classification: Unknown
+
+Artist: George P. A. Healy
+Nationality: American
+Lifespan: 1813      –1894      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1842–1842
+
+Medium: Oil on canvas
+Dimensions: 45 3/4 x 35 1/4 in. (115.1 x 89.2 cm)
+
+Credit Line: Bequest of Cornelia Cruger, 1923
+
+---
+
+Artwork Title: Moses Pond
+Object Type: Painting
+Classification: Unknown
+
+Artist: George P. A. Healy
+Nationality: American
+Lifespan: 1813      –1894      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1832–1832
+
+Medium: Oil on canvas
+Dimensions: 30 x 25 in. (76.2 x 63.5 cm)
+
+Credit Line: Gift of Mrs. Dunlap Hopkins, 1939
+
+---
+
+Artwork Title: Portrait of the Artist
+Object Type: Painting
+Classification: Unknown
+
+Artist: George P. A. Healy
+Nationality: American
+Lifespan: 1813      –1894      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1851–1851
+
+Medium: Oil on canvas
+Dimensions: 24 1/2 x 20 1/2 in. (62.2 x 52.1 cm)
+
+Credit Line: Gift of Samuel P. Avery, 1891
+
+---
+
+Artwork Title: An Old Song
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: William John Hennessy
+Nationality: Irish
+Lifespan: 1839      –1917      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1874–1874
+
+Medium: Watercolor, gum arabic, and gouache on off-white wove paper
+Dimensions: 14 11/16 x 11 1/8 in. (37.3 x 28.3 cm)
+
+Credit Line: Purchase, Gift of George A. Lucas and Bequest of George D. Pratt, by exchange, 1982
+
+---
+
+Artwork Title: The 9:45 Accommodation
+Object Type: Painting
+Classification: Unknown
+
+Artist: Edward Lamson Henry
+Nationality: American
+Lifespan: 1841      –1919      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1867–1867
+
+Medium: Oil on canvas
+Dimensions: 16 x 30 5/8 in. (40.6 x 77.8 cm)
+
+Credit Line: Bequest of Moses Tanenbaum, 1937
+
+---
+
+Artwork Title: A Carriage Ride
+Object Type: Painting
+Classification: Unknown
+
+Artist: Edward Lamson Henry
+Nationality: American
+Lifespan: 1841      –1919      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1870–1900
+
+Medium: Oil on canvas
+Dimensions: 16 3/4 x 24 1/4in. (42.5 x 61.6cm)
+Framed: 3 1/2 x 23 1/4 x 31 3/4 in. (8.9 x 59.1 x 80.6 cm)
+
+Credit Line: Gift of Mrs. J. Augustus Barnard, 1979
+
+---
+
+Artwork Title: The North Dutch Church, Fulton and William Streets, New York
+Object Type: Painting
+Classification: Unknown
+
+Artist: Edward Lamson Henry
+Nationality: American
+Lifespan: 1841      –1919      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1869–1869
+
+Medium: Oil on academy board
+Dimensions: 18 x 14 in. (45.7 x 35.6 cm)
+
+Credit Line: Bequest of Maria DeWitt Jesup, from the collection of her husband, Morris K. Jesup, 1914
+
+---
+
+Artwork Title: Saint George's Church, New York
+Object Type: Painting
+Classification: Unknown
+
+Artist: Edward Lamson Henry
+Nationality: American
+Lifespan: 1841      –1919      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1875–1875
+
+Medium: Oil on wood
+Dimensions: 10 x 8 1/2 in. (25.4 x 21.6 cm)
+
+Credit Line: Bequest of Margaret Crane Hurlbut, 1933

@@ -1,3 +1,9502 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ef9e6a0ea42813f38dd8d7c62134eb97b6e7c9dd41b32dcf421f484bb8ded782
-size 167081
+Artwork Title: Hat
+Object Type: Hat
+Classification: Unknown
+
+Artist: Christian Dior|House of Dior
+Nationality: French|French
+Lifespan: 1905      |1947      –1957      |9999      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1949–1949
+
+Medium: wool, leather
+Dimensions: Unknown
+
+Credit Line: Gift of Miss Isabel Shults, 1953
+
+---
+
+Artwork Title: Toque
+Object Type: Toque
+Classification: Unknown
+
+Artist: Bergdorf Goodman
+Nationality: American
+Lifespan: 1899      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1947–1948
+
+Medium: wool
+Dimensions: Unknown
+
+Credit Line: Gift of Miss Isabel Shults, 1953
+
+---
+
+Artwork Title: Hat
+Object Type: Hat
+Classification: Unknown
+
+Artist: Bergdorf Goodman
+Nationality: American
+Lifespan: 1899      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1949–1949
+
+Medium: straw, feathers
+Dimensions: Unknown
+
+Credit Line: Gift of Miss Isabel Shults, 1953
+
+---
+
+Artwork Title: Hat
+Object Type: Hat
+Classification: Unknown
+
+Artist: Bergdorf Goodman
+Nationality: American
+Lifespan: 1899      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1950–1950
+
+Medium: straw, silk
+Dimensions: Unknown
+
+Credit Line: Gift of Miss Isabel Shults, 1953
+
+---
+
+Artwork Title: Hat
+Object Type: Hat
+Classification: Unknown
+
+Artist: Bergdorf Goodman
+Nationality: American
+Lifespan: 1899      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1949–1949
+
+Medium: wool
+Dimensions: Unknown
+
+Credit Line: Gift of Miss Isabel Shults, 1953
+
+---
+
+Artwork Title: Hat
+Object Type: Hat
+Classification: Unknown
+
+Artist: Mainbocher|Mainbocher
+Nationality: American|French and American
+Lifespan: 1890      |1930      –1976      |1976      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1949–1949
+
+Medium: wool, silk
+Dimensions: Unknown
+
+Credit Line: Gift of Miss Isabel Shults, 1953
+
+---
+
+Artwork Title: Hat
+Object Type: Hat
+Classification: Unknown
+
+Artist: Mainbocher|Mainbocher
+Nationality: American|French and American
+Lifespan: 1890      |1930      –1976      |1976      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1949–1949
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Miss Isabel Shults, 1953
+
+---
+
+Artwork Title: Hat
+Object Type: Hat
+Classification: Unknown
+
+Artist: Miss Sally Milgrim|Milgrim
+Nationality: American| 
+Lifespan: 1891      |1927      –1994      |1990      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1946–1946
+
+Medium: cotton, feathers, horsehair
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. Edward Ansen, 1956
+
+---
+
+Artwork Title: Hat
+Object Type: Hat
+Classification: Unknown
+
+Artist: Sally Victor
+Nationality: American
+Lifespan: 1905      –1977      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1956–1956
+
+Medium: straw, silk
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. Sally Victor, 1957
+
+---
+
+Artwork Title: Beret
+Object Type: Beret
+Classification: Unknown
+
+Artist: Bruyère
+Nationality: French
+Lifespan: 1928      –9999      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1952–1953
+
+Medium: wool, silk
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. Charlotte R. Gutman, 1957
+
+---
+
+Artwork Title: Hat
+Object Type: Hat
+Classification: Unknown
+
+Artist: Bruyère
+Nationality: French
+Lifespan: 1928      –9999      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1952–1953
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. Charlotte R. Gutman, 1957
+
+---
+
+Artwork Title: Hat
+Object Type: Hat
+Classification: Unknown
+
+Artist: John-Frederics
+Nationality: American
+Lifespan: 1929      –1948      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1934–1944
+
+Medium: wool, silk
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. Prentiss Coonley, 1958
+
+---
+
+Artwork Title: Hat
+Object Type: Hat
+Classification: Unknown
+
+Artist: Roger Vivier|Suzanne Rémy
+Nationality: French| 
+Lifespan: 1913      |          –1998      |          
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1938–1939
+
+Medium: straw
+Dimensions: Unknown
+
+Credit Line: Gift of Edgar J. Lorie, Inc., in memory of Laddie Northridge, 1960
+
+---
+
+Artwork Title: Cloche
+Object Type: Cloche
+Classification: Unknown
+
+Artist: Emme, Inc.
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1954–1954
+
+Medium: straw, synthetic fiber
+Dimensions: Unknown
+
+Credit Line: Gift of Emme, Inc. (Miss Emme), 1960
+
+---
+
+Artwork Title: Hat
+Object Type: Hat
+Classification: Unknown
+
+Artist: Emme, Inc.
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1955–1955
+
+Medium: silk, straw
+Dimensions: Unknown
+
+Credit Line: Gift of Emme, Inc. (Miss Emme), 1960
+
+---
+
+Artwork Title: Fez
+Object Type: Fez
+Classification: Unknown
+
+Artist: Emme, Inc.|Adolfo
+Nationality:  |American
+Lifespan:           |1923      –          |2021      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1959–1959
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Emme, Inc. (Miss Emme), 1960
+
+---
+
+Artwork Title: Turban
+Object Type: Turban
+Classification: Unknown
+
+Artist: Emme, Inc.
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1958–1958
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Emme, Inc. (Miss Emme), 1960
+
+---
+
+Artwork Title: Hat
+Object Type: Hat
+Classification: Unknown
+
+Artist: Sally Victor
+Nationality: American
+Lifespan: 1905      –1977      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1960–1960
+
+Medium: straw
+Dimensions: Unknown
+
+Credit Line: Gift of Sally Victor, 1960
+
+---
+
+Artwork Title: Calot
+Object Type: Calot
+Classification: Unknown
+
+Artist: Cristobal Balenciaga|Bergdorf Goodman
+Nationality: Spanish|American
+Lifespan: 1895-01-21|1899      –1972-03-23|9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1955–1955
+
+Medium: straw, cotton, silk
+Dimensions: Unknown
+
+Credit Line: Gift of Miss Julia Raymond, 1962
+
+---
+
+Artwork Title: Accessory set
+Object Type: Accessory Set
+Classification: Unknown
+
+Artist: Paulette
+Nationality: French
+Lifespan:           –          
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1948–1958
+
+Medium: (a, b) silk, metal; (d) silk, wool
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. Walter C. Baker, 1963
+
+---
+
+Artwork Title: Hat
+Object Type: Hat
+Classification: Unknown
+
+Artist: Bonwit Teller & Co.
+Nationality: American
+Lifespan: 1907      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1956–1956
+
+Medium: wool
+Dimensions: Unknown
+
+Credit Line: Gift of Miss Adelaide Milton de Groot, 1964
+
+---
+
+Artwork Title: Calot
+Object Type: Calot
+Classification: Unknown
+
+Artist: Valentina
+Nationality: American
+Lifespan: 1899      –1989      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1955–1955
+
+Medium: wool
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. Bayne Kelley, 1965
+
+---
+
+Artwork Title: Hat
+Object Type: Hat
+Classification: Unknown
+
+Artist: Bergdorf Goodman
+Nationality: American
+Lifespan: 1899      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1963–1964
+
+Medium: wool, synthetic fiber
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. William F. Rosenblum, 1966
+
+---
+
+Artwork Title: Purse
+Object Type: Purse
+Classification: Unknown
+
+Artist: Whiting and Davis Company, Inc.
+Nationality: American
+Lifespan: 1896      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1910–1910
+
+Medium: silver
+Dimensions: Unknown
+
+Credit Line: Gift of Judith Leiber, 1982
+
+---
+
+Artwork Title: Purse
+Object Type: Purse
+Classification: Unknown
+
+Artist: Whiting and Davis Company, Inc.
+Nationality: American
+Lifespan: 1896      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1920–1929
+
+Medium: metal
+Dimensions: Unknown
+
+Credit Line: Gift of the Molly Epstein Collection, 1986
+
+---
+
+Artwork Title: Purse
+Object Type: Purse
+Classification: Unknown
+
+Artist: Tiffany & Co.
+Nationality:  
+Lifespan: 1837      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1920–1929
+
+Medium: metal, jewels
+Dimensions: Unknown
+
+Credit Line: Gift of Thomas W. Murphy Jr., 1984
+
+---
+
+Artwork Title: Evening purse
+Object Type: Evening purse
+Classification: Unknown
+
+Artist: Jay-Thorpe, Inc.
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1927–1928
+
+Medium: leather, metal
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. N. Harold Marks, 1977
+
+---
+
+Artwork Title: Evening clutch
+Object Type: Evening clutch
+Classification: Unknown
+
+Artist: Jay-Thorpe, Inc.
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1930–1930
+
+Medium: cotton, metal
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. N. Harold Marks, 1977
+
+---
+
+Artwork Title: Accessory set
+Object Type: Accessory Set
+Classification: Unknown
+
+Artist: Wiener Werkstätte
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: Austrian
+Period: Unknown
+Date Range: 1930–1930
+
+Medium: leather, metal
+Dimensions: Unknown
+
+Credit Line: Gift of Clothilde Daniel, 1980
+
+---
+
+Artwork Title: Bag
+Object Type: Bag
+Classification: Unknown
+
+Artist: Cartier
+Nationality: French
+Lifespan: 1847      –9999      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1930–1939
+
+Medium: leather, silver, diamonds, onyx, pearls, silk
+Dimensions: Unknown
+
+Credit Line: Gift of Margaret L. Berger, in memory of Aline M. Liebman, 1977
+
+---
+
+Artwork Title: Purse
+Object Type: Purse
+Classification: Unknown
+
+Artist: Cartier
+Nationality: French
+Lifespan: 1847      –9999      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1930–1939
+
+Medium: cotton, leather, plastic, onyx, coral
+Dimensions: Unknown
+
+Credit Line: Gift of Margaret L. Berger, in memory of Aline M. Liebman, 1977
+
+---
+
+Artwork Title: Purse
+Object Type: Purse
+Classification: Unknown
+
+Artist: Cartier
+Nationality: French
+Lifespan: 1847      –9999      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1930–1939
+
+Medium: silk, onyx, diamonds, gold
+Dimensions: Unknown
+
+Credit Line: Gift of Margaret L. Berger, in memory of Aline M. Liebman, 1977
+
+---
+
+Artwork Title: Evening bag
+Object Type: Evening bag
+Classification: Unknown
+
+Artist: Marshall Field & Company
+Nationality: American
+Lifespan: 1881      –2050      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1933–1933
+
+Medium: leather
+Dimensions: Unknown
+
+Credit Line: Gift of Alice Topp-Lee, 1975
+
+---
+
+Artwork Title: Purse
+Object Type: Purse
+Classification: Unknown
+
+Artist: Harry Rosenfeld
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1935–1935
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Mr. Milton S. Graber, 1954
+
+---
+
+Artwork Title: Purse
+Object Type: Purse
+Classification: Unknown
+
+Artist: Harry Rosenfeld
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1940–1940
+
+Medium: leather
+Dimensions: Unknown
+
+Credit Line: Gift of Mr. Milton S. Graber, 1954
+
+---
+
+Artwork Title: Purse
+Object Type: Purse
+Classification: Unknown
+
+Artist: Harry Rosenfeld
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1940–1940
+
+Medium: leather, silk
+Dimensions: Unknown
+
+Credit Line: Gift of Mr. Milton S. Graber, 1954
+
+---
+
+Artwork Title: Purse
+Object Type: Purse
+Classification: Unknown
+
+Artist: Harry Rosenfeld
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1940–1940
+
+Medium: leather, silk
+Dimensions: Unknown
+
+Credit Line: Gift of Mr. Milton S. Graber, 1954
+
+---
+
+Artwork Title: Purse
+Object Type: Purse
+Classification: Unknown
+
+Artist: Harry Rosenfeld
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1943–1943
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Mr. Milton S. Graber, 1954
+
+---
+
+Artwork Title: Purse
+Object Type: Purse
+Classification: Unknown
+
+Artist: Harry Rosenfeld
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1943–1943
+
+Medium: leather, brass
+Dimensions: Unknown
+
+Credit Line: Gift of Mr. Milton S. Graber, 1954
+
+---
+
+Artwork Title: Purse
+Object Type: Purse
+Classification: Unknown
+
+Artist: Harry Rosenfeld
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1944–1944
+
+Medium: leather, silk
+Dimensions: Unknown
+
+Credit Line: Gift of Mr. Milton S. Graber, 1954
+
+---
+
+Artwork Title: Pouch
+Object Type: Pouch
+Classification: Unknown
+
+Artist: Phelps
+Nationality: American
+Lifespan: 1940      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1944–1944
+
+Medium: leather, metal
+Dimensions: Unknown
+
+Credit Line: Gift of Mr. William Drown Phelps, 1944
+
+---
+
+Artwork Title: Purse
+Object Type: Purse
+Classification: Unknown
+
+Artist: Harry Rosenfeld
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1945–1945
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Mr. Milton S. Graber, 1954
+
+---
+
+Artwork Title: Cocktail bag
+Object Type: Cocktail Bag
+Classification: Unknown
+
+Artist: Harry Rosenfeld
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1945–1945
+
+Medium: leather, silk
+Dimensions: Unknown
+
+Credit Line: Gift of Mr. Milton S. Graber, 1954
+
+---
+
+Artwork Title: Evening bag
+Object Type: Evening bag
+Classification: Unknown
+
+Artist: Miss M. Gans
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1950–1959
+
+Medium: silk, metal
+Dimensions: Unknown
+
+Credit Line: Gift of Polaire Weissman, in memory of Florence W. Potter, 1978
+
+---
+
+Artwork Title: Purse
+Object Type: Purse
+Classification: Unknown
+
+Artist: Judith Leiber|Judith Leiber Couture Ltd.
+Nationality: American| 
+Lifespan: 1921-01-11|          –2018-04-28|          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1963–1963
+
+Medium: glass, silk
+Dimensions: Unknown
+
+Credit Line: Gift of Judith Leiber, 1987
+
+---
+
+Artwork Title: Purse
+Object Type: Purse
+Classification: Unknown
+
+Artist: Judith Leiber|Judith Leiber Couture Ltd.
+Nationality: American| 
+Lifespan: 1921-01-11|          –2018-04-28|          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1963–1963
+
+Medium: leather, silk
+Dimensions: Unknown
+
+Credit Line: Gift of Judith Leiber, 1987
+
+---
+
+Artwork Title: Minaudière
+Object Type: Minaudière
+Classification: Unknown
+
+Artist: Judith Leiber|Judith Leiber Couture Ltd.
+Nationality: American| 
+Lifespan: 1921-01-11|          –2018-04-28|          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1967–1967
+
+Medium: metal, leather
+Dimensions: Unknown
+
+Credit Line: Gift of Judith Leiber, 1982
+
+---
+
+Artwork Title: Shoulder bag
+Object Type: Shoulder bag
+Classification: Unknown
+
+Artist: Judith Leiber|Judith Leiber Couture Ltd.
+Nationality: American| 
+Lifespan: 1921-01-11|          –2018-04-28|          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1968–1968
+
+Medium: leather, metal
+Dimensions: Unknown
+
+Credit Line: Gift of Judith Leiber, 1987
+
+---
+
+Artwork Title: Purse
+Object Type: Purse
+Classification: Unknown
+
+Artist: Judith Leiber|Judith Leiber Couture Ltd.
+Nationality: American| 
+Lifespan: 1921-01-11|          –2018-04-28|          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1968–1968
+
+Medium: calfskin
+Dimensions: Unknown
+
+Credit Line: Gift of Judith Leiber, 1987
+
+---
+
+Artwork Title: Purse
+Object Type: Purse
+Classification: Unknown
+
+Artist: Judith Leiber Couture Ltd.|Judith Leiber
+Nationality:  |American
+Lifespan:           |1921-01-11–          |2018-04-28
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1969–1969
+
+Medium: leather, metal
+Dimensions: Unknown
+
+Credit Line: Gift of Judith Leiber, 1981
+
+---
+
+Artwork Title: Minaudière
+Object Type: Minaudière
+Classification: Unknown
+
+Artist: Judith Leiber Couture Ltd.|Judith Leiber
+Nationality:  |American
+Lifespan:           |1921-01-11–          |2018-04-28
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1970–1970
+
+Medium: metal, plastic, leather
+Dimensions: Unknown
+
+Credit Line: Gift of Judith Leiber, 1982
+
+---
+
+Artwork Title: Evening bag
+Object Type: Evening bag
+Classification: Unknown
+
+Artist: Judith Leiber Couture Ltd.|Judith Leiber
+Nationality:  |American
+Lifespan:           |1921-01-11–          |2018-04-28
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1973–1973
+
+Medium: plastic, metal
+Dimensions: Unknown
+
+Credit Line: Gift of Judith Leiber, 1978
+
+---
+
+Artwork Title: Purse
+Object Type: Purse
+Classification: Unknown
+
+Artist: Judith Leiber Couture Ltd.|Judith Leiber
+Nationality:  |American
+Lifespan:           |1921-01-11–          |2018-04-28
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1977–1977
+
+Medium: leather, metal
+Dimensions: Unknown
+
+Credit Line: Gift of Judith Leiber, 1982
+
+---
+
+Artwork Title: Clutch
+Object Type: Clutch
+Classification: Unknown
+
+Artist: Barbara R. Bolan
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1978–1978
+
+Medium: plastic, leather
+Dimensions: Unknown
+
+Credit Line: Gift of Barbara Bolan, 1987
+
+---
+
+Artwork Title: Purse
+Object Type: Purse
+Classification: Unknown
+
+Artist: Judith Leiber Couture Ltd.|Judith Leiber
+Nationality:  |American
+Lifespan:           |1921-01-11–          |2018-04-28
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1978–1978
+
+Medium: skin, wood
+Dimensions: Unknown
+
+Credit Line: Gift of Judith Leiber, 1981
+
+---
+
+Artwork Title: Evening bag
+Object Type: Evening bag
+Classification: Unknown
+
+Artist: Judith Leiber|Judith Leiber Couture Ltd.
+Nationality: American| 
+Lifespan: 1921-01-11|          –2018-04-28|          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1979–1979
+
+Medium: skin, leather
+Dimensions: Unknown
+
+Credit Line: Gift of Judith Leiber, 1981
+
+---
+
+Artwork Title: Purse
+Object Type: Purse
+Classification: Unknown
+
+Artist: Judith Leiber Couture Ltd.|Judith Leiber
+Nationality:  |American
+Lifespan:           |1921-01-11–          |2018-04-28
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1979–1979
+
+Medium: wood, metal, silk
+Dimensions: Unknown
+
+Credit Line: Gift of Judith Leiber, 1982
+
+---
+
+Artwork Title: Minaudière
+Object Type: Minaudière
+Classification: Unknown
+
+Artist: Judith Leiber Couture Ltd.|Judith Leiber
+Nationality:  |American
+Lifespan:           |1921-01-11–          |2018-04-28
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1980–1980
+
+Medium: metal, leather, silk
+Dimensions: Unknown
+
+Credit Line: Gift of Judith Leiber, 1982
+
+---
+
+Artwork Title: Evening bag
+Object Type: Evening bag
+Classification: Unknown
+
+Artist: Judith Leiber Couture Ltd.|Judith Leiber
+Nationality:  |American
+Lifespan:           |1921-01-11–          |2018-04-28
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1981–1981
+
+Medium: shell, glass, metal, leather
+Dimensions: Unknown
+
+Credit Line: Gift of Judith Leiber, 1981
+
+---
+
+Artwork Title: Evening bag
+Object Type: Evening bag
+Classification: Unknown
+
+Artist: Judith Leiber Couture Ltd.|Judith Leiber
+Nationality:  |American
+Lifespan:           |1921-01-11–          |2018-04-28
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1981–1981
+
+Medium: shell, glass, metal
+Dimensions: Unknown
+
+Credit Line: Gift of Judith Leiber, 1981
+
+---
+
+Artwork Title: Purse
+Object Type: Purse
+Classification: Unknown
+
+Artist: Judith Leiber Couture Ltd.|Judith Leiber
+Nationality:  |American
+Lifespan:           |1921-01-11–          |2018-04-28
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1981–1981
+
+Medium: shell, metal, leather
+Dimensions: Unknown
+
+Credit Line: Gift of Judith Leiber, 1981
+
+---
+
+Artwork Title: Evening bag
+Object Type: Evening bag
+Classification: Unknown
+
+Artist: Judith Leiber Couture Ltd.|Judith Leiber
+Nationality:  |American
+Lifespan:           |1921-01-11–          |2018-04-28
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1981–1981
+
+Medium: shell, metal
+Dimensions: Unknown
+
+Credit Line: Gift of Judith Leiber, 1981
+
+---
+
+Artwork Title: Purse
+Object Type: Purse
+Classification: Unknown
+
+Artist: Judith Leiber Couture Ltd.|Judith Leiber
+Nationality:  |American
+Lifespan:           |1921-01-11–          |2018-04-28
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1981–1981
+
+Medium: leather, silk
+Dimensions: Unknown
+
+Credit Line: Gift of Judith Leiber, 1982
+
+---
+
+Artwork Title: Minaudière
+Object Type: Minaudière
+Classification: Unknown
+
+Artist: Judith Leiber Couture Ltd.|Judith Leiber
+Nationality:  |American
+Lifespan:           |1921-01-11–          |2018-04-28
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1982–1982
+
+Medium: leather, metal
+Dimensions: Unknown
+
+Credit Line: Gift of Judith Leiber, 1982
+
+---
+
+Artwork Title: Purse
+Object Type: Purse
+Classification: Unknown
+
+Artist: Judith Leiber Couture Ltd.|Judith Leiber
+Nationality:  |American
+Lifespan:           |1921-01-11–          |2018-04-28
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1982–1982
+
+Medium: leather, metal, silk
+Dimensions: Unknown
+
+Credit Line: Gift of Judith Leiber, 1982
+
+---
+
+Artwork Title: Minaudière
+Object Type: Minaudière
+Classification: Unknown
+
+Artist: Judith Leiber Couture Ltd.|Judith Leiber
+Nationality:  |American
+Lifespan:           |1921-01-11–          |2018-04-28
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1982–1982
+
+Medium: metal, leather
+Dimensions: Unknown
+
+Credit Line: Gift of Judith Leiber, 1982
+
+---
+
+Artwork Title: Purse
+Object Type: Purse
+Classification: Unknown
+
+Artist: Judith Leiber Couture Ltd.|Judith Leiber
+Nationality:  |American
+Lifespan:           |1921-01-11–          |2018-04-28
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1982–1982
+
+Medium: leather, metal, silk
+Dimensions: Unknown
+
+Credit Line: Gift of Judith Leiber, 1982
+
+---
+
+Artwork Title: Minaudière
+Object Type: Minaudière
+Classification: Unknown
+
+Artist: Judith Leiber Couture Ltd.|Judith Leiber
+Nationality:  |American
+Lifespan:           |1921-01-11–          |2018-04-28
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1982–1982
+
+Medium: metal, leather, silk
+Dimensions: Unknown
+
+Credit Line: Gift of Judith Leiber, 1982
+
+---
+
+Artwork Title: Minaudière
+Object Type: Minaudière
+Classification: Unknown
+
+Artist: Judith Leiber|Judith Leiber Couture Ltd.
+Nationality: American| 
+Lifespan: 1921-01-11|          –2018-04-28|          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1982–1982
+
+Medium: metal, leather, silk
+Dimensions: Unknown
+
+Credit Line: Gift of Judith Leiber, 1982
+
+---
+
+Artwork Title: Minaudière
+Object Type: Minaudière
+Classification: Unknown
+
+Artist: Judith Leiber|Judith Leiber Couture Ltd.
+Nationality: American| 
+Lifespan: 1921-01-11|          –2018-04-28|          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1982–1982
+
+Medium: metal, glass
+Dimensions: Unknown
+
+Credit Line: Gift of Judith Leiber, 1987
+
+---
+
+Artwork Title: Purse
+Object Type: Purse
+Classification: Unknown
+
+Artist: Barbara R. Bolan
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1984–1984
+
+Medium: Lurex, silk
+Dimensions: Unknown
+
+Credit Line: Gift of Barbara Bolan, 1987
+
+---
+
+Artwork Title: Purse
+Object Type: Purse
+Classification: Unknown
+
+Artist: Whiting and Davis Company, Inc.
+Nationality: American
+Lifespan: 1896      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1915–1925
+
+Medium: metal
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. George Aaron, 1986
+
+---
+
+Artwork Title: Purse
+Object Type: Purse
+Classification: Unknown
+
+Artist: Whiting and Davis Company, Inc.
+Nationality: American
+Lifespan: 1896      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1918–1928
+
+Medium: metal
+Dimensions: Unknown
+
+Credit Line: Gift of Edna F. Lowenstein, 1984
+
+---
+
+Artwork Title: Purse
+Object Type: Purse
+Classification: Unknown
+
+Artist: Tiffany & Co.
+Nationality:  
+Lifespan: 1837      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1920–1930
+
+Medium: metal
+Dimensions: Unknown
+
+Credit Line: Gift of Judith Leiber, 1983
+
+---
+
+Artwork Title: Purse
+Object Type: Purse
+Classification: Unknown
+
+Artist: Whiting and Davis Company, Inc.
+Nationality: American
+Lifespan: 1896      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1924–1934
+
+Medium: metal
+Dimensions: Unknown
+
+Credit Line: Gift of Molly Epstein Collection, 1986
+
+---
+
+Artwork Title: Purse
+Object Type: Purse
+Classification: Unknown
+
+Artist: Whiting and Davis Company, Inc.
+Nationality: American
+Lifespan: 1896      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1924–1934
+
+Medium: gilt
+Dimensions: Unknown
+
+Credit Line: Gift of Molly Epstein Collection, 1986
+
+---
+
+Artwork Title: Evening bag
+Object Type: Evening bag
+Classification: Unknown
+
+Artist: Koret
+Nationality:  
+Lifespan: 1929      –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1925–1935
+
+Medium: leather, plastic
+Dimensions: Unknown
+
+Credit Line: Gift of Judith Leiber, 1981
+
+---
+
+Artwork Title: Purse
+Object Type: Purse
+Classification: Unknown
+
+Artist: Phelps
+Nationality: American
+Lifespan: 1940      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1939–1949
+
+Medium: leather, metal
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. Morehead Patterson, 1968
+
+---
+
+Artwork Title: Purse
+Object Type: Purse
+Classification: Unknown
+
+Artist: Koret
+Nationality:  
+Lifespan: 1929      –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1950–1960
+
+Medium: leather, metal, plastic
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. James Shapiro, 1984
+
+---
+
+Artwork Title: Purse
+Object Type: Purse
+Classification: Unknown
+
+Artist: Mark W. Cross
+Nationality: American
+Lifespan: 1845      –1997      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1950–1960
+
+Medium: leather, metal
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. James Shapiro, 1984
+
+---
+
+Artwork Title: Minaudière
+Object Type: Minaudière
+Classification: Unknown
+
+Artist: Judith Leiber|Judith Leiber Couture Ltd.
+Nationality: American| 
+Lifespan: 1921-01-11|          –2018-04-28|          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1962–1972
+
+Medium: metal, glass
+Dimensions: Unknown
+
+Credit Line: Gift of Judith Leiber, 1978
+
+---
+
+Artwork Title: Purse
+Object Type: Purse
+Classification: Unknown
+
+Artist: Morris Moskowitz
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1962–1972
+
+Medium: leather, metal
+Dimensions: Unknown
+
+Credit Line: Gift of Marion Poons, 1984
+
+---
+
+Artwork Title: Evening bag
+Object Type: Evening bag
+Classification: Unknown
+
+Artist: Judith Leiber|Judith Leiber Couture Ltd.
+Nationality: American| 
+Lifespan: 1921-01-11|          –2018-04-28|          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1973–1983
+
+Medium: plastic, metal
+Dimensions: Unknown
+
+Credit Line: Gift of Judith Leiber, 1981
+
+---
+
+Artwork Title: Evening shoulder bag
+Object Type: Evening shoulder bag
+Classification: Unknown
+
+Artist: Judith Leiber|Judith Leiber Couture Ltd.
+Nationality: American| 
+Lifespan: 1921-01-11|          –2018-04-28|          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1976–1977
+
+Medium: silk, metal, mica, glass
+Dimensions: Unknown
+
+Credit Line: Gift of Judith Leiber, 1978
+
+---
+
+Artwork Title: Evening bag
+Object Type: Evening bag
+Classification: Unknown
+
+Artist: Judith Leiber|Judith Leiber Couture Ltd.
+Nationality: American| 
+Lifespan: 1921-01-11|          –2018-04-28|          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1977–1978
+
+Medium: wood, metal
+Dimensions: Unknown
+
+Credit Line: Gift of Judith Leiber, 1978
+
+---
+
+Artwork Title: Wallet
+Object Type: Wallet
+Classification: Unknown
+
+Artist: Wiener Werkstätte
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: Austrian
+Period: Unknown
+Date Range: 1925–1929
+
+Medium: leather
+Dimensions: Unknown
+
+Credit Line: Gift of Alfred Mayor, 1980
+
+---
+
+Artwork Title: Evening bag
+Object Type: Evening bag
+Classification: Unknown
+
+Artist: Judith Leiber Couture Ltd.|Judith Leiber
+Nationality:  |American
+Lifespan:           |1921-01-11–          |2018-04-28
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1976–1976
+
+Medium: shell, metal, leather
+Dimensions: Unknown
+
+Credit Line: Gift of Judith Leiber, 1978
+
+---
+
+Artwork Title: Evening bag
+Object Type: Evening bag
+Classification: Unknown
+
+Artist: Judith Leiber Couture Ltd.|Judith Leiber
+Nationality:  |American
+Lifespan:           |1921-01-11–          |2018-04-28
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1978–1978
+
+Medium: shell, metal, leather
+Dimensions: Unknown
+
+Credit Line: Gift of Judith Leiber, 1978
+
+---
+
+Artwork Title: Comb
+Object Type: Comb
+Classification: Unknown
+
+Artist: Asprey
+Nationality: British
+Lifespan: 1781      –9999      
+
+Cultural Context: British
+Period: Unknown
+Date Range: 1900–1910
+
+Medium: plastic, metal
+Dimensions: Unknown
+
+Credit Line: Gift of Rhona M. Brill, 1984
+
+---
+
+Artwork Title: Comb
+Object Type: Comb
+Classification: Unknown
+
+Artist: Tess Sholom
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1977–1977
+
+Medium: plastic, metal
+Dimensions: Unknown
+
+Credit Line: Gift of Tess Sholom, 1988
+
+---
+
+Artwork Title: Comb
+Object Type: Comb
+Classification: Unknown
+
+Artist: Tess Sholom|Karl Lagerfeld
+Nationality:  |French, born Germany
+Lifespan:           |1933      –          |2019      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1981–1981
+
+Medium: plastic
+Dimensions: Unknown
+
+Credit Line: Gift of Tess Sholom, 1988
+
+---
+
+Artwork Title: Gloves
+Object Type: Gloves
+Classification: Unknown
+
+Artist: Aris
+Nationality: French
+Lifespan: 1910      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1969–1969
+
+Medium: cotton
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. Calvert Bodman, 1978
+
+---
+
+Artwork Title: Scarf
+Object Type: Scarf
+Classification: Unknown
+
+Artist: Cristobal Balenciaga|House of Balenciaga
+Nationality: Spanish|French
+Lifespan: 1895-01-21|1937      –1972-03-23|9999      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1950–1950
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Varney Thompson Elliott and Rosemary Thompson Franciscus, in memory of their mother, Margaret Whitney Thompson, 1985
+
+---
+
+Artwork Title: Scarf
+Object Type: Scarf
+Classification: Unknown
+
+Artist: Hermès
+Nationality: French
+Lifespan: 1837      –9999      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1960–1969
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Varney Thompson Elliott and Rosemary Thompson Franciscus, in memory of their mother, Margaret Whitney Thompson, 1985
+
+---
+
+Artwork Title: Belt
+Object Type: Belt
+Classification: Unknown
+
+Artist: Hermès
+Nationality: French
+Lifespan: 1837      –9999      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1955–1965
+
+Medium: leather
+Dimensions: Unknown
+
+Credit Line: Gift of Varney Thompson Elliott and Rosemary Thompson Franciscus, in memory of their mother, Margaret Whitney Thompson, 1985
+
+---
+
+Artwork Title: Belt
+Object Type: Belt
+Classification: Unknown
+
+Artist: Hermès
+Nationality: French
+Lifespan: 1837      –9999      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1950–1955
+
+Medium: leather
+Dimensions: Unknown
+
+Credit Line: Gift of Varney Thompson Elliott and Rosemary Thompson Franciscus, in memory of their mother, Margaret Whitney Thompson, 1985
+
+---
+
+Artwork Title: Brooch
+Object Type: Brooch
+Classification: Unknown
+
+Artist: Hermès
+Nationality: French
+Lifespan: 1837      –9999      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1957–1967
+
+Medium: metal
+Dimensions: Unknown
+
+Credit Line: Gift of Varney Thompson Elliott and Rosemary Thompson Franciscus, in memory of their mother, Margaret Whitney Thompson, 1985
+
+---
+
+Artwork Title: Brooch
+Object Type: Brooch
+Classification: Unknown
+
+Artist: Hermès
+Nationality: French
+Lifespan: 1837      –9999      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1957–1967
+
+Medium: metal
+Dimensions: Unknown
+
+Credit Line: Gift of Varney Thompson Elliott and Rosemary Thompson Franciscus, in memory of their mother, Margaret Whitney Thompson, 1985
+
+---
+
+Artwork Title: Key ring
+Object Type: Key Ring
+Classification: Unknown
+
+Artist: Hermès
+Nationality: French
+Lifespan: 1837      –9999      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1950–1965
+
+Medium: metal
+Dimensions: Unknown
+
+Credit Line: Gift of Varney Thompson Elliott and Rosemary Thompson Franciscus, in memory of their mother, Margaret Whitney Thompson, 1985
+
+---
+
+Artwork Title: Ensemble
+Object Type: Ensemble
+Classification: Unknown
+
+Artist: Issey Miyake|Miyake Design Studio
+Nationality: Japanese|Japanese
+Lifespan: 1938      |1970      –2022      |          
+
+Cultural Context: Japanese
+Period: Unknown
+Date Range: 1979–1979
+
+Medium: a-c) synthetic
+Dimensions: Unknown
+
+Credit Line: Gift of Susan K. Manno, 2005
+
+---
+
+Artwork Title: Dress
+Object Type: Dress
+Classification: Unknown
+
+Artist: Issey Miyake|Miyake Design Studio
+Nationality: Japanese|Japanese
+Lifespan: 1938      |1970      –2022      |          
+
+Cultural Context: Japanese
+Period: Unknown
+Date Range: 1980–1980
+
+Medium: cotton
+Dimensions: Unknown
+
+Credit Line: Gift of Susan K. Manno, 2005
+
+---
+
+Artwork Title: Bathing suit
+Object Type: Bathing suit
+Classification: Unknown
+
+Artist: Issey Miyake|Miyake Design Studio
+Nationality: Japanese|Japanese
+Lifespan: 1938      |1970      –2022      |          
+
+Cultural Context: Japanese
+Period: Unknown
+Date Range: 1979–1979
+
+Medium: a,b) synthetic blend
+Dimensions: Unknown
+
+Credit Line: Gift of Susan K. Manno, 2005
+
+---
+
+Artwork Title: Dress
+Object Type: Dress
+Classification: Unknown
+
+Artist: Issey Miyake|Miyake Design Studio
+Nationality: Japanese|Japanese
+Lifespan: 1938      |1970      –2022      |          
+
+Cultural Context: Japanese
+Period: Unknown
+Date Range: 1985–1985
+
+Medium: cotton
+Dimensions: Unknown
+
+Credit Line: Gift of Susan K. Manno, 2005
+
+---
+
+Artwork Title: Sweater
+Object Type: Sweater
+Classification: Unknown
+
+Artist: Issey Miyake|Miyake Design Studio
+Nationality: Japanese|Japanese
+Lifespan: 1938      |1970      –2022      |          
+
+Cultural Context: Japanese
+Period: Unknown
+Date Range: 1980–1980
+
+Medium: wool
+Dimensions: Unknown
+
+Credit Line: Gift of Susan K. Manno, 2005
+
+---
+
+Artwork Title: Belt
+Object Type: Belt
+Classification: Unknown
+
+Artist: Issey Miyake|Miyake Design Studio
+Nationality: Japanese|Japanese
+Lifespan: 1938      |1970      –2022      |          
+
+Cultural Context: Japanese
+Period: Unknown
+Date Range: 1982–1982
+
+Medium: leather, metal
+Dimensions: Unknown
+
+Credit Line: Gift of Susan K. Manno, 2005
+
+---
+
+Artwork Title: Coat
+Object Type: Coat
+Classification: Unknown
+
+Artist: Issey Miyake|Miyake Design Studio
+Nationality: Japanese|Japanese
+Lifespan: 1938      |1970      –2022      |          
+
+Cultural Context: Japanese
+Period: Unknown
+Date Range: 1983–1983
+
+Medium: jute/wool
+Dimensions: Unknown
+
+Credit Line: Gift of Susan K. Manno, 2005
+
+---
+
+Artwork Title: Dress
+Object Type: Dress
+Classification: Unknown
+
+Artist: Issey Miyake|Miyake Design Studio
+Nationality: Japanese|Japanese
+Lifespan: 1938      |1970      –2022      |          
+
+Cultural Context: Japanese
+Period: Unknown
+Date Range: 1985–1985
+
+Medium: a-c) wool/silk blend; d,e) metal
+Dimensions: Unknown
+
+Credit Line: Gift of Susan K. Manno, 2005
+
+---
+
+Artwork Title: Sweater
+Object Type: Sweater
+Classification: Unknown
+
+Artist: Issey Miyake|Miyake Design Studio
+Nationality: Japanese|Japanese
+Lifespan: 1938      |1970      –2022      |          
+
+Cultural Context: Japanese
+Period: Unknown
+Date Range: 1986–1986
+
+Medium: linen/wool blend
+Dimensions: Unknown
+
+Credit Line: Gift of Susan K. Manno, 2005
+
+---
+
+Artwork Title: Ensemble
+Object Type: Ensemble
+Classification: Unknown
+
+Artist: Issey Miyake|Miyake Design Studio
+Nationality: Japanese|Japanese
+Lifespan: 1938      |1970      –2022      |          
+
+Cultural Context: Japanese
+Period: Unknown
+Date Range: 1979–1979
+
+Medium: a,b) cotton, plastic
+Dimensions: Unknown
+
+Credit Line: Gift of Susan K. Manno, 2005
+
+---
+
+Artwork Title: Ensemble
+Object Type: Ensemble
+Classification: Unknown
+
+Artist: Issey Miyake|Miyake Design Studio
+Nationality: Japanese|Japanese
+Lifespan: 1938      |1970      –2022      |          
+
+Cultural Context: Japanese
+Period: Unknown
+Date Range: 1979–1979
+
+Medium: a) cotton; b) cotton, plastic
+Dimensions: Unknown
+
+Credit Line: Gift of Susan K. Manno, 2005
+
+---
+
+Artwork Title: Ensemble
+Object Type: Ensemble
+Classification: Unknown
+
+Artist: Issey Miyake|Miyake Design Studio
+Nationality: Japanese|Japanese
+Lifespan: 1938      |1970      –2022      |          
+
+Cultural Context: Japanese
+Period: Unknown
+Date Range: 1979–1979
+
+Medium: a,b) wool, plastic
+Dimensions: Unknown
+
+Credit Line: Gift of Susan K. Manno, 2005
+
+---
+
+Artwork Title: Dress
+Object Type: Dress
+Classification: Unknown
+
+Artist: Miyake Design Studio|Issey Miyake
+Nationality: Japanese|Japanese
+Lifespan: 1970      |1938      –          |2022      
+
+Cultural Context: Japanese
+Period: Unknown
+Date Range: 1986–1986
+
+Medium: synthetic
+Dimensions: Unknown
+
+Credit Line: Gift of Susan K. Manno, 2005
+
+---
+
+Artwork Title: Unitard
+Object Type: Unitard
+Classification: Unknown
+
+Artist: Issey Miyake|Miyake Design Studio
+Nationality: Japanese|Japanese
+Lifespan: 1938      |1970      –2022      |          
+
+Cultural Context: Japanese
+Period: Unknown
+Date Range: 1984–1984
+
+Medium: cotton/synthetic blend
+Dimensions: Unknown
+
+Credit Line: Gift of Susan K. Manno, 2005
+
+---
+
+Artwork Title: Dress
+Object Type: Dress
+Classification: Unknown
+
+Artist: Comme des Garçons|Rei Kawakubo
+Nationality: Japanese|Japanese
+Lifespan: 1969      |1942      –9999      |9999      
+
+Cultural Context: Japanese
+Period: Unknown
+Date Range: 1987–1987
+
+Medium: cotton
+Dimensions: Unknown
+
+Credit Line: Gift of Susan K. Manno, 2005
+
+---
+
+Artwork Title: Dress
+Object Type: Dress
+Classification: Unknown
+
+Artist: Comme des Garçons|Rei Kawakubo
+Nationality: Japanese|Japanese
+Lifespan: 1969      |1942      –9999      |9999      
+
+Cultural Context: Japanese
+Period: Unknown
+Date Range: 1985–1985
+
+Medium: synthetic blend, synthetic
+Dimensions: Unknown
+
+Credit Line: Gift of Susan K. Manno, 2005
+
+---
+
+Artwork Title: Scarf
+Object Type: Scarf
+Classification: Unknown
+
+Artist: Comme des Garçons|Rei Kawakubo
+Nationality: Japanese|Japanese
+Lifespan: 1969      |1942      –9999      |9999      
+
+Cultural Context: Japanese
+Period: Unknown
+Date Range: 1983–1984
+
+Medium: wool and cotton
+Dimensions: Unknown
+
+Credit Line: Gift of Susan K. Manno, 2005
+
+---
+
+Artwork Title: Scarf
+Object Type: Scarf
+Classification: Unknown
+
+Artist: Comme des Garçons|Rei Kawakubo
+Nationality: Japanese|Japanese
+Lifespan: 1969      |1942      –9999      |9999      
+
+Cultural Context: Japanese
+Period: Unknown
+Date Range: 1986–1986
+
+Medium: wool/synthetic blend
+Dimensions: Unknown
+
+Credit Line: Gift of Susan K. Manno, 2005
+
+---
+
+Artwork Title: "Mini Loto"
+Object Type: Shoulder bag
+Classification: Unknown
+
+Artist: Hermès
+Nationality: French
+Lifespan: 1837      –9999      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1968–1968
+
+Medium: leather, metal
+Dimensions: Unknown
+
+Credit Line: Gift of Varney Thompson Elliott and Rosemary Thompson Franciscus, in memory of their mother, Margaret Whitney Thompson, 1985
+
+---
+
+Artwork Title: Ensemble
+Object Type: Ensemble
+Classification: Unknown
+
+Artist: Stephen Burrows
+Nationality: American
+Lifespan: 1943      –9999      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1982–1992
+
+Medium: a,b) silk
+Dimensions: Unknown
+
+Credit Line: Gift of H. H. Princess Verne of Rajpipla, 2005
+
+---
+
+Artwork Title: Evening dress
+Object Type: Evening dress
+Classification: Unknown
+
+Artist: Farquharson & Wheelock, N.Y.
+Nationality: American
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1919–1921
+
+Medium: silk, metallic thread, plastic
+Dimensions: Unknown
+
+Credit Line: Gift of Julie B. Henry, 1978
+
+---
+
+Artwork Title: Vanity case
+Object Type: Vanity Case
+Classification: Unknown
+
+Artist: Robert Piguet
+Nationality:  
+Lifespan: 1901      –1953      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1949–1949
+
+Medium: (b) leather
+Dimensions: Unknown
+
+Credit Line: Gift of Alice Topp-Lee, 1975
+
+---
+
+Artwork Title: Evening collar
+Object Type: Evening collar
+Classification: Unknown
+
+Artist: Brooks Brothers
+Nationality: American
+Lifespan: 1818      –9999      
+
+Cultural Context: American or European
+Period: Unknown
+Date Range: 1900–1925
+
+Medium: linen
+Dimensions: Unknown
+
+Credit Line: Gift of Irma A. Bloomingdale, 1976
+
+---
+
+Artwork Title: Evening collar
+Object Type: Evening collar
+Classification: Unknown
+
+Artist: Brooks Brothers
+Nationality: American
+Lifespan: 1818      –9999      
+
+Cultural Context: American or European
+Period: Unknown
+Date Range: 1900–1925
+
+Medium: linen
+Dimensions: Unknown
+
+Credit Line: Gift of Irma A. Bloomingdale, 1976
+
+---
+
+Artwork Title: Briefcase
+Object Type: Briefcase
+Classification: Unknown
+
+Artist: Carlos Falchi
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1972–1972
+
+Medium: leather, skins
+Dimensions: Unknown
+
+Credit Line: Gift of Carlos Falchi, 1981
+
+---
+
+Artwork Title: Purse
+Object Type: Purse
+Classification: Unknown
+
+Artist: Furst and Mooney, Inc
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1980–1980
+
+Medium: snakeskin, leather
+Dimensions: Unknown
+
+Credit Line: Gift of Furst & Mooney Inc., 1981
+
+---
+
+Artwork Title: Purse
+Object Type: Purse
+Classification: Unknown
+
+Artist: Furst and Mooney, Inc
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1980–1980
+
+Medium: snakeskin, leather
+Dimensions: Unknown
+
+Credit Line: Gift of Furst & Mooney Inc., 1981
+
+---
+
+Artwork Title: Evening coat
+Object Type: Evening coat
+Classification: Unknown
+
+Artist: Mariano Fortuny|Fortuny
+Nationality: Spanish|Italian
+Lifespan: 1871      |1906      –1949      |2020      
+
+Cultural Context: Italian
+Period: Unknown
+Date Range: 1917–1927
+
+Medium: silk, glass
+Dimensions: Unknown
+
+Credit Line: Gift of Miriam Whitney Coletti, 1985
+
+---
+
+Artwork Title: Shoulder bag
+Object Type: Shoulder bag
+Classification: Unknown
+
+Artist: Barbara R. Bolan
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1985–1985
+
+Medium: leather, straw, silk
+Dimensions: Unknown
+
+Credit Line: Gift of Barbara Bolan, 1987
+
+---
+
+Artwork Title: Dickey
+Object Type: Dickey
+Classification: Unknown
+
+Artist: Bonwit Teller & Co.
+Nationality: American
+Lifespan: 1907      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1900–1915
+
+Medium: [no medium available]
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. Charles V. Stehlin, 1973
+
+---
+
+Artwork Title: Boa
+Object Type: Boa
+Classification: Unknown
+
+Artist: Bonwit Teller & Co.
+Nationality: American
+Lifespan: 1907      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1972–1972
+
+Medium: [no medium available]
+Dimensions: Unknown
+
+Credit Line: Gift of Bonwit Teller, 1973
+
+---
+
+Artwork Title: Boa
+Object Type: Boa
+Classification: Unknown
+
+Artist: Bonwit Teller & Co.
+Nationality: American
+Lifespan: 1907      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1972–1972
+
+Medium: [no medium available]
+Dimensions: Unknown
+
+Credit Line: Gift of Bonwit Teller, 1973
+
+---
+
+Artwork Title: Scarf
+Object Type: Scarf
+Classification: Unknown
+
+Artist: Vera
+Nationality: American
+Lifespan: 1947      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1950–1959
+
+Medium: silk, rayon
+Dimensions: Unknown
+
+Credit Line: Gift of Eleanora Eaton Brooks, 1975
+
+---
+
+Artwork Title: Scarf
+Object Type: Scarf
+Classification: Unknown
+
+Artist: Vera
+Nationality: American
+Lifespan: 1947      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1950–1959
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Eleanora Eaton Brooks, 1975
+
+---
+
+Artwork Title: Accessory set
+Object Type: Accessory Set
+Classification: Unknown
+
+Artist: House of Chanel|Gabrielle Chanel
+Nationality: French|French
+Lifespan: 1910      |1883      –9999      |1971      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1953–1959
+
+Medium: silk, cotton
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. Stephane Groueff, 1976
+
+---
+
+Artwork Title: Dickey
+Object Type: Dickey
+Classification: Unknown
+
+Artist: Saks Fifth Avenue
+Nationality: American
+Lifespan: 1924      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1925–1930
+
+Medium: silk, cotton
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. Eckley B. Coxe, 1978
+
+---
+
+Artwork Title: Scarf
+Object Type: Scarf
+Classification: Unknown
+
+Artist: Jules Bashein
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1945–1945
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Jules Bashein, 1981
+
+---
+
+Artwork Title: Scarf
+Object Type: Scarf
+Classification: Unknown
+
+Artist: Jules Bashein
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1945–1945
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Jules Bashein, 1981
+
+---
+
+Artwork Title: Scarf
+Object Type: Scarf
+Classification: Unknown
+
+Artist: Jules Bashein
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1945–1945
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Jules Bashein, 1981
+
+---
+
+Artwork Title: Scarf
+Object Type: Scarf
+Classification: Unknown
+
+Artist: House of Dior
+Nationality: French
+Lifespan: 1947      –9999      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1950–1959
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of David and Susan Biberman from the collection of Hilda S. Biberman, 1982
+
+---
+
+Artwork Title: Scarf
+Object Type: Scarf
+Classification: Unknown
+
+Artist: Hermès
+Nationality: French
+Lifespan: 1837      –9999      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1950–1975
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of David and Susan Biberman from the collection of Hilda S. Biberman, 1982
+
+---
+
+Artwork Title: Scarf
+Object Type: Scarf
+Classification: Unknown
+
+Artist: Hermès
+Nationality: French
+Lifespan: 1837      –9999      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1975–1985
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Anonymous gift, 1982
+
+---
+
+Artwork Title: Scarf
+Object Type: Scarf
+Classification: Unknown
+
+Artist: John Held Jr.
+Nationality: American
+Lifespan: 1889      –1958      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1920–1929
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. Nathaniel D. Clapp, 1985
+
+---
+
+Artwork Title: Scarf
+Object Type: Scarf
+Classification: Unknown
+
+Artist: Liberty & Co.
+Nationality: British
+Lifespan: 1875      –2050      
+
+Cultural Context: British
+Period: Unknown
+Date Range: 1875–1941
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Miss Irene Lewisohn, 1941
+
+---
+
+Artwork Title: Kerchief
+Object Type: Kerchief
+Classification: Unknown
+
+Artist: Brooke Cadwallader
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1944–1944
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Mr. Brooke Cadwallader, 1945
+
+---
+
+Artwork Title: Scarf
+Object Type: Scarf
+Classification: Unknown
+
+Artist: Brooke Cadwallader
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1947–1947
+
+Medium: silk, rayon
+Dimensions: Unknown
+
+Credit Line: Gift of Mr. and Mrs. Brooke M. Cadwallader, 1947
+
+---
+
+Artwork Title: Scarf
+Object Type: Scarf
+Classification: Unknown
+
+Artist: Brooke Cadwallader
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1947–1947
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. Aline Bernstein, 1948
+
+---
+
+Artwork Title: Scarf
+Object Type: Scarf
+Classification: Unknown
+
+Artist: Brooke Cadwallader
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1950–1950
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Mr. Brooke Cadwallader, 1950
+
+---
+
+Artwork Title: Scarf
+Object Type: Scarf
+Classification: Unknown
+
+Artist: Brooke Cadwallader
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1950–1950
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Mr. Brooke Cadwallader, 1950
+
+---
+
+Artwork Title: Scarf
+Object Type: Scarf
+Classification: Unknown
+
+Artist: Brooke Cadwallader
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1947–1947
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Mr. Francis Henry Taylor, 1950
+
+---
+
+Artwork Title: Scarf
+Object Type: Scarf
+Classification: Unknown
+
+Artist: René-Jules Lalique
+Nationality: French
+Lifespan: 1860      –1945      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1900–1950
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Purchase, Irene Lewisohn Bequest, 1958
+
+---
+
+Artwork Title: Scarf
+Object Type: Scarf
+Classification: Unknown
+
+Artist: Liberty & Co.
+Nationality: British
+Lifespan: 1875      –2050      
+
+Cultural Context: British
+Period: Unknown
+Date Range: 1920–1930
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Mr. Edward Steese, 1962
+
+---
+
+Artwork Title: Scarf
+Object Type: Scarf
+Classification: Unknown
+
+Artist: Jacqmar|Arnold Lever
+Nationality: British| 
+Lifespan: 1936      |1905      –1972      |1977      
+
+Cultural Context: British
+Period: Unknown
+Date Range: 1940–1941
+
+Medium: [no medium available]
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. Elise S. Untermeyer, 1967
+
+---
+
+Artwork Title: Scarf
+Object Type: Scarf
+Classification: Unknown
+
+Artist: Junichi Arai
+Nationality: Japanese
+Lifespan: 1932      –9999      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1987–1987
+
+Medium: cotton
+Dimensions: Unknown
+
+Credit Line: Gift of Susan K. Manno, 2005
+
+---
+
+Artwork Title: Stockings
+Object Type: Stockings
+Classification: Unknown
+
+Artist: Comme des Garçons|Rei Kawakubo
+Nationality: Japanese|Japanese
+Lifespan: 1969      |1942      –9999      |9999      
+
+Cultural Context: Japanese
+Period: Unknown
+Date Range: 1980–1980
+
+Medium: synthetic
+Dimensions: Unknown
+
+Credit Line: Gift of Susan K. Manno, 2005
+
+---
+
+Artwork Title: Scarf
+Object Type: Scarf
+Classification: Unknown
+
+Artist: Issey Miyake|Miyake Design Studio
+Nationality: Japanese|Japanese
+Lifespan: 1938      |1970      –2022      |          
+
+Cultural Context: Japanese
+Period: Unknown
+Date Range: 1980–1980
+
+Medium: wool
+Dimensions: Unknown
+
+Credit Line: Gift of Susan K. Manno, 2005
+
+---
+
+Artwork Title: Hat
+Object Type: Hat
+Classification: Unknown
+
+Artist: Comme des Garçons|Rei Kawakubo
+Nationality: Japanese|Japanese
+Lifespan: 1969      |1942      –9999      |9999      
+
+Cultural Context: Japanese
+Period: Unknown
+Date Range: 1983–1983
+
+Medium: synthetic, silk
+Dimensions: Unknown
+
+Credit Line: Gift of Susan K. Manno, 2005
+
+---
+
+Artwork Title: Dress
+Object Type: Dress
+Classification: Unknown
+
+Artist: Comme des Garçons|Rei Kawakubo
+Nationality: Japanese|Japanese
+Lifespan: 1969      |1942      –9999      |9999      
+
+Cultural Context: Japanese
+Period: Unknown
+Date Range: 1986–1986
+
+Medium: synthetic
+Dimensions: Unknown
+
+Credit Line: Gift of Susan K. Manno, 2005
+
+---
+
+Artwork Title: Headwrap
+Object Type: Headwrap
+Classification: Unknown
+
+Artist: Comme des Garçons|Rei Kawakubo
+Nationality: Japanese|Japanese
+Lifespan: 1969      |1942      –9999      |9999      
+
+Cultural Context: Japanese
+Period: Unknown
+Date Range: 1980–1980
+
+Medium: cotton
+Dimensions: Unknown
+
+Credit Line: Gift of Susan K. Manno, 2005
+
+---
+
+Artwork Title: Skirt
+Object Type: Skirt
+Classification: Unknown
+
+Artist: Comme des Garçons|Rei Kawakubo
+Nationality: Japanese|Japanese
+Lifespan: 1969      |1942      –9999      |9999      
+
+Cultural Context: Japanese
+Period: Unknown
+Date Range: 1984–1984
+
+Medium: wool/nylon blend
+Dimensions: Unknown
+
+Credit Line: Gift of Susan K. Manno, 2005
+
+---
+
+Artwork Title: Sweater
+Object Type: Sweater
+Classification: Unknown
+
+Artist: Comme des Garçons|Rei Kawakubo
+Nationality: Japanese|Japanese
+Lifespan: 1969      |1942      –9999      |9999      
+
+Cultural Context: Japanese
+Period: Unknown
+Date Range: 1984–1984
+
+Medium: wool
+Dimensions: Unknown
+
+Credit Line: Gift of Susan K. Manno, 2005
+
+---
+
+Artwork Title: Jacket
+Object Type: Jacket
+Classification: Unknown
+
+Artist: Comme des Garçons|Rei Kawakubo
+Nationality: Japanese|Japanese
+Lifespan: 1969      |1942      –9999      |9999      
+
+Cultural Context: Japanese
+Period: Unknown
+Date Range: 1980–1980
+
+Medium: wool
+Dimensions: Unknown
+
+Credit Line: Gift of Susan K. Manno, 2005
+
+---
+
+Artwork Title: Ensemble
+Object Type: Ensemble
+Classification: Unknown
+
+Artist: Donald Brooks
+Nationality: American
+Lifespan: 1928-01-10–2005-08-01
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1970–1975
+
+Medium: wool
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. Anne Markley Spivak, 1985
+
+---
+
+Artwork Title: Trench coat
+Object Type: Trench coat
+Classification: Unknown
+
+Artist: Bill Blass|PBM
+Nationality: American| 
+Lifespan: 1922-08-22|          –2002-06-12|          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1963–1973
+
+Medium: a) cotton, plastic; b-d) cotton, metal; e-f) cotton
+Dimensions: Unknown
+
+Credit Line: Gift of Edward De Luca, in memory of Bill Blass and Steven Kaufmann, 2005
+
+---
+
+Artwork Title: Evening ensemble
+Object Type: Evening ensemble
+Classification: Unknown
+
+Artist: Carolina Herrera
+Nationality:  
+Lifespan: 1939      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 2004–2005
+
+Medium: a) silk, gold leaf; b) silk
+Dimensions: Unknown
+
+Credit Line: Gift of Carolina Herrera, 2005
+
+---
+
+Artwork Title: Evening dress
+Object Type: Evening dress
+Classification: Unknown
+
+Artist: Carolina Herrera
+Nationality:  
+Lifespan: 1939      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1995–1996
+
+Medium: silk, linen
+Dimensions: Unknown
+
+Credit Line: Gift of Carolina Herrera, 2005
+
+---
+
+Artwork Title: Evening dress
+Object Type: Evening dress
+Classification: Unknown
+
+Artist: Carolina Herrera
+Nationality:  
+Lifespan: 1939      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1994–1994
+
+Medium: silk, rhinestone, glass
+Dimensions: Unknown
+
+Credit Line: Gift of Carolina Herrera, 2005
+
+---
+
+Artwork Title: Evening ensemble
+Object Type: Evening ensemble
+Classification: Unknown
+
+Artist: Carolina Herrera
+Nationality:  
+Lifespan: 1939      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1988–1989
+
+Medium: a,b) silk
+Dimensions: Unknown
+
+Credit Line: Gift of Carolina Herrera, 2005
+
+---
+
+Artwork Title: Jacket
+Object Type: Jacket
+Classification: Unknown
+
+Artist: Carolina Herrera
+Nationality:  
+Lifespan: 1939      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1989–1990
+
+Medium: cotton, metal, rhinestone
+Dimensions: Unknown
+
+Credit Line: Gift of Carolina Herrera, 2005
+
+---
+
+Artwork Title: Evening ensemble
+Object Type: Evening ensemble
+Classification: Unknown
+
+Artist: Carolina Herrera
+Nationality:  
+Lifespan: 1939      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1987–1987
+
+Medium: acetate, rayon, nylon, silk, plastic
+Dimensions: Unknown
+
+Credit Line: Gift of Carolina Herrera, 2005
+
+---
+
+Artwork Title: Evening dress
+Object Type: Evening dress
+Classification: Unknown
+
+Artist: Carolina Herrera
+Nationality:  
+Lifespan: 1939      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1986–1987
+
+Medium: wool, plastic, glass, synthetic
+Dimensions: Unknown
+
+Credit Line: Gift of Carolina Herrera, 2005
+
+---
+
+Artwork Title: Evening dress
+Object Type: Evening dress
+Classification: Unknown
+
+Artist: Carolina Herrera
+Nationality:  
+Lifespan: 1939      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1980–2005
+
+Medium: synthetic
+Dimensions: Unknown
+
+Credit Line: Gift of Carolina Herrera, 2005
+
+---
+
+Artwork Title: Cocktail ensemble
+Object Type: Cocktail Ensemble
+Classification: Unknown
+
+Artist: Carolina Herrera
+Nationality:  
+Lifespan: 1939      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1981–1981
+
+Medium: silk/linen blend
+Dimensions: Unknown
+
+Credit Line: Gift of Carolina Herrera, 2005
+
+---
+
+Artwork Title: Evening dress
+Object Type: Evening dress
+Classification: Unknown
+
+Artist: Carolina Herrera
+Nationality:  
+Lifespan: 1939      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1980–2005
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Carolina Herrera, 2005
+
+---
+
+Artwork Title: Evening ensemble
+Object Type: Evening ensemble
+Classification: Unknown
+
+Artist: Carolina Herrera
+Nationality:  
+Lifespan: 1939      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1980–2005
+
+Medium: a) silk; b) silk, synthetic
+Dimensions: Unknown
+
+Credit Line: Gift of Carolina Herrera, 2005
+
+---
+
+Artwork Title: Loungewear
+Object Type: Loungewear
+Classification: Unknown
+
+Artist: Bill Tice
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1981–1981
+
+Medium: silk, metallic
+Dimensions: Unknown
+
+Credit Line: Gift of Bill Tice, 1982
+
+---
+
+Artwork Title: Evening dress
+Object Type: Evening dress
+Classification: Unknown
+
+Artist: Emma Gibbs-Battie
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1973–1973
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Emma Gibbs-Battie–former Emma De Berge, 1981
+
+---
+
+Artwork Title: Evening dress
+Object Type: Evening dress
+Classification: Unknown
+
+Artist: Emma Gibbs-Battie
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1973–1973
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Emma Gibbs-Battie–former Emma De Berge, 1981
+
+---
+
+Artwork Title: Wedding dress
+Object Type: Wedding Dress
+Classification: Unknown
+
+Artist: Emma Gibbs-Battie
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1973–1973
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Emma Gibbs-Battie–former Emma De Berge, 1981
+
+---
+
+Artwork Title: Evening dress
+Object Type: Evening dress
+Classification: Unknown
+
+Artist: Emma Gibbs-Battie
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1971–1971
+
+Medium: wool, plastic, synthetic fiber
+Dimensions: Unknown
+
+Credit Line: Gift of Emma Gibbs-Battie–former Emma De Berge, 1981
+
+---
+
+Artwork Title: Evening dress
+Object Type: Evening dress
+Classification: Unknown
+
+Artist: Emma Gibbs-Battie
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1972–1972
+
+Medium: cotton
+Dimensions: Unknown
+
+Credit Line: Gift of Emma Gibbs-Battie–former Emma De Berge, 1981
+
+---
+
+Artwork Title: Dress
+Object Type: Dress
+Classification: Unknown
+
+Artist: Emma Gibbs-Battie
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1975–1975
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Emma Gibbs-Battie–former Emma De Berge, 1981
+
+---
+
+Artwork Title: Evening dress
+Object Type: Evening dress
+Classification: Unknown
+
+Artist: Emma Gibbs-Battie
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1968–1968
+
+Medium: rayon, lurex, metallic thread
+Dimensions: Unknown
+
+Credit Line: Gift of Emma Gibbs-Battie–former Emma De Berge, 1981
+
+---
+
+Artwork Title: Evening dress
+Object Type: Evening dress
+Classification: Unknown
+
+Artist: Emma Gibbs-Battie
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1973–1973
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Emma Gibbs-Battie - former Emma De Berge, 1981
+
+---
+
+Artwork Title: Evening dress
+Object Type: Evening dress
+Classification: Unknown
+
+Artist: Emma Gibbs-Battie
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1973–1973
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Emma Gibbs-Battie–former Emma De Berge, 1981
+
+---
+
+Artwork Title: Kimono
+Object Type: Kimono
+Classification: Unknown
+
+Artist: Myrna Tatar
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1978–1978
+
+Medium: cotton
+Dimensions: Unknown
+
+Credit Line: Gift of Anonymous, 1981
+
+---
+
+Artwork Title: Dress
+Object Type: Dress
+Classification: Unknown
+
+Artist: Myrna Tatar
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1978–1978
+
+Medium: cotton
+Dimensions: Unknown
+
+Credit Line: Gift of Anonymous, 1981
+
+---
+
+Artwork Title: Evening dress
+Object Type: Evening dress
+Classification: Unknown
+
+Artist: John Kloss|Henri Bendel
+Nationality: American| 
+Lifespan: 1937      |1895      –1987      |9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1967–1967
+
+Medium: rayon
+Dimensions: Unknown
+
+Credit Line: Gift of John Kloss, 1980
+
+---
+
+Artwork Title: Evening dress
+Object Type: Evening dress
+Classification: Unknown
+
+Artist: John Kloss
+Nationality: American
+Lifespan: 1937      –1987      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1967–1967
+
+Medium: rayon
+Dimensions: Unknown
+
+Credit Line: Gift of John Kloss, 1980
+
+---
+
+Artwork Title: Dress
+Object Type: Dress
+Classification: Unknown
+
+Artist: John Kloss
+Nationality: American
+Lifespan: 1937      –1987      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1967–1967
+
+Medium: rayon
+Dimensions: Unknown
+
+Credit Line: Gift of John Kloss, 1980
+
+---
+
+Artwork Title: Robe
+Object Type: Robe
+Classification: Unknown
+
+Artist: John Kloss
+Nationality: American
+Lifespan: 1937      –1987      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1979–1979
+
+Medium: nylon, polyester wadding
+Dimensions: Unknown
+
+Credit Line: Gift of John Kloss, 1980
+
+---
+
+Artwork Title: Loungewear
+Object Type: Loungewear
+Classification: Unknown
+
+Artist: John Kloss
+Nationality: American
+Lifespan: 1937      –1987      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1979–1979
+
+Medium: nylon, polyester wadding
+Dimensions: Unknown
+
+Credit Line: Gift of John Kloss, 1980
+
+---
+
+Artwork Title: Loungewear
+Object Type: Loungewear
+Classification: Unknown
+
+Artist: John Kloss
+Nationality: American
+Lifespan: 1937      –1987      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1979–1979
+
+Medium: nylon, polyester wadding
+Dimensions: Unknown
+
+Credit Line: Gift of John Kloss, 1980
+
+---
+
+Artwork Title: Robe
+Object Type: Robe
+Classification: Unknown
+
+Artist: John Kloss
+Nationality: American
+Lifespan: 1937      –1987      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1979–1979
+
+Medium: nylon, polyester wadding
+Dimensions: Unknown
+
+Credit Line: Gift of John Kloss, 1980
+
+---
+
+Artwork Title: Ensemble
+Object Type: Ensemble
+Classification: Unknown
+
+Artist: Ellen Ann Dobrovir
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1979–1979
+
+Medium: nylon, silk
+Dimensions: Unknown
+
+Credit Line: Gift of Ellen Ann Dobrovier, 1979
+
+---
+
+Artwork Title: Fancy dress costume
+Object Type: Fancy dress costume
+Classification: Unknown
+
+Artist: Eaves Costume Company
+Nationality: American
+Lifespan: 1863      –1998      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1900–1976
+
+Medium: cotton, metallic thread
+Dimensions: Unknown
+
+Credit Line: Gift of William A.M. Burden, 1976
+
+---
+
+Artwork Title: Ensemble
+Object Type: Ensemble
+Classification: Unknown
+
+Artist: Issey Miyake|Miyake Design Studio
+Nationality: Japanese|Japanese
+Lifespan: 1938      |1970      –2022      |          
+
+Cultural Context: Japanese
+Period: Unknown
+Date Range: 1984–1985
+
+Medium: a) wool/acrylic blend; b) wool/nylon blend; c) wool/linen blend
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. Korda H. Caplan, 2005
+
+---
+
+Artwork Title: Evening ensemble
+Object Type: Evening ensemble
+Classification: Unknown
+
+Artist: Cristobal Balenciaga|René Mancini|House of Balenciaga
+Nationality: Spanish|French|French
+Lifespan: 1895-01-21|1936      |1937      –1972-03-23|9999      |9999      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1962–1968
+
+Medium: (a–e) silk
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. Korda H. Caplan, 2005
+
+---
+
+Artwork Title: Mitts
+Object Type: Mitts
+Classification: Unknown
+
+Artist: Kayser-Roth Glove Co., Inc
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1920–1939
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Kayser-Roth Company Inc., 1975
+
+---
+
+Artwork Title: Gloves
+Object Type: Gloves
+Classification: Unknown
+
+Artist: Kayser-Roth Glove Co., Inc
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1920–1929
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Kayser-Roth Company Inc., 1975
+
+---
+
+Artwork Title: Gloves
+Object Type: Gloves
+Classification: Unknown
+
+Artist: Kayser-Roth Glove Co., Inc
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1920–1929
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Kayser-Roth Company Inc., 1975
+
+---
+
+Artwork Title: Gloves
+Object Type: Gloves
+Classification: Unknown
+
+Artist: Galeries Lafayette
+Nationality: French
+Lifespan: 1893      –9999      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1925–1935
+
+Medium: leather, silk
+Dimensions: Unknown
+
+Credit Line: Gift of John F. Carter, 1982
+
+---
+
+Artwork Title: Gloves
+Object Type: Gloves
+Classification: Unknown
+
+Artist: Galeries Lafayette
+Nationality: French
+Lifespan: 1893      –9999      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1930–1959
+
+Medium: leather
+Dimensions: Unknown
+
+Credit Line: Gift of Sven E. Hsia, 1980
+
+---
+
+Artwork Title: Gloves
+Object Type: Gloves
+Classification: Unknown
+
+Artist: Dominick LaValle
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1940–1949
+
+Medium: suede
+Dimensions: Unknown
+
+Credit Line: Gift of Carroll F. Cook, in memory of his grandparents, Mr. and Mrs. Dominick LaValle, 1987
+
+---
+
+Artwork Title: Gloves
+Object Type: Gloves
+Classification: Unknown
+
+Artist: Elsa Schiaparelli
+Nationality: Italian
+Lifespan: 1890      –1973      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1940–1949
+
+Medium: leather, rhinestones, silk
+Dimensions: Unknown
+
+Credit Line: Gift of Patricia Volk Blitzer, in honor of Mrs. Robert Morgen, 1986
+
+---
+
+Artwork Title: Gloves
+Object Type: Gloves
+Classification: Unknown
+
+Artist: Hermès
+Nationality: French
+Lifespan: 1837      –9999      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1945–1950
+
+Medium: suede, silk
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. Maxime Hermanos, 1986
+
+---
+
+Artwork Title: Gloves
+Object Type: Gloves
+Classification: Unknown
+
+Artist: Dominick LaValle
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1945–1955
+
+Medium: suede, fur
+Dimensions: Unknown
+
+Credit Line: Gift of Carroll F. Cook, in memory of his grandparents, Mr. and Mrs. Dominick LaValle, 1987
+
+---
+
+Artwork Title: Gloves
+Object Type: Gloves
+Classification: Unknown
+
+Artist: Hermès
+Nationality: French
+Lifespan: 1837      –9999      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1946–1946
+
+Medium: leather
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. Maxime Hermanos, 1986
+
+---
+
+Artwork Title: Gloves
+Object Type: Gloves
+Classification: Unknown
+
+Artist: Galeries Lafayette
+Nationality: French
+Lifespan: 1893      –9999      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1950–1969
+
+Medium: leather
+Dimensions: Unknown
+
+Credit Line: Gift of H. Cecilia Bailey, 1979
+
+---
+
+Artwork Title: Gloves
+Object Type: Gloves
+Classification: Unknown
+
+Artist: Lord & Taylor
+Nationality: American
+Lifespan: 1826      –2050      
+
+Cultural Context: probably French
+Period: Unknown
+Date Range: 1950–1959
+
+Medium: leather
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. Stowe C. Phelps, 1980
+
+---
+
+Artwork Title: Gloves
+Object Type: Gloves
+Classification: Unknown
+
+Artist: Galeries Lafayette
+Nationality: French
+Lifespan: 1893      –9999      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1950–1959
+
+Medium: leather, glass
+Dimensions: Unknown
+
+Credit Line: Gift of Sven E. Hsia, 1980
+
+---
+
+Artwork Title: Gloves
+Object Type: Gloves
+Classification: Unknown
+
+Artist: Trimingham's
+Nationality: British
+Lifespan: 1842      –9999      
+
+Cultural Context: British
+Period: Unknown
+Date Range: 1950–1959
+
+Medium: leather
+Dimensions: Unknown
+
+Credit Line: Gift of H. Cecilia Bailey, 1978
+
+---
+
+Artwork Title: Evening gloves
+Object Type: Evening gloves
+Classification: Unknown
+
+Artist: B. Altman & Co.
+Nationality: American
+Lifespan: 1865      –1990      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1950–1959
+
+Medium: nylon, glass, plastic, metallic thread
+Dimensions: Unknown
+
+Credit Line: Gift of Marian Sameth, 1980
+
+---
+
+Artwork Title: Gloves
+Object Type: Gloves
+Classification: Unknown
+
+Artist: Bon Marché
+Nationality: French
+Lifespan: 1852      –9999      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1895–1905
+
+Medium: [no medium available]
+Dimensions: Unknown
+
+Credit Line: Gift of Etienne Lawrence Sturhahn, 1975
+
+---
+
+Artwork Title: Gloves
+Object Type: Gloves
+Classification: Unknown
+
+Artist: Kayser-Roth Glove Co., Inc
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1895–1905
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Kayser-Roth Company Inc., 1975
+
+---
+
+Artwork Title: Gloves
+Object Type: Gloves
+Classification: Unknown
+
+Artist: Kayser-Roth Glove Co., Inc
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1915–1925
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Kayser-Roth Company Inc., 1975
+
+---
+
+Artwork Title: Gloves
+Object Type: Gloves
+Classification: Unknown
+
+Artist: Hermès
+Nationality: French
+Lifespan: 1837      –9999      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1943–1953
+
+Medium: leather
+Dimensions: Unknown
+
+Credit Line: Gift of Patricia Healy Dunbar, 1981
+
+---
+
+Artwork Title: Gloves
+Object Type: Gloves
+Classification: Unknown
+
+Artist: Hermès
+Nationality: French
+Lifespan: 1837      –9999      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1943–1953
+
+Medium: suede
+Dimensions: Unknown
+
+Credit Line: Gift of Patricia Healy Dunbar, 1981
+
+---
+
+Artwork Title: Gloves
+Object Type: Gloves
+Classification: Unknown
+
+Artist: Fira Benenson
+Nationality: American
+Lifespan: 1898      –1977      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1943–1953
+
+Medium: leather
+Dimensions: Unknown
+
+Credit Line: Gift of Patricia Healy Dunbar, 1981
+
+---
+
+Artwork Title: Gloves
+Object Type: Gloves
+Classification: Unknown
+
+Artist: Hermès
+Nationality: French
+Lifespan: 1837      –9999      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1955–1965
+
+Medium: cotton
+Dimensions: Unknown
+
+Credit Line: Gift of Marion Poons, 1984
+
+---
+
+Artwork Title: Gloves
+Object Type: Gloves
+Classification: Unknown
+
+Artist: Viola Weinberger
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1955–1965
+
+Medium: leather, glass, metal
+Dimensions: Unknown
+
+Credit Line: Gift of Marion Poons, 1984
+
+---
+
+Artwork Title: Gloves
+Object Type: Gloves
+Classification: Unknown
+
+Artist: Hermès
+Nationality: French
+Lifespan: 1837      –9999      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1955–1965
+
+Medium: leather
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. Sidney Bernard, 1974
+
+---
+
+Artwork Title: Gloves
+Object Type: Gloves
+Classification: Unknown
+
+Artist: Kayser-Roth Glove Co., Inc
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1900–1950
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Carl F. Fayen and Margaret E. Fayan, in memory of Mr. & Mrs. F.G.H. Fayen (Montclair, NJ) and Mr. & Mrs. George C. Lehmann (Watertown, WI), 1977
+
+---
+
+Artwork Title: Gloves
+Object Type: Gloves
+Classification: Unknown
+
+Artist: Hermès
+Nationality: French
+Lifespan: 1837      –9999      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1935–1939
+
+Medium: leather
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. Peter E. Guernsey, 1986
+
+---
+
+Artwork Title: Gloves
+Object Type: Gloves
+Classification: Unknown
+
+Artist: Dawnelle, Inc.|Elvette
+Nationality:  | 
+Lifespan:           |          –          |          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1955–1959
+
+Medium: cotton, metallic thread
+Dimensions: Unknown
+
+Credit Line: Gift of Sven E. Hsia, 1980
+
+---
+
+Artwork Title: Afternoon dress
+Object Type: Afternoon dress
+Classification: Unknown
+
+Artist: Jean Patou|House of Patou
+Nationality: French|French
+Lifespan: 1880      |1914      –1936      |9999      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1932–1932
+
+Medium: (a) silk
+(b) leather
+Dimensions: Unknown
+
+Credit Line: Gift of Miss Isabel Shults, 1944
+
+---
+
+Artwork Title: Evening ensemble
+Object Type: Evening ensemble
+Classification: Unknown
+
+Artist: Carolina Herrera
+Nationality:  
+Lifespan: 1939      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1992–1993
+
+Medium: a)metallic, plastic, enamel, ceramic, copper, rhinestone, rayon; b) silk; c) wool
+Dimensions: Unknown
+
+Credit Line: Gift of Carolina Herrera, 2005
+
+---
+
+Artwork Title: Tennis shoes
+Object Type: Tennis shoes
+Classification: Unknown
+
+Artist: Karl Lagerfeld|House of Chanel
+Nationality: French, born Germany|French
+Lifespan: 1933      |1910      –2019      |9999      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1990–1999
+
+Medium: a,b) cotton, rubber, nylon
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. William McCormick Blair Jr., 2005
+
+---
+
+Artwork Title: Accessory set
+Object Type: Accessory Set
+Classification: Unknown
+
+Artist: Princeton Process, Inc.|The Brothers Christie Fur Corp.
+Nationality:  | 
+Lifespan:           |          –          |          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1974–1974
+
+Medium: chinchilla fur
+Dimensions: Unknown
+
+Credit Line: Gift of Princeton Process Inc. and The Brothers Christie Fur Corp., 1975
+
+---
+
+Artwork Title: Skirt
+Object Type: Skirt
+Classification: Unknown
+
+Artist: Issey Miyake|Miyake Design Studio
+Nationality: Japanese|Japanese
+Lifespan: 1938      |1970      –2022      |          
+
+Cultural Context: Japanese
+Period: Unknown
+Date Range: 1999–1999
+
+Medium: synthetic
+Dimensions: Unknown
+
+Credit Line: Gift of Nancy Stanton Talcott, 2005
+
+---
+
+Artwork Title: Dress
+Object Type: Dress
+Classification: Unknown
+
+Artist: Yohji Yamamoto
+Nationality: Japanese
+Lifespan: 1943      –9999      
+
+Cultural Context: Japanese
+Period: Unknown
+Date Range: 2005–2005
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Purchase, Friends of The Costume Institute Gifts, 2006
+
+---
+
+Artwork Title: Robe
+Object Type: Robe
+Classification: Unknown
+
+Artist: Mariano Fortuny|Fortuny
+Nationality: Spanish|Italian
+Lifespan: 1871      |1906      –1949      |2020      
+
+Cultural Context: probably Italian
+Period: Unknown
+Date Range: 1900–1950
+
+Medium: silk, glass
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. Francis Coleman and  Mrs. Charles H. Erhart Jr., 1975
+
+---
+
+Artwork Title: Ensemble
+Object Type: Ensemble
+Classification: Unknown
+
+Artist: John Galliano
+Nationality: British
+Lifespan: 1960      –9999      
+
+Cultural Context: British
+Period: Unknown
+Date Range: 2004–2005
+
+Medium: a) cotton, rubber, plastic; b) cotton, silk, plastic; c,d) cotton; e,f) leather, wood; g) fur, cotton, wool, plastic
+Dimensions: Unknown
+
+Credit Line: Gift of John Galliano S. A., 2006
+
+---
+
+Artwork Title: Ensemble
+Object Type: Ensemble
+Classification: Unknown
+
+Artist: Jay-Thorpe, Inc.
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1940–1950
+
+Medium: a,b) synthetic
+Dimensions: Unknown
+
+Credit Line: Isabel Shults Fund and Catharine Breyer Van Bomel Foundation Fund, 2005
+
+---
+
+Artwork Title: Jewelry set
+Object Type: Jewelry Set
+Classification: Unknown
+
+Artist: John Galliano|House of Dior
+Nationality: British|French
+Lifespan: 1960      |1947      –9999      |9999      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1992–2002
+
+Medium: a,b) metal
+Dimensions: Unknown
+
+Credit Line: Funds from various donors, 2005
+
+---
+
+Artwork Title: Fan
+Object Type: Fan
+Classification: Unknown
+
+Artist: Tiffany & Co.
+Nationality:  
+Lifespan: 1837      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1850–1899
+
+Medium: silk, ivory, metal
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. William Floyd Nichols and Mrs. B. Langdon Tyler, 1975
+
+---
+
+Artwork Title: Wedding fan
+Object Type: Wedding Fan
+Classification: Unknown
+
+Artist: Wanamaker's
+Nationality: American
+Lifespan:           –          
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1916–1916
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. Sophie Jacobson, 1972
+
+---
+
+Artwork Title: Fan
+Object Type: Fan
+Classification: Unknown
+
+Artist: Tiffany & Co.
+Nationality:  
+Lifespan: 1837      –9999      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1850–1875
+
+Medium: shell, paper, silk, metal
+Dimensions: Unknown
+
+Credit Line: Gift of Caroline Ferriday, 1981
+
+---
+
+Artwork Title: Fan
+Object Type: Fan
+Classification: Unknown
+
+Artist: Stern Brothers
+Nationality: American
+Lifespan: 1867      –2001      
+
+Cultural Context: probably French
+Period: Unknown
+Date Range: 1890–1900
+
+Medium: cotton, shell
+Dimensions: Unknown
+
+Credit Line: Gift of Lucy G. Moses, 1983
+
+---
+
+Artwork Title: Fan
+Object Type: Fan
+Classification: Unknown
+
+Artist: B. Altman & Co.
+Nationality: American
+Lifespan: 1865      –1990      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1700–1899
+
+Medium: horn
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. A. N. Steyne, 1941
+
+---
+
+Artwork Title: Fan
+Object Type: Fan 
+Classification: Unknown
+
+Artist: B. Altman & Co.
+Nationality: American
+Lifespan: 1865      –1990      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1700–1941
+
+Medium: metal, wood, cardboard
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. A. N. Steyne, 1941
+
+---
+
+Artwork Title: Fan
+Object Type: Fan 
+Classification: Unknown
+
+Artist: Goossens
+Nationality: French
+Lifespan: 1950      –9999      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1870–1879
+
+Medium: [no medium available]
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. Samuel Stiefel, 1946
+
+---
+
+Artwork Title: Fan
+Object Type: Fan
+Classification: Unknown
+
+Artist: Stern Brothers
+Nationality: American
+Lifespan: 1867      –2001      
+
+Cultural Context: probably French
+Period: Unknown
+Date Range: 1850–1899
+
+Medium: [no medium available]
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. Samuel Stiefel, 1946
+
+---
+
+Artwork Title: Fan
+Object Type: Fan
+Classification: Unknown
+
+Artist: Tiffany & Co.
+Nationality:  
+Lifespan: 1837      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1920–1925
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Mr. C. Otto von Kienbusch, 1968
+
+---
+
+Artwork Title: Cape
+Object Type: Cape
+Classification: Unknown
+
+Artist: Bonwit Teller & Co.
+Nationality: American
+Lifespan: 1907      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1972–1972
+
+Medium: ostrich feather
+Dimensions: Unknown
+
+Credit Line: Gift of Bonwit Teller, 1973
+
+---
+
+Artwork Title: Evening wrap
+Object Type: Evening wrap
+Classification: Unknown
+
+Artist: Cristobal Balenciaga|House of Balenciaga
+Nationality: Spanish|French
+Lifespan: 1895-01-21|1937      –1972-03-23|9999      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1960–1968
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Countess Edward Bismarck, 1981
+
+---
+
+Artwork Title: Evening wrap
+Object Type: Evening wrap
+Classification: Unknown
+
+Artist: Cristobal Balenciaga|House of Balenciaga
+Nationality: Spanish|French
+Lifespan: 1895-01-21|1937      –1972-03-23|9999      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1963–1965
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Countess Edward Bismarck, 1981
+
+---
+
+Artwork Title: Cape
+Object Type: Cape
+Classification: Unknown
+
+Artist: Bergdorf Goodman
+Nationality: American
+Lifespan: 1899      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1950–1960
+
+Medium: fur
+Dimensions: Unknown
+
+Credit Line: Gift of E. Williams Burlingham, 1979
+
+---
+
+Artwork Title: Stole
+Object Type: Stole
+Classification: Unknown
+
+Artist: I. Magnin & Co.
+Nationality: American
+Lifespan: 1876      –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1952–1962
+
+Medium: fur, silk
+Dimensions: Unknown
+
+Credit Line: Gift of Jane Durando Miller, 1978
+
+---
+
+Artwork Title: Cape
+Object Type: Cape
+Classification: Unknown
+
+Artist: Ben Kahn Furs
+Nationality: American
+Lifespan: 1921      –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1957–1967
+
+Medium: fur, silk
+Dimensions: Unknown
+
+Credit Line: Gift of Linda Mandel Woozley, in memory of her mother, Mrs. Herbert R. Mandel, 1981
+
+---
+
+Artwork Title: Jabot
+Object Type: Jabot
+Classification: Unknown
+
+Artist: Saks Fifth Avenue
+Nationality: American
+Lifespan: 1924      –9999      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1947–1947
+
+Medium: cotton
+Dimensions: Unknown
+
+Credit Line: Gift of Miss Clare Hoover, San Francisco, Ca., 1980
+
+---
+
+Artwork Title: Earrings
+Object Type: Earrings
+Classification: Unknown
+
+Artist: Robert Lee Morris|Donna Karan New York
+Nationality: American, born Germany|American
+Lifespan: 1947      |1985      –9999      |1985      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1985–1985
+
+Medium: metal
+Dimensions: Unknown
+
+Credit Line: Gift of Lansing Moran, 1987
+
+---
+
+Artwork Title: Photograph
+Object Type: Photograph
+Classification: Unknown
+
+Artist: Irving Penn
+Nationality: American
+Lifespan: 1917      –2009      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1974–1975
+
+Medium: paper
+Dimensions: Unknown
+
+Credit Line: Gift of Irving Penn, 2005
+
+---
+
+Artwork Title: Photograph
+Object Type: Photograph
+Classification: Unknown
+
+Artist: Irving Penn|Madame Grès (Germaine Émilie Krebs)
+Nationality: American|French
+Lifespan: 1917      |1903      –2009      |1993      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1974–1975
+
+Medium: paper
+Dimensions: Unknown
+
+Credit Line: Gift of Irving Penn, 2005
+
+---
+
+Artwork Title: Photograph
+Object Type: Photograph
+Classification: Unknown
+
+Artist: Irving Penn|Madame Grès (Germaine Émilie Krebs)
+Nationality: American|French
+Lifespan: 1917      |1903      –2009      |1993      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1974–1975
+
+Medium: paper
+Dimensions: Unknown
+
+Credit Line: Gift of Irving Penn, 2005
+
+---
+
+Artwork Title: Photograph
+Object Type: Photograph
+Classification: Unknown
+
+Artist: Irving Penn|Madame Grès (Germaine Émilie Krebs)
+Nationality: American|French
+Lifespan: 1917      |1903      –2009      |1993      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1974–1975
+
+Medium: paper
+Dimensions: Unknown
+
+Credit Line: Gift of Irving Penn, 2005
+
+---
+
+Artwork Title: Photograph
+Object Type: Photograph
+Classification: Unknown
+
+Artist: Irving Penn|Madame Grès (Germaine Émilie Krebs)
+Nationality: American|French
+Lifespan: 1917      |1903      –2009      |1993      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1974–1975
+
+Medium: paper
+Dimensions: Unknown
+
+Credit Line: Gift of Irving Penn, 2005
+
+---
+
+Artwork Title: Photograph
+Object Type: Photograph
+Classification: Unknown
+
+Artist: Irving Penn|Madame Grès (Germaine Émilie Krebs)
+Nationality: American|French
+Lifespan: 1917      |1903      –2009      |1993      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1974–1975
+
+Medium: paper
+Dimensions: Unknown
+
+Credit Line: Gift of Irving Penn, 2005
+
+---
+
+Artwork Title: Photograph
+Object Type: Photograph
+Classification: Unknown
+
+Artist: Irving Penn|Madame Grès (Germaine Émilie Krebs)
+Nationality: American|French
+Lifespan: 1917      |1903      –2009      |1993      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1974–1975
+
+Medium: paper
+Dimensions: Unknown
+
+Credit Line: Gift of Irving Penn, 2005
+
+---
+
+Artwork Title: Photograph
+Object Type: Photograph
+Classification: Unknown
+
+Artist: Callot Soeurs|Irving Penn
+Nationality: French|American
+Lifespan: 1895      |1917      –1937      |2009      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1974–1975
+
+Medium: paper
+Dimensions: Unknown
+
+Credit Line: Gift of Irving Penn, 2005
+
+---
+
+Artwork Title: Photograph
+Object Type: Photograph
+Classification: Unknown
+
+Artist: Irving Penn|Callot Soeurs
+Nationality: American|French
+Lifespan: 1917      |1895      –2009      |1937      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1974–1975
+
+Medium: paper
+Dimensions: Unknown
+
+Credit Line: Gift of Irving Penn, 2005
+
+---
+
+Artwork Title: Photograph
+Object Type: Photograph
+Classification: Unknown
+
+Artist: Irving Penn|Callot Soeurs
+Nationality: American|French
+Lifespan: 1917      |1895      –2009      |1937      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1974–1975
+
+Medium: paper
+Dimensions: Unknown
+
+Credit Line: Gift of Irving Penn, 2005
+
+---
+
+Artwork Title: Photograph
+Object Type: Photograph
+Classification: Unknown
+
+Artist: Irving Penn|Callot Soeurs
+Nationality: American|French
+Lifespan: 1917      |1895      –2009      |1937      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1974–1975
+
+Medium: paper
+Dimensions: Unknown
+
+Credit Line: Gift of Irving Penn, 2005
+
+---
+
+Artwork Title: Photograph
+Object Type: Photograph
+Classification: Unknown
+
+Artist: Irving Penn|Callot Soeurs
+Nationality: American|French
+Lifespan: 1917      |1895      –2009      |1937      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1974–1975
+
+Medium: paper
+Dimensions: Unknown
+
+Credit Line: Gift of Irving Penn, 2005
+
+---
+
+Artwork Title: Photograph
+Object Type: Photograph
+Classification: Unknown
+
+Artist: Irving Penn|Gabrielle Chanel
+Nationality: American|French
+Lifespan: 1917      |1883      –2009      |1971      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1974–1975
+
+Medium: paper
+Dimensions: Unknown
+
+Credit Line: Gift of Irving Penn, 2005
+
+---
+
+Artwork Title: Photograph
+Object Type: Photograph
+Classification: Unknown
+
+Artist: Irving Penn|Gabrielle Chanel
+Nationality: American|French
+Lifespan: 1917      |1883      –2009      |1971      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1974–1975
+
+Medium: paper
+Dimensions: Unknown
+
+Credit Line: Gift of Irving Penn, 2005
+
+---
+
+Artwork Title: Photograph
+Object Type: Photograph
+Classification: Unknown
+
+Artist: Irving Penn|Mme. Jeanne Paquin
+Nationality: American|French
+Lifespan: 1917      |1869      –2009      |1936      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1974–1975
+
+Medium: paper
+Dimensions: Unknown
+
+Credit Line: Gift of Irving Penn, 2005
+
+---
+
+Artwork Title: Photograph
+Object Type: Photograph
+Classification: Unknown
+
+Artist: Irving Penn|Mme. Jeanne Paquin
+Nationality: American|French
+Lifespan: 1917      |1869      –2009      |1936      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1974–1975
+
+Medium: paper
+Dimensions: Unknown
+
+Credit Line: Gift of Irving Penn, 2005
+
+---
+
+Artwork Title: Photograph
+Object Type: Photograph
+Classification: Unknown
+
+Artist: Irving Penn|House of Paquin
+Nationality: American|French
+Lifespan: 1917      |1891      –2009      |1956      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1974–1975
+
+Medium: paper
+Dimensions: Unknown
+
+Credit Line: Gift of Irving Penn, 2005
+
+---
+
+Artwork Title: Photograph
+Object Type: Photograph
+Classification: Unknown
+
+Artist: Irving Penn|Mme. Jeanne Paquin
+Nationality: American|French
+Lifespan: 1917      |1869      –2009      |1936      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1974–1975
+
+Medium: paper
+Dimensions: Unknown
+
+Credit Line: Gift of Irving Penn, 2005
+
+---
+
+Artwork Title: Photograph
+Object Type: Photograph
+Classification: Unknown
+
+Artist: Irving Penn|Mme. Jeanne Paquin
+Nationality: American|French
+Lifespan: 1917      |1869      –2009      |1936      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1974–1975
+
+Medium: paper
+Dimensions: Unknown
+
+Credit Line: Gift of Irving Penn, 2005
+
+---
+
+Artwork Title: Photograph
+Object Type: Photograph
+Classification: Unknown
+
+Artist: Irving Penn|Paul Poiret
+Nationality: American|French
+Lifespan: 1917      |1879      –2009      |1944      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1974–1975
+
+Medium: paper
+Dimensions: Unknown
+
+Credit Line: Gift of Irving Penn, 2005
+
+---
+
+Artwork Title: Photograph
+Object Type: Photograph
+Classification: Unknown
+
+Artist: Paul Poiret|Irving Penn
+Nationality: French|American
+Lifespan: 1879      |1917      –1944      |2009      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1974–1975
+
+Medium: paper
+Dimensions: Unknown
+
+Credit Line: Gift of Irving Penn, 2005
+
+---
+
+Artwork Title: Photograph
+Object Type: Photograph
+Classification: Unknown
+
+Artist: Irving Penn|Paul Poiret
+Nationality: American|French
+Lifespan: 1917      |1879      –2009      |1944      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1974–1975
+
+Medium: paper
+Dimensions: Unknown
+
+Credit Line: Gift of Irving Penn, 2005
+
+---
+
+Artwork Title: Photograph
+Object Type: Photograph
+Classification: Unknown
+
+Artist: Irving Penn|Paul Poiret
+Nationality: American|French
+Lifespan: 1917      |1879      –2009      |1944      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1974–1975
+
+Medium: paper
+Dimensions: Unknown
+
+Credit Line: Gift of Irving Penn, 2005
+
+---
+
+Artwork Title: Photograph
+Object Type: Photograph
+Classification: Unknown
+
+Artist: Irving Penn|Paul Poiret
+Nationality: American|French
+Lifespan: 1917      |1879      –2009      |1944      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1974–1975
+
+Medium: paper
+Dimensions: Unknown
+
+Credit Line: Gift of Irving Penn, 2005
+
+---
+
+Artwork Title: Photograph
+Object Type: Photograph
+Classification: Unknown
+
+Artist: Irving Penn|Paul Poiret
+Nationality: American|French
+Lifespan: 1917      |1879      –2009      |1944      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1974–1975
+
+Medium: paper
+Dimensions: Unknown
+
+Credit Line: Gift of Irving Penn, 2005
+
+---
+
+Artwork Title: Photograph
+Object Type: Photograph
+Classification: Unknown
+
+Artist: Irving Penn|Paul Poiret
+Nationality: American|French
+Lifespan: 1917      |1879      –2009      |1944      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1974–1975
+
+Medium: paper
+Dimensions: Unknown
+
+Credit Line: Gift of Irving Penn, 2005
+
+---
+
+Artwork Title: Photograph
+Object Type: Photograph
+Classification: Unknown
+
+Artist: Irving Penn|Paul Poiret
+Nationality: American|French
+Lifespan: 1917      |1879      –2009      |1944      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1974–1975
+
+Medium: paper
+Dimensions: Unknown
+
+Credit Line: Gift of Irving Penn, 2005
+
+---
+
+Artwork Title: Photograph
+Object Type: Photograph
+Classification: Unknown
+
+Artist: Irving Penn|Paul Poiret
+Nationality: American|French
+Lifespan: 1917      |1879      –2009      |1944      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1974–1975
+
+Medium: paper
+Dimensions: Unknown
+
+Credit Line: Gift of Irving Penn, 2005
+
+---
+
+Artwork Title: Photograph
+Object Type: Photograph
+Classification: Unknown
+
+Artist: Irving Penn|Paul Poiret
+Nationality: American|French
+Lifespan: 1917      |1879      –2009      |1944      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1974–1975
+
+Medium: paper
+Dimensions: Unknown
+
+Credit Line: Gift of Irving Penn, 2005
+
+---
+
+Artwork Title: Photograph
+Object Type: Photograph
+Classification: Unknown
+
+Artist: Irving Penn|Paul Poiret
+Nationality: American|French
+Lifespan: 1917      |1879      –2009      |1944      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1974–1975
+
+Medium: paper
+Dimensions: Unknown
+
+Credit Line: Gift of Irving Penn, 2005
+
+---
+
+Artwork Title: Photograph
+Object Type: Photograph
+Classification: Unknown
+
+Artist: Irving Penn|Paul Poiret
+Nationality: American|French
+Lifespan: 1917      |1879      –2009      |1944      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1974–1975
+
+Medium: paper
+Dimensions: Unknown
+
+Credit Line: Gift of Irving Penn, 2005
+
+---
+
+Artwork Title: Photograph
+Object Type: Photograph
+Classification: Unknown
+
+Artist: Irving Penn|Paul Poiret
+Nationality: American|French
+Lifespan: 1917      |1879      –2009      |1944      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1974–1975
+
+Medium: paper
+Dimensions: Unknown
+
+Credit Line: Gift of Irving Penn, 2005
+
+---
+
+Artwork Title: Photograph
+Object Type: Photograph
+Classification: Unknown
+
+Artist: Irving Penn|Paul Poiret
+Nationality: American|French
+Lifespan: 1917      |1879      –2009      |1944      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1974–1975
+
+Medium: paper
+Dimensions: Unknown
+
+Credit Line: Gift of Irving Penn, 2005
+
+---
+
+Artwork Title: Photograph
+Object Type: Photograph
+Classification: Unknown
+
+Artist: Irving Penn|Paul Poiret
+Nationality: American|French
+Lifespan: 1917      |1879      –2009      |1944      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1974–1975
+
+Medium: paper
+Dimensions: Unknown
+
+Credit Line: Gift of Irving Penn, 2005
+
+---
+
+Artwork Title: Photograph
+Object Type: Photograph
+Classification: Unknown
+
+Artist: Irving Penn|Paul Poiret
+Nationality: American|French
+Lifespan: 1917      |1879      –2009      |1944      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1974–1975
+
+Medium: paper
+Dimensions: Unknown
+
+Credit Line: Gift of Irving Penn, 2005
+
+---
+
+Artwork Title: Photograph
+Object Type: Photograph
+Classification: Unknown
+
+Artist: Elsa Schiaparelli|Irving Penn
+Nationality: Italian|American
+Lifespan: 1890      |1917      –1973      |2009      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1974–1975
+
+Medium: paper
+Dimensions: Unknown
+
+Credit Line: Gift of Irving Penn, 2005
+
+---
+
+Artwork Title: Photograph
+Object Type: Photograph
+Classification: Unknown
+
+Artist: Elsa Schiaparelli|Irving Penn
+Nationality: Italian|American
+Lifespan: 1890      |1917      –1973      |2009      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1974–1975
+
+Medium: paper
+Dimensions: Unknown
+
+Credit Line: Gift of Irving Penn, 2005
+
+---
+
+Artwork Title: Photograph
+Object Type: Photograph
+Classification: Unknown
+
+Artist: Elsa Schiaparelli|Irving Penn
+Nationality: Italian|American
+Lifespan: 1890      |1917      –1973      |2009      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1974–1975
+
+Medium: paper
+Dimensions: Unknown
+
+Credit Line: Gift of Irving Penn, 2005
+
+---
+
+Artwork Title: Photograph
+Object Type: Photograph
+Classification: Unknown
+
+Artist: Elsa Schiaparelli|Irving Penn
+Nationality: Italian|American
+Lifespan: 1890      |1917      –1973      |2009      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1974–1975
+
+Medium: paper
+Dimensions: Unknown
+
+Credit Line: Gift of Irving Penn, 2005
+
+---
+
+Artwork Title: Photograph
+Object Type: Photograph
+Classification: Unknown
+
+Artist: Irving Penn|Madeleine Vionnet
+Nationality: American|French
+Lifespan: 1917      |1876      –2009      |1975      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1974–1975
+
+Medium: paper
+Dimensions: Unknown
+
+Credit Line: Gift of Irving Penn, 2005
+
+---
+
+Artwork Title: Photograph
+Object Type: Photograph
+Classification: Unknown
+
+Artist: Irving Penn|Madeleine Vionnet
+Nationality: American|French
+Lifespan: 1917      |1876      –2009      |1975      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1974–1975
+
+Medium: paper
+Dimensions: Unknown
+
+Credit Line: Gift of Irving Penn, 2005
+
+---
+
+Artwork Title: Photograph
+Object Type: Photograph
+Classification: Unknown
+
+Artist: Irving Penn|Madeleine Vionnet
+Nationality: American|French
+Lifespan: 1917      |1876      –2009      |1975      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1974–1975
+
+Medium: paper
+Dimensions: Unknown
+
+Credit Line: Gift of Irving Penn, 2005
+
+---
+
+Artwork Title: Photograph
+Object Type: Photograph
+Classification: Unknown
+
+Artist: Irving Penn|Madeleine Vionnet
+Nationality: American|French
+Lifespan: 1917      |1876      –2009      |1975      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1974–1975
+
+Medium: paper
+Dimensions: Unknown
+
+Credit Line: Gift of Irving Penn, 2005
+
+---
+
+Artwork Title: Photograph
+Object Type: Photograph
+Classification: Unknown
+
+Artist: Irving Penn|Madeleine Vionnet
+Nationality: American|French
+Lifespan: 1917      |1876      –2009      |1975      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1974–1975
+
+Medium: paper
+Dimensions: Unknown
+
+Credit Line: Gift of Irving Penn, 2005
+
+---
+
+Artwork Title: Photograph
+Object Type: Photograph
+Classification: Unknown
+
+Artist: Irving Penn|Madeleine Vionnet
+Nationality: American|French
+Lifespan: 1917      |1876      –2009      |1975      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1974–1975
+
+Medium: paper
+Dimensions: Unknown
+
+Credit Line: Gift of Irving Penn, 2005
+
+---
+
+Artwork Title: Photograph
+Object Type: Photograph
+Classification: Unknown
+
+Artist: Irving Penn|Madeleine Vionnet
+Nationality: American|French
+Lifespan: 1917      |1876      –2009      |1975      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1974–1975
+
+Medium: paper
+Dimensions: Unknown
+
+Credit Line: Gift of Irving Penn, 2005
+
+---
+
+Artwork Title: Photograph
+Object Type: Photograph
+Classification: Unknown
+
+Artist: Irving Penn|Madeleine Vionnet
+Nationality: American|French
+Lifespan: 1917      |1876      –2009      |1975      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1974–1975
+
+Medium: paper
+Dimensions: Unknown
+
+Credit Line: Gift of Irving Penn, 2005
+
+---
+
+Artwork Title: Photograph
+Object Type: Photograph
+Classification: Unknown
+
+Artist: Irving Penn|Madeleine Vionnet
+Nationality: American|French
+Lifespan: 1917      |1876      –2009      |1975      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1974–1975
+
+Medium: paper
+Dimensions: Unknown
+
+Credit Line: Gift of Irving Penn, 2005
+
+---
+
+Artwork Title: Photograph
+Object Type: Photograph
+Classification: Unknown
+
+Artist: Madeleine Vionnet|Irving Penn
+Nationality: French|American
+Lifespan: 1876      |1917      –1975      |2009      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1974–1975
+
+Medium: paper
+Dimensions: Unknown
+
+Credit Line: Gift of Irving Penn, 2005
+
+---
+
+Artwork Title: Photograph
+Object Type: Photograph
+Classification: Unknown
+
+Artist: Irving Penn|Madeleine Vionnet
+Nationality: American|French
+Lifespan: 1917      |1876      –2009      |1975      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1974–1975
+
+Medium: paper
+Dimensions: Unknown
+
+Credit Line: Gift of Irving Penn, 2005
+
+---
+
+Artwork Title: Photograph
+Object Type: Photograph
+Classification: Unknown
+
+Artist: Irving Penn|Madeleine Vionnet
+Nationality: American|French
+Lifespan: 1917      |1876      –2009      |1975      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1974–1975
+
+Medium: paper
+Dimensions: Unknown
+
+Credit Line: Gift of Irving Penn, 2005
+
+---
+
+Artwork Title: Photograph
+Object Type: Photograph
+Classification: Unknown
+
+Artist: Irving Penn|Madeleine Vionnet
+Nationality: American|French
+Lifespan: 1917      |1876      –2009      |1975      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1974–1975
+
+Medium: paper
+Dimensions: Unknown
+
+Credit Line: Gift of Irving Penn, 2005
+
+---
+
+Artwork Title: Evening dress
+Object Type: Evening dress
+Classification: Unknown
+
+Artist: House of Chanel|Karl Lagerfeld
+Nationality: French|French, born Germany
+Lifespan: 1910      |1933      –9999      |2019      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 2004–2004
+
+Medium: cotton, silk, feathers, plastic
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. Charles Wrightsman, 2005
+
+---
+
+Artwork Title: "Rosière"
+Object Type: Dress
+Classification: Unknown
+
+Artist: Paul Poiret
+Nationality: French
+Lifespan: 1879      –1944      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1911–1911
+
+Medium: linen
+Dimensions: Unknown
+
+Credit Line: Catharine Breyer Van Bomel Foundation Fund, 2005
+
+---
+
+Artwork Title: Blouse
+Object Type: Blouse
+Classification: Unknown
+
+Artist: Paul Poiret
+Nationality: French
+Lifespan: 1879      –1944      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1920–1920
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Catharine Breyer Van Bomel Foundation Fund, 2005
+
+---
+
+Artwork Title: Butard
+Object Type: Dress
+Classification: Unknown
+
+Artist: Paul Poiret
+Nationality: French
+Lifespan: 1879      –1944      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1912–1912
+
+Medium: a, b) linen
+Dimensions: Unknown
+
+Credit Line: Millia Davenport and Zipporah Fleisher Fund, 2005
+
+---
+
+Artwork Title: Flonflon
+Object Type: Headdress
+Classification: Unknown
+
+Artist: Paul Poiret
+Nationality: French
+Lifespan: 1879      –1944      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1915–1925
+
+Medium: silk, metallic thread, feathers
+Dimensions: Unknown
+
+Credit Line: Purchase, Judith and Gerson Leiber Fund, 2005
+
+---
+
+Artwork Title: "Le Bal"
+Object Type: Shoes
+Classification: Unknown
+
+Artist: Paul Poiret|André Perugia
+Nationality: French| 
+Lifespan: 1879      |1893      –1944      |1977      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1924–1924
+
+Medium: a, b) silk, glass, leather
+Dimensions: Unknown
+
+Credit Line: Purchase, Friends of The Costume Institute Gifts, 2005
+
+---
+
+Artwork Title: "Théâtre des Champs-Élysées"
+Object Type: Ensemble
+Classification: Unknown
+
+Artist: Paul Poiret
+Nationality: French
+Lifespan: 1879      –1944      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1913–1913
+
+Medium: a,c-e) silk, rhinestones; b) silk; f, g) silk, leather
+Dimensions: Unknown
+
+Credit Line: Purchase, The Paul D. Schurgot Foundation Inc. Gift, 2005
+
+---
+
+Artwork Title: Evening ensemble
+Object Type: Evening ensemble
+Classification: Unknown
+
+Artist: Paul Poiret
+Nationality: French
+Lifespan: 1879      –1944      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1915–1925
+
+Medium: a, b) silk; c) silk, enamel
+Dimensions: Unknown
+
+Credit Line: Catharine Breyer Van Bomel Foundation Fund, 2005
+
+---
+
+Artwork Title: Tunic
+Object Type: Tunic
+Classification: Unknown
+
+Artist: Paul Poiret
+Nationality: French
+Lifespan: 1879      –1944      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1915–1925
+
+Medium: cotton
+Dimensions: Unknown
+
+Credit Line: Catharine Breyer Van Bomel Foundation Fund, 2005
+
+---
+
+Artwork Title: Tunic
+Object Type: Tunic
+Classification: Unknown
+
+Artist: Paul Poiret
+Nationality: French
+Lifespan: 1879      –1944      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1915–1925
+
+Medium: cotton
+Dimensions: Unknown
+
+Credit Line: Catharine Breyer Van Bomel Foundation Fund, 2005
+
+---
+
+Artwork Title: Wedding ensemble
+Object Type: Wedding Ensemble
+Classification: Unknown
+
+Artist: Joan "Tiger" Morse
+Nationality:  
+Lifespan: 1932      –1972      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1966–1966
+
+Medium: cotton
+Dimensions: Unknown
+
+Credit Line: Gift of Carole Sinclair Dolph, 1974
+
+---
+
+Artwork Title: Riding habit
+Object Type: Riding Habit
+Classification: Unknown
+
+Artist: Gimbel Brothers
+Nationality: American
+Lifespan: 1887      –1987      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1914–1915
+
+Medium: linen
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. M. Renfrew Bradner, 1979
+
+---
+
+Artwork Title: Riding habit
+Object Type: Riding Habit
+Classification: Unknown
+
+Artist: Roberts & Carroll
+Nationality: British
+Lifespan:           –          
+
+Cultural Context: British
+Period: Unknown
+Date Range: 1930–1930
+
+Medium: wool
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. John Sherman Cooper, 1978
+
+---
+
+Artwork Title: Riding habit
+Object Type: Riding Habit
+Classification: Unknown
+
+Artist: J Busvine & Co.
+Nationality: British
+Lifespan:           –          
+
+Cultural Context: British
+Period: Unknown
+Date Range: 1920–1929
+
+Medium: wool
+Dimensions: Unknown
+
+Credit Line: Gift of Jessie Leonard Hill, Charles R. Leonard Jr., and Laura Leonard Ault, 1978
+
+---
+
+Artwork Title: Athletic ensemble
+Object Type: Athletic ensemble
+Classification: Unknown
+
+Artist: Franklin Simon & Co.
+Nationality: American
+Lifespan: 1902      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1920–1929
+
+Medium: linen
+Dimensions: Unknown
+
+Credit Line: Gift of Eleanora Eaton Brooks, 1975
+
+---
+
+Artwork Title: Riding habit
+Object Type: Riding Habit
+Classification: Unknown
+
+Artist: J Busvine & Co.
+Nationality: British
+Lifespan:           –          
+
+Cultural Context: British
+Period: Unknown
+Date Range: 1927–1927
+
+Medium: wool
+Dimensions: Unknown
+
+Credit Line: Gift of Kate C. Lefferts, 1973
+
+---
+
+Artwork Title: Jacket
+Object Type: Jacket
+Classification: Unknown
+
+Artist: Bergdorf Goodman
+Nationality: American
+Lifespan: 1899      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1976–1976
+
+Medium: fur
+Dimensions: Unknown
+
+Credit Line: Gift of Martha von Bülow, 1977
+
+---
+
+Artwork Title: "Bois de Boulogne"
+Object Type: Dinner dress
+Classification: Unknown
+
+Artist: Paul Poiret|Raoul Dufy|Bianchini-Férier
+Nationality: French|French|French
+Lifespan: 1879      |1877      |1888      –1944      |1953      |9999      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1919–1919
+
+Medium: a–c) silk
+Dimensions: Unknown
+
+Credit Line: Millia Davenport and Zipporah Fleisher Fund, 2005
+
+---
+
+Artwork Title: "La Rose d'Iribe"
+Object Type: Dress
+Classification: Unknown
+
+Artist: Paul Poiret|Raoul Dufy
+Nationality: French|French
+Lifespan: 1879      |1877      –1944      |1953      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1913–1913
+
+Medium: (a)silk
+(b) linen, wool, cotton
+Dimensions: Unknown
+
+Credit Line: Millia Davenport and Zipporah Fleisher Fund, 2005
+
+---
+
+Artwork Title: "La Perse"
+Object Type: Coat
+Classification: Unknown
+
+Artist: Paul Poiret|Raoul Dufy
+Nationality: French|French
+Lifespan: 1879      |1877      –1944      |1953      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1911–1911
+
+Medium: cotton, silk, metallic thread, fur
+Dimensions: Unknown
+
+Credit Line: Purchase, Friends of The Costume Institute Gifts, 2005
+
+---
+
+Artwork Title: "Manteau D'Auto"
+Object Type: Coat
+Classification: Unknown
+
+Artist: Paul Poiret
+Nationality: French
+Lifespan: 1879      –1944      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1912–1912
+
+Medium: linen, silk, cellulose
+Dimensions: Unknown
+
+Credit Line: Isabel Shults Fund, 2005
+
+---
+
+Artwork Title: Coat
+Object Type: Coat
+Classification: Unknown
+
+Artist: Paul Poiret
+Nationality: French
+Lifespan: 1879      –1944      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1918–1918
+
+Medium: wool, rayon
+Dimensions: Unknown
+
+Credit Line: Isabel Shults Fund, 2005
+
+---
+
+Artwork Title: Skirt
+Object Type: Skirt
+Classification: Unknown
+
+Artist: Paul Poiret
+Nationality: French
+Lifespan: 1879      –1944      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1912–1912
+
+Medium: wool
+Dimensions: Unknown
+
+Credit Line: Catharine Breyer Van Bomel Foundation Fund, 2005
+
+---
+
+Artwork Title: Jacket
+Object Type: Jacket
+Classification: Unknown
+
+Artist: Paul Poiret
+Nationality: French
+Lifespan: 1879      –1944      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1912–1912
+
+Medium: wool, cotton, rayon
+Dimensions: Unknown
+
+Credit Line: Catharine Breyer Van Bomel Foundation Fund, 2005
+
+---
+
+Artwork Title: "Feuille d'automne"
+Object Type: Ensemble
+Classification: Unknown
+
+Artist: Paul Poiret
+Nationality: French
+Lifespan: 1879      –1944      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1916–1916
+
+Medium: a, b) silk; c) fur, silk
+
+Dimensions: Unknown
+
+Credit Line: Catharine Breyer Van Bomel Foundation Fund, 2005
+
+---
+
+Artwork Title: "Pré Catelan"
+Object Type: Coat
+Classification: Unknown
+
+Artist: Paul Poiret
+Nationality: French
+Lifespan: 1879      –1944      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1918–1918
+
+Medium: silk, metallic thread
+Dimensions: Unknown
+
+Credit Line: Millia Davenport and Zipporah Fleisher Fund, 2005
+
+---
+
+Artwork Title: Headdress
+Object Type: Headdress
+Classification: Unknown
+
+Artist: Paul Poiret
+Nationality: French
+Lifespan: 1879      –1944      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1915–1925
+
+Medium: cotton, metal, ceramic
+Dimensions: Unknown
+
+Credit Line: Gerson and Judith Leiber Foundation Fund, 2005
+
+---
+
+Artwork Title: "Paris"
+Object Type: Coat
+Classification: Unknown
+
+Artist: Paul Poiret
+Nationality: French
+Lifespan: 1879      –1944      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1919–1919
+
+Medium: silk, wool, metallic thread
+Dimensions: Unknown
+
+Credit Line: Purchase, Friends of The Costume Institute Gifts, 2005
+
+---
+
+Artwork Title: Headdress
+Object Type: Headdress
+Classification: Unknown
+
+Artist: Paul Poiret
+Nationality: French
+Lifespan: 1879      –1944      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1905–1915
+
+Medium: metal
+Dimensions: Unknown
+
+Credit Line: Gerson and Judith Leiber Foundation Fund, 2005
+
+---
+
+Artwork Title: "Steppe"
+Object Type: Jacket
+Classification: Unknown
+
+Artist: Paul Poiret
+Nationality: French
+Lifespan: 1879      –1944      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1912–1912
+
+Medium: silk, wool, fur, cotton
+Dimensions: Unknown
+
+Credit Line: Catharine Breyer Van Bomel Foundation Fund, 2005
+
+---
+
+Artwork Title: Mademoiselle
+Object Type: Dress
+Classification: Unknown
+
+Artist: Paul Poiret
+Nationality: French
+Lifespan: 1879      –1944      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1923–1923
+
+Medium: wool
+Dimensions: Unknown
+
+Credit Line: Catharine Breyer Van Bomel Foundation Fund, 2005
+
+---
+
+Artwork Title: "Bahia"
+Object Type: Hat
+Classification: Unknown
+
+Artist: Paul Poiret
+Nationality: French
+Lifespan: 1879      –1944      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1914–1914
+
+Medium: silk, metallic thread, jet, glass, silver, cotton
+Dimensions: Unknown
+
+Credit Line: Gerson and Judith Leiber Foundation Fund, 2005
+
+---
+
+Artwork Title: Suit
+Object Type: Suit
+Classification: Unknown
+
+Artist: Marc Jacobs|Perry Ellis Sportswear Inc.
+Nationality: American|American
+Lifespan: 1963      |1978      –9999      |9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1985–1995
+
+Medium: a,b) wool, leather,synthetic, silk
+Dimensions: Unknown
+
+Credit Line: Gift of Jamee Gregory, 2005
+
+---
+
+Artwork Title: Suit
+Object Type: Suit
+Classification: Unknown
+
+Artist: Patrick Kelly
+Nationality: American
+Lifespan: 1954      –1990      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1989–1989
+
+Medium: cotton, rayon, plastic
+Dimensions: Unknown
+
+Credit Line: Gift of Jamee Gregory, 2005
+
+---
+
+Artwork Title: Dress
+Object Type: Dress
+Classification: Unknown
+
+Artist: Christian Francis Roth
+Nationality: American
+Lifespan: 1969      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1985–1989
+
+Medium: wool
+Dimensions: Unknown
+
+Credit Line: Gift of Jamee Gregory, 2005
+
+---
+
+Artwork Title: Dress
+Object Type: Dress
+Classification: Unknown
+
+Artist: Bill Blass|Bill Blass Ltd.
+Nationality: American|American
+Lifespan: 1922-08-22|1970      –2002-06-12|9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1990–1999
+
+Medium: a) silk; b) silk, leather
+Dimensions: Unknown
+
+Credit Line: Gift of Jamee Gregory, 2005
+
+---
+
+Artwork Title: Ensemble
+Object Type: Ensemble
+Classification: Unknown
+
+Artist: Bill Blass|Bill Blass Ltd.
+Nationality: American|American
+Lifespan: 1922-08-22|1970      –2002-06-12|9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1996–1996
+
+Medium: a) wool, metal; b) wool, silk
+Dimensions: Unknown
+
+Credit Line: Gift of Jamee Gregory, 2005
+
+---
+
+Artwork Title: Ensemble
+Object Type: Ensemble
+Classification: Unknown
+
+Artist: Oscar de la Renta|Oscar de la Renta, LLC.
+Nationality: American (born Dominican Republic)|American
+Lifespan: 1932-07-22|1965      –2014      |9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1990–1999
+
+Medium: a,b) silk, metallic thread; c) silk, wool, and metallic thread
+Dimensions: Unknown
+
+Credit Line: Gift of Jamee Gregory, 2005
+
+---
+
+Artwork Title: Gloves
+Object Type: Gloves
+Classification: Unknown
+
+Artist: Jean Paul Gaultier
+Nationality: French
+Lifespan: 1952      –9999      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1986–1986
+
+Medium: a,b) cotton, synthetic
+Dimensions: Unknown
+
+Credit Line: Anonymous Gift, 2005
+
+---
+
+Artwork Title: Evening dress
+Object Type: Evening dress
+Classification: Unknown
+
+Artist: Madame Grès (Germaine Émilie Krebs)
+Nationality: French
+Lifespan: 1903      –1993      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1974–1979
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Anonymous Gift, 2005
+
+---
+
+Artwork Title: Suit
+Object Type: Suit
+Classification: Unknown
+
+Artist: Yves Saint Laurent|Yves Saint Laurent
+Nationality: French, born Algeria|French
+Lifespan: 1936      |1961      –2008      |9999      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1980–2005
+
+Medium: a, b) wool, silk, plastic; c,d) leather; e) silk
+
+Dimensions: Unknown
+
+Credit Line: Anonymous Gift, 2005
+
+---
+
+Artwork Title: Coat
+Object Type: Coat
+Classification: Unknown
+
+Artist: Yves Saint Laurent|Yves Saint Laurent
+Nationality: French, born Algeria|French
+Lifespan: 1936      |1961      –2008      |9999      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1980–2005
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Anonymous Gift, 2005
+
+---
+
+Artwork Title: Ensemble
+Object Type: Ensemble
+Classification: Unknown
+
+Artist: Yves Saint Laurent|Yves Saint Laurent
+Nationality: French, born Algeria|French
+Lifespan: 1936      |1961      –2008      |9999      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1989–1990
+
+Medium: a,c) leather, silk; c) leather, wood, metal
+Dimensions: Unknown
+
+Credit Line: Anonymous Gift, 2005
+
+---
+
+Artwork Title: Cape
+Object Type: Cape
+Classification: Unknown
+
+Artist: Yves Saint Laurent|Yves Saint Laurent
+Nationality: French, born Algeria|French
+Lifespan: 1936      |1961      –2008      |9999      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1983–1984
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Anonymous Gift, 2005
+
+---
+
+Artwork Title: Evening dress
+Object Type: Evening dress
+Classification: Unknown
+
+Artist: Yves Saint Laurent|Yves Saint Laurent
+Nationality: French, born Algeria|French
+Lifespan: 1936      |1961      –2008      |9999      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1980–2005
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Anonymous Gift, 2005
+
+---
+
+Artwork Title: Coat
+Object Type: Coat
+Classification: Unknown
+
+Artist: Yves Saint Laurent|Yves Saint Laurent
+Nationality: French, born Algeria|French
+Lifespan: 1936      |1961      –2008      |9999      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1980–2005
+
+Medium: a) silk, synthetic blend, plastic; b) wool, silk; c,d) synthetic blend
+Dimensions: Unknown
+
+Credit Line: Anonymous Gift, 2005
+
+---
+
+Artwork Title: Suit
+Object Type: Suit
+Classification: Unknown
+
+Artist: Yves Saint Laurent|Yves Saint Laurent
+Nationality: French, born Algeria|French
+Lifespan: 1936      |1961      –2008      |9999      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1989–1989
+
+Medium: a) wool, metal, silk; b,c) wool, silk
+Dimensions: Unknown
+
+Credit Line: Anonymous Gift, 2005
+
+---
+
+Artwork Title: Gloves
+Object Type: Gloves
+Classification: Unknown
+
+Artist: Hermès
+Nationality: French
+Lifespan: 1837      –9999      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1950–1959
+
+Medium: leather
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. Sidney Bernard, 1974
+
+---
+
+Artwork Title: Evening bow tie
+Object Type: Evening bow tie
+Classification: Unknown
+
+Artist: Bergdorf Goodman
+Nationality: American
+Lifespan: 1899      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1950–1959
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. Sidney Bernard, 1974
+
+---
+
+Artwork Title: Evening dress
+Object Type: Evening dress
+Classification: Unknown
+
+Artist: Bill Blass|Bill Blass Ltd.
+Nationality: American|American
+Lifespan: 1922-08-22|1970      –2002-06-12|9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1997–2005
+
+Medium: wool, cellophane, silk, synthetic, metallic
+Dimensions: Unknown
+
+Credit Line: Gift of Jamee Gregory, 2005
+
+---
+
+Artwork Title: Dress
+Object Type: Dress
+Classification: Unknown
+
+Artist: Oscar de la Renta|Oscar de la Renta, LLC.
+Nationality: American (born Dominican Republic)|American
+Lifespan: 1932-07-22|1965      –2014      |9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1990–1999
+
+Medium: a) wool; b) silk, enamel, metal, leather
+Dimensions: Unknown
+
+Credit Line: Gift of Jamee Gregory, 2005
+
+---
+
+Artwork Title: Ensemble
+Object Type: Ensemble
+Classification: Unknown
+
+Artist: Oscar de la Renta|Oscar de la Renta, LLC.
+Nationality: American (born Dominican Republic)|American
+Lifespan: 1932-07-22|1965      –2014      |9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1999–2005
+
+Medium: a, b) silk, cotton, plastic; c) silk
+Dimensions: Unknown
+
+Credit Line: Gift of Jamee Gregory, 2005
+
+---
+
+Artwork Title: Shoes
+Object Type: Shoes
+Classification: Unknown
+
+Artist: Philippe Model
+Nationality: French
+Lifespan: 1978      –9999      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1990–1999
+
+Medium: a,b) leather
+Dimensions: Unknown
+
+Credit Line: Gift of Jamee Gregory, 2005
+
+---
+
+Artwork Title: Shoes
+Object Type: Shoes
+Classification: Unknown
+
+Artist: Tokio Kumagaï
+Nationality: Japanese
+Lifespan: 1948      –1987      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1985–1989
+
+Medium: a,b) leather
+Dimensions: Unknown
+
+Credit Line: Gift of Jamee Gregory, 2005
+
+---
+
+Artwork Title: Purse
+Object Type: Purse
+Classification: Unknown
+
+Artist: Gucci
+Nationality: Italian
+Lifespan: 1921      –2112      
+
+Cultural Context: Italian
+Period: Unknown
+Date Range: 1975–1979
+
+Medium: a,b) leather, brass
+Dimensions: Unknown
+
+Credit Line: Gift of Jamee Gregory, 2005
+
+---
+
+Artwork Title: Accessory set
+Object Type: Accessory Set
+Classification: Unknown
+
+Artist: J. & J. Slater
+Nationality: American
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1890–1900
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. Morton Meinhard, 1940
+
+---
+
+Artwork Title: Stockings
+Object Type: Stockings
+Classification: Unknown
+
+Artist: Hanes Hosiery, Inc.
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1973–1973
+
+Medium: nylon, spandex
+Dimensions: Unknown
+
+Credit Line: Gift of Hanes Hosiery Inc., 1974
+
+---
+
+Artwork Title: Pantyhose
+Object Type: Pantyhose
+Classification: Unknown
+
+Artist: Hanes Hosiery, Inc.
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1973–1974
+
+Medium: nylon, spandex
+Dimensions: Unknown
+
+Credit Line: Gift of Hanes Hosiery Inc., 1974
+
+---
+
+Artwork Title: Stockings
+Object Type: Stockings
+Classification: Unknown
+
+Artist: Hanes Hosiery, Inc.
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1974–1974
+
+Medium: nylon, spandex
+Dimensions: Unknown
+
+Credit Line: Gift of Hanes Hosiery Inc., 1974
+
+---
+
+Artwork Title: Stockings
+Object Type: Stockings
+Classification: Unknown
+
+Artist: Peck & Peck
+Nationality: American
+Lifespan: 1888      –1988      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1900–1915
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. Langdon Marvin, 1976
+
+---
+
+Artwork Title: Pantyhose
+Object Type: Pantyhose
+Classification: Unknown
+
+Artist: Rudi Gernreich
+Nationality: American, born Austria
+Lifespan: 1922      –1985      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1968–1968
+
+Medium: nylon, elastic
+Dimensions: Unknown
+
+Credit Line: Gift of Rudi Gernreich Revocable Trust, 1985
+
+---
+
+Artwork Title: Pantyhose
+Object Type: Pantyhose
+Classification: Unknown
+
+Artist: Rudi Gernreich
+Nationality: American, born Austria
+Lifespan: 1922      –1985      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1970–1975
+
+Medium: nylon, plastic
+Dimensions: Unknown
+
+Credit Line: Gift of Rudi Gernreich Revocable Trust, 1985
+
+---
+
+Artwork Title: Pantyhose
+Object Type: Pantyhose
+Classification: Unknown
+
+Artist: Rudi Gernreich
+Nationality: American, born Austria
+Lifespan: 1922      –1985      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1970–1975
+
+Medium: nylon, metal, glass
+Dimensions: Unknown
+
+Credit Line: Gift of Rudi Gernreich Revocable Trust, 1985
+
+---
+
+Artwork Title: Socks
+Object Type: Socks
+Classification: Unknown
+
+Artist: Rudi Gernreich
+Nationality: American, born Austria
+Lifespan: 1922      –1985      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1963–1973
+
+Medium: nylon, elastic
+Dimensions: Unknown
+
+Credit Line: Gift of Rudi Gernreich Revocable Trust, 1985
+
+---
+
+Artwork Title: Stockings
+Object Type: Stockings
+Classification: Unknown
+
+Artist: B. Altman & Co.
+Nationality: American
+Lifespan: 1865      –1990      
+
+Cultural Context: American or European
+Period: Unknown
+Date Range: 1700–1944
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. Seller, 1944
+
+---
+
+Artwork Title: Stockings
+Object Type: Stockings
+Classification: Unknown
+
+Artist: Gotham Gold Stripe
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1948–1948
+
+Medium: nylon
+Dimensions: Unknown
+
+Credit Line: Gift of Roy E. Tilles, 1948
+
+---
+
+Artwork Title: Stockings
+Object Type: Stockings
+Classification: Unknown
+
+Artist: Gotham Gold Stripe
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1948–1948
+
+Medium: nylon
+Dimensions: Unknown
+
+Credit Line: Gift of Mr. Roy E. Tilles, 1948
+
+---
+
+Artwork Title: Stockings
+Object Type: Stockings
+Classification: Unknown
+
+Artist: Sapphire Hosiery Corporation
+Nationality: American
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1949–1949
+
+Medium: nylon
+Dimensions: Unknown
+
+Credit Line: Gift of Sapphire Hosiery Corporation, 1949
+
+---
+
+Artwork Title: Stockings
+Object Type: Stockings
+Classification: Unknown
+
+Artist: Sapphire Hosiery Corporation
+Nationality: American
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1950–1950
+
+Medium: nylon
+Dimensions: Unknown
+
+Credit Line: Gift of Sapphire Hosiery Corporation, 1949
+
+---
+
+Artwork Title: Stockings
+Object Type: Stockings
+Classification: Unknown
+
+Artist: James McCutcheon & Co.
+Nationality: American
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1900–1905
+
+Medium: silk, cotton
+Dimensions: Unknown
+
+Credit Line: Gift of Alice Frank Merriam, 1966
+
+---
+
+Artwork Title: Stockings
+Object Type: Stockings
+Classification: Unknown
+
+Artist: Bonwit Teller & Co.
+Nationality: American
+Lifespan: 1907      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1900–1905
+
+Medium: silk, cotton
+Dimensions: Unknown
+
+Credit Line: Gift of Alice Frank Merriam, 1966
+
+---
+
+Artwork Title: Stockings
+Object Type: Stockings
+Classification: Unknown
+
+Artist: James McCutcheon & Co.
+Nationality: American
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1900–1905
+
+Medium: silk, cotton
+Dimensions: Unknown
+
+Credit Line: Gift of Alice Frank Merriam, 1966
+
+---
+
+Artwork Title: Stockings
+Object Type: Stockings
+Classification: Unknown
+
+Artist: Bon Marché
+Nationality: French
+Lifespan: 1852      –9999      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1850–1899
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. William Slater Barkentin, 1951
+
+---
+
+Artwork Title: Belt
+Object Type: Belt
+Classification: Unknown
+
+Artist: Cerruti 1881
+Nationality: Italian
+Lifespan: 1967      –9999      
+
+Cultural Context: Italian
+Period: Unknown
+Date Range: 1964–1974
+
+Medium: leather
+Dimensions: Unknown
+
+Credit Line: Gift of Countess Consuelo Crespi, 1974
+
+---
+
+Artwork Title: Necktie
+Object Type: Necktie
+Classification: Unknown
+
+Artist: Calvin Curtis
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1935–1949
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Stephen Shore, 1975
+
+---
+
+Artwork Title: Necktie
+Object Type: Necktie
+Classification: Unknown
+
+Artist: Calvin Curtis
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1935–1949
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Stephen Shore, 1975
+
+---
+
+Artwork Title: Necktie
+Object Type: Necktie
+Classification: Unknown
+
+Artist: Calvin Curtis
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1935–1949
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Stephen Shore, 1975
+
+---
+
+Artwork Title: Necktie
+Object Type: Necktie
+Classification: Unknown
+
+Artist: Calvin Curtis
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1935–1949
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Stephen Shore, 1975
+
+---
+
+Artwork Title: Ascot
+Object Type: Ascot
+Classification: Unknown
+
+Artist: Calvin Curtis
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1950–1969
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. Francis M. Brennan, 1975
+
+---
+
+Artwork Title: Ascot
+Object Type: Ascot
+Classification: Unknown
+
+Artist: Brooke Cadwallader
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1950–1969
+
+Medium: silk, linen
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. Francis M. Brennan, 1975
+
+---
+
+Artwork Title: Ascot
+Object Type: Ascot
+Classification: Unknown
+
+Artist: Brooke Cadwallader
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1950–1969
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. Francis M. Brennan, 1975
+
+---
+
+Artwork Title: Cravat
+Object Type: Cravat
+Classification: Unknown
+
+Artist: Abraham & Straus
+Nationality:  
+Lifespan: 1865      –1994      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1850–1899
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. George H. Ropes, 1976
+
+---
+
+Artwork Title: Cravat
+Object Type: Cravat
+Classification: Unknown
+
+Artist: Abraham & Straus
+Nationality:  
+Lifespan: 1865      –1994      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1850–1899
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. George H. Ropes, 1976
+
+---
+
+Artwork Title: Bow tie
+Object Type: Bow tie
+Classification: Unknown
+
+Artist: Pierre Cardin
+Nationality: French, born Italy
+Lifespan: 1922      –2020      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1969–1970
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Stephen de Pietri, 1977
+
+---
+
+Artwork Title: Belt
+Object Type: Belt
+Classification: Unknown
+
+Artist: Kenneth Jay Lane
+Nationality: American
+Lifespan: 1932      –2017      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1965–1969
+
+Medium: leather, metal, plastic
+Dimensions: Unknown
+
+Credit Line: Gift of Mary Sykes Cahan, 1977
+
+---
+
+Artwork Title: Belt
+Object Type: Belt
+Classification: Unknown
+
+Artist: Kenneth Jay Lane
+Nationality: American
+Lifespan: 1932      –2017      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1968–1970
+
+Medium: leather, plastic (polyvinyl chloride)
+Dimensions: Unknown
+
+Credit Line: Gift of Mary Sykes Cahan, 1977
+
+---
+
+Artwork Title: Evening belt
+Object Type: Evening belt
+Classification: Unknown
+
+Artist: Mimi di N
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1968–1970
+
+Medium: leather, silk, metal, glass
+Dimensions: Unknown
+
+Credit Line: Gift of Mary Sykes Cahan, 1977
+
+---
+
+Artwork Title: Belt
+Object Type: Belt
+Classification: Unknown
+
+Artist: Calderon
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1968–1970
+
+Medium: leather, metal
+Dimensions: Unknown
+
+Credit Line: Gift of Mary Sykes Cahan, 1977
+
+---
+
+Artwork Title: Suspenders
+Object Type: Suspenders
+Classification: Unknown
+
+Artist: A. Sulka & Company
+Nationality: French
+Lifespan: 1893      –2002      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1940–1959
+
+Medium: silk, leather, elastic, metal
+Dimensions: Unknown
+
+Credit Line: Gift of Col. Edgar W. Garbisch, 1977
+
+---
+
+Artwork Title: Spats
+Object Type: Spats
+Classification: Unknown
+
+Artist: Brooks Brothers
+Nationality: American
+Lifespan: 1818      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1900–1950
+
+Medium: linen
+Dimensions: Unknown
+
+Credit Line: Gift of Margot Grace Hartmann, 1977
+
+---
+
+Artwork Title: Necktie
+Object Type: Necktie
+Classification: Unknown
+
+Artist: Brooks Brothers
+Nationality: American
+Lifespan: 1818      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1955–1965
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. Doris E. Grossman, 1978
+
+---
+
+Artwork Title: Necktie
+Object Type: Necktie
+Classification: Unknown
+
+Artist: Brooks Brothers
+Nationality: American
+Lifespan: 1818      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1955–1965
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. Doris E. Grossman, 1978
+
+---
+
+Artwork Title: Necktie
+Object Type: Necktie
+Classification: Unknown
+
+Artist: Brooks Brothers
+Nationality: American
+Lifespan: 1818      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1955–1965
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. Doris E. Grossman, 1978
+
+---
+
+Artwork Title: Necktie
+Object Type: Necktie
+Classification: Unknown
+
+Artist: Elsa Schiaparelli|R. H. Macy & Co.
+Nationality: Italian|American
+Lifespan: 1890      |          –1973      |          
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1950–1959
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. Doris E. Grossman, 1978
+
+---
+
+Artwork Title: Necktie
+Object Type: Necktie
+Classification: Unknown
+
+Artist: Elsa Schiaparelli|House of Schiaparelli|B. Altman & Co.
+Nationality: Italian|French|American
+Lifespan: 1890      |1927      |1865      –1973      |9999      |1990      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1940–1949
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. Doris E. Grossman, 1978
+
+---
+
+Artwork Title: Necktie
+Object Type: Necktie
+Classification: Unknown
+
+Artist: Pierre Cardin
+Nationality: French, born Italy
+Lifespan: 1922      –2020      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1960–1969
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. Doris E. Grossman, 1978
+
+---
+
+Artwork Title: Necktie
+Object Type: Necktie
+Classification: Unknown
+
+Artist: Oleg Cassini
+Nationality: American, born France
+Lifespan: 1913      –1913      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1955–1965
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. Doris E. Grossman, 1978
+
+---
+
+Artwork Title: Necktie
+Object Type: Necktie
+Classification: Unknown
+
+Artist: A. Sulka & Company
+Nationality: French
+Lifespan: 1893      –2002      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1940–1949
+
+Medium: rayon, silk
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. Doris E. Grossman, 1978
+
+---
+
+Artwork Title: Necktie
+Object Type: Necktie
+Classification: Unknown
+
+Artist: Lilly Daché
+Nationality: American, born France
+Lifespan: 1898      –1989      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1940–1949
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. Doris E. Grossman, 1978
+
+---
+
+Artwork Title: Ascot
+Object Type: Ascot
+Classification: Unknown
+
+Artist: Calvin Curtis
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1950–1959
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Marvin B. Patterson (Mrs. Jefferson Patterson), 1978
+
+---
+
+Artwork Title: Bow tie
+Object Type: Bow tie
+Classification: Unknown
+
+Artist: Brooks Brothers
+Nationality: American
+Lifespan: 1818      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1955–1965
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Marvin B. Patterson (Mrs. Jefferson Patterson), 1978
+
+---
+
+Artwork Title: Bow tie
+Object Type: Bow tie
+Classification: Unknown
+
+Artist: Brooks Brothers
+Nationality: American
+Lifespan: 1818      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1955–1965
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Marvin B. Patterson (Mrs. Jefferson Patterson), 1978
+
+---
+
+Artwork Title: Bow tie
+Object Type: Bow tie
+Classification: Unknown
+
+Artist: Brooks Brothers
+Nationality: American
+Lifespan: 1818      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1955–1965
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Marvin B. Patterson (Mrs. Jefferson Patterson), 1978
+
+---
+
+Artwork Title: Bow tie
+Object Type: Bow tie
+Classification: Unknown
+
+Artist: Brooks Brothers
+Nationality: American
+Lifespan: 1818      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1955–1965
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Marvin B. Patterson (Mrs. Jefferson Patterson), 1978
+
+---
+
+Artwork Title: Bow tie
+Object Type: Bow tie
+Classification: Unknown
+
+Artist: Brooks Brothers
+Nationality: American
+Lifespan: 1818      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1955–1965
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Marvin B. Patterson (Mrs. Jefferson Patterson), 1978
+
+---
+
+Artwork Title: Bow tie
+Object Type: Bow tie
+Classification: Unknown
+
+Artist: Brooks Brothers
+Nationality: American
+Lifespan: 1818      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1955–1965
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Marvin B. Patterson (Mrs. Jefferson Patterson), 1978
+
+---
+
+Artwork Title: Bow tie
+Object Type: Bow tie
+Classification: Unknown
+
+Artist: Brooks Brothers
+Nationality: American
+Lifespan: 1818      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1955–1965
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Marvin B. Patterson (Mrs. Jefferson Patterson), 1978
+
+---
+
+Artwork Title: Bow tie
+Object Type: Bow tie
+Classification: Unknown
+
+Artist: Brooks Brothers
+Nationality: American
+Lifespan: 1818      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1955–1965
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Marvin B. Patterson (Mrs. Jefferson Patterson), 1978
+
+---
+
+Artwork Title: Bow tie
+Object Type: Bow tie
+Classification: Unknown
+
+Artist: A. Sulka & Company
+Nationality: French
+Lifespan: 1893      –2002      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1955–1965
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Marvin B. Patterson (Mrs. Jefferson Patterson), 1978
+
+---
+
+Artwork Title: Necktie
+Object Type: Necktie
+Classification: Unknown
+
+Artist: Brooks Brothers
+Nationality: American
+Lifespan: 1818      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1947–1957
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Marvin B. Patterson (Mrs. Jefferson Patterson), 1978
+
+---
+
+Artwork Title: Collar
+Object Type: Collar
+Classification: Unknown
+
+Artist: Brooks Brothers
+Nationality: American
+Lifespan: 1818      –9999      
+
+Cultural Context: British
+Period: Unknown
+Date Range: 1950–1959
+
+Medium: cotton
+Dimensions: Unknown
+
+Credit Line: Gift of Marvin B. Patterson (Mrs. Jefferson Patterson), 1978
+
+---
+
+Artwork Title: Collar
+Object Type: Collar
+Classification: Unknown
+
+Artist: Brooks Brothers
+Nationality: American
+Lifespan: 1818      –9999      
+
+Cultural Context: British
+Period: Unknown
+Date Range: 1950–1959
+
+Medium: cotton
+Dimensions: Unknown
+
+Credit Line: Gift of Marvin B. Patterson (Mrs. Jefferson Patterson), 1978
+
+---
+
+Artwork Title: Hunting mittens
+Object Type: Hunting mittens
+Classification: Unknown
+
+Artist: Abercrombie and Fitch Co.
+Nationality: American
+Lifespan: 1892      –2050      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1950–1959
+
+Medium: leather, cotton, rubber
+Dimensions: Unknown
+
+Credit Line: Gift of Marvin B. Patterson (Mrs. Jefferson Patterson), 1978
+
+---
+
+Artwork Title: Hunting gloves
+Object Type: Hunting gloves
+Classification: Unknown
+
+Artist: Abercrombie and Fitch Co.
+Nationality: American
+Lifespan: 1892      –2050      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1940–1949
+
+Medium: leather, wool, cotton
+Dimensions: Unknown
+
+Credit Line: Gift of Marvin B. Patterson (Mrs. Jefferson Patterson), 1978
+
+---
+
+Artwork Title: Suspenders
+Object Type: Suspenders
+Classification: Unknown
+
+Artist: Brooks Brothers
+Nationality: American
+Lifespan: 1818      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1950–1959
+
+Medium: leather, rubber
+Dimensions: Unknown
+
+Credit Line: Gift of Marvin B. Patterson (Mrs. Jefferson Patterson), 1978
+
+---
+
+Artwork Title: Suspenders
+Object Type: Suspenders
+Classification: Unknown
+
+Artist: Brooks Brothers
+Nationality: American
+Lifespan: 1818      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1950–1959
+
+Medium: leather, rubber
+Dimensions: Unknown
+
+Credit Line: Gift of Marvin B. Patterson (Mrs. Jefferson Patterson), 1978
+
+---
+
+Artwork Title: Suspenders
+Object Type: Suspenders
+Classification: Unknown
+
+Artist: Brooks Brothers
+Nationality: American
+Lifespan: 1818      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1950–1959
+
+Medium: leather, rubber
+Dimensions: Unknown
+
+Credit Line: Gift of Marvin B. Patterson (Mrs. Jefferson Patterson), 1978
+
+---
+
+Artwork Title: Cravat
+Object Type: Cravat
+Classification: Unknown
+
+Artist: B. Altman & Co.
+Nationality: American
+Lifespan: 1865      –1990      
+
+Cultural Context: American or European
+Period: Unknown
+Date Range: 1974–1974
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Stephen de Pietri, 1979
+
+---
+
+Artwork Title: Necktie
+Object Type: Necktie
+Classification: Unknown
+
+Artist: Dominique France
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1955–1959
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Elizabeth E. Brady, 1979
+
+---
+
+Artwork Title: Necktie
+Object Type: Necktie
+Classification: Unknown
+
+Artist: Saks Fifth Avenue
+Nationality: American
+Lifespan: 1924      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1955–1965
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Elizabeth E. Brady, 1979
+
+---
+
+Artwork Title: Umbrella
+Object Type: Umbrella
+Classification: Unknown
+
+Artist: Briggs & Sons, London
+Nationality: British
+Lifespan:           –          
+
+Cultural Context: British
+Period: Unknown
+Date Range: 1924–1924
+
+Medium: silk, wool, metal, horn
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. Maurice Stern, 1979
+
+---
+
+Artwork Title: Necktie
+Object Type: Necktie
+Classification: Unknown
+
+Artist: B. Piattelli
+Nationality: Italian
+Lifespan:           –          
+
+Cultural Context: Italian
+Period: Unknown
+Date Range: 1976–1976
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of B. Piattelli-Roma, 1980
+
+---
+
+Artwork Title: Necktie
+Object Type: Necktie
+Classification: Unknown
+
+Artist: B. Piattelli
+Nationality: Italian
+Lifespan:           –          
+
+Cultural Context: Italian
+Period: Unknown
+Date Range: 1976–1976
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of B. Piattelli-Roma, 1980
+
+---
+
+Artwork Title: Necktie
+Object Type: Necktie
+Classification: Unknown
+
+Artist: Chipp New York New Haven
+Nationality: American
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1970–1980
+
+Medium: synthetic fiber
+Dimensions: Unknown
+
+Credit Line: Gift of Mr. & Mrs. Francis Whitaker, in memory of Rogers E.M. Whitaker, 1981
+
+---
+
+Artwork Title: Necktie
+Object Type: Necktie
+Classification: Unknown
+
+Artist: Chipp New York New Haven
+Nationality: American
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1970–1980
+
+Medium: synthetic fiber
+Dimensions: Unknown
+
+Credit Line: Gift of Mr. & Mrs. Francis Whitaker, in memory of Rogers E. M. Whitaker, 1981
+
+---
+
+Artwork Title: Belt
+Object Type: Belt
+Classification: Unknown
+
+Artist: Tiffany & Co.
+Nationality:  
+Lifespan: 1837      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1909–1919
+
+Medium: silk, silver
+Dimensions: Unknown
+
+Credit Line: Gift of David and Susan Biberman from the collection of Hilda S. Biberman, 1982
+
+---
+
+Artwork Title: Belt buckle
+Object Type: Belt Buckle
+Classification: Unknown
+
+Artist: René-Jules Lalique
+Nationality: French
+Lifespan: 1860      –1945      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1927–1937
+
+Medium: glass, metal
+Dimensions: Unknown
+
+Credit Line: Gift of Judith Leiber, 1983
+
+---
+
+Artwork Title: Belt
+Object Type: Belt
+Classification: Unknown
+
+Artist: Barry Kieselstein-Cord
+Nationality: American
+Lifespan: 1948      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1979–1979
+
+Medium: leather, metal
+Dimensions: Unknown
+
+Credit Line: Anonymous Gift, 1983
+
+---
+
+Artwork Title: Belt
+Object Type: Belt
+Classification: Unknown
+
+Artist: Barry Kieselstein-Cord
+Nationality: American
+Lifespan: 1948      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1979–1979
+
+Medium: leather, metal
+Dimensions: Unknown
+
+Credit Line: Anonymous Gift, 1983
+
+---
+
+Artwork Title: Necktie
+Object Type: Necktie
+Classification: Unknown
+
+Artist: A. Sulka & Company
+Nationality: French
+Lifespan: 1893      –2002      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1885–1895
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. Frederick van Beuren Joy, in memory of Mrs. Jacob Harsen Halsted, 1983
+
+---
+
+Artwork Title: Gloves
+Object Type: Gloves
+Classification: Unknown
+
+Artist: B. Altman & Co.
+Nationality: American
+Lifespan: 1865      –1990      
+
+Cultural Context: Italian
+Period: Unknown
+Date Range: 1980–1990
+
+Medium: leather, wool
+Dimensions: Unknown
+
+Credit Line: Gift of Bill Couch, 1988
+
+---
+
+Artwork Title: Belt
+Object Type: Belt
+Classification: Unknown
+
+Artist: Tess Sholom
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1979–1979
+
+Medium: leather, brass
+Dimensions: Unknown
+
+Credit Line: Gift of Tess Sholom, 1988
+
+---
+
+Artwork Title: Belt
+Object Type: Belt
+Classification: Unknown
+
+Artist: Tess Sholom
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1978–1978
+
+Medium: leather, brass
+Dimensions: Unknown
+
+Credit Line: Gift of Tess Sholom, 1988
+
+---
+
+Artwork Title: Belt
+Object Type: Belt
+Classification: Unknown
+
+Artist: Tess Sholom|Scott Barrie
+Nationality:  |American
+Lifespan:           |1946      –          |1993      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1977–1977
+
+Medium: leather, gold leaf
+Dimensions: Unknown
+
+Credit Line: Gift of Tess Sholom, 1988
+
+---
+
+Artwork Title: Belt
+Object Type: Belt
+Classification: Unknown
+
+Artist: Tess Sholom
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1977–1977
+
+Medium: leather, metal
+Dimensions: Unknown
+
+Credit Line: Gift of Tess Sholom, 1988
+
+---
+
+Artwork Title: Belt
+Object Type: Belt
+Classification: Unknown
+
+Artist: Tess Sholom
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1979–1979
+
+Medium: leather, metal
+Dimensions: Unknown
+
+Credit Line: Gift of Tess Sholom, 1988
+
+---
+
+Artwork Title: Belt
+Object Type: Belt
+Classification: Unknown
+
+Artist: Tess Sholom|Karl Lagerfeld
+Nationality:  |French, born Germany
+Lifespan:           |1933      –          |2019      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1981–1981
+
+Medium: metal
+Dimensions: Unknown
+
+Credit Line: Gift of Tess Sholom, 1988
+
+---
+
+Artwork Title: Necktie
+Object Type: Necktie
+Classification: Unknown
+
+Artist: Saks Fifth Avenue
+Nationality: American
+Lifespan: 1924      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1915–1947
+
+Medium: [no medium available]
+Dimensions: Unknown
+
+Credit Line: Gift of Mr. Carl Van Vechten, 1941
+
+---
+
+Artwork Title: Handkerchief
+Object Type: Handkerchief
+Classification: Unknown
+
+Artist: John Held Jr.
+Nationality: American
+Lifespan: 1889      –1958      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1928–1928
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. Sidney Bernard, 1956
+
+---
+
+Artwork Title: Handkerchief
+Object Type: Handkerchief
+Classification: Unknown
+
+Artist: John Held Jr.
+Nationality: American
+Lifespan: 1889      –1958      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1928–1928
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. Sidney Bernard, 1956
+
+---
+
+Artwork Title: Scarf
+Object Type: Scarf
+Classification: Unknown
+
+Artist: Norman Norell
+Nationality: American
+Lifespan: 1900      –1972      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1970–1979
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Diana Lauria, 2005
+
+---
+
+Artwork Title: Scarf
+Object Type: Scarf
+Classification: Unknown
+
+Artist: Norman Norell
+Nationality: American
+Lifespan: 1900      –1972      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1970–1979
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Diana Lauria, 2005
+
+---
+
+Artwork Title: Accessory set
+Object Type: Accessory Set
+Classification: Unknown
+
+Artist: Kosta Furs, LTD
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1974–1974
+
+Medium: fur
+Dimensions: Unknown
+
+Credit Line: Gift of Kosta Furs, Ltd., 1975
+
+---
+
+Artwork Title: Trimming
+Object Type: Trimming
+Classification: Unknown
+
+Artist: Bernard Teitelbaum, Inc.
+Nationality: American
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1974–1974
+
+Medium: fur
+Dimensions: Unknown
+
+Credit Line: Gift of Bernard Teitelbaum Inc., 1975
+
+---
+
+Artwork Title: Bow tie
+Object Type: Bow tie
+Classification: Unknown
+
+Artist: Abraham & Straus
+Nationality:  
+Lifespan: 1865      –1994      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1900–1930
+
+Medium: cotton
+Dimensions: Unknown
+
+Credit Line: Gift of Margot Grace Hartmann, 1977
+
+---
+
+Artwork Title: Redingote
+Object Type: Redingote
+Classification: Unknown
+
+Artist: Jean Muir
+Nationality: British
+Lifespan: 1928      –1995      
+
+Cultural Context: British
+Period: Unknown
+Date Range: 1970–1979
+
+Medium: wool, plastic
+Dimensions: Unknown
+
+Credit Line: Gift of Betty Ellen Eisler, 2005
+
+---
+
+Artwork Title: Dinner jacket
+Object Type: Dinner jacket
+Classification: Unknown
+
+Artist: Stovel & Mason|A. Sulka & Company
+Nationality: British|French
+Lifespan:           |1893      –          |2002      
+
+Cultural Context: British
+Period: Unknown
+Date Range: 1957–1957
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Jean Nicolesco-Dorobantzou, 1987
+
+---
+
+Artwork Title: Parasol
+Object Type: Parasol
+Classification: Unknown
+
+Artist: Tiffany & Co.
+Nationality:  
+Lifespan: 1837      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1890–1899
+
+Medium: silk, wood, steel
+Dimensions: Unknown
+
+Credit Line: Gift of Mr. Frank Carrington, 1951
+
+---
+
+Artwork Title: Belt
+Object Type: Belt
+Classification: Unknown
+
+Artist: Phelps
+Nationality: American
+Lifespan: 1940      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1944–1944
+
+Medium: leather
+Dimensions: Unknown
+
+Credit Line: Gift of Mr. William Drown Phelps, 1944
+
+---
+
+Artwork Title: Belt
+Object Type: Belt
+Classification: Unknown
+
+Artist: Betsey Bunky Nini
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1970–1970
+
+Medium: suede, snakeskin
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. Thomas E. Myers Jr., 1985
+
+---
+
+Artwork Title: Cape
+Object Type: Cape
+Classification: Unknown
+
+Artist: Revillon Frères
+Nationality: French
+Lifespan: 1723      –1850      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1940–1949
+
+Medium: fur
+Dimensions: Unknown
+
+Credit Line: Gift of Roger Goiran, 1977
+
+---
+
+Artwork Title: Evening dress
+Object Type: Evening dress
+Classification: Unknown
+
+Artist: John Galliano|John Galliano
+Nationality: British| 
+Lifespan: 1960      |1984      –9999      |          
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1995–1995
+
+Medium: silk, feathers
+Dimensions: Unknown
+
+Credit Line: Gift of Linda Evangelista, 2018
+
+---
+
+Artwork Title: Shoes
+Object Type: Shoes
+Classification: Unknown
+
+Artist: Tom Ford|Gucci
+Nationality: American|Italian
+Lifespan: 1961      |1921      –9999      |2112      
+
+Cultural Context: Italian
+Period: Unknown
+Date Range: 2004–2005
+
+Medium: a,b) fur, leather, rhinestone
+Dimensions: Unknown
+
+Credit Line: Gift of Gucci, 2005
+
+---
+
+Artwork Title: Coat
+Object Type: Coat
+Classification: Unknown
+
+Artist: Hahne & Company
+Nationality: American
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1943–1947
+
+Medium: fur
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. Florence W. Koziol, 1977
+
+---
+
+Artwork Title: Coat
+Object Type: Coat
+Classification: Unknown
+
+Artist: Maximilian
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1959–1959
+
+Medium: fur, silk
+Dimensions: Unknown
+
+Credit Line: Gift of Stephen Rubin, 1975
+
+---
+
+Artwork Title: Shoes
+Object Type: Shoes
+Classification: Unknown
+
+Artist: Prada|Miuccia Prada
+Nationality: Italian|Italian
+Lifespan: 1913      |1949      –9999      |9999      
+
+Cultural Context: Italian
+Period: Unknown
+Date Range: 1995–1999
+
+Medium: a,b) leather
+Dimensions: Unknown
+
+Credit Line: Gift of Jan Glier Reeder, 2005
+
+---
+
+Artwork Title: Dress
+Object Type: Dress
+Classification: Unknown
+
+Artist: Rudi Gernreich
+Nationality: American, born Austria
+Lifespan: 1922      –1985      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1964–1974
+
+Medium: wool, metal
+Dimensions: Unknown
+
+Credit Line: Purchase, Funds from various donors, Isabel Shults Fund, and Millia Davenport and Zipporah Fleisher Fund, 2005
+
+---
+
+Artwork Title: Dress
+Object Type: Dress
+Classification: Unknown
+
+Artist: Mariano Fortuny|Fortuny
+Nationality: Spanish|Italian
+Lifespan: 1871      |1906      –1949      |2020      
+
+Cultural Context: Italian
+Period: Unknown
+Date Range: 1920–1929
+
+Medium: silk, glass
+Dimensions: Unknown
+
+Credit Line: Gift of Frances J. Kiernan, 2005
+
+---
+
+Artwork Title: Bracelet
+Object Type: Bracelet
+Classification: Unknown
+
+Artist: House of Chanel|Verdura
+Nationality: French|American
+Lifespan: 1910      |1939      –9999      |9999      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1990–1990
+
+Medium: ivory, gold, precious gems
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. Charles Wrightsman, 2005
+
+---
+
+Artwork Title: Coat
+Object Type: Coat
+Classification: Unknown
+
+Artist: Donald Brooks
+Nationality: American
+Lifespan: 1928-01-10–2005-08-01
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1970–1970
+
+Medium: fur
+Dimensions: Unknown
+
+Credit Line: Gift of Miss Sally Krell, 1972
+
+---
+
+Artwork Title: Coat
+Object Type: Coat
+Classification: Unknown
+
+Artist: Maximilian
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1960–1969
+
+Medium: fur
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. Gilbert Miller, 1978
+
+---
+
+Artwork Title: Jacket
+Object Type: Jacket
+Classification: Unknown
+
+Artist: Bergdorf Goodman
+Nationality: American
+Lifespan: 1899      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1948–1958
+
+Medium: fur
+Dimensions: Unknown
+
+Credit Line: Gift of E. Williams Burlingham, 1979
+
+---
+
+Artwork Title: Coat
+Object Type: Coat
+Classification: Unknown
+
+Artist: Ben Kahn Furs
+Nationality: American
+Lifespan: 1921      –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1963–1963
+
+Medium: fur
+Dimensions: Unknown
+
+Credit Line: Gift of Mr. and Mrs. William F. Navran, 1979
+
+---
+
+Artwork Title: Coat
+Object Type: Coat
+Classification: Unknown
+
+Artist: Ben Kahn Furs
+Nationality: American
+Lifespan: 1921      –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1966–1967
+
+Medium: fur, leather
+Dimensions: Unknown
+
+Credit Line: Gift of Fredda Weiss, 1981
+
+---
+
+Artwork Title: Redingote
+Object Type: Redingote
+Classification: Unknown
+
+Artist: Bergdorf Goodman
+Nationality: American
+Lifespan: 1899      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1964–1974
+
+Medium: fur, silk
+Dimensions: Unknown
+
+Credit Line: Gift of Ali MacGraw, 1983
+
+---
+
+Artwork Title: Coat
+Object Type: Coat
+Classification: Unknown
+
+Artist: Esther Dorothy
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1965–1975
+
+Medium: fur
+Dimensions: Unknown
+
+Credit Line: Gift of Julian W. Glass Jr., 1987
+
+---
+
+Artwork Title: Coat
+Object Type: Coat
+Classification: Unknown
+
+Artist: Esther Dorothy
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1970–1970
+
+Medium: fur
+Dimensions: Unknown
+
+Credit Line: Gift of Julian W. Glass Jr., 1987
+
+---
+
+Artwork Title: Vest
+Object Type: Vest
+Classification: Unknown
+
+Artist: Brooks Brothers
+Nationality: American
+Lifespan: 1818      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1955–1960
+
+Medium: leather, nylon, brass
+Dimensions: Unknown
+
+Credit Line: Gift of Marvin B. Patterson (Mrs. Jefferson Patterson), 1978
+
+---
+
+Artwork Title: Vest
+Object Type: Vest
+Classification: Unknown
+
+Artist: Brooks Brothers
+Nationality: American
+Lifespan: 1818      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1955–1960
+
+Medium: wool, rayon
+Dimensions: Unknown
+
+Credit Line: Gift of Marvin B. Patterson (Mrs. Jefferson Patterson), 1978
+
+---
+
+Artwork Title: Riding boots
+Object Type: Riding Boots
+Classification: Unknown
+
+Artist: Stern Brothers
+Nationality: American
+Lifespan: 1867      –2001      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1700–1942
+
+Medium: leather
+Dimensions: Unknown
+
+Credit Line: Gift of Miss Claire Lorraine Wilson, 1942
+
+---
+
+Artwork Title: Dress
+Object Type: Dress
+Classification: Unknown
+
+Artist: Paul Poiret
+Nationality: French
+Lifespan: 1879      –1944      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1912–1912
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Purchase, Friends of The Costume Institute Gifts, 2005
+
+---
+
+Artwork Title: Ensemble
+Object Type: Ensemble
+Classification: Unknown
+
+Artist: Paul Poiret
+Nationality: French
+Lifespan: 1879      –1944      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1912–1912
+
+Medium: a) silk, fur; b) silk
+Dimensions: Unknown
+
+Credit Line: Purchase, Friends of The Costume Institute Gifts, 2005
+
+---
+
+Artwork Title: Scarf
+Object Type: Scarf
+Classification: Unknown
+
+Artist: Brooke Cadwallader
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1950–1959
+
+Medium: silk
+Dimensions: Unknown
+
+Credit Line: Gift of Marvin B. Patterson (Mrs. Jefferson Patterson), 1978
+
+---
+
+Artwork Title: Evening ensemble
+Object Type: Evening ensemble
+Classification: Unknown
+
+Artist: Oscar de la Renta|House of Balmain
+Nationality: American (born Dominican Republic)|French
+Lifespan: 1932-07-22|1945      –2014      |9999      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 2001–2002
+
+Medium: a) silk; b) silk, synthetic
+Dimensions: Unknown
+
+Credit Line: Gift of Mercedes T. Bass, 2005
+
+---
+
+Artwork Title: Evening ensemble
+Object Type: Evening ensemble
+Classification: Unknown
+
+Artist: Oscar de la Renta|House of Balmain
+Nationality: American (born Dominican Republic)|French
+Lifespan: 1932-07-22|1945      –2014      |9999      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1995–2005
+
+Medium: a) silk, synthetic; b) silk
+Dimensions: Unknown
+
+Credit Line: Gift of Mercedes T. Bass, 2005
+
+---
+
+Artwork Title: Evening dress
+Object Type: Evening dress
+Classification: Unknown
+
+Artist: Oscar de la Renta|House of Balmain
+Nationality: American (born Dominican Republic)|French
+Lifespan: 1932-07-22|1945      –2014      |9999      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1995–2005
+
+Medium: silk, plastic
+Dimensions: Unknown
+
+Credit Line: Gift of Mercedes T. Bass, 2005
+
+---
+
+Artwork Title: Evening dress
+Object Type: Evening dress
+Classification: Unknown
+
+Artist: Oscar de la Renta|House of Balmain|House of Balmain
+Nationality: American (born Dominican Republic)|French|French
+Lifespan: 1932-07-22|1945      |1945      –2014      |9999      |9999      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 2001–2001
+
+Medium: silk, glass, feathers
+Dimensions: Unknown
+
+Credit Line: Gift of Mercedes T. Bass, 2005
+
+---
+
+Artwork Title: Evening ensemble
+Object Type: Evening ensemble
+Classification: Unknown
+
+Artist: Oscar de la Renta|House of Balmain
+Nationality: American (born Dominican Republic)|French
+Lifespan: 1932-07-22|1945      –2014      |9999      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 2002–2002
+
+Medium: a) cotton, synthetic; b) silk
+Dimensions: Unknown
+
+Credit Line: Gift of Mercedes T. Bass, 2005
+
+---
+
+Artwork Title: Evening ensemble
+Object Type: Evening ensemble
+Classification: Unknown
+
+Artist: Oscar de la Renta|House of Balmain
+Nationality: American (born Dominican Republic)|French
+Lifespan: 1932-07-22|1945      –2014      |9999      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 2001–2002
+
+Medium: a) silk, synthetic; b) silk
+Dimensions: Unknown
+
+Credit Line: Gift of Mercedes T. Bass, 2005
+
+---
+
+Artwork Title: Ensemble
+Object Type: Ensemble
+Classification: Unknown
+
+Artist: Ralph Rucci
+Nationality: American
+Lifespan: 1957      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 2002–2003
+
+Medium: a, b) silk
+Dimensions: Unknown
+
+Credit Line: Gift of Mercedes T. Bass, 2005
+
+---
+
+Artwork Title: Evening ensemble
+Object Type: Evening ensemble
+Classification: Unknown
+
+Artist: Ralph Rucci
+Nationality: American
+Lifespan: 1957      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 2001–2002
+
+Medium: a) silk; synthetic; b) silk
+Dimensions: Unknown
+
+Credit Line: Gift of Mercedes T. Bass, 2005
+
+---
+
+Artwork Title: Ensemble
+Object Type: Ensemble
+Classification: Unknown
+
+Artist: Ralph Rucci
+Nationality: American
+Lifespan: 1957      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 2002–2003
+
+Medium: a-d) silk
+Dimensions: Unknown
+
+Credit Line: Gift of Mercedes T. Bass, 2005
+
+---
+
+Artwork Title: Ensemble
+Object Type: Ensemble
+Classification: Unknown
+
+Artist: Ralph Rucci
+Nationality: American
+Lifespan: 1957      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1996–2005
+
+Medium: a) wool, silk, stone, raffia; b) silk
+Dimensions: Unknown
+
+Credit Line: Gift of Mercedes T. Bass, 2005
+
+---
+
+Artwork Title: Ensemble
+Object Type: Ensemble
+Classification: Unknown
+
+Artist: Oscar de la Renta|Oscar de la Renta, LLC.
+Nationality: American (born Dominican Republic)|American
+Lifespan: 1932-07-22|1965      –2014      |9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 2004–2005
+
+Medium: a) silk, metallic thread, plastic, glass, fur; b) silk, metallic thread
+
+Dimensions: Unknown
+
+Credit Line: Gift of Mercedes T. Bass, 2005
+
+---
+
+Artwork Title: Evening ensemble
+Object Type: Evening ensemble
+Classification: Unknown
+
+Artist: Oscar de la Renta|Oscar de la Renta, LLC.
+Nationality: American (born Dominican Republic)|American
+Lifespan: 1932-07-22|1965      –2014      |9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 2004–2004
+
+Medium: a) cotton, jet, polyester; b) synthetic, silk, jet
+Dimensions: Unknown
+
+Credit Line: Gift of Mercedes T. Bass, 2005
+
+---
+
+Artwork Title: Evening dress
+Object Type: Evening dress
+Classification: Unknown
+
+Artist: Vera Wang
+Nationality: American
+Lifespan: 1949      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1997–2004
+
+Medium: silk, plastic, foam
+Dimensions: Unknown
+
+Credit Line: Gift of Mercedes T. Bass, 2005
+
+---
+
+Artwork Title: Clip earrings
+Object Type: Clip earrings
+Classification: Unknown
+
+Artist: Tess Sholom|Bill Blass|Bill Blass Ltd.
+Nationality:  |American|American
+Lifespan:           |1922-08-22|1970      –          |2002-06-12|9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1982–1983
+
+Medium: plastic (acrylic)
+Dimensions: Unknown
+
+Credit Line: Gift of Tess Sholom, 1988
+
+---
+
+Artwork Title: Pin
+Object Type: Pin
+Classification: Unknown
+
+Artist: Tess Sholom|Giorgio di Sant'Angelo
+Nationality:  |American
+Lifespan:           |1933      –          |1989      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1981–1981
+
+Medium: brass, stone
+Dimensions: Unknown
+
+Credit Line: Gift of Tess Sholom, 1988
+
+---
+
+Artwork Title: Pin
+Object Type: Pin
+Classification: Unknown
+
+Artist: Tess Sholom|Bill Blass Ltd.
+Nationality:  |American
+Lifespan:           |1970      –          |9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1986–1986
+
+Medium: malachite, glass, silver
+Dimensions: Unknown
+
+Credit Line: Gift of Tess Sholom, 1988
+
+---
+
+Artwork Title: Necklace
+Object Type: Necklace
+Classification: Unknown
+
+Artist: Tess Sholom|Giorgio di Sant'Angelo
+Nationality:  |American
+Lifespan:           |1933      –          |1989      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1980–1980
+
+Medium: brass
+Dimensions: Unknown
+
+Credit Line: Gift of Tess Sholom, 1988
+
+---
+
+Artwork Title: Necklace
+Object Type: Necklace
+Classification: Unknown
+
+Artist: Tess Sholom
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1983–1983
+
+Medium: plastic (acrylic), pewter
+Dimensions: Unknown
+
+Credit Line: Gift of Tess Sholom, 1988
+
+---
+
+Artwork Title: Necklace
+Object Type: Necklace
+Classification: Unknown
+
+Artist: Tess Sholom|Bill Blass|Bill Blass Ltd.
+Nationality:  |American|American
+Lifespan:           |1922-08-22|1970      –          |2002-06-12|9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1984–1984
+
+Medium: plastic (acrylic), glass, pewter
+Dimensions: Unknown
+
+Credit Line: Gift of Tess Sholom, 1988
+
+---
+
+Artwork Title: Necklace
+Object Type: Necklace
+Classification: Unknown
+
+Artist: Tess Sholom|Oscar de la Renta, LLC.
+Nationality:  |American
+Lifespan:           |1965      –          |9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1980–1980
+
+Medium: wood, metal, enamel, gold, leather
+Dimensions: Unknown
+
+Credit Line: Gift of Tess Sholom, 1988
+
+---
+
+Artwork Title: Necklace
+Object Type: Necklace
+Classification: Unknown
+
+Artist: Tess Sholom
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1982–1982
+
+Medium: brass
+Dimensions: Unknown
+
+Credit Line: Gift of Tess Sholom, 1988
+
+---
+
+Artwork Title: Bracelet
+Object Type: Bracelet
+Classification: Unknown
+
+Artist: Tess Sholom|Bill Blass Ltd.
+Nationality:  |American
+Lifespan:           |1970      –          |9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1982–1982
+
+Medium: plastic (acrylic)
+Dimensions: Unknown
+
+Credit Line: Gift of Tess Sholom, 1988
+
+---
+
+Artwork Title: Ring
+Object Type: Ring
+Classification: Unknown
+
+Artist: Robert Lee Morris
+Nationality: American, born Germany
+Lifespan: 1947      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1976–1986
+
+Medium: silver
+Dimensions: Unknown
+
+Credit Line: Gift of Lansing Moran, 1987
+
+---
+
+Artwork Title: Earrings
+Object Type: Earrings
+Classification: Unknown
+
+Artist: Robert Lee Morris|Calvin Klein, Inc.
+Nationality: American, born Germany|American
+Lifespan: 1947      |1968      –9999      |9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1981–1981
+
+Medium: metal
+Dimensions: Unknown
+
+Credit Line: Gift of Lansing Moran, 1987

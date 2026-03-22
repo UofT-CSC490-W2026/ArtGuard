@@ -1,3 +1,9536 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2505c9fc8aac3966b4db8778db2893d59bc2760b26c179e96a357290aed75972
-size 186533
+Artwork Title: Virgin and Child
+Object Type: Medal
+Classification: Medals and Plaquettes
+
+Artist: Louis-Oscar Roty
+Nationality: French
+Lifespan: 1846      –1911      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1800–1899
+
+Medium: Gold, struck
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. Theodore A. Kohn, 1910
+
+---
+
+Artwork Title: Memorial of Circle of Friends of the Medallion, 1909
+Object Type: Medallion-plaque
+Classification: Medals and Plaquettes
+
+Artist: Jules Edouard Roiné
+Nationality: French
+Lifespan: 1857      –1916      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1909–1909
+
+Medium: Bronze, cast
+Dimensions: Diameter: 12 1/2 in. (318 mm)
+
+Credit Line: Gift of Circle of Friends of the Medallion, 1910
+
+---
+
+Artwork Title: Watch
+Object Type: Watch
+Classification: Horology
+
+Artist: Robert Roskell|Thomas Hilsby
+Nationality: British| 
+Lifespan: 1800      |1764      –1830      |1824      
+
+Cultural Context: British, Liverpool
+Period: Unknown
+Date Range: 1800–1815
+
+Medium: Gold, enamel
+Dimensions: Unknown
+
+Credit Line: Gift of Miss Elizabeth M. Greenfield, 1910
+
+---
+
+Artwork Title: Pygmalion and Galatea
+Object Type: Statuette group
+Classification: Sculpture
+
+Artist: Auguste Rodin
+Nationality: French
+Lifespan: 1840      –1917      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1889–1914
+
+Medium: Marble
+Dimensions: Overall (wt. confirmed): 38 1/4 × 35 × 30 in., 1068 lb. (97.2 × 88.9 × 76.2 cm, 484.4 kg)
+
+Credit Line: Gift of Thomas F. Ryan, in memory of William M. Laffan, 1910
+
+---
+
+Artwork Title: Duke of Cumberland
+Object Type: Portrait medallion
+Classification: Glass
+
+Artist: James Tassie
+Nationality: British, Scottish
+Lifespan: 1735      –1799      
+
+Cultural Context: British, London
+Period: Unknown
+Date Range: 1785–1799
+
+Medium: Glass paste
+Dimensions: 4 1/2 × 3 3/4 in. (11.4 × 9.5 cm)
+
+Credit Line: Rogers Fund, 1909
+
+---
+
+Artwork Title: Dr. John Hunter
+Object Type: Portrait medallion
+Classification: Glass
+
+Artist: James Tassie
+Nationality: British, Scottish
+Lifespan: 1735      –1799      
+
+Cultural Context: British, London
+Period: Unknown
+Date Range: 1791–1791
+
+Medium: Glass paste
+Dimensions: 3 3/4 × 3 in. (9.5 × 7.6 cm)
+
+Credit Line: Rogers Fund, 1910
+
+---
+
+Artwork Title: Casts from antique gems (9)
+Object Type: Casts
+Classification: Glass
+
+Artist: James Tassie
+Nationality: British, Scottish
+Lifespan: 1735      –1799      
+
+Cultural Context: British, London
+Period: Unknown
+Date Range: 1785–1799
+
+Medium: Glass paste; wood frame
+Dimensions: Framed: 7 × 5 5/8 in. (17.8 × 14.3 cm)
+
+Credit Line: Rogers Fund, 1909
+
+---
+
+Artwork Title: Casts from antique gems (9)
+Object Type: Casts
+Classification: Glass
+
+Artist: James Tassie
+Nationality: British, Scottish
+Lifespan: 1735      –1799      
+
+Cultural Context: British, London
+Period: Unknown
+Date Range: 1785–1799
+
+Medium: Glass paste; wood frame
+Dimensions: Framed: 6 × 5 3/8 in. (15.2 × 13.7 cm)
+
+Credit Line: Rogers Fund, 1909
+
+---
+
+Artwork Title: Badge commemorating the 60th anniversary of Emperor Francis-Joseph
+Object Type: Badge
+Classification: Medals and Plaquettes
+
+Artist: Rudolph Ferdinand Marschall
+Nationality: Austrian
+Lifespan: 1873      –1967      
+
+Cultural Context: Austrian
+Period: Unknown
+Date Range: 1908–1908
+
+Medium: Gold
+Dimensions: 1 7/8 × 1 3/8 in. (4.8 × 3.5 cm)
+
+Credit Line: Gift of Mrs. Edward D. Adams, 1910
+
+---
+
+Artwork Title: Benjamin Franklin
+Object Type: Medal
+Classification: Medals and Plaquettes
+
+Artist: Augustin Dupré
+Nationality: French
+Lifespan: 1748      –1833      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1784–1784
+
+Medium: Silver, restrike
+Dimensions: Diameter: 48 mm
+
+Credit Line: Gift of Mrs. Edward D. Adams, 1910
+
+---
+
+Artwork Title: Francis Joseph I of Austria (1830–1916), in Commemoration of the 60th Anniversary of his Succession to the Throne
+Object Type: Plaque
+Classification: Medals and Plaquettes
+
+Artist: Rudolph Ferdinand Marschall
+Nationality: Austrian
+Lifespan: 1873      –1967      
+
+Cultural Context: Austrian
+Period: Unknown
+Date Range: 1908–1908
+
+Medium: Bronze, light brown patina
+Dimensions: 3 5/8 × 2 1/2 in. (9.2 × 6.4 cm)
+
+Credit Line: Gift of Mrs. Edward D. Adams, 1910
+
+---
+
+Artwork Title: In Honor of the Actor Joseph Lewinsky
+Object Type: Medal
+Classification: Medals and Plaquettes
+
+Artist: Rudolph Ferdinand Marschall
+Nationality: Austrian
+Lifespan: 1873      –1967      
+
+Cultural Context: Austrian
+Period: Unknown
+Date Range: 1800–1999
+
+Medium: Bronze
+Dimensions: Diameter: 2 1/4 in. (5.7 cm)
+
+Credit Line: Gift of Mrs. Edward D. Adams, 1910
+
+---
+
+Artwork Title: In Honor of J. Petschek, by His Employees
+Object Type: Plaquette
+Classification: Medals and Plaquettes
+
+Artist: Rudolph Ferdinand Marschall
+Nationality: Austrian
+Lifespan: 1873      –1967      
+
+Cultural Context: Austrian
+Period: Unknown
+Date Range: 1900–1999
+
+Medium: Bronze
+Dimensions: 2 1/8 × 2 1/8 in. (5.4 × 5.4 cm)
+
+Credit Line: Gift of Mrs. Edward D. Adams, 1910
+
+---
+
+Artwork Title: Portrait of Hans Count Wilczek
+Object Type: Plaque
+Classification: Medals and Plaquettes
+
+Artist: Rudolph Ferdinand Marschall
+Nationality: Austrian
+Lifespan: 1873      –1967      
+
+Cultural Context: Austrian
+Period: Unknown
+Date Range: 1900–1999
+
+Medium: Bronze
+Dimensions: 3 1/8 × 1 3/4 in. (7.9 × 4.4 cm)
+
+Credit Line: Gift of Mrs. Edward D. Adams, 1910
+
+---
+
+Artwork Title: Commemorating the 25th Annual Gathering of Singing Societies in Vienna
+Object Type: Plaquette
+Classification: Medals and Plaquettes
+
+Artist: Rudolph Ferdinand Marschall
+Nationality: Austrian
+Lifespan: 1873      –1967      
+
+Cultural Context: Austrian
+Period: Unknown
+Date Range: 1900–1999
+
+Medium: Bronze
+Dimensions: 2 3/4 × 1 1/4 in. (7 × 3.2 cm)
+
+Credit Line: Gift of Mrs. Edward D. Adams, 1910
+
+---
+
+Artwork Title: In Honor of Field-Marshal von Beck
+Object Type: Medal
+Classification: Medals and Plaquettes
+
+Artist: Rudolph Ferdinand Marschall
+Nationality: Austrian
+Lifespan: 1873      –1967      
+
+Cultural Context: Austrian
+Period: Unknown
+Date Range: 1900–1999
+
+Medium: Bronze
+Dimensions: Diameter: 2 3/8 in. (6 cm)
+
+Credit Line: Gift of Mrs. Edward D. Adams, 1910
+
+---
+
+Artwork Title: Commemorating the Hudson-Fulton Celebration, 1909
+Object Type: Token
+Classification: Medals and Plaquettes
+
+Artist: Jules Edouard Roiné
+Nationality: French
+Lifespan: 1857      –1916      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1909–1909
+
+Medium: Gold
+Dimensions: Diameter: 5/8 in. (16 mm)
+
+Credit Line: Gift of Thomas L. Elder, 1910
+
+---
+
+Artwork Title: Commemorating the Hudson-Fulton Celbration, 1909
+Object Type: Token
+Classification: Medals and Plaquettes
+
+Artist: Jules Edouard Roiné
+Nationality: French
+Lifespan: 1857      –1916      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1909–1909
+
+Medium: Gilt bronze (?)
+Dimensions: Diameter: 5/8 in. (16 mm)
+
+Credit Line: Gift of Thomas L. Elder, 1910
+
+---
+
+Artwork Title: Commemorating the Hudson-Fulton Celebration, 1909
+Object Type: Medal
+Classification: Medals and Plaquettes
+
+Artist: Jules Edouard Roiné
+Nationality: French
+Lifespan: 1857      –1916      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1909–1909
+
+Medium: Silver
+Dimensions: Diameter: 1 1/2 in. (38 mm)
+
+Credit Line: Gift of Thomas L. Elder, 1910
+
+---
+
+Artwork Title: Commemorating the Hudson-Fulton Celebration, 1909
+Object Type: Medal
+Classification: Medals and Plaquettes
+
+Artist: Jules Edouard Roiné
+Nationality: French
+Lifespan: 1857      –1916      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1909–1909
+
+Medium: Silver
+Dimensions: Diameter: 1 1/2 in. (38 mm)
+
+Credit Line: Gift of Thomas L. Elder, 1910
+
+---
+
+Artwork Title: Commemorating the Hudson-Fulton Celebration, 1909
+Object Type: Token
+Classification: Medals and Plaquettes
+
+Artist: Jules Edouard Roiné
+Nationality: French
+Lifespan: 1857      –1916      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1909–1909
+
+Medium: Silver (?)
+Dimensions: Diameter: 5/8 in. (16 mm)
+
+Credit Line: Gift of Thomas L. Elder, 1910
+
+---
+
+Artwork Title: Commemorating the Hudson-Fulton Celebration, 1909
+Object Type: Token
+Classification: Medals and Plaquettes
+
+Artist: Jules Edouard Roiné
+Nationality: French
+Lifespan: 1857      –1916      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1909–1909
+
+Medium: Silver
+Dimensions: Diameter: 5/8 in. (16 mm)
+
+Credit Line: Gift of Thomas L. Elder, 1910
+
+---
+
+Artwork Title: Commemorating the Hudson-Fulton Celebration, 1909
+Object Type: Token
+Classification: Medals and Plaquettes
+
+Artist: Jules Edouard Roiné
+Nationality: French
+Lifespan: 1857      –1916      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1909–1909
+
+Medium: Gold
+Dimensions: Diameter: 5/8 in. (16 mm)
+
+Credit Line: Gift of Thomas L. Elder, 1910
+
+---
+
+Artwork Title: Commemorating the Hudson-Fulton Celebration, 1909
+Object Type: Token
+Classification: Medals and Plaquettes
+
+Artist: Jules Edouard Roiné
+Nationality: French
+Lifespan: 1857      –1916      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1909–1909
+
+Medium: Bronze
+Dimensions: Diameter: 5/8 in. (16 mm)
+
+Credit Line: Gift of Thomas L. Elder, 1910
+
+---
+
+Artwork Title: Plate
+Object Type: Plate
+Classification: Ceramics-Pottery
+
+Artist: Enoch Wood & Sons
+Nationality: British
+Lifespan: 1818      –1846      
+
+Cultural Context: British, Burslem, Staffordshire
+Period: Unknown
+Date Range: 1800–1899
+
+Medium: Staffordshire printed ware
+Dimensions: Diameter: 10 in. (25.4 cm)
+
+Credit Line: Gift of Mrs. Abraham Lansing, 1910
+
+---
+
+Artwork Title: Plate
+Object Type: Plate
+Classification: Ceramics-Pottery
+
+Artist: J. & G. Meakin
+Nationality:  
+Lifespan: 1851      –9999      
+
+Cultural Context: British, Staffordshire
+Period: Unknown
+Date Range: 1800–1899
+
+Medium: Staffordshire printed ware
+Dimensions: Diameter: 10 1/2 in. (26.7 cm)
+
+Credit Line: Gift of Mrs. Abraham Lansing, 1910
+
+---
+
+Artwork Title: Cupid and Psyche
+Object Type: Group
+Classification: Sculpture
+
+Artist: Auguste Rodin
+Nationality: French
+Lifespan: 1840      –1917      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1793–1893
+
+Medium: Marble
+Dimensions: Overall (wt. confirmed): 30 × 24 × 48 in., 496 lb. (76.2 × 61 × 121.9 cm, 225 kg)
+
+Credit Line: Gift of Thomas F. Ryan, 1910
+
+---
+
+Artwork Title: Orpheus and Eurydice
+Object Type: Group
+Classification: Sculpture
+
+Artist: Auguste Rodin
+Nationality: French
+Lifespan: 1840      –1917      
+
+Cultural Context: French, Paris
+Period: Unknown
+Date Range: 1882–1893
+
+Medium: Marble
+Dimensions: Overall (confirmed): 48 3/4 × 31 1/8 × 25 3/8 in., 856 lb. (123.8 × 79.1 × 64.5 cm, 388.3 kg)
+
+Credit Line: Gift of Thomas F. Ryan, 1910
+
+---
+
+Artwork Title: In honor of Prince Emmanuel Bibesco
+Object Type: Medallion
+Classification: Medals and Plaquettes
+
+Artist: Jules-Clément Chaplain
+Nationality: French
+Lifespan: 1839      –1909      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1800–1899
+
+Medium: Bronze
+Dimensions: 4 × 3 in. (10.2 × 7.6 cm)
+
+Credit Line: Anonymous Gift, 1919
+
+---
+
+Artwork Title: Tea urn
+Object Type: Tea urn
+Classification: Metalwork-Base Metal
+
+Artist: James Dixon & Sons
+Nationality: British
+Lifespan: 1806      –9999      
+
+Cultural Context: British, Sheffield
+Period: Unknown
+Date Range: 1830–1834
+
+Medium: Britannia metal
+Dimensions: 16 1/4 × 7 3/4 in. (41.3 × 19.7 cm)
+
+Credit Line: Rogers Fund, 1910
+
+---
+
+Artwork Title: Mounted Amazon
+Object Type: Statuette
+Classification: Sculpture-Bronze
+
+Artist: Louis Tuaillon
+Nationality: German
+Lifespan: 1862      –1919      
+
+Cultural Context: German
+Period: Unknown
+Date Range: 1885–1915
+
+Medium: Bronze
+Dimensions: Height (with base): 33 5/8 in. (85.4 cm)
+
+Credit Line: Gift of Ed. Arnhold, 1910
+
+---
+
+Artwork Title: Tankard
+Object Type: Tankard
+Classification: Metalwork-Pewter
+
+Artist: Christian Friedrich
+Nationality:  
+Lifespan: 1691      –1769      
+
+Cultural Context: German, Freystadt
+Period: Unknown
+Date Range: 1730–1765
+
+Medium: Pewter
+Dimensions: Height: 9 in. (22.9 cm)
+
+Credit Line: Gift of John Stemme, 1910
+
+---
+
+Artwork Title: Commemorating the 300th anniversary of the Founding of Quebec
+Object Type: Medal
+Classification: Medals and Plaquettes
+
+Artist: Henri Dubois
+Nationality: French
+Lifespan: 1863      –1930      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1900–1999
+
+Medium: Bronze
+Dimensions: Diameter: 3 in. (7.6 cm)
+
+Credit Line: Gift of National Battlefields Commission, Quebec, 1910
+
+---
+
+Artwork Title: Vase with cover
+Object Type: Vase with cover
+Classification: Ceramics-Pottery
+
+Artist: Wedgwood and Bentley
+Nationality: British
+Lifespan: 1769      –1780      
+
+Cultural Context: British, Etruria, Staffordshire
+Period: Unknown
+Date Range: 1769–1780
+
+Medium: Black basalt ware
+Dimensions: Height: 16 3/4 in. (42.5 cm)
+
+Credit Line: Gift of Ferdinand Hermann, 1910
+
+---
+
+Artwork Title: Bowl (part of a set)
+Object Type: Bowl
+Classification: Ceramics-Pottery
+
+Artist: Wedgwood and Co.
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: British, Etruria, Staffordshire
+Period: Unknown
+Date Range: 1785–1799
+
+Medium: Basalt ware
+Dimensions: 5 1/2 × 7 3/4 in. (14 × 19.7 cm)
+
+Credit Line: Gift of Ferdinand Hermann, 1910
+
+---
+
+Artwork Title: Teapot with cover (part of a set)
+Object Type: Teapot with cover
+Classification: Ceramics-Pottery
+
+Artist: Wedgwood and Co.
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: British, Etruria, Staffordshire
+Period: Unknown
+Date Range: 1785–1799
+
+Medium: Basalt ware
+Dimensions: 5 5/8 × 10 in. (14.3 × 25.4 cm)
+
+Credit Line: Gift of Ferdinand Hermann, 1910
+
+---
+
+Artwork Title: Creamer (part of a set)
+Object Type: Creamer
+Classification: Ceramics-Pottery
+
+Artist: Wedgwood and Co.
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: British, Etruria, Staffordshire
+Period: Unknown
+Date Range: 1785–1799
+
+Medium: Basalt ware
+Dimensions: 5 × 4 in. (12.7 × 10.2 cm)
+
+Credit Line: Gift of Ferdinand Hermann, 1910
+
+---
+
+Artwork Title: Cup and saucer (part of a set)
+Object Type: Cup and saucer
+Classification: Ceramics-Pottery
+
+Artist: Wedgwood and Co.
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: British, Etruria, Staffordshire
+Period: Unknown
+Date Range: 1785–1799
+
+Medium: Basalt ware
+Dimensions: each cup: 2 1/2 × 2 1/2 in. (6.4 × 6.4 cm);
+each saucer: 7/8 × 4 1/2 in. (2.2 × 11.4 cm)
+
+Credit Line: Gift of Ferdinand Hermann, 1910
+
+---
+
+Artwork Title: Cruet and soy frame
+Object Type: Cruet and soy frame
+Classification: Metalwork-Silverplate
+
+Artist: Thomas Watson and Co.
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: British, Sheffield
+Period: Unknown
+Date Range: 1790–1800
+
+Medium: Sheffield plate, glass
+Dimensions: Height: 12 3/4 in. (32.4 cm)
+
+Credit Line: Rogers Fund, 1910
+
+---
+
+Artwork Title: Latch key
+Object Type: Key
+Classification: Metalwork-Brass
+
+Artist: Dubois
+Nationality:  
+Lifespan: 1800      –1900      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1800–1899
+
+Medium: Brass
+Dimensions: Length: 2 5/8 in. (6.7 cm)
+
+Credit Line: Rogers Fund, 1910
+
+---
+
+Artwork Title: Vase with cover
+Object Type: Vase with cover
+Classification: Ceramics-Pottery
+
+Artist: Josiah Wedgwood and Sons|John Flaxman
+Nationality: British|British
+Lifespan: 1759      |1755      –9999      |1826      
+
+Cultural Context: British, Etruria, Staffordshire
+Period: Unknown
+Date Range: 1777–1795
+
+Medium: Jasperware
+Dimensions: Height (wt. confirmed): 17 7/8 in., 14 lb. (45.4 cm, 6.4 kg)
+
+Credit Line: Rogers Fund, 1910
+
+---
+
+Artwork Title: Vase and pedestal
+Object Type: Vase and pedestal
+Classification: Ceramics-Pottery
+
+Artist: Josiah Wedgwood and Sons
+Nationality: British
+Lifespan: 1759      –9999      
+
+Cultural Context: British, Etruria, Staffordshire
+Period: Unknown
+Date Range: 1785–1790
+
+Medium: Jasperware
+Dimensions: Height: 14 in. (35.6 cm)
+
+Credit Line: Rogers Fund, 1910
+
+---
+
+Artwork Title: Pair of candelabra
+Object Type: Candelabra
+Classification: Sculpture-Bronze
+
+Artist: Antoine-Louis Barye
+Nationality: French
+Lifespan: 1795      –1875      
+
+Cultural Context: French, Paris
+Period: Unknown
+Date Range: 1835–1845
+
+Medium: Bronze
+Dimensions: Height: 37 in. (94 cm)
+
+Credit Line: Rogers Fund, 1910
+
+---
+
+Artwork Title: Tiger Devouring a Gavial (Tigre dévorant un gavial)
+Object Type: Statuette
+Classification: Sculpture-Bronze
+
+Artist: Antoine-Louis Barye
+Nationality: French
+Lifespan: 1795      –1875      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1831–1899
+
+Medium: Bronze
+Dimensions: Overall: 7 5/8 × 20 × 7 1/4 in. (19.4 × 50.8 × 18.4 cm)
+
+Credit Line: Rogers Fund, 1910
+
+---
+
+Artwork Title: Lion and Serpent (Lion au Serpent)
+Object Type: Statuette
+Classification: Sculpture-Bronze
+
+Artist: Antoine-Louis Barye
+Nationality: French
+Lifespan: 1795      –1875      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1832–1848
+
+Medium: Bronze, wood base
+Dimensions: Overall: 9 × 13 1/2 × 6 3/4 in. (22.9 × 34.3 × 17.1 cm)
+
+Credit Line: Rogers Fund, 1910
+
+---
+
+Artwork Title: Python Crushing a Crocodile
+Object Type: Statuette
+Classification: Sculpture-Bronze
+
+Artist: Antoine-Louis Barye
+Nationality: French
+Lifespan: 1795      –1875      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1840–1899
+
+Medium: Bronze
+Dimensions: wt. confirmed: 6 1/4 × 15 1/4 × 6 in., 7.2 lb. (15.9 × 38.7 × 15.2 cm, 3.3 kg)
+
+Credit Line: Rogers Fund, 1910
+
+---
+
+Artwork Title: Turkish Horse, Left Foot Raised
+Object Type: Statuette
+Classification: Sculpture-Bronze
+
+Artist: Antoine-Louis Barye
+Nationality: French
+Lifespan: 1795      –1875      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1830–1850
+
+Medium: Bronze
+Dimensions: H. 11-7/8 in. (30.2 cm.); L. 11-3/8 in. (28.9 cm.)
+
+Credit Line: Rogers Fund, 1910
+
+---
+
+Artwork Title: Basset Hound
+Object Type: Statuette
+Classification: Sculpture-Bronze
+
+Artist: Antoine-Louis Barye
+Nationality: French
+Lifespan: 1795      –1875      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1800–1899
+
+Medium: Bronze
+Dimensions: Overall: 6 1/2 × 12 × 4 in. (16.5 × 30.5 × 10.2 cm)
+
+Credit Line: Rogers Fund, 1910
+
+---
+
+Artwork Title: Spy or opera glass
+Object Type: Spy or opera glass
+Classification: Ceramics-Pottery
+
+Artist: Josiah Wedgwood|John Flaxman
+Nationality: British|British
+Lifespan: 1730      |1755      –1795      |1826      
+
+Cultural Context: British, Etruria, Staffordshire
+Period: Unknown
+Date Range: 1785–1799
+
+Medium: Jasperware, gold
+Dimensions: Height: 2 1/4 in. (5.7 cm)
+
+Credit Line: Gift of Frederick Rathbone, 1910
+
+---
+
+Artwork Title: Lady with a mirror
+Object Type: Miniature sculpture
+Classification: Sculpture-Miniature
+
+Artist: Bernhard Caspar Hardy
+Nationality: German
+Lifespan: 1726      –1819      
+
+Cultural Context: German, Cologne
+Period: Unknown
+Date Range: 1785–1815
+
+Medium: Wax, colored
+Dimensions: Framed: 10 3/4 × 9 3/8 in. (27.3 × 23.8 cm)
+
+Credit Line: Gift of Captain and Mrs. W.G. Fitch, in memory of Clyde Fitch, 1910
+
+---
+
+Artwork Title: Pair of candlesticks
+Object Type: Candlesticks
+Classification: Metalwork-Silver
+
+Artist: John Carter II
+Nationality:  
+Lifespan: 1768      –1777      
+
+Cultural Context: British, London
+Period: Unknown
+Date Range: 1771–1772
+
+Medium: Silver
+Dimensions: Height (each): 12 in. (30.5 cm)
+
+Credit Line: Gift of Mrs. Russell Sage, 1909
+
+---
+
+Artwork Title: Pair of candlesticks
+Object Type: Candlesticks
+Classification: Metalwork-Silverplate
+
+Artist: John Parsons & Co.
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: British
+Period: Unknown
+Date Range: 1780–1795
+
+Medium: Sheffield plate
+Dimensions: Height (each): 11 1/2 in. (29.2 cm)
+
+Credit Line: Gift of Mrs. Russell Sage, 1909
+
+---
+
+Artwork Title: Pair of candlesticks
+Object Type: Candlesticks
+Classification: Metalwork-Silverplate
+
+Artist: John Winter and Co.
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: British, Sheffield
+Period: Unknown
+Date Range: 1772–1782
+
+Medium: Sheffield plate
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. Russell Sage, 1909
+
+---
+
+Artwork Title: Pair of candlesticks
+Object Type: Candlesticks
+Classification: Metalwork-Silverplate
+
+Artist: John Winter and Co.
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: British, Sheffield
+Period: Unknown
+Date Range: 1772–1782
+
+Medium: Sheffield plate
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. Russell Sage, 1909
+
+---
+
+Artwork Title: Charger
+Object Type: Charger
+Classification: Metalwork-Pewter
+
+Artist: Thomas Batteson
+Nationality:  
+Lifespan: 1667      –1690      
+
+Cultural Context: British, London
+Period: Unknown
+Date Range: 1600–1699
+
+Medium: Pewter
+Dimensions: Overall: 1 3/4 × 20 1/2 in. (4.4 × 52.1 cm);
+Width (margin): 3 1/2 in. (8.9 cm)
+
+Credit Line: Gift of Mrs. Russell Sage, 1909
+
+---
+
+Artwork Title: Plate
+Object Type: Plate
+Classification: Metalwork-Pewter
+
+Artist: George Grenfell (or Greenfell)
+Nationality: British
+Lifespan: 1684      –1784      
+
+Cultural Context: British, London
+Period: Unknown
+Date Range: 1757–1784
+
+Medium: Pewter
+Dimensions: Diameter: 9 in. (22.9 cm)
+
+Credit Line: Gift of Mrs. Russell Sage, 1909
+
+---
+
+Artwork Title: Plate (part of a set)
+Object Type: Plate
+Classification: Metalwork-Pewter
+
+Artist: Robert L. Bush|Bush & Co.
+Nationality:  | 
+Lifespan: 1725      |          –1825      |          
+
+Cultural Context: British, Bristol
+Period: Unknown
+Date Range: 1781–1793
+
+Medium: Pewter
+Dimensions: Diameter: 8 1/2 in. (21.6 cm)
+
+Credit Line: Gift of Mrs. Russell Sage, 1909
+
+---
+
+Artwork Title: Measure
+Object Type: Measure
+Classification: Metalwork-Pewter
+
+Artist: Thomas Abbott
+Nationality: British
+Lifespan: 1769      –1852      
+
+Cultural Context: British, London
+Period: Unknown
+Date Range: 1785–1815
+
+Medium: Pewter
+Dimensions: Height: 4 1/2 in. (11.4 cm)
+
+Credit Line: Gift of Mrs. Russell Sage, 1909
+
+---
+
+Artwork Title: Platter
+Object Type: Platter
+Classification: Metalwork-Pewter
+
+Artist: Thomas Fasson|Samuel Ellis
+Nationality: British|British
+Lifespan: 1744      |1673      –1844      |1773      
+
+Cultural Context: British, London
+Period: Unknown
+Date Range: 1700–1799
+
+Medium: Pewter
+Dimensions: Diameter: 15 in. (38.1 cm)
+
+Credit Line: Gift of Mrs. Russell Sage, 1909
+
+---
+
+Artwork Title: Set of four plates (part of a set)
+Object Type: Plates
+Classification: Metalwork-Pewter
+
+Artist: Robert L. Bush|Bush & Co.
+Nationality:  | 
+Lifespan: 1725      |          –1825      |          
+
+Cultural Context: British, Bristol
+Period: Unknown
+Date Range: 1781–1793
+
+Medium: Pewter
+Dimensions: Diameter (each): 8 1/2 in. (21.6 cm)
+
+Credit Line: Gift of Mrs. Russell Sage, 1909
+
+---
+
+Artwork Title: Dish with cover
+Object Type: Dish with cover
+Classification: Metalwork-Pewter
+
+Artist: Johan Gustaf Ryman
+Nationality: Swedish
+Lifespan: 1761      –1797      
+
+Cultural Context: Swedish, Stockholm
+Period: Unknown
+Date Range: 1775–1775
+
+Medium: Pewter
+Dimensions: Overall (with cover and handles): 7 1/8 × 9 3/8 × 7 7/8 in. (18.1 × 23.8 × 20 cm);
+Height (without cover): 3 1/8 in. (7.9 cm)
+
+Credit Line: Gift of Mrs. Russell Sage, 1909
+
+---
+
+Artwork Title: Bowl (part of a set)
+Object Type: Bowl
+Classification: Ceramics-Pottery
+
+Artist: William Adams
+Nationality: British
+Lifespan: 1798      –1865      
+
+Cultural Context: British, Staffordshire
+Period: Unknown
+Date Range: 1800–1899
+
+Medium: Lead-glazed earthenware
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. Russell Sage, 1909
+
+---
+
+Artwork Title: Jug (part of a set)
+Object Type: Jug
+Classification: Ceramics-Pottery
+
+Artist: William Adams
+Nationality: British
+Lifespan: 1798      –1865      
+
+Cultural Context: British, Staffordshire
+Period: Unknown
+Date Range: 1700–1899
+
+Medium: Lead-glazed earthenware
+Dimensions: Unknown
+
+Credit Line: Gift of Mrs. Russell Sage, 1909
+
+---
+
+Artwork Title: Footed teapot
+Object Type: Teapot with cover
+Classification: Ceramics-Pottery
+
+Artist: Whieldon type
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: probably British, Staffordshire
+Period: Unknown
+Date Range: 1745–1765
+
+Medium: Agateware (glazed earthenware)
+Dimensions: Overall: 4 7/8 × 7 1/8 in. (12.4 × 18.1 cm)
+
+Credit Line: Rogers Fund, 1910
+
+---
+
+Artwork Title: Hexagonal teapot
+Object Type: Teapot with cover
+Classification: Ceramics-Pottery
+
+Artist: William Greatbatch|Thomas Whieldon
+Nationality: British|British
+Lifespan: 1735      |1719      –1813      |1795      
+
+Cultural Context: probably British, Staffordshire
+Period: Unknown
+Date Range: 1755–1765
+
+Medium: Lead-glazed earthenware
+Dimensions: Overall: 5 × 7 3/8 in. (12.7 × 18.7 cm)
+
+Credit Line: Rogers Fund, 1910
+
+---
+
+Artwork Title: Plate
+Object Type: Plate
+Classification: Ceramics-Pottery
+
+Artist: Whieldon type
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: British, Staffordshire
+Period: Unknown
+Date Range: 1745–1775
+
+Medium: Earthenware, glazed
+Dimensions: Diameter: 9 1/4 in. (23.5 cm)
+
+Credit Line: Rogers Fund, 1910
+
+---
+
+Artwork Title: Virgins Awaking Cupid
+Object Type: Group
+Classification: Ceramics-Porcelain
+
+Artist: William Wynne Ryland|Angelica Kauffmann|Derby Porcelain Manufactory
+Nationality: British|Swiss|British
+Lifespan: 1732      |1741      |1751      –1783      |1807      |1785      
+
+Cultural Context: British, Derby
+Period: Unknown
+Date Range: 1775–1785
+
+Medium: Soft-paste biscuit porcelain
+Dimensions: Height: 12 3/8 in. (31.4 cm)
+
+Credit Line: Rogers Fund, 1910
+
+---
+
+Artwork Title: Tea cup
+Object Type: Teacup
+Classification: Ceramics-Porcelain
+
+Artist: Worcester factory
+Nationality: British
+Lifespan: 1751      –2008      
+
+Cultural Context: British, Worcester
+Period: Unknown
+Date Range: 1765–1785
+
+Medium: Soft-paste porcelain
+Dimensions: Height: 1 15/16 in. (4.9 cm)
+
+Credit Line: Rogers Fund, 1910
+
+---
+
+Artwork Title: Coffee cup
+Object Type: Coffee cup
+Classification: Ceramics-Porcelain
+
+Artist: Worcester factory
+Nationality: British
+Lifespan: 1751      –2008      
+
+Cultural Context: British, Worcester
+Period: Unknown
+Date Range: 1765–1785
+
+Medium: Soft-paste porcelain
+Dimensions: Height: 2 1/2 in. (6.4 cm)
+
+Credit Line: Rogers Fund, 1910
+
+---
+
+Artwork Title: Saucer
+Object Type: Saucer
+Classification: Ceramics-Porcelain
+
+Artist: Worcester factory
+Nationality: British
+Lifespan: 1751      –2008      
+
+Cultural Context: British, Worcester
+Period: Unknown
+Date Range: 1765–1785
+
+Medium: Soft-paste porcelain
+Dimensions: Diameter: 5 1/8 in. (13 cm)
+
+Credit Line: Rogers Fund, 1910
+
+---
+
+Artwork Title: Teapot
+Object Type: Teapot
+Classification: Ceramics-Porcelain
+
+Artist: Meissen Manufactory
+Nationality: German
+Lifespan: 1710      –9999      
+
+Cultural Context: German, Meissen
+Period: Unknown
+Date Range: 1730–1740
+
+Medium: Hard-paste porcelain
+Dimensions: 4 × 7 1/4 in. (10.2 × 18.4 cm)
+
+Credit Line: Rogers Fund, 1910
+
+---
+
+Artwork Title: Cup and saucer
+Object Type: Cup and saucer
+Classification: Ceramics-Porcelain
+
+Artist: Meissen Manufactory
+Nationality: German
+Lifespan: 1710      –9999      
+
+Cultural Context: German, Meissen
+Period: Unknown
+Date Range: 1735–1745
+
+Medium: Hard-paste porcelain
+Dimensions: Height (Cup (.10a)): 3 1/8 in. (7.9 cm);
+Diameter (Saucer (.10b)): 5 1/8 in. (13 cm)
+
+Credit Line: Rogers Fund, 1910
+
+---
+
+Artwork Title: Roger and Angelica Mounted on a Hippogriff
+Object Type: Statuette group
+Classification: Sculpture-Bronze
+
+Artist: Antoine-Louis Barye
+Nationality: French
+Lifespan: 1795      –1875      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1835–1850
+
+Medium: Bronze
+Dimensions: 20 x 27 in. (50.8 x 68.6 cm.)
+
+Credit Line: Rogers Fund, 1910
+
+---
+
+Artwork Title: Walking Lion (Le Lion qui Marche)
+Object Type: Statuette
+Classification: Sculpture-Bronze
+
+Artist: Antoine-Louis Barye
+Nationality: French
+Lifespan: 1795      –1875      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1800–1899
+
+Medium: Bronze, wood base
+Dimensions: Overall: 10 3/8 × 16 × 5 3/4 in. (26.4 × 40.6 × 14.6 cm)
+
+Credit Line: Rogers Fund, 1910
+
+---
+
+Artwork Title: Walking Tiger (Un tigre qui marche)
+Object Type: Statuette
+Classification: Sculpture-Bronze
+
+Artist: Antoine-Louis Barye
+Nationality: French
+Lifespan: 1795      –1875      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1836–1899
+
+Medium: Bronze, wood base
+Dimensions: Overall: 8 1/4 × 16 1/2 in. (21 × 41.9 cm)
+
+Credit Line: Rogers Fund, 1910
+
+---
+
+Artwork Title: Theseus and the Centaur Bianor
+Object Type: Statuette group
+Classification: Sculpture-Bronze
+
+Artist: Antoine-Louis Barye
+Nationality: French
+Lifespan: 1795      –1875      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1846–1848
+
+Medium: Bronze
+Dimensions: Height: 13 1/4 in. (33.7 cm)
+
+Credit Line: Rogers Fund, 1910
+
+---
+
+Artwork Title: Hercules and Dejanira
+Object Type: Plaquette
+Classification: Metalwork-Silver In Combination
+
+Artist: Francesco Francia|Peregrino da Casena
+Nationality: Italian| 
+Lifespan: 1447      |1450      –1517      |1550      
+
+Cultural Context: Italian, Bologna
+Period: Unknown
+Date Range: 1485–1499
+
+Medium: Silver, niello
+Dimensions: Overall: 2 5/8 × 1 1/4 in. (6.7 × 3.2 cm)
+
+Credit Line: Rogers Fund, 1910
+
+---
+
+Artwork Title: Plate
+Object Type: Plate
+Classification: Metalwork-Pewter
+
+Artist: Nicolaus Horchaimer
+Nationality:  
+Lifespan: 1483      –1583      
+
+Cultural Context: German, Nuremberg
+Period: Unknown
+Date Range: 1550–1599
+
+Medium: Pewter
+Dimensions: Diameter: 8 in. (20.3 cm)
+
+Credit Line: Rogers Fund, 1910
+
+---
+
+Artwork Title: Plate
+Object Type: Plate
+Classification: Metalwork-Pewter
+
+Artist: Joachim Schirmer I|Zacharias Täschler
+Nationality:  | 
+Lifespan: 1613      |1657      –1697      |1717      
+
+Cultural Context: Swiss, St. Gall
+Period: Unknown
+Date Range: 1600–1699
+
+Medium: Pewter
+Dimensions: Diam. 8 1/2 in. (21.6 cm)
+
+Credit Line: Rogers Fund, 1910
+
+---
+
+Artwork Title: Plate (Kaiserteller)
+Object Type: Plate
+Classification: Metalwork-Pewter
+
+Artist: Paulus Öham the younger
+Nationality:  
+Lifespan: 1571      –1671      
+
+Cultural Context: German, Nuremberg
+Period: Unknown
+Date Range: 1632–1662
+
+Medium: Pewter
+Dimensions: Diameter: 7 5/8 in. (19.4 cm)
+
+Credit Line: Rogers Fund, 1910
+
+---
+
+Artwork Title: Carolus Linneaus
+Object Type: Cameo medallion
+Classification: Ceramics-Pottery
+
+Artist: Josiah Wedgwood|John Flaxman
+Nationality: British|British
+Lifespan: 1730      |1755      –1795      |1826      
+
+Cultural Context: British, Etruria, Staffordshire
+Period: Unknown
+Date Range: 1774–1784
+
+Medium: Jasperware
+Dimensions: 2 1/2 × 1 7/8 in. (6.4 × 4.8 cm)
+
+Credit Line: Gift of Frederick Rathbone, 1910
+
+---
+
+Artwork Title: Young Girl and Gazelle
+Object Type: Group
+Classification: Sculpture-Bronze
+
+Artist: Henri L. Bouchard|Bisceglia Frères, Paris
+Nationality: French| 
+Lifespan: 1875      |          –1960      |          
+
+Cultural Context: French, Paris
+Period: Unknown
+Date Range: 1910–1910
+
+Medium: Bronze
+Dimensions: 31 1/2 x 25 3/8 in. (80 x 64.5cm)
+
+Credit Line: Rogers Fund, 1910
+
+---
+
+Artwork Title: Little Roman Dancer
+Object Type: Statuette
+Classification: Sculpture-Bronze
+
+Artist: Henri L. Bouchard|Alexis Rudier
+Nationality: French|French
+Lifespan: 1875      |          –1960      |          
+
+Cultural Context: French, modeled Italy, Rome
+Period: Unknown
+Date Range: 1902–1911
+
+Medium: Bronze
+Dimensions: Height: 19 1/4 in. (48.9 cm)
+
+Credit Line: Rogers Fund, 1910
+
+---
+
+Artwork Title: Watch
+Object Type: Watch
+Classification: Horology
+
+Artist: Ralph Gout
+Nationality:  
+Lifespan: 1770      –1796      
+
+Cultural Context: British, London
+Period: Unknown
+Date Range: 1800–1899
+
+Medium: Silver
+Dimensions: Diameter: 2 3/4 in. (7 cm)
+
+Credit Line: Rogers Fund, 1910
+
+---
+
+Artwork Title: The Agony in the Garden
+Object Type: Relief
+Classification: Sculpture
+
+Artist: Massimiliano Soldani
+Nationality: Italian
+Lifespan: 1656      –1740      
+
+Cultural Context: Italian, Florence
+Period: Unknown
+Date Range: 1700–1715
+
+Medium: Terracotta
+Dimensions: 23 3/4 × 16 in. (60.3 × 40.6 cm)
+
+Credit Line: Rogers Fund, 1910
+
+---
+
+Artwork Title: Virgin and child
+Object Type: Statuette
+Classification: Sculpture-Bronze
+
+Artist: Niccolò Roccatagliata
+Nationality: Italian
+Lifespan: 1593      –1636      
+
+Cultural Context: Italian, Venice
+Period: Unknown
+Date Range: 1600–1615
+
+Medium: Bronze
+Dimensions: Overall (confirmed): 22 1/4 × 9 1/2 × 9 3/4 in. (56.5 × 24.1 × 24.8 cm)
+
+Credit Line: Rogers Fund, 1910
+
+---
+
+Artwork Title: Rutherfurd Stuyvesant
+Object Type: Bust
+Classification: Sculpture-Bronze
+
+Artist: Denys Puech
+Nationality: French
+Lifespan: 1854      –1942      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1909–1909
+
+Medium: Bronze
+Dimensions: Height: 29 in. (73.7 cm)
+
+Credit Line: Gift of Mrs. Rutherfurd Stuyvesant, 1910
+
+---
+
+Artwork Title: Pair of dishes
+Object Type: Dishes
+Classification: Metalwork-Silverplate
+
+Artist: T. and J. Creswick
+Nationality:  
+Lifespan: 1811      –1857      
+
+Cultural Context: British, Sheffield
+Period: Unknown
+Date Range: 1805–1835
+
+Medium: Sheffield plate
+Dimensions: 5 × 5 1/2 in. (12.7 × 14 cm)
+
+Credit Line: Rogers Fund, 1910
+
+---
+
+Artwork Title: Standing cup with cover
+Object Type: Standing cup with cover
+Classification: Natural Substances-Ivory
+
+Artist: Lorenz Zick|Stephen Zick
+Nationality:  | 
+Lifespan: 1594      |1615      –1666      |1715      
+
+Cultural Context: German, Nuremberg
+Period: Unknown
+Date Range: 1600–1699
+
+Medium: Ivory
+Dimensions: 13 5/8 × 4 1/8 in. (34.6 × 10.5 cm)
+
+Credit Line: Gift of Robert Gordon, 1910
+
+---
+
+Artwork Title: Standing cup
+Object Type: Standing cup
+Classification: Natural Substances-Ivory
+
+Artist: Lorenz Zick|Stephen Zick
+Nationality:  | 
+Lifespan: 1594      |1615      –1666      |1715      
+
+Cultural Context: German, Nuremberg
+Period: Unknown
+Date Range: 1600–1699
+
+Medium: Ivory
+Dimensions: Overall: 14 × 5 × 4 1/4 in. (35.6 × 12.7 × 10.8 cm)
+
+Credit Line: Gift of Robert Gordon, 1910
+
+---
+
+Artwork Title: Plate
+Object Type: Plate
+Classification: Ceramics-Pottery
+
+Artist: Whieldon type
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: probably British, Staffordshire
+Period: Unknown
+Date Range: 1745–1775
+
+Medium: Tortoiseshell ware
+Dimensions: Diameter: 9 1/2 in. (24.1 cm)
+
+Credit Line: Gift of Mrs. Abraham Lansing, 1910
+
+---
+
+Artwork Title: Lioness
+Object Type: Statuette
+Classification: Sculpture-Bronze
+
+Artist: Giovanni Francesco Susini
+Nationality: Italian
+Lifespan: 1585      –1653      
+
+Cultural Context: probably Italian
+Period: Unknown
+Date Range: 1600–1799
+
+Medium: Bronze
+Dimensions: Height: 4 3/8 in. (11.1 cm)
+
+Credit Line: Gift of J. and S. Goldschmidt, 1911
+
+---
+
+Artwork Title: Bacchante with lowered eyes
+Object Type: Bust
+Classification: Sculpture
+
+Artist: Jean-Baptiste Carpeaux
+Nationality: French
+Lifespan: 1827      –1875      
+
+Cultural Context: French, Paris
+Period: Unknown
+Date Range: 1872–1872
+
+Medium: Terracotta
+Dimensions: Overall (with base): 16 1/2 × 9 × 8 in. (41.9 × 22.9 × 20.3 cm);
+Height (without base): 14 in. (35.6 cm)
+
+Credit Line: Rogers Fund, 1911
+
+---
+
+Artwork Title: Tea urn
+Object Type: Tea urn
+Classification: Metalwork-Silver
+
+Artist: John Carter II
+Nationality:  
+Lifespan: 1768      –1777      
+
+Cultural Context: British, London
+Period: Unknown
+Date Range: 1773–1774
+
+Medium: Silver
+Dimensions: Height (wt. confirmed): 20 3/4 in., 7.5 lb. (52.7 cm, 3.4 kg)
+
+Credit Line: Rogers Fund, 1911
+
+---
+
+Artwork Title: Vase with cover
+Object Type: Vase with cover
+Classification: Ceramics-Porcelain
+
+Artist: Meissen Manufactory
+Nationality: German
+Lifespan: 1710      –9999      
+
+Cultural Context: German, Meissen
+Period: Unknown
+Date Range: 1725–1740
+
+Medium: Hard-paste porcelain
+Dimensions: Height: 17 1/2 in. (44.5 cm)
+
+Credit Line: Rogers Fund, 1911
+
+---
+
+Artwork Title: Coffeepot
+Object Type: Coffeepot
+Classification: Metalwork-Silverplate
+
+Artist: Tudor and Leader
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: British, Sheffield
+Period: Unknown
+Date Range: 1760–1770
+
+Medium: Sheffield plate, wood
+Dimensions: Height: 11 3/4 in. (29.8 cm)
+
+Credit Line: Rogers Fund, 1911
+
+---
+
+Artwork Title: Oil Lamp in the Form of a Sphinx
+Object Type: Oil lamp
+Classification: Sculpture-Bronze
+
+Artist: Andrea Briosco, called Riccio
+Nationality: Italian
+Lifespan: 1470      –1532      
+
+Cultural Context: Italian, Padua
+Period: Unknown
+Date Range: 1525–1575
+
+Medium: Bronze
+Dimensions: confirmed: 4 7/8 × 2 3/8 × 5 3/4 in., 1.9 lb. (12.4 × 6 × 14.6 cm, 0.9 kg)
+
+Credit Line: Rogers Fund, 1911
+
+---
+
+Artwork Title: Count Tolstoy
+Object Type: Bust
+Classification: Sculpture-Bronze
+
+Artist: Leo Tolstoy|Lev Lvovich Tolstoy
+Nationality: Russian|Russian
+Lifespan: 1828      |1869      –1910      |1945      
+
+Cultural Context: Russian
+Period: Unknown
+Date Range: 1911–1911
+
+Medium: Bronze
+Dimensions: Height: 17 1/8 in. (43.5 cm)
+
+Credit Line: Gift of the sculptor, 1911
+
+---
+
+Artwork Title: Tray (part of a set)
+Object Type: Tray
+Classification: Ceramics-Pottery
+
+Artist: Josiah Wedgwood and Sons
+Nationality: British
+Lifespan: 1759      –9999      
+
+Cultural Context: British, Staffordshire
+Period: Unknown
+Date Range: 1785–1799
+
+Medium: Pottery
+Dimensions: Length: 17 1/2 in. (44.5 cm)
+
+Credit Line: Bequest of Mrs. Maria P. James, 1911
+
+---
+
+Artwork Title: Teapot with cover (part of a set)
+Object Type: Teapot with cover
+Classification: Ceramics-Pottery
+
+Artist: Josiah Wedgwood and Sons
+Nationality: British
+Lifespan: 1759      –9999      
+
+Cultural Context: British, Staffordshire
+Period: Unknown
+Date Range: 1785–1799
+
+Medium: Pottery
+Dimensions: Unknown
+
+Credit Line: Bequest of Mrs. Maria P. James, 1911
+
+---
+
+Artwork Title: Sugar bowl with cover (part of a set)
+Object Type: Sugar bowl with cover
+Classification: Ceramics-Pottery
+
+Artist: Josiah Wedgwood and Sons
+Nationality: British
+Lifespan: 1759      –9999      
+
+Cultural Context: British, Staffordshire
+Period: Unknown
+Date Range: 1785–1799
+
+Medium: Pottery
+Dimensions: Width: 5 5/8 in. (14.3 cm)
+
+Credit Line: Bequest of Mrs. Maria P. James, 1911
+
+---
+
+Artwork Title: Bowl with cover (part of a set)
+Object Type: Bowl with cover
+Classification: Ceramics-Pottery
+
+Artist: Josiah Wedgwood and Sons
+Nationality: British
+Lifespan: 1759      –9999      
+
+Cultural Context: British, Staffordshire
+Period: Unknown
+Date Range: 1785–1799
+
+Medium: Pottery
+Dimensions: Height (with cover): 4 1/16 in. (10.3 cm)
+
+Credit Line: Bequest of Mrs. Maria P. James, 1911
+
+---
+
+Artwork Title: Sugar bowl with cover (part of a set)
+Object Type: Sugar bowl with cover
+Classification: Ceramics-Pottery
+
+Artist: Josiah Wedgwood and Sons
+Nationality: British
+Lifespan: 1759      –9999      
+
+Cultural Context: British, Staffordshire
+Period: Unknown
+Date Range: 1785–1799
+
+Medium: Pottery
+Dimensions: 4 3/16 × 6 13/16 in. (10.6 × 17.3 cm)
+
+Credit Line: Bequest of Mrs. Maria P. James, 1911
+
+---
+
+Artwork Title: Plate (part of a set)
+Object Type: Plate
+Classification: Ceramics-Pottery
+
+Artist: Josiah Wedgwood and Sons
+Nationality: British
+Lifespan: 1759      –9999      
+
+Cultural Context: British, Staffordshire
+Period: Unknown
+Date Range: 1785–1799
+
+Medium: Pottery
+Dimensions: Diameter: 7 3/4 in. (19.7 cm)
+
+Credit Line: Bequest of Mrs. Maria P. James, 1911
+
+---
+
+Artwork Title: Set of three plates (part of a set)
+Object Type: Plates
+Classification: Ceramics-Pottery
+
+Artist: Wedgwood and Co.
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: British, Etruria, Staffordshire
+Period: Unknown
+Date Range: 1785–1799
+
+Medium: Pottery
+Dimensions: Diameter: 7 3/4 in. (19.7 cm)
+
+Credit Line: Bequest of Mrs. Maria P. James, 1911
+
+---
+
+Artwork Title: Saucer (part of a set)
+Object Type: Saucer
+Classification: Ceramics-Pottery
+
+Artist: Josiah Wedgwood and Sons
+Nationality: British
+Lifespan: 1759      –9999      
+
+Cultural Context: British, Staffordshire
+Period: Unknown
+Date Range: 1785–1799
+
+Medium: Pottery
+Dimensions: Diameter: 5 3/8 in. (13.7 cm)
+
+Credit Line: Bequest of Mrs. Maria P. James, 1911
+
+---
+
+Artwork Title: Saucer (part of a set)
+Object Type: Saucer
+Classification: Ceramics-Pottery
+
+Artist: Josiah Wedgwood and Sons
+Nationality: British
+Lifespan: 1759      –9999      
+
+Cultural Context: British, Staffordshire
+Period: Unknown
+Date Range: 1785–1799
+
+Medium: Pottery
+Dimensions: Diameter: 5 3/8 in. (13.7 cm)
+
+Credit Line: Bequest of Mrs. Maria P. James, 1911
+
+---
+
+Artwork Title: Saucer (part of a set)
+Object Type: Saucer
+Classification: Ceramics-Pottery
+
+Artist: Josiah Wedgwood and Sons
+Nationality: British
+Lifespan: 1759      –9999      
+
+Cultural Context: British, Staffordshire
+Period: Unknown
+Date Range: 1785–1799
+
+Medium: Pottery
+Dimensions: Diameter: 5 3/8 in. (13.7 cm)
+
+Credit Line: Bequest of Mrs. Maria P. James, 1911
+
+---
+
+Artwork Title: Saucer (part of a set)
+Object Type: Saucer
+Classification: Ceramics-Pottery
+
+Artist: Josiah Wedgwood and Sons
+Nationality: British
+Lifespan: 1759      –9999      
+
+Cultural Context: British, Staffordshire
+Period: Unknown
+Date Range: 1785–1799
+
+Medium: Pottery
+Dimensions: Diameter: 5 3/16 in. (13.2 cm)
+
+Credit Line: Bequest of Mrs. Maria P. James, 1911
+
+---
+
+Artwork Title: Large cup (part of a set)
+Object Type: Cup
+Classification: Ceramics-Pottery
+
+Artist: Josiah Wedgwood and Sons
+Nationality: British
+Lifespan: 1759      –9999      
+
+Cultural Context: British, Staffordshire
+Period: Unknown
+Date Range: 1785–1799
+
+Medium: Pottery
+Dimensions: Width: 4 1/4 in. (10.8 cm)
+
+Credit Line: Bequest of Mrs. Maria P. James, 1911
+
+---
+
+Artwork Title: Large cup (part of a set)
+Object Type: Cup
+Classification: Ceramics-Pottery
+
+Artist: Josiah Wedgwood and Sons
+Nationality: British
+Lifespan: 1759      –9999      
+
+Cultural Context: British, Staffordshire
+Period: Unknown
+Date Range: 1785–1799
+
+Medium: Pottery
+Dimensions: Width: 4 1/4 in. (10.8 cm)
+
+Credit Line: Bequest of Mrs. Maria P. James, 1911
+
+---
+
+Artwork Title: Large cup (part of a set)
+Object Type: Cup
+Classification: Ceramics-Pottery
+
+Artist: Josiah Wedgwood and Sons
+Nationality: British
+Lifespan: 1759      –9999      
+
+Cultural Context: British, Staffordshire
+Period: Unknown
+Date Range: 1785–1799
+
+Medium: Pottery
+Dimensions: Width: 4 1/4 in. (10.8 cm)
+
+Credit Line: Bequest of Mrs. Maria P. James, 1911
+
+---
+
+Artwork Title: Small cup (part of a set)
+Object Type: Small cup
+Classification: Ceramics-Pottery
+
+Artist: Josiah Wedgwood and Sons
+Nationality: British
+Lifespan: 1759      –9999      
+
+Cultural Context: British, Staffordshire
+Period: Unknown
+Date Range: 1785–1799
+
+Medium: Pottery
+Dimensions: Height: 2 5/8 in. (6.7 cm)
+
+Credit Line: Bequest of Mrs. Maria P. James, 1911
+
+---
+
+Artwork Title: Small cup (part of a set)
+Object Type: Small cup
+Classification: Ceramics-Pottery
+
+Artist: Josiah Wedgwood and Sons
+Nationality: British
+Lifespan: 1759      –9999      
+
+Cultural Context: British, Staffordshire
+Period: Unknown
+Date Range: 1785–1799
+
+Medium: Pottery
+Dimensions: Height: 2 5/8 in. (6.7 cm)
+
+Credit Line: Bequest of Mrs. Maria P. James, 1911
+
+---
+
+Artwork Title: Saucer (part of a set)
+Object Type: Saucer
+Classification: Ceramics-Pottery
+
+Artist: Josiah Wedgwood and Sons
+Nationality: British
+Lifespan: 1759      –9999      
+
+Cultural Context: British, Staffordshire
+Period: Unknown
+Date Range: 1785–1799
+
+Medium: Pottery
+Dimensions: Diam. 6 1/16 in. (15.4 cm)
+
+Credit Line: Bequest of Mrs. Maria P. James, 1911
+
+---
+
+Artwork Title: Teapot
+Object Type: Teapot with cover
+Classification: Ceramics-Pottery
+
+Artist: Josiah Wedgwood and Sons
+Nationality: British
+Lifespan: 1759      –9999      
+
+Cultural Context: British, Etruria, Staffordshire
+Period: Unknown
+Date Range: 1780–1790
+
+Medium: Black basalt (unglazed stoneware)
+Dimensions: Overall: 3 7/8 × 5 7/8 in. (9.8 × 14.9 cm)
+
+Credit Line: Bequest of Mrs. Maria P. James, 1911
+
+---
+
+Artwork Title: Plate (part of a service)
+Object Type: Plate
+Classification: Ceramics-Porcelain
+
+Artist: Crown Derby
+Nationality: British
+Lifespan: 1750      –9999      
+
+Cultural Context: British, Derby
+Period: Unknown
+Date Range: 1800–1899
+
+Medium: Bone china
+Dimensions: Diam. 8 5/8 in. (21.9 cm.)
+
+Credit Line: Bequest of Mrs. Maria P. James, 1911
+
+---
+
+Artwork Title: Plate (part of a service)
+Object Type: Plate
+Classification: Ceramics-Porcelain
+
+Artist: Crown Derby
+Nationality: British
+Lifespan: 1750      –9999      
+
+Cultural Context: British, Derby
+Period: Unknown
+Date Range: 1800–1899
+
+Medium: Bone china
+Dimensions: Unknown
+
+Credit Line: Bequest of Mrs. Maria P. James, 1911
+
+---
+
+Artwork Title: Plate (part of a service)
+Object Type: Plate
+Classification: Ceramics-Porcelain
+
+Artist: Crown Derby
+Nationality: British
+Lifespan: 1750      –9999      
+
+Cultural Context: British, Derby
+Period: Unknown
+Date Range: 1800–1899
+
+Medium: Bone china
+Dimensions: Unknown
+
+Credit Line: Bequest of Mrs. Maria P. James, 1911
+
+---
+
+Artwork Title: Plate (part of a service)
+Object Type: Plate
+Classification: Ceramics-Porcelain
+
+Artist: Crown Derby
+Nationality: British
+Lifespan: 1750      –9999      
+
+Cultural Context: British, Derby
+Period: Unknown
+Date Range: 1800–1899
+
+Medium: Bone china
+Dimensions: Unknown
+
+Credit Line: Bequest of Mrs. Maria P. James, 1911
+
+---
+
+Artwork Title: Plate (part of a service)
+Object Type: Plate
+Classification: Ceramics-Porcelain
+
+Artist: Crown Derby
+Nationality: British
+Lifespan: 1750      –9999      
+
+Cultural Context: British, Derby
+Period: Unknown
+Date Range: 1800–1899
+
+Medium: Bone china
+Dimensions: Unknown
+
+Credit Line: Bequest of Mrs. Maria P. James, 1911
+
+---
+
+Artwork Title: Plate (part of a service)
+Object Type: Plate
+Classification: Ceramics-Porcelain
+
+Artist: Crown Derby
+Nationality: British
+Lifespan: 1750      –9999      
+
+Cultural Context: British, Derby
+Period: Unknown
+Date Range: 1800–1899
+
+Medium: Bone china
+Dimensions: Unknown
+
+Credit Line: Bequest of Mrs. Maria P. James, 1911
+
+---
+
+Artwork Title: Plate (part of a service)
+Object Type: Plate
+Classification: Ceramics-Porcelain
+
+Artist: Crown Derby
+Nationality: British
+Lifespan: 1750      –9999      
+
+Cultural Context: British, Derby
+Period: Unknown
+Date Range: 1800–1899
+
+Medium: Bone china
+Dimensions: Unknown
+
+Credit Line: Bequest of Mrs. Maria P. James, 1911
+
+---
+
+Artwork Title: Plate (part of a service)
+Object Type: Plate
+Classification: Ceramics-Porcelain
+
+Artist: Crown Derby
+Nationality: British
+Lifespan: 1750      –9999      
+
+Cultural Context: British, Derby
+Period: Unknown
+Date Range: 1800–1899
+
+Medium: Bone china
+Dimensions: Unknown
+
+Credit Line: Bequest of Mrs. Maria P. James, 1911
+
+---
+
+Artwork Title: Plate (part of a service)
+Object Type: Plate
+Classification: Ceramics-Porcelain
+
+Artist: Crown Derby
+Nationality: British
+Lifespan: 1750      –9999      
+
+Cultural Context: British, Derby
+Period: Unknown
+Date Range: 1800–1899
+
+Medium: Bone china
+Dimensions: Unknown
+
+Credit Line: Bequest of Mrs. Maria P. James, 1911
+
+---
+
+Artwork Title: Plate (part of a service)
+Object Type: Plate
+Classification: Ceramics-Porcelain
+
+Artist: Crown Derby
+Nationality: British
+Lifespan: 1750      –9999      
+
+Cultural Context: British, Derby
+Period: Unknown
+Date Range: 1800–1899
+
+Medium: Bone china
+Dimensions: Unknown
+
+Credit Line: Bequest of Mrs. Maria P. James, 1911
+
+---
+
+Artwork Title: Plate (part of a service)
+Object Type: Plate 
+Classification: Ceramics-Porcelain
+
+Artist: Crown Derby
+Nationality: British
+Lifespan: 1750      –9999      
+
+Cultural Context: British, Derby
+Period: Unknown
+Date Range: 1805–1835
+
+Medium: Bone china
+Dimensions: Unknown
+
+Credit Line: Bequest of Mrs. Maria P. James, 1911
+
+---
+
+Artwork Title: Plate (part of a service)
+Object Type: Plate
+Classification: Ceramics-Porcelain
+
+Artist: Crown Derby
+Nationality: British
+Lifespan: 1750      –9999      
+
+Cultural Context: British, Derby
+Period: Unknown
+Date Range: 1800–1899
+
+Medium: Bone china
+Dimensions: Unknown
+
+Credit Line: Bequest of Mrs. Maria P. James, 1911
+
+---
+
+Artwork Title: Plate (part of a service)
+Object Type: Plate
+Classification: Ceramics-Porcelain
+
+Artist: Crown Derby
+Nationality: British
+Lifespan: 1750      –9999      
+
+Cultural Context: British, Derby
+Period: Unknown
+Date Range: 1800–1899
+
+Medium: Bone china
+Dimensions: Unknown
+
+Credit Line: Bequest of Mrs. Maria P. James, 1911
+
+---
+
+Artwork Title: Plate (part of a dinner service)
+Object Type: Plate 
+Classification: Ceramics-Porcelain
+
+Artist: Crown Derby
+Nationality: British
+Lifespan: 1750      –9999      
+
+Cultural Context: British, Derby
+Period: Unknown
+Date Range: 1805–1835
+
+Medium: Bone china
+Dimensions: Unknown
+
+Credit Line: Bequest of Mrs. Maria P. James, 1911
+
+---
+
+Artwork Title: Two-handled cup
+Object Type: Cup
+Classification: Ceramics-Pottery
+
+Artist: Josiah Wedgwood and Sons|Josiah Wedgwood
+Nationality: British|British
+Lifespan: 1759      |1730      –9999      |1795      
+
+Cultural Context: British, Staffordshire
+Period: Unknown
+Date Range: 1785–1799
+
+Medium: Lustered, silver and copper
+Dimensions: Height: 6 1/2 in. (16.5 cm)
+
+Credit Line: Bequest of Mrs. Maria P. James, 1911
+
+---
+
+Artwork Title: Two-handled cup
+Object Type: Cup
+Classification: Ceramics-Pottery
+
+Artist: Josiah Wedgwood and Sons|Josiah Wedgwood
+Nationality: British|British
+Lifespan: 1759      |1730      –9999      |1795      
+
+Cultural Context: British, Staffordshire
+Period: Unknown
+Date Range: 1785–1799
+
+Medium: Jasperware
+Dimensions: Height: 5 3/8 in. (13.7 cm)
+
+Credit Line: Bequest of Mrs. Maria P. James, 1911
+
+---
+
+Artwork Title: Elisabetta Gonzaga, Duchess of Urbino
+Object Type: Medal
+Classification: Medals and Plaquettes
+
+Artist: Adriano Fiorentino (Adriano di Giovanni de' Maestri)
+Nationality: Italian
+Lifespan: 1450      –1499      
+
+Cultural Context: Italian, Florence
+Period: Unknown
+Date Range: 1400–1499
+
+Medium: Lead
+Dimensions: Diameter: 83 mm
+
+Credit Line: Rogers Fund, 1911
+
+---
+
+Artwork Title: Marsilio Ficino (1433–1499)
+Object Type: Medal
+Classification: Medals and Plaquettes
+
+Artist: Niccolò Fiorentino (Niccolò di Forzore Spinelli)
+Nationality: Italian
+Lifespan: 1430      –1514      
+
+Cultural Context: Italian, Florence
+Period: Unknown
+Date Range: 1400–1499
+
+Medium: Lead
+Dimensions: Diameter: 57 mm
+
+Credit Line: Rogers Fund, 1911
+
+---
+
+Artwork Title: Ewer (Schnabelkanne)
+Object Type: Ewer
+Classification: Ceramics-Pottery
+
+Artist: Theodor de Bry
+Nationality: Netherlandish
+Lifespan: 1528      –1598      
+
+Cultural Context: German, Siegburg
+Period: Unknown
+Date Range: 1590–1600
+
+Medium: Glazed stoneware; pewter
+Dimensions: Height: 9 1/2 in. (24.1 cm)
+
+Credit Line: Rogers Fund, 1911
+
+---
+
+Artwork Title: Tankard (Schnelle)
+Object Type: Tankard
+Classification: Documents
+
+Artist: Hans Hilgers
+Nationality:  
+Lifespan: 1565      –1595      
+
+Cultural Context: German, Siegburg
+Period: Unknown
+Date Range: 1565–1585
+
+Medium: Salt-glazed stoneware; pewter
+Dimensions: Height: 15 1/4 in. (38.7 cm)
+
+Credit Line: Rogers Fund, 1911
+
+---
+
+Artwork Title: Jug
+Object Type: Jug
+Classification: Ceramics-Pottery
+
+Artist: Sebald Beham
+Nationality: German
+Lifespan: 1500      –1550      
+
+Cultural Context: German, Siegburg
+Period: Unknown
+Date Range: 1585–1605
+
+Medium: Salt-glazed stoneware; pewter lid
+Dimensions: Height: 9 in. (22.9 cm)
+
+Credit Line: Rogers Fund, 1911
+
+---
+
+Artwork Title: Beaker
+Object Type: Beaker
+Classification: Glass
+
+Artist: J. G. Bühler
+Nationality: German
+Lifespan: 1800      –1850      
+
+Cultural Context: German
+Period: Unknown
+Date Range: 1795–1825
+
+Medium: Glass
+Dimensions: Height: 6 1/2 in. (16.5 cm)
+
+Credit Line: Rogers Fund, 1911
+
+---
+
+Artwork Title: Ecce Homo (one of a pair)
+Object Type: Panel
+Classification: Glass-Stained
+
+Artist: Hirschvogel Workshop|Sebald Beham
+Nationality:  |German
+Lifespan:           |1500      –          |1550      
+
+Cultural Context: German, Nuremberg
+Period: Unknown
+Date Range: 1520–1530
+
+Medium: Colorless and pot-metal glass with vitreous paint
+Dimensions: Diameter: 12 in. (30.5 cm)
+
+Credit Line: Rogers Fund, 1911
+
+---
+
+Artwork Title: The Deposition
+Object Type: Panel
+Classification: Glass-Stained
+
+Artist: Hirschvogel Workshop|Sebald Beham
+Nationality:  |German
+Lifespan:           |1500      –          |1550      
+
+Cultural Context: German, Nuremberg
+Period: Unknown
+Date Range: 1520–1530
+
+Medium: Colorless and pot-metal glass with vitreous paint
+Dimensions: Diameter: 12 in. (30.5 cm);
+Framed: 25 1/4 × 19 1/4 × 11/16 in. (64.1 × 48.9 × 1.7 cm)
+
+Credit Line: Rogers Fund, 1911
+
+---
+
+Artwork Title: Two double standing cups (trussing cups)
+Object Type: Double standing cups
+Classification: Metalwork-Silver
+
+Artist: Simon Pissinger
+Nationality:  
+Lifespan: 1582      –1609      
+
+Cultural Context: German, Regensburg
+Period: Unknown
+Date Range: 1595–1605
+
+Medium: Gilded silver
+Dimensions: Height: 11 5/8 in. (29.5 cm)
+
+Credit Line: Rogers Fund, 1911
+
+---
+
+Artwork Title: Tankard
+Object Type: Tankard
+Classification: Metalwork-Silver
+
+Artist: Abraham Riederer, the Elder
+Nationality: German
+Lifespan: 1546      –1625      
+
+Cultural Context: German, Augsburg
+Period: Unknown
+Date Range: 1575–1590
+
+Medium: Gilded silver
+Dimensions: Height: 4 in. (10.2 cm)
+
+Credit Line: Rogers Fund, 1911
+
+---
+
+Artwork Title: The Angel Gabriel
+Object Type: Statue
+Classification: Sculpture
+
+Artist: Masseo Civitali
+Nationality:  
+Lifespan: 1459      –1541      
+
+Cultural Context: Italian, Lucca
+Period: Unknown
+Date Range: 1488–1498
+
+Medium: Painted and partially gilt terracotta
+Dimensions: Height: 61 1/2 in. (156.2 cm)
+
+Credit Line: Frederick C. Hewitt Fund, 1911
+
+---
+
+Artwork Title: Franz Joseph
+Object Type: Portrait
+Classification: Glass
+
+Artist: Franchini Co.
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: Italian, Venice (Murano)
+Period: Unknown
+Date Range: 1841–1851
+
+Medium: Glass rod mosaic
+Dimensions: Diameter: 3/8 in. (1 cm)
+
+Credit Line: Gift of George J. Foran, 1911
+
+---
+
+Artwork Title: Garibaldi
+Object Type: Portrait
+Classification: Glass
+
+Artist: Franchini Co.|Jacopo Franchini
+Nationality:  | 
+Lifespan:           |1825      –          |1925      
+
+Cultural Context: Italian, Venice (Murano)
+Period: Unknown
+Date Range: 1865–1875
+
+Medium: Glass rod mosaic
+Dimensions: Diameter: 1/8 in. (0.3 cm)
+
+Credit Line: Gift of George J. Foran, 1911
+
+---
+
+Artwork Title: The Blacksmith
+Object Type: Statue
+Classification: Sculpture-Bronze
+
+Artist: Henri L. Bouchard|Alexis Rudier
+Nationality: French|French
+Lifespan: 1875      |          –1960      |          
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1901–1907
+
+Medium: Bronze
+Dimensions: Overall: 62 1/4 × 34 1/2 × 44 in. (158.1 × 87.6 × 111.8 cm)
+
+Credit Line: Rogers Fund, 1911
+
+---
+
+Artwork Title: Sauceboat with cover
+Object Type: Sauceboat with cover
+Classification: Metalwork-Electrotype
+
+Artist: Elkington & Co.
+Nationality: British
+Lifespan: 1829      –1963      
+
+Cultural Context: British, Birmingham, after British, London original
+Period: Unknown
+Date Range: 1800–1899
+
+Medium: Silver on base metal
+Dimensions: Overall: 5 5/8 × 7 3/4 in. (14.3 × 19.7 cm)
+
+Credit Line: Dodge Fund, 1911
+
+---
+
+Artwork Title: Vase with cover
+Object Type: Vase with cover
+Classification: Metalwork-Electrotype
+
+Artist: Elkington & Co.
+Nationality: British
+Lifespan: 1829      –1963      
+
+Cultural Context: British, Birmingham, after British, London original
+Period: Unknown
+Date Range: 1800–1899
+
+Medium: Silver on base metal
+Dimensions: Height: 9 in. (22.9 cm)
+
+Credit Line: Dodge Fund, 1911
+
+---
+
+Artwork Title: Vase with cover
+Object Type: Vase with cover
+Classification: Metalwork-Electrotype
+
+Artist: Elkington & Co.
+Nationality: British
+Lifespan: 1829      –1963      
+
+Cultural Context: British, Birmingham, after British, London original
+Period: Unknown
+Date Range: 1800–1899
+
+Medium: Silver on base metal
+Dimensions: Height: 9 1/2 in. (24.1 cm)
+
+Credit Line: Dodge Fund, 1911
+
+---
+
+Artwork Title: Vase with cover
+Object Type: Vase with cover
+Classification: Metalwork-Electrotype
+
+Artist: Elkington & Co.
+Nationality: British
+Lifespan: 1829      –1963      
+
+Cultural Context: British, Birmingham, after British, London original
+Period: Unknown
+Date Range: 1800–1899
+
+Medium: Silver on base metal
+Dimensions: Height: 8 in. (20.3 cm)
+
+Credit Line: Dodge Fund, 1911
+
+---
+
+Artwork Title: Baptismal font with cover
+Object Type: Baptismal font with cover
+Classification: Metalwork-Electrotype
+
+Artist: Elkington & Co.
+Nationality: British
+Lifespan: 1829      –1963      
+
+Cultural Context: British, Birmingham, after British, London original
+Period: Unknown
+Date Range: 1800–1899
+
+Medium: Electroformed copper, silver plated and gilt
+Dimensions: Overall (confirmed): 36 3/8 × 18 × 18 in., 34.4 lb. (92.4 × 45.7 × 45.7 cm, 15.6 kg)
+
+Credit Line: Dodge Fund, 1911
+
+---
+
+Artwork Title: Kettle with stand, cover, and tray
+Object Type: Kettle with stand, cover, and tray
+Classification: Metalwork-Electrotype
+
+Artist: Elkington & Co.
+Nationality: British
+Lifespan: 1829      –1963      
+
+Cultural Context: British, Birmingham, after British, London original
+Period: Unknown
+Date Range: 1800–1899
+
+Medium: Silver on base metal
+Dimensions: Height (approximate): 12 in. (30.5 cm)
+
+Credit Line: Rogers Fund, 1908
+
+---
+
+Artwork Title: Salt
+Object Type: Salt
+Classification: Metalwork-Electrotype
+
+Artist: Elkington & Co.
+Nationality: British
+Lifespan: 1829      –1963      
+
+Cultural Context: British, Birmingham, after British, London original
+Period: Unknown
+Date Range: 1800–1899
+
+Medium: Silver on base metal
+Dimensions: Width: 7 1/2 in. (19.1 cm)
+
+Credit Line: Dodge Fund, 1911
+
+---
+
+Artwork Title: Tankard
+Object Type: Tankard
+Classification: Metalwork-Electrotype
+
+Artist: Elkington & Co.
+Nationality: British
+Lifespan: 1829      –1963      
+
+Cultural Context: British, Birmingham, after British, London original
+Period: Unknown
+Date Range: 1800–1899
+
+Medium: Silver on base metal
+Dimensions: Height: 9 in. (22.9 cm)
+
+Credit Line: Dodge Fund, 1911
+
+---
+
+Artwork Title: Three-branch candelabrum
+Object Type: Candelabrum
+Classification: Metalwork-Electrotype
+
+Artist: Elkington & Co.
+Nationality: British
+Lifespan: 1829      –1963      
+
+Cultural Context: British, Birmingham, after British, London original
+Period: Unknown
+Date Range: 1800–1899
+
+Medium: Silver on base metal
+Dimensions: Overall: 8 1/16 × 5 1/4 × 5 1/4 in. (20.5 × 13.3 × 13.3 cm)
+
+Credit Line: Dodge Fund, 1911
+
+---
+
+Artwork Title: Cup with cover
+Object Type: Cup with cover
+Classification: Metalwork-Electrotype
+
+Artist: Elkington & Co.
+Nationality: British
+Lifespan: 1829      –1963      
+
+Cultural Context: British, Birmingham, after British, London original
+Period: Unknown
+Date Range: 1800–1899
+
+Medium: Gilt base metal
+Dimensions: Height: 6 1/4 in. (15.9 cm)
+
+Credit Line: Dodge Fund, 1911
+
+---
+
+Artwork Title: Cup with cover
+Object Type: Cup with cover
+Classification: Metalwork-Electrotype
+
+Artist: Elkington & Co.
+Nationality: British
+Lifespan: 1829      –1963      
+
+Cultural Context: British, Birmingham, after British original
+Period: Unknown
+Date Range: 1800–1899
+
+Medium: Silver with base metal
+Dimensions: Height: 8 1/2 in. (21.6 cm)
+
+Credit Line: Dodge Fund, 1911
+
+---
+
+Artwork Title: Standing cup with cover
+Object Type: Cup with cover
+Classification: Metalwork-Electrotype
+
+Artist: Elkington & Co.
+Nationality: British
+Lifespan: 1829      –1963      
+
+Cultural Context: British, Birmingham, after British, London original
+Period: Unknown
+Date Range: 1800–1899
+
+Medium: Silver on base metal
+Dimensions: Overall (confirmed): 16 3/4 × 5 1/4 × 5 1/8 in. (42.5 × 13.3 × 13 cm)
+
+Credit Line: Dodge Fund, 1911
+
+---
+
+Artwork Title: Salver
+Object Type: Salver
+Classification: Metalwork-Electrotype
+
+Artist: Elkington & Co.
+Nationality: British
+Lifespan: 1829      –1963      
+
+Cultural Context: British, Birmingham, after British, London original
+Period: Unknown
+Date Range: 1800–1899
+
+Medium: Silver on base metal
+Dimensions: Overall (confirmed): 1 1/2 × 17 3/4 × 17 3/4 in. (3.8 × 45.1 × 45.1 cm)
+
+Credit Line: Dodge Fund, 1911
+
+---
+
+Artwork Title: Tankard
+Object Type: Tankard
+Classification: Metalwork-Electrotype
+
+Artist: Elkington & Co.
+Nationality: British
+Lifespan: 1829      –1963      
+
+Cultural Context: British, Birmingham, after British original
+Period: Unknown
+Date Range: 1800–1899
+
+Medium: Silver on base metal
+Dimensions: 7 1/2 × 6 1/4 in. (19.1 × 15.9 cm)
+
+Credit Line: Dodge Fund, 1911
+
+---
+
+Artwork Title: Two-handled cup with cover
+Object Type: Cup with cover
+Classification: Metalwork-Electrotype
+
+Artist: Elkington & Co.
+Nationality: British
+Lifespan: 1829      –1963      
+
+Cultural Context: British, Birmingham, after British original
+Period: Unknown
+Date Range: 1800–1899
+
+Medium: Silver on base metal
+Dimensions: Overall: 7 15/16 × 9 1/4 × 5 3/4 in. (20.1 × 23.5 × 14.6 cm)
+
+Credit Line: Dodge Fund, 1911
+
+---
+
+Artwork Title: Tea caddy with cover
+Object Type: Tea caddy with cover
+Classification: Metalwork-Electrotype
+
+Artist: Elkington & Co.
+Nationality: British
+Lifespan: 1829      –1963      
+
+Cultural Context: British, Birmingham, after British, London original
+Period: Unknown
+Date Range: 1800–1899
+
+Medium: Silver on base metal
+Dimensions: Overall: 5 1/4 × 4 in. (13.3 × 10.2 cm)
+
+Credit Line: Dodge Fund, 1911
+
+---
+
+Artwork Title: Salver
+Object Type: Salver
+Classification: Metalwork-Electrotype
+
+Artist: Elkington & Co.
+Nationality: British
+Lifespan: 1829      –1963      
+
+Cultural Context: British, Birmingham, after British original
+Period: Unknown
+Date Range: 1800–1899
+
+Medium: Silver on base metal
+Dimensions: Overall: 17 3/4 × 13 1/2 in. (45.1 × 34.3 cm)
+
+Credit Line: Dodge Fund, 1911
+
+---
+
+Artwork Title: Ewer with cover
+Object Type: Ewer with cover
+Classification: Metalwork-Electrotype
+
+Artist: Elkington & Co.
+Nationality: British
+Lifespan: 1829      –1963      
+
+Cultural Context: British, Birmingham, after British original
+Period: Unknown
+Date Range: 1800–1899
+
+Medium: Silver on base metal
+Dimensions: Overall: 9 5/8 × 8 3/8 × 4 1/2 in. (24.4 × 21.3 × 11.4 cm)
+
+Credit Line: Dodge Fund, 1911
+
+---
+
+Artwork Title: Cup with cover
+Object Type: Cup with cover
+Classification: Metalwork-Electrotype
+
+Artist: Elkington & Co.
+Nationality: British
+Lifespan: 1829      –1963      
+
+Cultural Context: British, Birmingham, after British, London original
+Period: Unknown
+Date Range: 1800–1899
+
+Medium: Silver on base metal
+Dimensions: Overall: 9 1/8 × 11 × 7 1/2 in. (23.1 × 27.9 × 19.1 cm)
+
+Credit Line: Dodge Fund, 1911
+
+---
+
+Artwork Title: Tankard
+Object Type: Tankard
+Classification: Metalwork-Electrotype
+
+Artist: Elkington & Co.
+Nationality: British
+Lifespan: 1829      –1963      
+
+Cultural Context: British, Birmingham, after British original
+Period: Unknown
+Date Range: 1800–1899
+
+Medium: Silver on base metal
+Dimensions: 8 1/2 × 6 in. (21.6 × 15.2 cm)
+
+Credit Line: Dodge Fund, 1911
+
+---
+
+Artwork Title: Two-handled vase with cover
+Object Type: Vase with cover
+Classification: Metalwork-Electrotype
+
+Artist: Elkington & Co.
+Nationality: British
+Lifespan: 1829      –1963      
+
+Cultural Context: British, Birmingham, after British, London original
+Period: Unknown
+Date Range: 1800–1899
+
+Medium: Silver on base metal
+Dimensions: Height: 15 in. (38.1 cm)
+
+Credit Line: Dodge Fund, 1911
+
+---
+
+Artwork Title: Mace
+Object Type: Mace
+Classification: Metalwork-Electrotype
+
+Artist: Elkington & Co.
+Nationality: British
+Lifespan: 1829      –1963      
+
+Cultural Context: British, Birmingham, after British original
+Period: Unknown
+Date Range: 1800–1899
+
+Medium: Silver on base metal
+Dimensions: Overall (confirmed): 23 × 2 3/4 × 2 3/4 in. (58.4 × 7 × 7 cm)
+
+Credit Line: Dodge Fund, 1911
+
+---
+
+Artwork Title: Louis XIV
+Object Type: Statuette
+Classification: Sculpture-Bronze
+
+Artist: Adam Frans van der Meulen|Martin van den Bogaert called Desjardins
+Nationality: Flemish| 
+Lifespan: 1632      |1640      –1690      |1694      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1700–1715
+
+Medium: Bronze, gilt bronze
+Dimensions: Height: 17 3/8 in. (44.1 cm)
+
+Credit Line: Frederick C. Hewitt Fund, 1911
+
+---
+
+Artwork Title: Boy
+Object Type: Figure
+Classification: Ceramics-Pottery
+
+Artist: Paul-Louis Cyfflé|Ralph Wood the Elder|Ralph Wood the Younger
+Nationality: French|British|British
+Lifespan: 1724      |1715      |1748      –1806      |1772      |1795      
+
+Cultural Context: British, Burslem, Staffordshire
+Period: Unknown
+Date Range: 1700–1799
+
+Medium: Lead-glazed earthenware
+Dimensions: Height: 8 3/4 in. (22.2 cm)
+
+Credit Line: Frederick C. Hewitt Fund, 1911
+
+---
+
+Artwork Title: Charity
+Object Type: Figure
+Classification: Ceramics-Pottery
+
+Artist: Ralph Wood the Younger
+Nationality: British
+Lifespan: 1748      –1795      
+
+Cultural Context: British, Burslem, Staffordshire
+Period: Unknown
+Date Range: 1765–1785
+
+Medium: Lead-glazed earthenware
+Dimensions: Height: 8 1/8 in. (20.6 cm)
+
+Credit Line: Frederick C. Hewitt Fund, 1911
+
+---
+
+Artwork Title: Plaque
+Object Type: Plaque
+Classification: Ceramics-Pottery
+
+Artist: Enoch Wood
+Nationality: British
+Lifespan: 1759      –1846      
+
+Cultural Context: British
+Period: Unknown
+Date Range: 1700–1799
+
+Medium: Lead-glazed earthenware
+Dimensions: Height: 8 5/8 in. (21.9 cm)
+
+Credit Line: Frederick C. Hewitt Fund, 1911
+
+---
+
+Artwork Title: Teapot with cover
+Object Type: Teapot with cover
+Classification: Ceramics-Pottery
+
+Artist: Whieldon type
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: probably British, Staffordshire
+Period: Unknown
+Date Range: 1730–1765
+
+Medium: Lead-glazed earthenware
+Dimensions: Height: 2 7/8 in. (7.3 cm)
+
+Credit Line: Frederick C. Hewitt Fund, 1911
+
+---
+
+Artwork Title: Miniature cup
+Object Type: Cup
+Classification: Metalwork-Silver
+
+Artist: William Fleming
+Nationality:  
+Lifespan: 1695      –1727      
+
+Cultural Context: British, London
+Period: Unknown
+Date Range: 1714–1715
+
+Medium: Silver
+Dimensions: Overall: 1 1/4 × 1 3/4 in. (3.2 × 4.4 cm)
+
+Credit Line: Rogers Fund, 1911
+
+---
+
+Artwork Title: Basket
+Object Type: Basket
+Classification: Metalwork-Silver
+
+Artist: Robert Hennell I
+Nationality:  
+Lifespan: 1763      –1811      
+
+Cultural Context: British, London
+Period: Unknown
+Date Range: 1783–1784
+
+Medium: Silver, glass lining
+Dimensions: 5 x 5 7/8 in.  (12.7 x 14.9 cm)
+
+Credit Line: Rogers Fund, 1911
+
+---
+
+Artwork Title: Salver
+Object Type: Salver
+Classification: Metalwork-Silver
+
+Artist: Robert Calderwood
+Nationality:  
+Lifespan: 1665      –1765      
+
+Cultural Context: Irish, Dublin
+Period: Unknown
+Date Range: 1750–1760
+
+Medium: Silver
+Dimensions: Diameter: 7 in. (17.8 cm)
+
+Credit Line: Rogers Fund, 1911
+
+---
+
+Artwork Title: Bowl
+Object Type: Bowl
+Classification: Metalwork-Silver
+
+Artist: Matthew West
+Nationality:  
+Lifespan: 1725      –1825      
+
+Cultural Context: Irish, Dublin
+Period: Unknown
+Date Range: 1784–1785
+
+Medium: Silver
+Dimensions: 3 × 5 3/8 in. (7.6 × 13.7 cm)
+
+Credit Line: Rogers Fund, 1911
+
+---
+
+Artwork Title: Cream jug
+Object Type: Cream jug
+Classification: Metalwork-Silver
+
+Artist: William Townsend
+Nationality:  
+Lifespan: 1700      –1800      
+
+Cultural Context: Irish, Dublin
+Period: Unknown
+Date Range: 1730–1740
+
+Medium: Silver
+Dimensions: Height: 4 1/8 in. (10.5 cm)
+
+Credit Line: Rogers Fund, 1911
+
+---
+
+Artwork Title: Pair of candlesticks
+Object Type: Candlesticks
+Classification: Metalwork-Silver
+
+Artist: John Clifton Sr.
+Nationality:  
+Lifespan: 1723      –1726      
+
+Cultural Context: Irish, Dublin
+Period: Unknown
+Date Range: 1723–1724
+
+Medium: Silver
+Dimensions: Height: 6 3/8 in. (16.2 cm)
+
+Credit Line: Rogers Fund, 1911
+
+---
+
+Artwork Title: Nativity (five figures forming a presepio)
+Object Type: Crèche figures
+Classification: Sculpture
+
+Artist: Antonio Rossellino
+Nationality: Italian
+Lifespan: 1427      –1479      
+
+Cultural Context: Italian, Florence
+Period: Unknown
+Date Range: 1400–1499
+
+Medium: Painted terracotta
+Dimensions: Height (Joseph .1): 24 1/2 in. (62.2 cm);
+Height (Mary .2): 34 7/8 in. (88.6 cm);
+Length (Christ Child .3): 17 1/2 in. (44.5 cm);
+Height (Ox .4): 17 1/2 in. (44.5 cm);
+Height (Ass .5): 17 1/2 in. (44.5 cm)
+
+Credit Line: Rogers Fund, 1911
+
+---
+
+Artwork Title: Adam
+Object Type: Statue
+Classification: Sculpture-Bronze
+
+Artist: Auguste Rodin
+Nationality: French
+Lifespan: 1840      –1917      
+
+Cultural Context: French, Paris
+Period: Unknown
+Date Range: 1880–1910
+
+Medium: Bronze
+Dimensions: Overall (confirmed): 76 3/8 × 30 3/8 × 32 1/2 in., 831 lb. (194 × 77.2 × 82.6 cm, 376.9 kg)
+
+Credit Line: Gift of Thomas F. Ryan, 1910
+
+---
+
+Artwork Title: Eve
+Object Type: Statue
+Classification: Sculpture-Bronze
+
+Artist: Auguste Rodin
+Nationality: French
+Lifespan: 1840      –1917      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1881–1910
+
+Medium: Bronze
+Dimensions: Overall (wt. confirmed): 68 1/2 × 20 1/2 × 23 1/2 in., 635 lb. (174 × 52.1 × 59.7 cm, 288 kg)
+
+Credit Line: Gift of Thomas F. Ryan, 1910
+
+---
+
+Artwork Title: The Old Courtesan (La Belle qui fut heaulmière)
+Object Type: Statuette
+Classification: Sculpture-Bronze
+
+Artist: Auguste Rodin
+Nationality: French
+Lifespan: 1840      –1917      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1880–1910
+
+Medium: Bronze
+Dimensions: Overall (wt. confirmed): 19 3/4 × 11 × 8 in., 37 lb. (50.2 × 27.9 × 20.3 cm, 16.8 kg)
+
+Credit Line: Gift of Thomas F. Ryan, 1910
+
+---
+
+Artwork Title: Jules Dalou (1838–1902)
+Object Type: Bust
+Classification: Sculpture-Bronze
+
+Artist: Auguste Rodin|Alexis Rudier
+Nationality: French|French
+Lifespan: 1840      |          –1917      |          
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1883–1910
+
+Medium: Bronze
+Dimensions: Overall (wt. confirmed): 20 1/2 × 16 3/4 × 9 3/4 in., 37.9 lb. (52.1 × 42.5 × 24.8 cm, 17.2 kg)
+
+Credit Line: Gift of Thomas F. Ryan, 1910
+
+---
+
+Artwork Title: Beside the Sea
+Object Type: Statuette
+Classification: Sculpture
+
+Artist: Auguste Rodin
+Nationality: French
+Lifespan: 1840      –1917      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1902–1912
+
+Medium: Marble
+Dimensions: Overall (wt. confirmed): 23 1/2 × 34 1/2 × 23 1/4 in., 527 lb. (59.7 × 87.6 × 59.1 cm, 239 kg)
+
+Credit Line: Gift of Thomas F. Ryan, 1910
+
+---
+
+Artwork Title: Madame X (Countess Anna-Elizabeth de Noailles)
+Object Type: Bust
+Classification: Sculpture
+
+Artist: Countess Anna-Elizabeth de Noailles|Auguste Rodin
+Nationality: French|French
+Lifespan:           |1840      –          |1917      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1902–1912
+
+Medium: Marble
+Dimensions: Overall (confirmed, largest dimensions): 19 1/2 × 21 3/8 × 19 in., 167 lb. (49.5 × 54.3 × 48.3 cm, 75.8 kg)
+
+Credit Line: Gift of Thomas F. Ryan, 1910
+
+---
+
+Artwork Title: The Tempest
+Object Type: Relief
+Classification: Sculpture
+
+Artist: Auguste Rodin
+Nationality: French
+Lifespan: 1840      –1917      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1810–1910
+
+Medium: Marble
+Dimensions: Overall (confirmed): 13 5/8 x 14 7/8 x 7 3/4 in., 73lb. (34.6 x 37.8 x 19.7 cm, 33.1126kg);
+Footprint of sculpture (confirmed): 14 1/2 x 6 1/2 in. (36.8 x 16.5 cm);
+Length of rod mount: 2 9/16 in. (6.5 cm)
+
+Credit Line: Gift of Thomas F. Ryan, 1910
+
+---
+
+Artwork Title: Pierre Puvis de Chavannes
+Object Type: Bust
+Classification: Sculpture-Bronze
+
+Artist: Auguste Rodin|Alexis Rudier
+Nationality: French|French
+Lifespan: 1840      |          –1917      |          
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1885–1915
+
+Medium: Bronze
+Dimensions: Overall (wt. confirmed): 21 × 20 × 12 1/2 in., 44.2 lb. (53.3 × 50.8 × 31.8 cm, 20 kg)
+
+Credit Line: Gift of Thomas F. Ryan, 1910
+
+---
+
+Artwork Title: The Thinker
+Object Type: Statue
+Classification: Sculpture-Bronze
+
+Artist: Auguste Rodin|Alexis Rudier
+Nationality: French|French
+Lifespan: 1840      |          –1917      |          
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1875–1915
+
+Medium: Bronze
+Dimensions: Overall (wt. confirmed): 27 5/8 in., 185 lb. (70.2 cm, 83.9 kg)
+
+Credit Line: Gift of Thomas F. Ryan, 1910
+
+---
+
+Artwork Title: Thomas Fortune Ryan
+Object Type: Bust
+Classification: Sculpture-Bronze
+
+Artist: Auguste Rodin|Alexis Rudier
+Nationality: French|French
+Lifespan: 1840      |          –1917      |          
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1909–1909
+
+Medium: Bronze
+Dimensions: Height: 23 in. (58.4 cm)
+
+Credit Line: Gift of Auguste Rodin, 1911
+
+---
+
+Artwork Title: Longcase clock
+Object Type: Longcase clock
+Classification: Horology
+
+Artist: John Ashbrooke
+Nationality: British
+Lifespan: 1656      –1723      
+
+Cultural Context: British, London
+Period: Unknown
+Date Range: 1695–1700
+
+Medium: Walnut
+Dimensions: Height: 85 in. (215.9 cm)
+
+Credit Line: Gift of Alexander Smith Cochran, 1911
+
+---
+
+Artwork Title: Coronation of King George V and Queen Mary, 1911
+Object Type: Medal
+Classification: Medals and Plaquettes
+
+Artist: Frank Bowcher|Spink
+Nationality: British| 
+Lifespan: 1864      |1900      –1938      |2000      
+
+Cultural Context: British
+Period: Unknown
+Date Range: 1900–1999
+
+Medium: Bronze, struck
+Dimensions: Diameter: 1 1/2 in. (3.8 cm)
+
+Credit Line: Gift of Edward D. Adams, 1911
+
+---
+
+Artwork Title: Accellino di Meliaduce Salvago (ca. 1420–before 1506)
+Object Type: Relief
+Classification: Sculpture
+
+Artist: Antonio Tamagnini
+Nationality: Italian
+Lifespan: 1461      –1534      
+
+Cultural Context: Italian, Genoa
+Period: Unknown
+Date Range: 1485–1499
+
+Medium: Marble
+Dimensions: Diameter (wt confirmed): H. 21 3/8 in., Wt. 69lb. (54.3 cm, 31.2982kg)
+
+Credit Line: Rogers Fund, 1911
+
+---
+
+Artwork Title: Venetian nobleman
+Object Type: Bust
+Classification: Sculpture
+
+Artist: Alessandro Vittoria (Alessandro Vittoria di Vigilio della Volpa)
+Nationality: Italian
+Lifespan: 1525      –1608      
+
+Cultural Context: Italian, Venice
+Period: Unknown
+Date Range: 1585–1599
+
+Medium: Terracotta
+Dimensions: Height: 30 1/2 in. (77.5 cm)
+
+Credit Line: Frederick C. Hewitt Fund, 1911
+
+---
+
+Artwork Title: Ewer
+Object Type: Ewer
+Classification: Metalwork-Silver
+
+Artist: Christoffel Radijs
+Nationality:  
+Lifespan: 1682      –1782      
+
+Cultural Context: Dutch, The Hague
+Period: Unknown
+Date Range: 1734–1734
+
+Medium: Silver gilt
+Dimensions: Overall: 9 3/16 × 9 5/16 in. (23.3 × 23.7 cm)
+
+Credit Line: Frederick C. Hewitt Fund, 1911
+
+---
+
+Artwork Title: Lord George Gordon (1751–1793)
+Object Type: Cameo medallion
+Classification: Ceramics-Pottery
+
+Artist: Josiah Wedgwood and Sons
+Nationality: British
+Lifespan: 1759      –9999      
+
+Cultural Context: British, Staffordshire
+Period: Unknown
+Date Range: 1785–1795
+
+Medium: Jasperware
+Dimensions: Height: 3 1/2 in. (8.9 cm)
+
+Credit Line: Rogers Fund, 1911
+
+---
+
+Artwork Title: Cameo medallion
+Object Type: Cameo medallion
+Classification: Ceramics-Pottery
+
+Artist: Josiah Wedgwood and Sons|John Flaxman
+Nationality: British|British
+Lifespan: 1759      |1755      –9999      |1826      
+
+Cultural Context: British, Etruria, Staffordshire
+Period: Unknown
+Date Range: 1784–1794
+
+Medium: Jasperware
+Dimensions: Unframed: 2 7/8 × 1 1/2 in. (7.3 × 3.8 cm);
+Framed: 3 1/8 × 1 7/8 in. (7.9 × 4.8 cm)
+
+Credit Line: Rogers Fund, 1911
+
+---
+
+Artwork Title: Diomedes prevented by Apollo from pursuing Aeneas (?)
+Object Type: Cameo medallion
+Classification: Ceramics-Pottery
+
+Artist: Josiah Wedgwood
+Nationality: British
+Lifespan: 1730      –1795      
+
+Cultural Context: British, Etruria, Staffordshire
+Period: Unknown
+Date Range: 1782–1792
+
+Medium: Jasperware
+Dimensions: Diameter: 2 9/16 in. (6.5 cm);
+Framed: 3 3/8 in. (8.6 cm)
+
+Credit Line: Rogers Fund, 1911
+
+---
+
+Artwork Title: Minerva receiving Holy Roman Emperor Francis II (1768–1835) (r. 1792–1804), afterwards Emperor Francis I of Austria, (r. 1804–35)
+Object Type: Cameo medallion
+Classification: Ceramics-Pottery
+
+Artist: Josiah Wedgwood and Sons|John Flaxman
+Nationality: British|British
+Lifespan: 1759      |1755      –9999      |1826      
+
+Cultural Context: British, Etruria, Staffordshire
+Period: Unknown
+Date Range: 1787–1797
+
+Medium: Jasperware
+Dimensions: Unframed: 2 3/4 × 1 1/2 in. (7 × 3.8 cm);
+Framed: 3 1/8 × 1 7/8 in. (7.9 × 4.8 cm)
+
+Credit Line: Rogers Fund, 1911
+
+---
+
+Artwork Title: Sacrifice to Aesculapius
+Object Type: Cameo medallion
+Classification: Ceramics-Pottery
+
+Artist: Josiah Wedgwood and Sons
+Nationality: British
+Lifespan: 1759      –9999      
+
+Cultural Context: British, Etruria, Staffordshire
+Period: Unknown
+Date Range: 1700–1815
+
+Medium: Jasperware
+Dimensions: Diameter: 2 3/16 in. (5.6 cm);
+Framed: 2 3/8 in. (6 cm)
+
+Credit Line: Rogers Fund, 1911
+
+---
+
+Artwork Title: Cameo medallion
+Object Type: Cameo medallion
+Classification: Ceramics-Pottery
+
+Artist: Wedgwood and Bentley
+Nationality: British
+Lifespan: 1769      –1780      
+
+Cultural Context: British, Etruria, Staffordshire
+Period: Unknown
+Date Range: 1769–1780
+
+Medium: Jasperware; gilt-bronze frame
+Dimensions: Unframed: 3 3/8 × 2 3/4 in. (8.6 × 7 cm);
+Framed: 4 1/8 × 3 1/8 in. (10.5 × 7.9 cm)
+
+Credit Line: Rogers Fund, 1911
+
+---
+
+Artwork Title: Old woman exhorting a youth and a maiden
+Object Type: Cameo medallion
+Classification: Ceramics-Pottery
+
+Artist: Josiah Wedgwood and Sons
+Nationality: British
+Lifespan: 1759      –9999      
+
+Cultural Context: British, Etruria, Staffordshire
+Period: Unknown
+Date Range: 1785–1799
+
+Medium: Jasperware
+Dimensions: Diameter: 2 3/16 in. (5.6 cm);
+Framed: 2 3/8 in. (6 cm)
+
+Credit Line: Rogers Fund, 1911
+
+---
+
+Artwork Title: Satyr
+Object Type: Cameo medallion
+Classification: Ceramics-Pottery
+
+Artist: Wedgwood and Bentley
+Nationality: British
+Lifespan: 1769      –1780      
+
+Cultural Context: British, Etruria, Staffordshire
+Period: Unknown
+Date Range: 1769–1780
+
+Medium: Jasper ware
+Dimensions: Unframed: 2 1/8 × 1 13/16 in. (5.4 × 4.6 cm);
+Framed: 2 1/2 × 2 1/8 in. (6.4 × 5.4 cm)
+
+Credit Line: Rogers Fund, 1911
+
+---
+
+Artwork Title: Cupid playing a lyre
+Object Type: Cameo medallion
+Classification: Ceramics-Pottery
+
+Artist: Lady Diana Beauclerk|Josiah Wedgwood
+Nationality: British|British
+Lifespan: 1734      |1730      –1808      |1795      
+
+Cultural Context: British, Etruria, Staffordshire
+Period: Unknown
+Date Range: 1700–1799
+
+Medium: Jasperware
+Dimensions: Diameter: 2 11/16 in. (6.8 cm);
+Framed: 3 1/2 × 3 1/8 in. (8.9 × 7.9 cm)
+
+Credit Line: Rogers Fund, 1911
+
+---
+
+Artwork Title: Cameo medallion
+Object Type: Cameo medallion
+Classification: Ceramics-Pottery
+
+Artist: Josiah Wedgwood and Sons|John Flaxman
+Nationality: British|British
+Lifespan: 1759      |1755      –9999      |1826      
+
+Cultural Context: British, Etruria, Staffordshire
+Period: Unknown
+Date Range: 1795–1805
+
+Medium: Jasperware
+Dimensions: Unframed: 2 × 1 3/4 in. (5.1 × 4.4 cm);
+Framed: 2 1/2 × 2 1/8 in. (6.4 × 5.4 cm)
+
+Credit Line: Rogers Fund, 1911
+
+---
+
+Artwork Title: Lamp
+Object Type: Lamp
+Classification: Ceramics-Pottery
+
+Artist: Josiah Wedgwood and Sons|Josiah Wedgwood|John Flaxman
+Nationality: British|British|British
+Lifespan: 1759      |1730      |1755      –9999      |1795      |1826      
+
+Cultural Context: British, Etruria, Staffordshire
+Period: Unknown
+Date Range: 1775–1805
+
+Medium: Caneware
+Dimensions: Overall: 1 7/8 × 5 × 3 1/4 in. (4.8 × 12.7 × 8.3 cm)
+
+Credit Line: Rogers Fund, 1911
+
+---
+
+Artwork Title: Cake basket
+Object Type: Cake basket
+Classification: Metalwork-Silverplate
+
+Artist: Samuel Kirkby and Co.
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: British, Sheffield
+Period: Unknown
+Date Range: 1790–1800
+
+Medium: Sheffield plate
+Dimensions: Width: 13 1/4 in. (33.7 cm)
+
+Credit Line: Rogers Fund, 1911
+
+---
+
+Artwork Title: Mace
+Object Type: Mace
+Classification: Metalwork-Electrotype
+
+Artist: John Swift II
+Nationality:  
+Lifespan: 1696      –1796      
+
+Cultural Context: British, after British, London original
+Period: Unknown
+Date Range: 1800–1899
+
+Medium: Silver on base metal
+Dimensions: Overall: 60 × 9 × 9 in. (152.4 × 22.9 × 22.9 cm)
+
+Credit Line: Rogers Fund, 1911
+
+---
+
+Artwork Title: Honoré de Balzac
+Object Type: Bust
+Classification: Sculpture
+
+Artist: Auguste Rodin
+Nationality: French
+Lifespan: 1840      –1917      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1891–1891
+
+Medium: Terracotta
+Dimensions: Art only: 9 1/4 in. (23.5 cm)
+Block (art mounted to block: overall assembled height and block footprint ): 15 × 5 × 5 in. (38.1 × 12.7 × 12.7 cm)
+Weight on block, confirmed: 14.4 lb. (6.6 kg)
+
+Credit Line: Rogers Fund, 1912
+
+---
+
+Artwork Title: Triton and Nereid
+Object Type: Group
+Classification: Sculpture
+
+Artist: Auguste Rodin
+Nationality: French
+Lifespan: 1840      –1917      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1881–1898
+
+Medium: Terracotta
+Dimensions: Height (wt. on marble base, confirmed): 16 in., 33.7 lb. (40.6 cm, 15.3 kg)
+
+Credit Line: Rogers Fund, 1912
+
+---
+
+Artwork Title: Old Woman Standing with Folded Arms
+Object Type: Cast
+Classification: Sculpture
+
+Artist: Auguste Rodin
+Nationality: French
+Lifespan: 1840      –1917      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1880–1912
+
+Medium: Cast plaster
+Dimensions: Overall (confirmed): 12 1/4 × 5 × 6 1/2 in. (31.1 × 12.7 × 16.5 cm)
+
+Credit Line: Gift of Auguste Rodin, 1912
+
+---
+
+Artwork Title: Study for Galatea
+Object Type: Cast
+Classification: Sculpture
+
+Artist: Auguste Rodin
+Nationality: French
+Lifespan: 1840      –1917      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1885–1912
+
+Medium: Cast plaster
+Dimensions: Height: 12 1/2 in. (31.8 cm)
+
+Credit Line: Gift of Auguste Rodin, 1912
+
+---
+
+Artwork Title: Young woman kneeling
+Object Type: Cast
+Classification: Sculpture
+
+Artist: Auguste Rodin
+Nationality: French
+Lifespan: 1840      –1917      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1875–1915
+
+Medium: Cast plaster
+Dimensions: 8 1/8 × 6 5/16 × 4 in. (20.6 × 16 × 10.2 cm)
+
+Credit Line: Gift of Auguste Rodin, 1912
+
+---
+
+Artwork Title: Study for Obsession
+Object Type: Cast
+Classification: Sculpture
+
+Artist: Auguste Rodin
+Nationality: French
+Lifespan: 1840      –1917      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1891–1912
+
+Medium: Cast plaster
+Dimensions: Height: 5 1/2 in. (14 cm)
+
+Credit Line: Gift of Auguste Rodin, 1912
+
+---
+
+Artwork Title: Young woman
+Object Type: Cast
+Classification: Sculpture
+
+Artist: Auguste Rodin
+Nationality: French
+Lifespan: 1840      –1917      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1840–1912
+
+Medium: Cast plaster
+Dimensions: Height: 4 in. (10.2 cm)
+
+Credit Line: Gift of Auguste Rodin, 1912
+
+---
+
+Artwork Title: The Head of Mrs. Russell
+Object Type: Bust
+Classification: Sculpture
+
+Artist: Auguste Rodin
+Nationality: French
+Lifespan: 1840      –1917      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1885–1912
+
+Medium: Cast plaster
+Dimensions: Height (wt. confirmed): 10 7/8 in., 5.1 lb. (27.6 cm, 2.3 kg)
+
+Credit Line: Gift of Auguste Rodin, 1912
+
+---
+
+Artwork Title: Gwen John (Study for a Muse)
+Object Type: Head
+Classification: Sculpture
+
+Artist: Auguste Rodin
+Nationality: French
+Lifespan: 1840      –1917      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1899–1909
+
+Medium: Cast plaster
+Dimensions: Height: 4 in. (10.2 cm)
+
+Credit Line: Gift of Auguste Rodin, 1912
+
+---
+
+Artwork Title: Study of a Hand
+Object Type: Cast
+Classification: Sculpture
+
+Artist: Auguste Rodin
+Nationality: French
+Lifespan: 1840      –1917      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1880–1912
+
+Medium: Cast plaster
+Dimensions: Length: 13 1/2 in. (34.3 cm)
+
+Credit Line: Gift of Auguste Rodin, 1912
+
+---
+
+Artwork Title: Study of the left hand and arm of Meditation
+Object Type: Cast
+Classification: Sculpture
+
+Artist: Auguste Rodin
+Nationality: French
+Lifespan: 1840      –1917      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1889–1912
+
+Medium: Cast plaster
+Dimensions: 4 1/8 × 9 1/8 × 6 1/8 in., 1 lb. (10.5 × 23.2 × 15.6 cm, 453.597g)
+
+Credit Line: Gift of Auguste Rodin, 1912
+
+---
+
+Artwork Title: Study of a hand
+Object Type: Cast
+Classification: Sculpture
+
+Artist: Auguste Rodin
+Nationality: French
+Lifespan: 1840      –1917      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 0–0
+
+Medium: Cast plaster
+Dimensions: 6 3/8 × 2 1/2 × 3 3/4 in. (16.2 × 6.4 × 9.5 cm)
+
+Credit Line: Gift of Auguste Rodin, 1912
+
+---
+
+Artwork Title: Study of a leg and foot
+Object Type: Cast
+Classification: Sculpture
+
+Artist: Auguste Rodin
+Nationality: French
+Lifespan: 1840      –1917      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1875–1915
+
+Medium: Cast plaster
+Dimensions: Length: 7 1/8 in. (18.1 cm)
+
+Credit Line: Gift of Auguste Rodin, 1912
+
+---
+
+Artwork Title: Study of a leg
+Object Type: Cast
+Classification: Sculpture
+
+Artist: Auguste Rodin
+Nationality: French
+Lifespan: 1840      –1917      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1875–1915
+
+Medium: Cast plaster
+Dimensions: Length: 5 1/4 in. (13.3 cm)
+
+Credit Line: Gift of Auguste Rodin, 1912
+
+---
+
+Artwork Title: Study of a leg
+Object Type: Cast
+Classification: Sculpture
+
+Artist: Auguste Rodin
+Nationality: French
+Lifespan: 1840      –1917      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1875–1915
+
+Medium: Cast plaster
+Dimensions: Length: 4 1/2 in. (11.4 cm)
+
+Credit Line: Gift of Auguste Rodin, 1912
+
+---
+
+Artwork Title: Study of a leg
+Object Type: Cast
+Classification: Sculpture
+
+Artist: Auguste Rodin
+Nationality: French
+Lifespan: 1840      –1917      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1875–1915
+
+Medium: Cast plaster
+Dimensions: Length: 3 3/4 in. (9.5 cm)
+
+Credit Line: Gift of Auguste Rodin, 1912
+
+---
+
+Artwork Title: Study of an arm
+Object Type: Cast
+Classification: Sculpture
+
+Artist: Auguste Rodin
+Nationality: French
+Lifespan: 1840      –1917      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1875–1915
+
+Medium: Cast plaster
+Dimensions: Length: 3 3/4 in. (9.5 cm)
+
+Credit Line: Gift of Auguste Rodin, 1912
+
+---
+
+Artwork Title: Study of a hand
+Object Type: Cast
+Classification: Sculpture
+
+Artist: Auguste Rodin
+Nationality: French
+Lifespan: 1840      –1917      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 19–19
+
+Medium: Cast plaster
+Dimensions: 4 1/4 × 2 × 1 1/4 in. (10.8 × 5.1 × 3.2 cm)
+
+Credit Line: Gift of Auguste Rodin, 1912
+
+---
+
+Artwork Title: Study of a hand
+Object Type: Cast
+Classification: Sculpture
+
+Artist: Auguste Rodin
+Nationality: French
+Lifespan: 1840      –1917      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1875–1915
+
+Medium: Cast plaster
+Dimensions: Length: 2 3/8 in. (6 cm)
+
+Credit Line: Gift of Auguste Rodin, 1912
+
+---
+
+Artwork Title: Study of a hand
+Object Type: Cast
+Classification: Sculpture
+
+Artist: Auguste Rodin
+Nationality: French
+Lifespan: 1840      –1917      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1900–1912
+
+Medium: Cast plaster
+Dimensions: Length: 2 in. (5.1 cm)
+
+Credit Line: Gift of Auguste Rodin, 1912
+
+---
+
+Artwork Title: Torso (A Study for Ariane without Arms)
+Object Type: Torso
+Classification: Sculpture
+
+Artist: Auguste Rodin
+Nationality: French
+Lifespan: 1840      –1917      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1875–1910
+
+Medium: Terracotta
+Dimensions: Overall (without base): 7 × 11 5/8 × 4 1/4 in. (17.8 × 29.5 × 10.8 cm); Overall (mounted to block, wt. confirmed): 9 1/4 × 11 5/8 × 5 3/8 in., 9.6 lb. (23.5 × 29.5 × 13.7 cm, 4.4 kg); Overall (block only): 2 × 8 × 5 3/8 in. (5.1 × 20.3 × 13.7 cm)
+
+Credit Line: Gift of Auguste Rodin, 1912
+
+---
+
+Artwork Title: Fallen Caryatid Carrying an Urn
+Object Type: Statuette
+Classification: Sculpture
+
+Artist: Auguste Rodin
+Nationality: French
+Lifespan: 1840      –1917      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1883–1883
+
+Medium: Cast terracotta
+Dimensions: Overall (confirmed): 16 × 10 × 10 3/8 in. (40.6 × 25.4 × 26.4 cm)
+
+Credit Line: Gift of Thomas F. Ryan, 1910
+
+---
+
+Artwork Title: Chocolate pot with cover (part of a set)
+Object Type: Chocolate pot with cover
+Classification: Ceramics-Pottery
+
+Artist: Josiah Wedgwood and Sons|Laurence Sterne
+Nationality: British|British, born Ireland
+Lifespan: 1759      |1713      –9999      |1768      
+
+Cultural Context: British, Etruria, Staffordshire
+Period: Unknown
+Date Range: 1785–1790
+
+Medium: Jasperware
+Dimensions: Overall (with cover): 7 7/16 × 6 in. (18.9 × 15.2 cm)
+
+Credit Line: Gift of Ferdinand Hermann, 1912
+
+---
+
+Artwork Title: Milk jug with cover (part of a set)
+Object Type: Milk jug with cover
+Classification: Ceramics-Pottery
+
+Artist: Laurence Sterne|Josiah Wedgwood and Sons
+Nationality: British, born Ireland|British
+Lifespan: 1713      |1759      –1768      |9999      
+
+Cultural Context: British, Etruria, Staffordshire
+Period: Unknown
+Date Range: 1785–1790
+
+Medium: Jasperware
+Dimensions: Overall (with cover): 6 5/8 × 5 1/2 in. (16.8 × 14 cm)
+
+Credit Line: Gift of Ferdinand Hermann, 1912
+
+---
+
+Artwork Title: Sugar bowl with cover (part of a set)
+Object Type: Sugar bowl with cover
+Classification: Ceramics-Pottery
+
+Artist: Josiah Wedgwood and Sons|Laurence Sterne
+Nationality: British|British, born Ireland
+Lifespan: 1759      |1713      –9999      |1768      
+
+Cultural Context: British, Etruria, Staffordshire
+Period: Unknown
+Date Range: 1785–1790
+
+Medium: Jasperware
+Dimensions: Overall (with cover): 5 1/8 × 4 3/16 in. (13 × 10.6 cm)
+
+Credit Line: Gift of Ferdinand Hermann, 1912
+
+---
+
+Artwork Title: Pair of cups (part of a set)
+Object Type: Cups
+Classification: Ceramics-Pottery
+
+Artist: Josiah Wedgwood and Sons|Laurence Sterne
+Nationality: British|British, born Ireland
+Lifespan: 1759      |1713      –9999      |1768      
+
+Cultural Context: British, Etruria, Staffordshire
+Period: Unknown
+Date Range: 1785–1790
+
+Medium: Jasperware
+Dimensions: Diameter (each): 2 5/8 in. (6.7 cm)
+
+Credit Line: Gift of Ferdinand Hermann, 1912
+
+---
+
+Artwork Title: Pair of saucers (part of a set)
+Object Type: Saucers
+Classification: Ceramics-Pottery
+
+Artist: Josiah Wedgwood and Sons|Laurence Sterne
+Nationality: British|British, born Ireland
+Lifespan: 1759      |1713      –9999      |1768      
+
+Cultural Context: British, Etruria, Staffordshire
+Period: Unknown
+Date Range: 1785–1790
+
+Medium: Jasperware
+Dimensions: Diameter (each): 5 1/16 in. (12.9 cm)
+
+Credit Line: Gift of Ferdinand Hermann, 1912
+
+---
+
+Artwork Title: Tankard
+Object Type: Tankard
+Classification: Metalwork-Silver
+
+Artist: Adolf Steinweg
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: German, Hamburg
+Period: Unknown
+Date Range: 1600–1900
+
+Medium: Silver, partly gilt
+Dimensions: Height: 8 1/2 in. (21.6 cm)
+
+Credit Line: Rogers Fund, 1912
+
+---
+
+Artwork Title: Tankard
+Object Type: Tankard
+Classification: Metalwork-Silver
+
+Artist: Johann II Beckert
+Nationality: German
+Lifespan: 1654      –1704      
+
+Cultural Context: German, Augsburg
+Period: Unknown
+Date Range: 1685–1715
+
+Medium: Silver gilt, silver medallions
+Dimensions: Height: 6 1/2 in. (16.5 cm)
+
+Credit Line: Rogers Fund, 1912
+
+---
+
+Artwork Title: Tankard
+Object Type: Tankard
+Classification: Metalwork-Silver
+
+Artist: Jeremias II Flicker
+Nationality:  
+Lifespan: 1547      –1647      
+
+Cultural Context: German, Augsburg
+Period: Unknown
+Date Range: 1600–1699
+
+Medium: Silver gilt
+Dimensions: Height: 5 5/8 in. (14.3 cm)
+
+Credit Line: Rogers Fund, 1912
+
+---
+
+Artwork Title: Tankard
+Object Type: Tankard
+Classification: Metalwork-Silver
+
+Artist: Abraham Grill
+Nationality:  
+Lifespan: 1582      –1682      
+
+Cultural Context: German, Augsburg
+Period: Unknown
+Date Range: 1650–1650
+
+Medium: Silver gilt
+Dimensions: Height: 4 1/2 in. (11.4 cm)
+
+Credit Line: Rogers Fund, 1912
+
+---
+
+Artwork Title: Portrait of the Duke de Loubat
+Object Type: Medal
+Classification: Medals and Plaquettes
+
+Artist: Frédéric Charles Victor de Vernon
+Nationality: French
+Lifespan: 1858      –1912      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1900–1999
+
+Medium: Bronze, struck
+Dimensions: Diameter: 2 1/4 in. (57 mm)
+
+Credit Line: Gift of Duc de Loubat, 1912
+
+---
+
+Artwork Title: The Election of the Duke de Loubat, Member of the Institut de France
+Object Type: Medal
+Classification: Medals and Plaquettes
+
+Artist: Frédéric Charles Victor de Vernon
+Nationality: French
+Lifespan: 1858      –1912      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1900–1999
+
+Medium: Bronze, struck
+Dimensions: Diameter: 2 7/8 in. (73 mm)
+
+Credit Line: Gift of Duc de Loubat, 1912
+
+---
+
+Artwork Title: Cup (gobelet litron) and saucer
+Object Type: Cup and saucer
+Classification: Ceramics-Porcelain
+
+Artist: Vincennes Manufactory
+Nationality: French
+Lifespan: 1740      –1756      
+
+Cultural Context: French, Vincennes
+Period: Unknown
+Date Range: 1754–1754
+
+Medium: Soft-paste porcelain
+Dimensions: Height (cup .1a): 4 3/8 in. (11.1 cm);
+Diameter (saucer .1b): 6 3/8 in. (16.2 cm)
+
+Credit Line: Rogers Fund, 1912
+
+---
+
+Artwork Title: Plate
+Object Type: Plate
+Classification: Ceramics-Porcelain
+
+Artist: Tournai
+Nationality: Belgian
+Lifespan:           –          
+
+Cultural Context: Belgian, Tournai with Dutch, The Hague decoration
+Period: Unknown
+Date Range: 1771–1786
+
+Medium: Soft-paste porcelain
+Dimensions: Diameter: 16 1/4 in. (41.3 cm)
+
+Credit Line: Rogers Fund, 1912
+
+---
+
+Artwork Title: Plate
+Object Type: Plate
+Classification: Ceramics-Porcelain
+
+Artist: Tournai
+Nationality: Belgian
+Lifespan:           –          
+
+Cultural Context: Belgian, Tournai with Dutch, The Hague decoration
+Period: Unknown
+Date Range: 1771–1786
+
+Medium: Soft-paste porcelain
+Dimensions: Diameter: 16 1/4 in. (41.3 cm)
+
+Credit Line: Rogers Fund, 1912
+
+---
+
+Artwork Title: Madonna and Child
+Object Type: Relief
+Classification: Sculpture
+
+Artist: Donatello
+Nationality: Italian
+Lifespan: 1386      –1466      
+
+Cultural Context: Italian, Florence
+Period: Unknown
+Date Range: 1445–1599
+
+Medium: Terracotta, polychromed
+Dimensions: 29 × 20 1/2 in. (73.7 × 52.1 cm)
+
+Credit Line: Rogers Fund, 1912
+
+---
+
+Artwork Title: Vicar and Moses
+Object Type: Group
+Classification: Ceramics-Pottery
+
+Artist: Ralph Wood the Younger
+Nationality: British
+Lifespan: 1748      –1795      
+
+Cultural Context: British, Burslem, Staffordshire
+Period: Unknown
+Date Range: 1765–1785
+
+Medium: Lead-glazed earthenware
+Dimensions: 9 3/4 × 4 1/4 in. (24.8 × 10.8 cm)
+
+Credit Line: Rogers Fund, 1912
+
+---
+
+Artwork Title: Tankard
+Object Type: Tankard
+Classification: Metalwork-Silver
+
+Artist: I. B. (Austrian)
+Nationality:  
+Lifespan: 1600      –1699      
+
+Cultural Context: Austrian, Eger
+Period: Unknown
+Date Range: 1600–1615
+
+Medium: Silver-gilt
+Dimensions: Height: 8 in. (20.3 cm)
+
+Credit Line: Gift of Victor G. Fischer, 1912
+
+---
+
+Artwork Title: Twelve spoons
+Object Type: Spoons 
+Classification: Metalwork-Silver
+
+Artist: Thomas Wallis I|Thomas Wallis II
+Nationality:  | 
+Lifespan: 1718      |1736      –1822      |1836      
+
+Cultural Context: British, London
+Period: Unknown
+Date Range: 1802–1803
+
+Medium: Silver
+Dimensions: Length (each): 5 3/8 in. (13.7 cm)
+
+Credit Line: Rogers Fund, 1912
+
+---
+
+Artwork Title: Cake basket
+Object Type: Cake basket
+Classification: Metalwork-Silverplate
+
+Artist: Tudor and Leader
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: British, Sheffield
+Period: Unknown
+Date Range: 1760–1770
+
+Medium: Sheffield plate
+Dimensions: Overall: 12 3/4 × 11 in. (32.4 × 27.9 cm)
+
+Credit Line: Rogers Fund, 1912
+
+---
+
+Artwork Title: Pair of candlesticks
+Object Type: Candlesticks
+Classification: Metalwork-Silverplate
+
+Artist: Matthew Fenton and Co.
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: British, Sheffield
+Period: Unknown
+Date Range: 1773–1783
+
+Medium: Sheffield plate
+Dimensions: Height (each): 11 7/8 in. (30.2 cm)
+
+Credit Line: Rogers Fund, 1912
+
+---
+
+Artwork Title: Coffeepot
+Object Type: Coffeepot
+Classification: Metalwork-Silverplate
+
+Artist: Richard Morton and Co.
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: British, Sheffield
+Period: Unknown
+Date Range: 1760–1775
+
+Medium: Sheffield plate, fused
+Dimensions: Height: 12 1/4 in. (31.1 cm)
+
+Credit Line: Rogers Fund, 1912
+
+---
+
+Artwork Title: Tazza
+Object Type: Tazza
+Classification: Metalwork-Silver
+
+Artist: B. B.
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: probably Spanish
+Period: Unknown
+Date Range: 1600–1615
+
+Medium: Silver, parcel gilt
+Dimensions: Overall: 4 7/8 × 5 1/2 in. (12.4 × 14 cm)
+
+Credit Line: Rogers Fund, 1912
+
+---
+
+Artwork Title: Ewer
+Object Type: Ewer
+Classification: Metalwork-Silver
+
+Artist: R. S. J.
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: Portuguese, Lisbon
+Period: Unknown
+Date Range: 1775–1799
+
+Medium: Silver
+Dimensions: Height: 11 3/4 in. (29.8 cm)
+
+Credit Line: Rogers Fund, 1912
+
+---
+
+Artwork Title: Basin
+Object Type: Basin
+Classification: Metalwork-Silver
+
+Artist: R. S. J.
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: Portuguese, Lisbon
+Period: Unknown
+Date Range: 1775–1799
+
+Medium: Silver
+Dimensions: Unknown
+
+Credit Line: Rogers Fund, 1912
+
+---
+
+Artwork Title: Sugar bowl with cover
+Object Type: Sugar bowl with cover
+Classification: Metalwork-Silver
+
+Artist: M. H. P.
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: Portuguese, Oporto
+Period: Unknown
+Date Range: 1775–1799
+
+Medium: Silver
+Dimensions: Overall: 8 1/2 × 5 in. (21.6 × 12.7 cm)
+
+Credit Line: Rogers Fund, 1912
+
+---
+
+Artwork Title: Perfume burner
+Object Type: Perfume burner
+Classification: Metalwork-Silver
+
+Artist: A. F. C.
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: Portuguese, Lisbon
+Period: Unknown
+Date Range: 1785–1799
+
+Medium: Silver
+Dimensions: Height: 6 1/2 in. (16.5 cm)
+
+Credit Line: Rogers Fund, 1912
+
+---
+
+Artwork Title: Dish
+Object Type: Dish
+Classification: Metalwork-Silver
+
+Artist: S. D.
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: Portuguese, Oporto
+Period: Unknown
+Date Range: 1700–1799
+
+Medium: Silver
+Dimensions: Diameter: 17 3/8 in. (44.1 cm)
+
+Credit Line: Rogers Fund, 1912
+
+---
+
+Artwork Title: Moses and the Burning Bush and the Coming of the Three Kings
+Object Type: Medal
+Classification: Medals and Plaquettes
+
+Artist: Hans Reinhart the Elder
+Nationality: German
+Lifespan: 1500      –1581      
+
+Cultural Context: German
+Period: Unknown
+Date Range: 1538–1538
+
+Medium: Silver gilt
+Dimensions: Diameter: 2 3/4 in. (70 mm)
+
+Credit Line: Rogers Fund, 1912
+
+---
+
+Artwork Title: The Finding of Moses
+Object Type: Panel
+Classification: Woodwork
+
+Artist: Fra Damiano da Bergamo (Damiano di Antoniolo de Zambelli)|Jacopo [Giacomo] Barozzi da Vignola
+Nationality: Italian|Italian
+Lifespan: 1480      |1507      –1549      |1573      
+
+Cultural Context: Italian
+Period: Unknown
+Date Range: 1500–1599
+
+Medium: Wood
+Dimensions: Overall: 36 × 32 in. (91.4 × 81.3 cm);
+Framed: 40 3/8 × 36 1/4 × 8 in., 128.8 lb. (102.6 × 92.1 × 20.3 cm, 58.4 kg)
+
+Credit Line: Rogers Fund, 1912
+
+---
+
+Artwork Title: Frieze
+Object Type: Frieze
+Classification: Sculpture-Architectural
+
+Artist: Giovanni Dalmata (Giovanni Duknovich di Traù)
+Nationality:  
+Lifespan: 1440      –1509      
+
+Cultural Context: Italian, possibly Rome
+Period: Unknown
+Date Range: 1450–1499
+
+Medium: Marble
+Dimensions: Overall: 16 1/4 × 95 1/2 in. (41.3 × 242.6 cm)
+
+Credit Line: Rogers Fund, 1912
+
+---
+
+Artwork Title: Banquet of the Gods
+Object Type: Plaque
+Classification: Metalwork-Gold and Platinum
+
+Artist: Antonio Gentili (Antonio da Faenza)|Guglielmo della Porta
+Nationality: Italian|Italian
+Lifespan: 1514      |1500      –1610      |1577      
+
+Cultural Context: Italian, Rome
+Period: Unknown
+Date Range: 1585–1699
+
+Medium: Gold, lapis lazuli, carnelian
+Dimensions: Overall: 9 5/8 × 5 1/2 in. (24.4 × 14 cm)
+
+Credit Line: Rogers Fund, 1912
+
+---
+
+Artwork Title: Allegory of Rout and Pillage
+Object Type: Roundel
+Classification: Glass-Stained
+
+Artist: Dirck Vellert
+Nationality: Netherlandish
+Lifespan: 1475      –1552      
+
+Cultural Context: Flemish
+Period: Unknown
+Date Range: 1515–1525
+
+Medium: Colorless glass, vitreous paint and silver stain
+Dimensions: Diameter: 9 3/4 in. (24.8 cm)
+
+Credit Line: Rogers Fund, 1912
+
+---
+
+Artwork Title: Joseph Making Himself Known to His Brethren
+Object Type: Roundel
+Classification: Glass-Stained
+
+Artist: Jan Swart van Groningen
+Nationality: Netherlandish
+Lifespan: 1490      –1553      
+
+Cultural Context: Flemish, Antwerp
+Period: Unknown
+Date Range: 1530–1545
+
+Medium: Stained glass
+Dimensions: Diameter: 10 3/8 in. (26.4 cm)
+
+Credit Line: Rogers Fund, 1912
+
+---
+
+Artwork Title: Longcase clock
+Object Type: Longcase clock
+Classification: Horology
+
+Artist: John Whitehurst
+Nationality: British
+Lifespan: 1713      –1788      
+
+Cultural Context: British, Derby
+Period: Unknown
+Date Range: 1775–1785
+
+Medium: Mahogany inlaid with satinwood
+Dimensions: 94 1/4 × 20 in. (239.4 × 50.8 cm)
+
+Credit Line: Rogers Fund, 1912
+
+---
+
+Artwork Title: Pope Gregory XIII (Ugo Buoncompagni, 1502–1585, pope 1572), Promulger of the Gregorian Calendar
+Object Type: Medal
+Classification: Medals and Plaquettes
+
+Artist: Giovanni V. Melon
+Nationality: Italian
+Lifespan: 1565      –1590      
+
+Cultural Context: Italian, Rome
+Period: Unknown
+Date Range: 1579–1579
+
+Medium: Bronze, cast
+Dimensions: Diameter: 1 3/4 in. (44 mm)
+
+Credit Line: Rogers Fund, 1912
+
+---
+
+Artwork Title: Stand
+Object Type: Stand
+Classification: Ceramics-Pottery
+
+Artist: Whieldon type
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: British, Staffordshire
+Period: Unknown
+Date Range: 1755–1765
+
+Medium: Lead-glazed earthenware (creamware)
+Dimensions: Overall: 10 × 9 in. (25.4 × 22.9 cm)
+
+Credit Line: Rogers Fund, 1912
+
+---
+
+Artwork Title: Dish
+Object Type: Dish
+Classification: Ceramics-Pottery
+
+Artist: John Simpson III
+Nationality:  
+Lifespan: 1685      –1775      
+
+Cultural Context: British, Staffordshire
+Period: Unknown
+Date Range: 1710–1720
+
+Medium: Slipware
+Dimensions: Unknown
+
+Credit Line: Rogers Fund, 1912
+
+---
+
+Artwork Title: Milk jug
+Object Type: Milk jug
+Classification: Ceramics-Pottery
+
+Artist: Whieldon type
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: probably British, Staffordshire
+Period: Unknown
+Date Range: 1745–1775
+
+Medium: Earthenware, glazed
+Dimensions: Height: 5 1/4 in. (13.3 cm)
+
+Credit Line: Rogers Fund, 1912
+
+---
+
+Artwork Title: Shepherds
+Object Type: Group
+Classification: Ceramics-Pottery
+
+Artist: Ralph Wood the Younger
+Nationality: British
+Lifespan: 1748      –1795      
+
+Cultural Context: British, Burslem, Staffordshire
+Period: Unknown
+Date Range: 1765–1775
+
+Medium: Lead-glazed earthenware
+Dimensions: Height: 10 1/8 in. (25.7 cm)
+
+Credit Line: Rogers Fund, 1912
+
+---
+
+Artwork Title: Sauceboat
+Object Type: Sauceboat
+Classification: Ceramics-Pottery
+
+Artist: Ralph Wood the Younger
+Nationality: British
+Lifespan: 1748      –1795      
+
+Cultural Context: probably British, Staffordshire
+Period: Unknown
+Date Range: 1765–1785
+
+Medium: Lead-glazed earthenware
+Dimensions: 4 3/4 × 7 in. (12.1 × 17.8 cm)
+
+Credit Line: Rogers Fund, 1912
+
+---
+
+Artwork Title: St. George and the Dragon
+Object Type: Group
+Classification: Ceramics-Pottery
+
+Artist: Whieldon type|Ralph Wood the Elder
+Nationality:  |British
+Lifespan:           |1715      –          |1772      
+
+Cultural Context: British
+Period: Unknown
+Date Range: 1745–1755
+
+Medium: Glazed pottery
+Dimensions: Overall: 10 5/8 × 8 1/2 in. (27 × 21.6 cm)
+
+Credit Line: Rogers Fund, 1912
+
+---
+
+Artwork Title: Mantel frieze
+Object Type: Mantel frieze
+Classification: Sculpture-Architectural
+
+Artist: Andrea Bregno
+Nationality: Italian
+Lifespan: 1418      –1503      
+
+Cultural Context: Italian, Rome
+Period: Unknown
+Date Range: 1450–1499
+
+Medium: Marble
+Dimensions: Overall: 10 1/8 × 50 1/4 × 6 in. (25.7 × 127.6 × 15.2 cm)
+
+Credit Line: Gift of Henry Walters, 1912
+
+---
+
+Artwork Title: Lammergeier and Serpent
+Object Type: Plaquette
+Classification: Medals and Plaquettes
+
+Artist: Antoine-Louis Barye
+Nationality: French
+Lifespan: 1795      –1875      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1824–1826
+
+Medium: Bronze
+Dimensions: 4 × 5 3/8 in. (10.2 × 13.7 cm)
+
+Credit Line: Rogers Fund, 1912
+
+---
+
+Artwork Title: Eagle and Chamois
+Object Type: Plaquette
+Classification: Medals and Plaquettes
+
+Artist: Antoine-Louis Barye
+Nationality: French
+Lifespan: 1795      –1875      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1824–1826
+
+Medium: Bronze
+Dimensions: 4 × 5 5/8 in. (10.2 × 14.3 cm)
+
+Credit Line: Rogers Fund, 1912
+
+---
+
+Artwork Title: Pointer and Ducks
+Object Type: Plaquette
+Classification: Medals and Plaquettes
+
+Artist: Antoine-Louis Barye
+Nationality: French
+Lifespan: 1795      –1875      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1824–1826
+
+Medium: Bronze
+Dimensions: 4 × 5 5/8 in. (10.2 × 14.3 cm)
+
+Credit Line: Rogers Fund, 1912
+
+---
+
+Artwork Title: Virginia stag
+Object Type: Plaquette
+Classification: Medals and Plaquettes
+
+Artist: Antoine-Louis Barye
+Nationality: French
+Lifespan: 1795      –1875      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1831–1831
+
+Medium: Bronze
+Dimensions: 4 × 5 1/2 in. (10.2 × 14 cm)
+
+Credit Line: Rogers Fund, 1912
+
+---
+
+Artwork Title: Genet dragging a bird
+Object Type: Plaquette
+Classification: Medals and Plaquettes
+
+Artist: Antoine-Louis Barye
+Nationality: French
+Lifespan: 1795      –1875      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1831–1831
+
+Medium: Bronze
+Dimensions: 3 3/8 × 5 1/2 in. (8.6 × 14 cm)
+
+Credit Line: Rogers Fund, 1912
+
+---
+
+Artwork Title: Virginia stag, without antlers, running
+Object Type: Plaquette
+Classification: Medals and Plaquettes
+
+Artist: Antoine-Louis Barye
+Nationality: French
+Lifespan: 1795      –1875      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1831–1831
+
+Medium: Bronze
+Dimensions: 3 3/8 × 5 1/2 in. (8.6 × 14 cm)
+
+Credit Line: Rogers Fund, 1912
+
+---
+
+Artwork Title: Panther walking
+Object Type: Plaquette
+Classification: Medals and Plaquettes
+
+Artist: Antoine-Louis Barye
+Nationality: French
+Lifespan: 1795      –1875      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1831–1831
+
+Medium: Bronze
+Dimensions: 5 1/2 × 3 3/8 in. (14 × 8.6 cm)
+
+Credit Line: Rogers Fund, 1912
+
+---
+
+Artwork Title: Leopard walking
+Object Type: Plaquette
+Classification: Medals and Plaquettes
+
+Artist: Antoine-Louis Barye
+Nationality: French
+Lifespan: 1795      –1875      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1831–1831
+
+Medium: Bronze
+Dimensions: 3 3/8 × 5 1/2 in. (8.6 × 14 cm)
+
+Credit Line: Rogers Fund, 1912
+
+---
+
+Artwork Title: Pair of brackets
+Object Type: Brackets
+Classification: Woodwork
+
+Artist: Antonio Barile
+Nationality: Italian
+Lifespan: 1452      –1516      
+
+Cultural Context: Italian, Siena
+Period: Unknown
+Date Range: 1500–1599
+
+Medium: Walnut, carved and partly gilded
+Dimensions: each: 20 3/4 × 14 3/4 in. (52.7 × 37.5 cm)
+
+Credit Line: Gift of Jacques Seligmann, 1912
+
+---
+
+Artwork Title: Agriculture (for the St. Louis Exposition, 1904)
+Object Type: Token
+Classification: Medals and Plaquettes
+
+Artist: Daniel Jean-Baptiste Dupuis
+Nationality: French
+Lifespan: 1849      –1899      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1904–1904
+
+Medium: Bronze, struck
+Dimensions: Diameter: 1 1/4 in. (3.2 cm)
+
+Credit Line: Gift of Charles P. Senter, 1912
+
+---
+
+Artwork Title: 20-franc piece, Napoleon I
+Object Type: Franc
+Classification: Coins
+
+Artist: Jean-Pierre Droz
+Nationality: French
+Lifespan: 1746      –1823      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1811–1811
+
+Medium: Gold
+Dimensions: Diameter: 3/4 in. (19 mm.)
+
+Credit Line: Gift of John W. Auchincloss, 1912
+
+---
+
+Artwork Title: Clock
+Object Type: Clock
+Classification: Horology
+
+Artist: Rue de Bondy
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: French, Paris
+Period: Unknown
+Date Range: 1700–1799
+
+Medium: Hard-paste biscuit porcelain, gilt bronze
+Dimensions: Height: 14 3/8 in. (36.5 cm)
+
+Credit Line: Bequest of Horatio C. Kretschmar, 1912
+
+---
+
+Artwork Title: War
+Object Type: Figure
+Classification: Ceramics-Porcelain
+
+Artist: Dihl et Guérhard
+Nationality: French
+Lifespan: 1781      –1824      
+
+Cultural Context: French, Paris
+Period: Unknown
+Date Range: 1776–1794
+
+Medium: Hard-paste biscuit porcelain, gilt bronze
+Dimensions: 13 1/8 × 7 1/2 in. (33.3 × 19.1 cm)
+
+Credit Line: Bequest of Horatio C. Kretschmar, 1912
+
+---
+
+Artwork Title: A man in armor and his wife in a long cloak (possibly Huguenots)
+Object Type: Sepulchral effigies
+Classification: Sculpture
+
+Artist: Pietro Paolo Olivieri
+Nationality: Italian
+Lifespan: 1551      –1599      
+
+Cultural Context: Italian, Rome
+Period: Unknown
+Date Range: 1500–1599
+
+Medium: White marble
+Dimensions: Overall: 75 3/4 in. (192.4 cm);
+Overall: 79 1/4 in. (201.3 cm);
+Pedestal: 26 x 43 1/2 x 80 in. (66 x 110.5 x 203.2 cm)
+
+Credit Line: Egleston Fund, 1912
+
+---
+
+Artwork Title: Tankard
+Object Type: Tankard
+Classification: Metalwork-Silver
+
+Artist: Johann Christian Bierpfaf
+Nationality: German
+Lifespan: 1620      –1709      
+
+Cultural Context: Polish, Thorn
+Period: Unknown
+Date Range: 1650–1699
+
+Medium: Silver, parcel gilt
+Dimensions: Height: 8 1/8 in. (20.6 cm)
+
+Credit Line: Rogers Fund, 1912
+
+---
+
+Artwork Title: Cup
+Object Type: Cup
+Classification: Metalwork-Silver
+
+Artist: Elias Adam
+Nationality: German
+Lifespan: 1669      –1745      
+
+Cultural Context: German, Augsburg
+Period: Unknown
+Date Range: 1700–1715
+
+Medium: Silver gilt
+Dimensions: Overall: 2 3/4 × 2 1/2 in. (7 × 6.4 cm)
+
+Credit Line: Rogers Fund, 1912
+
+---
+
+Artwork Title: Beaker
+Object Type: Beaker
+Classification: Metalwork-Silver
+
+Artist: Matthäus Schmidt
+Nationality:  
+Lifespan: 1596      –1696      
+
+Cultural Context: German, Augsburg
+Period: Unknown
+Date Range: 1685–1699
+
+Medium: Silver gilt
+Dimensions: Overall: 3 3/4 × 2 7/8 in. (9.5 × 7.3 cm)
+
+Credit Line: Rogers Fund, 1912
+
+---
+
+Artwork Title: Beaker
+Object Type: Beaker
+Classification: Metalwork-Silver
+
+Artist: Andreas Pauli
+Nationality:  
+Lifespan: 1663      –1669      
+
+Cultural Context: German, Cologne
+Period: Unknown
+Date Range: 1622–1622
+
+Medium: Silver
+Dimensions: Overall: 3 1/4 × 2 5/8 in. (8.3 × 6.7 cm)
+
+Credit Line: Rogers Fund, 1912
+
+---
+
+Artwork Title: Beaker
+Object Type: Beaker
+Classification: Metalwork-Silver
+
+Artist: Georg Reischl
+Nationality:  
+Lifespan: 1600      –1700      
+
+Cultural Context: German, Augsburg
+Period: Unknown
+Date Range: 1665–1676
+
+Medium: Silver gilt
+Dimensions: Overall: 3 7/8 × 3 1/8 in. (9.8 × 7.9 cm)
+
+Credit Line: Rogers Fund, 1912
+
+---
+
+Artwork Title: Beaker
+Object Type: Beaker
+Classification: Metalwork-Silver
+
+Artist: Samuel Schneeweiss
+Nationality:  
+Lifespan: 1597      –1697      
+
+Cultural Context: German, Augsburg
+Period: Unknown
+Date Range: 1670–1675
+
+Medium: Silver gilt
+Dimensions: Overall: 3 1/4 × 2 7/8 in. (8.3 × 7.3 cm)
+
+Credit Line: Rogers Fund, 1912
+
+---
+
+Artwork Title: Beaker
+Object Type: Beaker
+Classification: Metalwork-Silver
+
+Artist: Al'derman Petrov Fiodor
+Nationality: Russian
+Lifespan: 1759      –1784      
+
+Cultural Context: Russian, Moscow
+Period: Unknown
+Date Range: 1777–1777
+
+Medium: Silver
+Dimensions: Overall: 3 × 2 1/2 in. (7.6 × 6.4 cm)
+
+Credit Line: Rogers Fund, 1912
+
+---
+
+Artwork Title: Beaker
+Object Type: Beaker
+Classification: Metalwork-Silver
+
+Artist: F. C., Oporto
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: Portuguese, Oporto
+Period: Unknown
+Date Range: 1805–1815
+
+Medium: Silver
+Dimensions: Overall: 4 1/4 × 3 1/2 in. (10.8 × 8.9 cm)
+
+Credit Line: Rogers Fund, 1912
+
+---
+
+Artwork Title: Beaker
+Object Type: Beaker
+Classification: Metalwork-Silver
+
+Artist: J. R., Lisbon
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: Portuguese, Lisbon
+Period: Unknown
+Date Range: 1785–1799
+
+Medium: Silver, gold lined
+Dimensions: Overall: 3 1/4 × 3 in. (8.3 × 7.6 cm)
+
+Credit Line: Rogers Fund, 1912
+
+---
+
+Artwork Title: Saltcellar
+Object Type: Saltcellar
+Classification: Metalwork-Silverplate
+
+Artist: James Dixon & Sons
+Nationality: British
+Lifespan: 1806      –9999      
+
+Cultural Context: British, Sheffield
+Period: Unknown
+Date Range: 1800–1899
+
+Medium: Sheffield plate
+Dimensions: Overall: 2 × 4 1/2 × 4 in. (5.1 × 11.4 × 10.2 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Saltcellar
+Object Type: Saltcellar
+Classification: Metalwork-Silverplate
+
+Artist: James Dixon & Sons
+Nationality: British
+Lifespan: 1806      –9999      
+
+Cultural Context: British, Sheffield
+Period: Unknown
+Date Range: 1800–1899
+
+Medium: Sheffield plate
+Dimensions: Overall: 2 × 4 1/2 × 4 in. (5.1 × 11.4 × 10.2 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Two saltcellars
+Object Type: Saltcellars
+Classification: Metalwork-Silverplate
+
+Artist: James Dixon & Sons
+Nationality: British
+Lifespan: 1806      –9999      
+
+Cultural Context: British, Sheffield
+Period: Unknown
+Date Range: 1800–1899
+
+Medium: Sheffield plate
+Dimensions: Unknown
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Pair of candlesticks
+Object Type: Candlesticks
+Classification: Metalwork-Silverplate
+
+Artist: John Parsons & Co.
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: British, Sheffield
+Period: Unknown
+Date Range: 1775–1785
+
+Medium: Sheffield plate
+Dimensions: Height (each): 6 in. (15.2 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Young Woman
+Object Type: Mask
+Classification: Sculpture
+
+Artist: Francesco Laurana
+Nationality: Italian, born Croatia
+Lifespan: 1415      –1507      
+
+Cultural Context: probably Southern French
+Period: Unknown
+Date Range: 1470–1480
+
+Medium: Marble
+Dimensions: Overall: 11 1/4 x 6 x 5 in., 13lb. (28.6 x 15.2 x 12.7 cm, 5.9kg)
+
+Credit Line: Gift of Julius Böhler, 1912
+
+---
+
+Artwork Title: Dish
+Object Type: Dish
+Classification: Ceramics-Pottery
+
+Artist: Samuel Malkin
+Nationality:  
+Lifespan: 1668      –1741      
+
+Cultural Context: British, Staffordshire
+Period: Unknown
+Date Range: 1700–1750
+
+Medium: Slipware
+Dimensions: Diameter: 13 1/2 in. (34.3 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Cup
+Object Type: Cup
+Classification: Metalwork-Silver
+
+Artist: M. D. O.
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: Portuguese, Oporto
+Period: Unknown
+Date Range: 1745–1755
+
+Medium: Silver
+Dimensions: Overall: 7 × 4 7/8 in. (17.8 × 12.4 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Dish
+Object Type: Dish
+Classification: Ceramics-Pottery
+
+Artist: Samuel Malkin
+Nationality:  
+Lifespan: 1668      –1741      
+
+Cultural Context: British, Staffordshire
+Period: Unknown
+Date Range: 1700–1799
+
+Medium: Slipware
+Dimensions: Diameter: 12 5/8 in. (32.1 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Punch pot with cover
+Object Type: Punch pot with cover
+Classification: Ceramics-Pottery
+
+Artist: Josiah Wedgwood
+Nationality: British
+Lifespan: 1730      –1795      
+
+Cultural Context: British, possibly Burslem, Staffordshire
+Period: Unknown
+Date Range: 1760–1765
+
+Medium: Red stoneware
+Dimensions: Overall: 9 1/4 × 14 3/8 in. (23.5 × 36.5 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Teapot
+Object Type: Teapot
+Classification: Ceramics-Porcelain
+
+Artist: New Hall
+Nationality:  
+Lifespan: 1781      –1835      
+
+Cultural Context: British, New Hall, Staffordshire
+Period: Unknown
+Date Range: 1785–1795
+
+Medium: Hard-paste porcelain with enamel decoration
+Dimensions: Overall: 6 × 9 1/2 in. (15.2 × 24.1 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Teapot with Aurora riding in her chariot
+Object Type: Teapot
+Classification: Ceramics-Pottery
+
+Artist: William Greatbach
+Nationality: British
+Lifespan: 1735      –1813      
+
+Cultural Context: British, Lane Delph, Staffordshire
+Period: Unknown
+Date Range: 1770–1782
+
+Medium: Creamware
+Dimensions: Overall: 4 3/4 × 8 1/4 in. (12.1 × 21 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Tea caddy
+Object Type: Tea caddy
+Classification: Ceramics-Porcelain
+
+Artist: Lowestoft
+Nationality: British
+Lifespan: 1757      –1803      
+
+Cultural Context: British, Lowestoft
+Period: Unknown
+Date Range: 1755–1765
+
+Medium: Soft-paste porcelain with underglaze blue
+Dimensions: Height: 3 7/8 in. (9.8 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Spoon
+Object Type: Spoon
+Classification: Metalwork-Silver
+
+Artist: Benjamin Watts
+Nationality:  
+Lifespan: 1698      –1727      
+
+Cultural Context: British, London
+Period: Unknown
+Date Range: 1701–1702
+
+Medium: Silver
+Dimensions: Length: 7 7/8 in. (20 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Standing cup
+Object Type: Standing cup
+Classification: Metalwork-Silver
+
+Artist: Michel Mader
+Nationality:  
+Lifespan: 1532      –1632      
+
+Cultural Context: German, Nuremberg
+Period: Unknown
+Date Range: 1600–1615
+
+Medium: Silver gilt
+Dimensions: Overall: 7 × 3 in. (17.8 × 7.6 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Beaker
+Object Type: Beaker
+Classification: Metalwork-Silver
+
+Artist: Conrad Kerstner
+Nationality:  
+Lifespan: 1625      –1702      
+
+Cultural Context: German, Nuremberg
+Period: Unknown
+Date Range: 1650–1699
+
+Medium: Silver gilt
+Dimensions: Overall: 4 × 3 1/2 in. (10.2 × 8.9 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Standing cup
+Object Type: Standing cup
+Classification: Metalwork-Silver
+
+Artist: Johann I Seutter
+Nationality:  
+Lifespan: 1581      –1681      
+
+Cultural Context: German, Augsburg
+Period: Unknown
+Date Range: 1665–1670
+
+Medium: Silver gilt
+Dimensions: Height: 11 1/8 in. (28.3 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Tankard
+Object Type: Tankard
+Classification: Metalwork-Silver
+
+Artist: Johann Schwarz
+Nationality:  
+Lifespan: 1606      –1707      
+
+Cultural Context: German, Königsberg
+Period: Unknown
+Date Range: 1690–1690
+
+Medium: Silver, silver gilt
+Dimensions: Height: 9 in. (22.9 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Candlestick (one of a pair)
+Object Type: Candlestick
+Classification: Metalwork-Silver
+
+Artist: Ludovico Barchi
+Nationality:  
+Lifespan: 1675      –1775      
+
+Cultural Context: Italian, Rome
+Period: Unknown
+Date Range: 1716–1730
+
+Medium: Silver
+Dimensions: Height: 6 3/4 in. (17.1 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Candlestick (one of a pair)
+Object Type: Candlestick
+Classification: Metalwork-Silver
+
+Artist: Ludovico Barchi
+Nationality:  
+Lifespan: 1675      –1775      
+
+Cultural Context: Italian, Rome
+Period: Unknown
+Date Range: 1716–1730
+
+Medium: Silver
+Dimensions: Height: 6 3/4 in. (17.1 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Snuffers and tray
+Object Type: Snuffers and tray
+Classification: Metalwork-Silver
+
+Artist: Ludovico Barchi
+Nationality:  
+Lifespan: 1675      –1775      
+
+Cultural Context: Italian, Rome
+Period: Unknown
+Date Range: 1716–1730
+
+Medium: Silver
+Dimensions: Length (snuffers): 6 1/2 in. (16.5 cm); Overall (tray): 8 × 4 3/4 in. (20.3 × 12.1 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Pair of candlesticks
+Object Type: Candlesticks
+Classification: Metalwork-Silver
+
+Artist: Abraham Ten Brinck
+Nationality:  
+Lifespan: 1716      –1747      
+
+Cultural Context: Dutch, Amsterdam
+Period: Unknown
+Date Range: 1731–1731
+
+Medium: Silver
+Dimensions: Height (each): 7 7/8 in. (20 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Caster
+Object Type: Caster
+Classification: Metalwork-Silver
+
+Artist: Motthijs Croyenschot
+Nationality:  
+Lifespan: 1714      –1796      
+
+Cultural Context: Dutch, Amsterdam
+Period: Unknown
+Date Range: 1769–1769
+
+Medium: Silver
+Dimensions: Height: 8 3/4 in. (22.2 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Candlestick (one of a pair)
+Object Type: Candlestick
+Classification: Metalwork-Silver
+
+Artist: B. N.
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: Dutch, Amsterdam
+Period: Unknown
+Date Range: 1802–1802
+
+Medium: Silver
+Dimensions: Height: 8 1/2 in. (21.6 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Candlesticks (one of a pair)
+Object Type: Candlesticks 
+Classification: Metalwork-Silver
+
+Artist: B. N.
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: Dutch, Amsterdam
+Period: Unknown
+Date Range: 1802–1802
+
+Medium: Silver
+Dimensions: Height: 8 1/2 in. (21.6 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Spoon
+Object Type: Spoon
+Classification: Metalwork-Silver
+
+Artist: Jacob Steen
+Nationality:  
+Lifespan: 1740      –1804      
+
+Cultural Context: Norwegian, Christiania (Oslo)
+Period: Unknown
+Date Range: 1789–1789
+
+Medium: Silver
+Dimensions: Overall: 8 3/8 × 1 13/16 in. (21.3 × 4.6 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Spoon
+Object Type: Spoon
+Classification: Metalwork-Silver
+
+Artist: Jacob Oberlin
+Nationality:  
+Lifespan: 1660      –1670      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1600–1699
+
+Medium: Silver
+Dimensions: Overall: 6 1/2 × 2 1/8 in. (16.5 × 5.4 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Puritan spoon
+Object Type: Spoon
+Classification: Metalwork-Silver
+
+Artist: Stephen Venables
+Nationality:  
+Lifespan: 1635      –1688      
+
+Cultural Context: British, London
+Period: Unknown
+Date Range: 1652–1653
+
+Medium: Silver
+Dimensions: 7 1/4 x 2 in.  (18.4 x 5.1 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Spoon
+Object Type: Spoon
+Classification: Metalwork-Silver
+
+Artist: William Scarlett
+Nationality:  
+Lifespan: 1689      –1697      
+
+Cultural Context: British, London
+Period: Unknown
+Date Range: 1696–1697
+
+Medium: Silver
+Dimensions: Length: 7 1/4 in. (18.4 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Spoon
+Object Type: Spoon
+Classification: Metalwork-Silver
+
+Artist: George Cox
+Nationality:  
+Lifespan: 1698      –1698      
+
+Cultural Context: British, London
+Period: Unknown
+Date Range: 1701–1702
+
+Medium: Silver
+Dimensions: Length: 7 7/8 in. (20 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Spoon
+Object Type: Spoon
+Classification: Metalwork-Silver
+
+Artist: George Cox
+Nationality:  
+Lifespan: 1698      –1698      
+
+Cultural Context: British, London
+Period: Unknown
+Date Range: 1701–1702
+
+Medium: Silver
+Dimensions: Length: 7 7/8 in. (20 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Spoon
+Object Type: Spoon
+Classification: Metalwork-Silver
+
+Artist: Benjamin Watts
+Nationality:  
+Lifespan: 1698      –1727      
+
+Cultural Context: British, London
+Period: Unknown
+Date Range: 1701–1702
+
+Medium: Silver
+Dimensions: Length: 7 7/8 in. (20 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Communion cup
+Object Type: Communion cup
+Classification: Metalwork-Silver
+
+Artist: George Wickes
+Nationality:  
+Lifespan: 1698      –1761      
+
+Cultural Context: British, London
+Period: Unknown
+Date Range: 1733–1734
+
+Medium: Silver gilt
+Dimensions: 7 5/8 × 3 1/4 in. (19.4 × 8.3 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Marrow spoon
+Object Type: Marrow spoon
+Classification: Metalwork-Silver
+
+Artist: Thomas Jackson I
+Nationality:  
+Lifespan: 1736      –1736      
+
+Cultural Context: British, London
+Period: Unknown
+Date Range: 1743–1744
+
+Medium: Silver
+Dimensions: Length: 9 1/2 in. (24.1 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Pair of candlesticks
+Object Type: Candlesticks
+Classification: Metalwork-Silver
+
+Artist: John Cafe
+Nationality:  
+Lifespan: 1742      –1742      
+
+Cultural Context: British, London
+Period: Unknown
+Date Range: 1752–1753
+
+Medium: Silver
+Dimensions: Height (each): 8 1/4 in. (21 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Sauceboat
+Object Type: Sauceboat
+Classification: Metalwork-Silver
+
+Artist: William Sheen
+Nationality:  
+Lifespan: 1755      –1755      
+
+Cultural Context: British, London
+Period: Unknown
+Date Range: 1759–1760
+
+Medium: Silver
+Dimensions: 4 1/4 × 7 1/2 in. (10.8 × 19.1 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Sauceboat
+Object Type: Sauceboat
+Classification: Metalwork-Silver
+
+Artist: Alexander Johnston
+Nationality:  
+Lifespan: 1747      –1747      
+
+Cultural Context: British, London
+Period: Unknown
+Date Range: 1759–1760
+
+Medium: Silver
+Dimensions: 4 × 7 1/4 in. (10.2 × 18.4 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Ladle
+Object Type: Ladle
+Classification: Metalwork-Silver
+
+Artist: John Lambe
+Nationality:  
+Lifespan: 1774      –1796      
+
+Cultural Context: British, London
+Period: Unknown
+Date Range: 1781–1782
+
+Medium: Silver
+Dimensions: Length: 13 in. (33 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Skewer
+Object Type: Skewer
+Classification: Metalwork-Silver
+
+Artist: Samuel Herbert
+Nationality:  
+Lifespan: 1747      –1773      
+
+Cultural Context: British, London
+Period: Unknown
+Date Range: 1760–1761
+
+Medium: Silver
+Dimensions: Overall: 12 × 7/8 in. (30.5 × 2.2 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Dish cross
+Object Type: Dish cross
+Classification: Metalwork-Silver
+
+Artist: Samuel Herbert
+Nationality:  
+Lifespan: 1747      –1773      
+
+Cultural Context: British, London
+Period: Unknown
+Date Range: 1761–1762
+
+Medium: Silver
+Dimensions: 2 3/4 × 10 1/8 in. (7 × 25.7 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Dish cross
+Object Type: Dish cross
+Classification: Metalwork-Silver
+
+Artist: Samuel Herbert
+Nationality:  
+Lifespan: 1747      –1773      
+
+Cultural Context: British, London
+Period: Unknown
+Date Range: 1764–1765
+
+Medium: Silver
+Dimensions: 3 3/4 × 11 1/4 in. (9.5 × 28.6 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Mug
+Object Type: Mug
+Classification: Metalwork-Silver
+
+Artist: W. Parry
+Nationality:  
+Lifespan: 1700      –1800      
+
+Cultural Context: British, Exeter
+Period: Unknown
+Date Range: 1753–1755
+
+Medium: Silver
+Dimensions: Height: 4 7/8 in. (12.4 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Spoon
+Object Type: Spoon
+Classification: Metalwork-Silver
+
+Artist: Michel Hansen Blytt
+Nationality:  
+Lifespan: 1742      –1794      
+
+Cultural Context: Norwegian, Bergen
+Period: Unknown
+Date Range: 1779–1779
+
+Medium: Silver
+Dimensions: Length: 8 1/8 in. (20.6 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Ladle
+Object Type: Ladle
+Classification: Metalwork-Silver
+
+Artist: Thomas Chawner|William Chawner I
+Nationality:  | 
+Lifespan: 1759      |1759      –1759      |1759      
+
+Cultural Context: British, London
+Period: Unknown
+Date Range: 1766–1767
+
+Medium: Silver
+Dimensions: Length: 13 1/8 in. (33.3 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Ladle
+Object Type: Ladle
+Classification: Metalwork-Silver
+
+Artist: Richard Crossley
+Nationality:  
+Lifespan: 1715      –1815      
+
+Cultural Context: British, London
+Period: Unknown
+Date Range: 1796–1797
+
+Medium: Silver
+Dimensions: Length: 13 in. (33 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Vase with cover
+Object Type: Vase with cover
+Classification: Metalwork-Silver
+
+Artist: Joseph William Story|William Elliott
+Nationality:  | 
+Lifespan: 1803      |1754      –1813      |1854      
+
+Cultural Context: British, London
+Period: Unknown
+Date Range: 1811–1812
+
+Medium: Silver
+Dimensions: Height: 14 in. (35.6 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Beaker
+Object Type: Beaker
+Classification: Metalwork-Silver
+
+Artist: Reinhold Riel
+Nationality:  
+Lifespan: 1622      –1681      
+
+Cultural Context: German, Nuremberg
+Period: Unknown
+Date Range: 1650–1699
+
+Medium: Silver gilt
+Dimensions: Overall: 2 3/4 × 2 1/2 in. (7 × 6.4 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Cover or stand
+Object Type: Cover or stand
+Classification: Metalwork-Silver
+
+Artist: Johann Christoph Hünning I
+Nationality:  
+Lifespan: 1637      –1737      
+
+Cultural Context: German, Augsburg
+Period: Unknown
+Date Range: 1700–1715
+
+Medium: Silver gilt
+Dimensions: Diameter: 5 1/8 in. (13 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Beaker
+Object Type: Beaker
+Classification: Metalwork-Silver
+
+Artist: Frans Jans
+Nationality:  
+Lifespan: 1591      –1591      
+
+Cultural Context: Dutch, Sneek
+Period: Unknown
+Date Range: 1615–1620
+
+Medium: Silver
+Dimensions: 5 1/2 × 3 3/4 in. (14 × 9.5 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Porringer
+Object Type: Porringer
+Classification: Metalwork-Silver
+
+Artist: Johann Christoph Hünning I
+Nationality:  
+Lifespan: 1637      –1737      
+
+Cultural Context: German, Augsburg
+Period: Unknown
+Date Range: 1700–1715
+
+Medium: Silver gilt
+Dimensions: Width: 5 1/8 in. (13 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Miniature wine taster or mustard dish
+Object Type: Wine taster or mustard dish
+Classification: Metalwork-Silver
+
+Artist: C S
+Nationality: British
+Lifespan: 1600      –1699      
+
+Cultural Context: British
+Period: Unknown
+Date Range: 1600–1699
+
+Medium: Silver
+Dimensions: Overall: 13/16 × 2 15/16 in. (2.1 × 7.5 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Teapot with cover
+Object Type: Teapot with cover
+Classification: Metalwork-Silver
+
+Artist: Harmanus Nieuwenhuys
+Nationality:  
+Lifespan: 1736      –1763      
+
+Cultural Context: Dutch, Amsterdam
+Period: Unknown
+Date Range: 1743–1743
+
+Medium: Silver, wood
+Dimensions: Height: 6 1/4 in. (15.9 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Beaker
+Object Type: Beaker
+Classification: Metalwork-Silver
+
+Artist: Caspar Olsen Rust
+Nationality:  
+Lifespan: 1746      –1772      
+
+Cultural Context: Norwegian, Trondhjem
+Period: Unknown
+Date Range: 1762–1762
+
+Medium: Silver
+Dimensions: Overall: 2 1/4 × 2 1/4 in. (5.7 × 5.7 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Communion cup with paten cover
+Object Type: Communion cup and paten cover
+Classification: Metalwork-Silver
+
+Artist: John Morley
+Nationality: British
+Lifespan: 1550      –1650      
+
+Cultural Context: British, London
+Period: Unknown
+Date Range: 1591–1592
+
+Medium: Silver
+Dimensions: Overall: 7 × 3 in. (17.8 × 7.6 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Tea caddy
+Object Type: Tea caddy
+Classification: Metalwork-Silver
+
+Artist: Paul de Lamerie
+Nationality: British
+Lifespan: 1688      –1751      
+
+Cultural Context: British, London
+Period: Unknown
+Date Range: 1745–1746
+
+Medium: Silver
+Dimensions: Overall: 5 3/8 × 4 × 2 3/8 in. (13.7 × 10.2 × 6 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Teapot
+Object Type: Teapot
+Classification: Metalwork-Silver
+
+Artist: John Deacon
+Nationality:  
+Lifespan: 1766      –1775      
+
+Cultural Context: British, London
+Period: Unknown
+Date Range: 1769–1770
+
+Medium: Silver
+Dimensions: Height: 6 1/2 in. (16.5 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Sugar bowl
+Object Type: Sugar bowl
+Classification: Metalwork-Silver
+
+Artist: Mary Makemeid
+Nationality:  
+Lifespan: 1773      –1773      
+
+Cultural Context: British, London
+Period: Unknown
+Date Range: 1774–1775
+
+Medium: Silver, glass lining
+Dimensions: Height: 7 1/2 in. (19.1 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Two-handled loving cup with cover
+Object Type: Loving cup with cover
+Classification: Metalwork-Silver
+
+Artist: Samuel Courtland
+Nationality:  
+Lifespan: 1746      –1746      
+
+Cultural Context: British, London
+Period: Unknown
+Date Range: 1760–1761
+
+Medium: Silver
+Dimensions: Height: 14 in. (35.6 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Mug
+Object Type: Mug
+Classification: Metalwork-Silver
+
+Artist: William Grundy
+Nationality:  
+Lifespan: 1743      –1779      
+
+Cultural Context: British, London
+Period: Unknown
+Date Range: 1778–1779
+
+Medium: Silver
+Dimensions: Height: 4 3/4 in. (12.1 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Tea caddy spoon
+Object Type: Tea caddy spoon
+Classification: Metalwork-Silver
+
+Artist: William Hamey
+Nationality:  
+Lifespan: 1765      –1812      
+
+Cultural Context: Irish, Dublin
+Period: Unknown
+Date Range: 1800–1815
+
+Medium: Silver
+Dimensions: Length: 4 3/8 in. (11.1 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Sugar bowl
+Object Type: Sugar bowl
+Classification: Metalwork-Silver
+
+Artist: Samuel Taylor
+Nationality:  
+Lifespan: 1744      –1744      
+
+Cultural Context: British, London
+Period: Unknown
+Date Range: 1751–1752
+
+Medium: Silver
+Dimensions: 5 1/4 × 3 1/4 in. (13.3 × 8.3 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Pair of tea caddies
+Object Type: Tea caddies
+Classification: Metalwork-Silver
+
+Artist: Samuel Taylor
+Nationality:  
+Lifespan: 1744      –1744      
+
+Cultural Context: British, London
+Period: Unknown
+Date Range: 1751–1752
+
+Medium: Silver
+Dimensions: each: 5 3/8 × 3 1/8 in. (13.7 × 7.9 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Sugar bowl
+Object Type: Sugar bowl
+Classification: Metalwork-Silver
+
+Artist: Mary Makemeid
+Nationality:  
+Lifespan: 1773      –1773      
+
+Cultural Context: British, London
+Period: Unknown
+Date Range: 1770–1780
+
+Medium: Silver, glass lining
+Dimensions: Height: 7 1/2 in. (19.1 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Tea caddy spoon
+Object Type: Tea caddy spoon
+Classification: Metalwork-Silver
+
+Artist: John Bettridge
+Nationality:  
+Lifespan: 1817      –1830      
+
+Cultural Context: British, Birmingham
+Period: Unknown
+Date Range: 1819–1820
+
+Medium: Silver
+Dimensions: Length: 3 5/8 in. (9.2 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Fish slice
+Object Type: Fish slice
+Classification: Metalwork-Silver
+
+Artist: Edward Aldridge I|Edward Aldridge II
+Nationality:  | 
+Lifespan: 1724      |1758      –1762      |1781      
+
+Cultural Context: British, London
+Period: Unknown
+Date Range: 1762–1763
+
+Medium: Silver
+Dimensions: Length: 11 3/4 in. (29.8 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Sauceboat
+Object Type: Sauceboat
+Classification: Metalwork-Silver
+
+Artist: Robert Lowe
+Nationality:  
+Lifespan: 1742      –1742      
+
+Cultural Context: Scottish, Edinburgh
+Period: Unknown
+Date Range: 1753–1754
+
+Medium: Silver
+Dimensions: 3 × 8 in. (7.6 × 20.3 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Two-handled cup
+Object Type: Cup
+Classification: Metalwork-Silver
+
+Artist: Matthew West
+Nationality:  
+Lifespan: 1725      –1825      
+
+Cultural Context: Irish, Dublin
+Period: Unknown
+Date Range: 1770–1780
+
+Medium: Silver
+Dimensions: Height: 5 7/8 in. (14.9 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Basket
+Object Type: Basket
+Classification: Metalwork-Silver
+
+Artist: Randall Cashell
+Nationality:  
+Lifespan: 1750      –1850      
+
+Cultural Context: Irish, Dublin
+Period: Unknown
+Date Range: 1798–1799
+
+Medium: Silver
+Dimensions: 8 × 7 1/8 in. (20.3 × 18.1 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Salver
+Object Type: Salver
+Classification: Metalwork-Silver
+
+Artist: William Reynolds
+Nationality:  
+Lifespan: 1725      –1825      
+
+Cultural Context: Irish, Cork
+Period: Unknown
+Date Range: 1765–1775
+
+Medium: Silver
+Dimensions: Diameter: 7 1/8 in. (18.1 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Sugar tongs
+Object Type: Sugar tongs
+Classification: Metalwork-Silver
+
+Artist: Hester Bateman
+Nationality:  
+Lifespan: 1761      –1790      
+
+Cultural Context: British, London
+Period: Unknown
+Date Range: 1774–1776
+
+Medium: Silver
+Dimensions: Length: 5 3/8 in. (13.7 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Strainer spoon
+Object Type: Strainer spoon
+Classification: Metalwork-Silver
+
+Artist: Elias Cachart
+Nationality: British
+Lifespan: 1742      –1752      
+
+Cultural Context: British
+Period: Unknown
+Date Range: 1700–1799
+
+Medium: Silver
+Dimensions: Length: 5 1/2 in. (14 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Strainer spoon
+Object Type: Strainer spoon
+Classification: Metalwork-Silver
+
+Artist: Edward Bennet I
+Nationality:  
+Lifespan: 1727      –1747      
+
+Cultural Context: British
+Period: Unknown
+Date Range: 1700–1799
+
+Medium: Silver
+Dimensions: Length: 5 1/2 in. (14 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Strainer spoon
+Object Type: Strainer spoon
+Classification: Metalwork-Silver
+
+Artist: William Tant
+Nationality:  
+Lifespan: 1762      –1767      
+
+Cultural Context: British
+Period: Unknown
+Date Range: 1700–1799
+
+Medium: Silver
+Dimensions: Length: 5 1/2 in. (14 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Strainer spoon
+Object Type: Strainer spoon
+Classification: Metalwork-Silver
+
+Artist: Elias Cachart
+Nationality: British
+Lifespan: 1742      –1752      
+
+Cultural Context: British
+Period: Unknown
+Date Range: 1700–1799
+
+Medium: Silver
+Dimensions: Length: 5 1/2 in. (14 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Strainer spoon
+Object Type: Strainer spoon
+Classification: Metalwork-Silver
+
+Artist: Dobson Prior and Williams
+Nationality:  
+Lifespan: 1755      –1755      
+
+Cultural Context: British
+Period: Unknown
+Date Range: 1700–1799
+
+Medium: Silver
+Dimensions: Length: 5 1/2 in. (14 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Strainer spoon
+Object Type: Strainer spoon
+Classification: Metalwork-Silver
+
+Artist: James Tookey
+Nationality: British
+Lifespan: 1673      –1773      
+
+Cultural Context: British, London
+Period: Unknown
+Date Range: 1700–1799
+
+Medium: Silver
+Dimensions: Length: 5 1/2 in. (14 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Strainer spoon
+Object Type: Strainer spoon
+Classification: Metalwork-Silver
+
+Artist: Elizabeth Tookey
+Nationality: British
+Lifespan: 1773      –1773      
+
+Cultural Context: British, London
+Period: Unknown
+Date Range: 1700–1799
+
+Medium: Silver
+Dimensions: Length: 5 1/2 in. (14 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Strainer spoon
+Object Type: Strainer spoon
+Classification: Metalwork-Silver
+
+Artist: Elias Cachart
+Nationality: British
+Lifespan: 1742      –1752      
+
+Cultural Context: British, London
+Period: Unknown
+Date Range: 1700–1799
+
+Medium: Silver
+Dimensions: Length: 5 1/2 in. (14 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Strainer spoon
+Object Type: Strainer spoon
+Classification: Metalwork-Silver
+
+Artist: John Perry
+Nationality:  
+Lifespan: 1757      –1779      
+
+Cultural Context: British
+Period: Unknown
+Date Range: 1700–1799
+
+Medium: Silver
+Dimensions: Length: 6 5/8 in. (16.8 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Strainer spoon
+Object Type: Strainer spoon
+Classification: Metalwork-Silver
+
+Artist: William Soame
+Nationality:  
+Lifespan: 1723      –1772      
+
+Cultural Context: British, London
+Period: Unknown
+Date Range: 1700–1799
+
+Medium: Silver
+Dimensions: Length: 5 in. (12.7 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Strainer spoon
+Object Type: Strainer spoon
+Classification: Metalwork-Silver
+
+Artist: Edward Bennet I
+Nationality:  
+Lifespan: 1727      –1747      
+
+Cultural Context: British
+Period: Unknown
+Date Range: 1700–1799
+
+Medium: Silver
+Dimensions: Length: 5 in. (12.7 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Strainer spoon
+Object Type: Strainer spoon
+Classification: Metalwork-Silver
+
+Artist: William Wooller
+Nationality:  
+Lifespan: 1750      –1767      
+
+Cultural Context: British
+Period: Unknown
+Date Range: 1700–1799
+
+Medium: Silver
+Dimensions: Length: 5 in. (12.7 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Seal-top spoon
+Object Type: Spoon
+Classification: Metalwork-Silver
+
+Artist: Robert Matthew
+Nationality:  
+Lifespan: 1622      –1640      
+
+Cultural Context: British, Barnstaple
+Period: Unknown
+Date Range: 1625–1645
+
+Medium: Silver gilt
+Dimensions: 6 3/4 x 1 7/8 in.  (17.1 x 4.8 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Fork
+Object Type: Fork
+Classification: Metalwork-Silver
+
+Artist: Lawrence Coles
+Nationality:  
+Lifespan: 1669      –1714      
+
+Cultural Context: British, London
+Period: Unknown
+Date Range: 1675–1685
+
+Medium: Silver
+Dimensions: 7 1/8 x 15/16 x 3/8 in.  (18.1 x 2.4 x 1 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Fork
+Object Type: Fork
+Classification: Metalwork-Silver
+
+Artist: Girolamo Maltraversi
+Nationality: Italian
+Lifespan: 1698      –1730      
+
+Cultural Context: Italian, Rome
+Period: Unknown
+Date Range: 1700–1730
+
+Medium: Silver
+Dimensions: Length: 6 5/8 in. (16.8 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Knife
+Object Type: Knife
+Classification: Metalwork-Silver
+
+Artist: RG
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: possibly Dutch
+Period: Unknown
+Date Range: 1500–1699
+
+Medium: Steel, silver
+Dimensions: Length: 7 3/8 in. (18.7 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Seal-top spoon
+Object Type: Spoon
+Classification: Metalwork-Silver
+
+Artist: John Lavers
+Nationality:  
+Lifespan: 1600      –1700      
+
+Cultural Context: British, Exeter
+Period: Unknown
+Date Range: 1635–1640
+
+Medium: Silver
+Dimensions: 6 1/2 × 2 1/2 in. (16.5 × 6.4 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Spoon
+Object Type: Spoon
+Classification: Metalwork-Silver
+
+Artist: H. P., London
+Nationality:  
+Lifespan: 1693      –1697      
+
+Cultural Context: British, London
+Period: Unknown
+Date Range: 1696–1697
+
+Medium: Silver
+Dimensions: 7 1/8 x 2 3/4 in.  (18.1 x 7 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Spoon
+Object Type: Spoon
+Classification: Metalwork-Silver
+
+Artist: William Scarlett
+Nationality:  
+Lifespan: 1689      –1697      
+
+Cultural Context: British, London
+Period: Unknown
+Date Range: 1691–1692
+
+Medium: Silver
+Dimensions: 7 1/8 x 2 3/4 in.  (18.1 x 7.0 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Spoon
+Object Type: Spoon
+Classification: Metalwork-Silver
+
+Artist: Lawrence Coles
+Nationality:  
+Lifespan: 1669      –1714      
+
+Cultural Context: British, London
+Period: Unknown
+Date Range: 1691–1692
+
+Medium: Silver
+Dimensions: 7 1/8 x 2 3/4 in.  (18.1 x 7.0 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Spoon
+Object Type: Spoon
+Classification: Metalwork-Silver
+
+Artist: William Scarlett
+Nationality:  
+Lifespan: 1689      –1697      
+
+Cultural Context: British, London
+Period: Unknown
+Date Range: 1697–1698
+
+Medium: Silver
+Dimensions: 7 5/8 x 3 in.  (19.4 x 7.6 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Spoon
+Object Type: Spoon
+Classification: Metalwork-Silver
+
+Artist: Wilke Doncker
+Nationality:  
+Lifespan: 1634      –1636      
+
+Cultural Context: Dutch, Dokkum
+Period: Unknown
+Date Range: 1634–1636
+
+Medium: Silver
+Dimensions: Overall: 7 5/16 × 2 1/8 in. (18.6 × 5.4 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Sugar spoon
+Object Type: Sugar spoon
+Classification: Metalwork-Silver
+
+Artist: Jan Pereboom
+Nationality:  
+Lifespan: 1725      –1805      
+
+Cultural Context: Dutch, Leeuwarden
+Period: Unknown
+Date Range: 1775–1799
+
+Medium: Silver
+Dimensions: Overall: 6 15/16 × 5 15/16 in. (17.6 × 15.1 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Ladle
+Object Type: Ladle
+Classification: Metalwork-Silver
+
+Artist: John Wirgman
+Nationality:  
+Lifespan: 1745      –1745      
+
+Cultural Context: British, London
+Period: Unknown
+Date Range: 1758–1759
+
+Medium: Silver
+Dimensions: Length: 15 7/8 in. (40.3 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Spoon
+Object Type: Spoon
+Classification: Metalwork-Silver
+
+Artist: Robert King
+Nationality:  
+Lifespan: 1671      –1685      
+
+Cultural Context: British, London
+Period: Unknown
+Date Range: 1671–1672
+
+Medium: Silver
+Dimensions: 8 1/8 x 2 1/4 in.  (20.6 x 5.7 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Spoon
+Object Type: Spoon
+Classification: Metalwork-Silver
+
+Artist: Ole Olsen
+Nationality:  
+Lifespan: 1707      –1741      
+
+Cultural Context: Norwegian, Kagerø
+Period: Unknown
+Date Range: 1703–1713
+
+Medium: Silver
+Dimensions: Overall: 6 1/2 × 2 in. (16.5 × 5.1 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Spoon
+Object Type: Spoon
+Classification: Metalwork-Silver
+
+Artist: Thomas Cory
+Nationality: British
+Lifespan: 1655      –1689      
+
+Cultural Context: British, London
+Period: Unknown
+Date Range: 1688–1689
+
+Medium: Silver
+Dimensions: 7 5/8 x 1 3/4 in.  (19.4 x 4.4 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Spoon
+Object Type: Spoon
+Classification: Metalwork-Silver
+
+Artist: Benjamin Prosser
+Nationality:  
+Lifespan: 1667      –1680      
+
+Cultural Context: British, London
+Period: Unknown
+Date Range: 1680–1681
+
+Medium: Silver
+Dimensions: 7 1/2 x 1 7/8 in.  (19.1 x 4.8 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Spoon
+Object Type: Spoon
+Classification: Metalwork-Silver
+
+Artist: Timothy Skottowe
+Nationality:  
+Lifespan: 1600      –1700      
+
+Cultural Context: British, possibly Lincoln or Welsh
+Period: Unknown
+Date Range: 1645–1655
+
+Medium: Silver
+Dimensions: 8 1/8 x 1 7/8 in.  (20.6 x 4.8 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Spoon
+Object Type: Spoon
+Classification: Metalwork-Silver
+
+Artist: William Scarlett
+Nationality:  
+Lifespan: 1689      –1697      
+
+Cultural Context: British, London
+Period: Unknown
+Date Range: 1694–1695
+
+Medium: Silver
+Dimensions: 7 7/8 x 1 3/4 in.  (20.0 x 4.4 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Spoon
+Object Type: Spoon
+Classification: Metalwork-Silver
+
+Artist: I. G., London
+Nationality:  
+Lifespan: 1695      –1696      
+
+Cultural Context: British, London
+Period: Unknown
+Date Range: 1695–1696
+
+Medium: Silver
+Dimensions: 6 3/4 x 2 in.  (17.1 x 5.1 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Spoon
+Object Type: Spoon
+Classification: Metalwork-Silver
+
+Artist: Thomas Nilsen
+Nationality:  
+Lifespan: 1634      –1674      
+
+Cultural Context: Danish, Køge, Sjaelland
+Period: Unknown
+Date Range: 1650–1675
+
+Medium: Silver
+Dimensions: 7 1/4 × 2 1/4 in. (18.4 × 5.7 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Apostle spoon
+Object Type: Apostle spoon
+Classification: Metalwork-Silver
+
+Artist: Johannes I Weber
+Nationality:  
+Lifespan: 1580      –1680      
+
+Cultural Context: Swiss, Zurich
+Period: Unknown
+Date Range: 1665–1685
+
+Medium: Silver
+Dimensions: Overall: 6 3/8 × 1 3/4 in. (16.2 × 4.4 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Seal-top spoon
+Object Type: Spoon
+Classification: Metalwork-Silver
+
+Artist: Robert Beckwith
+Nationality:  
+Lifespan: 1525      –1625      
+
+Cultural Context: British, York
+Period: Unknown
+Date Range: 1574–1575
+
+Medium: Silver
+Dimensions: 5 7/8 × 1 7/8 in. (14.9 × 4.8 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Spoon
+Object Type: Spoon
+Classification: Metalwork-Silver
+
+Artist: Elizabeth Hazelwood
+Nationality:  
+Lifespan: 1688      –1697      
+
+Cultural Context: British, Norwich
+Period: Unknown
+Date Range: 1696–1696
+
+Medium: Silver
+Dimensions: 7 1/2 x 1 3/4 in.  (19.1 x 4.4 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Spoon
+Object Type: Spoon
+Classification: Metalwork-Silver
+
+Artist: William Scarlett
+Nationality:  
+Lifespan: 1689      –1697      
+
+Cultural Context: British, London
+Period: Unknown
+Date Range: 1675–1695
+
+Medium: Silver
+Dimensions: 7 7/8 x 1 3/4 in.  (20 x 4.4 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Spoon
+Object Type: Spoon
+Classification: Metalwork-Silver
+
+Artist: Lawrence Coles
+Nationality:  
+Lifespan: 1669      –1714      
+
+Cultural Context: British, London
+Period: Unknown
+Date Range: 1698–1699
+
+Medium: Silver
+Dimensions: 6 1/8 x 1 3/8 in.  (15.6 x 3.5 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Spoon
+Object Type: Spoon
+Classification: Metalwork-Silver
+
+Artist: Michael Hafner
+Nationality:  
+Lifespan: 1665      –1700      
+
+Cultural Context: German, Augsburg
+Period: Unknown
+Date Range: 1674–1674
+
+Medium: Silver gilt
+Dimensions: Overall: 6 9/16 × 1 13/16 in. (16.7 × 4.6 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Spoon
+Object Type: Spoon
+Classification: Metalwork-Silver
+
+Artist: Hendrick Jansen Sympa
+Nationality:  
+Lifespan: 1657      –1669      
+
+Cultural Context: Dutch, Dokkum
+Period: Unknown
+Date Range: 1655–1674
+
+Medium: Silver
+Dimensions: Overall: 6 5/8 × 1 15/16 in. (16.8 × 4.9 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Coffee spoon (one of a pair)
+Object Type: Coffee spoon
+Classification: Metalwork-Silver
+
+Artist: W. J., England|William Tant
+Nationality:  | 
+Lifespan:           |1762      –          |1767      
+
+Cultural Context: British
+Period: Unknown
+Date Range: 1761–1771
+
+Medium: Silver
+Dimensions: 4 1/2 × 7/8 in. (11.4 × 2.2 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Figure-top spoon
+Object Type: Spoon
+Classification: Metalwork-Silver
+
+Artist: Johannes Andringa
+Nationality:  
+Lifespan: 1722      –1769      
+
+Cultural Context: Dutch, Leeuwarden
+Period: Unknown
+Date Range: 1730–1765
+
+Medium: Silver
+Dimensions: Overall: 7 1/16 × 1 11/16 in. (17.9 × 4.3 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Spoon
+Object Type: Spoon
+Classification: Metalwork-Silver
+
+Artist: Marcantonio Landi
+Nationality:  
+Lifespan: 1716      –1720      
+
+Cultural Context: Italian, Rome
+Period: Unknown
+Date Range: 1716–1720
+
+Medium: Silver
+Dimensions: Overall: 6 7/8 × 1 7/8 in. (17.5 × 4.8 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Spoon
+Object Type: Spoon
+Classification: Metalwork-Silver
+
+Artist: Leonhard Rothaer I
+Nationality:  
+Lifespan: 1671      –1690      
+
+Cultural Context: German, Hamburg
+Period: Unknown
+Date Range: 1685–1699
+
+Medium: Silver gilt
+Dimensions: Overall: 7 1/8 × 2 1/4 in. (18.1 × 5.7 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Ball-knopped spoon
+Object Type: Spoon
+Classification: Metalwork-Silver
+
+Artist: Hans Möller
+Nationality:  
+Lifespan: 1612      –1663      
+
+Cultural Context: German, Königsberg
+Period: Unknown
+Date Range: 1630–1665
+
+Medium: Silver
+Dimensions: Overall: 5 1/2 × 2 1/4 in. (14 × 5.7 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Rattle spoon
+Object Type: Rattle spoon
+Classification: Metalwork-Silver
+
+Artist: Hans Johansson Stadius
+Nationality:  
+Lifespan: 1713      –1722      
+
+Cultural Context: Swedish, Karlskrona
+Period: Unknown
+Date Range: 1720–1720
+
+Medium: Silver, parcel gilt
+Dimensions: Overall: 4 7/8 × 2 3/8 in. (12.4 × 6 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Spoon
+Object Type: Spoon
+Classification: Metalwork-Silver
+
+Artist: Johan Svensson Berg
+Nationality:  
+Lifespan: 1719      –1745      
+
+Cultural Context: Swedish, Norrkoping
+Period: Unknown
+Date Range: 1725–1750
+
+Medium: Silver
+Dimensions: Overall: 5 7/16 × 2 1/16 in. (13.8 × 5.2 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Pipe spoon
+Object Type: Spoon
+Classification: Metalwork-Silver
+
+Artist: J. van den Berg
+Nationality:  
+Lifespan: 1812      –1837      
+
+Cultural Context: possibly Dutch, Schoonhoven
+Period: Unknown
+Date Range: 1800–1825
+
+Medium: Silver
+Dimensions: Overall: 4 1/2 × 11/16 in. (11.4 × 1.7 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Spoon
+Object Type: Spoon
+Classification: Metalwork-Silver
+
+Artist: Toebias Jansen I|Tobias Jansen Kremer
+Nationality:  | 
+Lifespan: 1597      |1635      –1640      |1650      
+
+Cultural Context: German, Emden
+Period: Unknown
+Date Range: 1634–1634
+
+Medium: Silver
+Dimensions: Overall: 7 1/4 × 2 1/4 in. (18.4 × 5.7 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Fruitlet spoon
+Object Type: Fruitlet spoon
+Classification: Metalwork-Silver
+
+Artist: Lukas Andersen Steen
+Nationality:  
+Lifespan: 1619      –1658      
+
+Cultural Context: Norwegian, Bergen
+Period: Unknown
+Date Range: 1600–1650
+
+Medium: Silver
+Dimensions: Overall: 7 × 2 1/8 × 7/8 in. (17.8 × 5.4 × 2.2 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Coffee spoon (one of a pair)
+Object Type: Coffee spoon
+Classification: Metalwork-Silver
+
+Artist: W. J., England|William Tant
+Nationality:  | 
+Lifespan:           |1762      –          |1767      
+
+Cultural Context: British
+Period: Unknown
+Date Range: 1766–1777
+
+Medium: Silver
+Dimensions: 4 1/2 × 7/8 in. (11.4 × 2.2 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Cup and saucer
+Object Type: Cup and saucer
+Classification: Ceramics-Porcelain
+
+Artist: Meissen Manufactory
+Nationality: German
+Lifespan: 1710      –9999      
+
+Cultural Context: German, Meissen
+Period: Unknown
+Date Range: 1763–1774
+
+Medium: Hard-paste porcelain
+Dimensions: Height (Cup (.1a)): 1 3/4 in. (4.4 cm);
+Diameter (Saucer (.1b)): 5 1/4 in. (13.3 cm)
+
+Credit Line: Gift of Rev. Alfred Duane Pell, 1913
+
+---
+
+Artwork Title: Cup
+Object Type: Cup
+Classification: Ceramics-Porcelain
+
+Artist: Meissen Manufactory|Marcolini Period
+Nationality: German| 
+Lifespan: 1710      |1736      –9999      |1836      
+
+Cultural Context: German, Meissen
+Period: Unknown
+Date Range: 1785–1799
+
+Medium: Hard-paste porcelain
+Dimensions: H. 2 1/2 in. (6.3 cm.)
+
+Credit Line: Gift of Rev. Alfred Duane Pell, 1913
+
+---
+
+Artwork Title: Saucer
+Object Type: Saucer
+Classification: Ceramics-Porcelain
+
+Artist: Meissen Manufactory|Marcolini Period
+Nationality: German| 
+Lifespan: 1710      |1736      –9999      |1836      
+
+Cultural Context: German, Meissen
+Period: Unknown
+Date Range: 1785–1799
+
+Medium: Hard-paste porcelain
+Dimensions: Diam. 5 1/4 in. (13.3 cm.)
+
+Credit Line: Gift of Rev. Alfred Duane Pell, 1913
+
+---
+
+Artwork Title: Cup and saucer
+Object Type: Cup and saucer
+Classification: Ceramics-Porcelain
+
+Artist: The Hague
+Nationality: Dutch
+Lifespan:           –          
+
+Cultural Context: Dutch, The Hague
+Period: Unknown
+Date Range: 1771–1785
+
+Medium: Hard-paste porcelain
+Dimensions: Cup (a): H. 2 in. (5.1 cm.); 
+Saucer (b): W. 5-1/8 in. (13.0 cm.)
+
+Credit Line: Gift of Rev. Alfred Duane Pell, 1913
+
+---
+
+Artwork Title: Cup and saucer
+Object Type: Cup and saucer
+Classification: Ceramics-Porcelain
+
+Artist: The Hague
+Nationality: Dutch
+Lifespan:           –          
+
+Cultural Context: Dutch, The Hague
+Period: Unknown
+Date Range: 1780–1795
+
+Medium: Hard-paste porcelain
+Dimensions: Height (Cup): 1 7/8 in. (4.8 cm);
+Diameter (Saucer): 5 1/4 in. (13.3 cm)
+
+Credit Line: Gift of Rev. Alfred Duane Pell, 1913
+
+---
+
+Artwork Title: Plate
+Object Type: Plate
+Classification: Ceramics-Porcelain
+
+Artist: The Hague
+Nationality: Dutch
+Lifespan:           –          
+
+Cultural Context: Dutch, The Hague
+Period: Unknown
+Date Range: 1775–1790
+
+Medium: Hard-paste porcelain
+Dimensions: Diameter: 11 1/4 in. (28.6 cm)
+
+Credit Line: Gift of Rev. Alfred Duane Pell, 1913
+
+---
+
+Artwork Title: Plate
+Object Type: Plate
+Classification: Ceramics-Porcelain
+
+Artist: Tournai
+Nationality: Belgian
+Lifespan:           –          
+
+Cultural Context: Belgian, Tournai
+Period: Unknown
+Date Range: 1770–1790
+
+Medium: Soft-paste porcelain
+Dimensions: Diameter: 9 3/4 in. (24.8 cm)
+
+Credit Line: Gift of Alfred Duane Pell, 1913
+
+---
+
+Artwork Title: Plate
+Object Type: Plate
+Classification: Ceramics-Porcelain
+
+Artist: Tournai
+Nationality: Belgian
+Lifespan:           –          
+
+Cultural Context: Belgian, Tournai
+Period: Unknown
+Date Range: 1765–1780
+
+Medium: Soft-paste porcelain
+Dimensions: Diameter: 9 1/2 in. (24.1 cm)
+
+Credit Line: Gift of Alfred Duane Pell, 1913
+
+---
+
+Artwork Title: Toilet jar
+Object Type: Toilet jar
+Classification: Ceramics-Porcelain
+
+Artist: Sceaux
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: French, Sceaux
+Period: Unknown
+Date Range: 1770–1785
+
+Medium: Soft-paste porcelain
+Dimensions: Height: 3 15/16 in. (10 cm)
+
+Credit Line: Gift of Rev. Alfred Duane Pell, 1913
+
+---
+
+Artwork Title: The Lincoln Centenary
+Object Type: Plaquette
+Classification: Medals and Plaquettes
+
+Artist: Jules Edouard Roiné
+Nationality: French
+Lifespan: 1857      –1916      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1909–1909
+
+Medium: Bronze, struck
+Dimensions: 4 × 2 7/8 in. (10.2 × 7.3 cm)
+
+Credit Line: Gift of Edward D. Adams, 1913
+
+---
+
+Artwork Title: Breton Peasant Woman
+Object Type: Bust
+Classification: Sculpture
+
+Artist: Aimé-Jules Dalou
+Nationality: French
+Lifespan: 1838      –1902      
+
+Cultural Context: French, Paris
+Period: Unknown
+Date Range: 1880–1889
+
+Medium: Terracotta; socle: red marble
+Dimensions: Height: 9 1/2 in. (24.1 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Marcantonio Passeri (1491–1565), Professor of Philosophy in the University of Padua
+Object Type: Medal
+Classification: Medals and Plaquettes
+
+Artist: Giovanni del Cavino
+Nationality: Italian
+Lifespan: 1500      –1570      
+
+Cultural Context: Italian, Padua
+Period: Unknown
+Date Range: 1530–1565
+
+Medium: Bronze, struck
+Dimensions: Diameter: 1 1/2 in. (38 mm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Hercules I (d'Este), Second Duke of Ferrara (1431–1505)
+Object Type: Medal
+Classification: Medals and Plaquettes
+
+Artist: Giovanni Antonio da Foligno
+Nationality: Italian
+Lifespan: 1472      –          
+
+Cultural Context: Italian
+Period: Unknown
+Date Range: 1485–1499
+
+Medium: Bronze
+Dimensions: Diameter: 3 1/2 in. (89 mm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Ranuccio II (Farnese), 6th Duke of Parma and Piacenza (b. 1630, r. 1646–94)
+Object Type: Medal
+Classification: Medals and Plaquettes
+
+Artist: Gasparo Morone
+Nationality: Italian
+Lifespan: 1569      –1669      
+
+Cultural Context: Italian, Rome
+Period: Unknown
+Date Range: 1685–1699
+
+Medium: Bronze
+Dimensions: Diameter: 4 3/8 in. (11.1 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Giovanni Caroto (1495?–1555), Veronese Painter
+Object Type: Medal
+Classification: Medals and Plaquettes
+
+Artist: Giulio della Torre
+Nationality:  
+Lifespan: 1481      –1562      
+
+Cultural Context: Italian
+Period: Unknown
+Date Range: 1500–1599
+
+Medium: Bronze
+Dimensions: Diameter: 2 3/4 in. (70 mm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Lodovico Ariosto of Ferrara (1474–1533)
+Object Type: Medal
+Classification: Medals and Plaquettes
+
+Artist: Pastorino di Giovan Michele de' Pastorini
+Nationality:  
+Lifespan: 1508      –1592      
+
+Cultural Context: Italian, possibly Ferrara
+Period: Unknown
+Date Range: 1550–1560
+
+Medium: Bronze
+Dimensions: Diameter: 1 1/2 in. (38 mm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Story of Phaeton
+Object Type: Plaquette
+Classification: Medals and Plaquettes
+
+Artist: Guglielmo della Porta
+Nationality: Italian
+Lifespan: 1500      –1577      
+
+Cultural Context: Italian
+Period: Unknown
+Date Range: 1585–1615
+
+Medium: Bronze
+Dimensions: Diameter: 5 in. (12.7 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Flaying of Marsyas
+Object Type: Plaquette
+Classification: Medals and Plaquettes
+
+Artist: Guglielmo della Porta
+Nationality: Italian
+Lifespan: 1500      –1577      
+
+Cultural Context: Italian
+Period: Unknown
+Date Range: 1585–1615
+
+Medium: Bronze
+Dimensions: Diameter: 5 in. (12.7 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Adoration of the Shepherds
+Object Type: Plaquette
+Classification: Medals and Plaquettes
+
+Artist: Valerio Belli (Il Vicentino)
+Nationality:  
+Lifespan: 1468      –1546      
+
+Cultural Context: Italian, Vicenza
+Period: Unknown
+Date Range: 1500–1599
+
+Medium: Bronze
+Dimensions: 2 1/2 × 2 in. (6.4 × 5.1 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Virgin and Child Enthroned with Saints Anthony Abbot and Jerome
+Object Type: Plaquette
+Classification: Medals and Plaquettes
+
+Artist: Moderno (Galeazzo Mondella)
+Nationality: Italian
+Lifespan: 1467      –1528      
+
+Cultural Context: Italian, Verona
+Period: Unknown
+Date Range: 1485–1495
+
+Medium: Partially gilt silver
+Dimensions: 4 1/2 × 2 1/2 in. (11.4 × 6.4 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Candlestick
+Object Type: Candlestick
+Classification: Metalwork-Silver
+
+Artist: Jean-François Balzac
+Nationality:  
+Lifespan: 1711      –1766      
+
+Cultural Context: French, Paris
+Period: Unknown
+Date Range: 1756–1757
+
+Medium: Silver
+Dimensions: Overall: 10 × 5 7/8 in. (25.4 × 14.9 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Pair of candlesticks
+Object Type: Candlesticks
+Classification: Metalwork-Silver
+
+Artist: Andrés Goicoechea
+Nationality:  
+Lifespan: 1760      –1770      
+
+Cultural Context: Spanish, Zaragoza
+Period: Unknown
+Date Range: 1745–1755
+
+Medium: Silver
+Dimensions: Overall: 7 7/8 × 4 7/8 in. (20 × 12.4 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Snuffers tray
+Object Type: Snuffers tray
+Classification: Metalwork-Silver
+
+Artist: Vicente Gavilanis
+Nationality:  
+Lifespan: 1747      –1754      
+
+Cultural Context: Spanish, Madrid
+Period: Unknown
+Date Range: 1754–1754
+
+Medium: Silver
+Dimensions: Overall: 2 × 4 3/4 × 7 3/4 in. (5.1 × 12.1 × 19.7 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Snuffers
+Object Type: Snuffers
+Classification: Metalwork-Silver
+
+Artist: Vicente Gavilanis
+Nationality:  
+Lifespan: 1747      –1754      
+
+Cultural Context: Spanish, Madrid
+Period: Unknown
+Date Range: 1754–1754
+
+Medium: Silver
+Dimensions: Overall: 6 5/8 × 2 3/4 in. (16.8 × 7 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Judith
+Object Type: Relief
+Classification: Sculpture
+
+Artist: Giovanni Antonio Amadeo
+Nationality: Italian
+Lifespan: 1447      –1522      
+
+Cultural Context: Italian, Lombardy
+Period: Unknown
+Date Range: 1485–1515
+
+Medium: Marble
+Dimensions: 21 7/8 × 8 in. (55.6 × 20.3 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: A man
+Object Type: Head
+Classification: Sculpture
+
+Artist: Guido Mazzoni
+Nationality: Italian
+Lifespan: 1445      –1518      
+
+Cultural Context: Italian, Bologna
+Period: Unknown
+Date Range: 1500–1599
+
+Medium: Terracotta
+Dimensions: Height: 11 in. (27.9 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Reclining female figure
+Object Type: Statuette
+Classification: Sculpture-Bronze
+
+Artist: Guglielmo della Porta
+Nationality: Italian
+Lifespan: 1500      –1577      
+
+Cultural Context: Southern Germany
+Period: Unknown
+Date Range: 1575–1599
+
+Medium: Bronze
+Dimensions: 4 1/2 × 8 in. (11.4 × 20.3 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Hercules and Antaeus
+Object Type: Statuette group
+Classification: Sculpture
+
+Artist: Giambologna
+Nationality: Netherlandish
+Lifespan: 1529      –1608      
+
+Cultural Context: Italian, Florence
+Period: Unknown
+Date Range: 1500–1599
+
+Medium: Terracotta
+Dimensions: Height: 35 1/2 in. (90.2 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Madonna and Child
+Object Type: Statuette
+Classification: Sculpture
+
+Artist: Giuseppe Mazza
+Nationality: Italian
+Lifespan: 1653      –1741      
+
+Cultural Context: Italian, Bologna
+Period: Unknown
+Date Range: 1700–1799
+
+Medium: Terracotta, polychromed and gilt
+Dimensions: Height: 18 3/4 in. (47.6 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Madonna and Child
+Object Type: Statuette
+Classification: Sculpture
+
+Artist: Giovanni Maria Morlaiter
+Nationality: Italian
+Lifespan: 1699      –1781      
+
+Cultural Context: Italian, Venice
+Period: Unknown
+Date Range: 1730–1765
+
+Medium: Terracotta
+Dimensions: Height: 22 in. (55.9 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: George Wyndham
+Object Type: Bust
+Classification: Sculpture-Bronze
+
+Artist: Auguste Rodin|Alexis Rudier
+Nationality: French|French
+Lifespan: 1840      |          –1917      |          
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1904–1904
+
+Medium: Bronze
+Dimensions: Height: 16 1/4 in. (41.3 cm)
+
+Credit Line: Gift of Thomas F. Ryan, 1913
+
+---
+
+Artwork Title: For Rumson County Club
+Object Type: Plaquette
+Classification: Medals and Plaquettes
+
+Artist: Rudolph Ferdinand Marschall
+Nationality: Austrian
+Lifespan: 1873      –1967      
+
+Cultural Context: Austrian
+Period: Unknown
+Date Range: 1900–1999
+
+Medium: Bronze, cast
+Dimensions: 5 1/2 × 6 1/2 in. (14 × 16.5 cm)
+
+Credit Line: Gift of Edward D. Adams, 1913
+
+---
+
+Artwork Title: Calendar watch
+Object Type: Calendar watch
+Classification: Horology
+
+Artist: Gabriel-Joseph Moillet
+Nationality:  
+Lifespan: 1681      –1757      
+
+Cultural Context: British, London
+Period: Unknown
+Date Range: 1725–1750
+
+Medium: Silver
+Dimensions: Diameter: 2 in. (5.1 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Cordial glasses (3)
+Object Type: Cordial glasses
+Classification: Unknown
+
+Artist: Henry William Stiegel
+Nationality: American, born Germany
+Lifespan: 1729      –1785      
+
+Cultural Context: probably provincial British
+Period: Unknown
+Date Range: 1700–1799
+
+Medium: Glass
+Dimensions: H. of each: 4 in.  (10.2 cm)
+
+Credit Line: Gift of F.W. Hunter, 1913
+
+---
+
+Artwork Title: Woman at Her Toilet
+Object Type: Statuette
+Classification: Sculpture-Bronze
+
+Artist: Jane Poupelet
+Nationality: French
+Lifespan: 1874      –1932      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1909–1909
+
+Medium: Bronze
+Dimensions: Overall: 15 1/2 × 23 3/4 in. (39.4 × 60.3 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Madonna and Child
+Object Type: Relief
+Classification: Sculpture
+
+Artist: Pietro Lombardo (or Pietro di Martino da Carona)
+Nationality: Italian
+Lifespan: 1435      –1515      
+
+Cultural Context: Italian, Venice
+Period: Unknown
+Date Range: 1490–1500
+
+Medium: Relief: stone, traces of gilding; Frame: stone painted blue and gilded in parts
+Dimensions: Overall (confirmed, without frame): 31 1/4 × 20 1/4 in., 150.8 lb. (79.4 × 51.4 cm, 68.4 kg)
+
+Credit Line: Frederick C. Hewitt Fund, 1913
+
+---
+
+Artwork Title: The Martyr
+Object Type: Statue
+Classification: Sculpture-Bronze
+
+Artist: Auguste Rodin
+Nationality: French
+Lifespan: 1840      –1917      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1885–1885
+
+Medium: Bronze
+Dimensions: Length: 61 1/2 in. (156.2 cm)
+
+Credit Line: Gift of Watson B. Dickerman, 1913
+
+---
+
+Artwork Title: Ewer and basin
+Object Type: Ewer and basin
+Classification: Metalwork-Silver
+
+Artist: A. D.
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: Portuguese, Oporto
+Period: Unknown
+Date Range: 1750–1799
+
+Medium: Silver
+Dimensions: Height (ewer): 11 1/4 in. (28.6 cm);
+Overall (basin): 13 3/4 × 12 3/4 in. (34.9 × 32.4 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Dish
+Object Type: Dish
+Classification: Metalwork-Silver
+
+Artist: I. L.
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: Portuguese, Lisbon
+Period: Unknown
+Date Range: 1700–1799
+
+Medium: Silver
+Dimensions: Overall: 2 × 11 3/4 in. (5.1 × 29.8 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Joel Barlow (1754–1812)
+Object Type: Bust
+Classification: Sculpture-Reproductions-Casts
+
+Artist: Jean Antoine Houdon
+Nationality: French
+Lifespan: 1741      –1828      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1700–1799
+
+Medium: Plaster
+Dimensions: H. 27 3/4 in. (70.5 cm.)
+
+Credit Line: Gift of Peter T. Barlow, 1914
+
+---
+
+Artwork Title: Pietà
+Object Type: Group
+Classification: Sculpture
+
+Artist: Giovanni della Robbia
+Nationality: Italian
+Lifespan: 1469      –1530      
+
+Cultural Context: Italian, Florence
+Period: Unknown
+Date Range: 1500–1515
+
+Medium: Terracotta, painted
+Dimensions: Overall: 40 1/2 × 67 3/8 in. (102.9 × 171.1 cm)
+
+Credit Line: Frederick C. Hewitt Fund, 1913
+
+---
+
+Artwork Title: Intaglio
+Object Type: Intaglio
+Classification: Ceramics-Pottery
+
+Artist: Josiah Wedgwood
+Nationality: British
+Lifespan: 1730      –1795      
+
+Cultural Context: British, Etruria, Staffordshire
+Period: Unknown
+Date Range: 1700–1799
+
+Medium: Jasperware
+Dimensions: Height: 13/16 in. (2.1 cm)
+
+Credit Line: Rogers Fund, 1914
+
+---
+
+Artwork Title: Cassone with painted front panel depicting the Conquest of Trebizond
+Object Type: Cassone
+Classification: Woodwork-Furniture|Paintings
+
+Artist: Apollonio di Giovanni di Tomaso|Marco del Buono Giamberti
+Nationality: Italian|Italian
+Lifespan: 1416      |1402      –1465      |1489      
+
+Cultural Context: Italian, Florence
+Period: Unknown
+Date Range: 1456–1499
+
+Medium: Poplar wood, linen, polychromed and gilded gesso with panel painted in tempera and gold
+Dimensions: H. 39-1/2 x W. 77 x D. 32-7/8 in.  (100.3 x 195.6 x 83.5 cm); Painted surface 15 1/4 x 49 1/2 in. (38.7 x 125.7 cm)
+
+Credit Line: John Stewart Kennedy Fund, 1914
+
+---
+
+Artwork Title: Holy-water stoup
+Object Type: Holy-water stoup
+Classification: Natural Substances-Rock Crystal
+
+Artist: Alfred André|Reinhold Vasters
+Nationality: French|German
+Lifespan: 1839      |1827      –1919      |1909      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1850–1899
+
+Medium: Rock crystal, gold, enamel
+Dimensions: Overall (with handle): 8 × 7 1/2 in. (20.3 × 19.1 cm)
+
+Credit Line: Bequest of Benjamin Altman, 1913
+
+---
+
+Artwork Title: Tazza
+Object Type: Tazza
+Classification: Natural Substances-Rock Crystal
+
+Artist: Reinhold Vasters
+Nationality: German
+Lifespan: 1827      –1909      
+
+Cultural Context: Italian, Milan
+Period: Unknown
+Date Range: 1550–1899
+
+Medium: Rock crystal, gold, enamel, rubies, sapphires, pearls
+Dimensions: 9-1/4 x 12-1/4 x 10-1/4 in.  (23.5 x 31.1 x 26.0 cm)
+
+Credit Line: Bequest of Benjamin Altman, 1913
+
+---
+
+Artwork Title: Cup
+Object Type: Cup
+Classification: Natural Substances-Rock Crystal
+
+Artist: Reinhold Vasters
+Nationality: German
+Lifespan: 1827      –1909      
+
+Cultural Context: Italian, Milan
+Period: Unknown
+Date Range: 1865–1895
+
+Medium: Rock crystal, gold, enamel, jewels
+Dimensions: 4 3/4 × 10 in. (12.1 × 25.4 cm)
+
+Credit Line: Bequest of Benjamin Altman, 1913
+
+---
+
+Artwork Title: Cup
+Object Type: Cup
+Classification: Lapidary Work
+
+Artist: Reinhold Vasters
+Nationality: German
+Lifespan: 1827      –1909      
+
+Cultural Context: German, Augsburg
+Period: Unknown
+Date Range: 1600–1899
+
+Medium: Red jasper, enameled gold, rubies
+Dimensions: 7 7/8 × 7 3/4 in. (20 × 19.7 cm)
+
+Credit Line: Bequest of Benjamin Altman, 1913
+
+---
+
+Artwork Title: Ewer with cover
+Object Type: Ewer with cover
+Classification: Natural Substances-Rock Crystal
+
+Artist: Reinhold Vasters
+Nationality: German
+Lifespan: 1827      –1909      
+
+Cultural Context: probably French
+Period: Unknown
+Date Range: 1850–1899
+
+Medium: Rock crystal, silver gilt, enamel, diamonds
+Dimensions: Height: 14 in. (35.6 cm)
+
+Credit Line: Bequest of Benjamin Altman, 1913
+
+---
+
+Artwork Title: Double-spouted vase with cover
+Object Type: Double vase with cover
+Classification: Natural Substances-Rock Crystal
+
+Artist: Reinhold Vasters
+Nationality: German
+Lifespan: 1827      –1909      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1865–1895
+
+Medium: Rock crystal, with partly enameled gold mounts
+Dimensions: Overall: 6 3/4 × 7 3/4 in. (17.1 × 19.7 cm)
+
+Credit Line: Bequest of Benjamin Altman, 1913
+
+---
+
+Artwork Title: Ewer
+Object Type: Ewer
+Classification: Natural Substances-Rock Crystal
+
+Artist: Alfred André|Reinhold Vasters
+Nationality: French|German
+Lifespan: 1839      |1827      –1919      |1909      
+
+Cultural Context: Italian
+Period: Unknown
+Date Range: 1550–1899
+
+Medium: Rock crystal, gold, enamel, rubies
+Dimensions: Height: 9 1/2 in. (24.1 cm)
+
+Credit Line: Bequest of Benjamin Altman, 1913
+
+---
+
+Artwork Title: Cup with cover
+Object Type: Cup with cover
+Classification: Natural Substances-Rock Crystal
+
+Artist: Reinhold Vasters|Abraham Lotter the Elder
+Nationality: German| 
+Lifespan: 1827      |1512      –1909      |1612      
+
+Cultural Context: German
+Period: Unknown
+Date Range: 1800–1899
+
+Medium: Rock crystal, enameled gold
+Dimensions: Height: 10 1/2 in. (26.7 cm)
+
+Credit Line: Bequest of Benjamin Altman, 1913
+
+---
+
+Artwork Title: Adoration of the Magi
+Object Type: Pax
+Classification: Natural Substances-Rock Crystal
+
+Artist: Reinhold Vasters
+Nationality: German
+Lifespan: 1827      –1909      
+
+Cultural Context: Italian, Milan
+Period: Unknown
+Date Range: 1500–1899
+
+Medium: Rock crystal, silver gilt, verre eglomisé, enamel, rubies
+Dimensions: Overall: 12 1/4 × 7 1/4 in. (31.1 × 18.4 cm)
+
+Credit Line: Bequest of Benjamin Altman, 1913
+
+---
+
+Artwork Title: Sixteenth-century-style pendant
+Object Type: Pendant
+Classification: Metalwork-Gold and Platinum|Jewelry
+
+Artist: Reinhold Vasters
+Nationality: German
+Lifespan: 1827      –1909      
+
+Cultural Context: Italian
+Period: Unknown
+Date Range: 1800–1899
+
+Medium: Gold, enamel, diamonds, rubies, pearls
+Dimensions: Height: 2 5/8 in. (6.7 cm)
+
+Credit Line: Bequest of Benjamin Altman, 1913
+
+---
+
+Artwork Title: Reliquary
+Object Type: Reliquary
+Classification: Natural Substances-Rock Crystal
+
+Artist: Reinhold Vasters
+Nationality: German
+Lifespan: 1827      –1909      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1850–1899
+
+Medium: Rock crystal, verre eglomisé, enamel, gold
+Dimensions: H. 11 3/8 in. (28.9 cm.)
+
+Credit Line: Bequest of Benjamin Altman, 1913
+
+---
+
+Artwork Title: Plate
+Object Type: Plate
+Classification: Natural Substances-Rock Crystal
+
+Artist: Valerio Belli (Il Vicentino)
+Nationality:  
+Lifespan: 1468      –1546      
+
+Cultural Context: Northern Italian
+Period: Unknown
+Date Range: 1500–1550
+
+Medium: Rock crystal
+Dimensions: Overall: 11 1/4 × 12 1/2 in. (28.6 × 31.8 cm)
+
+Credit Line: Bequest of Benjamin Altman, 1913
+
+---
+
+Artwork Title: Louise Brongniart
+Object Type: Bust
+Classification: Sculpture
+
+Artist: Jean Antoine Houdon
+Nationality: French
+Lifespan: 1741      –1828      
+
+Cultural Context: French, Paris
+Period: Unknown
+Date Range: 1777–1779
+
+Medium: Marble
+Dimensions: Height: 20 in. (50.8 cm)
+
+Credit Line: Bequest of Benjamin Altman, 1913
+
+---
+
+Artwork Title: Virtue Overcoming Vice
+Object Type: High relief
+Classification: Sculpture
+
+Artist: Giambologna
+Nationality: Netherlandish
+Lifespan: 1529      –1608      
+
+Cultural Context: Italian or Dutch
+Period: Unknown
+Date Range: 1600–1799
+
+Medium: Marble; wood frame
+Dimensions: Height: 24 1/2 in. (62.2 cm)
+
+Credit Line: Bequest of Benjamin Altman, 1913
+
+---
+
+Artwork Title: Bather (from a fountain group)
+Object Type: Statue
+Classification: Sculpture
+
+Artist: Jean Antoine Houdon
+Nationality: French
+Lifespan: 1741      –1828      
+
+Cultural Context: French, Paris
+Period: Unknown
+Date Range: 1782–1782
+
+Medium: Marble
+Dimensions: Overall: 47 x 43 x 28 in. (119.4 x 109.2 x 71.1 cm)
+
+Credit Line: Bequest of Benjamin Altman, 1913
+
+---
+
+Artwork Title: Cardinal Guillaume d'Estouteville (1403–1483), Bishop of Ostia and Cardinal Archbishop of Rouen
+Object Type: Bust
+Classification: Sculpture
+
+Artist: Mino da Fiesole (Mino di Giovanni)
+Nationality: Italian
+Lifespan: 1429      –1484      
+
+Cultural Context: Italian, Rome
+Period: Unknown
+Date Range: 1450–1475
+
+Medium: Marble
+Dimensions: Overall (wt confirmed): 14 1/8 in., 47lb. (35.9 cm, 21.3191kg)
+
+Credit Line: Bequest of Benjamin Altman, 1913
+
+---
+
+Artwork Title: Madonna and Child with Angels
+Object Type: Relief
+Classification: Sculpture
+
+Artist: Antonio Rossellino
+Nationality: Italian
+Lifespan: 1427      –1479      
+
+Cultural Context: Italian, Florence
+Period: Unknown
+Date Range: 1450–1465
+
+Medium: Marble with gilt details on halo and dress
+Dimensions: Overall (confirmed): H. 28 7/8 x W. 21 1/8 in., 90lb. (73.3 x 53.7 cm, 40.8237kg);
+Framed: H. 55 5/8 x W. 35 3/4 x D. 6 in., 145lb. (141.3 x 90.8 x 15.2 cm)
+
+Credit Line: Bequest of Benjamin Altman, 1913
+
+---
+
+Artwork Title: Julius Caesar
+Object Type: Bust
+Classification: Sculpture
+
+Artist: Andrea di Pietro di Marco Ferrucci
+Nationality: Italian
+Lifespan: 1465      –1526      
+
+Cultural Context: Italian, Florence
+Period: Unknown
+Date Range: 1507–1519
+
+Medium: Marble
+Dimensions: Height: 27 in. (68.6 cm)
+
+Credit Line: Bequest of Benjamin Altman, 1913
+
+---
+
+Artwork Title: Bacchus and a Nymph with a Child and Grapes
+Object Type: Group
+Classification: Sculpture
+
+Artist: Clodion (Claude Michel)
+Nationality: French
+Lifespan: 1738      –1814      
+
+Cultural Context: French, Paris
+Period: Unknown
+Date Range: 1785–1805
+
+Medium: Terracotta
+Dimensions: Height: 18 1/2 in. (47 cm)
+
+Credit Line: Bequest of Benjamin Altman, 1913
+
+---
+
+Artwork Title: Madonna and Child
+Object Type: High relief
+Classification: Sculpture
+
+Artist: Donatello
+Nationality: Italian
+Lifespan: 1386      –1466      
+
+Cultural Context: Italian
+Period: Unknown
+Date Range: 1400–1499
+
+Medium: Figures: terracotta, polychromed and gilded; later background: wood, painted to represent brocade; frame: carved and painted, mouldings gilt
+Dimensions: Overall: 30 × 20 1/2 in. (76.2 × 52.1 cm)
+
+Credit Line: Bequest of Benjamin Altman, 1913
+
+---
+
+Artwork Title: Mercury
+Object Type: Statuette
+Classification: Sculpture
+
+Artist: Jean-Baptiste Pigalle
+Nationality: French
+Lifespan: 1714      –1785      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1741–1899
+
+Medium: Cast terracotta, painted
+Dimensions: Height: 22 in. (55.9 cm)
+
+Credit Line: Bequest of Benjamin Altman, 1913
+
+---
+
+Artwork Title: Henri III (1551–1589)
+Object Type: Bust
+Classification: Sculpture
+
+Artist: Germain Pilon
+Nationality: French
+Lifespan: 1525      –1590      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1800–1899
+
+Medium: Marble
+Dimensions: Height: 21 1/4 in. (54 cm)
+
+Credit Line: Bequest of Benjamin Altman, 1913
+
+---
+
+Artwork Title: The Virgin Annunciate
+Object Type: Statue
+Classification: Sculpture
+
+Artist: Benedetto da Maiano
+Nationality: Italian
+Lifespan: 1442      –1497      
+
+Cultural Context: Italian, Florence
+Period: Unknown
+Date Range: 1485–1499
+
+Medium: Terracotta, painted
+Dimensions: Height: 40 1/8 in. (101.9 cm)
+
+Credit Line: Bequest of Benjamin Altman, 1913
+
+---
+
+Artwork Title: Madonna and Child with Scroll
+Object Type: High relief
+Classification: Sculpture
+
+Artist: Luca della Robbia
+Nationality: Italian
+Lifespan: 1399      –1482      
+
+Cultural Context: Italian, Florence
+Period: Unknown
+Date Range: 1450–1460
+
+Medium: Glazed terracotta
+Dimensions: 31 1/4 in., 93 lb. (79.4 cm, 42.2 kg)
+42 3/4 × 28 1/8 in. (108.6 × 71.4 cm)
+
+Credit Line: Bequest of Benjamin Altman, 1913
+
+---
+
+Artwork Title: Young Saint John the Baptist
+Object Type: Relief bust
+Classification: Sculpture
+
+Artist: Desiderio da Settignano
+Nationality: Italian
+Lifespan: 1435      –1469      
+
+Cultural Context: Italian, possibly Florence
+Period: Unknown
+Date Range: 1400–1499
+
+Medium: Stucco
+Dimensions: Height: 28 3/4 in. (73 cm)
+
+Credit Line: Bequest of Benjamin Altman, 1913
+
+---
+
+Artwork Title: The Intoxication of Wine
+Object Type: Group
+Classification: Sculpture
+
+Artist: Clodion (Claude Michel)
+Nationality: French
+Lifespan: 1738      –1814      
+
+Cultural Context: French, Paris
+Period: Unknown
+Date Range: 1775–1795
+
+Medium: Terracotta
+Dimensions: Overall (confirmed): H. 23 x W. 16 7/8 x D. 11 1/4 in. (58.4 x 42.9 x 28.6 cm)
+
+Credit Line: Bequest of Benjamin Altman, 1913
+
+---
+
+Artwork Title: Young Saint John the Baptist
+Object Type: Bust
+Classification: Sculpture
+
+Artist: Mino da Fiesole (Mino di Giovanni)
+Nationality: Italian
+Lifespan: 1429      –1484      
+
+Cultural Context: Italian, Florence
+Period: Unknown
+Date Range: 1461–1471
+
+Medium: Marble
+Dimensions: Height: 14 1/2 in. (36.8 cm)
+
+Credit Line: Bequest of Benjamin Altman, 1913
+
+---
+
+Artwork Title: Triton
+Object Type: Statuette
+Classification: Sculpture-Bronze
+
+Artist: Giambologna
+Nationality: Netherlandish
+Lifespan: 1529      –1608      
+
+Cultural Context: Italian, Florence
+Period: Unknown
+Date Range: 1590–1599
+
+Medium: Bronze
+Dimensions: Height: 36 in., 53.9 lb. (91.4 cm, 24.4 kg)
+
+Credit Line: Bequest of Benjamin Altman, 1913
+
+---
+
+Artwork Title: Amphitrite
+Object Type: Statuette
+Classification: Sculpture-Bronze
+
+Artist: Michel Anguier
+Nationality: French
+Lifespan: 1612      –1686      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1700–1899
+
+Medium: Bronze
+Dimensions: Height (statuette): 22 1/4 in. (56.5 cm);
+Overall (base): 6 3/4 × 5 1/8 in. (17.1 × 13 cm);
+Weight: 40 lb. (18.1 kg)
+
+Credit Line: Bequest of Benjamin Altman, 1913
+
+---
+
+Artwork Title: Neptune
+Object Type: Statuette
+Classification: Sculpture-Bronze
+
+Artist: Michel Anguier
+Nationality: French
+Lifespan: 1612      –1686      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1700–1899
+
+Medium: Bronze
+Dimensions: Height (with base): 29 1/2 in. (74.9 cm);
+Height (to tip of spear): 21 3/4 in. (55.2 cm);
+Height (to top of head): 21 1/8 in. (53.7 cm);
+Overall (base): 7 7/8 × 6 in. (20 × 15.2 cm);
+Weight: 40 lb. (18.1 kg)
+
+Credit Line: Bequest of Benjamin Altman, 1913
+
+---
+
+Artwork Title: Andiron with figure of Ceres (allegory of Peace) (one of a pair)
+Object Type: Andiron 
+Classification: Sculpture-Bronze
+
+Artist: Girolamo Campagna
+Nationality: Italian
+Lifespan: 1549      –1625      
+
+Cultural Context: Italian, Venice
+Period: Unknown
+Date Range: 1600–1699
+
+Medium: Bronze
+Dimensions: Height: 33 in. (83.8 cm)
+
+Credit Line: Bequest of Benjamin Altman, 1913
+
+---
+
+Artwork Title: Andiron with figure of Minerva (allegory of War) (one of a pair)
+Object Type: Andiron 
+Classification: Sculpture-Bronze
+
+Artist: Girolamo Campagna
+Nationality: Italian
+Lifespan: 1549      –1625      
+
+Cultural Context: Italian, Venice
+Period: Unknown
+Date Range: 1600–1699
+
+Medium: Bronze
+Dimensions: Height: 35 in. (88.9 cm)
+
+Credit Line: Bequest of Benjamin Altman, 1913
+
+---
+
+Artwork Title: Andiron with figure of Venus (one of a pair)
+Object Type: Andiron 
+Classification: Sculpture-Bronze
+
+Artist: Girolamo Campagna
+Nationality: Italian
+Lifespan: 1549      –1625      
+
+Cultural Context: Italian, Venice
+Period: Unknown
+Date Range: 1600–1699
+
+Medium: Bronze
+Dimensions: Height: 44 1/2 in. (113 cm)
+
+Credit Line: Bequest of Benjamin Altman, 1913
+
+---
+
+Artwork Title: Andiron with figure of Vulcan (one of a pair)
+Object Type: Andiron 
+Classification: Sculpture-Bronze
+
+Artist: Tiziano Aspetti
+Nationality: Italian
+Lifespan: 1565      –1607      
+
+Cultural Context: Italian, Venice
+Period: Unknown
+Date Range: 1600–1699
+
+Medium: Bronze
+Dimensions: H. 44 in. ( 111.8 cm.)
+
+Credit Line: Bequest of Benjamin Altman, 1913
+
+---
+
+Artwork Title: The Annunciation
+Object Type: Panel
+Classification: Enamels
+
+Artist: Master of the Triptych of Louis XII
+Nationality:  
+Lifespan: 1480      –1525      
+
+Cultural Context: French, Limoges
+Period: Unknown
+Date Range: 1500–1515
+
+Medium: Painted enamel on copper, partly gilt
+Dimensions: Unknown
+
+Credit Line: Bequest of Benjamin Altman, 1913
+
+---
+
+Artwork Title: The Nativity and Circumcision of Christ
+Object Type: Plaques
+Classification: Enamels
+
+Artist: Workshop of the Master of the High Foreheads
+Nationality:  
+Lifespan:           –1600      
+
+Cultural Context: French, Limoges
+Period: Unknown
+Date Range: 1500–1515
+
+Medium: Painted enamel on copper, partly gilded
+Dimensions: Unknown
+
+Credit Line: Bequest of Benjamin Altman, 1913
+
+---
+
+Artwork Title: The Adoration of the Shepherds
+Object Type: Panel
+Classification: Enamels
+
+Artist: Workshop of the Master of the High Foreheads
+Nationality:  
+Lifespan:           –1600      
+
+Cultural Context: French, Limoges
+Period: Unknown
+Date Range: 1500–1515
+
+Medium: Painted enamel on copper, partly gilt
+Dimensions: Unknown
+
+Credit Line: Bequest of Benjamin Altman, 1913
+
+---
+
+Artwork Title: The Annunciation
+Object Type: Panels
+Classification: Enamels
+
+Artist: Nardon Pénicaud
+Nationality: French
+Lifespan: 1470      –1543      
+
+Cultural Context: French, Limoges
+Period: Unknown
+Date Range: 1505–1525
+
+Medium: Painted enamel on copper, partly gilt
+Dimensions: "b" confirmed: 7 11/16 × 2 3/4 × 1/8 in. (19.5 × 7 × 0.3 cm)
+
+Credit Line: Bequest of Benjamin Altman, 1913
+
+---
+
+Artwork Title: Isaac and Rebecca
+Object Type: Plate
+Classification: Enamels
+
+Artist: Suzanne de Court|Etienne Delaune|Bernard Salomon|Claude Paradin
+Nationality: French|French|French|French
+Lifespan: 1575      |1518      |1508      |          –1625      |1583      |1561      |          
+
+Cultural Context: French, Limoges
+Period: Unknown
+Date Range: 1600–1625
+
+Medium: Painted enamel on copper, partly gilt
+Dimensions: Diameter: 9 3/4 in. (24.8 cm)
+
+Credit Line: Bequest of Benjamin Altman, 1913
+
+---
+
+Artwork Title: Portrait of an unidentified gentleman
+Object Type: Plaque
+Classification: Enamels
+
+Artist: Léonard Limosin
+Nationality:  
+Lifespan: 1505      –1577      
+
+Cultural Context: French, Limoges
+Period: Unknown
+Date Range: 1530–1565
+
+Medium: Painted enamel on copper
+Dimensions: 4 5/8 × 3 5/16 in. (11.7 × 8.4 cm)
+
+Credit Line: Bequest of Benjamin Altman, 1913
+
+---
+
+Artwork Title: Portrait of an unidentified gentleman
+Object Type: Plaque
+Classification: Enamels
+
+Artist: Léonard Limosin
+Nationality:  
+Lifespan: 1505      –1577      
+
+Cultural Context: French, Limoges
+Period: Unknown
+Date Range: 1530–1565
+
+Medium: Painted enamel on copper, partly gilt
+Dimensions: 4 5/8 × 3 5/16 in. (11.7 × 8.4 cm)
+
+Credit Line: Bequest of Benjamin Altman, 1913
+
+---
+
+Artwork Title: Adoration of the Kings
+Object Type: Tapestry and frame
+Classification: Textiles-Tapestries
+
+Artist: Bernard van Orley|Pieter van Aelst the Younger|Tommaso Vincidor (Tommaso di Andrea)
+Nationality: Netherlandish|Flemish|Italian
+Lifespan: 1492      |1509      |1517      –1542      |1555      |1536      
+
+Cultural Context: Netherlandish, Brussels
+Period: Unknown
+Date Range: 1525–1535
+
+Medium: Wool, silk, silver, silver-gilt thread (20 warps per inch, 8 per cm.)
+Dimensions: H. 4 ft. 2 in. (1.27 m.), W. 5 ft. (1.52 m.)
+
+Credit Line: Bequest of Benjamin Altman, 1913
+
+---
+
+Artwork Title: Plate
+Object Type: Plate
+Classification: Ceramics-Pottery
+
+Artist: Patanazzi family
+Nationality: Italian
+Lifespan: 1575      –1625      
+
+Cultural Context: Italian, Urbino
+Period: Unknown
+Date Range: 1595–1605
+
+Medium: Maiolica (tin-glazed earthenware)
+Dimensions: Overall (confirmed): 3 x 19 1/4 in. (7.6 x 48.9 cm)
+
+Credit Line: Bequest of Benjamin Altman, 1913
