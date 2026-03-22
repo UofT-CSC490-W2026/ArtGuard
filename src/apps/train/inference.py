@@ -57,21 +57,24 @@ def predict_patches(
     variant: str = "tiny",
     checkpoint_name: str = "best.pt",
 ) -> dict:
-    """
-    Load the model from the volume, download patches from S3, run inference.
+    """Load a checkpoint from the Modal Volume, download patches from S3, and run inference.
+
+    Downloads each patch image from S3, applies validation transforms
+    (resize, normalise), batches them, and runs a forward pass through
+    the Swin model. Returns per-patch probabilities and an aggregated
+    painting-level prediction.
 
     Args:
-        patch_s3_uris  : list of s3:// URIs pointing to patch images
-        variant        : "tiny" or "base"
-        checkpoint_name: filename inside /checkpoints/{variant}/
+        patch_s3_uris:   List of ``s3://bucket/key`` URIs pointing to patch images.
+        variant:         ``"tiny"`` or ``"base"`` Swin model variant.
+        checkpoint_name: Filename inside ``/checkpoints/{variant}/`` on the Modal Volume.
 
     Returns:
-        {
-            "patch_probs": [float, ...],   # per-patch probability (>0.5 = authentic)
-            "patch_preds": [int, ...],     # per-patch 0/1 prediction
-            "mean_prob": float,            # average probability across patches
-            "prediction": int,             # 1=authentic, 0=forgery (from mean_prob)
-        }
+        A dict with keys:
+        - ``patch_probs``: list of per-patch probabilities (>0.5 = authentic).
+        - ``patch_preds``: list of per-patch 0/1 predictions.
+        - ``mean_prob``:   average probability across all patches.
+        - ``prediction``:  1 = authentic, 0 = forgery (from mean_prob threshold).
     """
     import torch
     from io import BytesIO

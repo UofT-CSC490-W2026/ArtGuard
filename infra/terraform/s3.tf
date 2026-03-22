@@ -2,7 +2,7 @@
 # Stores the compiled frontend application served via CloudFront
 resource "aws_s3_bucket" "frontend" {
   bucket        = "${local.project_name}-frontend-${var.environment}"
-  force_destroy = false
+  force_destroy = true # Set to false in real production; true enables disaster-recovery.sh to work
 
   tags = {
     Name    = "${local.project_name}-frontend"
@@ -69,7 +69,7 @@ resource "aws_s3_bucket_policy" "frontend_cloudfront" {
 # S3 Bucket for Raw/Uploaded Images
 resource "aws_s3_bucket" "images_raw" {
   bucket        = "${local.project_name}-images-raw-${var.environment}"
-  force_destroy = false
+  force_destroy = true # Set to false in real production; true enables disaster-recovery.sh to work
 
   tags = {
     Name    = "${local.project_name}-images-raw"
@@ -219,7 +219,7 @@ resource "aws_s3_bucket_policy" "images_raw" {
 
 resource "aws_s3_bucket" "images_processed" {
   bucket        = "${local.project_name}-images-processed-${var.environment}"
-  force_destroy = true
+  force_destroy = true # Set to false in real production; true enables disaster-recovery.sh to work
 
   tags = {
     Name    = "${local.project_name}-images-processed"
@@ -370,7 +370,7 @@ resource "aws_s3_bucket_policy" "images_processed" {
 # S3 Bucket for Knowledge Base Documents for RAG
 resource "aws_s3_bucket" "knowledge_base" {
   bucket        = "${local.project_name}-knowledge-base-${var.environment}"
-  force_destroy = false
+  force_destroy = true # Set to false in real production; true enables disaster-recovery.sh to work
 
   tags = {
     Name    = "${local.project_name}-knowledge-base"

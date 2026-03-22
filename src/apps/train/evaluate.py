@@ -57,7 +57,19 @@ aws_secret = modal.Secret.from_name("artguard-aws")
 # ---------------------------------------------------------------------------
 
 def _compute_metrics(labels: list[int], preds: list[int]) -> dict:
-    """Return accuracy, precision, recall, F1, and confusion matrix."""
+    """Compute classification metrics for a set of true labels and predictions.
+
+    Returns a dict with ``n``, ``accuracy``, ``precision``, ``recall``,
+    ``f1``, and ``confusion_matrix`` (as [[TN, FP], [FN, TP]]). Returns
+    None values if labels is empty.
+
+    Args:
+        labels: List of ground-truth binary labels (0 or 1).
+        preds:  List of predicted binary labels (0 or 1).
+
+    Returns:
+        A dict of metric name -> value.
+    """
     from sklearn.metrics import (
         accuracy_score,
         confusion_matrix,
@@ -88,6 +100,12 @@ def _compute_metrics(labels: list[int], preds: list[int]) -> dict:
 
 
 def _print_metrics(title: str, m: dict) -> None:
+    """Pretty-print a metrics dict (from ``_compute_metrics``) to stdout.
+
+    Args:
+        title: Section title label (e.g. ``"Overall"`` or ``"Forgery"``).
+        m:     Metrics dict from ``_compute_metrics``.
+    """
     if m["n"] == 0:
         print(f"  {title}: no samples")
         return
@@ -108,10 +126,21 @@ def _print_metrics(title: str, m: dict) -> None:
 # ---------------------------------------------------------------------------
 
 def _evaluate(variant: str, checkpoint_path: str) -> tuple[dict, list[dict]]:
-    """
+    """Run evaluation on the test split and compute patch- and painting-level metrics.
+
+    Loads a model checkpoint, runs inference on all test patches, computes
+    accuracy/precision/recall/F1 both at the patch level and aggregated
+    at the painting level (mean probability per image), and breaks down
+    metrics by sublabel (original / forgery / imitation / proxy).
+
+    Args:
+        variant:         ``"tiny"`` or ``"base"`` Swin model variant.
+        checkpoint_path: Full path to a ``.pt`` checkpoint file on the Modal Volume.
+
     Returns:
-        metrics_results : aggregated metrics dict (saved as _metrics.json)
-        patch_log       : list of per-patch dicts  (saved as _patches.json)
+        A tuple of (metrics_results, patch_log) where:
+        - metrics_results: Aggregated metrics dict (saved as _metrics.json).
+        - patch_log: List of per-patch prediction dicts (saved as _patches.json).
     """
     import torch
     from torch.utils.data import DataLoader
@@ -317,6 +346,7 @@ def _evaluate(variant: str, checkpoint_path: str) -> tuple[dict, list[dict]]:
     secrets=[aws_secret],
 )
 def evaluate(variant: str, checkpoint_path: str) -> tuple[dict, list[dict]]:
+    """Modal Function: evaluate a checkpoint on the test split and return metrics."""
     return _evaluate(variant=variant, checkpoint_path=checkpoint_path)
 
 
@@ -330,12 +360,13 @@ def main(
     checkpoint: str,
     output_dir: str = ".",
 ) -> None:
-    """
+    """Local entrypoint: run evaluation and save results as JSON files.
+
     Args:
-        variant    : "tiny" or "base"
-        checkpoint : Full path to checkpoint inside Modal Volume,
-                     e.g. /checkpoints/tiny/best.pt
-        output_dir : Local directory to write JSON output (default: cwd)
+        variant:    ``"tiny"`` or ``"base"`` Swin model variant.
+        checkpoint: Full path to checkpoint inside Modal Volume,
+                    e.g. ``/checkpoints/tiny/best.pt``.
+        output_dir: Local directory to write JSON output (default: cwd).
     """
     if variant not in ("tiny", "base"):
         raise ValueError(f"variant must be 'tiny' or 'base', got '{variant}'")

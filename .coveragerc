@@ -1,0 +1,13 @@
+[run]
+source = src
+
+[report]
+exclude_lines =
+    pragma: no cover
+    if __name__ == .__main__.:
+    raise NotImplementedError
+    # Modal decorators and entrypoints (can't run without Modal runtime)
+    @app\.function
+    @app\.local_entrypoint
+    \.spawn\(
+    \.remote\(
