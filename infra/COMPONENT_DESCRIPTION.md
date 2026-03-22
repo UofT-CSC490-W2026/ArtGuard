@@ -216,9 +216,9 @@ artguard-images-processed-dev/
 - **Versioning**: Enabled (track document updates)
 - **Lifecycle**: None
 
-**Content**: Markdown documentation from `docs/` directory
+**Content**: Chunked TXT files generated from Met Museum and Wikidata data pipelines (`src/apps/data_pipeline/output/txt/`)
 
-**Upload**: `scripts/update-knowledge-base.sh` syncs `docs/` → S3 → Bedrock ingestion
+**Upload**: `scripts/upload-rag-data.sh` converts JSONL → chunked TXT, syncs to S3, and triggers Bedrock ingestion
 
 **Bedrock Integration**:
 - S3 acts as data source for Knowledge Base
@@ -312,7 +312,7 @@ All 6 tables use on-demand billing, AWS-managed CMK encryption, and PITR enabled
 - **Storage**: OpenSearch Serverless
 
 **Workflow**:
-1. **Ingestion**: `update-knowledge-base.sh` syncs docs → S3
+1. **Ingestion**: `upload-rag-data.sh` syncs pipeline output → S3
 2. **Embedding**: Bedrock reads S3, creates vector embeddings
 3. **Indexing**: Embeddings stored in OpenSearch Serverless
 4. **Retrieval**: API queries Bedrock with user question

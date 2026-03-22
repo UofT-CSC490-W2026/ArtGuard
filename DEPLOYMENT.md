@@ -333,7 +333,7 @@ curl -sS -X POST "${BACKEND_URL}/process_data" | jq .
 | `src/apps/backend/**` | `app-docker.yml` builds Docker + deploys to ECS |
 | `src/apps/frontend/**` | `frontend-deploy.yml` builds Vite + deploys to S3/CloudFront |
 | `infra/terraform/**` | `terraform-deploy.yml` runs `terraform apply` |
-| `src/apps/data_pipeline/output/**` | `update-knowledge-base.yml` syncs RAG documents |
+| `src/apps/data_pipeline/output/**` | RAG data — run `./scripts/upload-rag-data.sh` manually |
 
 ### Manual Deployment Commands
 
@@ -375,7 +375,6 @@ Set these in **Settings > Secrets and variables > Actions**:
 | `terraform-bootstrap.yml` | Manual dispatch | First-time infrastructure setup |
 | `terraform-destroy.yml` | Manual dispatch | Tear down infrastructure |
 | `ecs-manage.yml` | Manual dispatch | Deploy, scale, status, logs |
-| `update-knowledge-base.yml` | Push to main (pipeline output changes) | Upload RAG docs to S3 + trigger ingestion |
 | `test-coverage.yml` | Push to main / PRs | Run pytest, post coverage badge + PR comment |
 | `secret.yml` | Manual dispatch | DR secret recovery |
 

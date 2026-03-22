@@ -50,7 +50,7 @@ ArtGuard analyses artwork images to detect potential forgeries. Users upload an 
 | **Compute** | AWS ECS Fargate, Modal serverless GPUs |
 | **CDN** | AWS CloudFront |
 | **IaC** | Terraform |
-| **CI/CD** | GitHub Actions (10 workflows) |
+| **CI/CD** | GitHub Actions (9 workflows) |
 | **Monitoring** | CloudWatch (dashboards, alarms, structured JSON logs) |
 
 ---
@@ -196,7 +196,7 @@ ArtGuard/
 ├── docs/                      # Additional documentation
 │   ├── API_REFERENCE.md    #   API reference with curl examples for all endpoints
 │   └── architecture_diagram.xml # Architecture diagram source
-├── .github/workflows/         # CI/CD pipelines (10 GitHub Actions workflows)
+├── .github/workflows/         # CI/CD pipelines (9 workflows, see workflows/README.md)
 ├── DISASTER_RECOVERY.md       # Disaster recovery guide and demo instructions
 ├── DEPLOYMENT.md              # Step-by-step deployment guide
 ├── Dockerfile                 # Backend container image (Python 3.11 + FastAPI)
@@ -409,6 +409,7 @@ export VITE_API_URL=$(terraform -chdir=infra/terraform output -raw cloudfront_di
 
 | Document | Description |
 |----------|-------------|
+| [.github/workflows/README.md](.github/workflows/README.md) | CI/CD workflows — all 9 GitHub Actions (triggers, what they do, required secrets) |
 | [infra/INFRA_README.md](infra/INFRA_README.md) | Infrastructure overview, architecture decisions, security, monitoring, costs |
 | [infra/COMPONENT_DESCRIPTION.md](infra/COMPONENT_DESCRIPTION.md) | Detailed breakdown of every AWS component (ECS, ALB, DynamoDB, S3, etc.) |
 

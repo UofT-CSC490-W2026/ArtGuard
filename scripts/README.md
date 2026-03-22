@@ -61,8 +61,8 @@ All scripts support both environments with the same commands.
 
 ### **Knowledge Base**
 ```bash
-# Update Bedrock Knowledge Base with docs
-./scripts/upload-rag-data.sh dev ./docs
+# Upload RAG data (Met Museum + Wikidata) to Bedrock Knowledge Base
+./scripts/upload-rag-data.sh
 ```
 
 ### **Bootstrap (First-Time Setup)**
@@ -129,7 +129,7 @@ These scripts are designed to do one thing well. They are called by the entry po
 | **deploy-ecs.sh** | Force ECS rolling deployment | `deploy-all.sh`, `recover-prod.sh`, `app-docker.yml` |
 | **setup-secrets.sh** | Upload Modal API key to Secrets Manager | `deploy-all.sh`, `recover-prod.sh` |
 | **terraform-deploy.sh** | Terraform init/plan/apply/destroy wrapper | `terraform-validate.sh`, `terraform-deploy.yml` |
-| **upload-rag-data.sh** | Convert JSONL to TXT and sync to S3 for Bedrock KB | `deploy-all.sh`, `update-knowledge-base.yml` |
+| **upload-rag-data.sh** | Convert JSONL to TXT and sync to S3 for Bedrock KB | `deploy-all.sh` |
 | **update-data.sh** | Upload local images + metadata to S3 and DynamoDB | `deploy-all.sh` |
 | **recover-prod.sh** | 10-step disaster recovery automation | `disaster-recovery.sh` |
 
@@ -147,7 +147,6 @@ Training, test, and validation images (`data/`) are **not stored in the Git repo
 
 **What's included in the repo (cloned automatically):**
 - `vangogh/` — sample test image (1.8 MB)
-- `src/apps/data_pipeline/output/` — RAG knowledge base text/jsonl (41 MB)
 - `src/apps/data_pipeline/output/` — RAG knowledge base text/jsonl
 - All source code, Terraform configs, scripts, etc.
 
@@ -435,50 +434,29 @@ Validates Terraform configuration for Pull Requests and manual checks.
 ---
 
 ### **upload-rag-data.sh**
-Updates Bedrock Knowledge Base with documentation for RAG.
+Converts pipeline JSONL output to chunked TXT files and uploads them to the Bedrock Knowledge Base S3 bucket, then triggers an ingestion job.
 
 **Usage:**
 ```bash
-./scripts/upload-rag-data.sh [environment] [docs_directory]
+./scripts/upload-rag-data.sh
 ```
 
-**Environment Variables:**
-- `AWS_REGION` - AWS region (default: ca-central-1)
-
 **What it does:**
-1. Validates docs directory exists
-2. Counts documents (.txt, .md, .pdf, .docx)
-3. Syncs documents to S3 (`artguard-knowledge-base-{env}`)
-4. Triggers Bedrock ingestion job (if available)
-5. Creates embeddings for RAG queries
-6. Takes ~2-10 minutes depending on document count
-
-**Supported Formats:**
-- `.txt` - Plain text
-- `.md` - Markdown
-- `.pdf` - PDF documents
-- `.docx` - Microsoft Word
+1. Reads Terraform outputs to get the KB bucket name, Knowledge Base ID, and data source ID
+2. Runs `scripts/convert-jsonl-to-txt.py` to convert `src/apps/data_pipeline/output/*.jsonl` into chunked TXT files (max 500 records per file)
+3. Syncs TXT files to S3 (`artguard-knowledge-base-{env}`)
+4. Triggers a Bedrock Knowledge Base ingestion job
+5. Waits for ingestion to complete (~10-20 minutes)
 
 **Examples:**
 ```bash
-# Update dev knowledge base with docs folder
-./scripts/upload-rag-data.sh dev ./docs
-
-# Update prod knowledge base
-./scripts/upload-rag-data.sh prod ./docs
-
-# Update with different directory
-./scripts/upload-rag-data.sh dev ./documentation
+./scripts/upload-rag-data.sh
 ```
 
 **Output:**
 - S3 Bucket: `artguard-knowledge-base-{environment}`
-- S3 Prefix: `documents/`
-- Ingestion: Automatic (2-10 minutes)
-
-**Use Cases:**
-- Refreshing knowledge base content
-- Initial setup of RAG system
+- Source: `src/apps/data_pipeline/output/txt/*.txt` (Met Museum + Wikidata)
+- Ingestion: Bedrock creates vector embeddings in OpenSearch Serverless
 
 ---
 
@@ -495,7 +473,6 @@ All scripts are designed to work both locally and in GitHub Actions:
 | **terraform-destroy.yml** | `destroy-all.sh` | Manual workflow dispatch (double confirmation) |
 | **terraform-pr.yml** | `terraform-validate.sh` | Pull Request (terraform changes) |
 | **ecs-manage.yml** | `ecs-control.sh` | Manual workflow dispatch |
-| **update-knowledge-base.yml** | `upload-rag-data.sh` | Push to `dev` branch (docs changes) / Merge dev to main |
 | **test-coverage.yml** | pytest + pytest-cov | Push to main / Pull Request |
 | **secret.yml** | (inline) | Manual workflow dispatch (DR secret injection) |
 
@@ -524,7 +501,7 @@ alias ecs-status="./scripts/ecs-control.sh status dev"
 alias ecs-deploy="./scripts/ecs-control.sh deploy dev"
 
 # Knowledge Base
-alias update-kb="./scripts/upload-rag-data.sh dev ./docs"
+alias update-kb="./scripts/upload-rag-data.sh"
 
 # Terraform operations
 alias tf-validate="./scripts/terraform-validate.sh dev"
