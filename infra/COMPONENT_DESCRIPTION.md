@@ -44,10 +44,15 @@ ENVIRONMENT=dev
 AWS_REGION=ca-central-1
 S3_IMAGES_RAW_BUCKET=artguard-images-raw-dev
 S3_IMAGES_PROCESSED_BUCKET=artguard-images-processed-dev
-DYNAMODB_TABLE_NAME=<image_analysis table name>  # NOTE: references aws_dynamodb_table.image_analysis which doesn't exist in database.tf — needs fixing in app.tf
+DDB_USERS_TABLE=artguard-users-dev
+DDB_INFERENCES_TABLE=artguard-inference-records-dev
+DDB_IMAGES_TABLE=artguard-image-records-dev
+DDB_PATCHES_TABLE=artguard-patch-records-dev
+DDB_RUNS_TABLE=artguard-run-records-dev
+DDB_CONFIGS_TABLE=artguard-config-records-dev
 KNOWLEDGE_BASE_ID=<bedrock knowledge base ID>
-MODAL_API_KEY=<from-secrets-manager>  # injected via ECS secrets (Execution Role), not environment
-AWS_XRAY_TRACING_ENABLED=false
+MODAL_API_KEY=<from Secrets Manager>      # injected via ECS secrets (Execution Role)
+JWT_SECRET_KEY=<from Secrets Manager>     # injected via ECS secrets (Execution Role)
 ```
 
 **IAM Permissions** (ECS Task Role):
@@ -300,8 +305,8 @@ All 6 tables use on-demand billing, AWS-managed CMK encryption, and PITR enabled
 
 **Configuration**:
 - **Name**: `artguard-knowledge-base-{env}`
-- **Model**: Amazon Titan Embeddings G1 (text-embedding-ada-002 equivalent)
-- **Vector dimensions**: 1536
+- **Model**: Amazon Titan Embeddings V2 (`amazon.titan-embed-text-v2:0`)
+- **Vector dimensions**: 1024
 - **Data source**: S3 bucket (`artguard-knowledge-base-{env}`)
 - **Chunking strategy**: Fixed size (max 300 tokens/chunk dev, 512 prod, 20%/30% overlap)
 - **Storage**: OpenSearch Serverless
@@ -330,23 +335,25 @@ All 6 tables use on-demand billing, AWS-managed CMK encryption, and PITR enabled
 **Configuration**:
 - **Collection name**: `artguard-kb-{env}`
 - **Type**: Vectorsearch
-- **Index**: `bedrock-knowledge-base-default-index`
-- **Replicas**: 2 (high availability)
+- **Index**: `bedrock-knowledge-base-index`
 - **Encryption**: AWS-managed key
-- **Network**: VPC access only
+- **Network**: Public access (AOSS network policy)
 
 **Index Mapping**:
 ```json
 {
+  "settings": {"index": {"knn": true, "knn.algo_param.ef_search": 512}},
   "mappings": {
     "properties": {
-      "vector": {"type": "knn_vector", "dimension": 1536},
-      "text": {"type": "text"},
-      "metadata": {"type": "object"}
+      "bedrock-knowledge-base-index-vector": {"type": "knn_vector", "dimension": 1024, "method": {"engine": "faiss", "name": "hnsw"}},
+      "AMAZON_BEDROCK_TEXT_CHUNK": {"type": "text"},
+      "AMAZON_BEDROCK_METADATA": {"type": "text"}
     }
   }
 }
 ```
+
+**Note**: `AMAZON_BEDROCK_METADATA` must be `"text"`, not `"object"`. Using `"object"` causes silent ingestion failures where Bedrock reports COMPLETE with 0 documents indexed. See [assignments/a5/RAG_DEPLOYMENT_DEBUG_LOG.md](../assignments/a5/RAG_DEPLOYMENT_DEBUG_LOG.md) for the full debugging story.
 
 **IAM Access**:
 - Bedrock service: `aoss:CreateIndex`, `BatchGetCollection`, `APIAccessAll`
@@ -455,7 +462,7 @@ All 6 tables use on-demand billing, AWS-managed CMK encryption, and PITR enabled
 **Permissions**:
 - S3: `GetObject`, `ListBucket` on knowledge base bucket only
 - OpenSearch: `aoss:APIAccessAll` on knowledge base collection only
-- Bedrock: `InvokeModel` on `amazon.titan-embed-text-v1` model only
+- Bedrock: `InvokeModel` on `amazon.titan-embed-text-v2:0` model only
 
 **Trust policy**: `bedrock.amazonaws.com`
 
@@ -465,25 +472,23 @@ All 6 tables use on-demand billing, AWS-managed CMK encryption, and PITR enabled
 
 ### 10. Secrets Manager
 
-**Purpose**: Store Modal API key securely
+**Purpose**: Store sensitive credentials securely (Modal API key, JWT signing secret)
+
+**Secrets**:
+
+| Secret name | Purpose | Value format |
+|---|---|---|
+| `artguard/modal-api-key-{env}` | Modal GPU inference credentials | `{"token_id":"ak-...","token_secret":"..."}` |
+| `artguard/jwt-secret-{env}` | JWT HS256 signing key | Random string (32+ bytes) |
 
 **Configuration**:
-- **Secret name**: `artguard/modal-api-key-{env}`
 - **Encryption**: AWS-managed KMS key
-- **Rotation**: Not enabled (API key)
+- **Rotation**: Not enabled
 - **Recovery window**: 7 days (dev), 30 days (prod)
 
-**Secret value**:
-```json
-{
-  "api_key": "modal-xxxxxxxxxxxxx"
-}
-```
-
-**Access Control** (resource-based policy):
-- **Allow**: ECS Execution Role (`GetSecretValue`, `DescribeSecret`)
-- **Allow**: Account root (full access for rotation)
-- **Deny**: All other principals (`GetSecretValue`)
+**Access Control**:
+- **ECS Execution Role**: `GetSecretValue` on both secrets (injected as env vars at container start)
+- **Account root**: Full access
 
 **Initial Setup**:
 ```bash

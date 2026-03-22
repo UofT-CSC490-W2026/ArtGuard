@@ -2,543 +2,429 @@
 
 ## Table of Contents
 
-1. [Prerequisites](#prerequisites)
-2. [First-Time Setup](#first-time-setup)
-3. [Initial Deployment](#initial-deployment)
-4. [Ongoing Development Workflow](#ongoing-development-workflow)
-5. [GitHub Actions Integration](#github-actions-integration)
-6. [Manual Operations](#manual-operations)
-7. [Troubleshooting](#troubleshooting)
+1. [If Everything Is Already Deployed](#if-everything-is-already-deployed)
+2. [Prerequisites](#prerequisites)
+3. [Full Deployment From Scratch](#full-deployment-from-scratch)
+4. [Training the Model](#training-the-model)
+5. [Ongoing Development](#ongoing-development)
+6. [GitHub Actions CI/CD](#github-actions-cicd)
+7. [Common Operations](#common-operations)
+8. [Troubleshooting](#troubleshooting)
+
+---
+
+## If Everything Is Already Deployed
+
+If the infrastructure is already running (someone has already done the full deployment), here's how to access and use the system:
+
+### Get the URLs
+
+```bash
+cd infra/terraform
+terraform output -json summary | jq .
+# Returns: backend_url, cloudfront_url, etc.
+```
+
+Or check the Terraform outputs in the GitHub Actions logs from the last deployment.
+
+### Verify Everything Works
+
+```bash
+# Set your API URL
+export API_BASE="https://YOUR_CLOUDFRONT_URL"
+
+# Health check
+curl -sS "${API_BASE}/health" | jq .
+
+# Sign up / log in
+TOKEN=$(curl -sS -X POST "${API_BASE}/auth/login" \
+  -H "Content-Type: application/json" \
+  -d '{"email":"your@email.com","password":"yourpassword"}' | jq -r '.access_token')
+
+# Run an inference
+curl -sS -X POST "${API_BASE}/inference" \
+  -H "Authorization: Bearer ${TOKEN}" \
+  -F "file=@path/to/painting.jpg" \
+  -F "artist_name=Artist Name" \
+  -F "artwork_name=Artwork Title" | jq .
+
+# Test RAG
+curl -sS -X POST "${API_BASE}/rag-query" \
+  -H "Content-Type: application/json" \
+  -d '{"query": "How are art forgeries detected?"}' | jq .
+```
+
+### Check Service Status
+
+```bash
+./scripts/ecs-control.sh status dev    # ECS task health
+./scripts/ecs-control.sh logs dev      # Recent logs
+```
+
+### Scale Up/Down (cost management)
+
+```bash
+./scripts/ecs-control.sh scale dev 0   # Pause (no compute cost)
+./scripts/ecs-control.sh scale dev 1   # Resume
+```
+
+See [docs/API_REFERENCE.md](docs/API_REFERENCE.md) for all endpoints.
 
 ---
 
 ## Prerequisites
 
-### Required Accounts & Tools
+### Required Accounts
 
-- **AWS Account** 
-- **Modal Account** with API key for AI model inference
-- **GitHub Account** with repository access
-- **Local Tools:**
-  - AWS CLI (`brew install awscli` or https://aws.amazon.com/cli/)
-  - Terraform (`brew install terraform` or https://terraform.io)
-  - Docker Desktop (https://docker.com/products/docker-desktop)
-  - Node.js 18+ (`brew install node`)
-  - Python 3.9+ (`brew install python`)
+- **AWS Account** with admin access
+- **Modal Account** with API key ([modal.com](https://modal.com))
+- **GitHub** repository access
 
-### AWS Credentials Setup
-
-Choose one method:
+### Required Tools
 
 ```bash
-# Option 1: AWS CLI Configuration (Recommended)
-aws configure
-# Enter: Access Key ID, Secret Access Key, Region (ca-central-1), Output format (json)
+# macOS (Homebrew)
+brew install awscli terraform node python@3.11 jq docker
 
-# Option 2: Environment Variables
-export AWS_ACCESS_KEY_ID="your-access-key-id"
-export AWS_SECRET_ACCESS_KEY="your-secret-access-key"
-export AWS_REGION="ca-central-1"
-
-# Option 3: AWS Profile
-export AWS_PROFILE="your-profile-name"
+# Or install manually:
+# - AWS CLI v2: https://aws.amazon.com/cli/
+# - Terraform >= 1.10: https://terraform.io
+# - Docker Desktop: https://docker.com/products/docker-desktop
+# - Node.js 18+: https://nodejs.org
+# - Python 3.11+: https://python.org
+# - jq: https://jqlang.github.io/jq/
 ```
 
-**Verify AWS access:**
+### AWS Credentials
+
 ```bash
+aws configure
+# Region: ca-central-1
+# Output: json
+
+# Verify
 aws sts get-caller-identity
 ```
+
+### Python Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
 ---
 
-## First-Time Setup
+## Full Deployment From Scratch
 
-This is a **ONE-TIME** process to create all infrastructure from scratch. Read about the scripts at [scripts/README.md](#scripts/README.md)
-
-### Step 1: Clone Repository
+### Option A: One-Command Deployment
 
 ```bash
-git clone https://github.com/UofT-CSC490-W2026/ArtGuard.git
-cd ArtGuard
+./scripts/deploy-all.sh dev
 ```
 
-### Step 2: Make Scripts Executable
+This runs all 7 steps below automatically. Takes ~30-45 minutes. You will be prompted for your Modal API key.
+
+### Option B: Step by Step
+
+#### Step 1: Bootstrap Infrastructure (~15-20 min)
+
+Creates all AWS resources: VPC, ECS, ALB, S3 (4 buckets), DynamoDB (6 tables), ECR, CloudFront, OpenSearch Serverless, Bedrock Knowledge Base, IAM roles, security groups, monitoring.
 
 ```bash
-chmod +x scripts/*.sh
-```
-
-### Step 3: Bootstrap Infrastructure
-
-This creates all AWS resources (VPC, ECS, ALB, S3, DynamoDB, etc.)
-
-```bash
-# For dev environment
 ./scripts/bootstrap.sh dev
-
-# For prod environment
-./scripts/bootstrap.sh prod
+# Type BOOTSTRAP to confirm, then YES to apply
 ```
 
-**What bootstrap.sh does:**
-1. Creates S3 bucket for Terraform state (`artguard-terraform-state`)
-2. Creates DynamoDB table for state locking (`artguard-terraform-locks`)
-3. Initializes Terraform backend
-4. Creates all infrastructure:
-   
-### Step 4: Store Modal API Key
+#### Step 2: Store Modal API Key
 
 ```bash
 ./scripts/setup-secrets.sh dev
-# Enter your Modal API key when prompted
+# Enter your Modal Token ID (ak-...) and Token Secret when prompted
 ```
 
-**What setup-secrets.sh does:**
-- Prompts for Modal API key (hidden input)
-- Stores it securely in AWS Secrets Manager
-- ECS tasks will retrieve this at runtime
+The JWT signing secret is auto-generated by Terraform — no manual step needed.
 
----
-
-## Initial Deployment
-
-After infrastructure exists, deploy your applications.
-
-### Step 5: Build and Push Backend Docker Image
+#### Step 3: Build and Push Docker Image (~5-10 min)
 
 ```bash
 ./scripts/build-and-push-docker.sh dev
 ```
 
-**Expected duration:** 5-10 minutes (depending on Docker build)
-
-### Step 6: Deploy to ECS Fargate
+#### Step 4: Deploy Backend to ECS (~2-3 min)
 
 ```bash
 ./scripts/deploy-ecs.sh dev
-```
 
-**Expected duration:** 3-5 minutes
-
-**Verify deployment:**
-```bash
+# Wait for health, then verify
 ./scripts/ecs-control.sh status dev
 ```
 
-### Step 7: (Optional) Update Knowledge Base
-
-If you have documentation for RAG:
+#### Step 5: Deploy Frontend
 
 ```bash
-./scripts/update-knowledge-base.sh dev ./docs
+# Get the CloudFront URL (this is your VITE_API_URL)
+export VITE_API_URL=$(terraform -chdir=infra/terraform output -raw cloudfront_distribution_url)
+
+./scripts/deploy-frontend.sh dev
 ```
 
-**Expected duration:** 2-10 minutes depending on document count
+#### Step 6: Upload RAG Data (~10-20 min)
+
+Upload Met Museum + Wikidata documents to the Bedrock Knowledge Base:
+
+```bash
+./scripts/upload-rag-data.sh
+# This converts JSONL → TXT, uploads to S3, and triggers Bedrock ingestion
+```
+
+#### Step 7: Upload Training Data
+
+If you have the training images locally (requires `git lfs pull` first):
+
+```bash
+export S3_IMAGES_RAW_BUCKET=$(terraform -chdir=infra/terraform output -raw s3_images_raw_bucket)
+export DDB_IMAGES_TABLE=$(terraform -chdir=infra/terraform output -raw dynamodb_image_records_table_name)
+export AWS_REGION=ca-central-1
+
+./scripts/update-data.sh --data-dir ./data --metadata ./data/metadata.csv
+```
+
+If you don't have the images locally:
+
+```bash
+./scripts/download-data.sh   # Downloads from Google Drive (~2 GB)
+# Then run the upload command above
+```
+
+#### Verify Deployment
+
+```bash
+BACKEND_URL=$(terraform -chdir=infra/terraform output -json summary | jq -r '.backend_url')
+
+# Health check
+curl -sS "${BACKEND_URL}/health" | jq .
+
+# RAG query
+curl -sS -X POST "${BACKEND_URL}/rag-query" \
+  -H "Content-Type: application/json" \
+  -d '{"query": "Tell me about Van Gogh"}' | jq .
+```
 
 ---
 
-## Ongoing Development Workflow
+## Training the Model
 
-After initial setup, this is your daily workflow.
+The Swin Transformer model runs on Modal GPUs. Training data must be uploaded to S3 first (Step 7 above).
 
-1. Develop and test on `dev` branch → deploys to dev environment
-2. Create PR from `dev` → `main` → triggers validation
-3. Merge to `main` → deploys to prod environment
+### If a Model Is Already Trained
+
+Check if checkpoints exist on the Modal volume:
+
+```bash
+modal volume ls artguard-checkpoints /checkpoints/tiny/
+# Should show best.pt and epoch_*.pt files
+```
+
+If checkpoints exist, inference will work automatically — no training needed.
+
+### Train From Scratch
+
+```bash
+# Train Swin-Tiny (recommended, ~2-4 hours on A10G)
+./scripts/run-benchmarks.sh tiny
+
+# Train Swin-Base (larger model, ~4-8 hours)
+./scripts/run-benchmarks.sh base
+
+# Train both in parallel
+./scripts/run-benchmarks.sh
+```
+
+Or trigger training via the API:
+
+```bash
+curl -sS -X POST "${BACKEND_URL}/train" \
+  -H "Content-Type: application/json" \
+  -d '{"variant": "tiny"}' | jq .
+```
+
+### Evaluate a Checkpoint
+
+```bash
+modal run src/apps/train/evaluate.py \
+  --variant tiny \
+  --checkpoint /checkpoints/tiny/best.pt \
+  --output-dir benchmarks/
+```
+
+Results are saved as JSON with accuracy, F1, precision, recall, and confusion matrix broken down by sublabel. See [BENCHMARKS.md](BENCHMARKS.md) for methodology.
+
+### Process Training Images Into Patches
+
+After uploading raw training images, process them into 224x224 patches for the model:
+
+```bash
+curl -sS -X POST "${BACKEND_URL}/process_data" | jq .
+# Spawns an ECS Fargate task that processes all unprocessed images
+```
 
 ---
 
-## GitHub Actions Integration
+## Ongoing Development
+
+### Code Changes → Automatic Deployment
+
+| What you change | What happens |
+|---|---|
+| `src/apps/backend/**` | `app-docker.yml` builds Docker + deploys to ECS |
+| `src/apps/frontend/**` | `frontend-deploy.yml` builds Vite + deploys to S3/CloudFront |
+| `infra/terraform/**` | `terraform-deploy.yml` runs `terraform apply` |
+| `src/apps/data_pipeline/output/**` | `update-knowledge-base.yml` syncs RAG documents |
+
+### Manual Deployment Commands
+
+```bash
+# Backend only
+./scripts/build-and-push-docker.sh dev && ./scripts/deploy-ecs.sh dev
+
+# Frontend only
+export VITE_API_URL="https://YOUR_CLOUDFRONT_URL"
+./scripts/deploy-frontend.sh dev
+
+# Infrastructure only
+./scripts/terraform-deploy.sh dev plan    # Preview
+./scripts/terraform-deploy.sh dev apply   # Apply
+```
+
+---
+
+## GitHub Actions CI/CD
 
 ### Required GitHub Secrets
 
-For GitHub Actions to work, configure these secrets in the repository:
+Set these in **Settings > Secrets and variables > Actions**:
 
-**Settings → Secrets and variables → Actions → New repository secret**
+| Secret | Value |
+|--------|-------|
+| `AWS_ACCESS_KEY_ID` | IAM user access key |
+| `AWS_SECRET_ACCESS_KEY` | IAM user secret key |
+| `MODAL_API_KEY` | Modal credentials JSON (for DR workflow) |
 
-| Secret Name | Value | Purpose |
-|------------|-------|---------|
-| `AWS_ACCESS_KEY_ID` | Your AWS access key | Authenticate GitHub Actions to AWS |
-| `AWS_SECRET_ACCESS_KEY` | Your AWS secret key | Authenticate GitHub Actions to AWS |
-| `AWS_REGION` | `ca-central-1` | AWS region (optional, defaults in workflows) |
+### Workflow Summary
 
-**How to create AWS credentials for GitHub:**
-
-```bash
-# Create IAM user for CI/CD
-aws iam create-user --user-name github-actions-artguard
-
-# Attach necessary policies
-aws iam attach-user-policy \
-  --user-name github-actions-artguard \
-  --policy-arn arn:aws:iam::aws:policy/PowerUserAccess
-
-# Create access key
-aws iam create-access-key --user-name github-actions-artguard
-# Save the AccessKeyId and SecretAccessKey output
-```
-
-## 🔄 Complete Deployment Workflow
-
-### Workflow Execution Flow
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                    Your Development Flow                      │
-└─────────────────────────────────────────────────────────────┘
-
-1. Edit Code Locally
-   ├── src/**                    → Triggers app-docker.yml
-   ├── src/apps/frontend/       → Triggers frontend-deploy.yml
-   ├── infra/terraform/         → Triggers terraform-deploy.yml
-   └── docs/                    → Triggers update-knowledge-base.yml
-
-2. Create Pull Request
-   └── infra/terraform/ changed → Triggers terraform-pr.yml (validation)
-
-3. Merge to dev/main
-   └── Automatic deployments run based on changed files
-
-4. Manual Operations (GitHub UI)
-   ├── First time setup          → terraform-bootstrap.yml
-   ├── ECS management            → ecs-manage.yml
-   ├── Emergency teardown        → terraform-destroy.yml
-   └── Secret recovery           → secret.yml
-
-┌─────────────────────────────────────────────────────────────┐
-│              Complete Deployment Pipeline                     │
-└─────────────────────────────────────────────────────────────┘
-
-Code Change → Git Push → GitHub Actions → AWS Deployment → Live
-
-Example: Backend Update
-  1. Edit src/apps/backend/app.py
-  2. git push origin dev
-  3. app-docker.yml triggers automatically
-  4. Builds Docker → Pushes to ECR → Deploys to ECS
-  5. New version live in ~15 minutes
-
-Example: Frontend Update
-  1. Edit src/apps/frontend (Vite + React)
-  2. git push origin dev
-  3. frontend-deploy.yml triggers automatically
-  4. Builds Vite (`dist/`) → Syncs to S3 → Invalidates CloudFront
-  5. New version live in ~10 minutes
-
-Example: Infrastructure Update
-  1. Edit infra/terraform/ecs.tf (increase task count)
-  2. git push origin dev
-  3. terraform-deploy.yml triggers automatically
-  4. Runs terraform apply → Updates ECS service
-  5. Infrastructure updated in ~5 minutes
-```
-
-
-### Quick Reference: When to Use Each Workflow
-
-| I Want To... | Use This Workflow | How | Manual CLI Command |
-|--------------|-------------------|-----|-------------------|
-| **Deploy backend code changes** | app-docker.yml | Just push to `dev` or `main` - automatic | `./scripts/build-and-push-docker.sh dev && ./scripts/deploy-ecs.sh dev` |
-| **Deploy frontend code changes** | frontend-deploy.yml | Just push to `dev` or `main` - automatic | `./scripts/deploy-frontend.sh dev` |
-| **Update infrastructure (ECS, S3, etc.)** | terraform-deploy.yml | Edit .tf files, push to `dev`/`main` - automatic | `cd infra/terraform && ./scripts/terraform-deploy.sh dev apply` |
-| **Create infrastructure for first time** | terraform-bootstrap.yml | GitHub UI → Actions → Run workflow → Type "BOOTSTRAP" | `./scripts/bootstrap.sh dev` |
-| **Force ECS to redeploy latest image** | ecs-manage.yml | GitHub UI → Actions → Select "deploy" action | `./scripts/ecs-control.sh deploy dev` |
-| **Scale ECS tasks up/down** | ecs-manage.yml | GitHub UI → Actions → Select "scale" → Enter count | `./scripts/ecs-control.sh scale dev 3` |
-| **View ECS service status** | ecs-manage.yml | GitHub UI → Actions → Select "status" | `./scripts/ecs-control.sh status dev` |
-| **View ECS logs** | ecs-manage.yml | GitHub UI → Actions → Select "logs" | `./scripts/ecs-control.sh logs dev` |
-| **Update documentation for RAG** | update-knowledge-base.yml | Edit docs/, push to `main` - automatic | `./scripts/update-knowledge-base.sh dev ./docs` |
-| **Validate infrastructure changes** | terraform-pr.yml | Create PR with .tf changes - automatic | `./scripts/terraform-validate.sh dev` |
-| **Destroy all infrastructure** | terraform-destroy.yml | GitHub UI → Actions → Run workflow → Type "DESTROY" ⚠️ | `cd infra/terraform && ./scripts/terraform-deploy.sh dev destroy` |
-| **Restore lost secrets** | secret.yml | GitHub UI → Actions → Run workflow | `MODAL_API_KEY='xxx' ./infra/disaster_recovery/secret_recovery.sh dev` |
+| Workflow | Trigger | What it does |
+|---|---|---|
+| `app-docker.yml` | Push to main (backend changes) | Build Docker → Push to ECR → Deploy to ECS |
+| `frontend-deploy.yml` | Push to main (frontend changes) | Build Vite → Sync to S3 → Invalidate CloudFront |
+| `terraform-deploy.yml` | Push to main (terraform changes) | `terraform apply` |
+| `terraform-pr.yml` | Pull request (terraform changes) | `terraform validate` + `terraform plan` |
+| `terraform-bootstrap.yml` | Manual dispatch | First-time infrastructure setup |
+| `terraform-destroy.yml` | Manual dispatch | Tear down infrastructure |
+| `ecs-manage.yml` | Manual dispatch | Deploy, scale, status, logs |
+| `update-knowledge-base.yml` | Push to main (pipeline output changes) | Upload RAG docs to S3 + trigger ingestion |
+| `test-coverage.yml` | Push to main / PRs | Run pytest, post coverage badge + PR comment |
+| `secret.yml` | Manual dispatch | DR secret recovery |
 
 ---
 
-## CLI Commands 
+## Common Operations
 
-### ECS Service Management
+### Check Status
 
 ```bash
-# Check ECS service status
-./scripts/ecs-control.sh status dev
-
-# Scale ECS service
-./scripts/ecs-control.sh scale dev 3
-
-# Force new deployment
-./scripts/ecs-control.sh deploy dev
-
-# View recent logs
-./scripts/ecs-control.sh logs dev
+./scripts/ecs-control.sh status dev     # Task count, health, deployments
+./scripts/ecs-control.sh logs dev       # Recent CloudWatch logs
 ```
 
-
-### Direct AWS Operations
+### Cost Management
 
 ```bash
-# View ECS tasks
-aws ecs list-tasks --cluster artguard-cluster --region ca-central-1
+./scripts/ecs-control.sh scale dev 0    # Pause (no compute cost)
+./scripts/ecs-control.sh scale dev 1    # Resume
+```
 
-# View CloudWatch logs
+### Destroy Everything
+
+```bash
+# Full destruction (deletes all data)
+./scripts/destroy-all.sh dev
+
+# Preserve data (DR mode — keeps DynamoDB + S3, destroys compute)
+./scripts/destroy-all.sh dev --preserve-data
+
+# Recover after data-preserving destroy
+./scripts/recover-prod.sh dev
+```
+
+### View Logs
+
+```bash
+# Via script
+./scripts/ecs-control.sh logs dev
+
+# Stream live
 aws logs tail /ecs/artguard-backend --follow --region ca-central-1
 
-# View S3 buckets
-aws s3 ls | grep artguard
+# Filter errors only
+aws logs tail /ecs/artguard-backend --follow --filter-pattern "ERROR" --region ca-central-1
+```
 
-# View ECR images
-aws ecr describe-images --repository-name artguard-backend --region ca-central-1
+### CloudWatch Dashboard
+
+```
+https://console.aws.amazon.com/cloudwatch/home?region=ca-central-1#dashboards:name=artguard-dashboard
 ```
 
 ---
 
 ## Troubleshooting
 
-### Common Issues
+### ECS Tasks Failing Health Checks
 
-#### 1. Docker Build Fails
-
-**Problem:** `docker build` command fails or times out
-
-**Solution:**
 ```bash
-# Ensure Docker Desktop is running
-open -a Docker
-
-# Clean Docker cache
-docker system prune -a
-
-# Rebuild
-./scripts/build-and-push-docker.sh dev
-```
-
-#### 2. ECS Tasks Failing Health Checks
-
-**Problem:** ECS tasks start but fail health checks and get terminated
-
-**Solution:**
-```bash
-# Check logs
 ./scripts/ecs-control.sh logs dev
-
 # Common causes:
-# - Application not listening on port 8000
-# - Application takes too long to start (increase health check grace period)
-# - Missing environment variables
-# - Modal API key not configured
+# - Modal API key not configured → ./scripts/setup-secrets.sh dev
+# - Missing env vars → check Terraform outputs
+# - Port mismatch → container must listen on 8000
+```
 
-# Verify Modal API key
+### Frontend Not Updating After Deploy
+
+```bash
+# CloudFront cache may be stale — invalidate it
+aws cloudfront create-invalidation \
+  --distribution-id $(terraform -chdir=infra/terraform output -raw cloudfront_distribution_id) \
+  --paths "/*" --region us-east-1
+```
+
+### RAG Returns Empty Answers
+
+```bash
+# Check if ingestion completed
+KB_ID=$(terraform -chdir=infra/terraform output -raw knowledge_base_id)
+aws bedrock-agent list-ingestion-jobs --knowledge-base-id $KB_ID --region ca-central-1
+
+# Re-upload and re-ingest
+./scripts/upload-rag-data.sh
+```
+
+### Modal Inference Failing
+
+```bash
+# Check Modal credentials
 aws secretsmanager get-secret-value \
-  --secret-id artguard/modal-api-key-dev \
-  --region ca-central-1
+  --secret-id artguard/modal-api-key-dev --region ca-central-1
+
+# Check if checkpoint exists
+modal volume ls artguard-checkpoints /checkpoints/tiny/
+
+# Re-store credentials
+./scripts/setup-secrets.sh dev
 ```
 
-#### 3. CloudFront Not Serving Updated Content
+### GitHub Actions Failing
 
-**Problem:** Frontend changes not visible after deployment
-
-**Solution:**
-```bash
-# Manual invalidation
-aws cloudfront create-invalidation \
-  --distribution-id <DISTRIBUTION_ID> \
-  --paths "/*" \
-  --region us-east-1
-
-# Or redeploy
-./scripts/deploy-frontend.sh dev
-```
-
-#### 4. GitHub Actions Failing
-
-**Problem:** Workflows fail with authentication errors
-
-**Solution:**
-1. Verify GitHub Secrets are configured correctly
-2. Check AWS credentials have not expired
-3. Verify IAM permissions for GitHub Actions user
-
-```bash
-# Test credentials locally
-export AWS_ACCESS_KEY_ID="<from-github-secret>"
-export AWS_SECRET_ACCESS_KEY="<from-github-secret>"
-aws sts get-caller-identity
-```
-
-## Viewing Resources
-
-```bash
-# ECS Cluster
-aws ecs describe-clusters --clusters artguard-cluster --region ca-central-1
-
-# Load Balancer
-aws elbv2 describe-load-balancers --region ca-central-1 | grep artguard
-
-# S3 Buckets
-aws s3 ls | grep artguard
-
-# CloudFront Distributions
-aws cloudfront list-distributions --region us-east-1
-
-# VPC
-aws ec2 describe-vpcs --region ca-central-1 | grep artguard
-```
-
----
-
-## Quick Reference
-
-### Most Common Commands
-
-```bash
-# Daily development
-git push origin dev                              # Deploy everything automatically
-
-# Manual backend deployment
-./scripts/build-and-push-docker.sh dev && ./scripts/deploy-ecs.sh dev
-
-# Manual frontend deployment (VITE_API_URL required — baked in at build time)
-export VITE_API_URL="https://YOUR_CLOUDFRONT_DOMAIN/api"   # or ALB URL; no trailing slash
-./scripts/deploy-frontend.sh dev
-
-# Check status
-./scripts/ecs-control.sh status dev
-
-# View logs
-./scripts/ecs-control.sh logs dev
-
-# Scale ECS
-./scripts/ecs-control.sh scale dev 3        # Scale up
-./scripts/ecs-control.sh scale dev 0        # Scale down (cost saving)
-
-
-# Infrastructure changes
-./scripts/terraform-validate.sh dev              # Validate
-cd infra/terraform && ./scripts/terraform-deploy.sh dev apply  # Apply
-```
-
-### Key URLs (Dev Environment)
-
-After deployment, find your URLs:
-
-```bash
-# Backend API
-terraform output -state=infra/terraform/terraform.tfstate backend_url
-
-# Frontend URL
-terraform output -state=infra/terraform/terraform.tfstate cloudfront_distribution_url
-
-```
-
-### Emergency Commands
-
-```bash
-# Stop all services (cost emergency)
-./scripts/ecs-control.sh scale dev 0
-
-# Force new deployment
-./scripts/ecs-control.sh deploy dev
-
-# Invalidate CloudFront
-aws cloudfront create-invalidation \
-  --distribution-id $(cd infra/terraform && terraform output -raw cloudfront_distribution_id) \
-  --paths "/*" \
-  --region us-east-1
-
-# Rollback Docker image
-# Find previous image:
-aws ecr describe-images --repository-name artguard-backend --region ca-central-1
-# Update ECS task definition manually or redeploy previous git commit
-```
----
-
-**View CloudWatch Dashboard:**
-```bash
-# Get dashboard URL
-echo "https://console.aws.amazon.com/cloudwatch/home?region=ca-central-1#dashboards:name=artguard-dashboard"
-```
-
-```bash
-# List images in ECR
-aws ecr describe-images \
-  --repository-name artguard-backend \
-  --region ca-central-1 \
-  --query 'sort_by(imageDetails, &imagePushedAt)[-10:]' \
-  --output table
-
-# Get latest image tag
-aws ecr describe-images \
-  --repository-name artguard-backend \
-  --region ca-central-1 \
-  --query 'sort_by(imageDetails, &imagePushedAt)[-1].imageTags[0]' \
-  --output text
-```
-
-### Check CloudFront Distribution
-
-```bash
-# Get distribution ID
-cd infra/terraform
-terraform output -raw cloudfront_distribution_id
-
-# Check distribution status
-aws cloudfront get-distribution \
-  --id $(terraform output -raw cloudfront_distribution_id) \
-  --query 'Distribution.Status' \
-  --output text
-```
-
-
-**View Logs:**
-### ECS Logs (Backend)
-
-```bash
-# View last 50 log entries
-./scripts/ecs-control.sh logs dev
-
-# Follow logs in real-time
-aws logs tail /ecs/artguard-backend \
-  --follow \
-  --region ca-central-1
-
-# View logs from last hour
-aws logs tail /ecs/artguard-backend \
-  --since 1h \
-  --format short \
-  --region ca-central-1
-
-# View logs from specific time
-aws logs tail /ecs/artguard-backend \
-  --since 2026-02-14T10:00:00 \
-  --until 2026-02-14T11:00:00 \
-  --region ca-central-1
-
-# Filter logs by keyword
-aws logs tail /ecs/artguard-backend \
-  --follow \
-  --filter-pattern "ERROR" \
-  --region ca-central-1
-
-# Save logs to file
-aws logs tail /ecs/artguard-backend \
-  --since 1h \
-  --format short \
-  --region ca-central-1 > backend-logs.txt
-```
-
-### Testing
-```bash
-
-# Get backend URL
-BACKEND_URL=$(terraform output -state=infra/terraform/terraform.tfstate.d/dev/terraform.tfstate -raw backend_url)
-
-# Get frontend URL
-FRONTEND_URL=$(terraform output -state=infra/terraform/terraform.tfstate.d/dev/terraform.tfstate -raw cloudfront_distribution_url)
-
-# Test frontend
-curl https://${FRONTEND_URL}
-
-# Test backend health
-curl ${BACKEND_URL}/health
-
-# Upload test image to S3
-aws s3 cp test.jpg s3://artguard-images-raw-dev/inference/test.jpg --region ca-central-1
-```
-
----
+1. Check GitHub Secrets are set (Settings > Secrets)
+2. Verify AWS credentials haven't expired: `aws sts get-caller-identity`
+3. Check workflow logs in the Actions tab for specific error messages
