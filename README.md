@@ -6,18 +6,18 @@ Art forgery detection system using Swin Vision Transformers, with a FastAPI back
 
 Based on: *"Art Authentication with Vision Transformers"* (Schaerf et al., 2023) — [arXiv:2307.03039](https://arxiv.org/abs/2307.03039)
 
-See the [Documentation Index](#documentation-index) for detailed documentation on every part of the project.
+Please see the [Documentation Index](#documentation-index) for detailed documentation on every part of the project.
 
 ---
 
 ## Table of Contents
 
 1. [Overview](#overview)
-2. [Quick Access (Already Deployed)](#quick-access-already-deployed)
-3. [Architecture](#architecture)
-4. [Project Structure](#project-structure)
-5. [Getting Started](#getting-started)
-6. [Running the App](#running-the-app)
+2. [Getting Started](#getting-started)
+3. [Quick Access (Already Deployed)](#quick-access-already-deployed)
+4. [Architecture](#architecture)
+5. [Project Structure](#project-structure)
+6. [Running the Code](#running-the-code)
 7. [Testing](#testing)
 8. [Benchmarking](#benchmarking)
 9. [Deployment](#deployment)
@@ -52,6 +52,34 @@ ArtGuard analyses artwork images to detect potential forgeries. Users upload an 
 | **IaC** | Terraform |
 | **CI/CD** | GitHub Actions (10 workflows) |
 | **Monitoring** | CloudWatch (dashboards, alarms, structured JSON logs) |
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+| Tool | Required for | Install |
+|------|-------------|---------|
+| Python 3.11+ | Backend, tests, data pipeline | `brew install python@3.11` |
+| Node.js 18+ | Frontend | `brew install node` |
+| Docker Desktop | Containerized deployment | [docker.com](https://docker.com/products/docker-desktop) |
+| AWS CLI | Cloud deployment only | `brew install awscli` |
+| Terraform 1.10+ | Infrastructure provisioning only | `brew install terraform` |
+
+### Install Dependencies
+
+```bash
+# Clone the repository
+git clone https://github.com/UofT-CSC490-W2026/ArtGuard.git
+cd ArtGuard
+
+# Backend (Python)
+pip install -r requirements.txt
+
+# Frontend (Node)
+cd src/apps/frontend && npm ci && cd ../../..
+```
 
 ---
 
@@ -91,21 +119,6 @@ For the full list of endpoints see [docs/API_REFERENCE.md](docs/API_REFERENCE.md
 ---
 
 ## Architecture
-
-```
-                    CloudFront (CDN)
-                   /              \
-        S3 (frontend)      ALB (API)
-                            |
-                     ECS Fargate
-                     (FastAPI app)
-                    /      |       \
-              DynamoDB   S3 raw   Modal (GPU)
-              (6 tables) images   Swin model
-                    \              /
-                     Bedrock RAG
-                     (Knowledge Base)
-```
 
 For detailed architecture diagrams see [infra/INFRA_README.md](infra/INFRA_README.md).
 
@@ -183,34 +196,6 @@ ArtGuard/
 ├── DEPLOYMENT.md              # Step-by-step deployment guide
 ├── Dockerfile                 # Backend container image (Python 3.11 + FastAPI)
 └── requirements.txt           # Python dependencies
-```
-
----
-
-## Getting Started
-
-### Prerequisites
-
-| Tool | Required for | Install |
-|------|-------------|---------|
-| Python 3.11+ | Backend, tests, data pipeline | `brew install python@3.11` |
-| Node.js 18+ | Frontend | `brew install node` |
-| Docker Desktop | Containerized deployment | [docker.com](https://docker.com/products/docker-desktop) |
-| AWS CLI | Cloud deployment only | `brew install awscli` |
-| Terraform 1.10+ | Infrastructure provisioning only | `brew install terraform` |
-
-### Install Dependencies
-
-```bash
-# Clone the repository
-git clone https://github.com/UofT-CSC490-W2026/ArtGuard.git
-cd ArtGuard
-
-# Backend (Python)
-pip install -r requirements.txt
-
-# Frontend (Node)
-cd src/apps/frontend && npm ci && cd ../../..
 ```
 
 ---
