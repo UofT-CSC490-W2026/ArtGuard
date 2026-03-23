@@ -128,9 +128,15 @@ def download(s3_client, bucket: str, key: str) -> bytes:
 
     Returns:
         The full object body as bytes.
+
+    Raises:
+        IOError: If the S3 object cannot be downloaded.
     """
-    resp = s3_client.get_object(Bucket=bucket, Key=key)
-    return resp["Body"].read()
+    try:
+        resp = s3_client.get_object(Bucket=bucket, Key=key)
+        return resp["Body"].read()
+    except Exception as exc:
+        raise IOError(f"Failed to download s3://{bucket}/{key}: {exc}") from exc
 
 
 def write_patch_records(
@@ -171,15 +177,23 @@ def move_to_processed(s3_client, bucket: str, key: str) -> None:
         s3_client: A boto3 S3 client.
         bucket:    S3 bucket name (source and destination are the same bucket).
         key:       S3 object key under training/unprocessed/.
+
+    Raises:
+        IOError: If the copy or delete operation fails.
     """
     dest_key = key.replace("training/unprocessed/", "training/processed/", 1)
-    s3_client.copy_object(
-        Bucket=bucket,
-        CopySource={"Bucket": bucket, "Key": key},
-        Key=dest_key,
-        ServerSideEncryption="AES256",
-    )
-    s3_client.delete_object(Bucket=bucket, Key=key)
+    try:
+        s3_client.copy_object(
+            Bucket=bucket,
+            CopySource={"Bucket": bucket, "Key": key},
+            Key=dest_key,
+            ServerSideEncryption="AES256",
+        )
+        s3_client.delete_object(Bucket=bucket, Key=key)
+    except Exception as exc:
+        raise IOError(
+            f"Failed to move s3://{bucket}/{key} to {dest_key}: {exc}"
+        ) from exc
 
 
 def process_single_image(

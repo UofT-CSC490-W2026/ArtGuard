@@ -16,6 +16,19 @@ from src.apps.data_pipeline.wikidata_pipeline import (
 )
 
 
+class TestMetMain:
+    """Tests for met_pipeline.main — download error handling."""
+
+    @patch("src.apps.data_pipeline.met_pipeline.urllib.request.urlopen")
+    def test_raises_on_download_failure(self, mock_urlopen, tmp_path):
+        import urllib.error
+        from src.apps.data_pipeline.met_pipeline import main as met_main
+
+        mock_urlopen.side_effect = urllib.error.URLError("Connection refused")
+        with pytest.raises(RuntimeError, match="Failed to download MET CSV"):
+            met_main()
+
+
 class TestMetBuildRagDocument:
     """Tests for met_pipeline.build_rag_document."""
 
@@ -105,6 +118,31 @@ class TestWikidataBuildRagDocument:
         doc = wiki_build_rag(result)
         assert "Impressionism" in doc
         assert "Post-Impressionism" in doc
+
+
+class TestWikidataMain:
+    """Tests for wikidata_pipeline.main — error handling."""
+
+    @patch("src.apps.data_pipeline.wikidata_pipeline.export_jsonl")
+    @patch("src.apps.data_pipeline.wikidata_pipeline.query_wikidata")
+    def test_continues_on_query_failure(self, mock_query, mock_export):
+        from src.apps.data_pipeline.wikidata_pipeline import main as wiki_main
+
+        mock_query.side_effect = Exception("Network timeout")
+        wiki_main()
+        # Should still call export_jsonl with an empty list (all queries failed)
+        mock_export.assert_called_once()
+        assert mock_export.call_args[0][0] == []
+
+    @patch("src.apps.data_pipeline.wikidata_pipeline.export_jsonl")
+    @patch("src.apps.data_pipeline.wikidata_pipeline.query_wikidata")
+    def test_skips_none_results(self, mock_query, mock_export):
+        from src.apps.data_pipeline.wikidata_pipeline import main as wiki_main
+
+        mock_query.return_value = None
+        wiki_main()
+        mock_export.assert_called_once()
+        assert mock_export.call_args[0][0] == []
 
 
 class TestExportJsonl:

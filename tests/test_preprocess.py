@@ -12,6 +12,7 @@ from src.apps.data_pipeline.preprocess import (
     PreprocessConfig,
     S3UploadContext,
     _encode_jpeg,
+    _upload_patch,
     apply_gaussian_blur,
     center_crop_to_square,
     choose_grid_size,
@@ -298,3 +299,14 @@ class TestProcessImageToPatches:
         for p in patches:
             uri = p["patch_path"]
             assert uri.startswith("s3://test-processed-bucket/")
+
+
+class TestUploadPatchErrorHandling:
+    """Tests for _upload_patch error handling."""
+
+    def test_raises_ioerror_on_s3_failure(self):
+        mock_s3 = MagicMock()
+        mock_s3.put_object.side_effect = Exception("AccessDenied")
+        img = Image.new("RGB", (224, 224), color="red")
+        with pytest.raises(IOError, match="Failed to upload patch"):
+            _upload_patch(mock_s3, "bucket", "key.jpg", img)

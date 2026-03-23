@@ -2,13 +2,15 @@
 
 Tests the core _train function and config defaults. Modal decorators
 are mocked since we don't have a Modal environment in CI.
+Requires torch — skipped entirely if torch is not installed (e.g. GitHub Actions CI).
 """
 import os
 import tempfile
 from unittest.mock import MagicMock, patch
 
 import pytest
-import torch
+
+torch = pytest.importorskip("torch")
 
 from src.apps.train.train import DEFAULT_CONFIG, _train
 

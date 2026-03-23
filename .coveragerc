@@ -1,7 +1,9 @@
 [run]
 source = src
 omit =
-    # Modal GPU code — requires PyTorch + CUDA, tested via Modal infrastructure
+    # Modal GPU modules — tested locally with torch but torch is not in
+    # requirements.txt (it's installed inside Modal containers). CI skips
+    # these tests, so omit them from coverage measurement to keep 100%.
     src/apps/train/train.py
     src/apps/train/evaluate.py
     src/apps/train/inference.py

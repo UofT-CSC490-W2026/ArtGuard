@@ -1,9 +1,11 @@
 """Tests for src.apps.train.model — Swin Transformer model for art authentication.
 
 All tests use pretrained=False to avoid downloading weights in CI.
+Requires torch — skipped entirely if torch is not installed (e.g. GitHub Actions CI).
 """
 import pytest
-import torch
+
+torch = pytest.importorskip("torch")
 import torch.nn as nn
 
 from src.apps.train.model import ArtAuthenticator, build_swin_model, he_normal_init

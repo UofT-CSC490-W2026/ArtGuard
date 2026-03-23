@@ -16,6 +16,7 @@ import json
 import os
 import shutil
 import tempfile
+import urllib.error
 import urllib.request
 
 OUTPUT_FILE = "src/apps/data_pipeline/output/met_data.jsonl"
@@ -101,9 +102,12 @@ def main() -> None:
 
     tmp_csv = os.path.join(tempfile.gettempdir(), "MetObjects.csv")
     print("Downloading MET CSV to disk...", flush=True)
-    with urllib.request.urlopen(CSV_URL) as response:
-        with open(tmp_csv, "wb") as tmp:
-            shutil.copyfileobj(response, tmp, length=1024 * 1024)
+    try:
+        with urllib.request.urlopen(CSV_URL) as response:
+            with open(tmp_csv, "wb") as tmp:
+                shutil.copyfileobj(response, tmp, length=1024 * 1024)
+    except (urllib.error.URLError, urllib.error.HTTPError, OSError) as exc:
+        raise RuntimeError(f"Failed to download MET CSV from {CSV_URL}: {exc}") from exc
     print("Download complete. Processing...", flush=True)
 
     count = 0

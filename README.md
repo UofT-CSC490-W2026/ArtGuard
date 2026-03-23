@@ -298,7 +298,7 @@ pytest tests/test_load.py -m load -v
 locust -f tests/locustfile.py --host http://localhost:8000
 ```
 
-**Test suite:** 395 tests, 100% code coverage. See [tests/README.md](tests/README.md) for full testing methodology.
+**Test suite:** 495 tests, 100% code coverage (1781 statements, 0 missed). See [tests/README.md](tests/README.md) for full testing methodology.
 
 | Category | Files | Tests |
 |----------|-------|-------|
@@ -306,8 +306,9 @@ locust -f tests/locustfile.py --host http://localhost:8000
 | Service tests | inference_service, users_service, s3_presign | 30+ |
 | Route integration | auth, inference, inferences, train, rag, process_data | 60+ |
 | AWS integration | S3 upload/download, DynamoDB CRUD (via moto mocks) | 40+ |
+| ML pipeline | model, dataset, train, evaluate, inference (CPU, mocked) | 90+ |
 | Load tests | Concurrency, latency, throughput, mixed workload | 14 |
-| Edge cases | Error branches, bad data, missing config | 24 |
+| Error handling | Error branches, bad data, missing config, AWS failures | 30+ |
 
 ---
 

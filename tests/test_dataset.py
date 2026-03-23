@@ -1,10 +1,13 @@
 """Tests for src.apps.train.dataset — S3/DynamoDB patch streaming dataset.
 
 All AWS calls are mocked — no real S3 or DynamoDB connections needed.
+Requires torch — skipped entirely if torch is not installed (e.g. GitHub Actions CI).
 """
 import io
 
 import pytest
+
+pytest.importorskip("torch")
 from PIL import Image
 from unittest.mock import MagicMock, patch, PropertyMock
 from torchvision import transforms
@@ -304,6 +307,39 @@ class TestPatchDataset:
         assert counts["original"] == 1
         assert counts["forgery"] == 1
         assert counts["unlabelled"] == 1
+
+    @patch("src.apps.train.dataset.boto3")
+    def test_build_index_with_split_filter(self, mock_boto3):
+        from src.apps.train.dataset import PatchDataset
+
+        mock_ddb = MagicMock()
+        mock_boto3.resource.return_value = mock_ddb
+        mock_boto3.client.return_value = MagicMock()
+
+        mock_img_table = MagicMock()
+        mock_patch_table = MagicMock()
+        mock_ddb.Table.side_effect = [mock_img_table, mock_patch_table]
+
+        mock_img_table.scan.return_value = {
+            "Items": [
+                {"image_id": "img1", "label": "authentic", "split": "train"},
+            ]
+        }
+        mock_patch_table.query.return_value = {
+            "Items": [{"patch_id": "p1", "patch_path": "s3://b/p1.jpg"}]
+        }
+
+        ds = PatchDataset(
+            img_table_name="images",
+            patch_table_name="patches",
+            processed_bucket="bucket",
+            region="us-east-1",
+            split="train",
+        )
+        assert len(ds) == 1
+        # Verify FilterExpression was passed to scan
+        call_kwargs = mock_img_table.scan.call_args[1]
+        assert "FilterExpression" in call_kwargs
 
     @patch("src.apps.train.dataset.boto3")
     def test_getitem(self, mock_boto3):

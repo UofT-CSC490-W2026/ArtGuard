@@ -87,6 +87,12 @@ class TestDownload:
         result = download(s3, "test-raw-bucket", "test/file.jpg")
         assert result == b"image-data"
 
+    def test_raises_ioerror_on_failure(self):
+        mock_s3 = MagicMock()
+        mock_s3.get_object.side_effect = Exception("AccessDenied")
+        with pytest.raises(IOError, match="Failed to download"):
+            download(mock_s3, "bad-bucket", "bad-key")
+
 
 class TestListUnprocessedKeys:
     """Tests for list_unprocessed_keys."""
@@ -124,6 +130,12 @@ class TestWritePatchRecords:
 
 class TestMoveToProcessed:
     """Tests for move_to_processed."""
+
+    def test_raises_ioerror_on_failure(self):
+        mock_s3 = MagicMock()
+        mock_s3.copy_object.side_effect = Exception("AccessDenied")
+        with pytest.raises(IOError, match="Failed to move"):
+            move_to_processed(mock_s3, "bucket", "training/unprocessed/img/f.jpg")
 
     def test_moves_object(self, s3):
         s3.put_object(

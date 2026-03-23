@@ -1,14 +1,17 @@
 """Tests for src.apps.train.evaluate — evaluation metrics and logic.
 
 Tests the metric computation helpers directly (no GPU/Modal needed).
+Requires scikit-learn and torch — skipped entirely if not installed (e.g. GitHub Actions CI).
 """
 import os
 
 import pytest
 from unittest.mock import patch
 
+pytest.importorskip("sklearn")
+pytest.importorskip("torch")
 
-# Mock sklearn before importing evaluate (in case sklearn isn't installed in CI)
+
 class TestComputeMetrics:
     def test_empty_labels(self):
         from src.apps.train.evaluate import _compute_metrics
@@ -82,6 +85,51 @@ class TestPrintMetrics:
         assert "0.9000" in output
         assert "TN=" in output
         assert "TP=" in output
+
+
+class TestEvaluateErrorPaths:
+    """Test _evaluate error handling."""
+
+    @pytest.fixture(autouse=True)
+    def _skip_no_torch(self):
+        pytest.importorskip("torch")
+
+    def test_checkpoint_not_found(self):
+        from src.apps.train.evaluate import _evaluate
+        with pytest.raises(FileNotFoundError, match="Checkpoint not found"):
+            _evaluate(variant="tiny", checkpoint_path="/nonexistent/best.pt")
+
+    @patch.dict(os.environ, {
+        "AWS_REGION": "us-east-1",
+        "DDB_IMAGES_TABLE": "images",
+        "DDB_PATCHES_TABLE": "patches",
+        "S3_IMAGES_PROCESSED_BUCKET": "proc",
+    })
+    def test_empty_test_dataset(self, tmp_path):
+        import torch
+        from unittest.mock import MagicMock
+        from src.apps.train.evaluate import _evaluate
+        from src.apps.train.model import ArtAuthenticator
+
+        model = ArtAuthenticator(variant="tiny", pretrained=False)
+        ckpt_file = tmp_path / "best.pt"
+        torch.save({
+            "epoch": 1,
+            "state_dict": model.state_dict(),
+            "val_loss": 0.5,
+            "val_acc": 0.8,
+            "config": {},
+        }, ckpt_file)
+
+        mock_ds = MagicMock()
+        mock_ds.__len__ = MagicMock(return_value=0)
+        mock_ds.authentic_count = 0
+        mock_ds.contrast_count = 0
+        mock_ds.sublabel_counts = {}
+
+        with patch("src.apps.train.dataset.PatchDataset", return_value=mock_ds):
+            with pytest.raises(RuntimeError, match="Test dataset is empty"):
+                _evaluate(variant="tiny", checkpoint_path=str(ckpt_file))
 
 
 class TestEvaluateFunction:

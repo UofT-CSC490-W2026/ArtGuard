@@ -117,11 +117,21 @@ def predict_patches(
     tensors = []
     for uri in patch_s3_uris:
         # parse s3://bucket/key
+        if not uri.startswith("s3://"):
+            print(f"[inference] WARNING: Skipping invalid S3 URI: {uri}")
+            continue
         without_scheme = uri[5:]
         bucket, _, key = without_scheme.partition("/")
-        resp = s3.get_object(Bucket=bucket, Key=key)
-        img = Image.open(BytesIO(resp["Body"].read())).convert("RGB")
-        tensors.append(transform(img))
+        if not bucket or not key:
+            print(f"[inference] WARNING: Skipping malformed S3 URI: {uri}")
+            continue
+        try:
+            resp = s3.get_object(Bucket=bucket, Key=key)
+            img = Image.open(BytesIO(resp["Body"].read())).convert("RGB")
+            tensors.append(transform(img))
+        except Exception as exc:
+            print(f"[inference] WARNING: Failed to load patch {uri}: {exc}")
+            continue
 
     if not tensors:
         return {

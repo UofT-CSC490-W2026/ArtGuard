@@ -296,15 +296,23 @@ def _upload_patch(
 
     Returns:
         The ``s3://bucket/key`` URI of the uploaded object.
+
+    Raises:
+        IOError: If the S3 upload fails.
     """
     body = _encode_jpeg(img)
-    s3_client.put_object(
-        Bucket=processed_bucket,
-        Key=key,
-        Body=body,
-        ContentType="image/jpeg",
-        ServerSideEncryption="AES256",
-    )
+    try:
+        s3_client.put_object(
+            Bucket=processed_bucket,
+            Key=key,
+            Body=body,
+            ContentType="image/jpeg",
+            ServerSideEncryption="AES256",
+        )
+    except Exception as exc:
+        raise IOError(
+            f"Failed to upload patch to s3://{processed_bucket}/{key}: {exc}"
+        ) from exc
 
     return f"s3://{processed_bucket}/{key}"
 

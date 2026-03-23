@@ -1,6 +1,7 @@
 """Tests for src.apps.train.inference — Modal inference for patch predictions.
 
 Tests the predict_patches logic with mocked S3, torch, and Modal.
+Requires torch — skipped entirely if torch is not installed (e.g. GitHub Actions CI).
 """
 import io
 import os
@@ -9,7 +10,8 @@ from pathlib import Path
 from unittest.mock import MagicMock, patch
 
 import pytest
-import torch
+
+torch = pytest.importorskip("torch")
 from PIL import Image
 
 from src.apps.train.model import ArtAuthenticator

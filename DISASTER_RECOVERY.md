@@ -239,3 +239,67 @@ and the destroy scripts would need manual intervention.
 | `app.tf: enable_deletion_protection` (ALB) | `false` | `true` |
 
 See comments in `infra/terraform/prod.tfvars` for details.
+
+---
+
+## 6. Production-Grade Enhancements (Beyond Current Scope)
+
+Our current DR strategy uses Terraform `state rm` / `import` to preserve and restore data.
+In a real production environment with access to multiple AWS regions and a larger budget,
+the following AWS-native features would provide stronger resilience:
+
+### Cross-Region Replication
+
+If we had access to a second AWS region (e.g. `us-east-1` as a backup for `ca-central-1`),
+we could enable automatic replication so data survives even a full regional outage:
+
+- **S3 Cross-Region Replication (CRR):** Automatically copies every object written to
+  `artguard-images-raw-prod` and `artguard-knowledge-base-prod` to a replica bucket in
+  another region. If `ca-central-1` goes down, the replica contains all images and RAG
+  documents. Recovery would point Terraform at the replica buckets instead of re-uploading.
+  This is configured per-bucket via replication rules and requires versioning enabled
+  (which we already have).
+
+- **DynamoDB Global Tables:** Converts our single-region DynamoDB tables into multi-region,
+  active-active replicas. Writes in `ca-central-1` are automatically replicated to the
+  backup region within seconds. If the primary region fails, the application can failover
+  to the replica with zero data loss. This would protect all user records, inference history,
+  and image metadata.
+
+- **OpenSearch Serverless:** Does not natively support cross-region replication. Our current
+  approach (rebuilding the vector index from S3 source documents) is the recommended
+  recovery strategy. With CRR on the knowledge-base S3 bucket, the source documents would
+  survive a regional outage, and we would re-ingest in the backup region.
+
+### Point-in-Time Recovery (PITR)
+
+- **DynamoDB PITR:** Enables continuous backups of DynamoDB tables, allowing restoration to
+  any second within the last 35 days. This protects against accidental data deletion or
+  corruption — not just infrastructure failures. For example, if a bug in the application
+  accidentally deleted user records, PITR could restore the table to the moment before the
+  deletion. We would enable this in Terraform with:
+  ```hcl
+  resource "aws_dynamodb_table" "users" {
+    point_in_time_recovery {
+      enabled = true
+    }
+  }
+  ```
+
+- **S3 Versioning (already enabled):** Our S3 buckets already have versioning enabled, which
+  provides a form of point-in-time recovery for objects. Every overwrite or delete creates
+  a new version rather than destroying the original. If an image or document is accidentally
+  deleted, the previous version can be restored. Combined with S3 Lifecycle Rules, old
+  versions can be automatically moved to cheaper storage (Glacier) or expired after a
+  retention period.
+
+### Why We Don't Use These Currently
+
+Our AWS account is restricted to `ca-central-1` only, and the budget does not
+support the additional costs of cross-region replication (data transfer fees, replica
+storage). DynamoDB PITR is already enabled for prod (`enable_dynamodb_pitr = true` in `prod.tfvars`),
+providing point-in-time restore for all 6 tables up to 35 days back. This protects against
+accidental data corruption or bad writes — a complementary layer to our infrastructure-level DR.
+The `terraform state rm` / `import` approach provides infrastructure disaster recovery
+(surviving a full teardown) while PITR provides data-level recovery (restoring to a past state).
+Both work independently and together within our constraints.

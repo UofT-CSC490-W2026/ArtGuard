@@ -216,9 +216,17 @@ def main() -> None:
         print(f"Querying {name}...")
 
         query = build_query(qid)
-        result = query_wikidata(query)
-        rag_text = build_rag_document(result)
+        try:
+            result = query_wikidata(query)
+        except Exception as exc:
+            print(f"  WARNING: Wikidata query failed for {name}: {exc}")
+            continue
 
+        if result is None:
+            print(f"  WARNING: No Wikidata results for {name}")
+            continue
+
+        rag_text = build_rag_document(result)
         if rag_text:
             documents.append({"id": qid, "text": rag_text})
 
