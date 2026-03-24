@@ -161,17 +161,18 @@ def _query_patches_for_image(patch_table, image_id: str) -> list[dict]:
     for index_name in ("ImagePatchesIndex", "image_id-index"):
         try:
             resp = patch_table.query(
-                IndexName="image_id-index",
+                IndexName=index_name,
                 KeyConditionExpression=Key("image_id").eq(image_id),
                 ProjectionExpression="patch_id, patch_path",
             )
             return resp.get("Items", [])
-    except Exception:
-        return _scan_all(
-            patch_table,
-            FilterExpression=Key("image_id").eq(image_id),
-            ProjectionExpression="patch_id, patch_path",
-        )
+        except Exception:
+            continue
+    return _scan_all(
+        patch_table,
+        FilterExpression=Key("image_id").eq(image_id),
+        ProjectionExpression="patch_id, patch_path",
+    )
 
 
 def _fetch_split_for_image(img_table, image_id: str) -> Optional[str]:
