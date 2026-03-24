@@ -28,6 +28,7 @@ from io import BytesIO
 from typing import Optional
 
 import boto3
+from botocore.exceptions import ClientError
 from boto3.dynamodb.conditions import Attr, Key
 from PIL import Image
 from torch.utils.data import Dataset
@@ -119,18 +120,9 @@ def _stream_patch_from_s3(
             raise ValueError("fallback_bucket required for bare S3 key paths")
         bucket, key = fallback_bucket, patch_path
 
-    try:
-        resp = s3_client.get_object(Bucket=bucket, Key=key)
-        img_bytes = resp["Body"].read()
-        return Image.open(BytesIO(img_bytes)).convert("RGB")
-    except s3_client.exceptions.NoSuchKey:
-        raise FileNotFoundError(
-            f"Patch not found in S3: s3://{bucket}/{key}"
-        )
-    except Exception as exc:
-        raise IOError(
-            f"Failed to read patch from S3 (s3://{bucket}/{key}): {exc}"
-        ) from exc
+    resp = s3_client.get_object(Bucket=bucket, Key=key)
+    img_bytes = resp["Body"].read()
+    return Image.open(BytesIO(img_bytes)).convert("RGB")
 
 
 def _scan_all(table, **kwargs) -> list[dict]:
@@ -166,24 +158,38 @@ def _query_patches_for_image(patch_table, image_id: str) -> list[dict]:
     Returns:
         A list of dicts with ``patch_id`` and ``patch_path`` keys.
     """
-    try:
-        resp = patch_table.query(
-            IndexName="image_id-index",
-            KeyConditionExpression=Key("image_id").eq(image_id),
-            ProjectionExpression="patch_id, patch_path",
-        )
-        return resp.get("Items", [])
+    for index_name in ("ImagePatchesIndex", "image_id-index"):
+        try:
+            resp = patch_table.query(
+                IndexName="image_id-index",
+                KeyConditionExpression=Key("image_id").eq(image_id),
+                ProjectionExpression="patch_id, patch_path",
+            )
+            return resp.get("Items", [])
     except Exception:
-        logger.warning(
-            "GSI 'image_id-index' query failed for image %s; falling back to scan",
-            image_id,
-            exc_info=True,
-        )
         return _scan_all(
             patch_table,
             FilterExpression=Key("image_id").eq(image_id),
             ProjectionExpression="patch_id, patch_path",
         )
+
+
+def _fetch_split_for_image(img_table, image_id: str) -> Optional[str]:
+    """Read `split` from ImageRecord (DynamoDB) by image_id."""
+    try:
+        resp = img_table.get_item(
+            Key={"image_id": image_id},
+            ProjectionExpression="#sp",
+            ExpressionAttributeNames={"#sp": "split"},
+        )
+    except Exception:
+        return None
+    item = resp.get("Item") or {}
+    s = item.get("split")
+    if s is None:
+        return None
+    out = str(s).strip()
+    return out if out else None
 
 
 # ---------------------------------------------------------------------------
@@ -266,23 +272,46 @@ class PatchDataset(Dataset):
                 "#sp": "split",
             },
         )
-        if self.split:
-            scan_kwargs["FilterExpression"] = Attr("split").eq(self.split)
 
         image_records = _scan_all(img_table, **scan_kwargs)
+        total_images = len(image_records)
+        labeled_images = 0
+        split_pass_images = 0
+        zero_patch_images = 0
+        no_patch_image_examples: list[str] = []
+        split_miss_examples: list[tuple[str, Optional[str]]] = []
+        split_lookup_miss_count = 0
+        split_lookup_used = 0
 
         skipped = 0
         for rec in image_records:
             if "label" not in rec:
                 skipped += 1
                 continue
+            labeled_images += 1
+            image_id = rec["image_id"]
+            if self.split:
+                rec_split = rec.get("split")
+                if not rec_split:
+                    split_lookup_used += 1
+                    rec_split = _fetch_split_for_image(img_table, image_id)
+                    if rec_split is None:
+                        split_lookup_miss_count += 1
+                if rec_split != self.split:
+                    if len(split_miss_examples) < 5:
+                        split_miss_examples.append((image_id, rec_split))
+                    continue
+                split_pass_images += 1
 
             label = 1 if rec["label"] == "authentic" else 0
             weight = 1.0 if label == 1 else self.imitation_weight
             sublabel = rec.get("sublabel", None)
-            image_id = rec["image_id"]
 
             patches = _query_patches_for_image(patch_table, image_id)
+            if not patches:
+                zero_patch_images += 1
+                if len(no_patch_image_examples) < 5:
+                    no_patch_image_examples.append(image_id)
             for p in patches:
                 self._samples.append((
                     p["patch_path"],
@@ -298,6 +327,22 @@ class PatchDataset(Dataset):
             f"{sum(1 for s in self._samples if s[1]==0):,} inauthentic). "
             f"Skipped {skipped} records with no label."
         )
+        if self.split:
+            print(
+                f"Index diagnostics: images_scanned={total_images:,}, "
+                f"labeled_images={labeled_images:,}, split_matched_images={split_pass_images:,}, "
+                f"images_with_zero_patches={zero_patch_images:,}, "
+                f"split_lookups={split_lookup_used:,}, split_lookup_no_value={split_lookup_miss_count:,}"
+            )
+            if split_miss_examples:
+                print(f"Split mismatch examples (image_id, split): {split_miss_examples}")
+        else:
+            print(
+                f"Index diagnostics: images_scanned={total_images:,}, "
+                f"labeled_images={labeled_images:,}, images_with_zero_patches={zero_patch_images:,}"
+            )
+        if no_patch_image_examples:
+            print(f"Images with no patch rows (sample): {no_patch_image_examples}")
 
     def __len__(self) -> int:
         """Return the total number of patch samples in the dataset."""
@@ -309,7 +354,18 @@ class PatchDataset(Dataset):
         Downloads the patch image from S3 on each call (no local caching).
         """
         patch_path, label, weight, sublabel, image_id = self._samples[idx]
-        img = _stream_patch_from_s3(self._s3, patch_path, fallback_bucket=self.processed_bucket)
+        # Workers use multiprocessing; never let botocore's dynamic exception types
+        # propagate (they break pickling on the queue back to the main process).
+        try:
+            img = _stream_patch_from_s3(
+                self._s3, patch_path, fallback_bucket=self.processed_bucket
+            )
+        except RuntimeError:
+            raise
+        except Exception as e:
+            raise RuntimeError(
+                f"patch load failed image_id={image_id!r} path={patch_path!r}: {e}"
+            ) from None
         if self.transform:
             img = self.transform(img)
         return img, label, weight, sublabel or "", patch_path

@@ -1,0 +1,196 @@
+{
+  "variant": "base",
+  "checkpoint": "/checkpoints/base/best.pt",
+  "checkpoint_name": "best.pt",
+  "trained_epoch": 2,
+  "checkpoint_val_loss": 0.39782150521961934,
+  "checkpoint_val_acc": 0.8766778523489933,
+  "train_config": {
+    "num_epochs": 100,
+    "batch_size": 32,
+    "lr": 0.0001,
+    "early_stop_patience": 20,
+    "early_stop_min_delta": 0.001,
+    "imitation_weight": 10.0,
+    "val_split": 0.1,
+    "num_workers": 4
+  },
+  "patch_level": {
+    "overall": {
+      "n": 1800,
+      "accuracy": 0.8405555555555555,
+      "precision": 0.85451197053407,
+      "recall": 0.6904761904761905,
+      "f1": 0.7637860082304527,
+      "confusion_matrix": [
+        [
+          1049,
+          79
+        ],
+        [
+          208,
+          464
+        ]
+      ]
+    },
+    "by_sublabel": {
+      "proxy": {
+        "n": 1048,
+        "accuracy": 0.9475190839694656,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "confusion_matrix": [
+          [
+            993,
+            55
+          ],
+          [
+            0,
+            0
+          ]
+        ]
+      },
+      "imitation": {
+        "n": 40,
+        "accuracy": 0.4,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "confusion_matrix": [
+          [
+            16,
+            24
+          ],
+          [
+            0,
+            0
+          ]
+        ]
+      },
+      "diffusion": {
+        "n": 40,
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "confusion_matrix": [
+          [
+            40,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ]
+      },
+      "original": {
+        "n": 672,
+        "accuracy": 0.6904761904761905,
+        "precision": 1.0,
+        "recall": 0.6904761904761905,
+        "f1": 0.8169014084507042,
+        "confusion_matrix": [
+          [
+            0,
+            0
+          ],
+          [
+            208,
+            464
+          ]
+        ]
+      }
+    }
+  },
+  "painting_level": {
+    "overall": {
+      "n": 63,
+      "accuracy": 0.8571428571428571,
+      "precision": 0.8333333333333334,
+      "recall": 0.7142857142857143,
+      "f1": 0.7692307692307693,
+      "confusion_matrix": [
+        [
+          39,
+          3
+        ],
+        [
+          6,
+          15
+        ]
+      ]
+    },
+    "by_sublabel": {
+      "proxy": {
+        "n": 35,
+        "accuracy": 0.9428571428571428,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "confusion_matrix": [
+          [
+            33,
+            2
+          ],
+          [
+            0,
+            0
+          ]
+        ]
+      },
+      "imitation": {
+        "n": 2,
+        "accuracy": 0.5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "confusion_matrix": [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            0
+          ]
+        ]
+      },
+      "diffusion": {
+        "n": 5,
+        "accuracy": 1.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "confusion_matrix": [
+          [
+            5,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ]
+      },
+      "original": {
+        "n": 21,
+        "accuracy": 0.7142857142857143,
+        "precision": 1.0,
+        "recall": 0.7142857142857143,
+        "f1": 0.8333333333333334,
+        "confusion_matrix": [
+          [
+            0,
+            0
+          ],
+          [
+            6,
+            15
+          ]
+        ]
+      }
+    }
+  }
+}

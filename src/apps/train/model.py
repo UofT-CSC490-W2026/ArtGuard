@@ -168,7 +168,10 @@ class ArtAuthenticator(nn.Module):
         """
         if use_sample_weights:
             print(f"[ArtAuthenticator] imitation sample weight = {imitation_weight}")
-        return nn.BCEWithLogitsLoss()
+            return nn.BCEWithLogitsLoss(pos_weight=torch.tensor(imitation_weight))
+        else:
+            return nn.BCEWithLogitsLoss()
+
 
     def configure_optimizer(self, lr: float = 1e-4) -> torch.optim.Optimizer:
         """Create an Adam optimiser with the paper's default learning rate.
