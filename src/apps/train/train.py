@@ -106,6 +106,16 @@ DEFAULT_CONFIG = dict(
 # ---------------------------------------------------------------------------
 
 def _train(variant: str, config: dict) -> None:
+    """Run the full training loop for a Swin variant on GPU.
+
+    Loads the patch dataset from DynamoDB/S3, creates train/val splits,
+    trains the ArtAuthenticator model with weighted BCE loss and early
+    stopping, and checkpoints to the Modal Volume after each epoch.
+
+    Args:
+        variant: ``"tiny"`` or ``"base"`` Swin model variant.
+        config:  Hyperparameter dict (see ``DEFAULT_CONFIG``).
+    """
     import torch
     from torch.utils.data import DataLoader, random_split
     from tqdm import tqdm
@@ -438,6 +448,7 @@ def _train(variant: str, config: dict) -> None:
     secrets=[aws_secret, wandb_secret],
 )
 def train_swin_tiny(config: Optional[dict] = None) -> None:
+    """Modal Function: train the Swin-Tiny (28M param) variant."""
     _train(variant="tiny", config=config or DEFAULT_CONFIG)
 
 
@@ -449,6 +460,7 @@ def train_swin_tiny(config: Optional[dict] = None) -> None:
     secrets=[aws_secret, wandb_secret],
 )
 def train_swin_base(config: Optional[dict] = None) -> None:
+    """Modal Function: train the Swin-Base (88M param) variant."""
     _train(variant="base", config=config or DEFAULT_CONFIG)
 
 # ---------------------------------------------------------------------------
@@ -457,6 +469,7 @@ def train_swin_base(config: Optional[dict] = None) -> None:
 
 @app.local_entrypoint()
 def main() -> None:
+    """Local entrypoint: spawn both Swin-Tiny and Swin-Base training runs in parallel."""
     print("Spawning Swin-Tiny and Swin-Base training runs in parallel...")
     tiny_call = train_swin_tiny.spawn(DEFAULT_CONFIG)
     base_call = train_swin_base.spawn(DEFAULT_CONFIG)

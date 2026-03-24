@@ -1,11 +1,12 @@
-"""
-model.py — Art Authentication with Swin Transformers
+"""Swin Transformer model for art authentication.
+
 Based on: "Art Authentication with Vision Transformers" (Schaerf et al., 2023)
 arXiv: 2307.03039
 
 Key paper details implemented here:
+
 - Swin-Tiny (28M params, ImageNet-1K) or Swin-Base (88M params, ImageNet-22K)
-- Full fine-tuning of all layers (variant iii — best performing in paper)
+- Full fine-tuning of all layers (variant iii -- best performing in paper)
 - He normal initialisation on the new classification head
 - Binary classification output (authentic vs. contrast)
 - Adam optimiser, lr=1e-4, binary cross-entropy loss
@@ -18,61 +19,73 @@ from torchvision.models import (
     swin_b, Swin_B_Weights,
 )
 
+
 def he_normal_init(module: nn.Module) -> None:
-    """Initialise linear/conv weights with He normal, biases to zero."""
+    """Apply He normal initialisation to Linear and Conv2d layers.
+
+    Initialises weights with Kaiming normal (fan_in, relu) and sets
+    biases to zero. Non-matching module types are left unchanged.
+
+    Args:
+        module: A PyTorch module (applied recursively via ``nn.Module.apply``).
+    """
     if isinstance(module, (nn.Linear, nn.Conv2d)):
         nn.init.kaiming_normal_(module.weight, mode="fan_in", nonlinearity="relu")
         if module.bias is not None:
             nn.init.zeros_(module.bias)
 
-def build_swin_model(variant: str = "tiny", pretrained: bool = True, num_classes: int = 1, dropout: float = 0.0) -> nn.Module:
-    """
-    Download a pretrained Swin Transformer and replace its classification head
-    with a binary (or N-class) dense layer, He-normal initialised.
+
+def build_swin_model(
+    variant: str = "tiny",
+    pretrained: bool = True,
+    num_classes: int = 1,
+    dropout: float = 0.0,
+) -> nn.Module:
+    """Build a Swin Transformer with a He-normal initialised classification head.
+
+    Downloads pretrained ImageNet weights (if requested), replaces the
+    original 1000-class head with a new ``num_classes``-output head using
+    He normal initialisation, and unfreezes all parameters for full
+    fine-tuning (variant iii from the paper).
+
+    >>> model = build_swin_model("tiny", pretrained=False)
+    >>> model.head[-1].out_features
+    1
 
     Args:
-        variant    : "tiny"  → Swin-Tiny  (ImageNet-1K,  28M params)
-                     "base"  → Swin-Base  (ImageNet-22K, 88M params)
-        pretrained : Use ImageNet pretrained weights (recommended).
-        num_classes: 1  → sigmoid binary output  (paper task)
-                     N  → softmax N-class output
-        dropout    : Optional dropout before the head (0 = disabled).
+        variant:     ``"tiny"`` (Swin-Tiny, 28M params) or ``"base"``
+                     (Swin-Base, 88M params).
+        pretrained:  Whether to load ImageNet pretrained weights.
+        num_classes: Number of output units (1 for binary sigmoid output).
+        dropout:     Dropout probability before the head (0 = disabled).
 
     Returns:
-        nn.Module ready for training (all layers unfrozen).
+        An ``nn.Module`` with all layers unfrozen, ready for training.
+
+    Raises:
+        ValueError: If variant is not ``"tiny"`` or ``"base"``.
     """
     variant = variant.lower()
 
-    # ---- 1. Load backbone ------------------------------------------------
     if variant == "tiny":
         weights = Swin_T_Weights.IMAGENET1K_V1 if pretrained else None
         model = swin_t(weights=weights)
         in_features = model.head.in_features  # 768
-
     elif variant == "base":
         weights = Swin_B_Weights.IMAGENET1K_V1 if pretrained else None
         model = swin_b(weights=weights)
         in_features = model.head.in_features  # 1024
-
     else:
         raise ValueError(f"variant must be 'tiny' or 'base', got '{variant}'")
 
-    # ---- 2. Replace classification head ----------------------------------
-    # Paper: "the top was defined as a randomly-initialised dense layer"
-    # with He-normal initialisation.
     head_layers: list[nn.Module] = []
-
     if dropout > 0.0:
         head_layers.append(nn.Dropout(p=dropout))
-
     head_layers.append(nn.Linear(in_features, num_classes))
 
     model.head = nn.Sequential(*head_layers)
-
-    # Apply He-normal init to the new head only
     model.head.apply(he_normal_init)
 
-    # ---- 3. Unfreeze all layers (variant iii from the paper) -------------
     for param in model.parameters():
         param.requires_grad = True
 
@@ -80,46 +93,78 @@ def build_swin_model(variant: str = "tiny", pretrained: bool = True, num_classes
 
 
 class ArtAuthenticator(nn.Module):
+    """Binary art authentication model wrapping a Swin Transformer backbone.
+
+    Provides the recommended loss function and optimiser from the paper:
+
+    - **Loss**: BCEWithLogitsLoss (binary cross-entropy; paper Section 3.3)
+    - **Optimiser**: Adam, lr=1e-4 (paper Section 3.3)
+
+    The ``forward`` method returns raw logits (no sigmoid). Use ``predict``
+    for probabilities at inference time.
+
+    Args:
+        variant:    ``"tiny"`` or ``"base"`` Swin variant.
+        pretrained: Whether to load ImageNet pretrained weights.
+        dropout:    Dropout probability before the classification head.
     """
-    Thin wrapper around the Swin backbone that also exposes the
-    recommended loss function and optimiser from the paper.
 
-    Loss : BCEWithLogitsLoss  (binary cross-entropy; paper Section 3.3)
-    Optim: Adam, lr=1e-4      (paper Section 3.3)
-
-    Forward output is a raw logit (no sigmoid) — use predict() for
-    probabilities at inference time.
-    """
-
-    def __init__(self, variant: str = "tiny", pretrained: bool = True, dropout: float = 0.0,) -> None:
+    def __init__(
+        self,
+        variant: str = "tiny",
+        pretrained: bool = True,
+        dropout: float = 0.0,
+    ) -> None:
+        """Initialize the ArtAuthenticator with the specified Swin backbone."""
         super().__init__()
-        self.backbone = build_swin_model(variant=variant, pretrained=pretrained, num_classes=1, dropout=dropout)
+        self.backbone = build_swin_model(
+            variant=variant, pretrained=pretrained, num_classes=1, dropout=dropout,
+        )
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
-        """
+        """Compute raw logits for a batch of images.
+
         Args:
-            x: (B, 3, H, W) float tensor, values in [0, 1].
-               Paper uses 224×224 (bicubic-downsampled from 256×256 patches).
+            x: Float tensor of shape ``(B, 3, H, W)`` with values in [0, 1].
+               Paper uses 224x224 patches (bicubic-downsampled from 256x256).
+
         Returns:
-            logits: (B, 1)
+            Logits tensor of shape ``(B, 1)``.
         """
         return self.backbone(x)
 
     def predict(self, x: torch.Tensor) -> torch.Tensor:
-        """Return probabilities in [0, 1]. Values > 0.5 → authentic."""
+        """Compute authenticity probabilities for a batch of images.
+
+        Values > 0.5 indicate the model considers the image authentic.
+
+        Args:
+            x: Float tensor of shape ``(B, 3, H, W)``.
+
+        Returns:
+            Probability tensor of shape ``(B, 1)`` in the range [0, 1].
+        """
         with torch.no_grad():
             return torch.sigmoid(self.forward(x))
 
-    def configure_criterion(self, imitation_weight: float = 10.0, use_sample_weights: bool = True) -> nn.BCEWithLogitsLoss:
-        """
-        Binary cross-entropy loss.
+    def configure_criterion(
+        self,
+        imitation_weight: float = 10.0,
+        use_sample_weights: bool = True,
+    ) -> nn.BCEWithLogitsLoss:
+        """Create the binary cross-entropy loss function.
 
         Paper (Section 3.2): imitation patches are weighted wim=10 in the
-        standard-contrast-set experiments. Set use_sample_weights=False
-        (wim=1) for the refined-contrast-set experiments.
+        standard-contrast-set experiments. Per-sample weights should be
+        supplied to the loss in the training loop.
 
-        Pass the returned criterion to your training loop and supply
-        per-sample weights via the `weight` argument if needed.
+        Args:
+            imitation_weight: Weight for inauthentic samples (logged when
+                              use_sample_weights is True).
+            use_sample_weights: Whether to log the configured weight.
+
+        Returns:
+            A ``BCEWithLogitsLoss`` instance.
         """
         if use_sample_weights:
             print(f"[ArtAuthenticator] imitation sample weight = {imitation_weight}")
@@ -129,7 +174,14 @@ class ArtAuthenticator(nn.Module):
 
 
     def configure_optimizer(self, lr: float = 1e-4) -> torch.optim.Optimizer:
-        """Adam optimiser, lr=1e-4 (paper Section 3.3)."""
+        """Create an Adam optimiser with the paper's default learning rate.
+
+        Args:
+            lr: Learning rate (default 1e-4, per paper Section 3.3).
+
+        Returns:
+            An ``Adam`` optimiser over all model parameters.
+        """
         return torch.optim.Adam(self.parameters(), lr=lr)
 
 
@@ -143,7 +195,7 @@ if __name__ == "__main__":
 
         dummy = torch.randn(4, 3, 224, 224, device=device)
         logits = model(dummy)
-        probs  = model.predict(dummy)
+        probs = model.predict(dummy)
 
         print(f"  Output shape : {logits.shape}")
         print(f"  Sample probs : {probs.squeeze().tolist()}")

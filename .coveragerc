@@ -1,0 +1,22 @@
+[run]
+source = src
+omit =
+    # Modal GPU modules — tested locally with torch but torch is not in
+    # requirements.txt (it's installed inside Modal containers). CI skips
+    # these tests, so omit them from coverage measurement to keep 100%.
+    src/apps/train/train.py
+    src/apps/train/evaluate.py
+    src/apps/train/inference.py
+    src/apps/train/dataset.py
+    src/apps/train/model.py
+
+[report]
+exclude_lines =
+    pragma: no cover
+    if __name__ == .__main__.:
+    raise NotImplementedError
+    # Modal decorators and entrypoints (can't run without Modal runtime)
+    @app\.function
+    @app\.local_entrypoint
+    \.spawn\(
+    \.remote\(

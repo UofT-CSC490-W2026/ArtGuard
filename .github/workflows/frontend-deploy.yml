@@ -1,3 +1,6 @@
+# Builds Vite app to dist/ and syncs to S3.
+# Requires secret VITE_API_URL (API base URL, no trailing slash).
+
 name: Deploy Frontend to S3
 
 on:
@@ -48,7 +51,7 @@ jobs:
         working-directory: src/apps/frontend
         run: |
           echo "Cleaning previous build artifacts..."
-          rm -rf build node_modules/.cache
+          rm -rf dist node_modules/.cache
           echo "Clean complete"
 
       - name: Install dependencies
@@ -61,32 +64,30 @@ jobs:
       - name: Build React application
         working-directory: src/apps/frontend
         env:
-          REACT_APP_API_BASE_URL: ${{ secrets.REACT_APP_API_BASE_URL }}
-          REACT_APP_ENVIRONMENT: ${{ env.ENVIRONMENT }}
+          VITE_API_URL: ${{ secrets.VITE_API_URL || secrets.REACT_APP_API_BASE_URL }}
           NODE_ENV: production
         run: |
-          echo "🔨 Building React frontend..."
-          echo "Environment: $REACT_APP_ENVIRONMENT"
-          echo "API Base URL: $REACT_APP_API_BASE_URL"
+          echo "Building Vite React frontend..."
+          echo "Environment: ${{ env.ENVIRONMENT }}"
+          echo "API URL: $VITE_API_URL"
           npm run build
           echo "Build complete"
 
-          # Verify build output
-          if [ ! -d "build" ]; then
-            echo "❌ Error: 'build' directory not found after build"
+          # Vite outputs to dist/ (not build/)
+          if [ ! -d "dist" ]; then
+            echo "Error: 'dist' directory not found after build"
             exit 1
           fi
 
           echo "Build output contents:"
-          ls -la build/
+          ls -la dist/
 
-          # Check for critical files
-          if [ ! -f "build/index.html" ]; then
-            echo "❌ Error: index.html not found in build output"
+          if [ ! -f "dist/index.html" ]; then
+            echo "Error: index.html not found in build output"
             exit 1
           fi
 
-          echo "✅ Build verification complete"
+          echo "Build verification complete"
 
       - name: Get infrastructure outputs
         id: infra
@@ -105,21 +106,19 @@ jobs:
           echo "Deploying to S3 bucket: $BUCKET_NAME"
 
           echo "Step 1: Syncing static assets with long cache..."
-          # Sync static assets (JS, CSS, images) with long cache (1 year)
-          aws s3 sync build/ s3://$BUCKET_NAME/ \
+          aws s3 sync dist/ s3://$BUCKET_NAME/ \
             --delete \
+            --region ${{ env.AWS_REGION }} \
             --cache-control "public, max-age=31536000, immutable" \
             --exclude "*.html" \
             --exclude "*.json" \
             --exclude "*.txt" \
-            --exclude "*.xml" \
-            --exclude "asset-manifest.json" \
-            --exclude "manifest.json"
+            --exclude "*.xml"
           echo "✅ Static assets synced"
 
           echo "Step 2: Syncing HTML and metadata files with short cache..."
-          # Sync HTML, JSON, and text files with short cache for SPA routing
-          aws s3 sync build/ s3://$BUCKET_NAME/ \
+          aws s3 sync dist/ s3://$BUCKET_NAME/ \
+            --region ${{ env.AWS_REGION }} \
             --cache-control "public, max-age=0, must-revalidate" \
             --exclude "*" \
             --include "*.html" \

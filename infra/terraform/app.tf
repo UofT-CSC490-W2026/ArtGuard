@@ -3,7 +3,7 @@
 resource "aws_ecr_repository" "backend" {
   name                 = "${local.project_name}-backend"
   image_tag_mutability = "MUTABLE"
-  force_delete         = var.environment != "prod" # Allow deletion with images in non-prod environments
+  force_delete         = true # Set to false in real production; true enables disaster-recovery.sh to work
 
   image_scanning_configuration {
     scan_on_push = var.ecr_scan_on_push
@@ -64,7 +64,8 @@ resource "aws_lb" "backend" {
   security_groups    = [aws_security_group.alb.id]
   subnets            = aws_subnet.public[*].id
 
-  enable_deletion_protection       = var.environment == "prod" ? true : false
+  enable_deletion_protection       = false # Disabled so destroy-all.sh and disaster-recovery.sh can tear down cleanly
+  # for real production, set enable_deletion_protection = true to prevent accidental deletion of ALB
   enable_http2                     = true
   enable_cross_zone_load_balancing = true
 
@@ -318,6 +319,10 @@ resource "aws_ecs_task_definition" "backend" {
         {
           name      = "MODAL_API_KEY"
           valueFrom = aws_secretsmanager_secret.modal_api_key.arn
+        },
+        {
+          name      = "JWT_SECRET_KEY"
+          valueFrom = aws_secretsmanager_secret.jwt_secret.arn
         }
       ]
 

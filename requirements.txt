@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1c39b2c292c748245ffbe750d758f6bbf168b8ae23b461c59ce7d5e36c594dea
-size 140
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0
+python-multipart>=0.0.6
+pydantic>=2.0.0
+boto3>=1.34.0
+Pillow>=10.0.0
+PyJWT>=2.8.0
+bcrypt>=4.1.0
+requests>=2.31.0
+modal>=0.64.0
+
+# Testing
+pytest>=8.0.0
+pytest-cov>=4.1.0
+pytest-asyncio>=0.23.0
+moto[s3,dynamodb,sts]>=5.0.0
+httpx>=0.27.0
+locust>=2.20.0

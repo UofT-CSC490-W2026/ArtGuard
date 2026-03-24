@@ -1,6 +1,6 @@
 # ArtGuard Data Architecture
 
-Complete documentation of DynamoDB schemas, S3 storage structure, and data workflows.
+DynamoDB schemas, S3 storage structure, and data workflows.
 
 ---
 
@@ -9,179 +9,132 @@ Complete documentation of DynamoDB schemas, S3 storage structure, and data workf
 1. [DynamoDB Tables](#dynamodb-tables)
 2. [S3 Storage Structure](#s3-storage-structure)
 3. [Data Workflows](#data-workflows)
-4. [Query Patterns](#query-patterns)
-5. [Cost Analysis](#cost-analysis)
-6. [Privacy & Compliance](#privacy--compliance)
-7. [Deployment](#deployment)
+4. [Useful Commands](#useful-commands)
 
 ---
 
 ## DynamoDB Tables
 
+All tables use on-demand (PAY_PER_REQUEST) billing. Table names follow the pattern `artguard-{name}-{env}`.
+
 ### Table 1: Users (`artguard-users-{env}`)
 
-**Purpose:** User accounts and authentication.
-
-#### Schema
+User accounts and authentication.
 
 | Attribute | Type | Key | Description |
 |-----------|------|-----|-------------|
-| `user_id` | String | **PK** | Unique user ID |
-| `email` | String | GSI-PK |User email address |
-| `username` | String | - | Username for login |
-| `password` | String | - | Hashed password |
+| `user_id` | String | **PK** | UUID |
+| `email` | String | GSI-PK | Stored lowercase for case-insensitive lookup |
+| `username` | String | - | Display name |
+| `password_hash` | String | - | bcrypt hash |
+| `created_at` | Number | - | Unix ms timestamp |
+| `updated_at` | Number | - | Unix ms timestamp (set on profile/password updates) |
 
-#### Global Secondary Index
-
-**Email Index**
-- **Keys:** `email` (PK)
-- **Use Case:** Login by email
+**GSI: EmailIndex** — `email` (PK). Used for login-by-email queries.
 
 ---
 
 ### Table 2: InferenceRecords (`artguard-inference-records-{env}`)
 
-**Purpose:** Stores forgery detection inference results.
+Forgery detection results from user uploads.
 
-#### Schema
+| Attribute | Type | Key | Description |
+|-----------|------|-----|-------------|
+| `inference_id` | String | **PK** | UUID |
+| `user_id` | String | GSI-PK | Foreign key to Users |
+| `created_at` | Number | GSI-SK | Unix ms timestamp |
+| `image_id` | String | - | Foreign key to ImageRecords |
+| `image_name` | String | - | Original filename |
+| `image_path` | String | - | S3 URI of raw upload |
+| `artist_name` | String | - | Artist name from upload form |
+| `artwork_name` | String | - | Artwork title from upload form |
+| `title` | String | - | Same as artwork_name (legacy compat) |
+| `file_size` | Number | - | Upload size in bytes |
+| `score` | Number | - | Mean patch probability (0.0–1.0) |
+| `prediction` | Number | - | 1=authentic, 0=forgery, -1=pending |
+| `inference_status` | String | - | `processing`, `completed`, `failed` |
+| `explanation` | String | - | RAG-generated explanation text |
+| `error_message` | String | - | Error detail (only if failed) |
+| `ttl` | Number | - | DynamoDB TTL (Unix seconds, default 90 days) |
 
-| Attribute | Type | Key | Required | Description |
-|-----------|------|-----|----------|-------------|
-| `inference_id` | String | **PK** | - | Unique inference ID |
-| `user_id` | String | GSI-PK | - | Foreign key to Users table |
-| `created_at` | Number | GSI-SK | - | Unix timestamp in milliseconds |
-| `image_name` | String | - | Optional | Name of analyzed image |
-| `image_path` | String | - | - | S3 path to image |
-| `score` | Number | - | - | Forgery confidence score 0.0-1.0 |
-| `explanation` | String | - | Optional | AI analysis explanation |
-| `ttl` | Number | - | Optional | Auto-delete timestamp (90 days) |
-
-#### Global Secondary Index
-
-**UserInferencesIndex**
-- **Keys:** `user_id` (PK), `created_at` (SK)
-- **Use Case:** Get all inferences for a user, sorted by time
+**GSI: UserInferencesIndex** — `user_id` (PK), `created_at` (SK). Used for paginated inference history.
 
 ---
 
 ### Table 3: ImageRecords (`artguard-image-records-{env}`)
 
-**Purpose:** Dataset images for training and testing.
+Dataset images for training, evaluation, and inference.
 
-#### Schema
-
-| Attribute | Type | Key | Required | Description |
-|-----------|------|-----|----------|-------------|
-| `image_id` | String | **PK** | - | Unique image ID |
-| `image_name` | String | - | - | Image filename |
-| `image_path` | String | - | - | S3 path to image |
-| `image_width` | Number | - | - | Image width in pixels |
-| `image_height` | Number | - | - | Image height in pixels |
-| `label` | String | GSI-PK | - | Image label (e.g., "authentic", "forged") |
-| `sublabel` | String | - | Optional | Sublabel for classification |
-| `split` | String | GSI-SK | - | Dataset split ("train", "val", "test") |
-| `attributed_creator` | String | - | Optional | Attributed artist/creator |
-| `actual_creator` | String | - | Optional | Actual creator if different |
-
-#### Global Secondary Index
-
-**LabelSplitIndex**
-- **Keys:** `label` (PK), `split` (SK)
-- **Use Case:** Get all images with specific label in a dataset split
+| Attribute | Type | Key | Description |
+|-----------|------|-----|-------------|
+| `image_id` | String | **PK** | UUID (derived from S3 key path) |
+| `image_name` | String | - | Filename |
+| `image_path` | String | - | S3 URI |
+| `image_width` | Number | - | Width in pixels (clamped >= 0) |
+| `image_height` | Number | - | Height in pixels (clamped >= 0) |
+| `label` | String | - | `authentic` or `inauthentic` |
+| `sublabel` | String | - | `original`, `forgery`, `imitation`, or `proxy` |
+| `split` | String | - | `train`, `val`, `test`, or `unassigned` |
+| `fold_id` | Number | - | Outer cross-validation fold (0-indexed) |
+| `run_id` | String | - | Processing run that created/updated this record |
+| `attributed_creator` | String | - | Artist the artwork is attributed to |
+| `actual_creator` | String | - | True creator |
+| `created_at` | Number | - | Unix ms timestamp |
 
 ---
 
 ### Table 4: PatchRecords (`artguard-patch-records-{env}`)
 
-**Purpose:** Image patches extracted for analysis.
+224x224 image patches extracted for model input.
 
-#### Schema
-
-| Attribute | Type | Key | Required | Description |
-|-----------|------|-----|----------|-------------|
-| `patch_id` | String | **PK** | - | Unique patch ID |
-| `patch_path` | String | - | - | S3 path to patch image |
-| `image_id` | String | GSI-PK | - | Foreign key to ImageRecords table |
-| `patch_type` | String | GSI-SK | - | Patch type ("authentic", "forged") |
-| `patch_x` | Number | - | - | X coordinate in source image |
-| `patch_y` | Number | - | - | Y coordinate in source image |
-| `patch_width` | Number | - | - | Patch width in pixels |
-| `patch_height` | Number | - | - | Patch height in pixels |
-
-#### Global Secondary Index
-
-**ImagePatchesIndex**
-- **Keys:** `image_id` (PK), `patch_type` (SK)
-- **Use Case:** Get all patches for an image, optionally filtered by type
+| Attribute | Type | Key | Description |
+|-----------|------|-----|-------------|
+| `patch_id` | String | **PK** | UUID |
+| `image_id` | String | - | Foreign key to ImageRecords |
+| `patch_path` | String | - | S3 URI of the patch image |
+| `patch_type` | String | - | `grid`, `center_crop_orig`, `center_crop_down_2x`, etc. |
+| `patch_x` | Number | - | X offset in source image |
+| `patch_y` | Number | - | Y offset in source image |
+| `patch_width` | Number | - | Patch width (always 224) |
+| `patch_height` | Number | - | Patch height (always 224) |
+| `score` | Number | - | Per-patch probability (set after inference) |
+| `prediction` | Number | - | Per-patch 0/1 prediction (set after inference) |
+| `created_at` | Number | - | Unix ms timestamp |
 
 ---
 
 ### Table 5: RunRecords (`artguard-run-records-{env}`)
 
-**Purpose:** Stores each training run's metadata, data split configuration, and averaged metrics across folds.
+Training and data processing run metadata.
 
-#### Schema
-
-| Attribute | Type | Key | Required | Description |
-|-----------|------|-----|----------|-------------|
-| `run_id` | String | **PK** | - | Unique run ID (UUID) |
-| `created_at` | Number | GSI-SK | - | Unix timestamp in milliseconds |
-| `status` | String | GSI-PK | - | Run status ("running", "completed", "failed") |
-| `dataset_version` | String | GSI-PK | - | Dataset version identifier |
-| `modal_volume_path` | String | - | Optional | Path to Modal volume with artifacts |
-| `best_config_id` | String | - | Optional | Foreign key to best ConfigRecord |
-| `k_folds` | Number | - | - | Number of cross-validation folds (default: 5) |
-| `stratify_on` | String | - | - | Stratification attribute (default: "sublabel") |
-| `outer_split_seed` | Number | - | - | Seed for outer split reproducibility |
-| `inner_split_seed` | Number | - | - | Seed for inner split reproducibility |
-| `mean_accuracy` | Number | - | Optional | Mean accuracy across folds |
-| `mean_auc` | Number | - | Optional | Mean AUC across folds |
-| `mean_f1` | Number | - | Optional | Mean F1 score across folds |
-| `mean_precision` | Number | - | Optional | Mean precision across folds |
-| `mean_recall` | Number | - | Optional | Mean recall across folds |
-| `std_accuracy` | Number | - | Optional | Std dev of accuracy across folds |
-| `std_auc` | Number | - | Optional | Std dev of AUC across folds |
-| `std_f1` | Number | - | Optional | Std dev of F1 across folds |
-| `std_precision` | Number | - | Optional | Std dev of precision across folds |
-| `std_recall` | Number | - | Optional | Std dev of recall across folds |
-
-#### Global Secondary Indexes
-
-**StatusIndex**
-- **Keys:** `status` (PK), `created_at` (SK)
-- **Use Case:** Find all running/completed/failed runs, sorted by time
-
-**DatasetVersionIndex**
-- **Keys:** `dataset_version` (PK), `created_at` (SK)
-- **Use Case:** Find all runs for a specific dataset version, sorted by time
+| Attribute | Type | Key | Description |
+|-----------|------|-----|-------------|
+| `run_id` | String | **PK** | UUID |
+| `created_at` | Number | - | Unix ms timestamp |
+| `status` | String | - | `running`, `completed`, `completed_with_errors`, `failed` |
+| `k_folds` | Number | - | Number of cross-validation folds (default: 5) |
+| `stratify_on` | String | - | Stratification field (default: `sublabel`) |
+| `outer_split_seed` | Number | - | Seed for outer fold assignment (default: 17) |
+| `inner_split_seed` | Number | - | Seed for inner train/val split (default: 99) |
+| `mean_accuracy` | Number | - | Mean accuracy across folds |
+| `mean_f1` | Number | - | Mean F1 across folds |
 
 ---
 
 ### Table 6: ConfigRecords (`artguard-config-records-{env}`)
 
-**Purpose:** Stores each hyperparameter configuration per fold, including training metrics and whether it was the best config in the fold.
+Per-fold hyperparameter configurations and training results.
 
-#### Schema
-
-| Attribute | Type | Key | Required | Description |
-|-----------|------|-----|----------|-------------|
-| `config_id` | String | **PK** | - | Unique config ID (UUID) |
-| `created_at` | Number | - | - | Unix timestamp in milliseconds |
-| `run_id` | String | GSI-PK | - | Foreign key to RunRecords table |
-| `dataset_version` | String | - | - | Dataset version for reproducibility |
-| `fold_id` | Number | GSI-SK | - | Fold number (0-indexed) |
-| `hyperparameters` | Map | - | - | Hyperparameter key-value pairs |
-| `best_epoch` | Number | - | Optional | Epoch with best validation metric |
-| `best_val` | Number | - | Optional | Best validation metric value |
-| `early_stopped` | Boolean | - | - | Whether training was early-stopped |
-| `is_best_in_fold` | Boolean | - | - | Whether this config was best in the fold |
-| `modal_volume_path` | String | - | Optional | Path to model weights on Modal volume |
-
-#### Global Secondary Index
-
-**RunConfigsIndex**
-- **Keys:** `run_id` (PK), `fold_id` (SK)
-- **Use Case:** Get all configs for a run, organized by fold
+| Attribute | Type | Key | Description |
+|-----------|------|-----|-------------|
+| `config_id` | String | **PK** | UUID |
+| `run_id` | String | - | Foreign key to RunRecords |
+| `fold_id` | Number | - | Fold number (0-indexed) |
+| `hyperparameters` | Map | - | `{lr, batch_size, ...}` |
+| `best_epoch` | Number | - | Epoch with best validation metric |
+| `early_stopped` | Boolean | - | Whether training was early-stopped |
+| `is_best_in_fold` | Boolean | - | Best config in this fold |
+| `created_at` | Number | - | Unix ms timestamp |
 
 ---
 
@@ -189,388 +142,193 @@ Complete documentation of DynamoDB schemas, S3 storage structure, and data workf
 
 ### Buckets
 
-| Bucket Name | Purpose | Lifecycle Policy | Access |
-|-------------|---------|------------------|--------|
-| `artguard-images-raw-{env}` | Original uploaded images  | 30-day auto-delete | Private |
-| `artguard-images-processed-{env}` | Processed images | 90-day auto-delete | Private |
-| `artguard-frontend-{env}` | React static assets | None | Public via CloudFront |
-| `artguard-knowledge-base-{env}` | RAG documentation for Bedrock | Versioning enabled | Private |
+| Bucket | Purpose | Lifecycle |
+|--------|---------|-----------|
+| `artguard-images-raw-{env}` | Original uploaded images (inference + training) | 30-day expiry on inference prefix |
+| `artguard-images-processed-{env}` | 224x224 patches for model input | 90-day expiry |
+| `artguard-frontend-{env}` | React/Vite static assets | None (served via CloudFront) |
+| `artguard-knowledge-base-{env}` | RAG text documents for Bedrock KB | Versioning enabled |
 
-### Directory Structure
+### Key Structure
 
 ```
 artguard-images-raw-{env}/
-├── training/
-│   ├── authentic_v1/           (Model training image data)
-│   │   ├── img001.jpg
-│   │   └── img002.jpg
-│   └── forged_v1/              (Forged examples for training)
-│       ├── img001.jpg
-│       └── img002.jpg
-└── inference/                   (User uploaded image)   
-|    └── 
-└── processed /  (CHANGE W REAL NAME)
+├── inference/{image_id}/{filename}       # User uploads via POST /inference
+└── training/unprocessed/{image_id}/      # Training images uploaded via scripts
+
 artguard-images-processed-{env}/
-├── training/
-│   ├── authentic_v1/           (Resized, normalized, RGB)
-│   └── forged_v1/
-│
-└── inference/                      
-|    └── 
-└── processed/ (CHANGE W REAL NAME)
+└── inference/{image_id}/                 # 224x224 patches created by preprocess.py
+    ├── grid_0_0.jpg
+    ├── grid_0_1.jpg
+    ├── center_crop_orig.jpg
+    └── center_crop_down_2x.jpg
+
+artguard-knowledge-base-{env}/
+└── *.txt                                # Met Museum + Wikidata RAG documents
 ```
 
 **Terraform:** [infra/terraform/s3.tf](infra/terraform/s3.tf)
+
+### Data Lake Tiers (Bronze / Silver / Gold)
+
+Our S3 storage follows a medallion architecture pattern across two data domains:
+
+#### Image Pipeline
+
+| Tier | What | Where | Example |
+|------|------|-------|---------|
+| **Bronze** | Raw uploaded images (unmodified user uploads and training images) | `artguard-images-raw-{env}/` | `inference/{image_id}/painting.jpg` |
+| **Silver** | 224x224 patches extracted from raw images (resized, cropped, normalized) | `artguard-images-processed-{env}/` | `inference/{image_id}/grid_0_0.jpg` |
+| **Gold** | Forgery decision (prediction, score, explanation) stored in DynamoDB | `artguard-inference-records-{env}` (DynamoDB) | `{prediction: 1, score: 0.87, explanation: "..."}` |
+
+#### RAG Pipeline
+
+| Tier | What | Where | Example |
+|------|------|-------|---------|
+| **Bronze** | Raw API responses from Met Museum CSV and Wikidata SPARQL | Not stored — fetched on-demand during pipeline runs | Met CSV rows, Wikidata JSON bindings |
+| **Silver** | Cleaned and structured text documents (JSONL → chunked TXT) | `artguard-knowledge-base-{env}/` | `met_data_part1.txt`, `wikidata_data.txt` |
+| **Gold** | RAG explanations generated by Bedrock (Claude + Knowledge Base) | `artguard-inference-records-{env}` (DynamoDB `explanation` field) | `"The model detected characteristics consistent with..."` |
+
+**Note on RAG Bronze data:** We do not persist the raw Met Museum CSV or Wikidata SPARQL responses in S3. The pipelines fetch from the public APIs and write directly to the Silver tier. Ideally the raw responses would be stored for reproducibility and audit trails, but we chose not to due to storage costs and the fact that the source APIs are publicly accessible and deterministic — the same queries produce the same results. The pipeline scripts (`met_pipeline.py`, `wikidata_pipeline.py`) can be re-run at any time to regenerate the Silver data from source.
+
+### Partitioning Strategy
+
+Data is partitioned across 4 S3 buckets, separated by purpose, access pattern, and lifecycle policy:
+
+| Bucket | Tier | Partitioning | Lifecycle | Why Separate |
+|--------|------|-------------|-----------|--------------|
+| `artguard-images-raw-{env}` | Bronze | `{use_case}/{image_id}/{filename}` where use_case is `inference/` or `training/unprocessed/` | 30-day expiry on inference prefix | Raw uploads need short retention (user images are transient); training images persist longer |
+| `artguard-images-processed-{env}` | Silver | `{use_case}/{image_id}/{patch_name}.jpg` | 90-day expiry | Patches are derived data — can be regenerated from raw images, so shorter retention is safe |
+| `artguard-knowledge-base-{env}` | Silver | Flat namespace (`*.txt`) | Versioning enabled, no expiry | Bedrock Knowledge Base requires a dedicated S3 data source; versioning enables rollback if bad documents are ingested |
+| `artguard-frontend-{env}` | N/A | Vite build output (`index.html`, `assets/`) | No expiry | Static assets served via CloudFront; separate bucket avoids accidental deletion by data lifecycle policies |
+
+**Why 4 buckets instead of 1 with prefixes?**
+- **Different lifecycle policies**: Raw inference images expire in 30 days, patches in 90 days, RAG documents never expire. S3 lifecycle rules apply per-prefix but separate buckets make policies explicit and prevent accidental data loss.
+- **Different access patterns**: The frontend bucket is public via CloudFront OAI; all other buckets are private. Mixing public and private data in one bucket increases the blast radius of misconfigured bucket policies.
+- **Bedrock requirement**: AWS Bedrock Knowledge Base requires a dedicated S3 bucket as its data source — it cannot share a bucket with other data.
+- **IAM least privilege**: Each bucket has its own IAM policy. The ECS task role can read/write image buckets but has no access to the frontend bucket. CloudFront can read the frontend bucket but not the image buckets.
 
 ---
 
 ## Data Workflows
 
-### Workflow A: Real-Time Forgery Detection (Current)
+### Workflow 1: Real-Time Inference
 
-**Use Case:** Interactive user uploads, immediate results
+User uploads an image via the frontend; the backend orchestrates the full pipeline.
 
 ```
-1. User uploads image → POST /detect-forgery
+1. User uploads image via POST /inference
+   (artist_name, artwork_name, file <= 20 MB)
    ↓
-2. Create DynamoDB entry (status=PENDING)
-   request_id: UUID
-   user_id: from auth token
-   filename, size, content_type
+2. Backend validates input, opens with PIL, converts to RGB
    ↓
-3. Preprocess image in-memory (main.py)
-   - Resize to 2048px max
-   - Convert to patches
+3. Upload raw image to S3 (inference/{image_id}/{filename})
+   Write ImageRecord + InferenceRecord to DynamoDB (status=processing, prediction=-1)
    ↓
-4. Parallel AI analysis
-   ├─ Bedrock Claude → Text reasoning
-   └─ Modal → Forgery score 0-100
+4. Split image into 224x224 patches (preprocess.py)
+   Grid patches + center crops at multiple scales
+   Upload patches to S3 processed bucket
+   Write PatchRecords to DynamoDB
    ↓
-5. Update DynamoDB (status=COMPLETED)
-   forgery_score: 87
-   verdict: "LIKELY_FORGED"
-   ai_analysis: "Detailed reasoning..."
+5. Send patch S3 URIs to Modal (Swin Transformer inference)
+   Returns per-patch probabilities + painting-level prediction
    ↓
-6. Return results to user
+6. Query Bedrock Knowledge Base (RAG) for explanation
+   Prompt includes prediction result + confidence score
+   ↓
+7. Update InferenceRecord (status=completed, score, prediction, explanation)
+   Update PatchRecords with per-patch scores
+   ↓
+8. Return result to user
+   {inference_id, prediction, score, explanation, image_url}
 ```
 
-**Implementation:** [src/apps/main.py](src/apps/main.py)
+**Implementation:** [inference_router.py](src/apps/backend/routes/inference_router.py) → [inference_service.py](src/apps/backend/services/inference_service.py) → [preprocess.py](src/apps/data_pipeline/preprocess.py)
 
 ---
 
-### Workflow B: Training Data Upload
+### Workflow 2: Training Data Upload
 
-**Use Case:** Building training datasets for Modal fine-tuning
+Upload local images to S3 and write metadata to DynamoDB for model training.
 
 ```
-1. Run upload script
-   python scripts/upload_training_data.py \
-     --dataset-path ./data/authentic \
-     --dataset-name authentic_v1
+1. Run upload script from repo root
+   ./scripts/update-data.sh --data-dir ./data --metadata ./data/metadata.csv
    ↓
-2. Upload to S3 training/ prefix
-   s3://artguard-images-raw-dev/training/authentic_v1/
+2. For each image in metadata CSV:
+   Upload to s3://artguard-images-raw-{env}/training/unprocessed/{image_id}/
+   Write ImageRecord to DynamoDB (label, sublabel, creator from CSV)
    ↓
-3. Lambda triggered automatically (EDIT THIS )
-   EventBridge → S3 event → Lambda function
+3. Trigger data processing (POST /process_data or manual)
+   Spawns ECS Fargate task running driver.py
    ↓
-4. Preprocess images (Lambda)
-   - Resize to 2048px max
-   - Convert to RGB
-   - Normalize pixel values
-   - Add metadata tags
+4. Driver processes each unprocessed image:
+   Download from S3 → split into patches → upload patches → write PatchRecords
+   Mark ImageRecord as processed
    ↓
-5. Save to processed bucket
-   s3://artguard-images-processed-dev/training/authentic_v1/
-   ↓
-6. Use for Modal model training
+5. Training data ready for Modal
+   PatchDataset (dataset.py) reads from DynamoDB + S3 at training time
 ```
 
-**Implementation:**
-- list relevant files here 
+**Implementation:** [update-data.sh](scripts/update-data.sh) → [driver.py](src/apps/data_pipeline/driver.py) → [preprocess.py](src/apps/data_pipeline/preprocess.py)
 
 ---
 
-### Workflow C: Bedrock Upload
+### Workflow 3: RAG Knowledge Base Update
 
-(another version of same workflows, but might have additional details )
-### Workflow A: Real-Time Forgery Detection (Recommended)
-
-**Use Case**: Interactive user uploads, immediate feedback needed
+Update the Bedrock Knowledge Base with Met Museum and Wikidata documents.
 
 ```
-1. User uploads image
-   POST /detect-forgery
-   Content-Type: multipart/form-data
-
-2. CloudFront → ALB → ECS Task (main.py)
-
-3. Preprocessing (in-memory, main.py:62)
-   - Resize to 2048px max
-   - Convert to RGB
-   - Normalize format
-   - <1 second processing time
-
-4. Parallel API calls (main.py:106, 155)
-   ├─ Bedrock (Claude 3.5 Sonnet)
-   │  - Vision analysis
-   │  - Forgery detection
-   │  - Evidence extraction
-   │  - ~3-5 seconds
-   │
-   └─ Modal (optional, ?use_modal=true)
-      - Custom vision model
-      - Forensic analysis
-      - ~2-4 seconds
-
-5. RAG Enhancement (optional)
-   - Query Bedrock Knowledge Base
-   - Retrieve relevant documentation
-   - Augment Claude prompt with context
-   - +0.5-1 second
-
-6. Result aggregation
-   - Combine Bedrock + Modal responses
-   - Calculate ensemble confidence
-   - Generate evidence report
-
-7. DynamoDB storage
-   - Store analysis results
-   - user_id + analysis_id
-   - TTL: 90 days
-
-8. Response to user
-   {
-     "is_forgery": true,
-     "confidence": 0.89,
-     "evidence": [...],
-     "analysis_id": "...",
-     "models_used": ["bedrock-claude", "modal"]
-   }
-
-Total latency: 4-7 seconds
+1. Run data pipelines to generate JSONL
+   python -m src.apps.data_pipeline.met_pipeline
+   python -m src.apps.data_pipeline.wikidata_pipeline
+   ↓
+2. Convert JSONL to chunked TXT files (max 500 records per file)
+   python scripts/convert-jsonl-to-txt.py
+   ↓
+3. Upload TXT files to S3 knowledge base bucket
+   ./scripts/upload-rag-data.sh
+   ↓
+4. Trigger Bedrock ingestion job
+   Documents → OpenSearch Serverless (vector embeddings)
+   ↓
+5. RAG queries now return relevant context from the knowledge base
 ```
 
-**Implementation**:
-- **File**: [src/apps/main.py](src/apps/main.py)
-- **Preprocessing**: [main.py:62](src/apps/main.py#L62) `preprocess_image_for_inference()`
-- **Bedrock call**: [main.py:106](src/apps/main.py#L106) `analyze_with_bedrock()`
-- **Modal call**: [main.py:155](src/apps/main.py#L155) `analyze_with_modal()`
-- **No S3 upload**: Image stays in memory, no Lambda triggered
-
-**When to use**:
-- Real-time user requests
-- Interactive web/mobile apps
-- Immediate feedback required
-- Single image analysis
+**Implementation:** [met_pipeline.py](src/apps/data_pipeline/met_pipeline.py), [wikidata_pipeline.py](src/apps/data_pipeline/wikidata_pipeline.py) → [upload-rag-data.sh](scripts/upload-rag-data.sh)
 
 ---
 
-### Workflow B: Training Data Upload & Preprocessing
+## Useful Commands
 
-**Use Case**: Building training datasets, model fine-tuning
-
-```
-1. Run data pipeline script (locally or via GitHub Actions)
-   python -m src.apps.data_pipeline.upload_training_data \
-     --dataset-path ./data/authentic_images \
-     --dataset-name authentic_v1
-
-2. Script uploads to S3
-   - Path: s3://artguard-images-raw-dev/training/authentic_v1/*.jpg
-   - Metadata tags: dataset_name, upload_date, source
-   - Progress bar displayed
-
-3. Preprocessing runs in-pipeline
-   - EXIF rotation correction
-   - Resize to 2048px max
-   - Convert to RGB (handle RGBA/PNG)
-   - JPEG optimization (quality 95)
-   - Upload processed images to processed bucket
-   - Path: s3://artguard-images-processed-dev/processed/authentic_v1/*.jpg
-
-4. Training dataset ready
-   - Location: processed bucket
-   - Use for: Model fine-tuning, evaluation, benchmarking
-```
-
-**Implementation**:
-- **Data pipeline**: [src/apps/data_pipeline/](src/apps/data_pipeline/)
-
-**When to use**:
-- Building training datasets
-- Model fine-tuning data preparation
-- Batch preprocessing (1000+ images)
-- Ground truth annotations
-
----
-
----
-
-### User Image Storage
-
-**When user explicitly requests:**
-```bash
-curl -X POST https://api.artguard.com/detect-forgery \
-  -F "file=@artwork.jpg"
-```
-
-**Right to Deletion endpoint:**
-```python
-@app.delete("/api/user/{user_id}/data")
-async def delete_user_data(user_id: str):
-    # Delete all DynamoDB items
-    # Delete all S3 objects
-    # Anonymize or delete user account
-    pass
-```
-
----
-
-### Get Table Names
+### Get Table Names from Terraform
 
 ```bash
-# Users table
-terraform output -raw dynamodb_users_table_name
-
-# Inference records table
-terraform output -raw dynamodb_inference_records_table_name
-
-# Image records table
-terraform output -raw dynamodb_image_records_table_name
-
-# Patch records table
-terraform output -raw dynamodb_patch_records_table_name
-
-# Run records table
-terraform output -raw dynamodb_run_records_table_name
-
-# Config records table
-terraform output -raw dynamodb_config_records_table_name
-
-# Use in application
-export USERS_TABLE=$(terraform output -raw dynamodb_users_table_name)
-export INFERENCES_TABLE=$(terraform output -raw dynamodb_inference_records_table_name)
-export IMAGES_TABLE=$(terraform output -raw dynamodb_image_records_table_name)
-export PATCHES_TABLE=$(terraform output -raw dynamodb_patch_records_table_name)
-export RUNS_TABLE=$(terraform output -raw dynamodb_run_records_table_name)
-export CONFIGS_TABLE=$(terraform output -raw dynamodb_config_records_table_name)
+terraform -chdir=infra/terraform output -raw dynamodb_users_table_name
+terraform -chdir=infra/terraform output -raw dynamodb_inference_records_table_name
+terraform -chdir=infra/terraform output -raw dynamodb_image_records_table_name
+terraform -chdir=infra/terraform output -raw dynamodb_patch_records_table_name
+terraform -chdir=infra/terraform output -raw dynamodb_run_records_table_name
+terraform -chdir=infra/terraform output -raw dynamodb_config_records_table_name
 ```
 
-### Verify Tables
+### Query Tables
 
 ```bash
-# List tables
+# List all tables
 aws dynamodb list-tables --region ca-central-1
-
-# Describe table
-aws dynamodb describe-table \
-  --table-name artguard-inference-records-dev \
-  --region ca-central-1
 
 # Get item count
 aws dynamodb scan \
   --table-name artguard-inference-records-dev \
   --select COUNT \
   --region ca-central-1
+
+# Query user's inferences (GSI)
+aws dynamodb query \
+  --table-name artguard-inference-records-dev \
+  --index-name UserInferencesIndex \
+  --key-condition-expression "user_id = :uid" \
+  --expression-attribute-values '{":uid":{"S":"user-123"}}' \
+  --region ca-central-1
 ```
-
----
-
-## Monitoring
-
-### CloudWatch Metrics
-
-**Available metrics:**
-- `ConsumedReadCapacityUnits` - Read throughput
-- `ConsumedWriteCapacityUnits` - Write throughput
-- `UserErrors` - Client-side errors
-- `SystemErrors` - Server-side errors
-
-**View in CloudWatch Dashboard:**
-```bash
-# Dashboard URL
-echo "https://console.aws.amazon.com/cloudwatch/home?region=ca-central-1#dashboards:name=artguard-dashboard"
-```
-
-### View Logs
-
-```bash
-# DynamoDB API calls (CloudTrail)
-aws logs tail /aws/cloudtrail --follow --region ca-central-1 | grep DynamoDB
-
-# Application logs (ECS)
-aws logs tail /ecs/artguard-backend-dev --follow --region ca-central-1
-```
-
----
-
-## Best Practices
-
-### 1. Always Use Batch Operations
-
-```python
-# Bad: Individual writes (slow)
-for item in items:
-    table.put_item(Item=item)
-
-# Good: Batch write (fast)
-with table.batch_writer() as batch:
-    for item in items:
-        batch.put_item(Item=item)
-```
-
-### 2. Use Conditional Writes
-
-```python
-# Prevent overwriting existing items
-table.put_item(
-    Item=new_item,
-    ConditionExpression='attribute_not_exists(request_id)'
-)
-```
-
-### 3. Implement Pagination
-
-```python
-response = table.query(
-    IndexName='user-index',
-    KeyConditionExpression=Key('user_id').eq('user123'),
-    Limit=20
-)
-
-# Get next page
-if 'LastEvaluatedKey' in response:
-    next_response = table.query(
-        IndexName='user-index',
-        KeyConditionExpression=Key('user_id').eq('user123'),
-        ExclusiveStartKey=response['LastEvaluatedKey'],
-        Limit=20
-    )
-```
-
-### 4. Use Projection Expressions
-
-```python
-# Don't fetch unnecessary data
-response = table.get_item(
-    Key={'request_id': 'abc-123', 'created_at': 1707504000000},
-    ProjectionExpression='forgery_score, verdict, ai_analysis'
-)
-```
-
-### 5. Handle Errors Gracefully
-
-```python
-from botocore.exceptions import ClientError
-
-try:
-    response = table.put_item(Item=item)
-except ClientError as e:
-    if e.response['Error']['Code'] == 'ConditionalCheckFailedException':
-        print("Item already exists")
-    else:
-        raise
-```
-
----

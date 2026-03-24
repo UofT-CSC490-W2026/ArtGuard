@@ -1,3 +1,9558 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2d963ea7891feb25f03f299ee5cb44eb239aedabc3f3a9b8fef4832e69716000
-size 186838
+Artwork Title: George Washington
+Object Type: Plaque
+Classification: Unknown
+
+Artist: Emile Dupont-Zipcy|Edward Savage
+Nationality:  |American
+Lifespan: 1822      |1761      –1885      |1817      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1840–1883
+
+Medium: Faience
+Dimensions: Diam. 8 3/4 in. (22.2 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: George Washington
+Object Type: Plaque
+Classification: Unknown
+
+Artist: Emile Dupont-Zipcy|Charles Willson Peale
+Nationality:  |American
+Lifespan: 1822      |1741      –1885      |1827      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1840–1883
+
+Medium: Faience
+Dimensions: Diam. 8 3/4 in. (22.2 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: George Washington
+Object Type: Plaque
+Classification: Unknown
+
+Artist: Josiah Wedgwood and Sons
+Nationality: British
+Lifespan: 1759      –9999      
+
+Cultural Context: British
+Period: Unknown
+Date Range: 1797–1800
+
+Medium: Earthenware
+Dimensions: H. 7 in. (17.8 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Profile Bust of George Washington
+Object Type: Bust, miniature
+Classification: Unknown
+
+Artist: Robert Ball Hughes
+Nationality: American
+Lifespan: 1806      –1868      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1835–1855
+
+Medium: Wax, glass, wood
+Dimensions: 5 7/8 x 5 in. (14.9 x 12.7 cm)
+
+Credit Line: The Glenn Tilley Morse Collection, Bequest of Glenn Tilley Morse, 1950
+
+---
+
+Artwork Title: George Washington
+Object Type: Bust
+Classification: Unknown
+
+Artist: Victor David Brenner
+Nationality: American, born Lithuania
+Lifespan: 1871      –1924      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1890–1906
+
+Medium: Bronze
+Dimensions: 5 x 3 1/2 in. (12.7 x 8.9 cm)
+
+Credit Line: Gift of Mr. and Mrs. Frederick S. Wait, 1906
+
+---
+
+Artwork Title: George Washington
+Object Type: Statuette
+Classification: Unknown
+
+Artist: Jean Ossaye Mombur
+Nationality:  
+Lifespan: 1850      –1896      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1875–1880
+
+Medium: Gilt bronze
+Dimensions: H. 7 in. (17.8 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Plaque of George Washington
+Object Type: Painting
+Classification: Unknown
+
+Artist: Gilbert Stuart
+Nationality: American
+Lifespan: 1755      –1828      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1776–1830
+
+Medium: Painted glass
+Dimensions: 8 x 5 3/8 in. (20.3 x 13.7 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: George Washington in Japanese Costume
+Object Type: Plaque
+Classification: Unknown
+
+Artist: Miyagawa Kozan
+Nationality:  
+Lifespan: 1842      –1916      
+
+Cultural Context: Japanese
+Period: Unknown
+Date Range: 1800–1883
+
+Medium: Porcelain
+Dimensions: 7 3/4 x 8 1/2 in. (19.7 x 21.6 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Girandole
+Object Type: Girandole
+Classification: Unknown
+
+Artist: New England Glass Company
+Nationality: American
+Lifespan: 1818      –1888      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1850–1860
+
+Medium: Cased and cut blown and engraved glass, marble
+Dimensions: H. 21 3/4 in. (55.2 cm); Diam. 8 in. (20.3 cm)
+
+Credit Line: Friends of the American Wing Fund, 1982
+
+---
+
+Artwork Title: Girandole
+Object Type: Girandole
+Classification: Unknown
+
+Artist: New England Glass Company
+Nationality: American
+Lifespan: 1818      –1888      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1850–1860
+
+Medium: Cased and cut blown glass, marble
+Dimensions: H. 21 3/4 in. (55.2 cm); Diam. 8 in. (20.3 cm)
+
+Credit Line: Friends of the American Wing Fund, 1982
+
+---
+
+Artwork Title: Girandole
+Object Type: Girandole
+Classification: Unknown
+
+Artist: William F. Shaw
+Nationality: American
+Lifespan: 1845      –1900      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1853–1862
+
+Medium: Gilt brass, marble, glass
+Dimensions: H. 14 in. (35.6 cm)
+
+Credit Line: Purchase, Mr. and Mrs. H. O. H. Frelinghuysen Gift and Friends of the American Wing Fund, 1983
+
+---
+
+Artwork Title: Girandole
+Object Type: Girandole
+Classification: Unknown
+
+Artist: William F. Shaw
+Nationality: American
+Lifespan: 1845      –1900      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1853–1862
+
+Medium: Gilt brass, marble, glass
+Dimensions: H. 14 in. (35.6 cm)
+
+Credit Line: Purchase, Mr. and Mrs. H. O. H. Frelinghuysen Gift and Friends of the American Wing Fund, 1983
+
+---
+
+Artwork Title: Girandole
+Object Type: Girandole
+Classification: Unknown
+
+Artist: William F. Shaw
+Nationality: American
+Lifespan: 1845      –1900      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1853–1862
+
+Medium: Gilt brass, marble, glass
+Dimensions: H. 14 in. (35.6 cm)
+
+Credit Line: Purchase, Mr. and Mrs. H. O. H. Frelinghuysen Gift and Friends of the American Wing Fund, 1983
+
+---
+
+Artwork Title: Puget Sound (from Sketchbook X)
+Object Type: Drawing
+Classification: Unknown
+
+Artist: William Trost Richards
+Nationality: American
+Lifespan: 1833      –1905      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1885–1885
+
+Medium: Graphite on off-white wove paper
+Dimensions: 5 x 7 1/2 in. (12.7 x 19.1 cm)
+
+Credit Line: Purchase, Gifts in memory of Stephen D. Rubin, 1992
+
+---
+
+Artwork Title: Glass Cutter
+Object Type: Glass cutter
+Classification: Unknown
+
+Artist: Tiffany Studios
+Nationality:  
+Lifespan: 1902      –1932      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1900–1907
+
+Medium: Metal
+Dimensions: Dimensions unavailable
+
+Credit Line: Gift of Fred and Nancylee Dikeman, in memory of his father, John Dikeman, 1980
+
+---
+
+Artwork Title: Glass Cutter
+Object Type: Glass cutter
+Classification: Unknown
+
+Artist: Tiffany Studios
+Nationality:  
+Lifespan: 1902      –1932      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1900–1907
+
+Medium: Metal
+Dimensions: Dimensions unavailable
+
+Credit Line: Gift of Fred and Nancylee Dikeman, in memory of his father, John Dikeman, 1980
+
+---
+
+Artwork Title: Fragment
+Object Type: Fragment
+Classification: Unknown
+
+Artist: Redwood Glass Company
+Nationality: American
+Lifespan: 1828      –1868      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1828–1868
+
+Medium: Free-blown glass
+Dimensions: 5 1/4 x 4 in. (13.3 x 10.2 cm)
+
+Credit Line: Rogers Fund, 1954
+
+---
+
+Artwork Title: Fragment
+Object Type: Fragment
+Classification: Unknown
+
+Artist: Stiegel's Manheim Factory
+Nationality: American
+Lifespan: 1763      –1774      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1763–1774
+
+Medium: Free-blown glass
+Dimensions: W. 3 1/2 in. (8.9 cm)
+
+Credit Line: Gift of Frederick W. Hunter, 1913
+
+---
+
+Artwork Title: Fragment
+Object Type: Fragment
+Classification: Unknown
+
+Artist: Stiegel's Manheim Factory
+Nationality: American
+Lifespan: 1763      –1774      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1763–1774
+
+Medium: Free-blown glass
+Dimensions: W. 3 1/2 in. (8.9 cm)
+
+Credit Line: Gift of Frederick W. Hunter, 1913
+
+---
+
+Artwork Title: Fragment
+Object Type: Fragment
+Classification: Unknown
+
+Artist: Stiegel's Manheim Factory
+Nationality: American
+Lifespan: 1763      –1774      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1763–1774
+
+Medium: Free-blown glass
+Dimensions: W. 1 5/8 in. (4.1 cm)
+
+Credit Line: Gift of Frederick W. Hunter, 1913
+
+---
+
+Artwork Title: Fragment
+Object Type: Fragment
+Classification: Unknown
+
+Artist: Stiegel's Manheim Factory
+Nationality: American
+Lifespan: 1763      –1774      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1763–1774
+
+Medium: Free-blown glass
+Dimensions: W. 3 1/2 in. (8.9 cm)
+
+Credit Line: Gift of Frederick W. Hunter, 1913
+
+---
+
+Artwork Title: Glass Panel
+Object Type: Glass panel
+Classification: Unknown
+
+Artist: Stiegel's Elizabeth Furnace
+Nationality: American
+Lifespan: 1763      –1774      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1763–1774
+
+Medium: Free-blown glass
+Dimensions: 5 5/8 x 8 1/4 in. (14.3 x 21 cm)
+
+Credit Line: Gift of Frederick W. Hunter, 1913
+
+---
+
+Artwork Title: Glass Panel
+Object Type: Glass panel
+Classification: Unknown
+
+Artist: Stiegel's Manheim Factory
+Nationality: American
+Lifespan: 1763      –1774      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1763–1774
+
+Medium: Free-blown glass
+Dimensions: 8 1/4 x 9 1/4 in. (21 x 23.5 cm)
+
+Credit Line: Gift of Frederick W. Hunter, 1913
+
+---
+
+Artwork Title: Glass Panel
+Object Type: Glass panel
+Classification: Unknown
+
+Artist: Stiegel's Manheim Factory
+Nationality: American
+Lifespan: 1763      –1774      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1763–1774
+
+Medium: Free-blown glass
+Dimensions: 8 1/8 x 8 1/4 in. (20.6 x 21 cm)
+
+Credit Line: Gift of Frederick W. Hunter, 1913
+
+---
+
+Artwork Title: Fragment
+Object Type: Fragment
+Classification: Unknown
+
+Artist: Stiegel's Manheim Factory
+Nationality: American
+Lifespan: 1763      –1774      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1763–1774
+
+Medium: Free-blown glass
+Dimensions: 7 x 5 in. (17.8 x 12.7 cm)
+
+Credit Line: Gift of Frederick W. Hunter, 1913
+
+---
+
+Artwork Title: Glass Shade
+Object Type: Glass shade
+Classification: Unknown
+
+Artist: Louis C. Tiffany|Tiffany Glass and Decorating Company
+Nationality: American|American
+Lifespan: 1848      |1892      –1933      |1902      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1897–1903
+
+Medium: Glass
+Dimensions: H. 5 in. (12.7 cm); Diam. 2 1/8 in. (5.4 cm)
+
+Credit Line: Gift of Mr. and Mrs. Hugh J. Grant, 1974
+
+---
+
+Artwork Title: Glass Shade
+Object Type: Glass shade
+Classification: Unknown
+
+Artist: Louis C. Tiffany|Tiffany Glass and Decorating Company
+Nationality: American|American
+Lifespan: 1848      |1892      –1933      |1902      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1897–1903
+
+Medium: Glass
+Dimensions: H. 5 in. (12.7 cm); Diam. 2 1/8 in. (5.4 cm)
+
+Credit Line: Gift of Mr. and Mrs. Hugh J. Grant, 1974
+
+---
+
+Artwork Title: Glass Shade
+Object Type: Glass shade
+Classification: Unknown
+
+Artist: Louis C. Tiffany|Tiffany Glass and Decorating Company
+Nationality: American|American
+Lifespan: 1848      |1892      –1933      |1902      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1897–1903
+
+Medium: Glass
+Dimensions: H. 5 in. (12.7 cm); Diam. 2 1/8 in. (5.4 cm)
+
+Credit Line: Gift of Mr. and Mrs. Hugh J. Grant, 1974
+
+---
+
+Artwork Title: Fragment
+Object Type: Fragment
+Classification: Unknown
+
+Artist: Stiegel's Manheim Factory
+Nationality: American
+Lifespan: 1763      –1774      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1763–1774
+
+Medium: Free-blown glass
+Dimensions: 1 5/8 in. (4.1 cm)
+
+Credit Line: Gift of Frederick W. Hunter, 1913
+
+---
+
+Artwork Title: Glove Buttoner
+Object Type: Glove buttoner
+Classification: Unknown
+
+Artist: Tiffany & Co.
+Nationality:  
+Lifespan: 1837      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1897–1903
+
+Medium: Gold, diamonds
+Dimensions: 7/8 x 6 7/16 in. (2.2 x 16.4 cm)
+
+Credit Line: Gift of Susan Dwight Bliss, 1953
+
+---
+
+Artwork Title: Glue Pot
+Object Type: Glue pot
+Classification: Unknown
+
+Artist: Louis C. Tiffany|Tiffany Studios
+Nationality: American| 
+Lifespan: 1848      |1902      –1933      |1932      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1907–1920
+
+Medium: Bronze
+Dimensions: H. 2 7/8 in. (7.3 cm)
+
+Credit Line: Gift of Mrs. H. S. Mesick, 1962
+
+---
+
+Artwork Title: Goblet
+Object Type: Goblet
+Classification: Unknown
+
+Artist: Boston & Sandwich Glass Company
+Nationality: American
+Lifespan: 1825      –1888      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1870–1880
+
+Medium: Pressed glass
+Dimensions: H. 5 15/16 in. (15.1 cm)
+
+Credit Line: Gift of Mrs. Emily Winthrop Miles, 1946
+
+---
+
+Artwork Title: Goblet
+Object Type: Goblet
+Classification: Unknown
+
+Artist: C. Dorflinger and Sons
+Nationality: American
+Lifespan: 1881      –1921      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1883–1886
+
+Medium: Blown and cut glass
+Dimensions: 5 1/2 in. (14 cm)
+Body diameter: 3 3/8 in. (8.6 cm)
+
+Credit Line: Gift of Katheryn Hait Dorflinger Manchee, 1972
+
+---
+
+Artwork Title: Goblet
+Object Type: Goblet
+Classification: Unknown
+
+Artist: Jersey Glass Company of George Dummer
+Nationality: American
+Lifespan: 1824      –1862      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1825–1850
+
+Medium: Free-blown lead glass
+Dimensions: H. 4 3/4 in. (12.1 cm)
+
+Credit Line: Gift of Mrs. Ernest H. Fairchild, 1943
+
+---
+
+Artwork Title: Goblet
+Object Type: Goblet
+Classification: Unknown
+
+Artist: Libbey Glass Company
+Nationality: American
+Lifespan: 1888      –2050      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1904–1904
+
+Medium: Blown, cut, and engraved glass
+Dimensions: H. 6 1/2 in. (16.5 cm); Diam. 3 3/4 in. (9.5 cm)
+
+Credit Line: Gift of Toledo Museum of Art and Owens-Illinois Inc., 1969
+
+---
+
+Artwork Title: Goblet
+Object Type: Goblet
+Classification: Unknown
+
+Artist: New Bremen Glass Manufactory|John Frederick Amelung
+Nationality:  |American
+Lifespan: 1784      |1784      –1795      |1791      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1791–1791
+
+Medium: Blown and engraved glass, wood
+Dimensions: H. 10 in. (25.4 cm)
+
+Credit Line: Rogers Fund, 1937
+
+---
+
+Artwork Title: Goblet
+Object Type: Goblet
+Classification: Unknown
+
+Artist: New England Glass Company
+Nationality: American
+Lifespan: 1818      –1888      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1855–1870
+
+Medium: Free-blown silvered glass
+Dimensions: H. 7 9/16 in. (19.2 cm); Diam. 4 1/8 in. (10.5 cm)
+
+Credit Line: Gift of Stuart P. Feld, 1968
+
+---
+
+Artwork Title: Goblet
+Object Type: Goblet
+Classification: Unknown
+
+Artist: Robert and William Wilson
+Nationality: American
+Lifespan: 1825      –1846      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1845–1851
+
+Medium: Silver
+Dimensions: Overall: 6 9/16 in. (16.7 cm); 4 oz. 16 dwt. (149.7 g)
+Lip: Diam. 3 3/8 in. (8.6 cm)
+Foot: Diam. 2 13/16 in. (7.1 cm)
+
+Credit Line: Gift of George H. Hull, 1970
+
+---
+
+Artwork Title: Goblet
+Object Type: Goblet
+Classification: Unknown
+
+Artist: Robert and William Wilson
+Nationality: American
+Lifespan: 1825      –1846      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1840–1851
+
+Medium: Silver
+Dimensions: Overall: 6 5/8 in. (16.8 cm); 5 oz. 17 dwt. (182.7 g)
+Lip: Diam. 3 5/16 in. (8.4 cm)
+Foot: Diam. 2 13/16 in. (7.1 cm)
+
+Credit Line: Gift of George H. Hull, 1970
+
+---
+
+Artwork Title: Goblet
+Object Type: Goblet
+Classification: Unknown
+
+Artist: Adams and Company
+Nationality: American
+Lifespan:           –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1880–1890
+
+Medium: Pressed yellow glass
+Dimensions: H. 6 1/16 in. (15.4 cm)
+
+Credit Line: Gift of Mrs. Emily Winthrop Miles, 1946
+
+---
+
+Artwork Title: Goblet
+Object Type: Goblet
+Classification: Unknown
+
+Artist: Adams and Company
+Nationality: American
+Lifespan:           –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1880–1890
+
+Medium: Pressed glass
+Dimensions: H. 6 1/16 in. (15.4 cm)
+
+Credit Line: Gift of Mrs. Emily Winthrop Miles, 1946
+
+---
+
+Artwork Title: Goblet
+Object Type: Goblet
+Classification: Unknown
+
+Artist: Adams and Company
+Nationality: American
+Lifespan:           –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1880–1890
+
+Medium: Pressed yellow glass
+Dimensions: H. 6 1/16 in. (15.4 cm)
+
+Credit Line: Gift of Mrs. Emily Winthrop Miles, 1946
+
+---
+
+Artwork Title: Goblet
+Object Type: Goblet
+Classification: Unknown
+
+Artist: Adams and Company
+Nationality: American
+Lifespan:           –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1880–1890
+
+Medium: Pressed yellow glass
+Dimensions: H. 6 1/16 in. (15.4 cm)
+
+Credit Line: Gift of Mrs. Emily Winthrop Miles, 1946
+
+---
+
+Artwork Title: Goblet
+Object Type: Goblet
+Classification: Unknown
+
+Artist: Adams and Company
+Nationality: American
+Lifespan:           –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1880–1890
+
+Medium: Pressed yellow glass
+Dimensions: H. 6 1/16 in. (15.4 cm)
+
+Credit Line: Gift of Mrs. Emily Winthrop Miles, 1946
+
+---
+
+Artwork Title: Goblet
+Object Type: Goblet
+Classification: Unknown
+
+Artist: Adams and Company
+Nationality: American
+Lifespan:           –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1880–1890
+
+Medium: Pressed yellow glass
+Dimensions: H. 6 1/16 in. (15.4 cm)
+
+Credit Line: Gift of Mrs. Emily Winthrop Miles, 1946
+
+---
+
+Artwork Title: Goblet
+Object Type: Goblet
+Classification: Unknown
+
+Artist: Bakewell, Pears and Company
+Nationality: American
+Lifespan: 1836      –1882      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1850–1870
+
+Medium: Pressed glass
+Dimensions: H. 6 1/4 in. (15.9 cm)
+
+Credit Line: Gift of Mrs. Emily Winthrop Miles, 1946
+
+---
+
+Artwork Title: Goblet
+Object Type: Goblet
+Classification: Unknown
+
+Artist: Bakewell, Pears and Company
+Nationality: American
+Lifespan: 1836      –1882      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1850–1870
+
+Medium: Pressed glass
+Dimensions: H. 6 5/16 in. (16 cm)
+
+Credit Line: Gift of Mrs. Emily Winthrop Miles, 1946
+
+---
+
+Artwork Title: Goblet
+Object Type: Goblet
+Classification: Unknown
+
+Artist: Bakewell, Pears and Company
+Nationality: American
+Lifespan: 1836      –1882      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1850–1870
+
+Medium: Pressed glass
+Dimensions: H. 6 3/16 in. (15.7 cm)
+
+Credit Line: Gift of Mrs. Emily Winthrop Miles, 1946
+
+---
+
+Artwork Title: Goblet
+Object Type: Goblet
+Classification: Unknown
+
+Artist: Bakewell, Pears and Company
+Nationality: American
+Lifespan: 1836      –1882      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1850–1870
+
+Medium: Pressed glass
+Dimensions: H. 6 7/16 in. (16.4 cm)
+
+Credit Line: Gift of Mrs. Emily Winthrop Miles, 1946
+
+---
+
+Artwork Title: Goblet
+Object Type: Goblet
+Classification: Unknown
+
+Artist: Bakewell, Pears and Company
+Nationality: American
+Lifespan: 1836      –1882      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1850–1870
+
+Medium: Pressed glass
+Dimensions: H. 6 3/8 in. (16.2 cm)
+
+Credit Line: Gift of Mrs. Emily Winthrop Miles, 1946
+
+---
+
+Artwork Title: Goblet
+Object Type: Goblet
+Classification: Unknown
+
+Artist: Bakewell, Pears and Company
+Nationality: American
+Lifespan: 1836      –1882      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1850–1870
+
+Medium: Pressed glass
+Dimensions: H. 6 3/16 in. (15.7 cm)
+
+Credit Line: Gift of Mrs. Emily Winthrop Miles, 1946
+
+---
+
+Artwork Title: Goblet
+Object Type: Goblet
+Classification: Unknown
+
+Artist: Challinor, Taylor and Company
+Nationality: American
+Lifespan: 1866      –1891      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1870–1890
+
+Medium: Pressed purple marble glass
+Dimensions: H. 6 3/8 in. (16.2 cm)
+
+Credit Line: Gift of Mrs. Emily Winthrop Miles, 1946
+
+---
+
+Artwork Title: Goblet
+Object Type: Goblet
+Classification: Unknown
+
+Artist: Challinor, Taylor and Company
+Nationality: American
+Lifespan: 1866      –1891      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1870–1890
+
+Medium: Pressed purple marble glass
+Dimensions: H. 6 3/8 in. (16.2 cm)
+
+Credit Line: Gift of Mrs. Emily Winthrop Miles, 1946
+
+---
+
+Artwork Title: Goblet
+Object Type: Goblet
+Classification: Unknown
+
+Artist: Challinor, Taylor and Company
+Nationality: American
+Lifespan: 1866      –1891      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1870–1890
+
+Medium: Pressed purple marble glass
+Dimensions: H. 6 3/8 in. (16.2 cm)
+
+Credit Line: Gift of Mrs. Emily Winthrop Miles, 1946
+
+---
+
+Artwork Title: Goblet
+Object Type: Goblet
+Classification: Unknown
+
+Artist: Challinor, Taylor and Company
+Nationality: American
+Lifespan: 1866      –1891      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1870–1890
+
+Medium: Pressed purple marble glass
+Dimensions: H. 6 3/8 in. (16.2 cm)
+
+Credit Line: Gift of Mrs. Emily Winthrop Miles, 1946
+
+---
+
+Artwork Title: Goblet
+Object Type: Goblet
+Classification: Unknown
+
+Artist: Challinor, Taylor and Company
+Nationality: American
+Lifespan: 1866      –1891      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1870–1890
+
+Medium: Pressed purple marble glass
+Dimensions: H. 6 3/8 in. (16.2 cm)
+
+Credit Line: Gift of Mrs. Emily Winthrop Miles, 1946
+
+---
+
+Artwork Title: Goblet
+Object Type: Goblet
+Classification: Unknown
+
+Artist: Challinor, Taylor and Company
+Nationality: American
+Lifespan: 1866      –1891      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1870–1890
+
+Medium: Pressed purple marble glass
+Dimensions: H. 6 3/8 in. (16.2 cm)
+
+Credit Line: Gift of Mrs. Emily Winthrop Miles, 1946
+
+---
+
+Artwork Title: Goblet
+Object Type: Goblet
+Classification: Unknown
+
+Artist: Anthony Rasch
+Nationality: American
+Lifespan: 1804      –1858      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1813–1818
+
+Medium: Silver
+Dimensions: Overall: 6 1/4 in. (15.9 cm); 8 oz. 3 dwt. (254.2 g)
+Lip: Diam. 4 1/16 in. (10.3 cm)
+Foot: Diam. 2 11/16 in. (6.8 cm)
+
+Credit Line: Gift of Mr. and Mrs. Edwin Kessler, 1971
+
+---
+
+Artwork Title: Goblet
+Object Type: Goblet
+Classification: Unknown
+
+Artist: Anthony Rasch
+Nationality: American
+Lifespan: 1804      –1858      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1813–1818
+
+Medium: Silver
+Dimensions: Overall: 6 1/4 in. (15.9 cm); 7 oz. 14 dwt. (239.2 g)
+Lip: Diam. 4 in. (10.2 cm)
+Foot: Diam. 2 5/8 in. (6.7 cm)
+
+Credit Line: Gift of Mr. and Mrs. Edwin Kessler, 1971
+
+---
+
+Artwork Title: Goblet
+Object Type: Goblet
+Classification: Unknown
+
+Artist: Anthony Rasch
+Nationality: American
+Lifespan: 1804      –1858      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1813–1818
+
+Medium: Silver
+Dimensions: Overall: 6 5/16 in. (16 cm); 7 oz. 16 dwt. (242.4 g)
+Lip: Diam. 4 1/4 in. (10.8 cm)
+Foot: Diam. 2 5/8 in. (6.7 cm)
+
+Credit Line: Gift of Mr. and Mrs. Edwin Kessler, 1971
+
+---
+
+Artwork Title: Goblet
+Object Type: Goblet
+Classification: Unknown
+
+Artist: Anthony Rasch
+Nationality: American
+Lifespan: 1804      –1858      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1813–1818
+
+Medium: Silver
+Dimensions: Overall: 6 5/16 in. (16 cm); 7 oz. 18 dwt. (245.2 g)
+Lip: Diam. 4 1/8 in. (10.5 cm)
+Foot: Diam. 2 11/16 in. (6.8 cm)
+
+Credit Line: Gift of Mr. and Mrs. Edwin Kessler, 1971
+
+---
+
+Artwork Title: Goblet
+Object Type: Goblet
+Classification: Unknown
+
+Artist: Anthony Rasch
+Nationality: American
+Lifespan: 1804      –1858      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1813–1818
+
+Medium: Silver
+Dimensions: Overall: 6 3/8 in. (16.2 cm); 8 oz. 4 dwt. (255.4 g)
+Lip: Diam. 4 1/16 in. (10.3 cm)
+Foot: Diam. 2 11/16 in. (6.8 cm)
+
+Credit Line: Gift of Mr. and Mrs. Edwin Kessler, 1971
+
+---
+
+Artwork Title: Goblet
+Object Type: Goblet
+Classification: Unknown
+
+Artist: Anthony Rasch
+Nationality: American
+Lifespan: 1804      –1858      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1813–1818
+
+Medium: Silver
+Dimensions: Overall: 6 5/16 in. (16 cm); 8 oz. 6 dwt. (258.9 g)
+Lip: Diam. 4 1/8 in. (10.5 cm)
+Foot: Diam. 2 11/16 in. (6.8 cm)
+
+Credit Line: Gift of Mr. and Mrs. Edwin Kessler, 1971
+
+---
+
+Artwork Title: Gothic Library
+Object Type: Library
+Classification: Unknown
+
+Artist: Frederick Clarke Withers
+Nationality: American, born England
+Lifespan: 1828      –1901      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1859–1859
+
+Medium: Walnut, oak, pine
+Dimensions: Approx. 24 x 17 x 12 in. (61 x 43.2 x 30.5 cm)
+
+Credit Line: Gift of Mrs. Hamilton Fish, 1977
+
+---
+
+Artwork Title: Grand Harmonicon
+Object Type: Grand harmonicon
+Classification: Unknown
+
+Artist: Francis Hopkinson Smith
+Nationality: American
+Lifespan: 1838      –1915      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1825–1830
+
+Medium: Mahogany
+Dimensions: 232 1/2 x 137 1/4 x 45 1/2 in. (590.6 x 348.6 x 115.6 cm)
+
+Credit Line: Gift of Richard T. Button, 1980
+
+---
+
+Artwork Title: The Greek Slave
+Object Type: Statuette
+Classification: Unknown
+
+Artist: Minton and Company|Hiram Powers
+Nationality: American|American
+Lifespan: 1793      |1805      –2002      |1873      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1849–1849
+
+Medium: Parian porcelain
+Dimensions: H. 14 1/2 in. (36.8 cm); Diam. 4 in. (10.2 cm)
+
+Credit Line: Gift of Mr. and Mrs. Russell E. Burke III, 1983
+
+---
+
+Artwork Title: Grill from the Avery Coonley House, Riverside, Illinois
+Object Type: Pierced wooden grill
+Classification: Unknown
+
+Artist: Frank Lloyd Wright
+Nationality: American
+Lifespan: 1867      –1959      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1905–1908
+
+Medium: Oak
+Dimensions: 17 1/2 x 19 1/4 x 1 1/4 in. (44.5 x 48.9 x 3.2 cm)
+
+Credit Line: Gift of Erving and Joyce Wolf, in memory of Diane R. Wolf, 1987
+
+---
+
+Artwork Title: Grill from the Avery Coonley House, Riverside, Illinois
+Object Type: Pierced wooden grill
+Classification: Unknown
+
+Artist: Frank Lloyd Wright
+Nationality: American
+Lifespan: 1867      –1959      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1905–1908
+
+Medium: Oak
+Dimensions: 37 x 19 1/4 x 2 in. (94 x 48.9 x 5.1 cm)
+
+Credit Line: Gift of Erving and Joyce Wolf, in memory of Diane R. Wolf, 1987
+
+---
+
+Artwork Title: Hairpin
+Object Type: Hairpin
+Classification: Unknown
+
+Artist: Tiffany & Co.
+Nationality:  
+Lifespan: 1837      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1887–1890
+
+Medium: Amber, gold, pearls, diamonds
+Dimensions: 1 3/16 x 3 3/4 in. (3 x 9.5 cm)
+
+Credit Line: Gift of Susan Dwight Bliss, 1941
+
+---
+
+Artwork Title: Hand Blotter
+Object Type: Hand blotter
+Classification: Unknown
+
+Artist: Louis C. Tiffany|Tiffany Studios
+Nationality: American| 
+Lifespan: 1848      |1902      –1933      |1932      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1910–1919
+
+Medium: Bronze
+Dimensions: H. 5 3/4 in. (14.6 cm)
+
+Credit Line: Gift of Mr. and Mrs. Hugh J. Grant, 1974
+
+---
+
+Artwork Title: Furniture Hardware
+Object Type: Furniture hardware
+Classification: Unknown
+
+Artist: Henry Kellam Hancock
+Nationality:  
+Lifespan: 1816      –1851      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1820–1830
+
+Medium: Gilt brass
+Dimensions: H. 3 1/4 in. (8.3 cm)
+
+Credit Line: Gift of Mrs. Edward Hunting Smith, 1968
+
+---
+
+Artwork Title: Furniture Hardware
+Object Type: Furniture hardware
+Classification: Unknown
+
+Artist: Henry Kellam Hancock
+Nationality:  
+Lifespan: 1816      –1851      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1820–1830
+
+Medium: Gilt brass
+Dimensions: H. 2 1/2 in. (6.4 cm)
+
+Credit Line: Gift of Mrs. Edward Hunting Smith, 1968
+
+---
+
+Artwork Title: Furniture Hardware
+Object Type: Furniture hardware
+Classification: Unknown
+
+Artist: Henry Kellam Hancock
+Nationality:  
+Lifespan: 1816      –1851      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1820–1830
+
+Medium: Gilt brass
+Dimensions: H. 2 5/8 in. (6.7 cm)
+
+Credit Line: Gift of Mrs. Edward Hunting Smith, 1968
+
+---
+
+Artwork Title: Furniture Hardware
+Object Type: Furniture hardware
+Classification: Unknown
+
+Artist: Henry Kellam Hancock
+Nationality:  
+Lifespan: 1816      –1851      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1820–1830
+
+Medium: Gilt brass
+Dimensions: H. 3 1/4 in. (8.3 cm)
+
+Credit Line: Gift of Mrs. Edward Hunting Smith, 1968
+
+---
+
+Artwork Title: Furniture Hardware
+Object Type: Furniture hardware
+Classification: Unknown
+
+Artist: Henry Kellam Hancock
+Nationality:  
+Lifespan: 1816      –1851      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1820–1830
+
+Medium: Gilt brass
+Dimensions: H. 8 3/4 in. (22.2 cm)
+
+Credit Line: Gift of Mrs. Edward Hunting Smith, 1968
+
+---
+
+Artwork Title: Hanger
+Object Type: Hanger
+Classification: Unknown
+
+Artist: United Society of Believers in Christ’s Second Appearing (“Shakers”)
+Nationality: American
+Lifespan: 1750      –9999      
+
+Cultural Context: American, Shaker
+Period: Unknown
+Date Range: 1800–1900
+
+Medium: Wood; Pine
+Dimensions: 1 x 14 3/4 in. (2.5 x 37.5 cm)
+
+Credit Line: Gift from Faith and Edward Deming Andrews Collection, 1981
+
+---
+
+Artwork Title: Hanger
+Object Type: Hanger
+Classification: Unknown
+
+Artist: United Society of Believers in Christ’s Second Appearing (“Shakers”)
+Nationality: American
+Lifespan: 1750      –9999      
+
+Cultural Context: American, Shaker
+Period: Unknown
+Date Range: 1800–1900
+
+Medium: Wood; Pine
+Dimensions: 1 1/8 x 18 in. (2.9 x 45.7 cm)
+
+Credit Line: Gift from Faith and Edward Deming Andrews Collection, 1981
+
+---
+
+Artwork Title: Hanging Key Cabinet
+Object Type: Key cabinet
+Classification: Unknown
+
+Artist: Kimbel and Cabus
+Nationality: American
+Lifespan: 1863      –1882      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1869–1879
+
+Medium: Oak
+Dimensions: 41 3/4 x 12 7/8 x 5 1/2 in. (106 x 32.7 x 14 cm)
+
+Credit Line: Sansbury-Mills Fund, 1981
+
+---
+
+Artwork Title: Hanging Vase
+Object Type: Hanging vase
+Classification: Unknown
+
+Artist: Louis C. Tiffany|Tiffany Glass and Decorating Company
+Nationality: American|American
+Lifespan: 1848      |1892      –1933      |1902      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1893–1896
+
+Medium: Favrile glass
+Dimensions: H. 23 3/4 in. (60.3 cm)
+
+Credit Line: Gift of H. O. Havemeyer, 1896
+
+---
+
+Artwork Title: Hat
+Object Type: Figure
+Classification: Unknown
+
+Artist: Dorflinger Glass Works
+Nationality: American
+Lifespan: 1865      –1881      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1865–1921
+
+Medium: Free-blown green glass
+Dimensions: H. 6 1/4 in. (15.9 cm)
+
+Credit Line: Gift of Katheryn Hait Dorflinger Manchee, 1974
+
+---
+
+Artwork Title: Hat
+Object Type: Figure
+Classification: Unknown
+
+Artist: Dorflinger Glass Works
+Nationality: American
+Lifespan: 1865      –1881      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1865–1921
+
+Medium: Free-blown red and amber glass
+Dimensions: H. 5 3/4 in. (14.6 cm); Diam. 8 1/2 in. (21.6 cm)
+
+Credit Line: Gift of Katheryn Hait Dorflinger Manchee, 1974
+
+---
+
+Artwork Title: Quillwork hatchment of Dering coat of arms
+Object Type: Coat of arms
+Classification: Unknown
+
+Artist: Mary Dering|Elizabeth Dering
+Nationality: American|American
+Lifespan: 1717      |1715      –1779      |1785      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1731–1731
+
+Medium: Paper, mica, pearls, wood, glass
+Dimensions: 22 x 22 in. (55.9 x 55.9 cm)
+
+Credit Line: Rogers Fund, 1938
+
+---
+
+Artwork Title: Hat stand
+Object Type: Hat stand
+Classification: Unknown
+
+Artist: New England Glass Company
+Nationality: American
+Lifespan: 1818      –1888      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1855–1875
+
+Medium: Free-blown silvered glass
+Dimensions: H. 11 in. (27.9 cm); Diam. 7 in. (17.8 cm)
+
+Credit Line: Gift of Richard T. Button, 1978
+
+---
+
+Artwork Title: Bust of Henry Clay
+Object Type: Bust
+Classification: Unknown
+
+Artist: Pierre Joseph Chardigny
+Nationality:  
+Lifespan: 1794      –1866      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1853–1853
+
+Medium: Waxed plaster
+Dimensions: H. 5 1/2 in. (14 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Furniture Hardware
+Object Type: Furniture hardware
+Classification: Unknown
+
+Artist: Henry Kellam Hancock
+Nationality:  
+Lifespan: 1816      –1851      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1820–1830
+
+Medium: Gilt brass
+Dimensions: 2 5/16 x 1 3/16 in. (5.9 x 3 cm)
+
+Credit Line: Gift of Mrs. Edward Hunting Smith, 1968
+
+---
+
+Artwork Title: Furniture Hardware
+Object Type: Furniture hardware
+Classification: Unknown
+
+Artist: Henry Kellam Hancock
+Nationality:  
+Lifespan: 1816      –1851      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1820–1830
+
+Medium: Gilt brass
+Dimensions: 1 3/16 x 1 1/16 in. (3 x 2.7 cm)
+
+Credit Line: Gift of Mrs. Edward Hunting Smith, 1968
+
+---
+
+Artwork Title: Furniture Hardware
+Object Type: Furniture hardware
+Classification: Unknown
+
+Artist: Henry Kellam Hancock
+Nationality:  
+Lifespan: 1816      –1851      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1820–1830
+
+Medium: Gilt brass
+Dimensions: H. 1 3/4 in. (4.4 cm)
+
+Credit Line: Gift of Mrs. Edward Hunting Smith, 1968
+
+---
+
+Artwork Title: Furniture Hardware
+Object Type: Furniture hardware
+Classification: Unknown
+
+Artist: Henry Kellam Hancock
+Nationality:  
+Lifespan: 1816      –1851      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1820–1830
+
+Medium: Gilt brass
+Dimensions: H. 2 13/16 in. (7.1 cm)
+
+Credit Line: Gift of Mrs. Edward Hunting Smith, 1968
+
+---
+
+Artwork Title: Furniture Hardware
+Object Type: Furniture hardware
+Classification: Unknown
+
+Artist: Henry Kellam Hancock
+Nationality:  
+Lifespan: 1816      –1851      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1820–1830
+
+Medium: Gilt brass
+Dimensions: W. 7 5/8 in. (19.4 cm)
+
+Credit Line: Gift of Mrs. Edward Hunting Smith, 1968
+
+---
+
+Artwork Title: Milk Pot
+Object Type: Milk Pot
+Classification: Unknown
+
+Artist: Andrew Ellicott Warner
+Nationality: American
+Lifespan: 1786      –1870      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1845–1845
+
+Medium: Silver
+Dimensions: Overall: 6 7/8 x 3 15/16 x 3 5/16 in. (17.5 x 10 x 8.4 cm); 15 oz. 6 dwt. (476.5 g)
+Base: Diam. 3 1/16 in. (7.8 cm)
+
+Credit Line: Friends of the American Wing Fund, 1987
+
+---
+
+Artwork Title: Milk Pot
+Object Type: Milk Pot
+Classification: Unknown
+
+Artist: Ball, Tompkins and Black|Charters, Cann & Dunn
+Nationality: American|American
+Lifespan: 1839      |1848      –1851      |1854      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1848–1851
+
+Medium: Silver and ivory
+Dimensions: 9 1/16 x 6 7/16 x 5 in. (23 x 16.4 x 12.7 cm); 23 oz. 2 dwt. (718.5 g)
+
+Credit Line: Gift of Mr. and Mrs. Henry Mali, 1944
+
+---
+
+Artwork Title: Milk Pot
+Object Type: Cream pot
+Classification: Unknown
+
+Artist: William Forbes
+Nationality: American
+Lifespan: 1826      –1863      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1835–1840
+
+Medium: Silver
+Dimensions: Overall: 7 3/8 x 5 15/16 x 3 5/8 in. (18.7 x 15.1 x 9.2 cm); 14 oz. 19 dwt. (464.9 g)
+Base: Daim. 3 1/16 in. (7.8 cm)
+
+Credit Line: Gift of Guerdon Holden Nelson, Cyril Irwin Nelson, Nicholas Macy Nelson and Michael Underhill Nelson, in devoted memory of their grandmother, Elinor Irwin Holden, and their mother, Elise Macy Nelson, 1981
+
+---
+
+Artwork Title: Milk Pot
+Object Type: Cream pot
+Classification: Unknown
+
+Artist: John C. Moore|Ball, Tompkins and Black
+Nationality: American|American
+Lifespan: 1799      |1839      –1874      |1851      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1850–1850
+
+Medium: Silver
+Dimensions: 8 5/16 x 5 1/16 x 4 3/16 in. (21.1 x 12.8 x 10.6 cm); 15 oz. 16 dwt. (491.6 g)
+
+Credit Line: Gift of Mrs. F. R. Lefferts, 1969
+
+---
+
+Artwork Title: Hot Water Plate
+Object Type: Hot water plate
+Classification: Unknown
+
+Artist: Henry Will
+Nationality: American
+Lifespan: 1734      –1802      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1761–1793
+
+Medium: Pewter
+Dimensions: H. 1 3/4 in. (4.4 cm); Diam. 9 7/16 in. (24 cm)
+
+Credit Line: Rogers Fund, 1946
+
+---
+
+Artwork Title: Hot Water Pot
+Object Type: Hot Water Pot
+Classification: Unknown
+
+Artist: Daniel Van Voorhis|Garret Schanck|Van Voorhis & Schanck
+Nationality: American|American|American
+Lifespan: 1751      |1768      |1788      –1824      |1795      |1793      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1791–1793
+
+Medium: Silver
+Dimensions: Overall: 14 13/16 x 8 1/4 x 5 in. (37.6 x 21 x 12.7 cm); 35 oz. 17 dwt. (1115.4 g)
+Foot: 4 9/16 x 4 9/16 in. (11.6 x 11.6 cm)
+
+Credit Line: Bequest of Charles Allen Munn, 1924
+
+---
+
+Artwork Title: Drawing of a Hunt
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Friederich Krebs
+Nationality: American
+Lifespan: 1765      –1815      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1800–1830
+
+Medium: Watercolor on paper
+Dimensions: 12 1/2 x 15 in. (31.8 x 38.1 cm)
+
+Credit Line: Rogers Fund, 1947
+
+---
+
+Artwork Title: Inkwell
+Object Type: Inkwell
+Classification: Unknown
+
+Artist: Louis C. Tiffany|Tiffany Studios
+Nationality: American| 
+Lifespan: 1848      |1902      –1933      |1932      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1907–1920
+
+Medium: Bronze
+Dimensions: H. 2 3/16 in. (5.6 cm)
+
+Credit Line: Gift of Mrs. H. S. Mesick, 1962
+
+---
+
+Artwork Title: Inkwell
+Object Type: Inkwell
+Classification: Unknown
+
+Artist: Louis C. Tiffany|Tiffany Studios
+Nationality: American| 
+Lifespan: 1848      |1902      –1933      |1932      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1910–1919
+
+Medium: Bronze
+Dimensions: Overall: H. 3 5/8 in. (9.2 cm)
+Base: Diam. 5 1/2 in. (5 1/2 in.)
+
+Credit Line: Gift of Mr. and Mrs. Hugh J. Grant, 1974
+
+---
+
+Artwork Title: Inkstand
+Object Type: Inkstand
+Classification: Unknown
+
+Artist: Boston & Sandwich Glass Company
+Nationality: American
+Lifespan: 1825      –1888      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1830–1840
+
+Medium: Pressed and blown-molded glass, pewter
+Dimensions: 4 1/4 x 6 7/8 in. (10.8 x 17.5 cm)
+
+Credit Line: Bequest of Anna G. W. Green, in memory of her husband, Dr. Charles W. Green, 1957
+
+---
+
+Artwork Title: Inkstand
+Object Type: Inkstand
+Classification: Unknown
+
+Artist: John Coney
+Nationality: American
+Lifespan: 1655      –1722      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1710–1720
+
+Medium: Silver
+Dimensions: Overall: 4 1/8 x 6 1/2 in. (10.5 x 16.5 cm); 23 oz. 14 dwt. (736.7 g)
+Glass ink pot with silver cover: 1 3/4 x 2 1/4 in. (4.4 x 5.7 cm); 4 oz. 12 dwt. (143.3 g)
+Pounce pot: 1 1/8 x 2 5/8 in. (2.9 x 6.7 cm); 2 oz. 10 dwt. (78.2 g)
+Wafer pot cover: 9/16 x 2 5/16 in. (1.4 x 5.9 cm); 1 oz. 2 dwt. (34.5 g)
+Stand and attached parts: 15 oz. 9 dwt. (480.7 g)
+
+Credit Line: Bequest of Charles Allen Munn, 1924
+
+---
+
+Artwork Title: Inkwell
+Object Type: Inkwell
+Classification: Unknown
+
+Artist: Keene Glass Works
+Nationality: American
+Lifespan: 1815      –1815      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1815–1815
+
+Medium: Blown-molded glass
+Dimensions: H. 1 3/8 in. (3.5 cm); Diam. 2 1/8 in. (5.4 cm)
+
+Credit Line: Gift of Charles M. Baldwin, 1915
+
+---
+
+Artwork Title: Inkwell
+Object Type: Inkwell
+Classification: Unknown
+
+Artist: Sherman Boardman|Thomas Danforth Boardman
+Nationality: American|American
+Lifespan: 1787      |1784      –1861      |1873      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1810–1850
+
+Medium: Pewter
+Dimensions: H. 3 3/8 in. (8.6 cm)
+
+Credit Line: Gift of Mrs. J. Insley Blair, in memory of her husband, 1941
+
+---
+
+Artwork Title: Inkwell
+Object Type: Inkwell
+Classification: Unknown
+
+Artist: Thomas Danforth, III
+Nationality: American
+Lifespan: 1756      –1840      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1807–1813
+
+Medium: Pewter
+Dimensions: 1 1/2 x 2 1/2 in. (3.8 x 6.4 cm)
+
+Credit Line: Gift of Joseph France, 1943
+
+---
+
+Artwork Title: Inkwell
+Object Type: Inkwell
+Classification: Unknown
+
+Artist: Gaius Fenn|Jason Fenn
+Nationality: American| 
+Lifespan: 1831      |1831      –1843      |1843      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1831–1843
+
+Medium: Pewter
+Dimensions: 1 3/4 x 2 1/2 x 2 1/2 in. (4.4 x 6.4 x 6.4 cm)
+
+Credit Line: The Sylmaris Collection, Gift of George Coe Graves, 1930
+
+---
+
+Artwork Title: Inkwell
+Object Type: Inkwell
+Classification: Unknown
+
+Artist: Richards and Hartley Flint Glass Co.
+Nationality: American
+Lifespan: 1867      –1890      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1885–1888
+
+Medium: Pressed yellow glass
+Dimensions: H. 2 in. (5.1 cm)
+
+Credit Line: Gift of Mrs. Emily Winthrop Miles, 1946
+
+---
+
+Artwork Title: Inkwell
+Object Type: Inkwell
+Classification: Unknown
+
+Artist: Louis C. Tiffany|Tiffany Studios
+Nationality: American| 
+Lifespan: 1848      |1902      –1933      |1932      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1907–1920
+
+Medium: Favrile glass, bronze
+Dimensions: H. 3 9/16 in. (9 cm); Diam. 4 in. (10.2 cm)
+
+Credit Line: Gift of Mrs. H. S. Mesick, 1962
+
+---
+
+Artwork Title: Plaque
+Object Type: Plaque
+Classification: Unknown
+
+Artist: Augustin Dupré|James Tassie
+Nationality: French|British, Scottish
+Lifespan: 1748      |1735      –1833      |1799      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1776–1830
+
+Medium: Glass
+Dimensions: Diam. 1 7/8 in. (4.8 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Bust of James Fenimore Cooper
+Object Type: Bust
+Classification: Unknown
+
+Artist: Pierre Joseph Chardigny
+Nationality:  
+Lifespan: 1794      –1866      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1853–1853
+
+Medium: Waxed plaster
+Dimensions: H. 5 3/8 in. (13.7 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Profile Bust of James Sullivan
+Object Type: Miniature
+Classification: Unknown
+
+Artist: John Christian Rauschner
+Nationality: German
+Lifespan: 1760      –1812      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1800–1809
+
+Medium: Wax, glass, wood
+Dimensions: 10 3/4 x 9 5/8 in. (27.3 x 24.4 cm)
+
+Credit Line: The Glenn Tilley Morse Collection, Bequest of Glenn Tilley Morse, 1950
+
+---
+
+Artwork Title: Apothecary Jar
+Object Type: Apothecary jar
+Classification: Unknown
+
+Artist: Damián Hernández
+Nationality: Mexican
+Lifespan: 1607      –1670      
+
+Cultural Context: Mexican
+Period: Unknown
+Date Range: 1680–1680
+
+Medium: Tin-glazed earthenware
+Dimensions: H. 10 5/8 in. (27 cm); Diam. 5 1/4 in. (13.3 cm)
+
+Credit Line: Gift of Mrs. Robert W. de Forest, 1911
+
+---
+
+Artwork Title: Jar
+Object Type: Jar
+Classification: Unknown
+
+Artist: Enrique Luis Ventosa
+Nationality:  
+Lifespan:           –9999      
+
+Cultural Context: Mexican
+Period: Unknown
+Date Range: 1900–1912
+
+Medium: Tin-glazed earthenware
+Dimensions: H. 9 3/4 in. (24.8 cm); Diam. 8 in. (20.3 cm)
+
+Credit Line: Gift of Mrs. Robert W. de Forest, 1912
+
+---
+
+Artwork Title: Apothecary Jar
+Object Type: Apothecary jar
+Classification: Unknown
+
+Artist: Damián Hernández
+Nationality: Mexican
+Lifespan: 1607      –1670      
+
+Cultural Context: Mexican
+Period: Unknown
+Date Range: 1660–1680
+
+Medium: Tin-glazed earthenware
+Dimensions: H. 10 5/8 in. (27 cm)
+
+Credit Line: Gift of Mrs. Robert W. de Forest, 1917
+
+---
+
+Artwork Title: Jar
+Object Type: Jar
+Classification: Unknown
+
+Artist: Thomas W. Commeraw|David Morgan
+Nationality:  |American
+Lifespan: 1796      |1797      –1819      |1802      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1796–1819
+
+Medium: Stoneware
+Dimensions: 9 1/2 × 8 1/2 × 8 1/2 × 6 3/4 in. (24.1 × 21.6 × 21.6 × 17.1 cm)
+
+Credit Line: Rogers Fund, 1918
+
+---
+
+Artwork Title: Jar
+Object Type: Jar
+Classification: Unknown
+
+Artist: Horace Goodwin|Mack C. Webster
+Nationality: American| 
+Lifespan:           |1810      –9999      |1840      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1830–1840
+
+Medium: Stoneware
+Dimensions: H. 9 1/2 in. (24.1cm); Diam. 8 3/4 in. (22.2 cm)
+
+Credit Line: Rogers Fund, 1918
+
+---
+
+Artwork Title: Jar
+Object Type: Jar
+Classification: Unknown
+
+Artist: Philip Kline
+Nationality: American
+Lifespan: 1806      –1834      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1809–1809
+
+Medium: Earthenware; Redware with sgraffito decoration
+Dimensions: 9 1/8 x 4 1/2 in. (23.2 x 11.4 cm)
+
+Credit Line: Anonymous Gift, 1986
+
+---
+
+Artwork Title: Jar
+Object Type: Jar
+Classification: Unknown
+
+Artist: Christian Klinker
+Nationality: American
+Lifespan: 1773      –1798      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1773–1773
+
+Medium: Earthenware; Redware with slip decoration
+Dimensions: H. 10 in. (25.4 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Jar
+Object Type: Jar
+Classification: Unknown
+
+Artist: Newcomb Pottery|Mary W. Summey Smith
+Nationality: American|American
+Lifespan: 1894      |          –1940      |1980      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1911–1911
+
+Medium: Earthenware
+Dimensions: H. 2 3/4 in. (7 cm); Diam. 2 1/8 in. (5.4 cm)
+
+Credit Line: Gift of Robert Blasberg, 1967
+
+---
+
+Artwork Title: Urn
+Object Type: Urn
+Classification: Unknown
+
+Artist: F. Altoviti
+Nationality:  
+Lifespan:           –9999      
+
+Cultural Context: Italian
+Period: Unknown
+Date Range: 1800–1900
+
+Medium: Terracotta
+Dimensions: H. 14 1/2 in. (36.8 cm); Diam. 21 in. (53.3 cm)
+
+Credit Line: Gift of Edward Steese, in memory of his grandparents, Mr. and Mrs. William Weaver Heaton, 1981
+
+---
+
+Artwork Title: Urn
+Object Type: Urn
+Classification: Unknown
+
+Artist: F. Altoviti
+Nationality:  
+Lifespan:           –9999      
+
+Cultural Context: Italian
+Period: Unknown
+Date Range: 1800–1900
+
+Medium: Terracotta
+Dimensions: H. 14 1/2 in. (36.8 cm); Diam. 21 in. (53.3 cm)
+
+Credit Line: Gift of Edward Steese, in memory of his grandparents, Mr. and Mrs. William Weaver Heaton, 1981
+
+---
+
+Artwork Title: Jardinière and pedestal
+Object Type: Jardinière and pedestal
+Classification: Unknown
+
+Artist: Charles Wingender and Brother
+Nationality: American
+Lifespan:           –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1894–1910
+
+Medium: Stoneware
+Dimensions: Overall (jardiniere, underplate, and pedestal): H. 31 in. (78.7 cm)
+
+Credit Line: Purchase, Imre de Cholnoky Gift, 1988
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Frederick Hurten Rhead|Rhead Pottery
+Nationality: American, born England|American
+Lifespan: 1880      |          –1942      |9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1913–1917
+
+Medium: Earthenware
+Dimensions: H. 11 1/2 in. (29.2 cm)
+
+Credit Line: Friends of the American Wing Fund, 1996
+
+---
+
+Artwork Title: Side chair
+Object Type: Side chair
+Classification: Unknown
+
+Artist: Charles-Honoré Lannuier
+Nationality: American
+Lifespan: 1779      –1819      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1815–1819
+
+Medium: Mahogany, mahogany veneer, gilded gesso, brass with maple
+Dimensions: 33 3/8 x 18 x 19 1/4 in. (84.8 x 45.7 x 48.9 cm)
+
+Credit Line: Purchase, The Sylmaris Collection, Gift of George Coe Graves, by exchange; and Bequest of Flora E. Whiting, Gift of Mr. and Mrs. William A. Moore, and Gift of Mrs. Russell Sage, by exchange, 1996
+
+---
+
+Artwork Title: Medal
+Object Type: Medal
+Classification: Unknown
+
+Artist: John A. Bolen
+Nationality: American
+Lifespan: 1826      –1906      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1864–1864
+
+Medium: Metal
+Dimensions: Diam. 1 1/8 in. (2.9 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: George Washington
+Object Type: Medal
+Classification: Unknown
+
+Artist: Anthony Paquet
+Nationality: American
+Lifespan: 1814      –1882      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1861–1861
+
+Medium: Metal
+Dimensions: Diam. 1 3/16 in. (3 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal
+Object Type: Medal
+Classification: Unknown
+
+Artist: Anthony Paquet
+Nationality: American
+Lifespan: 1814      –1882      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1859–1859
+
+Medium: Metal
+Dimensions: Diam. 7/8 in. (2.2 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Plaqu
+Object Type: Plaque
+Classification: Unknown
+
+Artist: Rambert Dumarest
+Nationality: French
+Lifespan: 1760      –1806      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1789–1789
+
+Medium: Gilt bronze
+Dimensions: Diam. 1 1/4 in. (3.2 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Business Card
+Object Type: Business Card
+Classification: Unknown
+
+Artist: Robert Lovett
+Nationality: American
+Lifespan: 1800      –1830      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1800–1850
+
+Medium: Brass
+Dimensions: Diam. 1 1/8 in. (2.9 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Figure of John Wilkes
+Object Type: Figure
+Classification: Unknown
+
+Artist: Chelsea Factory
+Nationality:  
+Lifespan: 1742      –1784      
+
+Cultural Context: British
+Period: Unknown
+Date Range: 1772–1775
+
+Medium: Porcelain
+Dimensions: H. 12 3/4 in. (32.4 cm)
+
+Credit Line: Fletcher Fund, 1944
+
+---
+
+Artwork Title: Face ju
+Object Type: Face jug
+Classification: Unknown
+
+Artist: Miles Mill Pottery|Unrecorded  Edgefield District potter
+Nationality:  |American
+Lifespan:           |1800      –          |1920      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1872
+
+Medium: Alkaline-glazed stoneware with kaolin
+Dimensions: Height: 7 x 5 x 5 1/2 in. (17.8 x 12.7 x 14 cm)
+
+Credit Line: Rogers Fund, 1922
+
+---
+
+Artwork Title: Jug
+Object Type: Jug
+Classification: Unknown
+
+Artist: Lambeth Factories
+Nationality:  
+Lifespan:           –9999      
+
+Cultural Context: British
+Period: Unknown
+Date Range: 1644–1647
+
+Medium: Tin-enameled earthenware
+Dimensions: H. 10 1/8 in. (25.7 cm)
+
+Credit Line: Gift of Mrs. Paul Moore, 1937
+
+---
+
+Artwork Title: Pitcher
+Object Type: Pitcher
+Classification: Unknown
+
+Artist: Peleg Armstrong and Erastus Wentworth
+Nationality: American
+Lifespan: 1814      –1814      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1814–1828
+
+Medium: Stoneware
+Dimensions: H. 11 1/2 in. (29.2 cm)
+
+Credit Line: Rogers Fund, 1918
+
+---
+
+Artwork Title: Pitcher
+Object Type: Pitcher
+Classification: Unknown
+
+Artist: John Bell Pottery
+Nationality: American
+Lifespan: 1848      –1880      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1848–1880
+
+Medium: Stoneware
+Dimensions: 13 1/4 in. (33.7 cm)
+
+Credit Line: Gift of Mrs. Robert W. de Forest, 1933
+
+---
+
+Artwork Title: Jug
+Object Type: Jug
+Classification: Unknown
+
+Artist: George Benton and Levi Stewart
+Nationality: American
+Lifespan: 1815      –1815      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1815–1822
+
+Medium: Stoneware
+Dimensions: H. 17 1/2 in. (44.5 cm)
+
+Credit Line: Gift of Mrs. Russell Sage, 1909
+
+---
+
+Artwork Title: Jug
+Object Type: Jug
+Classification: Unknown
+
+Artist: Boston Silver Glass Company
+Nationality: American
+Lifespan: 1857      –1871      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1865
+
+Medium: Free-blown silvered and colorless glass, pewter
+Dimensions: H. 7 in. (17.8 cm)
+
+Credit Line: Friends of the American Wing Fund, 1983
+
+---
+
+Artwork Title: Jug
+Object Type: Jug
+Classification: Unknown
+
+Artist: John Crolius
+Nationality: American
+Lifespan: 1733      –1812      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1775–1775
+
+Medium: Stoneware
+Dimensions: H. 10 in. (25.4 cm)
+
+Credit Line: Rogers Fund, 1934
+
+---
+
+Artwork Title: Jug
+Object Type: Jug
+Classification: Unknown
+
+Artist: Jonathan Fenton
+Nationality: American
+Lifespan: 1766      –1766      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1810–1840
+
+Medium: Stoneware
+Dimensions: H. 18 in. (45.7 cm)
+
+Credit Line: Gift of Mrs. Russell Sage, 1909
+
+---
+
+Artwork Title: Jug
+Object Type: Jug
+Classification: Unknown
+
+Artist: John W. Forbes
+Nationality: American
+Lifespan: 1781      –1864      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1807–1810
+
+Medium: Silver, ceramic
+Dimensions: Overall: 9 1/2 x 7 11/16 x 7 1/16 in. (24.1 x 19.5 x 17.9 cm); 42 oz. 18 dwt. (1334 g)
+Base: Diam. 4 1/2 in. (11.4 cm)
+
+Credit Line: Bequest of Alphonso T. Clearwater, 1933
+
+---
+
+Artwork Title: Creamer
+Object Type: Cream pot
+Classification: Unknown
+
+Artist: Newell Harding
+Nationality: American
+Lifespan: 1796      –1862      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1827–1830
+
+Medium: Silver
+Dimensions: Overall: 7 x 5 7/16 in. (17.8 x 13.8 cm); 10 oz. 8 dwt. (323 g)
+Foot: Diam. 3 1/4 in. (8.3 cm)
+
+Credit Line: Bequest of Alphonso T. Clearwater, 1933
+
+---
+
+Artwork Title: Jug
+Object Type: Jug
+Classification: Unknown
+
+Artist: T. Johnson
+Nationality:  
+Lifespan:           –9999      
+
+Cultural Context: British
+Period: Unknown
+Date Range: 1770–1800
+
+Medium: Earthenware, transfer-printed
+Dimensions: H. 8 3/8 in. (21.3 cm)
+
+Credit Line: Bequest of Mary Mandeville Johnston, from the collection of Mr. and Mrs. Edward W. S. Johnston, 1914
+
+---
+
+Artwork Title: Jug
+Object Type: Jug
+Classification: Unknown
+
+Artist: C. A. Lawrence|Beverly Pottery
+Nationality:  |American
+Lifespan:           |          –9999      |          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1875–1880
+
+Medium: Earthenware
+Dimensions: H. 4 7/8 in. (12.4 cm); Diam. 1 7/8 in. (4.8 cm)
+
+Credit Line: Friends of the American Wing Fund, 1984
+
+---
+
+Artwork Title: Pitcher
+Object Type: Pitcher
+Classification: Unknown
+
+Artist: Ralph Stevenson
+Nationality: British
+Lifespan: 1805      –1832      
+
+Cultural Context: British (American market)
+Period: Unknown
+Date Range: 1817–1835
+
+Medium: Earthenware, transfer-printed
+Dimensions: H. 9 in. (22.9 cm)
+
+Credit Line: Gift of Mrs. Isaac Gibson Jaffray, in memory of her husband, 1898
+
+---
+
+Artwork Title: Jug
+Object Type: Jug
+Classification: Unknown
+
+Artist: Tucker and Hemphill
+Nationality: American
+Lifespan: 1831      –1837      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1829–1832
+
+Medium: Porcelain
+Dimensions: 7 5/8 x 8 1/8 in. (19.4 x 20.6 cm)
+
+Credit Line: Rogers Fund, 1914
+
+---
+
+Artwork Title: Jug
+Object Type: Jug
+Classification: Unknown
+
+Artist: United States Pottery Company
+Nationality: American
+Lifespan: 1852      –1852      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1852–1858
+
+Medium: Parian porcelain
+Dimensions: 5 3/8 x 4 1/4 x 3 3/8 in. (13.7 x 10.8 x 8.6 cm)
+
+Credit Line: Rogers Fund, 1914
+
+---
+
+Artwork Title: Cream Pitcher
+Object Type: Cream pitcher
+Classification: Unknown
+
+Artist: Enoch Wood & Sons
+Nationality: British
+Lifespan: 1818      –1846      
+
+Cultural Context: British (American market)
+Period: Unknown
+Date Range: 1815–1849
+
+Medium: Earthenware, transfer-printed
+Dimensions: H. 5 1/2 in. (14 cm)
+
+Credit Line: Gift of Mrs. Isaac Gibson Jaffray, in memory of her husband, 1898
+
+---
+
+Artwork Title: Jug
+Object Type: Jug
+Classification: Unknown
+
+Artist: Rookwood Pottery Company
+Nationality: American
+Lifespan: 1880      –1967      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1892–1892
+
+Medium: Earthenware, silver
+Dimensions: With stopper: 7 1/8 x 6 1/8 in. (18.1 x 15.6 cm)
+
+Credit Line: Gift of Mr. and Mrs. Hugh J. Grant, 1974
+
+---
+
+Artwork Title: Teakettle
+Object Type: Teakettle
+Classification: Unknown
+
+Artist: Ball, Tompkins and Black|John C. Moore
+Nationality: American|American
+Lifespan: 1839      |1799      –1851      |1874      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1850–1850
+
+Medium: Silver
+Dimensions: Overall: 17 3/16 x 9 3/4 x 8 9/16 in. (43.7 x 24.8 x 21.7 cm); 75 oz. 12 dwt. (2351.3)
+Body: H. 13 1/4 in. (33.7 cm); 50 oz. 15 dwt. (1578.9 g)
+Stand: H. 4 1/4 in. (10.8 cm); 20 oz. 14 dwt. (644.3 g)
+Lamp: 2 5/16 x 3 1/16 in. (5.9 x 7.8 cm); 4 oz. 2 dwt. (128.1 g)
+
+Credit Line: Gift of Mrs. F. R. Lefferts, 1969
+
+---
+
+Artwork Title: Teakettle
+Object Type: Teakettle
+Classification: Unknown
+
+Artist: William Forbes|Ball, Tompkins and Black
+Nationality: American|American
+Lifespan: 1826      |1839      –1863      |1851      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1837–1840
+
+Medium: Silver and ivory
+Dimensions: Overall: 15 3/4 x 9 5/16 in. (40 x 23.7 cm); 68 oz. 4 dwt. (2120.7 g)
+Body: H. 11 5/8 in. (29.5 cm); 42 oz. 4 dwt. (1312.6 g)
+Stand: H. 4 1/2 in. (11.4 cm); 21 oz. 10 dwt. (669.3 g)
+Lamp: H. 2 3/8 x 2 3/4 in. (6 x 7 cm); 4 oz. 9 dwt. (138.8 g)
+
+Credit Line: Gift of Guerdon Holden Nelson, Cyril Irwin Nelson, Nicholas Macy Nelson and Michael Underhill Nelson, in devoted memory of their grandmother, Elinor Irwin Holden, and their mother, Elise Macy Nelson, 1981
+
+---
+
+Artwork Title: Kettle Stand
+Object Type: Kettle stand
+Classification: Unknown
+
+Artist: Duncan Phyfe
+Nationality: American, born Scotland
+Lifespan: 1770      –1854      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1810–1820
+
+Medium: Mahogany, marble, tulip poplar, white pine
+Dimensions: 29 1/4 x 22 1/8 x 15 1/2 in. (74.3 x 56.2 x 39.4 cm)
+
+Credit Line: Purchase, Paul Peralta Ramos Gift, 1960
+
+---
+
+Artwork Title: Teakettle, Burner, and Stand
+Object Type: Teakettle
+Classification: Unknown
+
+Artist: Ball, Tompkins and Black|Charters, Cann & Dunn
+Nationality: American|American
+Lifespan: 1839      |1848      –1851      |1854      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1848–1851
+
+Medium: Silver and ivory
+Dimensions: Overall: 14 1/2 x 9 5/8 x 8 1/4 in. (36.8 x 24.4 x 21 cm); 50 oz. 5 dwt. (1563.5 g)
+Body: H. 10 1/8 in. (25.7 cm); 31 oz. 3 dwt. (968.3 g)
+Stand: H. 4 3/4 in. (12.1 cm); 16 oz. 16 dwt. (523.2 g)
+Lamp: 1 9/16 x 2 7/16 in. (4 x 6.2 cm); 2 oz. 6 dwt. (72 g)
+
+Credit Line: Gift of Mr. and Mrs. Henry Mali, 1944
+
+---
+
+Artwork Title: Key
+Object Type: Key
+Classification: Unknown
+
+Artist: Enos Wilder
+Nationality: American
+Lifespan:           –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1800–1900
+
+Medium: Steel
+Dimensions: H. 5 in. (12.7 cm)
+
+Credit Line: Rogers Fund, 1910
+
+---
+
+Artwork Title: Folding Key
+Object Type: Folding Key
+Classification: Unknown
+
+Artist: M. W. and Company
+Nationality:  
+Lifespan:           –9999      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1869–1900
+
+Medium: Brass, steel
+Dimensions: H. 5 1/2 in. (14 cm)
+
+Credit Line: Rogers Fund, 1910
+
+---
+
+Artwork Title: Knee Buckle
+Object Type: Buckle
+Classification: Unknown
+
+Artist: B.(?) A.
+Nationality: American
+Lifespan:           –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1730–1775
+
+Medium: Silver
+Dimensions: 1 3/8 x 1 1/8 in. (3.5 x 2.9 cm)
+
+Credit Line: Bequest of Alphonso T. Clearwater, 1933
+
+---
+
+Artwork Title: Knee Buckle
+Object Type: Buckle
+Classification: Unknown
+
+Artist: B.(?) A.
+Nationality: American
+Lifespan:           –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1730–1775
+
+Medium: Silver
+Dimensions: 1 3/8 x 1 1/8 in. (3.5 x 2.9 cm)
+
+Credit Line: Bequest of Alphonso T. Clearwater, 1933
+
+---
+
+Artwork Title: Knee Buckle
+Object Type: Buckle
+Classification: Unknown
+
+Artist: S. A.
+Nationality: American
+Lifespan:           –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1770–1810
+
+Medium: Silver
+Dimensions: 1 x 1 3/4 in. (2.5 x 4.4 cm)
+
+Credit Line: Bequest of Alphonso T. Clearwater, 1933
+
+---
+
+Artwork Title: Knee Buckle
+Object Type: Buckle
+Classification: Unknown
+
+Artist: S. A.
+Nationality: American
+Lifespan:           –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1770–1810
+
+Medium: Silver
+Dimensions: 1 x 1 3/4 in. (2.5 x 4.4 cm)
+
+Credit Line: Bequest of Alphonso T. Clearwater, 1933
+
+---
+
+Artwork Title: Knife
+Object Type: Knife
+Classification: Unknown
+
+Artist: Samuel Kirk
+Nationality: American
+Lifespan: 1793      –1872      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1834–1846
+
+Medium: Silver
+Dimensions: L. 10 11/16 in. (27.1 cm)
+
+Credit Line: Purchase, Iola S. Haverstick Gift, 1982
+
+---
+
+Artwork Title: Knife
+Object Type: Knife
+Classification: Unknown
+
+Artist: Samuel Kirk
+Nationality: American
+Lifespan: 1793      –1872      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1834–1846
+
+Medium: Silver
+Dimensions: L. 10 11/16 in. (27.1 cm)
+
+Credit Line: Purchase, Iola S. Haverstick Gift, 1982
+
+---
+
+Artwork Title: Knife Box
+Object Type: Knife box
+Classification: Unknown
+
+Artist: Charles-Honoré Lannuier
+Nationality: American
+Lifespan: 1779      –1819      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1810–1810
+
+Medium: Mahogany
+Dimensions: H. 20 in. (50.8 cm)
+
+Credit Line: Gift of Fenton L. B. Brown, 1972
+
+---
+
+Artwork Title: Knife Box
+Object Type: Knife box
+Classification: Unknown
+
+Artist: Charles-Honoré Lannuier
+Nationality: American
+Lifespan: 1779      –1819      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1812–1815
+
+Medium: Mahogany
+Dimensions: H. 20 in. (50.8 cm)
+
+Credit Line: Gift of Fenton L. B. Brown, 1972
+
+---
+
+Artwork Title: Knife Box
+Object Type: Knife box
+Classification: Unknown
+
+Artist: Daniel Fueter Jr.|Lewis Fueter
+Nationality: American| 
+Lifespan: 1783      |1766      –1806      |1775      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1765–1795
+
+Medium: Mahogany, mahogany veneer, white pine, tulip poplar
+Dimensions: 14 5/8 x 8 3/4 x 8 7/8 in. (37.1 x 22.2 x 22.5 cm)
+
+Credit Line: Morris K. Jesup Fund, 1954
+
+---
+
+Artwork Title: Knife Box
+Object Type: Knife box
+Classification: Unknown
+
+Artist: Lewis Fueter|Daniel Fueter Jr.
+Nationality:  |American
+Lifespan: 1766      |1783      –1775      |1806      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1765–1795
+
+Medium: Mahogany, mahogany veneer, white pine, tulip poplar
+Dimensions: 14 3/8 x 8 3/4 x 8 7/8 in. (36.5 x 22.2 x 22.5 cm)
+
+Credit Line: Morris K. Jesup Fund, 1954
+
+---
+
+Artwork Title: Knife Box
+Object Type: Knife box
+Classification: Unknown
+
+Artist: Lewis Fueter|Daniel Fueter Jr.
+Nationality:  |American
+Lifespan: 1766      |1783      –1775      |1806      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1765–1795
+
+Medium: Mahogany, mahogany veneer, white pine, tulip poplar
+Dimensions: 13 1/4 x 8 x 7 3/4 in. (33.7 x 20.3 x 19.7 cm)
+
+Credit Line: Morris K. Jesup Fund, 1954
+
+---
+
+Artwork Title: Furniture Hardware
+Object Type: Furniture hardware
+Classification: Unknown
+
+Artist: Henry Kellam Hancock
+Nationality:  
+Lifespan: 1816      –1851      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1820–1830
+
+Medium: Gilt brass
+Dimensions: 2 1/16 x 1 1/2 in. (5.2 x 3.8 cm)
+
+Credit Line: Gift of Mrs. Edward Hunting Smith, 1968
+
+---
+
+Artwork Title: Furniture Hardware
+Object Type: Furniture hardware
+Classification: Unknown
+
+Artist: Henry Kellam Hancock
+Nationality:  
+Lifespan: 1816      –1851      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1820–1830
+
+Medium: Gilt brass
+Dimensions: Diam. 1 5/16 in. (3.3 cm)
+
+Credit Line: Gift of Mrs. Edward Hunting Smith, 1968
+
+---
+
+Artwork Title: Furniture Hardware
+Object Type: Furniture hardware
+Classification: Unknown
+
+Artist: Henry Kellam Hancock
+Nationality:  
+Lifespan: 1816      –1851      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1820–1830
+
+Medium: Gilt brass
+Dimensions: Diam. 1 1/2 in. (3.8 cm)
+
+Credit Line: Gift of Mrs. Edward Hunting Smith, 1968
+
+---
+
+Artwork Title: Drawer pull
+Object Type: Drawer pull
+Classification: Unknown
+
+Artist: Henry Kellam Hancock
+Nationality:  
+Lifespan: 1816      –1851      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1805–1835
+
+Medium: Cast brass, mercury, gold
+Dimensions: Diam. 1 3/8 in. (3.5 cm)
+
+Credit Line: Gift of Mrs. Edward Hunting Smith, 1968
+
+---
+
+Artwork Title: Furniture Hardware
+Object Type: Furniture hardware
+Classification: Unknown
+
+Artist: Henry Kellam Hancock
+Nationality:  
+Lifespan: 1816      –1851      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1820–1830
+
+Medium: Gilt brass
+Dimensions: Diam. 1 5/16 in. (3.3 cm)
+
+Credit Line: Gift of Mrs. Edward Hunting Smith, 1968
+
+---
+
+Artwork Title: Knob
+Object Type: Knob
+Classification: Unknown
+
+Artist: Reading Artistic Glass Works
+Nationality: American
+Lifespan: 1884      –1886      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1884–1886
+
+Medium: Blown opaque cranberry glass
+Dimensions: H. 5/8 in. (1.6 cm); Diam. 7/8 in. (2.2 cm)
+
+Credit Line: Gift of J. Daniel Selig, 1984
+
+---
+
+Artwork Title: Knob
+Object Type: Knob
+Classification: Unknown
+
+Artist: Reading Artistic Glass Works
+Nationality: American
+Lifespan: 1884      –1886      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1884–1886
+
+Medium: Blown opaque cranberry glass
+Dimensions: H. 3 in. (7.6 cm); Diam. 1 in. (2.5 cm)
+
+Credit Line: Gift of J. Daniel Selig, 1984
+
+---
+
+Artwork Title: Knob
+Object Type: Knob
+Classification: Unknown
+
+Artist: Reading Artistic Glass Works
+Nationality: American
+Lifespan: 1884      –1886      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1884–1886
+
+Medium: Blown colorless and opaque cranberry glass
+Dimensions: H. 1 3/4 in. (4.4 cm); Diam. 7/8 in. (2.2 cm)
+
+Credit Line: Gift of J. Daniel Selig, 1984
+
+---
+
+Artwork Title: Furniture Hardware
+Object Type: Furniture hardware
+Classification: Unknown
+
+Artist: Henry Kellam Hancock
+Nationality:  
+Lifespan: 1816      –1851      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1820–1830
+
+Medium: Gilt brass
+Dimensions: Knob: Diam. 2 1/2 in. (6.4 cm)
+
+Credit Line: Gift of Mrs. Edward Hunting Smith, 1968
+
+---
+
+Artwork Title: Label
+Object Type: Label
+Classification: Unknown
+
+Artist: Joseph Cox
+Nationality: American
+Lifespan: 1753      –1773      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1757–1760
+
+Medium: Paper
+Dimensions: 5 1/2 x 8 1/4 in. (14 x 21 cm)
+
+Credit Line: Gift of Mrs. John J. Riker, 1932
+
+---
+
+Artwork Title: Ladle
+Object Type: Ladle
+Classification: Unknown
+
+Artist: Standish Barry
+Nationality: American
+Lifespan: 1763      –1844      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1787–1793
+
+Medium: Silver
+Dimensions: 15 3/8 x 3 7/8 in. (39.1 x 9.8 cm); 5 oz. 18 dwt. (183 g)
+
+Credit Line: Bequest of Alphonso T. Clearwater, 1933
+
+---
+
+Artwork Title: Ladle
+Object Type: Ladle
+Classification: Unknown
+
+Artist: John Burger
+Nationality: American
+Lifespan: 1783      –1807      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1790–1800
+
+Medium: Silver
+Dimensions: Overall: L. 13 7/8 in. (35.2 cm); 5 oz. 12 dwt. (174.1 g)
+Bowl: Diam. 3 3/4 in. (9.5 cm)
+
+Credit Line: Gift of Miss Annie-May Hegeman, 1928
+
+---
+
+Artwork Title: Ladle
+Object Type: Ladle
+Classification: Unknown
+
+Artist: William Cleveland|Samuel Post
+Nationality:  |American
+Lifespan: 1770      |          –1837      |9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1800–1820
+
+Medium: Silver
+Dimensions: L. 12 in. (30.5 cm)
+
+Credit Line: Rogers Fund, 1938
+
+---
+
+Artwork Title: Ladle
+Object Type: Ladle
+Classification: Unknown
+
+Artist: Samuel Edwards
+Nationality: American
+Lifespan: 1705      –1762      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1745–1760
+
+Medium: Silver
+Dimensions: Overall: L. 15 1/2 in. (39.4 cm); 4 oz. (125.1 g)
+Bowl: 4 1/16 x 2 1/4 in. (10.3 x 5.7 cm)
+
+Credit Line: Rogers Fund, 1941
+
+---
+
+Artwork Title: Ladle
+Object Type: Ladle
+Classification: Unknown
+
+Artist: James Gaskins
+Nationality: American
+Lifespan: 1761      –1827      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1790–1800
+
+Medium: Silver
+Dimensions: 14 11/16 x 3 13/16 in. (37.3 x 9.7 cm); 7 oz. 16 dwt. (242.1 g)
+
+Credit Line: Bequest of Alphonso T. Clearwater, 1933
+
+---
+
+Artwork Title: Ladle
+Object Type: Ladle
+Classification: Unknown
+
+Artist: Hobbs, Brockunier and Company
+Nationality: American
+Lifespan: 1863      –1891      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1800–1900
+
+Medium: Blown glass
+Dimensions: H. 14 1/2 in. (36.8 cm)
+
+Credit Line: Gift of Mrs. Emily Winthrop Miles, 1946
+
+---
+
+Artwork Title: Ladle
+Object Type: Ladle
+Classification: Unknown
+
+Artist: William Hollingshead
+Nationality: American
+Lifespan: 1723      –1808      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1755–1775
+
+Medium: Silver
+Dimensions: 14 3/4 x 3 7/8 in. (37.5 x 9.8 cm); 6 oz. 7 dwt. (197.6 g)
+
+Credit Line: Bequest of Alphonso T. Clearwater, 1933
+
+---
+
+Artwork Title: Ladle
+Object Type: Ladle
+Classification: Unknown
+
+Artist: James Howell
+Nationality: American
+Lifespan: 1799      –1813      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1800–1830
+
+Medium: Silver
+Dimensions: 14 1/2 x 3 3/4 in. (36.8 x 9.5 cm); 6 oz. (185.9 g)
+
+Credit Line: Bequest of Alphonso T. Clearwater, 1933
+
+---
+
+Artwork Title: Ladle
+Object Type: Ladle
+Classification: Unknown
+
+Artist: Richard Humphreys
+Nationality: American
+Lifespan: 1750      –1832      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1775–1800
+
+Medium: Silver
+Dimensions: 14 3/16 x 3 5/8 in. (36 x 9.2 cm); 5 oz. 6 dwt. (165.4 g)
+
+Credit Line: Bequest of Alphonso T. Clearwater, 1933
+
+---
+
+Artwork Title: Ladle
+Object Type: Ladle
+Classification: Unknown
+
+Artist: Richard Lee Jr.|Richard Lee
+Nationality:  |American
+Lifespan: 1775      |1747      –1858      |1823      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1788–1820
+
+Medium: Pewter, wood
+Dimensions: H. 12 in. (30.5 cm)
+
+Credit Line: Gift of Mrs. J. Insley Blair, in memory of her husband, 1941
+
+---
+
+Artwork Title: Ladle
+Object Type: Ladle
+Classification: Unknown
+
+Artist: John Burt Lyng
+Nationality: American
+Lifespan: 1758      –1785      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1750–1775
+
+Medium: Silver
+Dimensions: 13 11/16 x 3 15/16 in. (34.8 x 10 cm); 6 oz. 11 dwt. (203.8 g)
+
+Credit Line: Bequest of Alphonso T. Clearwater, 1933
+
+---
+
+Artwork Title: Ladle
+Object Type: Ladle
+Classification: Unknown
+
+Artist: Saunders Pitman
+Nationality: American
+Lifespan: 1732      –1804      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1770–1800
+
+Medium: Silver
+Dimensions: L. 6 1/4 in. (15.9 cm)
+
+Credit Line: Bequest of Alphonso T. Clearwater, 1933
+
+---
+
+Artwork Title: Ladle
+Object Type: Ladle
+Classification: Unknown
+
+Artist: Joseph Richardson Jr.|Nathaniel Richardson
+Nationality: American| 
+Lifespan: 1752      |1754      –1831      |1827      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1777–1790
+
+Medium: Silver
+Dimensions: Overall: 2 1/2 x 13 3/16 in. (6.4 x 33.5 cm); 4 oz. 14 dwt. (145.6 g)
+Bowl: W. 3 5/8 in. (9.2 cm)
+
+Credit Line: Bequest of Alphonso T. Clearwater, 1933
+
+---
+
+Artwork Title: Ladle
+Object Type: Ladle
+Classification: Unknown
+
+Artist: Roe and Stollenwerck
+Nationality: American
+Lifespan: 1750      –1850      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1800–1830
+
+Medium: Silver
+Dimensions: Overall: L. 14 7/16 in. (36.7 cm); 5 oz. 13 dwt. (175.6 g)
+Bowl: W. 3 7/8 in. (9.8 cm)
+
+Credit Line: Bequest of Alphonso T. Clearwater, 1933
+
+---
+
+Artwork Title: Ladle
+Object Type: Ladle
+Classification: Unknown
+
+Artist: James D. Stout
+Nationality: American
+Lifespan: 1802      –1839      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1820–1830
+
+Medium: Silver
+Dimensions: L. 7 5/8 in. (19.4 cm)
+
+Credit Line: Bequest of Alphonso T. Clearwater, 1933
+
+---
+
+Artwork Title: Ladle
+Object Type: Ladle
+Classification: Unknown
+
+Artist: Philip Syng Jr.
+Nationality: American
+Lifespan: 1703      –1789      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1725–1772
+
+Medium: Silver
+Dimensions: 15 13/16 x 3 7/8 in. (40.2 x 9.8 cm); 7 oz. 12 dwt. (236.6 g)
+
+Credit Line: Bequest of Alphonso T. Clearwater, 1933
+
+---
+
+Artwork Title: Ladle
+Object Type: Ladle
+Classification: Unknown
+
+Artist: Samuel Tingley
+Nationality: American
+Lifespan: 1759      –1796      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1775–1796
+
+Medium: Silver
+Dimensions: L. 9 1/8 in. (23.2 cm)
+
+Credit Line: Bequest of Alphonso T. Clearwater, 1933
+
+---
+
+Artwork Title: Ladle
+Object Type: Ladle
+Classification: Unknown
+
+Artist: I. M.
+Nationality: American
+Lifespan:           –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1775–1800
+
+Medium: Silver
+Dimensions: 12 1/2 x 3 5/16 in. (31.8 x 8.4 cm); 4 oz. 18 dwt. (152.5 g)
+
+Credit Line: Bequest of Alphonso T. Clearwater, 1933
+
+---
+
+Artwork Title: Ladle
+Object Type: Ladle
+Classification: Unknown
+
+Artist: James Weekes
+Nationality: American
+Lifespan:           –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1821–1830
+
+Medium: Pewter
+Dimensions: H. 6 3/4 in. (17.1 cm)
+
+Credit Line: Gift of Mrs. J. Insley Blair, in memory of her husband, 1941
+
+---
+
+Artwork Title: Ladle
+Object Type: Ladle
+Classification: Unknown
+
+Artist: S. Yates
+Nationality: American
+Lifespan: 1807      –1825      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1810–1825
+
+Medium: Silver
+Dimensions: L. 6 3/8 in. (16.2 cm)
+
+Credit Line: Bequest of Alphonso T. Clearwater, 1933
+
+---
+
+Artwork Title: Watch and Pin
+Object Type: Watch
+Classification: Unknown
+
+Artist: Tiffany & Co.
+Nationality:  
+Lifespan: 1837      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1870–1879
+
+Medium: Gold, diamonds, silver
+Dimensions: 7/8 x 2 5/16 in. (2.2 x 5.9 cm)
+
+Credit Line: Gift of Susan Dwight Bliss, 1941
+
+---
+
+Artwork Title: Lamp
+Object Type: Lamp
+Classification: Unknown
+
+Artist: Adams and Company
+Nationality: American
+Lifespan:           –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1870–1880
+
+Medium: Pressed yellow glass
+Dimensions: H. 12 1/8 in. (30.8 cm)
+
+Credit Line: Gift of Mrs. Emily Winthrop Miles, 1946
+
+---
+
+Artwork Title: Lamp
+Object Type: Lamp
+Classification: Unknown
+
+Artist: Archer and Warner
+Nationality: American
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1848–1858
+
+Medium: Blown overlay glass
+Dimensions: Dimensions unavailable
+
+Credit Line: Gift of Mrs. Edward V. Jones, in memory of Nella Vason Jones, 1971
+
+---
+
+Artwork Title: Lamp
+Object Type: Lamp
+Classification: Unknown
+
+Artist: Atterbury and Company
+Nationality: American
+Lifespan: 1864      –1893      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1868–1875
+
+Medium: Frosted colorless and opaque blue glass, brass
+Dimensions: Overall: H. 12 7/8 in. (32.7 cm)
+Lamp: H. 10 1/2 in. (26.7 cm)
+
+Credit Line: Gift of Mr. and Mrs. Arthur S. Rudd, in memory of Plumah Naylor Yocum, 1979
+
+---
+
+Artwork Title: Lamp
+Object Type: Lamp
+Classification: Unknown
+
+Artist: Boston & Sandwich Glass Company
+Nationality: American
+Lifespan: 1825      –1888      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1850–1850
+
+Medium: Blown and cut glass
+Dimensions: H. 19 in. (48.3 cm)
+
+Credit Line: Funds from various donors, 1967
+
+---
+
+Artwork Title: Lamp
+Object Type: Lamp
+Classification: Unknown
+
+Artist: Challinor, Taylor and Company
+Nationality: American
+Lifespan: 1866      –1891      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1870–1890
+
+Medium: Pressed purple marble and colorless glass
+Dimensions: Dimensions unavailable
+
+Credit Line: Gift of Mrs. Emily Winthrop Miles, 1946
+
+---
+
+Artwork Title: Lamp
+Object Type: Lamp
+Classification: Unknown
+
+Artist: Handel Company
+Nationality: American
+Lifespan: 1885      –1930      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1900–1930
+
+Medium: Blown glass, bronze
+Dimensions: H. 16 3/4 in. (42.5 cm); Diam. 16 1/2 in. (41.9 cm)
+
+Credit Line: Gift of Mrs. H. S. Mesick, 1962
+
+---
+
+Artwork Title: Lamp
+Object Type: Lamp
+Classification: Unknown
+
+Artist: Hobbs, Brockunier and Company
+Nationality: American
+Lifespan: 1863      –1891      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1882–1887
+
+Medium: Blown glass
+Dimensions: Diam. 4 1/2 in. (11.4 cm)
+
+Credit Line: Gift of Mrs. Emily Winthrop Miles, 1946
+
+---
+
+Artwork Title: Hobnail Lamp
+Object Type: Lamp
+Classification: Unknown
+
+Artist: Hobbs, Brockunier and Company
+Nationality: American
+Lifespan: 1863      –1891      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1889–1898
+
+Medium: Pressed glass
+Dimensions: H. 10 1/4 in. (26 cm)
+
+Credit Line: Gift of Mrs. Emily Winthrop Miles, 1946
+
+---
+
+Artwork Title: Lamp
+Object Type: Lamp
+Classification: Unknown
+
+Artist: New England Glass Company
+Nationality: American
+Lifespan: 1818      –1888      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1818–1825
+
+Medium: Blown pattern-molded glass, tin
+Dimensions: H. 2 1/4 in. (5.7 cm)
+
+Credit Line: Rogers Fund, 1946
+
+---
+
+Artwork Title: Lamp
+Object Type: Lamp
+Classification: Unknown
+
+Artist: Allen Porter
+Nationality: American
+Lifespan: 1830      –1838      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1830–1838
+
+Medium: Pewter
+Dimensions: H. 10 in. (25.4 cm)
+
+Credit Line: Gift of Mrs. J. Insley Blair, in memory of her husband, 1941
+
+---
+
+Artwork Title: Lamp
+Object Type: Lamp
+Classification: Unknown
+
+Artist: Tiffany Studios|Louis C. Tiffany
+Nationality:  |American
+Lifespan: 1902      |1848      –1932      |1933      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1904–1915
+
+Medium: Leaded Favrile glass and bronze
+Dimensions: Base: H. 26 1/2 in. (67.3 cm); Diam. 14 5/8 in. (37.1 cm)
+Shade: H. 14 5/8 in. (37.1 cm)
+
+
+Credit Line: Gift of Mr. and Mrs. Hugh J. Grant, 1974
+
+---
+
+Artwork Title: Lamp
+Object Type: Lamp
+Classification: Unknown
+
+Artist: Dirk Van Erp
+Nationality: American
+Lifespan: 1862      –1933      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1909–1915
+
+Medium: Copper base, mica and copper shade
+Dimensions: H. 26 in. (66 cm); Diam. 23 in. (58.4 cm)
+
+Credit Line: Gift of Charles L. and Jane D. Kaufmann, 1989
+
+---
+
+Artwork Title: Lamp Reflector
+Object Type: Lamp reflector
+Classification: Unknown
+
+Artist: Henry William Stiegel
+Nationality: American, born Germany
+Lifespan: 1729      –1785      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1730–1785
+
+Medium: Free-blown glass
+Dimensions: H. 6 1/4 in. (15.9 cm)
+
+Credit Line: Gift of Frederick W. Hunter, 1913
+
+---
+
+Artwork Title: Lamp Shade
+Object Type: Lamp shade
+Classification: Unknown
+
+Artist: Quezal Art Glass and Decorating Company
+Nationality: American
+Lifespan: 1901      –1924      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1902–1902
+
+Medium: Blown glass
+Dimensions: H. 4 3/4 in. (12.1 cm); Diam. 4 in. (10.2 cm)
+
+Credit Line: Gift of Mrs. Florence Weyman, 1967
+
+---
+
+Artwork Title: Lamp Shade
+Object Type: Lamp shade
+Classification: Unknown
+
+Artist: Quezal Art Glass and Decorating Company
+Nationality: American
+Lifespan: 1901      –1924      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1902–1902
+
+Medium: Blown glass
+Dimensions: H. 5 1/4 in. (13.3 cm); Diam. 5 1/4 in. (13.3 cm)
+
+Credit Line: Gift of Mrs. Florence Weyman, 1967
+
+---
+
+Artwork Title: Lamp Shade (?)
+Object Type: Lamp shade (?)
+Classification: Unknown
+
+Artist: Louis C. Tiffany|Tiffany Glass and Decorating Company
+Nationality: American|American
+Lifespan: 1848      |1892      –1933      |1902      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1893–1896
+
+Medium: Favrile glass
+Dimensions: H. 14 1/4 in. (36.2 cm)
+
+Credit Line: Gift of H. O. Havemeyer, 1896
+
+---
+
+Artwork Title: Lantern
+Object Type: Lantern
+Classification: Unknown
+
+Artist: H. Van Buren Magonigle|Samuel Yellin
+Nationality: American|American, born Russian Empire [now Ukraine]
+Lifespan: 1867      |1884      –1935      |1940      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1915–1915
+
+Medium: Iron, glass
+Dimensions: 88 x 11 in. (223.5 x 27.9 cm)
+
+Credit Line: Gift of Manuel Pollack and Morris Baris, 1965
+
+---
+
+Artwork Title: Lantern
+Object Type: Lantern
+Classification: Unknown
+
+Artist: H. Van Buren Magonigle|Samuel Yellin
+Nationality: American|American, born Russian Empire [now Ukraine]
+Lifespan: 1867      |1884      –1935      |1940      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1915–1915
+
+Medium: Iron, glass
+Dimensions: 88 x 11 in. (223.5 x 27.9 cm)
+
+Credit Line: Gift of Manuel Pollack and Morris Baris, 1965
+
+---
+
+Artwork Title: Cup
+Object Type: Cup
+Classification: Unknown
+
+Artist: Charles Cartlidge and Company
+Nationality: American
+Lifespan: 1848      –1856      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1848–1856
+
+Medium: Porcelain
+Dimensions: H. 3 5/8 in. (9.2 cm); Diam. 5 3/8 in. (13.7 cm)
+
+Credit Line: Gift of Mr. and Mrs. I. Wistar Morris, 1988
+
+---
+
+Artwork Title: Saucer
+Object Type: Saucer
+Classification: Unknown
+
+Artist: Charles Cartlidge and Company
+Nationality: American
+Lifespan: 1848      –1856      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1848–1856
+
+Medium: Porcelain
+Dimensions: H. 1 1/4 in. (3.2 cm); Diam. 7 in. (17.8 cm)
+
+Credit Line: Gift by Mr. and Mrs. I. Wistar Morris, 1988
+
+---
+
+Artwork Title: Rim for Waste Bowl
+Object Type: Waste Bowl
+Classification: Unknown
+
+Artist: Andrew Ellicott Warner
+Nationality: American
+Lifespan: 1786      –1870      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1845–1845
+
+Medium: Silver
+Dimensions: Overall: 1 11/16 x 6 1/4 in. (4.3 x 15.9 cm); 8 oz. 13 dwt. (268.6 g)
+Bezel: Diam. 5 3/16 in. (13.2 cm)
+
+Credit Line: Friends of the American Wing Fund, 1987
+
+---
+
+Artwork Title: Strainer
+Object Type: Strainer
+Classification: Unknown
+
+Artist: Jacob Gerritse Lansing
+Nationality: American
+Lifespan: 1736      –1803      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1760–1780
+
+Medium: Silver
+Dimensions: 3 1/2 x 5 1/4 in., 1oz. 18 dwt. (8.9 x 13.3 cm, 60 Grams)
+
+Credit Line: Gift of Mrs. Abraham Lansing, 1901
+
+---
+
+Artwork Title: Lemonade Glass
+Object Type: Lemonade glass
+Classification: Unknown
+
+Artist: Boston & Sandwich Glass Company
+Nationality: American
+Lifespan: 1825      –1888      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1877–1880
+
+Medium: Blown glass, threaded
+Dimensions: 5 3/4 x 2 1/4 x 3 1/4 in. (14.6 x 5.7 x 8.3 cm)
+
+Credit Line: Gift of Mrs. Pierre Brunschwig, 1987
+
+---
+
+Artwork Title: Lemonade Glass
+Object Type: Lemonade glass
+Classification: Unknown
+
+Artist: Boston & Sandwich Glass Company
+Nationality: American
+Lifespan: 1825      –1888      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1877–1880
+
+Medium: Blown glass, threaded
+Dimensions: 5 5/16 x 2 7/16 x 3 3/16 in. (13.5 x 6.2 x 8.1 cm)
+
+Credit Line: Gift of Mrs. Pierre Brunschwig, 1987
+
+---
+
+Artwork Title: Letter
+Object Type: Letter
+Classification: Unknown
+
+Artist: Daniel Crommelin Verplanck
+Nationality: American
+Lifespan:           –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1788–1788
+
+Medium: Paper
+Dimensions: 14 3/4 x 9 in. (37.5 x 22.9 cm)
+
+Credit Line: Gift of Bayard Verplanck, 1942
+
+---
+
+Artwork Title: Letter Drop from the Guaranty Building, Buffalo
+Object Type: Letter drop
+Classification: Unknown
+
+Artist: Louis Henry Sullivan
+Nationality: American
+Lifespan: 1856      –1924      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1891–1895
+
+Medium: Cast iron
+Dimensions: 2 5/8 x 8 3/4 in. (6.7 x 22.2 cm)
+
+Credit Line: Gift of Mr. and Mrs. Roger G. Kennedy, 1978
+
+---
+
+Artwork Title: Paper Cutter
+Object Type: Paper Knife
+Classification: Unknown
+
+Artist: Unger Brothers
+Nationality:  
+Lifespan: 1872      –1919      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1900–1905
+
+Medium: Silver
+Dimensions: 1/2 x 9 11/16 x 1 5/8 in. (1.3 x 24.6 x 4.1 cm); 2 oz. 2 dwt. (65 g)
+
+Credit Line: Gift of Ronald S. Kane, 1967
+
+---
+
+Artwork Title: Letter Opener
+Object Type: Letter opener
+Classification: Unknown
+
+Artist: Louis C. Tiffany|Tiffany Studios
+Nationality: American| 
+Lifespan: 1848      |1902      –1933      |1932      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1907–1920
+
+Medium: Favrile glass, bronze
+Dimensions: H. 9 1/8 in. (23.2 cm)
+
+Credit Line: Gift of Mrs. H. S. Mesick, 1962
+
+---
+
+Artwork Title: Letter Rack
+Object Type: Letter rack
+Classification: Unknown
+
+Artist: Tiffany Studios|Louis C. Tiffany
+Nationality:  |American
+Lifespan: 1902      |1848      –1932      |1933      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1907–1920
+
+Medium: Favrile glass, bronze
+Dimensions: 5 5/16 x 6 1/4 x 2 1/2 in. (13.5 x 15.9 x 6.4 cm)
+
+Credit Line: Gift of Mrs. H. S. Mesick, 1962
+
+---
+
+Artwork Title: Liberty Cup and Saucer
+Object Type: Liberty cup and saucer
+Classification: Unknown
+
+Artist: Union Porcelain Works
+Nationality: American
+Lifespan: 1863      –1922      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1879–1880
+
+Medium: Porcelain
+Dimensions: Cup: H. 4 in. (10.2 cm); Diam. 4 1/2 in. (11.4 cm)
+Saucer: H. 1 3/16 in. (3 cm); Diam. 6 9/16 in. (16.7 cm)
+
+Credit Line: Gift of Mr. and Mrs. Franklin Chace, 1969
+
+---
+
+Artwork Title: Liberty cup and saucer
+Object Type: Liberty cup and saucer
+Classification: Unknown
+
+Artist: Union Porcelain Works
+Nationality: American
+Lifespan: 1863      –1922      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1876–1876
+
+Medium: Porcelain
+Dimensions: Cup: H. 4 9/16 in. (11.6 cm); Diam. 4 9/16 in. (11.6 cm)
+Saucer: Diam. 6 7/8 in. (17.5 cm)
+
+Credit Line: Gift of Mr. and Mrs. Franklin Chace, 1969
+
+---
+
+Artwork Title: Library Table
+Object Type: Library table
+Classification: Unknown
+
+Artist: Alexander Jackson Davis|Burns and Trainque
+Nationality: American|American
+Lifespan: 1803      |1839      –1892      |1856      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1852–1855
+
+Medium: Oak, walnut, cherry, poplar
+Dimensions: 29 1/4 x 51 3/4 x 33 7/8 in. (74.3 x 131.4 x 86 cm)
+
+Credit Line: Gift of Berry B. Tracy, 1979
+
+---
+
+Artwork Title: Library Table
+Object Type: Library table
+Classification: Unknown
+
+Artist: Charles Sumner Greene|Henry Mather Greene|Greene and Greene
+Nationality: American| | 
+Lifespan: 1869      |1870      |1894      –1957      |1954      |1916      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1907–1909
+
+Medium: Mahogany, ebony, oak, burl walnut, silver, copper
+Dimensions: 30 1/2 x 67 x 29 in. (77.5 x 170.2 x 73.7 cm)
+
+Credit Line: Purchase, Theodore R. Gamble Jr. Gift, in honor of his mother, Mrs. Theodore Robert Gamble, 1981
+
+---
+
+Artwork Title: Library Table
+Object Type: Library table
+Classification: Unknown
+
+Artist: Herter Brothers
+Nationality: American
+Lifespan: 1864      –1906      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1879–1882
+
+Medium: Rosewood, brass, mother-of-pearl, and abalone
+Dimensions: 31 1/4 x 60 x 35 3/4 in. (79.4 x 152.4 x 90.8 cm)
+
+Credit Line: Purchase, Mrs. Russell Sage Gift, 1972
+
+---
+
+Artwork Title: Library Table
+Object Type: Library table
+Classification: Unknown
+
+Artist: Gustav Stickley
+Nationality: American
+Lifespan: 1858      –1942      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1903–1906
+
+Medium: Oak, leather
+Dimensions: H. 30 in. (76.2 cm); Diam. 55 in. (139.7 cm)
+
+Credit Line: Gift of Cyril Farny, in memory of his wife, Phyllis Holt Farny, 1976
+
+---
+
+Artwork Title: Light Fixture
+Object Type: Light fixture
+Classification: Unknown
+
+Artist: Frank Lloyd Wright
+Nationality: American
+Lifespan: 1867      –1959      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1912–1914
+
+Medium: White oak, glass
+Dimensions: 32 x 7 x 11 in. (81.3 x 17.8 x 27.9 cm)
+
+Credit Line: Purchase, Emily Crane Chadbourne Bequest, 1972
+
+---
+
+Artwork Title: Light Fixture
+Object Type: Light fixture
+Classification: Unknown
+
+Artist: Frank Lloyd Wright
+Nationality: American
+Lifespan: 1867      –1959      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1912–1914
+
+Medium: White oak, glass
+Dimensions: 32 x 7 x 11 in. (81.3 x 17.8 x 27.9 cm)
+
+Credit Line: Purchase, Emily Crane Chadbourne Bequest, 1972
+
+---
+
+Artwork Title: Light Fixture
+Object Type: Light fixture
+Classification: Unknown
+
+Artist: Frank Lloyd Wright
+Nationality: American
+Lifespan: 1867      –1959      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1912–1914
+
+Medium: White oak, glass
+Dimensions: 32 x 7 x 11 in. (81.3 x 17.8 x 27.9 cm)
+
+Credit Line: Purchase, Emily Crane Chadbourne Bequest, 1972
+
+---
+
+Artwork Title: Light Fixture
+Object Type: Light fixture
+Classification: Unknown
+
+Artist: Frank Lloyd Wright
+Nationality: American
+Lifespan: 1867      –1959      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1912–1914
+
+Medium: White oak, glass
+Dimensions: 32 x 7 x 11 in. (81.3 x 17.8 x 27.9 cm)
+
+Credit Line: Purchase, Emily Crane Chadbourne Bequest, 1972
+
+---
+
+Artwork Title: Lighthouse Clock
+Object Type: Lighthouse clock
+Classification: Unknown
+
+Artist: Simon Willard
+Nationality: American
+Lifespan: 1753      –1848      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1825–1830
+
+Medium: Mahogany, white pine, mahogany veneer
+Dimensions: H. 28 1/2 in. (72.4 cm)
+
+Credit Line: Gift of Mrs. Richard M. Lederer, in memory of her husband, 1957
+
+---
+
+Artwork Title: Cabinet
+Object Type: Cabinet
+Classification: Unknown
+
+Artist: Gustav Stickley
+Nationality: American
+Lifespan: 1858      –1942      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1899–1903
+
+Medium: Elm, copper
+Dimensions: 72 1/2 x 72 in. (184.2 x 182.9 cm)
+
+Credit Line: Gift of Cyril Farny, in memory of his wife, Phyllis Holt Farny, 1976
+
+---
+
+Artwork Title: Lintel
+Object Type: Lintel
+Classification: Unknown
+
+Artist: Tiffany Studios|Louis C. Tiffany
+Nationality:  |American
+Lifespan: 1902      |1848      –1932      |1933      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1905–1915
+
+Medium: Glass mosaic
+Dimensions: 18 x 115 in. (45.7 x 292.1 cm)
+
+Credit Line: Purchase, Mrs. Lillian Nassau Gift, 1980
+
+---
+
+Artwork Title: Standing lion
+Object Type: Figure
+Classification: Unknown
+
+Artist: Daniel Greatbatch|Lyman, Fenton & Co.|United States Pottery Company
+Nationality: British|American|American
+Lifespan: 1838      |1849      |1852      –1838      |1849      |1852      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1849–1849
+
+Medium: Earthenware
+Dimensions: 9 1/4 x 10 7/8 x 5 7/8 in. (23.5 x 27.6 x 14.9 cm)
+
+Credit Line: Rogers Fund, 1941
+
+---
+
+Artwork Title: Lioness Figure
+Object Type: Figure
+Classification: Unknown
+
+Artist: Daniel Greatbatch|United States Pottery Company
+Nationality: British|American
+Lifespan: 1838      |1852      –1838      |1852      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1850–1858
+
+Medium: Mottled brown earthenware
+Dimensions: 7 x 9 1/2 in. (17.8 x 24.1 cm)
+
+Credit Line: Rogers Fund, 1914
+
+---
+
+Artwork Title: Lithophane
+Object Type: Lithophane
+Classification: Unknown
+
+Artist: Koenigliche Porzellan Manufaktur
+Nationality: German
+Lifespan: 1763      –9999      
+
+Cultural Context: German
+Period: Unknown
+Date Range: 1837–1840
+
+Medium: Porcelain and wood
+Dimensions: 22 5/8 x 11 3/4 in. (57.5 x 29.8 cm)
+
+Credit Line: Gift of Mrs. Cecil J. North, 1962
+
+---
+
+Artwork Title: Egyptian Motifs and Musical Instruments (from Scrapbook)
+Object Type: Drawing
+Classification: Unknown
+
+Artist: John Singer Sargent
+Nationality: American
+Lifespan: 1856      –1925      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1875–1878
+
+Medium: Pen and ink on off-white wove paper
+Dimensions: 8 1/2 x 10 1/2 in. (21.6 x 26.7 cm)
+
+Credit Line: Gift of Mrs. Francis Ormond, 1950
+
+---
+
+Artwork Title: Head with Turban (from Sketchbook of Javanese Dancers)
+Object Type: Drawing
+Classification: Unknown
+
+Artist: John Singer Sargent
+Nationality: American
+Lifespan: 1856      –1925      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1889–1889
+
+Medium: Graphite on off-white wove paper
+Dimensions: 5 1/2 x 8 1/2 in. (14 x 21.6 cm)
+
+Credit Line: Gift of Mrs. Francis Ormond, 1950
+
+---
+
+Artwork Title: Foot of a Javanese Dancer (from Sketchbook of Javanese Dancers)
+Object Type: Drawing
+Classification: Unknown
+
+Artist: John Singer Sargent
+Nationality: American
+Lifespan: 1856      –1925      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1889–1889
+
+Medium: Graphite on off-white wove paper
+Dimensions: 5 1/2 x 8 1/2 in. (14 x 21.6 cm)
+
+Credit Line: Gift of Mrs. Francis Ormond, 1950
+
+---
+
+Artwork Title: Creampot
+Object Type: Cream pot
+Classification: Unknown
+
+Artist: Wood and Hughes
+Nationality: American
+Lifespan: 1845      –1899      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1863
+
+Medium: Silver
+Dimensions: 8 1/8 x 5 13/16 in. (20.6 x 14.8 cm)
+
+Credit Line: Friends of the American Wing Fund, 2006
+
+---
+
+Artwork Title: Sugar bowl
+Object Type: Sugar bowl
+Classification: Unknown
+
+Artist: Wood and Hughes
+Nationality: American
+Lifespan: 1845      –1899      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1863
+
+Medium: Silver
+Dimensions: 9 1/16 x 6 1/4 in. (23 x 15.9 cm)
+
+Credit Line: Friends of the American Wing Fund, 2006
+
+---
+
+Artwork Title: Two Standing Men (from Sketchbook of Javanese Dancers)
+Object Type: Drawing
+Classification: Unknown
+
+Artist: John Singer Sargent
+Nationality: American
+Lifespan: 1856      –1925      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1889–1889
+
+Medium: Graphite on off-white wove paper
+Dimensions: 8 1/2 x 5 1/2 in. (21.6 x 14 cm)
+
+Credit Line: Gift of Mrs. Francis Ormond, 1950
+
+---
+
+Artwork Title: Egyptian Sculpture and Motifs (from Scrapbook)
+Object Type: Drawing
+Classification: Unknown
+
+Artist: John Singer Sargent
+Nationality: American
+Lifespan: 1856      –1925      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1875–1878
+
+Medium: Pen and ink on off-white wove paper
+Dimensions: 8 1/4 x 10 1/2 in. (21 x 26.7 cm)
+
+Credit Line: Gift of Mrs. Francis Ormond, 1950
+
+---
+
+Artwork Title: Head of a Javanese Dancer (from Sketchbook of Javanese Dancers)
+Object Type: Drawing
+Classification: Unknown
+
+Artist: John Singer Sargent
+Nationality: American
+Lifespan: 1856      –1925      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1889–1889
+
+Medium: Graphite on off-white wove paper
+Dimensions: 8 1/2 x 5 1/2 in. (21.6 x 14 cm)
+
+Credit Line: Gift of Mrs. Francis Ormond, 1950
+
+---
+
+Artwork Title: Two Javanese Dancers Applying Make-up (from Sketchbook of Javanese Dancers)
+Object Type: Drawing
+Classification: Unknown
+
+Artist: John Singer Sargent
+Nationality: American
+Lifespan: 1856      –1925      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1889–1889
+
+Medium: Graphite on off-white wove paper
+Dimensions: 8 1/2 x 5 1/2 in. (21.6 x 14 cm)
+
+Credit Line: Gift of Mrs. Francis Ormond, 1950
+
+---
+
+Artwork Title: Javanese Dancers Applying Make-up and Adjusting Hair (from Sketchbook of Javanese Dancers)
+Object Type: Drawing
+Classification: Unknown
+
+Artist: John Singer Sargent
+Nationality: American
+Lifespan: 1856      –1925      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1889–1889
+
+Medium: Graphite on off-white wove paper
+Dimensions: 8 1/2 x 5 1/2 in. (21.6 x 14 cm)
+
+Credit Line: Gift of Mrs. Francis Ormond, 1950
+
+---
+
+Artwork Title: Hand of a Javanese Dancer (from Sketchbook of Javanese Dancers)
+Object Type: Drawing
+Classification: Unknown
+
+Artist: John Singer Sargent
+Nationality: American
+Lifespan: 1856      –1925      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1889–1889
+
+Medium: Graphite on off-white wove paper
+Dimensions: 5 1/2 x 8 1/2 in. (14 x 21.6 cm)
+
+Credit Line: Gift of Mrs. Francis Ormond, 1950
+
+---
+
+Artwork Title: Looking Glass
+Object Type: Looking glass
+Classification: Unknown
+
+Artist: United Society of Believers in Christ’s Second Appearing (“Shakers”)
+Nationality: American
+Lifespan: 1750      –9999      
+
+Cultural Context: American, Shaker
+Period: Unknown
+Date Range: 1840–1860
+
+Medium: Cedar, maple
+Dimensions: 24 5/16 x 13 1/2 in. (61.8 x 34.3 cm)
+
+Credit Line: Friends of the American Wing Fund, 1966
+
+---
+
+Artwork Title: Egyptian Queens and Priestesses (from Album)
+Object Type: Drawing
+Classification: Unknown
+
+Artist: John Singer Sargent
+Nationality: American
+Lifespan: 1856      –1925      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1875–1878
+
+Medium: Pen and ink on off-white wove paper
+Dimensions: 5 1/4 x 8 3/16 in. (13.3 x 20.8 cm)
+
+Credit Line: Gift of Mrs. Francis Ormond, 1950
+
+---
+
+Artwork Title: Looking Glass
+Object Type: Looking glass
+Classification: Unknown
+
+Artist: Stephen Badlam
+Nationality: American
+Lifespan: 1751      –1815      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1777–1780
+
+Medium: Mahogany, gilt
+Dimensions: Frame: 46 x 23 13/16 in. (116.8 x 60.5 cm)
+Glass: 23 3/8 x 15 1/4 in. (59.4 x 38.7 cm)
+
+Credit Line: Gift of Wunsch Foundation Inc., 1985
+
+---
+
+Artwork Title: Looking Glass
+Object Type: Looking glass
+Classification: Unknown
+
+Artist: John Doggett
+Nationality: American
+Lifespan: 1780      –1857      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1810–1820
+
+Medium: Gilt gesso, verd antique, wood
+Dimensions: 35 x 22 1/4 in. (88.9 x 56.5 cm)
+
+Credit Line: Gift of Mrs. Russell Sage, 1909
+
+---
+
+Artwork Title: Looking Glass
+Object Type: Looking glass
+Classification: Unknown
+
+Artist: John Elliott Sr.
+Nationality: American
+Lifespan: 1713      –1791      
+
+Cultural Context: British
+Period: Unknown
+Date Range: 1762–1767
+
+Medium: Mahogany
+Dimensions: 57 x 20 3/8 in. (144.8 x 51.8 cm)
+
+Credit Line: Rogers Fund, 1925
+
+---
+
+Artwork Title: Looking Glass
+Object Type: Looking glass
+Classification: Unknown
+
+Artist: John Elliott Sr.
+Nationality: American
+Lifespan: 1713      –1791      
+
+Cultural Context: American or British
+Period: Unknown
+Date Range: 1762–1767
+
+Medium: Walnut
+Dimensions: 48 x 20 in. (121.9 x 50.8 cm)
+
+Credit Line: Rogers Fund, 1932
+
+---
+
+Artwork Title: Looking Glass
+Object Type: Looking glass
+Classification: Unknown
+
+Artist: Herter Brothers
+Nationality: American
+Lifespan: 1864      –1906      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1877–1880
+
+Medium: Cherry
+Dimensions: 61 3/4 x 41 5/8 x 1 3/4 in. (156.8 x 105.7 x 4.4 cm)
+
+Credit Line: Gift of Paul Martini, 1969
+
+---
+
+Artwork Title: Looking Glass
+Object Type: Looking glass
+Classification: Unknown
+
+Artist: Isaac Platt
+Nationality: American
+Lifespan: 1793      –1875      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1829–1835
+
+Medium: Glass, gesso
+Dimensions: 35 1/2 x 65 3/16 in. (90.2 x 165.6 cm)
+
+Credit Line: Gift of Mr. and Mrs. Leo D. Bretter, 1979
+
+---
+
+Artwork Title: Looking Glass
+Object Type: Looking glass
+Classification: Unknown
+
+Artist: Isaac Platt
+Nationality: American
+Lifespan: 1793      –1875      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1829–1835
+
+Medium: Glass, gesso
+Dimensions: 65 3/16 x 35 1/2 in. (165.6 x 90.2 cm)
+
+Credit Line: Gift of Mr. and Mrs. Leo D. Bretter, 1979
+
+---
+
+Artwork Title: Lorgnettes
+Object Type: Lorgnettes
+Classification: Unknown
+
+Artist: Cartier
+Nationality: French
+Lifespan: 1847      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1902–1905
+
+Medium: Platinum, diamonds
+Dimensions: 1 x 4 1/16 in. (2.5 x 10.3 cm)
+
+Credit Line: Gift of Susan Dwight Bliss, 1941
+
+---
+
+Artwork Title: Figure of Louis XVI and Benjamin Franklin
+Object Type: Figure
+Classification: Unknown
+
+Artist: Charles-Gabriel Sauvage, called Lemire pere
+Nationality:  
+Lifespan: 1741      –1827      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1780–1785
+
+Medium: Porcelain
+Dimensions: 12 3/4 x 9 1/2 x 6 in. (32.4 x 24.1 x 15.2 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: M. Louise McLaughlin|Losanti Pottery
+Nationality: American| 
+Lifespan: 1847      |          –1939      |          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1902–1902
+
+Medium: Porcelain
+Dimensions: Height: 6 7/16 in. (16.4 cm)
+
+Credit Line: Gift of Betty G. Hut and Robert A. Hut, 2021
+
+---
+
+Artwork Title: Fork
+Object Type: Fork
+Classification: Unknown
+
+Artist: George Washington Maher|Gorham Manufacturing Company
+Nationality: American|American
+Lifespan: 1864      |1831      –1926      |9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1912–1912
+
+Medium: Silver, silver gilt
+Dimensions: L. 7 3/16 in. (18.3 cm)
+
+Credit Line: Friends of the American Wing Fund, 1987
+
+---
+
+Artwork Title: Knife
+Object Type: Knife
+Classification: Unknown
+
+Artist: Gorham Manufacturing Company|George Washington Maher
+Nationality: American|American
+Lifespan: 1831      |1864      –9999      |1926      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1912–1912
+
+Medium: Silver
+Dimensions: L. 8 3/8 in. (21.3 cm)
+
+Credit Line: Friends of the American Wing Fund, 1987
+
+---
+
+Artwork Title: Plate
+Object Type: Plate
+Classification: Unknown
+
+Artist: Frank Lloyd Wright|Bauscher Brothers Porcelain Factory
+Nationality: American|American
+Lifespan: 1867      |          –1959      |9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1911–1914
+
+Medium: Earthenware
+Dimensions: Diam. 7 1/2 in. (19.1 cm)
+
+Credit Line: Gift of Erving and Joyce Wolf, in memory of Diane R. Wolf, 1987
+
+---
+
+Artwork Title: Plate
+Object Type: Plate
+Classification: Unknown
+
+Artist: L. T. Lloyde|Haviland & Co.|Dorothea Warren O'Hara
+Nationality: American|American and French|American
+Lifespan:           |1864      |1873      –9999      |1931      |1972      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1908–1908
+
+Medium: Porcelain, overglaze enamel decoration
+Dimensions: H. 1 1/4 in. (3.2 cm); Diam. 8 1/2 in. (21.6 cm)
+
+Credit Line: Purchase, Friends of the American Wing Fund and Anonymous Gift, 1986
+
+---
+
+Artwork Title: Plate
+Object Type: Plate
+Classification: Unknown
+
+Artist: Olga St. John|Rosenthal
+Nationality:  |German
+Lifespan:           |1876      –9999      |1920      
+
+Cultural Context: American or German
+Period: Unknown
+Date Range: 1900–1900
+
+Medium: Porcelain, overglaze enamel decoration
+Dimensions: H. 1 in. (2.5 cm); Diam. 8 1/2 in. (21.6 cm)
+
+Credit Line: Purchase, Friends of the American Wing Fund and Anonymous Gift, 1986
+
+---
+
+Artwork Title: Luncheon Plate
+Object Type: Luncheon plate
+Classification: Unknown
+
+Artist: Union Porcelain Works
+Nationality: American
+Lifespan: 1863      –1922      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1885–1885
+
+Medium: Porcelain
+Dimensions: Diam. 8 3/16 in. (20.8 cm)
+
+Credit Line: Gift of Mr. and Mrs. Franklin Chace, 1969
+
+---
+
+Artwork Title: Luncheon Plate
+Object Type: Luncheon plate
+Classification: Unknown
+
+Artist: Union Porcelain Works
+Nationality: American
+Lifespan: 1863      –1922      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1885–1885
+
+Medium: Porcelain
+Dimensions: Diam. 8 15/16 in. (22.7 cm)
+
+Credit Line: Gift of Mr. and Mrs. Franklin Chace, 1969
+
+---
+
+Artwork Title: Luncheon Plate
+Object Type: Luncheon plate
+Classification: Unknown
+
+Artist: Union Porcelain Works
+Nationality: American
+Lifespan: 1863      –1922      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1885–1885
+
+Medium: Porcelain
+Dimensions: Diam. 8 13/16 in. (22.4 cm)
+
+Credit Line: Gift of Mr. and Mrs. Franklin Chace, 1969
+
+---
+
+Artwork Title: Luncheon Plate
+Object Type: Luncheon plate
+Classification: Unknown
+
+Artist: Union Porcelain Works
+Nationality: American
+Lifespan: 1863      –1922      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1885–1885
+
+Medium: Porcelain
+Dimensions: Diam. 8 15/16 in. (22.7 cm)
+
+Credit Line: Gift of Mr. and Mrs. Franklin Chace, 1969
+
+---
+
+Artwork Title: Luncheon Plate
+Object Type: Luncheon plate
+Classification: Unknown
+
+Artist: Union Porcelain Works
+Nationality: American
+Lifespan: 1863      –1922      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1885–1885
+
+Medium: Porcelain
+Dimensions: Diam. 8 15/16 in. (22.7 cm)
+
+Credit Line: Gift of Mr. and Mrs. Franklin Chace, 1969
+
+---
+
+Artwork Title: Luncheon Plate
+Object Type: Luncheon plate
+Classification: Unknown
+
+Artist: Union Porcelain Works
+Nationality: American
+Lifespan: 1863      –1922      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1885–1885
+
+Medium: Porcelain
+Dimensions: Diam. 8 15/16 in. (22.7 cm)
+
+Credit Line: Gift of Mr. and Mrs. Franklin Chace, 1969
+
+---
+
+Artwork Title: Luncheon Plate
+Object Type: Luncheon plate
+Classification: Unknown
+
+Artist: Union Porcelain Works
+Nationality: American
+Lifespan: 1863      –1922      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1885–1885
+
+Medium: Porcelain
+Dimensions: Diam. 8 7/8 in. (22.5 cm)
+
+Credit Line: Gift of Mr. and Mrs. Franklin Chace, 1969
+
+---
+
+Artwork Title: Luncheon Plate
+Object Type: Luncheon plate
+Classification: Unknown
+
+Artist: Union Porcelain Works
+Nationality: American
+Lifespan: 1863      –1922      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1885–1885
+
+Medium: Porcelain
+Dimensions: Diam. 8 13/16 in. (22.4 cm)
+
+Credit Line: Gift of Mr. and Mrs. Franklin Chace, 1969
+
+---
+
+Artwork Title: Luncheon Plate
+Object Type: Luncheon plate
+Classification: Unknown
+
+Artist: Union Porcelain Works
+Nationality: American
+Lifespan: 1863      –1922      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1885–1885
+
+Medium: Porcelain
+Dimensions: Diam. 8 15/16 in. (22.7 cm)
+
+Credit Line: Gift of Mr. and Mrs. Franklin Chace, 1969
+
+---
+
+Artwork Title: Luncheon Plate
+Object Type: Luncheon plate
+Classification: Unknown
+
+Artist: Union Porcelain Works
+Nationality: American
+Lifespan: 1863      –1922      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1885–1885
+
+Medium: Porcelain
+Dimensions: Diam. 8 13/16 in. (22.4 cm)
+
+Credit Line: Gift of Mr. and Mrs. Franklin Chace, 1969
+
+---
+
+Artwork Title: Luncheon Plate
+Object Type: Luncheon plate
+Classification: Unknown
+
+Artist: Union Porcelain Works
+Nationality: American
+Lifespan: 1863      –1922      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1885–1885
+
+Medium: Porcelain
+Dimensions: Diam. 8 3/4 in. (22.2 cm)
+
+Credit Line: Gift of Mr. and Mrs. Franklin Chace, 1969
+
+---
+
+Artwork Title: Luncheon Plate
+Object Type: Luncheon plate
+Classification: Unknown
+
+Artist: Union Porcelain Works
+Nationality: American
+Lifespan: 1863      –1922      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1885–1885
+
+Medium: Porcelain
+Dimensions: Diam. 8 1/4 in. (21 cm)
+
+Credit Line: Gift of Mr. and Mrs. Franklin Chace, 1969
+
+---
+
+Artwork Title: Luncheon Plate
+Object Type: Luncheon plate
+Classification: Unknown
+
+Artist: Union Porcelain Works
+Nationality: American
+Lifespan: 1863      –1922      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1885–1885
+
+Medium: Porcelain
+Dimensions: Diam. 8 1/4 in. (21 cm)
+
+Credit Line: Gift of Mr. and Mrs. Franklin Chace, 1969
+
+---
+
+Artwork Title: Luncheon Plate
+Object Type: Luncheon plate
+Classification: Unknown
+
+Artist: Union Porcelain Works
+Nationality: American
+Lifespan: 1863      –1922      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1885–1885
+
+Medium: Porcelain
+Dimensions: Diam. 8 15/16 in. (22.7 cm)
+
+Credit Line: Gift of Mr. and Mrs. Franklin Chace, 1969
+
+---
+
+Artwork Title: Luncheon Plate
+Object Type: Luncheon plate
+Classification: Unknown
+
+Artist: Union Porcelain Works
+Nationality: American
+Lifespan: 1863      –1922      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1885–1885
+
+Medium: Porcelain
+Dimensions: Diam. 8 1/4 in. (21 cm)
+
+Credit Line: Gift of Mr. and Mrs. Franklin Chace, 1969
+
+---
+
+Artwork Title: Luncheon Plate
+Object Type: Luncheon plate
+Classification: Unknown
+
+Artist: Union Porcelain Works
+Nationality: American
+Lifespan: 1863      –1922      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1885–1885
+
+Medium: Porcelain
+Dimensions: Diam. 8 13/16 in. (22.4 cm)
+
+Credit Line: Gift of Mr. and Mrs. Franklin Chace, 1969
+
+---
+
+Artwork Title: Luncheon Plate
+Object Type: Luncheon plate
+Classification: Unknown
+
+Artist: Union Porcelain Works
+Nationality: American
+Lifespan: 1863      –1922      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1885–1885
+
+Medium: Porcelain
+Dimensions: Diam. 8 1/4 in. (21 cm)
+
+Credit Line: Gift of Mr. and Mrs. Franklin Chace, 1969
+
+---
+
+Artwork Title: Luncheon Plate
+Object Type: Luncheon plate
+Classification: Unknown
+
+Artist: Union Porcelain Works
+Nationality: American
+Lifespan: 1863      –1922      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1885–1885
+
+Medium: Porcelain
+Dimensions: Diam. 8 1/4 in. (21 cm)
+
+Credit Line: Gift of Mr. and Mrs. Franklin Chace, 1969
+
+---
+
+Artwork Title: Stained Glass Lunette from the Cornelius Vanderbilt II House, New York
+Object Type: Lunette
+Classification: Unknown
+
+Artist: John La Farge
+Nationality: American
+Lifespan: 1835      –1910      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1877–1882
+
+Medium: Leaded opalescent glass
+Dimensions: 30 1/4 x 63 in., 64lb. (76.8 x 160 cm)
+Framed: 34 3/4 x 68 7/8 x 2 in. (88.3 x 174.9 x 5.1 cm)
+
+Credit Line: Gift of Mrs. Otto Heinigke, 1916
+
+---
+
+Artwork Title: Lyre Clock
+Object Type: Lyre clock
+Classification: Unknown
+
+Artist: John Sawin|George W. Dyer
+Nationality:  |American
+Lifespan: 1801      |          –1863      |9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1822–1828
+
+Medium: Mahogany, gilt gesso, eglomise tablet, tulip poplar, white pine
+Dimensions: 33 x 12 1/2 in. (83.8 x 31.8 cm)
+
+Credit Line: Gift of Mrs. Russell Sage, 1909
+
+---
+
+Artwork Title: The Magnolia Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Tiffany & Co.
+Nationality:  
+Lifespan: 1837      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1890–1893
+
+Medium: Silver, gold, enamel, and opals
+Dimensions: Overall: 30 7/8 x 19 1/2 in. (78.4 x 49.5 cm); 838 oz. 11 dwt. (26081.6 g)
+Foot: Diam. 13 1/2 in. (34.3 cm)
+
+Credit Line: Gift of Mrs. Winthrop Atwill, 1899
+
+---
+
+Artwork Title: Mantel Clock
+Object Type: Mantel clock
+Classification: Unknown
+
+Artist: H. Smith
+Nationality:  
+Lifespan:           –9999      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1842–1845
+
+Medium: Bronze
+Dimensions: 15 3/4 x 8 3/4 x 5 1/4 in. (40 x 22.2 x 13.3 cm)
+
+Credit Line: Gift of Lee B. Anderson, 1986
+
+---
+
+Artwork Title: Mantel Clock
+Object Type: Mantel clock
+Classification: Unknown
+
+Artist: Terryville Manufacturing Company
+Nationality: American
+Lifespan:           –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1849–1852
+
+Medium: Brass, free-blown colorless and blue glass
+Dimensions: H. 10 in. (25.4 cm)
+
+Credit Line: Gift of Mr. and Mrs. Samuel Schwartz, 1984
+
+---
+
+Artwork Title: Mantel with Wellford Ornament from Beltzhoover House, Carlisle, Pennsylvania
+Object Type: Mantel 
+Classification: Unknown
+
+Artist: Robert Wellford
+Nationality: American
+Lifespan:           –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1812–1815
+
+Medium: Wood, composition ornament
+Dimensions: 63 1/2 x 97 3/4 in. (161.3 x 248.3 cm)
+
+Credit Line: Gift of Francis P. Garvan, 1918
+
+---
+
+Artwork Title: Mantel with Wellford Ornament from Beltzhoover House, Carlisle, Pennsylvania
+Object Type: Mantel 
+Classification: Unknown
+
+Artist: Robert Wellford
+Nationality: American
+Lifespan:           –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1812–1815
+
+Medium: Pine, composition ornament
+Dimensions: 61 x 94 5/8 in. (154.9 x 240.3 cm)
+
+Credit Line: Gift of Francis P. Garvan, 1918
+
+---
+
+Artwork Title: Mantel from Elias Hasket Derby House, Salem, Massachusetts
+Object Type: Mantel 
+Classification: Unknown
+
+Artist: Samuel McIntire
+Nationality: American
+Lifespan: 1757      –1811      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1798–1798
+
+Medium: Wood, composition ornament
+Dimensions: 54 3/4 x 77 x 9 in. (139.1 x 195.6 x 22.9 cm)
+
+Credit Line: Rogers Fund, 1946
+
+---
+
+Artwork Title: Manuscript Sampler
+Object Type: Manuscript sampler, Fraktur
+Classification: Unknown
+
+Artist: Peter Eby
+Nationality: American
+Lifespan:           –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1780–1780
+
+Medium: Ink and watercolor on paper
+Dimensions: 8 1/8 x 12 3/4 in. (20.6 x 32.4 cm)
+
+Credit Line: Gift of Mrs. Robert W. de Forest, 1933
+
+---
+
+Artwork Title: Manuscript Sampler
+Object Type: Manuscript sampler, Fraktur
+Classification: Unknown
+
+Artist: Johannes Hoeffer
+Nationality: American
+Lifespan:           –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1799–1799
+
+Medium: Ink and watercolor on paper
+Dimensions: 7 3/4 x 12 3/4 in. (19.7 x 32.4 cm)
+
+Credit Line: Gift of Mrs. Robert W. de Forest, 1933
+
+---
+
+Artwork Title: Map Case
+Object Type: Case
+Classification: Unknown
+
+Artist: Louis Boudo
+Nationality: American
+Lifespan: 1786      –1827      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1825–1825
+
+Medium: Silver
+Dimensions: Overall: 9 7/8 x 8 3/8 x 1 5/16 in. (25.1 x 21.3 x 3.3 cm); 49 oz. 7 dwt. (1535.1 g)
+Body: 41 oz. 9 dwt. (1288.6 g)
+Cover: 7 oz. 19 dwt. (246.5 g)
+
+Credit Line: Bequest of Alphonso T. Clearwater, 1933
+
+---
+
+Artwork Title: Map of the Province of New York
+Object Type: Map
+Classification: Unknown
+
+Artist: William Faden the Younger
+Nationality: British
+Lifespan: 1749      –1836      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1776–1776
+
+Medium: Ink on paper mounted on canvas
+Dimensions: 29 11/16 x 24 3/4 in. (75.4 x 62.9 cm)
+
+Credit Line: Gift of James Biddle, 1969
+
+---
+
+Artwork Title: Table
+Object Type: Table
+Classification: Unknown
+
+Artist: Clark Jones
+Nationality: American
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1924–1924
+
+Medium: Tulip, violet wood, holly, ebony, brass
+Dimensions: 28 5/8 x 32 3/8 x 18 1/4 in. (72.7 x 82.2 x 46.4 cm)
+
+Credit Line: Purchase, Edward C. Moore, Jr. Gift, 1925
+
+---
+
+Artwork Title: Bust of the Marquis de Lafayette
+Object Type: Bust
+Classification: Unknown
+
+Artist: Pierre Joseph Chardigny
+Nationality:  
+Lifespan: 1794      –1866      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1856–1883
+
+Medium: Waxed plaster
+Dimensions: H. 5 1/2 in. (14 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal of the Marquis de Lafayette
+Object Type: Medal
+Classification: Unknown
+
+Artist: François Augustin Caunois
+Nationality: French
+Lifespan: 1787      –1859      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1824–1824
+
+Medium: Bronze
+Dimensions: Diam. 1 7/8 in. (4.8 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal of the Marquis de Lafayette
+Object Type: Medal
+Classification: Unknown
+
+Artist: François Augustin Caunois
+Nationality: French
+Lifespan: 1787      –1859      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1824–1824
+
+Medium: Iron
+Dimensions: Diam. 1 3/4 in. (4.4 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal of the Marquis de Lafayette
+Object Type: Medal
+Classification: Unknown
+
+Artist: Pierre Simon Benj. Duvivier
+Nationality: French
+Lifespan: 1730      –1819      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1789–1789
+
+Medium: Gilt bronze
+Dimensions: Diam. 1 5/8 in. (4.1 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal of the Marquis de Lafayette
+Object Type: Medal
+Classification: Unknown
+
+Artist: Pierre Simon Benj. Duvivier
+Nationality: French
+Lifespan: 1730      –1819      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1789–1789
+
+Medium: Probably brass
+Dimensions: Diam. 1 5/8 in. (4.1 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal of the Marquis de Lafayette
+Object Type: Medal
+Classification: Unknown
+
+Artist: Pierre Simon Benj. Duvivier
+Nationality: French
+Lifespan: 1730      –1819      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1789–1789
+
+Medium: Bronze
+Dimensions: Diam. 1 5/8 in. (4.1 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal of the Marquis de Lafayette
+Object Type: Medal
+Classification: Unknown
+
+Artist: Jacques Edouard Gatteaux
+Nationality: French
+Lifespan: 1788      –1881      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1830–1830
+
+Medium: Iron
+Dimensions: Diam. 1 7/8 in. (4.8 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal of the Marquis de Lafayette
+Object Type: Medal
+Classification: Unknown
+
+Artist: Pierre Antoine Montagny
+Nationality:  
+Lifespan:           –9999      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1790–1790
+
+Medium: Bronze
+Dimensions: Diam. 2 1/16 in. (5.2 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal of the Marquis de Lafayette
+Object Type: Medal
+Classification: Unknown
+
+Artist: Joseph Arnold Pingret
+Nationality: Belgian
+Lifespan: 1798      –1862      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1830–1830
+
+Medium: Gilt silver
+Dimensions: Diam. 1 1/16 in. (2.7 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medallion of the Marquis de Lafayette
+Object Type: Medallion
+Classification: Unknown
+
+Artist: Pierre Jean David d'Angers
+Nationality: French
+Lifespan: 1788      –1856      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1830–1830
+
+Medium: Bronze
+Dimensions: Diam. 4 5/8 in. (11.7 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medallion of the Marquis de Lafayette
+Object Type: Medallion
+Classification: Unknown
+
+Artist: Clark Mills
+Nationality:  
+Lifespan:           –9999      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1775–1883
+
+Medium: Bronze, parcel gilt
+Dimensions: Diam. 6 3/4 in. (17.1 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medallion of the Marquis de Lafayette
+Object Type: Medallion
+Classification: Unknown
+
+Artist: Josiah Wedgwood and Sons
+Nationality: British
+Lifespan: 1759      –9999      
+
+Cultural Context: British
+Period: Unknown
+Date Range: 1770–1800
+
+Medium: Earthenware
+Dimensions: Diam. 2 3/8 in. (6 cm)
+
+Credit Line: Purchase, Joseph Pulitzer Bequest, 1942
+
+---
+
+Artwork Title: Statuette of the Marquis de Lafayette
+Object Type: Statuette
+Classification: Unknown
+
+Artist: Jean Ossaye Mombur
+Nationality:  
+Lifespan: 1850      –1896      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1870–1883
+
+Medium: Gilt bronze
+Dimensions: H. 7 in. (17.8 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Marrow Spoon
+Object Type: Spoon
+Classification: Unknown
+
+Artist: H. & P.
+Nationality: American
+Lifespan:           –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1800–1830
+
+Medium: Silver
+Dimensions: L. 9 in. (22.9 cm)
+
+Credit Line: Bequest of Alphonso T. Clearwater, 1933
+
+---
+
+Artwork Title: Match Box Holder
+Object Type: Match box holder
+Classification: Unknown
+
+Artist: Louis C. Tiffany|Tiffany Studios
+Nationality: American| 
+Lifespan: 1848      |1902      –1933      |1932      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1907–1920
+
+Medium: Favrile glass, bronze
+Dimensions: H. 2 1/8 in. (5.4 cm)
+
+Credit Line: Gift of Mrs. H. S. Mesick, 1962
+
+---
+
+Artwork Title: Match Case
+Object Type: Match case
+Classification: Unknown
+
+Artist: Tiffany & Co.
+Nationality:  
+Lifespan: 1837      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1890–1900
+
+Medium: Gold, silver, brass, patinated copper, gold-copper alloy, silver-copper alloy, and patinated copper-platinum-iron alloy
+Dimensions: 2 3/8 x 1 1/4 x 5/8 in. (6 x 3.2 x 1.6 cm); 1 oz. 18 dwt. (59.7 g)
+
+Credit Line: Gift of Susan Dwight Bliss, 1941
+
+---
+
+Artwork Title: McKinley Armchair
+Object Type: Armchair
+Classification: Unknown
+
+Artist: Phoenix Furniture Company|David Wolcott Kendall
+Nationality:  |American
+Lifespan: 1870      |1851      –1870      |1910      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1894–1896
+
+Medium: Oak
+Dimensions: 34 x 29 1/4 x 24 in. (86.4 x 74.3 x 61 cm)
+
+Credit Line: Purchase, Mr. and Mrs. David Lubart Gift, in memory of Katherine J. Lubart, 1944–1975, 1986
+
+---
+
+Artwork Title: Quart Measure
+Object Type: Quart measure
+Classification: Unknown
+
+Artist: Boardman and Hart
+Nationality: American
+Lifespan: 1828      –1853      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1835–1835
+
+Medium: Pewter
+Dimensions: H. 10 in. (25.4 cm)
+
+Credit Line: Purchase, Clara L-S Weber Gift, 1979
+
+---
+
+Artwork Title: Medal Commemorating the Treaty of Commerce between France and the United States
+Object Type: Medal
+Classification: Unknown
+
+Artist: Bertrand Andrieu|Raymond Gayrard
+Nationality: French|French
+Lifespan: 1761      |1777      –1822      |1858      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1822–1822
+
+Medium: Bronze
+Dimensions: Diam. 2 in. (5.1 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal
+Object Type: Medal
+Classification: Unknown
+
+Artist: John Bacon the Elder
+Nationality: British
+Lifespan: 1740      –1799      
+
+Cultural Context: British, probably
+Period: Unknown
+Date Range: 1819–1819
+
+Medium: Bronze
+Dimensions: Diam. 1 5/8 in. (4.1 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Side chair
+Object Type: Side chair
+Classification: Unknown
+
+Artist: Herter Brothers
+Nationality: American
+Lifespan: 1864      –1906      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1879–1882
+
+Medium: Oak, brass, and reproduction leather upholstery
+Dimensions: 35 x 23 7/8 x 21 3/4 in. (88.9 x 60.6 x 55.2 cm)
+
+Credit Line: Purchase, Margery Masinter, Sheila Wood Schwartz, Gloria Wells Sidnam, Julie Graham, Diana C. Landreth and Steven M. Kossak Gifts and Friends of the American Wing Fund, 1994
+
+---
+
+Artwork Title: Medallion
+Object Type: Medallion
+Classification: Unknown
+
+Artist: Jean-Jacques Barre
+Nationality: French
+Lifespan: 1793      –1855      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1833–1833
+
+Medium: Bronze
+Dimensions: Diam. 1 5/8 in. (4.1 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal
+Object Type: Medal
+Classification: Unknown
+
+Artist: John A. Bolen
+Nationality: American
+Lifespan: 1826      –1906      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1870–1900
+
+Medium: Metal
+Dimensions: Diam. 2 5/16 in. (5.9 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal
+Object Type: Medal
+Classification: Unknown
+
+Artist: John A. Bolen
+Nationality: American
+Lifespan: 1826      –1906      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1870–1900
+
+Medium: Bronze
+Dimensions: Diam. 2 5/16 in. (5.9 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Benjamin Franklin
+Object Type: Medallion
+Classification: Unknown
+
+Artist: Armand-Auguste Caqué
+Nationality: French
+Lifespan: 1793      –1881      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1818–1818
+
+Medium: Gilt bronze
+Dimensions: Diam. 1 5/8 in. (4.1 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal of Thaddeus Kosciuszko
+Object Type: Medal
+Classification: Unknown
+
+Artist: François Augustin Caunois
+Nationality: French
+Lifespan: 1787      –1859      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1818–1818
+
+Medium: Bronze
+Dimensions: Diam. 1 5/8 in. (4.1 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medallion
+Object Type: Medallion
+Classification: Unknown
+
+Artist: Augustin Dupré
+Nationality: French
+Lifespan: 1748      –1833      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1786–1786
+
+Medium: Galvano-reproduction
+Dimensions: Diam. 2 1/16 in. (5.2 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medallion
+Object Type: Medallion
+Classification: Unknown
+
+Artist: Augustin Dupré
+Nationality: French
+Lifespan: 1748      –1833      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1776–1883
+
+Medium: Cast iron
+Dimensions: Diam. 2 3/4 in. (7 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medallion
+Object Type: Medallion
+Classification: Unknown
+
+Artist: Augustin Dupré
+Nationality: French
+Lifespan: 1748      –1833      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1776–1883
+
+Medium: Bronze
+Dimensions: Diam. 3 in. (7.6 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medallio
+Object Type: Medallion
+Classification: Unknown
+
+Artist: Augustin Dupré
+Nationality: French
+Lifespan: 1748      –1833      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1784–1784
+
+Medium: Gilt bronze
+Dimensions: Diam. 1 7/8 in. (4.8 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medallion
+Object Type: Medallion
+Classification: Unknown
+
+Artist: Augustin Dupré
+Nationality: French
+Lifespan: 1748      –1833      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1786–1786
+
+Medium: Bronze
+Dimensions: Diam. 1 7/8 in. (4.8 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal of John Paul Jones and the Serapis
+Object Type: Medal
+Classification: Unknown
+
+Artist: Augustin Dupré
+Nationality: French
+Lifespan: 1748      –1833      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1779–1779
+
+Medium: Copper
+Dimensions: Diam. 2 1/4 in. (5.7 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal of General Daniel Morgan
+Object Type: Medal
+Classification: Unknown
+
+Artist: Augustin Dupré
+Nationality: French
+Lifespan: 1748      –1833      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1770–1800
+
+Medium: Copper
+Dimensions: Diam. 2 3/16 in. (5.6 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal Commemorating the Declaration of Independence
+Object Type: Medal
+Classification: Unknown
+
+Artist: Augustin Dupré
+Nationality: French
+Lifespan: 1748      –1833      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1782–1782
+
+Medium: Bronze
+Dimensions: Diam. 1 7/8 in. (4.8 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal
+Object Type: Medal
+Classification: Unknown
+
+Artist: Pierre Simon Benj. Duvivier
+Nationality: French
+Lifespan: 1730      –1819      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1770–1800
+
+Medium: Bronze
+Dimensions: Diam. 2 3/4 in. (7 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal
+Object Type: Medal
+Classification: Unknown
+
+Artist: Pierre Simon Benj. Duvivier
+Nationality: French
+Lifespan: 1730      –1819      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1770–1800
+
+Medium: Cast iron
+Dimensions: Diam. 2 3/4 in. (7 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal
+Object Type: Medal
+Classification: Unknown
+
+Artist: Pierre Simon Benj. Duvivier
+Nationality: French
+Lifespan: 1730      –1819      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1770–1800
+
+Medium: Silver
+Dimensions: Diam. 2 3/4 in. (7 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal
+Object Type: Medal
+Classification: Unknown
+
+Artist: Pierre Simon Benj. Duvivier
+Nationality: French
+Lifespan: 1730      –1819      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1770–1800
+
+Medium: Bronze
+Dimensions: Diam. 1 3/4 in. (4.4 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal to Captain Duncan N. Ingraham
+Object Type: Medal
+Classification: Unknown
+
+Artist: Seth Eastman|James Barton Longacre
+Nationality:  |American
+Lifespan: 1808      |1794      –1875      |1869      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1854–1854
+
+Medium: Bronze
+Dimensions: Diam. 4 in. (10.2 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: The "Shipwreck Medal"
+Object Type: Medal
+Classification: Unknown
+
+Artist: Salathiel Ellis
+Nationality: American
+Lifespan: 1803      –1879      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1845–1857
+
+Medium: Bronze
+Dimensions: Diam. 2 5/8 in. (6.7 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal of Millard Fillmore
+Object Type: Medal
+Classification: Unknown
+
+Artist: Salathiel Ellis|Joseph Willson
+Nationality: American|American
+Lifespan: 1803      |          –1879      |9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1850–1850
+
+Medium: Bronze
+Dimensions: Diam. 2 1/2 in. (6.4 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal of Franklin Pierce
+Object Type: Medal
+Classification: Unknown
+
+Artist: Salathiel Ellis|Joseph Willson
+Nationality: American|American
+Lifespan: 1803      |          –1879      |9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1853–1853
+
+Medium: Bronze
+Dimensions: Diam. 2 1/2 in. (6.4 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal of James Buchanan
+Object Type: Medal
+Classification: Unknown
+
+Artist: Salathiel Ellis|Joseph Willson
+Nationality: American|American
+Lifespan: 1803      |          –1879      |9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1857–1857
+
+Medium: Bronze
+Dimensions: Diam. 2 15/16 in. (7.5 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal of Captain O. H. Perry
+Object Type: Medal
+Classification: Unknown
+
+Artist: Moritz Fürst
+Nationality: Hungarian
+Lifespan: 1782      –1882      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1813–1815
+
+Medium: Bronze
+Dimensions: Diam. 2 5/16 in. (5.9 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal of Captain O. H. Perry
+Object Type: Medal
+Classification: Unknown
+
+Artist: Moritz Fürst
+Nationality: Hungarian
+Lifespan: 1782      –1882      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1813–1815
+
+Medium: Bronze
+Dimensions: Diam. 2 1/2 in. (6.4 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal of Captain Lewis Warrington
+Object Type: Medal
+Classification: Unknown
+
+Artist: Moritz Fürst
+Nationality: Hungarian
+Lifespan: 1782      –1882      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1814–1815
+
+Medium: Bronze
+Dimensions: Diam. 2 9/16 in. (6.5 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal of Captain Thomas Macdonough
+Object Type: Medal
+Classification: Unknown
+
+Artist: Moritz Fürst
+Nationality: Hungarian
+Lifespan: 1782      –1882      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1814–1815
+
+Medium: Bronze
+Dimensions: Diam. 2 1/2 in. (6.4 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal of Captain Robert Henley
+Object Type: Medal
+Classification: Unknown
+
+Artist: Moritz Fürst
+Nationality: Hungarian
+Lifespan: 1782      –1882      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1814–1815
+
+Medium: Bronze
+Dimensions: Diam. 2 9/16 in. (6.5 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal of Captain James Biddle
+Object Type: Medal
+Classification: Unknown
+
+Artist: Moritz Fürst
+Nationality: Hungarian
+Lifespan: 1782      –1882      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1815–1815
+
+Medium: Bronze
+Dimensions: Diam. 2 9/16 in. (6.5 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal of Captain William Bainbridge
+Object Type: Medal
+Classification: Unknown
+
+Artist: Moritz Fürst
+Nationality: Hungarian
+Lifespan: 1782      –1882      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1800–1830
+
+Medium: Bronze
+Dimensions: Diam. 2 9/16 in. (6.5 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal of Lieutenant Stephen Cassin
+Object Type: Medal
+Classification: Unknown
+
+Artist: Moritz Fürst
+Nationality: Hungarian
+Lifespan: 1782      –1882      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1800–1830
+
+Medium: Bronze
+Dimensions: Diam. 2 1/2 in. (6.4 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal of Captain Jacob Jones
+Object Type: Medal
+Classification: Unknown
+
+Artist: Moritz Fürst
+Nationality: Hungarian
+Lifespan: 1782      –1882      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1800–1830
+
+Medium: Bronze
+Dimensions: Diam. 2 9/16 in. (6.5 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal of Lieutenant Edward R. McCall
+Object Type: Medal
+Classification: Unknown
+
+Artist: Moritz Fürst
+Nationality: Hungarian
+Lifespan: 1782      –1882      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1800–1830
+
+Medium: Bronze
+Dimensions: Diam. 2 1/2 in. (6.4 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal of Captain Jesse Duncan Elliott
+Object Type: Medal
+Classification: Unknown
+
+Artist: Moritz Fürst
+Nationality: Hungarian
+Lifespan: 1782      –1882      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1800–1830
+
+Medium: Bronze
+Dimensions: Diam. 2 1/2 in. (6.4 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal of Captain Johnston Blakely
+Object Type: Medal
+Classification: Unknown
+
+Artist: Moritz Fürst
+Nationality: Hungarian
+Lifespan: 1782      –1882      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1800–1830
+
+Medium: Bronze
+Dimensions: Diam. 2 9/16 in. (6.5 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal of Major General Jacob Brown
+Object Type: Medal
+Classification: Unknown
+
+Artist: Moritz Fürst
+Nationality: Hungarian
+Lifespan: 1782      –1882      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1800–1830
+
+Medium: Bronze
+Dimensions: Diam. 2 1/2 in. (6.4 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal of Brigadier General James Miller
+Object Type: Medal
+Classification: Unknown
+
+Artist: Moritz Fürst
+Nationality: Hungarian
+Lifespan: 1782      –1882      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1800–1830
+
+Medium: Bronze
+Dimensions: Diam. 2 1/2 in. (6.4 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal of Colonel George Croghan
+Object Type: Medal
+Classification: Unknown
+
+Artist: Moritz Fürst
+Nationality: Hungarian
+Lifespan: 1782      –1882      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1800–1830
+
+Medium: Bronze
+Dimensions: Diam. 2 9/16 in. (6.5 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal of Major General E. P. Gaines
+Object Type: Medal
+Classification: Unknown
+
+Artist: Moritz Fürst
+Nationality: Hungarian
+Lifespan: 1782      –1882      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1800–1830
+
+Medium: Bronze
+Dimensions: Diam. 2 9/16 in. (6.5 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal of Captain Stephen Decatur
+Object Type: Medal
+Classification: Unknown
+
+Artist: Moritz Fürst
+Nationality: Hungarian
+Lifespan: 1782      –1882      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1800–1830
+
+Medium: Bronze
+Dimensions: Diam. 2 9/16 in. (6.5 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal of Captain Truxtun's Engagement with a French Cruiser in 1800
+Object Type: Medal
+Classification: Unknown
+
+Artist: Moritz Fürst
+Nationality: Hungarian
+Lifespan: 1782      –1882      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1800–1900
+
+Medium: Bronze
+Dimensions: Diam. 2 1/4 in. (5.7 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal of Captain James Lawrence
+Object Type: Medal
+Classification: Unknown
+
+Artist: Moritz Fürst
+Nationality: Hungarian
+Lifespan: 1782      –1882      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1800–1830
+
+Medium: Bronze
+Dimensions: Diam. 2 9/16 in. (6.5 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal in Memory of Lieutenant William Burrows
+Object Type: Medal
+Classification: Unknown
+
+Artist: Moritz Fürst
+Nationality: Hungarian
+Lifespan: 1782      –1882      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1800–1830
+
+Medium: Bronze
+Dimensions: Diam. 2 1/2 in. (6.4 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal of Governor I. Shelby of Kentucky
+Object Type: Medal
+Classification: Unknown
+
+Artist: Moritz Fürst
+Nationality: Hungarian
+Lifespan: 1782      –1882      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1800–1830
+
+Medium: Bronze
+Dimensions: Diam. 2 9/16 in. (6.5 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal of the Naval Battle of Lake Erie, 1813
+Object Type: Medal
+Classification: Unknown
+
+Artist: Moritz Fürst
+Nationality: Hungarian
+Lifespan: 1782      –1882      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1800–1900
+
+Medium: Bronze
+Dimensions: Diam. 2 5/16 in. (5.9 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal of Captain Charles Stewart
+Object Type: Medal
+Classification: Unknown
+
+Artist: Moritz Fürst
+Nationality: Hungarian
+Lifespan: 1782      –1882      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1800–1830
+
+Medium: Bronze
+Dimensions: Diam. 2 9/16 in. (6.5 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal of Major General William H. Harrison
+Object Type: Medal
+Classification: Unknown
+
+Artist: Moritz Fürst
+Nationality: Hungarian
+Lifespan: 1782      –1882      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1818–1818
+
+Medium: Bronze
+Dimensions: Diam. 2 9/16 in. (6.5 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal of Major General Winfield Scott
+Object Type: Medal
+Classification: Unknown
+
+Artist: Moritz Fürst
+Nationality: Hungarian
+Lifespan: 1782      –1882      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1818–1818
+
+Medium: Bronze
+Dimensions: Diam. 2 1/2 in. (6.4 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal of Major General Andrew Jackson
+Object Type: Medal
+Classification: Unknown
+
+Artist: Moritz Fürst
+Nationality: Hungarian
+Lifespan: 1782      –1882      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1800–1830
+
+Medium: Bronze
+Dimensions: Diam. 2 1/2 in. (6.4 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal of Major General Alexander Macomb
+Object Type: Medal
+Classification: Unknown
+
+Artist: Moritz Fürst
+Nationality: Hungarian
+Lifespan: 1782      –1882      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1800–1830
+
+Medium: Bronze
+Dimensions: Diam. 2 1/2 in. (6.4 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal of Brigadier-General E. W. Ripley
+Object Type: Medal
+Classification: Unknown
+
+Artist: Moritz Fürst
+Nationality: Hungarian
+Lifespan: 1782      –1882      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1800–1830
+
+Medium: Bronze
+Dimensions: Diam. 2 9/16 in. (6.5 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal of Major General Peter B. Porter
+Object Type: Medal
+Classification: Unknown
+
+Artist: Moritz Fürst
+Nationality: Hungarian
+Lifespan: 1782      –1882      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1800–1830
+
+Medium: Bronze
+Dimensions: Diam. 2 9/16 in. (6.5 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal of James Monroe
+Object Type: Medal
+Classification: Unknown
+
+Artist: Moritz Fürst
+Nationality: Hungarian
+Lifespan: 1782      –1882      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1817–1817
+
+Medium: Bronze
+Dimensions: Diam. 2 1/2 in. (6.4 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal of John Quincy Adams
+Object Type: Medal
+Classification: Unknown
+
+Artist: Moritz Fürst
+Nationality: Hungarian
+Lifespan: 1782      –1882      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1825–1825
+
+Medium: Bronze
+Dimensions: Diam. 2 7/16 in. (6.2 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal of Andrew Jackson
+Object Type: Medal
+Classification: Unknown
+
+Artist: Moritz Fürst
+Nationality: Hungarian
+Lifespan: 1782      –1882      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1829–1829
+
+Medium: Bronze
+Dimensions: Diam. 2 7/16 in. (6.2 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal of Martin Van Buren
+Object Type: Medal
+Classification: Unknown
+
+Artist: Moritz Fürst
+Nationality: Hungarian
+Lifespan: 1782      –1882      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1837–1837
+
+Medium: Bronze
+Dimensions: Diam. 2 7/16 in. (6.2 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: John Quincy Adams
+Object Type: Medal
+Classification: Unknown
+
+Artist: Moritz Fürst
+Nationality: Hungarian
+Lifespan: 1782      –1882      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1825–1825
+
+Medium: Silver
+Dimensions: Diam. 2 in. (5.1 cm)
+
+Credit Line: Gift of Mr. and Mrs. Frederick S. Wait, 1907
+
+---
+
+Artwork Title: American Institute Award Medal
+Object Type: Medal
+Classification: Unknown
+
+Artist: Moritz Fürst
+Nationality: Hungarian
+Lifespan: 1782      –1882      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1835–1838
+
+Medium: Silver
+Dimensions: Diam. 2 in. (5.1 cm)
+
+Credit Line: Gift of William Forbes II, 1952
+
+---
+
+Artwork Title: Medal of the Marquis de Lafayette
+Object Type: Medal
+Classification: Unknown
+
+Artist: Jacques Edouard Gatteaux
+Nationality: French
+Lifespan: 1788      –1881      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1830–1830
+
+Medium: Bronze
+Dimensions: Diam. 2 in. (5.1 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal of the Constituency of Meaux in Honor of Its Deputy
+Object Type: Medal
+Classification: Unknown
+
+Artist: Jacques Edouard Gatteaux
+Nationality: French
+Lifespan: 1788      –1881      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1830–1830
+
+Medium: Iron
+Dimensions: Diam. 1 15/16 in. (4.9 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal of Gates at Saratoga
+Object Type: Medal
+Classification: Unknown
+
+Artist: Nicolas Marie Gatteaux
+Nationality: French
+Lifespan: 1751      –1832      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1777–1777
+
+Medium: Bronze
+Dimensions: Diam. 2 3/16 in. (5.6 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal of Gates at Saratoga
+Object Type: Medal
+Classification: Unknown
+
+Artist: Nicolas Marie Gatteaux
+Nationality: French
+Lifespan: 1751      –1832      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1777–1777
+
+Medium: Bronze
+Dimensions: Diam. 2 3/16 in. (5.6 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medallion
+Object Type: Medallion
+Classification: Unknown
+
+Artist: Christian Gobrecht
+Nationality: American
+Lifespan: 1785      –1844      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1824–1824
+
+Medium: Bronze
+Dimensions: Diam. 2 in. (5.1 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medallion
+Object Type: Medallion
+Classification: Unknown
+
+Artist: Godel & Co. Fine Art
+Nationality:  
+Lifespan:           –9999      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1819–1819
+
+Medium: Bronze
+Dimensions: Diam. 1 3/4 in. (4.4 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medallion
+Object Type: Medallion
+Classification: Unknown
+
+Artist: Godel & Co. Fine Art
+Nationality:  
+Lifespan:           –9999      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1819–1819
+
+Medium: Bronze
+Dimensions: Diam. 1 5/8 in. (4.1 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal of Francis, Duke de Dampville
+Object Type: Medal
+Classification: Unknown
+
+Artist: Jean Hardy
+Nationality:  
+Lifespan: 1647      –1684      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1658–1658
+
+Medium: Bronze
+Dimensions: Diam. 2 in. (5.1 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal
+Object Type: Medal
+Classification: Unknown
+
+Artist: William H. Key
+Nationality: American
+Lifespan: 1828      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1858–1858
+
+Medium: Bronze
+Dimensions: Diam. 1 3/4 in. (4.4 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal
+Object Type: Medal
+Classification: Unknown
+
+Artist: William H. Key
+Nationality: American
+Lifespan: 1828      –1928      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1869–1869
+
+Medium: Silver or white-metal
+Dimensions: Diam. 1 1/2 in. (3.8 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal of the Numismatic and Antiquarian Society of Philadelphia
+Object Type: Medal
+Classification: Unknown
+
+Artist: William H. Key
+Nationality: American
+Lifespan: 1828      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1879–1879
+
+Medium: Bronze
+Dimensions: Diam. 1 5/8 in. (4.1 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal
+Object Type: Medal
+Classification: Unknown
+
+Artist: William Kneass|James Barton Longacre
+Nationality: American|American
+Lifespan: 1781      |1794      –1840      |1869      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1823–1840
+
+Medium: Silver
+Dimensions: Diam. 1 1/16 in. (2.7 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal
+Object Type: Medal
+Classification: Unknown
+
+Artist: George Hampden Lovett
+Nationality: American
+Lifespan: 1824      –1894      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1873–1876
+
+Medium: Gilt bronze or copper
+Dimensions: Diam. 1 1/2 in. (3.8 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal
+Object Type: Medal
+Classification: Unknown
+
+Artist: George Hampden Lovett
+Nationality: American
+Lifespan: 1824      –1894      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1855–1858
+
+Medium: Gold
+Dimensions: Diam. 2 in. (5.1 cm)
+
+Credit Line: Gift of Cyrus W. Field, 1892
+
+---
+
+Artwork Title: George Washington
+Object Type: Medal
+Classification: Unknown
+
+Artist: Robert Lovett
+Nationality: American
+Lifespan: 1800      –1830      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1800–1830
+
+Medium: Gilt bronze
+Dimensions: Diam. 1 1/4 in. (3.2 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal
+Object Type: Medal
+Classification: Unknown
+
+Artist: James Manley|S. Brooks
+Nationality: American| 
+Lifespan: 1790      |1743      –1800      |1843      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1790–1790
+
+Medium: Gilt bronze
+Dimensions: Diam. 1 7/8 in. (4.8 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal
+Object Type: Medal
+Classification: Unknown
+
+Artist: James Manley|S. Brooks
+Nationality: American| 
+Lifespan: 1790      |1743      –1800      |1843      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1790–1790
+
+Medium: Gilt bronze
+Dimensions: Diam. 1 7/8 in. (4.8 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal of George Washington's Public Offices
+Object Type: Medal
+Classification: Unknown
+
+Artist: James Manley|S. Brooks
+Nationality: American| 
+Lifespan: 1790      |1743      –1800      |1843      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1790–1790
+
+Medium: Gilt bronze
+Dimensions: Diam. 1 7/8 in. (4.8 cm)
+
+Credit Line: Gift of Mr. and Mrs. Frederick S. Wait, 1907
+
+---
+
+Artwork Title: Medallion
+Object Type: Medallion
+Classification: Unknown
+
+Artist: F. N. Mitchell
+Nationality:  
+Lifespan:           –9999      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1867–1867
+
+Medium: Probably silver
+Dimensions: Diam. 1 3/8 in. (3.5 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal
+Object Type: Medal
+Classification: Unknown
+
+Artist: Anthony Paquet
+Nationality: American
+Lifespan: 1814      –1882      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1853–1853
+
+Medium: Metal
+Dimensions: Diam. 2 in. (5.1 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal
+Object Type: Medal
+Classification: Unknown
+
+Artist: Anthony Paquet
+Nationality: American
+Lifespan: 1814      –1882      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1853–1853
+
+Medium: Bronze
+Dimensions: Diam. 2 in. (5.1 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal of the Inauguration of the Washington Cabinet of Medals
+Object Type: Medal
+Classification: Unknown
+
+Artist: Anthony Paquet
+Nationality: American
+Lifespan: 1814      –1882      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1860–1860
+
+Medium: Bronze
+Dimensions: Diam. 2 3/8 in. (6 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal Commemorating First Japanese Embassy to the United States
+Object Type: Medal
+Classification: Unknown
+
+Artist: Anthony Paquet
+Nationality: American
+Lifespan: 1814      –1882      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1860–1860
+
+Medium: Bronze
+Dimensions: Diam. 3 in. (7.6 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal to Dr. F. H. Rose, R. N.
+Object Type: Medal
+Classification: Unknown
+
+Artist: Anthony Paquet
+Nationality: American
+Lifespan: 1814      –1882      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1858–1858
+
+Medium: Bronze
+Dimensions: Diam. 2 15/16 in. (7.5 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal of Zachary Taylor
+Object Type: Medal
+Classification: Unknown
+
+Artist: Franklin Peale
+Nationality:  
+Lifespan: 1795      –1870      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1849–1849
+
+Medium: Bronze
+Dimensions: Diam. 2 1/2 in. (6.4 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal of James Knox Polk
+Object Type: Medal
+Classification: Unknown
+
+Artist: Franklin Peale
+Nationality:  
+Lifespan: 1795      –1870      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1849–1849
+
+Medium: Bronze
+Dimensions: Diam. 2 7/16 in. (6.2 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Captain Isaac Hull
+Object Type: Medal
+Classification: Unknown
+
+Artist: Johann Mathias Reich
+Nationality: American
+Lifespan: 1768      –1833      
+
+Cultural Context: American or German
+Period: Unknown
+Date Range: 1800–1830
+
+Medium: Bronze
+Dimensions: Diam. 2 1/2 in. (6.4 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Thomas Jefferson
+Object Type: Medal
+Classification: Unknown
+
+Artist: Johann Mathias Reich
+Nationality: American
+Lifespan: 1768      –1833      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1801–1801
+
+Medium: Silver
+Dimensions: Diam. 2 3/16 in. (5.6 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Thomas Jefferson
+Object Type: Medal
+Classification: Unknown
+
+Artist: Johann Mathias Reich
+Nationality: American
+Lifespan: 1768      –1833      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1801–1801
+
+Medium: Bronze
+Dimensions: Diam. 3 in. (7.6 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: James Madison
+Object Type: Medal
+Classification: Unknown
+
+Artist: Johann Mathias Reich
+Nationality: American
+Lifespan: 1768      –1833      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1801–1801
+
+Medium: Bronze
+Dimensions: Diam. 2 1/2 in. (6.4 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medallion
+Object Type: Medallion
+Classification: Unknown
+
+Artist: Jean Martin Renaud
+Nationality: French
+Lifespan: 1746      –1821      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1870–1900
+
+Medium: Copper-brown galvano patina
+Dimensions: Diam. 3 1/2 in. (8.9 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal
+Object Type: Medal
+Classification: Unknown
+
+Artist: Emile Rogat|Maurice Valentin Borrel
+Nationality: French|French
+Lifespan: 1770      |1804      –1850      |1882      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1834–1834
+
+Medium: Bronze
+Dimensions: Diam. 2 in. (5.1 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal
+Object Type: Medal
+Classification: Unknown
+
+Artist: Tiffany & Co.
+Nationality:  
+Lifespan: 1837      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1855–1858
+
+Medium: Gold
+Dimensions: Diam. 2 3/4 in. (7 cm)
+
+Credit Line: Gift of Cyrus W. Field, 1892
+
+---
+
+Artwork Title: Medallion
+Object Type: Medallion
+Classification: Unknown
+
+Artist: B. L. Vett
+Nationality: American
+Lifespan:           –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1800–1830
+
+Medium: Bronze
+Dimensions: Diam. 1 5/8 in. (4.1 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: George Washington
+Object Type: Medal
+Classification: Unknown
+
+Artist: F. Vivier
+Nationality:  
+Lifespan:           –9999      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1819–1819
+
+Medium: Bronze
+Dimensions: Diam. 1 5/8 in. (4.1 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal
+Object Type: Medal
+Classification: Unknown
+
+Artist: Webb
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1805–1805
+
+Medium: Bronze
+Dimensions: Diam. 3 in. (7.6 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Eccleston Medal
+Object Type: Medal
+Classification: Unknown
+
+Artist: Thomas Webb
+Nationality:  
+Lifespan: 1804      –1827      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1805–1805
+
+Medium: Bronze
+Dimensions: Diam. 3 in. (7.6 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal
+Object Type: Medal
+Classification: Unknown
+
+Artist: Charles Cushing Wright
+Nationality: American
+Lifespan: 1796      –1854      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1818–1854
+
+Medium: Bronze
+Dimensions: Diam. 3 1/2 in. (8.9 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: "Somers Medal"
+Object Type: Medal
+Classification: Unknown
+
+Artist: Charles Cushing Wright
+Nationality: American
+Lifespan: 1796      –1854      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1830–1870
+
+Medium: Bronze
+Dimensions: Diam. 2 1/4 in. (5.7 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal of Major General Z. Taylor
+Object Type: Medal
+Classification: Unknown
+
+Artist: Charles Cushing Wright
+Nationality: American
+Lifespan: 1796      –1854      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1848–1848
+
+Medium: Bronze
+Dimensions: Diam. 3 1/2 in. (8.9 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal of Major General Winfield Scott
+Object Type: Medal
+Classification: Unknown
+
+Artist: Charles Cushing Wright
+Nationality: American
+Lifespan: 1796      –1854      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1847–1847
+
+Medium: Bronze
+Dimensions: Diam. 3 1/2 in. (8.9 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medal of General Winfield Scott
+Object Type: Medal
+Classification: Unknown
+
+Artist: Charles Cushing Wright
+Nationality: American
+Lifespan: 1796      –1854      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1848–1848
+
+Medium: Bronze
+Dimensions: Diam. 3 1/2 in. (8.9 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: George Washington Commemorative Medal
+Object Type: Medal
+Classification: Unknown
+
+Artist: Joseph S. and Alfred Wyon
+Nationality:  
+Lifespan: 1700      –1900      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1800–1907
+
+Medium: Bronze
+Dimensions: Diam. 1 1/4 in. (3.2 cm)
+
+Credit Line: Gift of Mr. and Mrs. Frederick S. Wait, 1907
+
+---
+
+Artwork Title: Medallion of Lord Howe
+Object Type: Medallion
+Classification: Unknown
+
+Artist: Josiah Wedgwood and Sons
+Nationality: British
+Lifespan: 1759      –9999      
+
+Cultural Context: British
+Period: Unknown
+Date Range: 1770–1800
+
+Medium: Earthenware
+Dimensions: 4 x 3 1/8 in. (10.2 x 7.9 cm)
+
+Credit Line: Purchase, Joseph Pulitzer Bequest, 1942
+
+---
+
+Artwork Title: Medal
+Object Type: Medal
+Classification: Unknown
+
+Artist: William Spohn Baker
+Nationality: American
+Lifespan:           –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1873–1876
+
+Medium: Pitch composition
+Dimensions: 5 1/8 x 4 3/8 in. (13 x 11.1 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medallion of Benjamin Franklin
+Object Type: Medallion
+Classification: Unknown
+
+Artist: Jean Jacques Caffiéri|Josiah Wedgwood and Sons
+Nationality: French|British
+Lifespan: 1725      |1759      –1792      |9999      
+
+Cultural Context: British
+Period: Unknown
+Date Range: 1777–1800
+
+Medium: Earthenware
+Dimensions: 2 3/4 x 2 1/4 in. (7 x 5.7 cm)
+
+Credit Line: Purchase, Joseph Pulitzer Bequest, 1942
+
+---
+
+Artwork Title: Medallion of the Marquis de Lafayette
+Object Type: Medallion
+Classification: Unknown
+
+Artist: Pierre Jean David d'Angers
+Nationality: French
+Lifespan: 1788      –1856      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1831–1831
+
+Medium: Bronze
+Dimensions: Diam. 6 3/4 in. (17.1 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Anti-Slavery Medallion
+Object Type: Medallion
+Classification: Unknown
+
+Artist: William Hackwood|Josiah Wedgwood and Sons
+Nationality: British|British
+Lifespan: 1748      |1759      –1836      |9999      
+
+Cultural Context: British
+Period: Unknown
+Date Range: 1770–1800
+
+Medium: Jasper
+Dimensions: 1 1/4 x 1 1/8 in. (3.2 x 2.9 cm)
+
+Credit Line: Purchase, Joseph Pulitzer Bequest, 1942
+
+---
+
+Artwork Title: Medallion
+Object Type: Medallion
+Classification: Unknown
+
+Artist: M. Louise McLaughlin
+Nationality: American
+Lifespan: 1847      –1939      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1900–1900
+
+Medium: Porcelain
+Dimensions: 4 x 3 in. (10.2 x 7.6 cm)
+
+Credit Line: Gift of Florence I. Balasny-Barnes, in honor of her sister, Yvette B. Gould; her husband, Louis; Philip; Alan; Joyce and Traci, 1981
+
+---
+
+Artwork Title: Medallion of Benjamin Franklin
+Object Type: Medallion
+Classification: Unknown
+
+Artist: E. J. Neale and Company|Charles Nicolas Cochin II
+Nationality:  |French
+Lifespan:           |1715      –9999      |1790      
+
+Cultural Context: British
+Period: Unknown
+Date Range: 1778–1788
+
+Medium: Earthenware
+Dimensions: 14 x 11 1/2 in. (35.6 x 29.2 cm)
+
+Credit Line: Purchase, Joseph Pulitzer Bequest, 1942
+
+---
+
+Artwork Title: Medallion of Benjamin Franklin
+Object Type: Medallion
+Classification: Unknown
+
+Artist: Jean-Baptiste Nini
+Nationality: Italian
+Lifespan: 1717      –1786      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1779–1779
+
+Medium: Stoneware
+Dimensions: Diam. 5 7/8 in. (14.9 cm)
+
+Credit Line: Gift of George A. Lucas, 1901
+
+---
+
+Artwork Title: Medallion of Benjamin Franklin
+Object Type: Medallion
+Classification: Unknown
+
+Artist: Jean-Baptiste Nini|Josiah Wedgwood and Sons
+Nationality: Italian|British
+Lifespan: 1717      |1759      –1786      |9999      
+
+Cultural Context: British
+Period: Unknown
+Date Range: 1760–1800
+
+Medium: Earthenware
+Dimensions: 4 1/8 x 3 1/8 in. (10.5 x 7.9 cm)
+
+Credit Line: Purchase, Joseph Pulitzer Bequest, 1942
+
+---
+
+Artwork Title: Medallion
+Object Type: Medallion
+Classification: Unknown
+
+Artist: Jean Martin Renaud
+Nationality: French
+Lifespan: 1746      –1821      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1776–1800
+
+Medium: Bronze
+Dimensions: Diam. 4 1/4 in. (10.8 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Plaque of Benjamin Franklin
+Object Type: Plaque
+Classification: Unknown
+
+Artist: Jean Martin Renaud
+Nationality: French
+Lifespan: 1746      –1821      
+
+Cultural Context: French
+Period: Unknown
+Date Range: 1794–1797
+
+Medium: Terracotta
+Dimensions: H. 4 1/16 in. (10.3 cm)
+
+Credit Line: Gift of George A. Lucas, 1893
+
+---
+
+Artwork Title: Plaque
+Object Type: Plaque
+Classification: Unknown
+
+Artist: James Tassie|Jean Jacques Caffiéri
+Nationality: British, Scottish|French
+Lifespan: 1735      |1725      –1799      |1792      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1776–1883
+
+Medium: White glass paste
+Dimensions: 3 x 2 3/8 in. (7.6 x 6 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Plaque
+Object Type: Plaque
+Classification: Unknown
+
+Artist: James Tassie|Augustin Dupré
+Nationality: British, Scottish|French
+Lifespan: 1735      |1748      –1799      |1833      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1776–1830
+
+Medium: Glass paste
+Dimensions: Diam. 1 7/8 in. (4.8 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Plaque
+Object Type: Plaque
+Classification: Unknown
+
+Artist: James Tassie
+Nationality: British, Scottish
+Lifespan: 1735      –1799      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1796–1796
+
+Medium: Glass paste, wood
+Dimensions: 3 1/2 x 2 3/8 in. (8.9 x 6 cm)
+
+Credit Line: Rogers Fund, 1939
+
+---
+
+Artwork Title: Medal
+Object Type: Medal
+Classification: Unknown
+
+Artist: Jean Martin Renaud
+Nationality: French
+Lifespan: 1746      –1821      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1776–1883
+
+Medium: Bronze
+Dimensions: Diam. 4 1/4 in. (10.8 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medallion
+Object Type: Medallion
+Classification: Unknown
+
+Artist: Jean-Baptiste Nini
+Nationality: Italian
+Lifespan: 1717      –1786      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1870–1900
+
+Medium: Copper
+Dimensions: 5 1/4 x 5 1/8 in. (13.3 x 13 cm)
+
+Credit Line: Gift of William H. Huntington, 1883
+
+---
+
+Artwork Title: Medallion of Benjamin Franklin
+Object Type: Medallion
+Classification: Unknown
+
+Artist: Jean Martin Renaud
+Nationality: French
+Lifespan: 1746      –1821      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1870–1900
+
+Medium: Silver-plated copper
+Dimensions: Diam. 4 7/8 in. (12.4 cm)
+
+Credit Line: Gift of George A. Lucas, 1901
+
+---
+
+Artwork Title: Medallion of Benjamin Franklin
+Object Type: Medallion
+Classification: Unknown
+
+Artist: Wedgwood and Bentley|Josiah Wedgwood and Sons
+Nationality: British|British
+Lifespan: 1769      |1759      –1780      |9999      
+
+Cultural Context: British
+Period: Unknown
+Date Range: 1778–1780
+
+Medium: Earthenware
+Dimensions: 3 3/8 x 2 3/4 in. (8.6 x 7 cm)
+
+Credit Line: Purchase, Joseph Pulitzer Bequest, 1942
+
+---
+
+Artwork Title: Medallion of George III
+Object Type: Medallion
+Classification: Unknown
+
+Artist: Josiah Wedgwood and Sons
+Nationality: British
+Lifespan: 1759      –9999      
+
+Cultural Context: British
+Period: Unknown
+Date Range: 1770–1800
+
+Medium: Jasper
+Dimensions: 3 3/4 x 2 7/8 in. (9.5 x 7.3 cm)
+
+Credit Line: Purchase, Joseph Pulitzer Bequest, 1942
+
+---
+
+Artwork Title: Medallion of Joshua Reynolds
+Object Type: Medallion
+Classification: Unknown
+
+Artist: Josiah Wedgwood and Sons
+Nationality: British
+Lifespan: 1759      –9999      
+
+Cultural Context: British
+Period: Unknown
+Date Range: 1770–1800
+
+Medium: Jasper
+Dimensions: 4 x 3 1/4 in. (10.2 x 8.3 cm)
+
+Credit Line: Purchase, Joseph Pulitzer Bequest, 1942
+
+---
+
+Artwork Title: Medallion of Benjamin West
+Object Type: Medallion
+Classification: Unknown
+
+Artist: Josiah Wedgwood and Sons
+Nationality: British
+Lifespan: 1759      –9999      
+
+Cultural Context: British
+Period: Unknown
+Date Range: 1770–1800
+
+Medium: Jasper
+Dimensions: 4 1/4 x 3 1/4 in. (10.8 x 8.3 cm)
+
+Credit Line: Purchase, Joseph Pulitzer Bequest, 1942
+
+---
+
+Artwork Title: Medallion of Jacques Necker
+Object Type: Medallion
+Classification: Unknown
+
+Artist: Josiah Wedgwood and Sons
+Nationality: British
+Lifespan: 1759      –9999      
+
+Cultural Context: British
+Period: Unknown
+Date Range: 1770–1800
+
+Medium: Jasper
+Dimensions: Diam. 2 3/8 in. (6 cm)
+
+Credit Line: Purchase, Joseph Pulitzer Bequest, 1942
+
+---
+
+Artwork Title: Medallion of Josiah Wedgwood
+Object Type: Medallion
+Classification: Unknown
+
+Artist: Josiah Wedgwood and Sons
+Nationality: British
+Lifespan: 1759      –9999      
+
+Cultural Context: British
+Period: Unknown
+Date Range: 1770–1800
+
+Medium: Jasper
+Dimensions: 4 x 3 1/4 in. (10.2 x 8.3 cm)
+
+Credit Line: Purchase, Joseph Pulitzer Bequest, 1942
+
+---
+
+Artwork Title: Membership Certificate of the Society of the Cincinnati
+Object Type: Membership certificate
+Classification: Unknown
+
+Artist: Aug. L. Belle
+Nationality: American
+Lifespan:           –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1783–1783
+
+Medium: Vellum
+Dimensions: 17 5/8 x 24 in. (44.8 x 61 cm)
+
+Credit Line: Gift of Mr. and Mrs. Benjamin Ginsburg, 1986
+
+---
+
+Artwork Title: Milk Pitcher
+Object Type: Milk pitcher
+Classification: Unknown
+
+Artist: Adams and Company
+Nationality: American
+Lifespan:           –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1870–1890
+
+Medium: Pressed yellow glass
+Dimensions: H. 8 in. (20.3 cm)
+
+Credit Line: Gift of Mrs. Emily Winthrop Miles, 1946
+
+---
+
+Artwork Title: Milk Pitcher
+Object Type: Milk pitcher
+Classification: Unknown
+
+Artist: Richards and Hartley Flint Glass Co.
+Nationality: American
+Lifespan: 1867      –1890      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1870–1880
+
+Medium: Pressed colorless and opalescent glass
+Dimensions: H. 7 1/4 in. (18.4 cm)
+
+Credit Line: Gift of Mrs. Emily Winthrop Miles, 1946
+
+---
+
+Artwork Title: Miniature Dish
+Object Type: Dish
+Classification: Unknown
+
+Artist: Boston & Sandwich Glass Company
+Nationality: American
+Lifespan: 1825      –1888      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1835–1850
+
+Medium: Lacy pressed glass
+Dimensions: W. 1 15/16 in. (4.9 cm)
+
+Credit Line: Gift of Mrs. Emily Winthrop Miles, 1946
+
+---
+
+Artwork Title: Miniature pitcher
+Object Type: Pitcher
+Classification: Unknown
+
+Artist: Charles Cartlidge and Company
+Nationality: American
+Lifespan: 1848      –1856      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1848–1856
+
+Medium: Porcelain
+Dimensions: 2 3/4 x 3 5/8 x 2 1/4 in. (7 x 9.2 x 5.7 cm)
+
+Credit Line: Gift of Florence I. Balasny-Barnes, in memory of her parents, Elizabeth C. and Joseph Balasny, 1986
+
+---
+
+Artwork Title: Miniature Saltcellar
+Object Type: Saltcellar
+Classification: Unknown
+
+Artist: Boston & Sandwich Glass Company
+Nationality: American
+Lifespan: 1825      –1888      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1835–1850
+
+Medium: Lacy pressed glass
+Dimensions: W. 1 3/4 in. (4.4 cm)
+
+Credit Line: Gift of Mrs. Emily Winthrop Miles, 1946
+
+---
+
+Artwork Title: Miniature Tall Clock
+Object Type: Clock
+Classification: Unknown
+
+Artist: Thomas Claggett
+Nationality: American
+Lifespan: 1727      –1797      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1755–1765
+
+Medium: Mahogany, white pine, spruce
+Dimensions: 61 x 13 7/8 x 7 3/4 in. (154.9 x 35.2 x 19.7 cm)
+
+Credit Line: John Stewart Kennedy Fund, 1918
+
+---
+
+Artwork Title: Miniature Tall Clock
+Object Type: Clock
+Classification: Unknown
+
+Artist: Caleb Leach
+Nationality: American
+Lifespan: 1773      –1790      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1785–1790
+
+Medium: Mahogany, oak, maple, white pine
+Dimensions: 47 x 11 3/8 x 5 5/8 in. (119.4 x 28.9 x 14.3 cm)
+
+Credit Line: The Sylmaris Collection, Gift of George Coe Graves, 1930
+
+---
+
+Artwork Title: Book: Miscellaneous Works in Verse and Prose (Volume I of four volumes)
+Object Type: Book
+Classification: Unknown
+
+Artist: Joseph Addison, Esq.|J. Robertson
+Nationality:  | 
+Lifespan:           |          –9999      |9999      
+
+Cultural Context: Scottish
+Period: Unknown
+Date Range: 1769–1769
+
+Medium: Paper
+Dimensions: Dimensions unavailable
+
+Credit Line: Gift of James DeLancey Verplanck and John Bayard Rodgers Verplanck,  1939
+
+---
+
+Artwork Title: Book: Miscellaneous Works in Verse and Prose (Volume II of four volumes)
+Object Type: Book
+Classification: Unknown
+
+Artist: Joseph Addison, Esq.|J. Robertson
+Nationality:  | 
+Lifespan:           |          –9999      |9999      
+
+Cultural Context: Scottish
+Period: Unknown
+Date Range: 1769–1769
+
+Medium: Paper
+Dimensions: Dimensions unavailable
+
+Credit Line: Gift of James DeLancey Verplanck and John Bayard Rodgers Verplanck,  1939
+
+---
+
+Artwork Title: Book: Miscellaneous Works in Verse and Prose (Volume III of four volumes)
+Object Type: Book
+Classification: Unknown
+
+Artist: Joseph Addison, Esq.|J. Robertson
+Nationality:  | 
+Lifespan:           |          –9999      |9999      
+
+Cultural Context: Scottish
+Period: Unknown
+Date Range: 1769–1769
+
+Medium: Paper
+Dimensions: Dimensions unavailable
+
+Credit Line: Gift of James DeLancey Verplanck and John Bayard Rodgers Verplanck,  1939
+
+---
+
+Artwork Title: Book: Miscellaneous Works in Verse and Prose (Volume IV of four volumes)
+Object Type: Book
+Classification: Unknown
+
+Artist: J. Robertson|Joseph Addison, Esq.
+Nationality:  | 
+Lifespan:           |          –9999      |9999      
+
+Cultural Context: Scottish
+Period: Unknown
+Date Range: 1769–1769
+
+Medium: Paper
+Dimensions: Dimensions unavailable
+
+Credit Line: Gift of James DeLancey Verplanck and John Bayard Rodgers Verplanck,  1939
+
+---
+
+Artwork Title: Apple Blossoms
+Object Type: Painting
+Classification: Unknown
+
+Artist: Charles Caryl Coleman
+Nationality: American
+Lifespan: 1840      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1889–1889
+
+Medium: Oil on canvas
+Dimensions: 62 3/8 x 35 in. (158.4 x 88.9 cm)
+
+Credit Line: Barbara and John Robinson Fund and Marguerite and Frank A. Cosgrove Jr. Fund, 1996
+
+---
+
+Artwork Title: Morgan Dollar
+Object Type: Coin
+Classification: Unknown
+
+Artist: George T. Morgan
+Nationality: British
+Lifespan: 1845      –1925      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1878–1878
+
+Medium: Silver
+Dimensions: Dimensions unavailable
+
+Credit Line: Gift of Heinz L. Stoppelmann, 1980
+
+---
+
+Artwork Title: Reclining Morris Chair
+Object Type: Reclining Morris chair
+Classification: Unknown
+
+Artist: Roycroft
+Nationality:  
+Lifespan: 1895      –1938      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1900–1903
+
+Medium: Bird's-eye maple
+Dimensions: 45 1/2 x 31 7/8 x 38 in. (115.6 x 81 x 96.5 cm)
+
+Credit Line: Friends of the American Wing Fund, 1984
+
+---
+
+Artwork Title: Mosaic Panel
+Object Type: Mosaic panel
+Classification: Unknown
+
+Artist: Fred Dikeman|Louis C. Tiffany|Fred and Nancy Lee Dikeman
+Nationality:  |American|American
+Lifespan:           |1848      |          –9999      |1933      |          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1905–1983
+
+Medium: Glass
+Dimensions: Diam. 5 3/4 in. (14.6 cm)
+
+Credit Line: Gift of Fred and Nancylee Dikeman, in memory of his father, John Dikeman, 1980
+
+---
+
+Artwork Title: Mosaic Plaque
+Object Type: Mosaic plaque
+Classification: Unknown
+
+Artist: Louis C. Tiffany|Tiffany Glass and Decorating Company|Tiffany Studios
+Nationality: American|American| 
+Lifespan: 1848      |1892      |1902      –1933      |1902      |1932      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1890–1910
+
+Medium: Glass, wood, leather, moonstones, opal
+Dimensions: 8 5/8 x 6 in. (21.9 x 15.2 cm)
+
+Credit Line: Gift of Mr. and Mrs. Samuel Schwartz, 1984
+
+---
+
+Artwork Title: Curtain tie-back
+Object Type: Curtain tie-back
+Classification: Unknown
+
+Artist: Henry Kellam Hancock
+Nationality:  
+Lifespan: 1816      –1851      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1805–1835
+
+Medium: Stamped brass, lacquer
+Dimensions: Diam. 3 in. (7.6 cm)
+
+Credit Line: Gift of Mrs. Edward Hunting Smith, 1968
+
+---
+
+Artwork Title: Furniture Hardware
+Object Type: Furniture hardware
+Classification: Unknown
+
+Artist: Henry Kellam Hancock
+Nationality:  
+Lifespan: 1816      –1851      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1820–1830
+
+Medium: Gilt brass
+Dimensions: Diam. 2 5/8 in. (6.7 cm)
+
+Credit Line: Gift of Mrs. Edward Hunting Smith, 1968
+
+---
+
+Artwork Title: Furniture Hardware
+Object Type: Furniture hardware
+Classification: Unknown
+
+Artist: Henry Kellam Hancock
+Nationality:  
+Lifespan: 1816      –1851      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1820–1830
+
+Medium: Gilt brass
+Dimensions: Including pendants and screws: H. 3 1/8 in. (7.9 cm); Diam. 2 1/8 in. (5.4 cm)
+
+Credit Line: Gift of Mrs. Edward Hunting Smith, 1968
+
+---
+
+Artwork Title: Furniture Hardware
+Object Type: Furniture hardware
+Classification: Unknown
+
+Artist: Henry Kellam Hancock
+Nationality:  
+Lifespan: 1816      –1851      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1820–1830
+
+Medium: Gilt brass
+Dimensions: Diam. 2 1/8 in. (5.4 cm)
+
+Credit Line: Gift of Mrs. Edward Hunting Smith, 1968
+
+---
+
+Artwork Title: Furniture Hardware
+Object Type: Furniture hardware
+Classification: Unknown
+
+Artist: Henry Kellam Hancock
+Nationality:  
+Lifespan: 1816      –1851      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1820–1830
+
+Medium: Gilt brass
+Dimensions: Diam. 1 7/8 in. (4.8 cm)
+
+Credit Line: Gift of Mrs. Edward Hunting Smith, 1968
+
+---
+
+Artwork Title: Furniture Hardware
+Object Type: Furniture hardware
+Classification: Unknown
+
+Artist: Henry Kellam Hancock
+Nationality:  
+Lifespan: 1816      –1851      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1820–1830
+
+Medium: Gilt brass
+Dimensions: Diam. 1 13/16 in. (4.6 cm)
+
+Credit Line: Gift of Mrs. Edward Hunting Smith, 1968
+
+---
+
+Artwork Title: Furniture Hardware
+Object Type: Furniture hardware
+Classification: Unknown
+
+Artist: Henry Kellam Hancock
+Nationality:  
+Lifespan: 1816      –1851      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1820–1830
+
+Medium: Gilt brass
+Dimensions: 8 3/4 x 2 1/4 in. (22.2 x 5.7 cm)
+
+Credit Line: Gift of Mrs. Edward Hunting Smith, 1968
+
+---
+
+Artwork Title: Furniture Hardware
+Object Type: Furniture hardware
+Classification: Unknown
+
+Artist: Henry Kellam Hancock
+Nationality:  
+Lifespan: 1816      –1851      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1820–1830
+
+Medium: Gilt brass
+Dimensions: 10 1/16 x 2 9/16 in. (25.6 x 6.5 cm)
+
+Credit Line: Gift of Mrs. Edward Hunting Smith, 1968
+
+---
+
+Artwork Title: Furniture Hardware
+Object Type: Furniture hardware
+Classification: Unknown
+
+Artist: Henry Kellam Hancock
+Nationality:  
+Lifespan: 1816      –1851      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1820–1830
+
+Medium: Gilt brass
+Dimensions: 9 1/2 x 2 3/16 in. (24.1 x 5.6 cm)
+
+Credit Line: Gift of Mrs. Edward Hunting Smith, 1968
+
+---
+
+Artwork Title: Furniture Hardware
+Object Type: Furniture hardware
+Classification: Unknown
+
+Artist: Henry Kellam Hancock
+Nationality:  
+Lifespan: 1816      –1851      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1820–1830
+
+Medium: Gilt brass
+Dimensions: 8 3/8 x 1 7/8 in. (21.3 x 4.8 cm)
+
+Credit Line: Gift of Mrs. Edward Hunting Smith, 1968
+
+---
+
+Artwork Title: Swans and Fountain Appliqué
+Object Type: Appliqué
+Classification: Unknown
+
+Artist: Henry Kellam Hancock
+Nationality:  
+Lifespan: 1816      –1851      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1805–1835
+
+Medium: Cast brass, mercury, gold
+Dimensions: 9 3/4 x 2 1/8 in. (24.8 x 5.4 cm)
+
+Credit Line: Gift of Mrs. Edward Hunting Smith, 1968
+
+---
+
+Artwork Title: Furniture Hardware
+Object Type: Furniture hardware
+Classification: Unknown
+
+Artist: Henry Kellam Hancock
+Nationality:  
+Lifespan: 1816      –1851      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1820–1830
+
+Medium: Gilt brass
+Dimensions: 7 5/8 x 2 1/4 in. (19.4 x 5.7 cm)
+
+Credit Line: Gift of Mrs. Edward Hunting Smith, 1968
+
+---
+
+Artwork Title: Furniture Hardware
+Object Type: Furniture hardware
+Classification: Unknown
+
+Artist: Henry Kellam Hancock
+Nationality:  
+Lifespan: 1816      –1851      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1820–1830
+
+Medium: Gilt brass
+Dimensions: 5 1/2 x 1 5/16 in. (14 x 3.3 cm)
+
+Credit Line: Gift of Mrs. Edward Hunting Smith, 1968
+
+---
+
+Artwork Title: Furniture Hardware
+Object Type: Furniture hardware
+Classification: Unknown
+
+Artist: Henry Kellam Hancock
+Nationality:  
+Lifespan: 1816      –1851      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1820–1830
+
+Medium: Gilt brass
+Dimensions: 5 3/16 x 1 13/16 in. (13.2 x 4.6 cm)
+
+Credit Line: Gift of Mrs. Edward Hunting Smith, 1968
+
+---
+
+Artwork Title: Furniture Hardware
+Object Type: Furniture hardware
+Classification: Unknown
+
+Artist: Henry Kellam Hancock
+Nationality:  
+Lifespan: 1816      –1851      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1820–1830
+
+Medium: Gilt brass
+Dimensions: 3 1/16 x 2 1/8 in. (7.8 x 5.4 cm)
+
+Credit Line: Gift of Mrs. Edward Hunting Smith, 1968
+
+---
+
+Artwork Title: River God Appliqué
+Object Type: Appliqué
+Classification: Unknown
+
+Artist: Henry Kellam Hancock
+Nationality:  
+Lifespan: 1816      –1851      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1805–1835
+
+Medium: Cast brass, mercury, gold
+Dimensions: 6 1/4 x 2 3/4 in. (15.9 x 7 cm)
+
+Credit Line: Gift of Mrs. Edward Hunting Smith, 1968
+
+---
+
+Artwork Title: Furniture Hardware
+Object Type: Furniture hardware
+Classification: Unknown
+
+Artist: Henry Kellam Hancock
+Nationality:  
+Lifespan: 1816      –1851      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1820–1830
+
+Medium: Gilt brass
+Dimensions: 6 1/4 x 2 3/4 in. (15.9 x 7 cm)
+
+Credit Line: Gift of Mrs. Edward Hunting Smith, 1968
+
+---
+
+Artwork Title: Furniture Hardware
+Object Type: Furniture hardware
+Classification: Unknown
+
+Artist: Henry Kellam Hancock
+Nationality:  
+Lifespan: 1816      –1851      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1820–1830
+
+Medium: Gilt brass
+Dimensions: 2 7/16 x 2 1/4 in. (6.2 x 5.7 cm)
+
+Credit Line: Gift of Mrs. Edward Hunting Smith, 1968
+
+---
+
+Artwork Title: Cupid and Venus Appliqué
+Object Type: Appliqué
+Classification: Unknown
+
+Artist: Henry Kellam Hancock
+Nationality:  
+Lifespan: 1816      –1851      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1805–1835
+
+Medium: Cast brass, lacquer
+Dimensions: 2 7/16 x 2 1/4 in. (6.2 x 5.7 cm)
+
+Credit Line: Gift of Mrs. Edward Hunting Smith, 1968
+
+---
+
+Artwork Title: Furniture Hardware
+Object Type: Furniture hardware
+Classification: Unknown
+
+Artist: Henry Kellam Hancock
+Nationality:  
+Lifespan: 1816      –1851      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1820–1830
+
+Medium: Gilt brass
+Dimensions: 2 1/2 x 1 5/8 in. (6.4 x 4.1 cm)
+
+Credit Line: Gift of Mrs. Edward Hunting Smith, 1968
+
+---
+
+Artwork Title: Smithy Cupid Appliqué
+Object Type: Appliqué
+Classification: Unknown
+
+Artist: Henry Kellam Hancock
+Nationality:  
+Lifespan: 1816      –1851      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1805–1835
+
+Medium: Cast brass, lacquer
+Dimensions: 2 1/2 x 1 5/8 in. (6.4 x 4.1 cm)
+
+Credit Line: Gift of Mrs. Edward Hunting Smith, 1968
+
+---
+
+Artwork Title: Furniture Hardware
+Object Type: Furniture hardware
+Classification: Unknown
+
+Artist: Henry Kellam Hancock
+Nationality:  
+Lifespan: 1816      –1851      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1820–1830
+
+Medium: Gilt brass
+Dimensions: 3 1/8 x 2 3/16 in. (7.9 x 5.6 cm)
+
+Credit Line: Gift of Mrs. Edward Hunting Smith, 1968
+
+---
+
+Artwork Title: Furniture Hardware
+Object Type: Furniture hardware
+Classification: Unknown
+
+Artist: Henry Kellam Hancock
+Nationality:  
+Lifespan: 1816      –1851      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1820–1830
+
+Medium: Gilt brass
+Dimensions: 3 1/8 x 2 3/16 in. (7.9 x 5.6 cm)
+
+Credit Line: Gift of Mrs. Edward Hunting Smith, 1968
+
+---
+
+Artwork Title: Furniture Hardware
+Object Type: Furniture hardware
+Classification: Unknown
+
+Artist: Henry Kellam Hancock
+Nationality:  
+Lifespan: 1816      –1851      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1820–1830
+
+Medium: Gilt brass
+Dimensions: 2 1/2 x 2 9/16 in. (6.4 x 6.5 cm)
+
+Credit Line: Gift of Mrs. Edward Hunting Smith, 1968
+
+---
+
+Artwork Title: Furniture Hardware
+Object Type: Furniture hardware
+Classification: Unknown
+
+Artist: Henry Kellam Hancock
+Nationality:  
+Lifespan: 1816      –1851      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1820–1830
+
+Medium: Gilt brass
+Dimensions: 2 1/2 x 2 9/16 in. (6.4 x 6.5 cm)
+
+Credit Line: Gift of Mrs. Edward Hunting Smith, 1968
+
+---
+
+Artwork Title: Mourning Ring
+Object Type: Ring
+Classification: Unknown
+
+Artist: John Cluett Jr.|Mrs. Edgar Sittig
+Nationality: American| 
+Lifespan: 1720      |          –1800      |          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1750–1750
+
+Medium: Gold
+Dimensions: Diam. 7/8 in. (2.2 cm)
+
+Credit Line: Purchase, Mr. and Mrs. Marshall P. Blankarn Gift, 1970
+
+---
+
+Artwork Title: Mourning Ring
+Object Type: Ring
+Classification: Unknown
+
+Artist: Elmkin Hitchcock
+Nationality: American
+Lifespan: 1726      –1788      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1758–1758
+
+Medium: Gold, garnet
+Dimensions: Diam. 7/8 in. (2.2 cm)
+
+Credit Line: Gift of Mr. and Mrs. William A. Moore, 1923
+
+---
+
+Artwork Title: Figure of Mrs. Catherine Macaulay
+Object Type: Figure
+Classification: Unknown
+
+Artist: Chelsea Factory
+Nationality:  
+Lifespan: 1742      –1784      
+
+Cultural Context: British
+Period: Unknown
+Date Range: 1772–1775
+
+Medium: Porcelain
+Dimensions: H. 13 in. (33 cm)
+
+Credit Line: Fletcher Fund, 1944
+
+---
+
+Artwork Title: Cann
+Object Type: Cann
+Classification: Unknown
+
+Artist: Paul Revere Jr.
+Nationality: American
+Lifespan: 1734      –1818      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1790–1800
+
+Medium: Silver
+Dimensions: Overall: 5 13/16 x 5 1/2 in. (14.8 x 14 cm); 14 oz. (435.6 g)
+Lip: Diam. 3 1/4 in. (8.3 cm)
+Foot: Diam. 3 7/16 in. (8.7 cm)
+
+Credit Line: Bequest of Alphonso T. Clearwater, 1933
+
+---
+
+Artwork Title: Mug
+Object Type: Mug
+Classification: Unknown
+
+Artist: Lambeth Factories
+Nationality:  
+Lifespan:           –9999      
+
+Cultural Context: British
+Period: Unknown
+Date Range: 1680–1700
+
+Medium: Tin-enameled earthenware
+Dimensions: 3 5/8 x 4 1/8 in. (9.2 x 10.5 cm)
+
+Credit Line: Gift of Mrs. Russell S. Carter, 1946
+
+---
+
+Artwork Title: Mug
+Object Type: Mug
+Classification: Unknown
+
+Artist: Ralph Hall & Son
+Nationality:  
+Lifespan: 1836      –1841      
+
+Cultural Context: British (American market)
+Period: Unknown
+Date Range: 1833–1844
+
+Medium: Earthenware, transfer-printed
+Dimensions: H. 2 1/2 in. (6.4 cm); Diam. 3 1/2 in. (8.9 cm)
+
+Credit Line: Gift of Mrs. Lydia Bond Powel, 1964
+
+---
+
+Artwork Title: Mug
+Object Type: Mug
+Classification: Unknown
+
+Artist: L. A.
+Nationality: American
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1726–1736
+
+Medium: Silver
+Dimensions: Overall: 4 3/8 x 5 3/4 in. (11.1 x 14.6 cm); 10 oz. 12 dwt. (328.9 g)
+Lip: Diam. 3 1/4 in. (8.3 cm)
+Base: Diam. 3 13/16 in. (9.7 cm)
+
+Credit Line: Bequest of Alphonso T. Clearwater, 1933
+
+---
+
+Artwork Title: Mug
+Object Type: Mug
+Classification: Unknown
+
+Artist: Adams and Company
+Nationality: American
+Lifespan:           –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1870–1890
+
+Medium: Pressed yellow glass
+Dimensions: 2 5/8" high, 2 3/16" diameter (6.7 x 4.6 cm)
+
+Credit Line: Gift of Mrs. Emily Winthrop Miles, 1946
+
+---
+
+Artwork Title: Mug
+Object Type: Mug
+Classification: Unknown
+
+Artist: Nathaniel Austin
+Nationality: American
+Lifespan: 1741      –1816      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1763–1807
+
+Medium: Pewter
+Dimensions: H. 6 1/8 in. (15.6 cm)
+
+Credit Line: Gift of Mrs. J. Insley Blair, in memory of her husband, 1941
+
+---
+
+Artwork Title: Cann
+Object Type: Cann
+Classification: Unknown
+
+Artist: George Baker
+Nationality: American
+Lifespan: 1808      –1825      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1822–1825
+
+Medium: Silver
+Dimensions: Overall: 5 3/4 x 5 5/8 in. (14.6 x 14.3 cm); 11 oz. 11 dwt. (358.5 g)
+Lip: Diam. 3 5/16 in. (8.4 cm)
+Base: Diam. 3 1/4 in. (8.3 cm)
+
+Credit Line: Bequest of Alphonso T. Clearwater, 1933
+
+---
+
+Artwork Title: Mug
+Object Type: Mug
+Classification: Unknown
+
+Artist: Francis Bassett, I|Francis Bassett, II
+Nationality: American| 
+Lifespan: 1690      |1729      –1758      |1800      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1718–1785
+
+Medium: Pewter
+Dimensions: 6 1/4 x 4 7/8 x 4 7/8 in. (15.9 x 12.4 x 12.4 cm)
+
+Credit Line: Gift of Mrs. J. Insley Blair, 1939
+
+---
+
+Artwork Title: Mug
+Object Type: Mug
+Classification: Unknown
+
+Artist: Frederick Bassett
+Nationality: American
+Lifespan: 1740      –1800      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1761–1799
+
+Medium: Pewter
+Dimensions: H. 6 in. (15.2 cm)
+
+Credit Line: Gift of Mrs. J. Insley Blair, in memory of her husband, 1941
+
+---
+
+Artwork Title: Mug
+Object Type: Mug
+Classification: Unknown
+
+Artist: Parks Boyd
+Nationality: American
+Lifespan: 1768      –1819      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1795–1819
+
+Medium: Pewter
+Dimensions: H. 5 3/4 in. (14.6 cm)
+
+Credit Line: Gift of Mrs. J. Insley Blair, in memory of her husband, 1941
+
+---
+
+Artwork Title: Mug
+Object Type: Mug
+Classification: Unknown
+
+Artist: Parks Boyd
+Nationality: American
+Lifespan: 1768      –1819      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1795–1819
+
+Medium: Pewter
+Dimensions: H. 5 3/4 in. (14.6 cm)
+
+Credit Line: Gift of Joseph France, 1943
+
+---
+
+Artwork Title: Cann
+Object Type: Cann
+Classification: Unknown
+
+Artist: Daniel Boyer
+Nationality: American
+Lifespan: 1725      –1779      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1750–1775
+
+Medium: Silver
+Dimensions: Overall: 5 x 5 3/8 in. (12.7 x 13.7 cm); 11 oz. 11 dwt. (358.5 g)
+Lip: Diam. 3 3/8 in. (8.6 cm)
+Base: Diam. 3 3/8 in. (8.6 cm)
+
+Credit Line: Bequest of Alphonso T. Clearwater, 1933
+
+---
+
+Artwork Title: Mug
+Object Type: Mug
+Classification: Unknown
+
+Artist: Bryce, Walker and Company
+Nationality: American
+Lifespan:           –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1860–1870
+
+Medium: Pressed glass
+Dimensions: H. 3 5/8 in. (9.2 cm); Diam. 3 5/16 in. (8.4 cm)
+
+Credit Line: Gift of Mrs. Emily Winthrop Miles, 1946
+
+---
+
+Artwork Title: Cann
+Object Type: Cann
+Classification: Unknown
+
+Artist: John Coverly
+Nationality: American
+Lifespan: 1713      –1783      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1750–1760
+
+Medium: Silver
+Dimensions: Overall: 5 1/8 x 5 1/16 in. (13 x 12.9 cm); 9 oz. 8 dwt. (292.3 g)
+Lip: Diam. 3 1/8 in. (7.9 cm)
+Base: Diam. 3 1/16 in. (7.8 cm)
+
+Credit Line: Bequest of Alphonso T. Clearwater, 1933

@@ -1,3 +1,9586 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d6b76512c0e3dfc6ce3ebed85379259be77e7fc71b996d1e28a8512b45926cc2
-size 191288
+Artwork Title: Landscape with Cows Watering in a Stream
+Object Type: Painting
+Classification: Unknown
+
+Artist: Robert S. Duncanson
+Nationality: American
+Lifespan: 1821      –1872      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1871–1871
+
+Medium: Oil on canvas
+Dimensions: 21 1/8 x 34 1/2 in. (53.7 x 87.6 cm)
+
+Credit Line: Gift of Mr. and Mrs. Lawrence A. Fleischman, 1974
+
+---
+
+Artwork Title: Mrs. John Wood Dodge (Mary Louise Dodge)
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: John Wood Dodge
+Nationality: American
+Lifespan: 1807      –1893      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1836–1836
+
+Medium: Watercolor on ivory
+Dimensions: 4 3/4 x 3 5/8 in. (12.1 x 9.2 cm)
+
+Credit Line: Purchase, Martha J. Fleischman Gift, in honor of Lillian Brenwasser, 2005
+
+---
+
+Artwork Title: Embroidered sampler
+Object Type: Sampler
+Classification: Unknown
+
+Artist: Sally Cornelius
+Nationality: American
+Lifespan: 1792      –1877      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1806–1806
+
+Medium: Embroidered silk on linen
+Dimensions: 17 1/4 x 16 1/4 in. (43.8 x 41.3 cm)
+
+Credit Line: Funds from various donors, by exchange, 2004
+
+---
+
+Artwork Title: Fence Post Finial from the Jerathmeel Peirce House, Salem, Massachusetts
+Object Type: Fence post
+Classification: Unknown
+
+Artist: Samuel McIntire
+Nationality: American
+Lifespan: 1757      –1811      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1770–1800
+
+Medium: Pine
+Dimensions: H. 32 in. (81.3 cm)
+
+Credit Line: Gift of the Essex Institute, 1927
+
+---
+
+Artwork Title: Fence Post Finial from the Jerathmeel Peirce House, Salem, Massachusetts
+Object Type: Fence post
+Classification: Unknown
+
+Artist: Samuel McIntire
+Nationality: American
+Lifespan: 1757      –1811      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1770–1800
+
+Medium: Pine
+Dimensions: H. 32 in. (81.3 cm)
+
+Credit Line: Gift of the Essex Institute, 1927
+
+---
+
+Artwork Title: General George Eliott
+Object Type: Painting
+Classification: Unknown
+
+Artist: Mather Brown
+Nationality: American
+Lifespan: 1761      –1831      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1790–1790
+
+Medium: Oil on canvas
+Dimensions: 98 3/16 x 64 3/8 in. (249.4 x 163.5 cm)
+
+Credit Line: Purchase, 2003 Benefit Fund; Morris K. Jesup, Maria DeWitt Jesup, Dale T. Johnson, John Osgood and Elizabeth Amis Cameron Blanchard and Joel B. Leff Charitable Funds; Iola Haverstick, Dorothy Schwartz and David Hicks Gifts; and Gift of Alice and Evelyn Blight and Mrs. William Payne Thompson, by exchange, 2004
+
+---
+
+Artwork Title: Bowl
+Object Type: Bowl
+Classification: Unknown
+
+Artist: Tiffany & Co.
+Nationality:  
+Lifespan: 1837      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1888–1888
+
+Medium: Silver and silver gilt
+Dimensions: Overall: 6 1/2 x 12 3/4 in. (16.5 x 32.4 cm); 81 oz. 2 dwt. (2521.7 g)
+Foot: 7 7/8 x 7 7/8 in. (20 x 20 cm)
+
+Credit Line: Purchase, Cranshaw Corporation Gift, 2004
+
+---
+
+Artwork Title: Salt Spoon
+Object Type: Spoon
+Classification: Unknown
+
+Artist: William G. Forbes
+Nationality: American
+Lifespan: 1751      –1840      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1790–1810
+
+Medium: Silver
+Dimensions: L. 3 3/4 in. (9.5 cm)
+
+Credit Line: Gift of Suzanne dePeyster and Valerie dePeyster, 1997
+
+---
+
+Artwork Title: Salt Spoon
+Object Type: Spoon
+Classification: Unknown
+
+Artist: William G. Forbes
+Nationality: American
+Lifespan: 1751      –1840      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1790–1810
+
+Medium: Silver
+Dimensions: L. 3 3/4 in. (9.5 cm)
+
+Credit Line: Gift of Suzanne dePeyster and Valerie dePeyster, 1997
+
+---
+
+Artwork Title: Salt Spoon
+Object Type: Spoon
+Classification: Unknown
+
+Artist: Benjamin Halsted
+Nationality: American
+Lifespan: 1734      –1817      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1790–1806
+
+Medium: Silver
+Dimensions: L. 3 3/4 in. (9.5 cm)
+
+Credit Line: Gift of Suzanne dePeyster and Valerie dePeyster, 1997
+
+---
+
+Artwork Title: Salt Spoon
+Object Type: Spoon
+Classification: Unknown
+
+Artist: Benjamin Halsted
+Nationality: American
+Lifespan: 1734      –1817      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1790–1806
+
+Medium: Silver
+Dimensions: L. 3 3/4 in. (9.5 cm)
+
+Credit Line: Gift of Suzanne dePeyster and Valerie dePeyster, 1997
+
+---
+
+Artwork Title: Lake George and the Village of Caldwell
+Object Type: Painting
+Classification: Unknown
+
+Artist: Thomas Chambers
+Nationality: American
+Lifespan: 1808      –1867      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1847–1850
+
+Medium: Oil on canvas
+Dimensions: 22 1/2 x 30 1/2 in. (57.2 x 77.5 cm)
+
+Credit Line: Gift of Edgar William and Bernice Chrysler Garbisch, 1966
+
+---
+
+Artwork Title: Card Table
+Object Type: Card table
+Classification: Unknown
+
+Artist: Duncan Phyfe
+Nationality: American, born Scotland
+Lifespan: 1770      –1854      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1815–1825
+
+Medium: Rosewood, satinwood, painted and gilded gesso, brass
+Dimensions: 29 1/4 x 36 x 18 in. (74.3 x 91.4 x 45.7 cm)
+
+Credit Line: Partial and Promised Gift of James and Laura Freeman, 2004
+
+---
+
+Artwork Title: Lake George
+Object Type: Painting
+Classification: Unknown
+
+Artist: John William Casilear
+Nationality: American
+Lifespan: 1811      –1893      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1857–1857
+
+Medium: Oil on canvas
+Dimensions: 20 5/16 x 29 7/8 in. (51.6 x 75.9 cm)
+
+Credit Line: Bequest of Maria DeWitt Jesup, from the collection of her husband, Morris K. Jesup, 1914
+
+---
+
+Artwork Title: Design drawing of of lotus blossom of floral capital from loggia, Laurelton Hall
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Lenox, Incorporated
+Nationality: American
+Lifespan: 1889      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1897–1915
+
+Medium: Watercolor, graphite, and ink on paper
+Dimensions: 18 3/8 x 14 in. (46.7 x 35.6 cm)
+
+Credit Line: Gift of Lenox, Incorporated, 2006
+
+---
+
+Artwork Title: Cypress in Spring
+Object Type: Embroidered wall hanging
+Classification: Unknown
+
+Artist: Anna Frances Simpson
+Nationality: American
+Lifespan: 1880      –1930      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1905–1934
+
+Medium: Embroidered silk on linen
+Dimensions: 35 3/4 x 16 1/4 in. (90.8 x 41.3 cm)
+
+Credit Line: Purchase, Barrie A. and Deedee Wigmore Foundation Gift, 2004
+
+---
+
+Artwork Title: Sauce Dish
+Object Type: Sauce dish
+Classification: Unknown
+
+Artist: Union Porcelain Works
+Nationality: American
+Lifespan: 1863      –1922      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1885–1887
+
+Medium: Porcelain
+Dimensions: H. 1 1/16 in. (2.7 cm); Diam. 5 in. (12.7 cm)
+
+Credit Line: Gift of Mr. and Mrs. Franklin Chace, 1969
+
+---
+
+Artwork Title: Sketchbook of Lake George, Catskill Mountains, and Hudson River Subjects
+Object Type: Sketchbook
+Classification: Unknown
+
+Artist: John William Casilear
+Nationality: American
+Lifespan: 1811      –1893      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1834–1838
+
+Medium: Drawings in graphite and pen and ink on off-white wove paper, bound in leather and cloth panels
+Dimensions: Cover: 7 1/4 x 9 in. (18.4 x 22.9 cm)
+Sheets: 7 1/4 x 9 in. (18.4 x 22.9 cm)
+
+Credit Line: Morris K. Jesup Fund, 1998
+
+---
+
+Artwork Title: View of the Hudson River from the Catskills
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Stanford White
+Nationality: American
+Lifespan: 1853      –1906      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1870–1870
+
+Medium: Oil on paper
+Dimensions: 7 1/2 x 13 15/16 in. (19.1 x 35.4 cm)
+
+Credit Line: Morris K. Jesup Fund, 1999
+
+---
+
+Artwork Title: Pedestal from the drawing room of the William H. Vanderbilt House
+Object Type: Pedestal
+Classification: Unknown
+
+Artist: Herter Brothers
+Nationality: American
+Lifespan: 1864      –1906      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1879–1882
+
+Medium: Egyptian alabaster, gilt brass, and reproduction red glass jewels
+Dimensions: 64 1/4 x 10 15/16 x 10 15/16 in. (163.2 x 27.8 x 27.8 cm)
+
+Credit Line: Purchase, Barrie A. and Deedee Wigmore Foundation Gift, 2002
+
+---
+
+Artwork Title: Panel with Detached Piece
+Object Type: Architectural elements
+Classification: Unknown
+
+Artist: Louis C. Tiffany
+Nationality: American
+Lifespan: 1848      –1933      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1848–1933
+
+Medium: Wood
+Dimensions: 28 1/4 x 14 x 1/2 in. (71.8 x 35.6 x 1.3 cm)
+
+Credit Line: Gift of Eric Streiner, 2004
+
+---
+
+Artwork Title: Panel Fragment
+Object Type: Panel fragment
+Classification: Unknown
+
+Artist: Louis C. Tiffany
+Nationality: American
+Lifespan: 1848      –1933      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1848–1933
+
+Medium: Wood
+Dimensions: 5 1/2 x 7 1/4 x 1/2 in. (14 x 18.4 x 1.3 cm)
+
+Credit Line: Gift of Eric Streiner, 2004
+
+---
+
+Artwork Title: Carved Fragment
+Object Type: Architecture element
+Classification: Unknown
+
+Artist: Louis C. Tiffany
+Nationality: American
+Lifespan: 1848      –1933      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1848–1933
+
+Medium: Wood
+Dimensions: 4 1/2 x 19 x 6 in. (11.4 x 48.3 x 15.2 cm)
+
+Credit Line: Gift of Eric Streiner, 2004
+
+---
+
+Artwork Title: Ball
+Object Type: Ball
+Classification: Unknown
+
+Artist: Louis C. Tiffany
+Nationality: American
+Lifespan: 1848      –1933      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1848–1933
+
+Medium: Glass
+Dimensions: Diam. 3 in. (7.6 cm)
+
+Credit Line: Gift of Eric Streiner, 2004
+
+---
+
+Artwork Title: Molding
+Object Type: Molding
+Classification: Unknown
+
+Artist: Louis C. Tiffany
+Nationality: American
+Lifespan: 1848      –1933      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1848–1933
+
+Medium: Metal
+Dimensions: 4 1/2 x 3 3/4 x 1/2 in. (11.4 x 9.5 x 1.3 cm)
+
+Credit Line: Gift of Eric Streiner, 2004
+
+---
+
+Artwork Title: Molding
+Object Type: Molding
+Classification: Unknown
+
+Artist: Louis C. Tiffany
+Nationality: American
+Lifespan: 1848      –1933      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1848–1933
+
+Medium: Metal
+Dimensions: 3 1/2 x 6 1/2 x 1/2 in. (8.9 x 16.5 x 1.3 cm)
+
+Credit Line: Gift of Eric Streiner, 2004
+
+---
+
+Artwork Title: Jewel
+Object Type: Jewel
+Classification: Unknown
+
+Artist: Louis C. Tiffany
+Nationality: American
+Lifespan: 1848      –1933      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1848–1933
+
+Medium: Glass
+Dimensions: 3 1/2 x 1 1/2 in. (8.9 x 3.8 cm)
+
+Credit Line: Gift of Eric Streiner, 2004
+
+---
+
+Artwork Title: Tile
+Object Type: Tile
+Classification: Unknown
+
+Artist: Louis C. Tiffany
+Nationality: American
+Lifespan: 1848      –1933      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1848–1933
+
+Medium: Green ceramic
+Dimensions: 2 1/2 x 2 1/2 in. (6.4 x 6.4 cm)
+
+Credit Line: Gift of Eric Streiner, 2004
+
+---
+
+Artwork Title: Tile
+Object Type: Tile
+Classification: Unknown
+
+Artist: Louis C. Tiffany
+Nationality: American
+Lifespan: 1848      –1933      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1848–1933
+
+Medium: Iridescent grey
+Dimensions: 2 1/4 x 1 3/4 in. (5.7 x 4.4 cm)
+
+Credit Line: Gift of Eric Streiner, 2004
+
+---
+
+Artwork Title: Fragment
+Object Type: Fragment
+Classification: Unknown
+
+Artist: Louis C. Tiffany
+Nationality: American
+Lifespan: 1848      –1933      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1848–1933
+
+Medium: Glass
+Dimensions: 1 x 3/4 in. (2.5 x 1.9 cm)
+
+Credit Line: Gift of Eric Streiner, 2004
+
+---
+
+Artwork Title: Fragment
+Object Type: Fragment
+Classification: Unknown
+
+Artist: Louis C. Tiffany
+Nationality: American
+Lifespan: 1848      –1933      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1848–1933
+
+Medium: Glass
+Dimensions: 3 x 2 1/2 in. (7.6 x 6.4 cm)
+
+Credit Line: Gift of Eric Streiner, 2004
+
+---
+
+Artwork Title: Tile
+Object Type: Tile
+Classification: Unknown
+
+Artist: Louis C. Tiffany
+Nationality: American
+Lifespan: 1848      –1933      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1848–1933
+
+Medium: Ceramic with burnt texture
+Dimensions: 3 3/4 x 1 3/4 in. (9.5 x 4.4 cm)
+
+Credit Line: Gift of Eric Streiner, 2004
+
+---
+
+Artwork Title: Tile
+Object Type: Tile
+Classification: Unknown
+
+Artist: Louis C. Tiffany
+Nationality: American
+Lifespan: 1848      –1933      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1848–1933
+
+Medium: Ceramic
+Dimensions: 3 3/4 x 1 3/4 in. (9.5 x 4.4 cm)
+
+Credit Line: Gift of Eric Streiner, 2004
+
+---
+
+Artwork Title: Tile
+Object Type: Tile
+Classification: Unknown
+
+Artist: Louis C. Tiffany
+Nationality: American
+Lifespan: 1848      –1933      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1848–1933
+
+Medium: Favrile glass (multi-colored)
+Dimensions: 5 1/4 x 3 1/2 x 1/2 in. (13.3 x 8.9 x 1.3 cm)
+
+Credit Line: Gift of Eric Streiner, 2004
+
+---
+
+Artwork Title: Tile
+Object Type: Tile
+Classification: Unknown
+
+Artist: Louis C. Tiffany
+Nationality: American
+Lifespan: 1848      –1933      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1848–1933
+
+Medium: Ceramic, cobalt blue, high glaze
+Dimensions: 2 x 2 x 1/4 in. (5.1 x 5.1 x 0.6 cm)
+
+Credit Line: Gift of Eric Streiner, 2004
+
+---
+
+Artwork Title: Tile
+Object Type: Tile
+Classification: Unknown
+
+Artist: Louis C. Tiffany
+Nationality: American
+Lifespan: 1848      –1933      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1848–1933
+
+Medium: Ceramic, mustard color
+Dimensions: 2 x 2 x 1/4 in. (5.1 x 5.1 x 0.6 cm)
+
+Credit Line: Gift of Eric Streiner, 2004
+
+---
+
+Artwork Title: Tile
+Object Type: Tile
+Classification: Unknown
+
+Artist: Louis C. Tiffany
+Nationality: American
+Lifespan: 1848      –1933      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1848–1933
+
+Medium: Ceramic, labeled "Chinese Blue" on back
+Dimensions: 2 x 2 x 1/4 in. (5.1 x 5.1 x 0.6 cm)
+
+Credit Line: Gift of Eric Streiner, 2004
+
+---
+
+Artwork Title: Tile
+Object Type: Tile
+Classification: Unknown
+
+Artist: Louis C. Tiffany
+Nationality: American
+Lifespan: 1848      –1933      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1848–1933
+
+Medium: Ceramic, black, green
+Dimensions: 2 x 2 x 1/4 in. (5.1 x 5.1 x 0.6 cm)
+
+Credit Line: Gift of Eric Streiner, 2004
+
+---
+
+Artwork Title: Tile
+Object Type: Tile
+Classification: Unknown
+
+Artist: Louis C. Tiffany
+Nationality: American
+Lifespan: 1848      –1933      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1848–1933
+
+Medium: Ceramic, blue-dull glaze
+
+Dimensions: 2 x 2 x 1/4 in. (5.1 x 5.1 x 0.6 cm)
+
+Credit Line: Gift of Eric Streiner, 2004
+
+---
+
+Artwork Title: Tile
+Object Type: Tile
+Classification: Unknown
+
+Artist: Louis C. Tiffany
+Nationality: American
+Lifespan: 1848      –1933      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1848–1933
+
+Medium: Favrile glass (gold)
+Dimensions: 2 1/2 x 1 1/2 x 1/4 in. (6.4 x 3.8 x 0.6 cm)
+
+Credit Line: Gift of Eric Streiner, 2004
+
+---
+
+Artwork Title: Tile
+Object Type: Tile
+Classification: Unknown
+
+Artist: Louis C. Tiffany
+Nationality: American
+Lifespan: 1848      –1933      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1848–1933
+
+Medium: Favrile glass (blue)
+Dimensions: 2 1/2 x 1 1/2 x 1/4 in. (6.4 x 3.8 x 0.6 cm)
+
+Credit Line: Gift of Eric Streiner, 2004
+
+---
+
+Artwork Title: Tile
+Object Type: Tile
+Classification: Unknown
+
+Artist: Louis C. Tiffany
+Nationality: American
+Lifespan: 1848      –1933      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1848–1933
+
+Medium: Favrile glass (multi-colored)
+Dimensions: 4 x 4 x 1/4 in. (10.2 x 10.2 x 0.6 cm)
+
+Credit Line: Gift of Eric Streiner, 2004
+
+---
+
+Artwork Title: Linen Fold Panel
+Object Type: Linen fold panel
+Classification: Unknown
+
+Artist: Louis C. Tiffany
+Nationality: American
+Lifespan: 1848      –1933      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1848–1933
+
+Medium: Glass (gold color)
+Dimensions: 3 1/2 x 3 1/2 x 1/4 in. (8.9 x 8.9 x 0.6 cm)
+
+Credit Line: Gift of Eric Streiner, 2004
+
+---
+
+Artwork Title: Tile Fragment
+Object Type: Tile fragment
+Classification: Unknown
+
+Artist: Louis C. Tiffany
+Nationality: American
+Lifespan: 1848      –1933      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1848–1933
+
+Medium: Favrile glass (blue)
+Dimensions: 4 x 2 x 1/4 in. (10.2 x 5.1 x 0.6 cm)
+
+Credit Line: Gift of Eric Streiner, 2004
+
+---
+
+Artwork Title: Tile Fragment
+Object Type: Tile fragment
+Classification: Unknown
+
+Artist: Louis C. Tiffany
+Nationality: American
+Lifespan: 1848      –1933      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1848–1933
+
+Medium: Favrile glass (blue)
+Dimensions: 4 x 3 x 1/4 in. (10.2 x 7.6 x 0.6 cm)
+
+Credit Line: Gift of Eric Streiner, 2004
+
+---
+
+Artwork Title: Portrait of a Gentleman
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: William M. S. Doyle|Henry Williams
+Nationality: American|American
+Lifespan: 1769      |1787      –1828      |1830      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1810–1810
+
+Medium: Watercolor on ivory
+Dimensions: 3 x 2 3/8 in. (7.6 x 6 cm)
+
+Credit Line: Dale T. Johnson Fund, 2004
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Adelaide Alsop Robineau
+Nationality: American
+Lifespan: 1865      –1929      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1905–1905
+
+Medium: Porcelain
+Dimensions: H. 6 11/16 in. (17 cm)
+
+Credit Line: Gift of Lois Kelley Stout, 2004
+
+---
+
+Artwork Title: Pillowcase
+Object Type: Pillowcase
+Classification: Unknown
+
+Artist: Catherine Ten Eyck Burr
+Nationality: American
+Lifespan: 1798      –1865      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1815–1815
+
+Medium: Linen, woven
+Dimensions: 22 x 38 in. (53.3 x 96.5 cm)
+
+Credit Line: Gift of Titi Halle, 2004
+
+---
+
+Artwork Title: Pillowcase
+Object Type: Pillowcase
+Classification: Unknown
+
+Artist: Catherine Ten Eyck Burr
+Nationality: American
+Lifespan: 1798      –1865      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1815–1815
+
+Medium: Linen, woven
+Dimensions: 22 x 38 in. (53.3 x 96.5 cm)
+
+Credit Line: Gift of Titi Halle, 2004
+
+---
+
+Artwork Title: Pillow sham
+Object Type: Pillow sham
+Classification: Unknown
+
+Artist: Catherine Ten Eyck Burr
+Nationality: American
+Lifespan: 1798      –1865      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1822–1830
+
+Medium: Linen, woven
+Dimensions: 20 1/2 x 36 1/4 in. (52.1 x 92.1 cm)
+
+Credit Line: Gift of Titi Halle, 2004
+
+---
+
+Artwork Title: Child's bed sheets
+Object Type: Sheets
+Classification: Unknown
+
+Artist: Catherine Ten Eyck Burr
+Nationality: American
+Lifespan: 1798      –1865      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1800–1900
+
+Medium: Cotton, woven
+Dimensions: 54 x 35 1/2 in. (137.2 x 90.2 cm)
+
+Credit Line: Gift of Titi Halle, 2004
+
+---
+
+Artwork Title: Child's bed sheets
+Object Type: Sheets
+Classification: Unknown
+
+Artist: Catherine Ten Eyck Burr
+Nationality: American
+Lifespan: 1798      –1865      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1800–1900
+
+Medium: Cotton, woven
+Dimensions: 54 x 35 1/2 in. (137.2 x 90.2 cm)
+
+Credit Line: Gift of Titi Halle, 2004
+
+---
+
+Artwork Title: Bill of Sale
+Object Type: Bill of sale
+Classification: Unknown
+
+Artist: William Rush
+Nationality: American
+Lifespan: 1756      –1833      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1809–1811
+
+Medium: Ink on paper
+Dimensions: Dimensions unrecorded
+
+Credit Line: Purchase, Sansbury-Mills Fund, and Anthony W. and Lulu C. Wang, Mr. and Mrs. Robert G. Goelet, Annette de la Renta, and Vira Hladun-Goldmann Gifts, 2002
+
+---
+
+Artwork Title: Partial dinner service
+Object Type: Dinner service
+Classification: Unknown
+
+Artist: Dihl et Guérhard
+Nationality: French
+Lifespan: 1781      –1824      
+
+Cultural Context: French, for American market
+Period: Unknown
+Date Range: 1800–1815
+
+Medium: Porcelain
+Dimensions: Unknown
+
+Credit Line: Purchase, Solomon Grossman Gift, in memory of Berry B. Tracy, and The Vincent Astor Foundation Gift, 1994
+
+---
+
+Artwork Title: Decorative Carved Wood Panel from Laurelton Hall
+Object Type: Architectural elements
+Classification: Unknown
+
+Artist: Louis C. Tiffany
+Nationality: American
+Lifespan: 1848      –1933      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1848–1933
+
+Medium: Wood
+Dimensions: 21 x 19 in. (53.3 x 48.3 cm)
+
+Credit Line: Gift of Eric Streiner, 2004
+
+---
+
+Artwork Title: Portrait of a Gentleman
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: James Reid Lambdin
+Nationality:  
+Lifespan: 1807      –1889      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1831–1831
+
+Medium: Watercolor on ivory
+Dimensions: H. 2 5/16 in. x 1 7/8 in.  (5.9 cm x 4.8 cm)
+
+Credit Line: Dale T. Johnson Fund, 2004
+
+---
+
+Artwork Title: Cup
+Object Type: Cup
+Classification: Unknown
+
+Artist: Edward C. Moore
+Nationality: American
+Lifespan: 1827      –1891      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1850–1856
+
+Medium: Silver and silver-gilt
+Dimensions: 3 3/4 x 3 1/4 x 4 3/4 in. (9.5 x 8.3 x 12.1 cm); 6 oz. 14 dwt. (208.2 g)
+
+Credit Line: Gift of Jerome B. Dwight, in memory of Charles Noyes de Forest and Henry Wheeler de Forest Jr., 2005
+
+---
+
+Artwork Title: Pitcher
+Object Type: Pitcher
+Classification: Unknown
+
+Artist: Ball, Black & Co.
+Nationality: American
+Lifespan: 1851      –1874      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1869–1875
+
+Medium: Silver
+Dimensions: Overall: 11 1/4 x 6 1/8 x 8 5/8 in. (28.6 x 15.6 x 21.9 cm); 39 oz. 16 dwt. (1237.9 g)
+Foot: Diam. 5 3/16 in. (13.2 cm)
+
+Credit Line: Purchase, William Cullen Bryant Fellows Gifts, 2005
+
+---
+
+Artwork Title: Still Life Fruit and Wine Glass
+Object Type: Painting
+Classification: Unknown
+
+Artist: Severin Roesen
+Nationality: American
+Lifespan: 1816      –1872      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1865–1870
+
+Medium: Oil on board with gold leaf frame
+Dimensions: Oval: 16 in. (40.6 cm)
+
+Credit Line: Gift of Carl S. Salmon Jr., 2004
+
+---
+
+Artwork Title: Still Life with Strawberries in a Compote
+Object Type: Painting
+Classification: Unknown
+
+Artist: Severin Roesen
+Nationality: American
+Lifespan: 1816      –1872      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1865–1870
+
+Medium: Oil on board with gold leaf frame
+Dimensions: Oval: 16 x 20 in. (40.6 x 50.8 cm)
+
+Credit Line: Gift of Carl S. Salmon Jr., 2004
+
+---
+
+Artwork Title: Spirit of the Waters
+Object Type: Sculpture
+Classification: Unknown
+
+Artist: Daniel Chester French
+Nationality: American
+Lifespan: 1850      –1931      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1913–1915
+
+Medium: Bronze
+Dimensions: 11 1/8 x 8 1/2 x 4 in. (28.3 x 21.6 x 10.2 cm)
+
+Credit Line: Gift of Mr. and Mrs. Donald J. Douglass, 2017
+
+---
+
+Artwork Title: Sampler made at the Westtown Quaker School
+Object Type: Sampler
+Classification: Unknown
+
+Artist: Sarah Thomas
+Nationality: American
+Lifespan: 1786      –1826      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1801–1801
+
+Medium: Silk on linen
+Dimensions: 14 3/4 x 12 1/2 in. (37.5 x 31.8 cm)
+
+Credit Line: Purchase, Mr. and Mrs. Frank Martucci and Mr. and Mrs. Robert T. Schaffner Gifts, and Gift of George Coe Graves, by exchange, 2005
+
+---
+
+Artwork Title: Serving Spoon
+Object Type: Spoon
+Classification: Unknown
+
+Artist: Nicholas Roosevelt
+Nationality: American
+Lifespan: 1715      –1769      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1755–1765
+
+Medium: Silver
+Dimensions: Overall: 1 7/8 x 15 1/2 in. (4.8 x 39.4 cm); 9 oz. 2 dwt. (284.3 g)
+Bowl: W. 2 15/16 in. (7.5 cm)
+
+Credit Line: Purchase, Mr. and Mrs. Robert G. Goelet Gift, 2004
+
+---
+
+Artwork Title: Design drawing of magnolia blossom of floral capital from loggia, Laurelton Hall
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Lenox, Incorporated
+Nationality: American
+Lifespan: 1889      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1897–1915
+
+Medium: Watercolor, graphite, and ink on paper
+Dimensions: 18 3/8 x 14 in. (46.7 x 35.6 cm)
+
+Credit Line: Gift of Lenox, Incorporated, 2006
+
+---
+
+Artwork Title: Design drawing of flower buds and seedpods of floral capitals from loggia, Laurelton Hall
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Lenox, Incorporated
+Nationality: American
+Lifespan: 1889      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1897–1915
+
+Medium: Watercolor, graphite, and ink on paper
+Dimensions: 18 3/8 x 14 in. (46.7 x 35.6 cm)
+
+Credit Line: Gift of Lenox, Incorporated, 2006
+
+---
+
+Artwork Title: Design drawing of of poppy blossom of floral capital from loggia, Laurelton Hall
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Lenox, Incorporated
+Nationality: American
+Lifespan: 1889      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1897–1915
+
+Medium: Watercolor, graphite, and ink on paper
+Dimensions: 18 3/8 x 14 in. (46.7 x 35.6 cm)
+
+Credit Line: Gift of Lenox, Incorporated, 2006
+
+---
+
+Artwork Title: Design drawing of peony blossom of floral capital from loggia, Laurelton Hall
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Lenox, Incorporated
+Nationality: American
+Lifespan: 1889      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1897–1915
+
+Medium: Watercolor, graphite, and ink on paper
+Dimensions: 18 3/8 x 14 in. (46.7 x 35.6 cm)
+
+Credit Line: Gift of Lenox, Incorporated, 2006
+
+---
+
+Artwork Title: Portrait of a Lady
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: Daniel F. Ames
+Nationality: American
+Lifespan: 1803      –1886      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1845–1845
+
+Medium: Watercolor on ivory
+Dimensions: Framed: 3 x 2 1/4 in. (7.6 x 5.7 cm)
+
+Credit Line: Gift of Jacqueline Loewe Fowler, 2005
+
+---
+
+Artwork Title: Denise at Her Dressing Table
+Object Type: Painting
+Classification: Unknown
+
+Artist: Mary Cassatt
+Nationality: American
+Lifespan: 1844      –1926      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1905–1909
+
+Medium: Oil on canvas
+Dimensions: 32 7/8 x 27 1/8 in. (83.5 x 68.9 cm)
+
+Credit Line: Bequest of Gioconda King, 2004
+
+---
+
+Artwork Title: Sampler made at the Westtown Quaker School
+Object Type: Sampler
+Classification: Unknown
+
+Artist: Sarah Thomas
+Nationality: American
+Lifespan: 1786      –1826      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1801–1801
+
+Medium: Embroidered silk on linen
+Dimensions: 14 3/4 x 12 1/2 in. (37.5 x 31.8 cm)
+
+Credit Line: Purchase, Mr. and Mrs. Frank Martucci and Mr. and Mrs. Robert T. Schaffner Gifts, and Gift of George Coe Graves, by exchange, 2005
+
+---
+
+Artwork Title: Chest-on-Chest
+Object Type: Chest-on-Chest
+Classification: Unknown
+
+Artist: Thomas Townsend
+Nationality: American
+Lifespan: 1742      –1827      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1769–1775
+
+Medium: Mahogany, chestnut, tulip poplar
+Dimensions: 86 3/4 x 44 x 21 3/8 in. (220.3 x 111.8 x 54.3 cm)
+
+Credit Line: Purchase, Friends of the American Wing Fund, Mr. and Mrs. Robert G. Goelet Gift,  Sansbury-Mills Fund, and Leigh Keno and The Hohmann Foundation Gifts, 2005
+
+---
+
+Artwork Title: Candlestick
+Object Type: Candlestick
+Classification: Unknown
+
+Artist: Boston & Sandwich Glass Company
+Nationality: American
+Lifespan: 1825      –1888      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1842–1865
+
+Medium: Pressed glass
+Dimensions: H. 10 1/8 in. (25.7 cm)
+
+Credit Line: Gift of Dr. Roger W. MacMillan, 2004
+
+---
+
+Artwork Title: Candlestick
+Object Type: Candlestick
+Classification: Unknown
+
+Artist: Boston & Sandwich Glass Company
+Nationality: American
+Lifespan: 1825      –1888      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1842–1865
+
+Medium: Pressed glass
+Dimensions: H. 10 1/8 in. (25.7 cm)
+
+Credit Line: Gift of Dr. Roger W. MacMillan, 2004
+
+---
+
+Artwork Title: Gothic Revival Side Chair
+Object Type: Side chair
+Classification: Unknown
+
+Artist: Alexander Jackson Davis
+Nationality: American
+Lifespan: 1803      –1892      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1854–1860
+
+Medium: Oak
+Dimensions: 39 1/2 x 18 1/2 x 18 in. (100.3 x 47 x 45.7 cm)
+
+Credit Line: Gift of Anne L. Badger, David W. Badger and Wayne H. Badger, in honor of Jane B. Davies, 2007
+
+---
+
+Artwork Title: Pitcher
+Object Type: Pitcher
+Classification: Unknown
+
+Artist: Tucker Factory
+Nationality: American
+Lifespan: 1826      –1838      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1828–1838
+
+Medium: Porcelain
+Dimensions: H. 7 1/8 in. (18.1 cm)
+
+Credit Line: Gift of Emma and Jay Lewis, 2009
+
+---
+
+Artwork Title: Document Box and Key
+Object Type: Box and key
+Classification: Unknown
+
+Artist: Erhard & Söhne
+Nationality: German
+Lifespan:           –          
+
+Cultural Context: German
+Period: Unknown
+Date Range: 1883–1900
+
+Medium: Rosewood, mahogany, and brass
+Dimensions: 4 1/2 x 12 3/8 x 10 1/4 in. (11.4 x 31.4 x 26 cm)
+
+Credit Line: Gift of Jacqueline Loewe Fowler, 2005
+
+---
+
+Artwork Title: Design of a brooch or pendant with sketches
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Leslie Hayden Nash|Tiffany Studios
+Nationality: American| 
+Lifespan: 1884      |1902      –1958      |1932      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1920–1927
+
+Medium: Watercolor and gouache on paper, matted
+Dimensions: 5 1/8 x 3 ¼ in.
+
+Credit Line: Gift of Jacqueline Loewe Fowler, 2018
+
+---
+
+Artwork Title: Tiffany Studios Lamp Department Ledger Book
+Object Type: Ledger book
+Classification: Unknown
+
+Artist: Tiffany Studios
+Nationality:  
+Lifespan: 1902      –1932      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1902–1932
+
+Medium: pencil and ink on paper
+Dimensions: 8 5/8 x 11 3/8 x 1 11/16 in. (21.9 x 28.9 x 4.3 cm)
+
+Credit Line: Gift of Fred and Nancylee Dikeman, in memory of his father John Dikeman, 1980
+
+---
+
+Artwork Title: Bowl
+Object Type: Bowl
+Classification: Unknown
+
+Artist: The Kalo Shop
+Nationality: American
+Lifespan: 1900      –1970      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1912–1918
+
+Medium: Silver
+Dimensions: 8 9/16 × 1 3/4 in. (21.7 x 4.4 cm) 12oz. 13 dwt. (386.6g)
+
+Credit Line: Gift of David Allen Hanks, in memory of Mrs. Robert Hixon Glore, 2005
+
+---
+
+Artwork Title: Cake Knife
+Object Type: Knife
+Classification: Unknown
+
+Artist: Ball, Black & Co.|John R. Wendt
+Nationality: American|American
+Lifespan: 1851      |1826      –1874      |1907      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1862–1868
+
+Medium: Silver
+Dimensions: 13 x 1 5/8 in. (33 x 4.1 cm)
+
+Credit Line: Gift of David Allen Hanks, in memory of Elizabeth Dixon Hanks, 2005
+
+---
+
+Artwork Title: Caster
+Object Type: Caster
+Classification: Unknown
+
+Artist: Goodnow & Jenks|Bigelow, Kennard & Co.
+Nationality:  |American
+Lifespan: 1893      |1830      –1905      |1922      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1897–1903
+
+Medium: Silver
+Dimensions: 4 5/16 x 2 3/4 in. (11 x 7 cm)
+
+Credit Line: Gift of David Allen Hanks, in memory of Elizabeth Dixon Hanks, 2005
+
+---
+
+Artwork Title: Caster
+Object Type: Caster
+Classification: Unknown
+
+Artist: Goodnow & Jenks|Bigelow, Kennard & Co.
+Nationality:  |American
+Lifespan: 1893      |1830      –1905      |1922      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1897–1903
+
+Medium: Silver
+Dimensions: 4 5/16 x 2 3/4 in. (11 x 7 cm)
+
+Credit Line: Gift of David Allen Hanks, in memory of Elizabeth Dixon Hanks, 2005
+
+---
+
+Artwork Title: Spoon
+Object Type: Spoon
+Classification: Unknown
+
+Artist: William Gale and Son
+Nationality: American
+Lifespan: 1847      –1866      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1852–1852
+
+Medium: Silver
+Dimensions: L. 8 5/16 in. (21.1 cm)
+
+Credit Line: Gift of David Allen Hanks, in memory of Elizabeth Dixon Hanks, 2005
+
+---
+
+Artwork Title: Spoon
+Object Type: Spoon
+Classification: Unknown
+
+Artist: Whiting Manufacturing Company
+Nationality: American
+Lifespan: 1866      –1926      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1870–1879
+
+Medium: Silver
+Dimensions: L. 5 15/16 in. (15.1 cm)
+
+Credit Line: Gift of David Allen Hanks, in memory of Elizabeth Dixon Hanks, 2005
+
+---
+
+Artwork Title: Fork
+Object Type: Fork
+Classification: Unknown
+
+Artist: Wood and Hughes
+Nationality: American
+Lifespan: 1845      –1899      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1872–1878
+
+Medium: Silver
+Dimensions: L. 6 1/4 in. (15.9 cm)
+
+Credit Line: Gift of David Allen Hanks, in memory of Elizabeth Dixon Hanks, 2005
+
+---
+
+Artwork Title: Embroidered Reticule
+Object Type: Reticule
+Classification: Unknown
+
+Artist: Martha Kittredge, New England
+Nationality: American
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1811–1811
+
+Medium: White cotton thread embroidered on white cotton fabric
+Dimensions: 10 x 7 1/2 in. (25.4 x 19.1 cm)
+
+Credit Line: Gift of Julia Van Rensselaer Smith and Elizabeth Hoxsie Patterson, 2005
+
+---
+
+Artwork Title: Wholecloth whitework quilt
+Object Type: Quilt
+Classification: Unknown
+
+Artist: J. Wright
+Nationality: American
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1813–1818
+
+Medium: Quilted cotton
+Dimensions: 100 x 102 3/4 in. (254 x 261 cm)
+
+Credit Line: Purchase, Mr. and Mrs. David Lubart Gift, in memory of Katherine J. Lubart, 1944–1975, 2005
+
+---
+
+Artwork Title: Watson Van Benthuysen II and Thomas Van Benthuysen
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: Aramenta Dianthe Vail
+Nationality: American
+Lifespan: 1820      –1888      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1834–1840
+
+Medium: Watercolor on ivory
+Dimensions: Sight: 4 5/8 x 3 11/16 in. (11.7 x 9.4 cm)
+Framed: 10 9/16 x 9 9/16 x 2 1/4 in. (26.8 x 24.3 x 5.7 cm)
+
+Credit Line: Dale T. Johnson Fund, 2005
+
+---
+
+Artwork Title: Magnolia Conspicua
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Tiffany & Co.
+Nationality:  
+Lifespan: 1837      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1891–1891
+
+Medium: Ink, wash, and graphite on gray board
+Dimensions: Overall: 9 1/4 x 13 5/16 in. (23.5 x 33.8 cm)
+Design: 7 13/16 x 11 in. (19.8 x 27.9 cm)
+
+Credit Line: Gift of Tiffany & Co., 1985
+
+---
+
+Artwork Title: Studies of Magnolias
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Tiffany & Co.
+Nationality:  
+Lifespan: 1837      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1891–1891
+
+Medium: Graphite, watercolor, and ink on brown wove paper
+Dimensions: Overall: 6 13/16 x 20 1/8 in. (17.3 x 51.1 cm)
+Design: 6 13/16 x 18 13/16 in. (17.3 x 47.8 cm)
+Matted: 16 x 22 in. (40.6 x 55.9 cm)
+
+Credit Line: Gift of Tiffany & Co., 1985
+
+---
+
+Artwork Title: Study of Magnolia Blossom
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Tiffany & Co.
+Nationality:  
+Lifespan: 1837      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1888–1894
+
+Medium: Graphite and watercolor on brown wove paper
+Dimensions: Overall: 13 1/4 x 11 in. (33.7 x 27.9 cm)
+Design: 13 1/4 x 11 in. (33.7 x 27.9 cm)
+Matted: 16 x 22 in. (40.6 x 55.9 cm)
+
+Credit Line: Gift of Tiffany & Co., 1985
+
+---
+
+Artwork Title: "Umbrella" Magnolia
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Tiffany & Co.
+Nationality:  
+Lifespan: 1837      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1891–1891
+
+Medium: Watercolor, pencil, and ink on brownish white wove paper
+Dimensions: Overall: 13 7/8 x 8 5/8 in. (35.2 x 21.9 cm)
+Design: 13 7/8 x 8 5/8 in. (35.2 x 21.9 cm)
+Matted: 19 1/4 x 14 1/4 in. (48.9 x 36.2 cm)
+
+Credit Line: Gift of Tiffany & Co., 1985
+
+---
+
+Artwork Title: Design Drawing
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Tiffany & Co.
+Nationality:  
+Lifespan: 1837      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1893–1893
+
+Medium: Watercolor and graphite on off-white board
+Dimensions: Overall: 24 3/8 x 19 in. (61.9 x 48.3 cm)
+Matted: 28 x 22 in. (71.1 x 55.9 cm)
+
+Credit Line: Gift of Tiffany & Co., 1985
+
+---
+
+Artwork Title: Design Drawing
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Tiffany & Co.
+Nationality:  
+Lifespan: 1837      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1890–1896
+
+Medium: Watercolor and graphite on off-white board
+Dimensions: Overall: 19 x 24 13/16 in. (48.3 x 63 cm)
+Matted: 28 x 22 in. (71.1 x 55.9 cm)
+
+Credit Line: Gift of Tiffany & Co., 1985
+
+---
+
+Artwork Title: Drawing of Magnolia Vase with Enameling Notations (?)
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Tiffany & Co.
+Nationality:  
+Lifespan: 1837      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1890–1896
+
+Medium: Watercolor, graphite, and black ink on off-white board
+Dimensions: Overall: 24 7/8 x 18 15/16 in. (63.2 x 48.1 cm)
+Matted: 28 x 22 in. (71.1 x 55.9 cm)
+
+Credit Line: Gift of Tiffany & Co., 1985
+
+---
+
+Artwork Title: Design Drawing for Magnolia Vase
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Tiffany & Co.
+Nationality:  
+Lifespan: 1837      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1890–1896
+
+Medium: Watercolor, graphite, and black ink on off-white board
+Dimensions: Overall: 24 7/8 x 19 in. (63.2 x 48.3 cm)
+Matted: 28 x 22 in. (71.1 x 55.9 cm)
+
+Credit Line: Gift of Tiffany & Co., 1985
+
+---
+
+Artwork Title: Design Drawing for Perfume Container Exhibited at 1893 Columbian Exposition in Chicago
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Tiffany & Co.
+Nationality:  
+Lifespan: 1837      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1891–1893
+
+Medium: Graphite, watercolor, ink wash, and ink on off-white wove paper, black ink on reverse
+Dimensions: Sheet: 7 1/8 x 5 1/2 in. (18.1 x 14 cm)
+
+Credit Line: Gift of Tiffany and Co., 1987
+
+---
+
+Artwork Title: Design Drawing for Perfume Container Exhibited at 1893 Columbian Exposition in Chicago
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Tiffany & Co.
+Nationality:  
+Lifespan: 1837      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1891–1893
+
+Medium: Watercolor over graphite on grey cardboard
+Dimensions: Drawing: 4 3/8 x 2 1/16 in. (11.1 x 5.2 cm)
+Design: 4 3/16 x 1 7/8 in. (10.6 x 4.8 cm)
+
+Credit Line: Gift of Tiffany and Co., 1987
+
+---
+
+Artwork Title: Basket
+Object Type: Basket
+Classification: Unknown
+
+Artist: Willets Manufacturing Company
+Nationality: American
+Lifespan: 1879      –1908      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1884–1893
+
+Medium: Porcelain
+Dimensions: Diam. 9 in. (22.9 cm)
+
+Credit Line: Purchase, The Lucy Washington and Renwick Clifton Hurry Fund Gift, 2005
+
+---
+
+Artwork Title: Covered honey pot
+Object Type: Honey pot
+Classification: Unknown
+
+Artist: Ott and Brewer
+Nationality: American
+Lifespan: 1871      –1893      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1882–1890
+
+Medium: Porcelain
+Dimensions: H. 5 1/2 in. (14 cm); Diam. 5 in. (12.7 cm)
+
+Credit Line: Purchase, The Lucy Washington and Renwick Clifton Hurry Fund Gift, 2005
+
+---
+
+Artwork Title: Cabinet Plate
+Object Type: Plate
+Classification: Unknown
+
+Artist: Lenox, Incorporated
+Nationality: American
+Lifespan: 1889      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1927–1930
+
+Medium: Ceramic, porcelain, enamel decoration, and gold
+Dimensions: Diam. 8 in. (20.3 cm)
+
+Credit Line: Gift of Barbara Goldberg, 2005
+
+---
+
+Artwork Title: Choosing of the Arrow
+Object Type: Sculpture
+Classification: Unknown
+
+Artist: Henry Kirke Brown
+Nationality: American
+Lifespan: 1814      –1886      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1849–1849
+
+Medium: Bronze
+Dimensions: 22 x 11 3/8 x 5 5/8 in. (55.9 x 28.9 x 14.3 cm)
+
+Credit Line: Purchase, Mia R. Taradash and Dorothy Schwartz Gifts, and Morris K. Jesup and Rogers Funds, 2005
+
+---
+
+Artwork Title: Quilt center
+Object Type: Quilt center
+Classification: Unknown
+
+Artist: John Hewson
+Nationality: American
+Lifespan: 1744      –1821      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1787–1793
+
+Medium: Cotton, printed
+Dimensions: 27 5/8 x 29 1/2 in. (70.2 x 74.9 cm)
+
+Credit Line: Purchase, David S. and Elizabeth W. Quackenbush Gift, 2005
+
+---
+
+Artwork Title: Armchair
+Object Type: Armchair
+Classification: Unknown
+
+Artist: Gustav Stickley
+Nationality: American
+Lifespan: 1858      –1942      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1898–1908
+
+Medium: Oak, pewter, copper and wood inlays. Leather seat.
+Dimensions: 47 1/4 x 23 x 22 in. (120 x 58.4 x 55.9 cm)
+
+Credit Line: Gift of Leeds Art Foundation, in honor of Morrison H. Heckscher, 2014
+
+---
+
+Artwork Title: Landscape with Cows
+Object Type: Painting
+Classification: Unknown
+
+Artist: Aaron Draper Shattuck
+Nationality: American
+Lifespan: 1832      –1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1928–1928
+
+Medium: Oil on board
+Dimensions: Oval: 5 5/8 x 7 11/16 in. (14.3 x 19.5 cm)
+
+Credit Line: Harris Brisbane Dick Fund, 1947
+
+---
+
+Artwork Title: Moses Gill
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: John Singleton Copley
+Nationality: American
+Lifespan: 1738      –1815      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1756–1762
+
+Medium: Oil and gold leaf on copper
+Dimensions: 1 5/8 × 1 1/8 in. (4.1 × 2.9 cm)
+
+Credit Line: Purchase, Martha J. Fleischman Gift, in memory of her father, Lawrence A. Fleischman, 2006
+
+---
+
+Artwork Title: John Neagle
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: Daniel Dickinson
+Nationality: American
+Lifespan: 1795      –1877      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1830–1830
+
+Medium: Watercolor on ivory
+Dimensions: 3 x 2 3/8 in. (7.6 x 6 cm)
+
+Credit Line: Maria DeWitt Jesup Fund, 2006
+
+---
+
+Artwork Title: Family Record Sampler
+Object Type: Sampler
+Classification: Unknown
+
+Artist: Emma H. Flint
+Nationality: American
+Lifespan: 1814      –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1827–1827
+
+Medium: Embroidered silk on linen
+Dimensions: 16 1/4 x 17 in. (41.3 x 43.2 cm)
+
+Credit Line: Gift of Virginia F. Thors, 2005
+
+---
+
+Artwork Title: Sampler made at the Westtown Quaker School
+Object Type: Sampler
+Classification: Unknown
+
+Artist: Rebecca Marsh
+Nationality: American
+Lifespan: 1791      –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1802–1802
+
+Medium: Silk embroidery on linen
+Dimensions: 12 3/4 x 16 3/4 in. (32.4 x 42.5 cm)
+
+Credit Line: Gift of Virginia F. Thors, 2005
+
+---
+
+Artwork Title: Embroidered sampler
+Object Type: Sampler
+Classification: Unknown
+
+Artist: Hannah Ann Smith
+Nationality: American
+Lifespan: 1821      –1899      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1830–1830
+
+Medium: Embroidered silk on linen
+Dimensions: 17 x 12 3/4 in. (43.2 x 32.4 cm)
+
+Credit Line: Gift of Virginia F. Thors, 2005
+
+---
+
+Artwork Title: Tankard
+Object Type: Tankard
+Classification: Unknown
+
+Artist: Thomas Byles
+Nationality: American
+Lifespan: 1682      –1771      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1710–1710
+
+Medium: Pewter
+Dimensions: H. 6 7/8 in. (17.5 cm)
+
+Credit Line: Gift of Mrs. J. Insley Blair, in memory of her husband, 1940
+
+---
+
+Artwork Title: Catherina Elmendorf
+Object Type: Painting
+Classification: Unknown
+
+Artist: Unknown Artist
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1752–1752
+
+Medium: Oil on canvas
+Dimensions: 50 x 40 in. (127 x 101.6 cm)
+
+Credit Line: Gift of Katharine H. Aldrich, 2006
+
+---
+
+Artwork Title: Cartoon
+Object Type: Cartoon
+Classification: Unknown
+
+Artist: Gobelins Tapestry Looms Company
+Nationality:  
+Lifespan: 1920      –2020      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1919–1930
+
+Medium: Oil on canvas
+Dimensions: 126 x 104 in. (320 x 264.2 cm)
+
+Credit Line: Purchase, David Scott Parker Gift, 2005
+
+---
+
+Artwork Title: Box
+Object Type: Box
+Classification: Unknown
+
+Artist: Marie Zimmermann
+Nationality: American
+Lifespan: 1879      –1972      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1907–1920
+
+Medium: Wood, ivory, patinated silver, nickel-plated brass, steel, amethyst, and semi-precious quartz
+Dimensions: 10 1/4 x 12 1/2 x 8 5/8 in. (26 x 31.8 x 21.9 cm)
+
+Credit Line: Gift of Jacqueline Loewe Fowler, 2005
+
+---
+
+Artwork Title: Design for Bookcover
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Rosalie Roos Wiener
+Nationality: American
+Lifespan: 1899      –1982      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1927–1933
+
+Medium: Ink on paper
+Dimensions: 4 x 5 1/2 in. (10.2 x 14 cm)
+
+Credit Line: Gift of Jacqueline Loewe Fowler, 2005
+
+---
+
+Artwork Title: Portrait of a Lady
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: Samuel Broadbent Jr.
+Nationality: American
+Lifespan: 1810      –1880      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1837–1837
+
+Medium: Watercolor on ivory
+Dimensions: 2 1/4 x 1 7/8 in. (5.7 x 4.8 cm)
+Case: 2 7/8 x 2 3/8 in. (7.3 x 6 cm)
+Sight: 2 5/16 x 1 15/16 in. (5.9 x 4.9 cm)
+
+Credit Line: Purchase, funds various donors, by exchange, 2005
+
+---
+
+Artwork Title: Quillwork Shadowbox
+Object Type: Shadowbox
+Classification: Unknown
+
+Artist: Myra Bates (Willcutt)
+Nationality: American
+Lifespan: 1798      –1885      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1814–1820
+
+Medium: Paper, maple, pine, and glass
+Dimensions: 14 x 12 x 3 in. (35.6 x 30.5 x 7.6 cm)
+
+Credit Line: Purchase, Jan and Warren Adelson, Theodore J. Slavin, Fern Hurst, and Mrs. George Kaufman Gifts, 2006
+
+---
+
+Artwork Title: John Shaw
+Object Type: Painting
+Classification: Unknown
+
+Artist: Gilbert Stuart
+Nationality: American
+Lifespan: 1755      –1828      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1793–1793
+
+Medium: Oil on canvas
+Dimensions: 36 x 28 in. (91.4 x 71.1 cm)
+
+Credit Line: Gift of Mr. and Mrs. Alfred Grima Johnson, 2005
+
+---
+
+Artwork Title: The Family of John Q. Aymar
+Object Type: Painting
+Classification: Unknown
+
+Artist: George W. Twibill Jr.
+Nationality: American
+Lifespan: 1806      –1836      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1830–1836
+
+Medium: Oil on canvas
+Dimensions: 34 3/4 x 42 in. (88.3 x 106.7 cm)
+
+
+Credit Line: Gift of A. Grima Johnson, 2008
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Ott and Brewer
+Nationality: American
+Lifespan: 1871      –1893      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1882–1890
+
+Medium: Porcelain
+Dimensions: Approx. H. 10 in. (25.4 cm)
+
+Credit Line: Purchase, William Cullen Bryant Fellows Gifts, 2005
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Willets Manufacturing Company
+Nationality: American
+Lifespan: 1879      –1908      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1887–1905
+
+Medium: Porcelain
+Dimensions: Approx. H. 11 in. (27.9 cm)
+
+Credit Line: Purchase, Dr. and Mrs. Burton P. Fabricand Gift, 2005
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Greenwood Pottery Company
+Nationality: American
+Lifespan: 1861      –1933      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1880–1889
+
+Medium: Porcelain
+Dimensions: Approx. H. 10 in. (25.4 cm)
+
+Credit Line: Purchase, Gifts in memory of Catherine Hoover Voorsanger, 2005
+
+---
+
+Artwork Title: Platter
+Object Type: Platter
+Classification: Unknown
+
+Artist: Willets Manufacturing Company
+Nationality: American
+Lifespan: 1879      –1908      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1883–1885
+
+Medium: Earthenware
+Dimensions: 10 x 16 in. (25.4 x 40.6 cm)
+
+Credit Line: Purchase, David Scott Parker Gift, 2005
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Ott and Brewer
+Nationality: American
+Lifespan: 1871      –1893      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1882–1890
+
+Medium: Porcelain
+Dimensions: Approx. H. 18 in. (45.7 cm)
+
+Credit Line: Gift of Barbara Goldberg, in honor of Jay and Emma Lewis, 2005
+
+---
+
+Artwork Title: Broadside
+Object Type: Broadside
+Classification: Unknown
+
+Artist: Ott and Brewer
+Nationality: American
+Lifespan: 1871      –1893      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1873–1890
+
+Medium: Paper
+Dimensions: 16 7/8 x 22 in. (42.9 x 55.9 cm)
+
+Credit Line: Gift of Barbara Goldberg, in memory of David J. Goldberg, 2005
+
+---
+
+Artwork Title: Bracelet
+Object Type: Bracelet
+Classification: Unknown
+
+Artist: A. J. Hedges & Co.
+Nationality: American
+Lifespan: 1877      –1965      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1879–1890
+
+Medium: Gold, diamond, and Montana sapphires
+Dimensions: L. 7 1/2 in. (19.1 cm)
+
+Credit Line: Purchase, Jacobsen Foundation Gift, 2005
+
+---
+
+Artwork Title: Bracelet
+Object Type: Bracelet
+Classification: Unknown
+
+Artist: Riker Brothers
+Nationality: American
+Lifespan: 1892      –1926      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1897–1903
+
+Medium: Gold, diamond, and Montana sapphire
+Dimensions: L. 6 3/4 in. (17.1 cm)
+
+Credit Line: Purchase, Susan and Jon Rotenstreich Gift, 2006
+
+---
+
+Artwork Title: Ladle
+Object Type: Ladle
+Classification: Unknown
+
+Artist: John Vernon
+Nationality: American
+Lifespan: 1755      –1845      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1797–1803
+
+Medium: Silver
+Dimensions: L. 13 in. (33 cm)
+
+Credit Line: Gift of Mr. and Mrs. Alfred Grima Johnson, 2005
+
+---
+
+Artwork Title: Beaker
+Object Type: Beaker
+Classification: Unknown
+
+Artist: Daniel Pontifex
+Nationality: British
+Lifespan: 1791      –1811      
+
+Cultural Context: British
+Period: Unknown
+Date Range: 1801–1802
+
+Medium: Silver
+Dimensions: H. 4 in. (10.2 cm)  5 oz. 13 dwt (175.5g)
+Lip diameter: 3 1/4 in. (8.3 cm)
+Diam. of base: 2 3/8 in. (6 cm)
+
+Credit Line: Gift of Mr. and Mrs. Alfred Grima Johnson, 2005
+
+---
+
+Artwork Title: Beaker
+Object Type: Beaker
+Classification: Unknown
+
+Artist: Benjamin Halsted
+Nationality: American
+Lifespan: 1734      –1817      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1802–1808
+
+Medium: Silver
+Dimensions: H. 4 in. (10.2 cm) 5 oz. 9 dwt (169.4g)
+Lip diameter: 7 3/4 in. (19.7 cm)
+Diam. of base: 2 3/8 in. (6 cm)
+
+Credit Line: Gift of Mr. and Mrs. Alfred Grima Johnson, 2005
+
+---
+
+Artwork Title: Beaker
+Object Type: Beaker
+Classification: Unknown
+
+Artist: Benjamin Halsted
+Nationality: American
+Lifespan: 1734      –1817      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1802–1808
+
+Medium: Silver
+Dimensions: H. 4 in. (10.2 cm) 6 oz. 2 dwt (190.1g)
+Lip diameter: 3 1/8 in. (7.9 cm)
+Diam. of base: 2 3/8 in. (6 cm)
+
+Credit Line: Gift of Mr. and Mrs. Alfred Grima Johnson, 2005
+
+---
+
+Artwork Title: Beaker
+Object Type: Beaker
+Classification: Unknown
+
+Artist: Benjamin Halsted
+Nationality: American
+Lifespan: 1734      –1817      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1802–1808
+
+Medium: Silver
+Dimensions: H. 4 in. (10.2 cm) 5 oz. 20 dwt (186.1g)
+Lip diameter: 3 1/8 in. (7.9 cm)
+Diam. of base: 2 3/8 in. (6 cm)
+
+Credit Line: Gift of Mr. and Mrs. Alfred Grima Johnson, 2005
+
+---
+
+Artwork Title: Beaker
+Object Type: Beaker
+Classification: Unknown
+
+Artist: Benjamin Halsted
+Nationality: American
+Lifespan: 1734      –1817      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1805–1805
+
+Medium: Silver
+Dimensions: H. 4 in. (10.2 cm) 5 oz. 16 dwt (180.7g)
+Lip diameter: 3 1/8 in. (7.9 cm)
+Diam. of base: 2 3/8 in. (6 cm)
+
+Credit Line: Gift of Mr. and Mrs. Alfred Grima Johnson, 2005
+
+---
+
+Artwork Title: Beaker
+Object Type: Beaker
+Classification: Unknown
+
+Artist: Benjamin Halsted
+Nationality: American
+Lifespan: 1734      –1817      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1802–1808
+
+Medium: Silver
+Dimensions: H. 4 in. (10.2 cm) 5 oz. 4 dwt (161.2g)
+Lip diameter: 3 1/8 in. (7.9 cm)
+Diam. of base: 2 3/8 in. (6 cm)
+
+Credit Line: Gift of Mr. and Mrs. Alfred Grima Johnson, 2005
+
+---
+
+Artwork Title: Beaker
+Object Type: Beaker
+Classification: Unknown
+
+Artist: Benjamin Halsted
+Nationality: American
+Lifespan: 1734      –1817      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1802–1808
+
+Medium: Silver
+Dimensions: H. 4 in. (10.2 cm) 6 oz. 3 dwt (191.1g)
+Lip diameter: 3 1/8 in. (7.9 cm)
+Diam. of base: 2 3/8 in. (6 cm)
+
+Credit Line: Gift of Mr. and Mrs. Alfred Grima Johnson, 2005
+
+---
+
+Artwork Title: Coffee Spoon
+Object Type: Spoon
+Classification: Unknown
+
+Artist: David Vinton
+Nationality: American
+Lifespan: 1774      –1833      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1792–1798
+
+Medium: Silver
+Dimensions: L. 5 in. (12.7 cm)
+
+Credit Line: Gift of Mr. and Mrs. Alfred Grima Johnson, 2005
+
+---
+
+Artwork Title: Coffee Spoon
+Object Type: Spoon
+Classification: Unknown
+
+Artist: David Vinton
+Nationality: American
+Lifespan: 1774      –1833      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1792–1798
+
+Medium: Silver
+Dimensions: Dimensions unavailable
+
+Credit Line: Gift of Mr. and Mrs. Alfred Grima Johnson, 2005
+
+---
+
+Artwork Title: Beaker
+Object Type: Beaker
+Classification: Unknown
+
+Artist: Benjamin Halsted
+Nationality: American
+Lifespan: 1734      –1817      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1802–1808
+
+Medium: Silver
+Dimensions: H. 4 in. (10.2 cm) 7oz. 16 dwt (180.1g)
+Lip diameter: 3 1/8 in. (7.9 cm)
+Diam. of base: 2 3/8 in. (6 cm)
+
+Credit Line: Gift of Mr. and Mrs. Alfred Grima Johnson, 2005
+
+---
+
+Artwork Title: Argand Lamp
+Object Type: Argand lamp
+Classification: Unknown
+
+Artist: J. & I. Cox
+Nationality: American
+Lifespan: 1818      –1853      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1822–1828
+
+Medium: Brass and glass
+Dimensions: 24 1/4 x 24 x 15 3/4 in. (61.6 x 61 x 40 cm)
+
+Credit Line: Purchase, Gifts of George Coe Graves and Mrs. James A. Cole and Gift of the Members of the Bertha King Benkard Memorial Fund, by exchange, and funds from various donors, 2006
+
+---
+
+Artwork Title: Love Cup No 11184
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Tiffany & Co.
+Nationality:  
+Lifespan: 1837      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1892–1892
+
+Medium: Ink, wax pencil, and graphite on brown board, backed with linen
+Dimensions: 20 1/4 x 18 in. (51.4 x 45.7 cm)
+
+Credit Line: Gift of Tiffany & Co., 1985
+
+---
+
+Artwork Title: Pitcher No 7082
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Tiffany & Co.
+Nationality:  
+Lifespan: 1837      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1880–1886
+
+Medium: Ink, wax pencil, and graphite on brown board
+Dimensions: 25 1/4 x 17 1/2 in. (64.1 x 44.5 cm)
+
+Credit Line: Gift of Tiffany and Co., 1987
+
+---
+
+Artwork Title: Hammering & Eng. Design for Tray No 2220
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Tiffany & Co.
+Nationality:  
+Lifespan: 1837      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1889–1891
+
+Medium: Ink and graphite on brown card
+Dimensions: 17 1/2 x 18 in. (44.5 x 45.7 cm)
+
+Credit Line: Gift of Tiffany and Co., 1987
+
+---
+
+Artwork Title: Bowl Nº 11171
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Tiffany & Co.
+Nationality:  
+Lifespan: 1837      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1892–1892
+
+Medium: Ink, graphite, and wax pencil on off-white board backed with linen
+Dimensions: 14 3/4 x 21 5/16 in. (37.5 x 54.1 cm)
+
+Credit Line: Gift of Tiffany and Co., 1985
+
+---
+
+Artwork Title: Ham. & Mtg Design for Waiter Nº 5767
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Tiffany & Co.
+Nationality:  
+Lifespan: 1837      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1879–1879
+
+Medium: Ink and graphite on brown board
+Dimensions: 12 9/16 x 12 11/16 in. (31.9 x 32.2 cm)
+
+Credit Line: Gift of Tiffany and Co., 1987
+
+---
+
+Artwork Title: Design Drawing
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Tiffany & Co.
+Nationality:  
+Lifespan: 1837      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1875–1876
+
+Medium: Watercolor, ink, and graphite on gray wove paper
+Dimensions: Overall: 18 9/16 x 15 7/16 in. (47.1 x 39.2 cm)
+Backing: 22 x 19 3/8 in. (55.9 x 49.2 cm)
+
+Credit Line: Gift of Tiffany & Co., 1985
+
+---
+
+Artwork Title: Sugar of Tete a Tete Set No 8473
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Tiffany & Co.
+Nationality:  
+Lifespan: 1837      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1887–1887
+
+Medium: Ink, graphite, and blue wax pencil on off-white wove paper, lined
+Dimensions: 13 1/2 x 13 1/2 in. (34.3 x 34.3 cm)
+
+Credit Line: Gift of Tiffany & Co., 1985
+
+---
+
+Artwork Title: Fish Mts. for Vase No 2978
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Tiffany & Co.
+Nationality:  
+Lifespan: 1837      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1877–1877
+
+Medium: Ink and graphite on brown card
+Dimensions: Overall: 12 1/4 x 16 7/16 in. (31.1 x 41.8 cm)
+Design: 12 1/4 x 16 7/16 in. (31.1 x 41.8 cm)
+
+Credit Line: Gift of Tiffany and Co., 1987
+
+---
+
+Artwork Title: Rider for Pitcher No 7082
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Tiffany & Co.
+Nationality:  
+Lifespan: 1837      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1883–1891
+
+Medium: Ink on brown board
+Dimensions: Overall: 9 5/8 x 11 5/16 in. (24.4 x 28.7 cm)
+Design: 9 5/8 x 9 1/4 in. (24.4 x 23.5 cm)
+
+Credit Line: Gift of Tiffany and Co., 1987
+
+---
+
+Artwork Title: Coffee Pot No 8473
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Tiffany & Co.
+Nationality:  
+Lifespan: 1837      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1886–1892
+
+Medium: Graphite on brown laid paper
+Dimensions: Overall: 13 1/4 x 10 1/8 in. (33.7 x 25.7 cm)
+Design: 13 1/4 x 10 1/8 in. (33.7 x 25.7 cm)
+
+Credit Line: Gift of Tiffany & Co., 1985
+
+---
+
+Artwork Title: Vase Nº 2980
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Tiffany & Co.
+Nationality:  
+Lifespan: 1837      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1872–1872
+
+Medium: Ink, graphite, and crayon on heavy cream board/card
+Dimensions: Overall: 10 9/16 x 5 7/8 in. (26.8 x 14.9 cm)
+Design: 10 9/16 x 5 7/8 in. (26.8 x 14.9 cm)
+
+Credit Line: Gift of Tiffany & Co., 1985
+
+---
+
+Artwork Title: Vase Nº 2979
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Tiffany & Co.
+Nationality:  
+Lifespan: 1837      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1872–1872
+
+Medium: Ink, graphite, and wax pencil on heavy cream card
+Dimensions: Overall: 10 1/2 x 6 3/8 in. (26.7 x 16.2 cm)
+Design: 10 1/2 x 6 3/8 in. (26.7 x 16.2 cm)
+
+Credit Line: Gift of Tiffany & Co., 1985
+
+---
+
+Artwork Title: Design Drawing for Adams Vase
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Tiffany & Co.
+Nationality:  
+Lifespan: 1837      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1890–1896
+
+Medium: Ink, graphite, and wash on off-white wove paper
+Dimensions: Overall: 6 1/8 x 3 3/4 in. (15.6 x 9.5 cm)
+Design: 4 1/2 x 2 7/8 in. (11.4 x 7.3 cm)
+
+Credit Line: Gift of Tiffany and Co., 1987
+
+---
+
+Artwork Title: Souvenir Spoon #1343
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Tiffany & Co.
+Nationality:  
+Lifespan: 1837      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1906–1912
+
+Medium: Graphite and pencil on off-white card
+Dimensions: Overall: 8 1/2 x 5 1/16 in. (21.6 x 12.9 cm)
+Design: 6 3/16 x 1 3/4 in. (15.7 x 4.4 cm)
+
+Credit Line: Gift of Tiffany and Co., 1987
+
+---
+
+Artwork Title: Shading Des Waiter Nos 8880–5767
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Tiffany & Co.
+Nationality:  
+Lifespan: 1837      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1889–1891
+
+Medium: Graphite, watercolor, and ink on green wove paper
+Dimensions: Overall: 14 3/4 x 11 in. (37.5 x 27.9 cm)
+Design: 13 9/16 x 8 1/4 in. (34.4 x 21 cm)
+
+Credit Line: Gift of Tiffany & Co., 1985
+
+---
+
+Artwork Title: Cream No 3737
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Tiffany & Co.
+Nationality:  
+Lifespan: 1837      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1871–1877
+
+Medium: Ink, graphite, and wax pencil on brown wove paper
+Dimensions: 7 5/8 x 6 5/16 in. (19.4 x 16 cm)
+
+Credit Line: Gift of Tiffany and Co., 1987
+
+---
+
+Artwork Title: Tea Pot No 8473
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Tiffany & Co.
+Nationality:  
+Lifespan: 1837      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1887–1887
+
+Medium: Ink, graphite, and wax pencil on brown glazed paper
+Dimensions: Overall: 13 5/8 x 15 1/2 in. (34.6 x 39.4 cm)
+Design: 13 5/8 x 15 1/2 in. (34.6 x 39.4 cm)
+
+Credit Line: Gift of Tiffany & Co., 1985
+
+---
+
+Artwork Title: Vase 2179
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Tiffany & Co.
+Nationality:  
+Lifespan: 1837      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1869–1869
+
+Medium: Ink, wax pencil, and graphite on two-ply off-white wove paper
+Dimensions: Overall: 17 3/8 x 10 1/4 in. (44.1 x 26 cm)
+Design: 17 3/8 x 10 1/4 in. (44.1 x 26 cm)
+
+Credit Line: Gift of Tiffany and Co., 1987
+
+---
+
+Artwork Title: Cream of Tete a Tete Set No. 8473
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Tiffany & Co.
+Nationality:  
+Lifespan: 1837      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1887–1887
+
+Medium: Ink, graphite, and wax pencil on brown glazed paper
+Dimensions: Overall: 13 1/8 x 12 3/4 in. (33.3 x 32.4 cm)
+Design: 13 1/8 x 12 3/4 in. (33.3 x 32.4 cm)
+
+Credit Line: Gift of Tiffany & Co., 1985
+
+---
+
+Artwork Title: Bear Cub Grooming
+Object Type: Sculpture
+Classification: Unknown
+
+Artist: Paul Wayland Bartlett
+Nationality: American
+Lifespan: 1865      –1925      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1887–1887
+
+Medium: Bronze
+Dimensions: 9 1/2 x 9 5/8 x 10 5/8 in. (24.1 x 24.4 x 27 cm)
+
+Credit Line: Friends of the American Wing Fund, 2006
+
+---
+
+Artwork Title: Caryatid
+Object Type: Sculpture
+Classification: Unknown
+
+Artist: Gertrude Vanderbilt Whitney
+Nationality: American
+Lifespan: 1875      –1942      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1912–1913
+
+Medium: Bronze
+Dimensions: 18 3/4 x 6 1/2 x 5 1/2 in. (47.6 x 16.5 x 14 cm)
+
+Credit Line: Anonymous Gift, 1922
+
+---
+
+Artwork Title: Reaching Jaguar
+Object Type: Sculpture
+Classification: Unknown
+
+Artist: Anna Hyatt Huntington
+Nationality: American
+Lifespan: 1876      –1973      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1906–1926
+
+Medium: Bronze
+Dimensions: 48 x 44 x 22 in. (121.9 x 111.8 x 55.9 cm)
+
+Credit Line: Gift of Archer M. Huntington, 1926
+
+---
+
+Artwork Title: Arts and Crafts Runner
+Object Type: Runner
+Classification: Unknown
+
+Artist: Josephine Cooper
+Nationality:  
+Lifespan:           –          
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1909–1915
+
+Medium: Linen, plain weave cloth embroidered with silk
+Dimensions: 23 1/4 x 54 in. (59.1 x 137.2 cm)
+
+Credit Line: Gift of Ms. Alix Elias, 2006
+
+---
+
+Artwork Title: Aquamarine Water Lily Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Louis C. Tiffany|Tiffany Furnaces
+Nationality: American|American
+Lifespan: 1848      |          –1933      |9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1910–1916
+
+Medium: Glass
+Dimensions: H. 15 1/2 in. (39.4 cm)
+
+Credit Line: Friends of the American Wing Fund, 2006
+
+---
+
+Artwork Title: Portrait of an Old Gentleman
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: James Sanford Ellsworth
+Nationality: American
+Lifespan: 1802      –1873      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1837–1845
+
+Medium: Watercolor on paper
+Dimensions: Sight: 3 1/8 x 2 5/8 in. (7.9 x 6.7 cm)
+
+Credit Line: Bequest of Mary Martin, 1938
+
+---
+
+Artwork Title: Fish M'ts Sugar N° 3737
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Tiffany & Co.
+Nationality:  
+Lifespan: 1837      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1876–1876
+
+Medium: Ink and graphite on off-white heavy wove paper
+Dimensions: Overall: 8 1/4 x 12 3/4 in. (21 x 32.4 cm)
+Design: 8 1/4 x 12 3/4 in. (21 x 32.4 cm)
+
+Credit Line: Gift of Tiffany and Co., 1987
+
+---
+
+Artwork Title: Fish M'ts Cream No 3737
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Tiffany & Co.
+Nationality:  
+Lifespan: 1837      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1876–1876
+
+Medium: Ink and graphite on off-white heavy wove paper
+Dimensions: Overall: 7 3/8 x 10 5/16 in. (18.7 x 26.2 cm)
+Design: 7 3/8 x 10 5/16 in. (18.7 x 26.2 cm)
+
+Credit Line: Gift of Tiffany and Co., 1987
+
+---
+
+Artwork Title: Harp
+Object Type: Harp
+Classification: Unknown
+
+Artist: J. F. Brown & Co.
+Nationality: American
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1859–1866
+
+Medium: Wood, bronze, and gilt gesso
+Dimensions: 90 x 60 in. (228.6 x 152.4 cm)
+
+Credit Line: Gift of Edward V. Jones, 1971
+
+---
+
+Artwork Title: Spring
+Object Type: Panel
+
+
+
+
+
+
+
+
+Window
+Classification: Unknown
+
+Artist: Daniel Cottier & Company|Daniel Cottier
+Nationality: American|British, Scottish
+Lifespan:           |1838      –9999      |1891      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1870–1885
+
+Medium: Leaded and stained glass
+Dimensions: 52 5/8 × 30 in. (133.7 × 76.2 cm)
+
+Credit Line: Gift of Estate of Virginia Guard Brooks and the Guard family, 2007
+
+---
+
+Artwork Title: Window Seat
+Object Type: Window seat
+Classification: Unknown
+
+Artist: D. Phyfe & Son
+Nationality: American
+Lifespan: 1840      –1847      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1841–1841
+
+Medium: Rosewood veneer; pine, yellow poplar (secondary woods); reproduction upholstery with original upholstery foundation
+Dimensions: 18 x 43 x 16 in. (45.7 x 109.2 x 40.6 cm)
+
+Credit Line: Gift of J. Nicholas Wilson, 2006
+
+---
+
+Artwork Title: John Taylor Johnston
+Object Type: Painting
+Classification: Unknown
+
+Artist: Daniel Huntington
+Nationality: American
+Lifespan: 1816      –1906      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1875–1875
+
+Medium: Oil on canvas
+Dimensions: 43 1/2 x 33 1/2 in. (110.5 x 85.1 cm)
+
+Credit Line: Bequest of John Johnston Appleton, 2006
+
+---
+
+Artwork Title: Tigers Watching
+Object Type: Sculpture
+Classification: Unknown
+
+Artist: Anna Hyatt Huntington
+Nationality: American
+Lifespan: 1876      –1973      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1903–1909
+
+Medium: Bronze
+Dimensions: 7 1/4 x 13 x 6 3/4 in. (18.4 x 33 x 17.1 cm)
+
+Credit Line: Rogers Fund, 1906
+
+---
+
+Artwork Title: Augustus Saint-Gaudens
+Object Type: Painting
+Classification: Unknown
+
+Artist: Ellen Emmet Rand
+Nationality: American
+Lifespan: 1875      –1941      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1905–1905
+
+Medium: Oil on canvas
+Dimensions: 38 3/4 × 29 3/4 in. (98.4 × 75.6 cm)
+
+
+Credit Line: Rogers Fund, 1908
+
+---
+
+Artwork Title: Metropolitan Tower
+Object Type: Painting
+Classification: Unknown
+
+Artist: Guy C. Wiggins
+Nationality: American
+Lifespan: 1883      –1962      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1912–1912
+
+Medium: Oil on canvas
+Dimensions: 34 1/16 x 40 1/8 in. (86.5 x 101.9 cm)
+
+Credit Line: George A. Hearn Fund, 1912
+
+---
+
+Artwork Title: Julie Bonbon
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Everett Shinn
+Nationality: American
+Lifespan: 1876      –1953      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1906–1907
+
+Medium: Chalk on paper
+Dimensions: 18 x 17 3/4 in. (45.7 x 45.1 cm)
+
+Credit Line: Gift of A. E. Gallatin, 1912
+
+---
+
+Artwork Title: Goats Fighting
+Object Type: Sculpture
+Classification: Unknown
+
+Artist: Anna Hyatt Huntington
+Nationality: American
+Lifespan: 1876      –1973      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1905–1912
+
+Medium: Bronze
+Dimensions: 10 1/4 x 14 5/16 x 7 1/2 in. (26 x 36.4 x 19.1 cm)
+
+Credit Line: Rogers Fund, 1912
+
+---
+
+Artwork Title: Portrait of a Young Lady
+Object Type: Drawing
+Classification: Unknown
+
+Artist: John Briggs Potter
+Nationality: American
+Lifespan: 1864      –1949      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1892–1892
+
+Medium: Chalk on paper
+Dimensions: 18 7/8 x 14 in. (47.9 x 35.6 cm)
+
+Credit Line: Rogers Fund, 1913
+
+---
+
+Artwork Title: Benjamin Altman
+Object Type: Painting
+Classification: Unknown
+
+Artist: Ellen Emmet Rand
+Nationality: American
+Lifespan: 1875      –1941      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1914–1914
+
+Medium: Oil on canvas
+Dimensions: 44 1/4 x 33 1/4 in. (112.4 x 84.5 cm)
+
+Credit Line: Gift of Estate of Benjamin Altman, 1914
+
+---
+
+Artwork Title: Repairing the Bridge
+Object Type: Painting
+Classification: Unknown
+
+Artist: Robert Spencer
+Nationality: American
+Lifespan: 1879      –1931      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1913–1913
+
+Medium: Oil on canvas
+Dimensions: 29 7/8 x 35 5/8 in. (75.9 x 90.5 cm)
+
+Credit Line: George A. Hearn Fund, 1914
+
+---
+
+Artwork Title: Spanish Roma Woman (The Spanish Gypsy)
+Object Type: Painting
+Classification: Unknown
+
+Artist: Robert Henri
+Nationality: American
+Lifespan: 1865      –1929      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1912–1912
+
+Medium: Oil on canvas
+Dimensions: 40 3/4 x 33 in. (103.5 x 83.8 cm)
+
+Credit Line: Arthur Hoppock Hearn Fund, 1914
+
+---
+
+Artwork Title: Beach Scene
+Object Type: Drawing
+Classification: Unknown
+
+Artist: William James Glackens
+Nationality: American
+Lifespan: 1870      –1938      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1914–1914
+
+Medium: Pastel and chalk on paper
+Dimensions: 17 1/4 x 22 in. (43.8 x 55.9 cm)
+
+Credit Line: Gift of A. E. Gallatin, 1915
+
+---
+
+Artwork Title: Afternoon at Coney Island
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: William James Glackens
+Nationality: American
+Lifespan: 1870      –1938      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1902–1912
+
+Medium: Chalk, watercolor, and gouache on paper
+Dimensions: 14 1/2 x 18 5/8 in. (36.8 x 47.3 cm)
+
+Credit Line: Gift of A. E. Gallatin, 1915
+
+---
+
+Artwork Title: Seated Woman
+Object Type: Drawing
+Classification: Unknown
+
+Artist: John Sloan
+Nationality: American
+Lifespan: 1871      –1951      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1914–1914
+
+Medium: Black chalk on paper
+Dimensions: 12 3/4 x 9 1/2 in. (32.4 x 24.1 cm)
+
+Credit Line: Gift of A. E. Gallatin, 1915
+
+---
+
+Artwork Title: Portrait of Paul de Kock
+Object Type: Drawing
+Classification: Unknown
+
+Artist: John Sloan
+Nationality: American
+Lifespan: 1871      –1951      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1871–1951
+
+Medium: Lead pencil on tracing paper
+Dimensions: 16 1/8 x 13 1/4 in. (41 x 33.7 cm)
+
+Credit Line: Gift of A. E. Gallatin, 1915
+
+---
+
+Artwork Title: Winter
+Object Type: Painting
+Classification: Unknown
+
+Artist: Ernest Lawson
+Nationality: American, born Canada
+Lifespan: 1873      –1939      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1914–1914
+
+Medium: Oil on canvas
+Dimensions: 25 x 30 1/8 in. (63.5 x 76.5 cm)
+
+Credit Line: George A. Hearn Fund, 1915
+
+---
+
+Artwork Title: Head of a Spanish Peasant
+Object Type: Bust
+Classification: Unknown
+
+Artist: Gertrude Vanderbilt Whitney
+Nationality: American
+Lifespan: 1875      –1942      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1911–1911
+
+Medium: Bronze
+Dimensions: 16 1/4 x 12 1/2 x 11 1/4 in. (41.3 x 31.8 x 28.6 cm)
+
+Credit Line: Rogers Fund, 1916
+
+---
+
+Artwork Title: Julie Bonbon
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Everett Shinn
+Nationality: American
+Lifespan: 1876      –1953      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1907–1907
+
+Medium: Pastel on paper, mounted on cardboard
+Dimensions: 21 1/2 x 15 1/2 in. (54.6 x 39.4 cm)
+
+Credit Line: Gift of Mrs. Maurice Stern, 1970
+
+---
+
+Artwork Title: The Brook, Nova Scotia
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: George Luks
+Nationality: American
+Lifespan: 1866      –1933      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1919–1919
+
+Medium: Watercolor and pencil on paper
+Dimensions: 14 x 20 in. (35.6 x 50.8 cm)
+
+Credit Line: The Lesley and Emma Sheafer Collection, Bequest of Emma A. Sheafer, 1973
+
+---
+
+Artwork Title: Mine-Mule, Number 1
+Object Type: Drawing
+Classification: Unknown
+
+Artist: George Luks
+Nationality: American
+Lifespan: 1866      –1933      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1866–1933
+
+Medium: Wash on paper
+Dimensions: 14 3/4 x 18 in. (37.5 x 45.7 cm)
+
+Credit Line: The Lesley and Emma Sheafer Collection, Bequest of Emma A. Sheafer, 1973
+
+---
+
+Artwork Title: Mine-Mule, Number 2
+Object Type: Drawing
+Classification: Unknown
+
+Artist: George Luks
+Nationality: American
+Lifespan: 1866      –1933      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1866–1933
+
+Medium: Wash on paper
+Dimensions: 15 x 19 1/8 in. (38.1 x 48.6 cm)
+
+Credit Line: The Lesley and Emma Sheafer Collection, Bequest of Emma A. Sheafer, 1973
+
+---
+
+Artwork Title: Old Gristmill, The Berkshires
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: George Luks
+Nationality: American
+Lifespan: 1866      –1933      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1922–1928
+
+Medium: Watercolor on paper
+Dimensions: 14 x 20 in. (35.6 x 50.8 cm)
+
+Credit Line: The Lesley and Emma Sheafer Collection, Bequest of Emma A. Sheafer, 1973
+
+---
+
+Artwork Title: Railroad Crossing, The Berkshires
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: George Luks
+Nationality: American
+Lifespan: 1866      –1933      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1925–1925
+
+Medium: Watercolor and pencil on paper
+Dimensions: 13 7/8 x 19 7/8 in. (35.2 x 50.5 cm)
+
+Credit Line: The Lesley and Emma Sheafer Collection, Bequest of Emma A. Sheafer, 1973
+
+---
+
+Artwork Title: Central Park
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: Robert Henri
+Nationality: American
+Lifespan: 1865      –1929      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1865–1929
+
+Medium: Watercolor on paper
+Dimensions: 7 7/8 x 9 7/8 in. (20 x 25.1 cm)
+
+Credit Line: Bequest of Joan Whitney Payson, 1975
+
+---
+
+Artwork Title: A Rainy Day at Cooper Square
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Everett Shinn
+Nationality: American
+Lifespan: 1876      –1953      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1935–1935
+
+Medium: Pastel on paper, mounted on cardboard
+Dimensions: 11 3/4 x 15 1/4 in. (29.8 x 38.7 cm)
+
+Credit Line: Gift of Rita and Daniel Fraad Jr., 1978
+
+---
+
+Artwork Title: Claremont Avenue
+Object Type: Painting
+Classification: Unknown
+
+Artist: Hayley Lever
+Nationality: American, born Australia
+Lifespan: 1876      –1958      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1912–1912
+
+Medium: Oil on canvas
+Dimensions: 16 3/8 x 20 3/8 in. (41.6 x 51.8 cm)
+
+Credit Line: Gift of Rita and Daniel Fraad, 1978
+
+---
+
+Artwork Title: Picture Racks At The Macbeth Gallery
+Object Type: Drawing
+Classification: Unknown
+
+Artist: John Sloan
+Nationality: American
+Lifespan: 1871      –1951      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1908–1908
+
+Medium: Graphite on paper
+Dimensions: 12 x 9 7/8 in. (30.5 x 25.1 cm)
+
+Credit Line: Gift of Mr. and Mrs. Stuart P. Feld, 1980
+
+---
+
+Artwork Title: Absinthe Drinker
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Robert Henri
+Nationality: American
+Lifespan: 1865      –1929      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1907–1913
+
+Medium: Charcoal on paper
+Dimensions: 13 1/2 x 9 1/2 in. (34.3 x 24.1 cm)
+
+Credit Line: Gift of Margaret and Raymond J. Horowitz, 1980
+
+---
+
+Artwork Title: Semi-nude Female with Fan
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Robert Henri
+Nationality: American
+Lifespan: 1865      –1929      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1897–1903
+
+Medium: Brush and ink on paper
+Dimensions: 12 3/8 x 10 1/4 in. (31.4 x 26 cm)
+
+Credit Line: Gift of Mr. and Mrs. Stuart P. Feld, 1981
+
+---
+
+Artwork Title: Poker
+Object Type: Drawing
+Classification: Unknown
+
+Artist: William James Glackens
+Nationality: American
+Lifespan: 1870      –1938      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1902–1908
+
+Medium: Charcoal on paper
+Dimensions: 11 1/8 x 9 3/4 in. (28.3 x 24.8 cm)
+
+Credit Line: Gift of Martin Sklar, 1981
+
+---
+
+Artwork Title: Swan Pond, Bellport, Long Island
+Object Type: Painting
+Classification: Unknown
+
+Artist: William James Glackens
+Nationality: American
+Lifespan: 1870      –1938      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1911–1917
+
+Medium: Oil on canvas
+Dimensions: 25 x 30 in. (63.5 x 76.2 cm)
+
+Credit Line: Bequest of Ruth Alms Barnard, 1981
+
+---
+
+Artwork Title: F. Ambrose Clark
+Object Type: Painting
+Classification: Unknown
+
+Artist: Robert Henri
+Nationality: American
+Lifespan: 1865      –1929      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1904–1904
+
+Medium: Oil on canvas
+Dimensions: 77 5/8 x 38 1/4 in. (197.2 x 97.2 cm)
+
+Credit Line: Purchase, Stephen C. Clark Jr. Gift, 1982
+
+---
+
+Artwork Title: Port Cochere at 39 Elm Street, Worcester, Mass.
+Object Type: Painting
+Classification: Unknown
+
+Artist: Miriam Washburn
+Nationality: American
+Lifespan: 1865      –1930      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1915–1921
+
+Medium: Oil on canvas
+Dimensions: 11 x 16 in. (27.9 x 40.6 cm)
+
+Credit Line: Bequest of Scofield Thayer, 1982
+
+---
+
+Artwork Title: Dancing Couple
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Boardman Robinson
+Nationality: American, born Canada
+Lifespan: 1876      –1952      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1921–1927
+
+Medium: Pen, ink, wash on paper
+Dimensions: 21 1/8 x 16 in. (53.7 x 40.6 cm)
+
+Credit Line: Bequest of Scofield Thayer, 1982
+
+---
+
+Artwork Title: Swimming Party
+Object Type: Painting
+Classification: Unknown
+
+Artist: Louis Michel Eilshemius
+Nationality: American
+Lifespan: 1864      –1941      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1915–1921
+
+Medium: Oil on cardboard
+Dimensions: 30 1/2 x 40 1/2 in. (77.5 x 102.9 cm)
+
+Credit Line: Bequest of Scofield Thayer, 1982
+
+---
+
+Artwork Title: Sketches After the Masters
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Robert Henri
+Nationality: American
+Lifespan: 1865      –1929      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1893–1995
+
+Medium: Brush and ink on paper
+Dimensions: 10 x 8 1/4 in. (25.4 x 21 cm)
+
+Credit Line: Gift of Mr. and Mrs. Stuart P. Feld, 1984
+
+---
+
+Artwork Title: Landscape
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Léon Dabo
+Nationality: American, born France
+Lifespan: 1868      –1960      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1917–1923
+
+Medium: Chalk on paper
+Dimensions: 14 x 9 3/4 in. (35.6 x 24.8 cm)
+
+Credit Line: Gift of Ashton Hawkins, 1986
+
+---
+
+Artwork Title: Turkish Fountain with Garden (from Louis C. Tiffany Estate, Oyster Bay)
+Object Type: Painting
+Classification: Unknown
+
+Artist: Jane Peterson
+Nationality: American
+Lifespan: 1876      –1965      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1907–1913
+
+Medium: Oil and charcoal on canvas
+Dimensions: 24 1/4 x 18 in. (61.6 x 45.7 cm)
+
+Credit Line: Gift of Caryl and Martin Horwitz, 1991
+
+---
+
+Artwork Title: Wagon in Alleyway
+Object Type: Drawing
+Classification: Unknown
+
+Artist: George Luks
+Nationality: American
+Lifespan: 1866      –1933      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1905–1913
+
+Medium: Pastel on paper
+Dimensions: 6 5/8 x 4 3/8 in. (16.8 x 11.1 cm)
+
+Credit Line: Gift of Stokely Webster, 2000
+
+---
+
+Artwork Title: Two Men Walking
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Bill Traylor
+Nationality: American
+Lifespan: 1853      –1949      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1936–1940
+
+Medium: Tempera and pencil on paper
+Dimensions: 22 x 14 in. (55.9 x 35.6 cm)
+
+Credit Line: George A. Hearn Fund, 1992
+
+---
+
+Artwork Title: Kitchen Scene, Yellow House
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Bill Traylor
+Nationality: American
+Lifespan: 1853      –1949      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1936–1945
+
+Medium: Pencil and colored pencil on cardboard
+Dimensions: 22 x 14 in. (55.9 x 35.6 cm)
+
+Credit Line: Purchase, Anonymous Gift, 1992
+
+---
+
+Artwork Title: Blacksmith Shop
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Bill Traylor
+Nationality: American
+Lifespan: 1853      –1949      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1939–1940
+
+Medium: Pencil on cardboard
+Dimensions: 13 3/8 x 26 1/4 in. (34 x 66.7 cm)
+
+Credit Line: Gift of Eugenia and Charles Shannon, 1995
+
+---
+
+Artwork Title: Hudson at Newburgh
+Object Type: Painting
+Classification: Unknown
+
+Artist: Gifford Beal
+Nationality: American
+Lifespan: 1879      –1956      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1912–1918
+
+Medium: Oil on cardboard
+Dimensions: 12 1/8 x 20 in. (30.8 x 50.8 cm)
+
+Credit Line: Gift of Estate of Gifford Beal, 1995
+
+---
+
+Artwork Title: Manon
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Everett Shinn
+Nationality: American
+Lifespan: 1876      –1953      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1907–1913
+
+Medium: Pastel on joined papers
+Dimensions: 12 1/4 x 18 1/8 in. (31.1 x 46 cm)
+
+Credit Line: Gift of Robert and Ruth Ortmann, 1995
+
+---
+
+Artwork Title: Portrait of a Girl
+Object Type: Painting
+Classification: Unknown
+
+Artist: Robert Henri
+Nationality: American
+Lifespan: 1865      –1929      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1924–1924
+
+Medium: Oil on canvas
+Dimensions: 24 x 20 in. (61 x 50.8 cm)
+
+Credit Line: Gift of Richard and Carole Rifkind, 1996
+
+---
+
+Artwork Title: Central Park, Winter
+Object Type: Painting
+Classification: Unknown
+
+Artist: William James Glackens
+Nationality: American
+Lifespan: 1870      –1938      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1902–1908
+
+Medium: Oil on canvas
+Dimensions: 25 x 30 in. (63.5 x 76.2 cm)
+
+
+Credit Line: George A. Hearn Fund, 1921
+
+---
+
+Artwork Title: London Music Hall
+Object Type: Painting
+Classification: Unknown
+
+Artist: Everett Shinn
+Nationality: American
+Lifespan: 1876      –1953      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1918–1918
+
+Medium: Oil on canvas
+Dimensions: 10 x 12 in. (25.4 x 30.5 cm)
+
+Credit Line: George A. Hearn Fund, 1921
+
+---
+
+Artwork Title: The Old Duchess
+Object Type: Painting
+Classification: Unknown
+
+Artist: George Luks
+Nationality: American
+Lifespan: 1866      –1933      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1905–1905
+
+Medium: Oil on canvas
+Dimensions: 30 x 25 in. (76.2 x 63.5 cm)
+
+Credit Line: George A. Hearn Fund, 1921
+
+---
+
+Artwork Title: Dust Storm, Fifth Avenue
+Object Type: Painting
+Classification: Unknown
+
+Artist: John Sloan
+Nationality: American
+Lifespan: 1871      –1951      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1906–1906
+
+Medium: Oil on canvas
+Dimensions: 22 x 27 in. (55.9 x 68.6 cm)
+
+Credit Line: George A. Hearn Fund, 1921
+
+---
+
+Artwork Title: Shop Girls
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: William James Glackens
+Nationality: American
+Lifespan: 1870      –1938      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1897–1903
+
+Medium: Pastel and watercolor on illustration board
+Dimensions: 13 5/8 x 14 3/8 in. (34.6 x 36.5 cm)
+
+Credit Line: Gift of A. E. Gallatin, 1923
+
+---
+
+Artwork Title: The Boatman
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Robert Henri
+Nationality: American
+Lifespan: 1865      –1929      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1917–1923
+
+Medium: Charcoal on paper
+Dimensions: 11 x 7 1/2 in. (27.9 x 19.1 cm)
+
+Credit Line: Gift of A. E. Gallatin, 1923
+
+---
+
+Artwork Title: L. Waterbury at Polo
+Object Type: Drawing
+Classification: Unknown
+
+Artist: George Luks
+Nationality: American
+Lifespan: 1866      –1933      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1913–1913
+
+Medium: Crayon on paper
+Dimensions: 9 3/8 x 6 5/8 in. (23.8 x 16.8 cm)
+
+Credit Line: Gift of A. E. Gallatin, 1923
+
+---
+
+Artwork Title: Studies from life
+Object Type: Drawing
+Classification: Unknown
+
+Artist: William James Glackens
+Nationality: American
+Lifespan: 1870      –1938      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1902–1908
+
+Medium: Charcoal on cut and pasted paper
+Dimensions: 15 3/4 x 11 5/8 in. (40 x 29.5 cm)
+
+Credit Line: Gift of A. E. Gallatin, 1923
+
+---
+
+Artwork Title: Matinée Crowd, Manhattan
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Everett Shinn
+Nationality: American
+Lifespan: 1876      –1953      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1904–1904
+
+Medium: Pastel and gouache on illustration board
+Dimensions: 18 1/4 x 11 in. (46.4 x 27.9 cm)
+
+Credit Line: Gift of A. E. Gallatin, 1923
+
+---
+
+Artwork Title: Study of Nude Woman
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Everett Shinn
+Nationality: American
+Lifespan: 1876      –1953      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1905–1905
+
+Medium: Chalk on wallpaper
+Dimensions: 11 1/8 x 9 in. (28.3 x 22.9 cm)
+
+Credit Line: Gift of A. E. Gallatin, 1923
+
+---
+
+Artwork Title: The Day on the Roof
+Object Type: Drawing
+Classification: Unknown
+
+Artist: John Sloan
+Nationality: American
+Lifespan: 1871      –1951      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1900–1906
+
+Medium: Black crayon on paper
+Dimensions: 13 1/2 x 15 in. (34.3 x 38.1 cm)
+
+Credit Line: Gift of A. E. Gallatin, 1923
+
+---
+
+Artwork Title: Celia's Arbor
+Object Type: Painting
+Classification: Unknown
+
+Artist: Lilian Westcott Hale
+Nationality: American
+Lifespan: 1881      –1963      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1910–1910
+
+Medium: Oil on canvas
+Dimensions: 22 1/4 x 18 3/4 in. (56.5 x 47.6 cm)
+
+Credit Line: Arthur Hoppock Hearn Fund, 1924
+
+---
+
+Artwork Title: Interior, Evening
+Object Type: Painting
+Classification: Unknown
+
+Artist: John Christen Johansen
+Nationality: American
+Lifespan: 1876      –1964      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1924–1924
+
+Medium: Oil on canvas
+Dimensions: 30 1/8 x 40 in. (76.5 x 101.6 cm)
+
+Credit Line: Arthur Hoppock Hearn Fund, 1925
+
+---
+
+Artwork Title: Senator Elihu Root
+Object Type: Painting
+Classification: Unknown
+
+Artist: John Christen Johansen
+Nationality: American
+Lifespan: 1876      –1964      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1926–1926
+
+Medium: Oil on canvas
+Dimensions: 56 x 38 1/4 in. (142.2 x 97.2 cm)
+
+Credit Line: Gift of the Trustees of the Museum, 1926
+
+---
+
+Artwork Title: Jaguar
+Object Type: Sculpture
+Classification: Unknown
+
+Artist: Anna Hyatt Huntington
+Nationality: American
+Lifespan: 1876      –1973      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1906–1926
+
+Medium: Bronze
+Dimensions: 28 1/2 x 42 x 25 in. (72.4 x 106.7 x 63.5 cm)
+
+Credit Line: Gift of Archer M. Huntington, 1926
+
+---
+
+Artwork Title: Tunny Boats
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: Hayley Lever
+Nationality: American, born Australia
+Lifespan: 1876      –1958      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1926–1926
+
+Medium: Watercolor on paper
+Dimensions: 15 3/8 x 18 1/2 in. (39.1 x 47 cm)
+
+Credit Line: Gift of Mrs. H.L. May, 1927
+
+---
+
+Artwork Title: Zeke's House—Zeke's Shop
+Object Type: Painting
+Classification: Unknown
+
+Artist: Daniel Garber
+Nationality: American
+Lifespan: 1880      –1958      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1927–1927
+
+Medium: Oil on canvas
+Dimensions: 28 x 30 in. (71.1 x 76.2 cm)
+Framed: 38 7/16 x 40 5/16 x 2 3/4 in. (97.6 x 102.4 x 7 cm)
+
+Credit Line: George A. Hearn Fund, 1928
+
+---
+
+Artwork Title: The Lafayette
+Object Type: Painting
+Classification: Unknown
+
+Artist: John Sloan
+Nationality: American
+Lifespan: 1871      –1951      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1927–1927
+
+Medium: Oil on canvas
+Dimensions: 30 1/2 x 36 1/8 in. (77.5 x 91.8 cm)
+
+Credit Line: Gift of The Friends of John Sloan, 1928
+
+---
+
+Artwork Title: Study: Three Female Figures
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Joseph Lichtenauer
+Nationality: American
+Lifespan: 1876      –1966      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1926–1926
+
+Medium: Crayon on paper
+Dimensions: 11 1/4 x 14 1/2 in. (28.6 x 36.8 cm)
+
+Credit Line: Gift of the artist, 1928
+
+---
+
+Artwork Title: Study: Two Female Figures
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Joseph Lichtenauer
+Nationality: American
+Lifespan: 1876      –1966      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1926–1926
+
+Medium: Crayon on paper
+Dimensions: 12 7/8 x 16 1/2 in. (32.7 x 41.9 cm)
+
+Credit Line: Gift of the artist, 1928
+
+---
+
+Artwork Title: Study: Two Female Figures
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Joseph Lichtenauer
+Nationality: American
+Lifespan: 1876      –1966      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1923–1929
+
+Medium: Crayon on paper
+Dimensions: 11 1/8 x 14 1/2 in. (28.3 x 36.8 cm)
+
+Credit Line: Gift of the artist, 1928
+
+---
+
+Artwork Title: The Crucifixion
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Boardman Robinson
+Nationality: American, born Canada
+Lifespan: 1876      –1952      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1917–1923
+
+Medium: Brush and ink on paper
+Dimensions: 21 1/8 x 16 7/8 in. (53.7 x 42.9 cm)
+
+Credit Line: Gift of A. E. Gallatin, 1929
+
+---
+
+Artwork Title: The Watchman's Daughter
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Boardman Robinson
+Nationality: American, born Canada
+Lifespan: 1876      –1952      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1917–1923
+
+Medium: Pen and ink, wash on paper
+Dimensions: 23 1/4 x 18 3/4 in. (59.1 x 47.6 cm)
+
+Credit Line: Gift of A. E. Gallatin, 1929
+
+---
+
+Artwork Title: Elihu Root
+Object Type: Bust
+Classification: Unknown
+
+Artist: James Earle Fraser
+Nationality: American
+Lifespan: 1876      –1953      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1926–1926
+
+Medium: Bronze
+Dimensions: 18 1/2 x 14 1/2 x 12 1/2 in. (47 x 36.8 x 31.8 cm)
+
+Credit Line: Gift of Carnegie Corporation, 1929
+
+---
+
+Artwork Title: Robert W. de Forest
+Object Type: Painting
+Classification: Unknown
+
+Artist: John Christen Johansen
+Nationality: American
+Lifespan: 1876      –1964      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1931–1931
+
+Medium: Oil on canvas
+Dimensions: 49 7/8 x 36 in. (126.7 x 91.4 cm)
+
+Credit Line: Gift of the Trustees of the Museum, 1931
+
+---
+
+Artwork Title: Delaware Water Gap Village
+Object Type: Painting
+Classification: Unknown
+
+Artist: Louis Michel Eilshemius
+Nationality: American
+Lifespan: 1864      –1941      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1892–1903
+
+Medium: Oil on canvas
+Dimensions: 18 x 35 1/8 in. (45.7 x 89.2 cm)
+
+Credit Line: Arthur Hoppock Hearn Fund, 1932
+
+---
+
+Artwork Title: Head of a Young Artist
+Object Type: Bust
+Classification: Unknown
+
+Artist: James Earle Fraser
+Nationality: American
+Lifespan: 1876      –1953      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1920–1933
+
+Medium: Rosato di Milano marble
+Dimensions: 17 x 8 1/4 x 14 1/4 in. (43.2 x 21 x 36.2 cm)
+
+Credit Line: Rogers Fund, 1933
+
+---
+
+Artwork Title: William Sloane Coffin
+Object Type: Painting
+Classification: Unknown
+
+Artist: Ellen Emmet Rand
+Nationality: American
+Lifespan: 1875      –1941      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1934–1934
+
+Medium: Oil on canvas
+Dimensions: 43 in. × 33 1/16 in. (109.2 × 84 cm)
+
+
+Credit Line: George A. Hearn Fund, 1934
+
+---
+
+Artwork Title: Landscape, Binghamton, New York
+Object Type: Painting
+Classification: Unknown
+
+Artist: Louis Michel Eilshemius
+Nationality: American
+Lifespan: 1864      –1941      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1907–1907
+
+Medium: Oil on Masonite
+Dimensions: 26 1/4 x 37 3/4 in. (66.7 x 95.9 cm)
+
+Credit Line: George A. Hearn Fund, 1934
+
+---
+
+Artwork Title: The Gamblers
+Object Type: Painting
+Classification: Unknown
+
+Artist: Eugene Higgins
+Nationality: American
+Lifespan: 1874      –1958      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1917–1917
+
+Medium: Oil on canvas
+Dimensions: 16 x 12 in. (40.6 x 30.5 cm)
+
+Credit Line: George A. Hearn Fund, 1935
+
+---
+
+Artwork Title: Abandoned
+Object Type: Painting
+Classification: Unknown
+
+Artist: George Elmer Browne
+Nationality: American
+Lifespan: 1871      –1946      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1925–1925
+
+Medium: Oil on canvas
+Dimensions: 40 x 50 in. (101.6 x 127 cm)
+
+Credit Line: Arthur Hoppock Hearn Fund, 1936
+
+---
+
+Artwork Title: Harbor at Tangier
+Object Type: Painting
+Classification: Unknown
+
+Artist: Adelaide Milton de Groot
+Nationality: American
+Lifespan: 1876      –1967      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1928–1928
+
+Medium: Oil on canvas
+Dimensions: 18 1/2 x 24 in. (47 x 61 cm)
+
+Credit Line: Arthur Hoppock Hearn Fund, 1936
+
+---
+
+Artwork Title: The Haunted House
+Object Type: Painting
+Classification: Unknown
+
+Artist: Louis Michel Eilshemius
+Nationality: American
+Lifespan: 1864      –1941      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1914–1920
+
+Medium: Oil on Masonite
+Dimensions: 30 x 39 3/4 in. (76.2 x 101 cm)
+
+Credit Line: George A. Hearn Fund, 1937
+
+---
+
+Artwork Title: The Green Car
+Object Type: Painting
+Classification: Unknown
+
+Artist: William James Glackens
+Nationality: American
+Lifespan: 1870      –1938      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1910–1910
+
+Medium: Oil on canvas
+Dimensions: 24 x 32 in. (61 x 81.3 cm)
+
+Credit Line: Arthur Hoppock Hearn Fund, 1937
+
+---
+
+Artwork Title: The Jitney
+Object Type: Painting
+Classification: Unknown
+
+Artist: John Sloan
+Nationality: American
+Lifespan: 1871      –1951      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1912–1918
+
+Medium: Oil on canvas
+Dimensions: 20 x 24 in. (50.8 x 61 cm)
+Framed: 24 5/8 x 28 5/8 x 1 3/4 in. (62.5 x 72.7 x 4.4 cm)
+
+Credit Line: George A. Hearn Fund, 1940
+
+---
+
+Artwork Title: Head of Orpheus
+Object Type: Sculpture
+Classification: Unknown
+
+Artist: Carl Milles
+Nationality: American, born Sweden
+Lifespan: 1875      –1955      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1934–1939
+
+Medium: Iron
+Dimensions: 27 3/4 x 24 3/4 x 24 1/2 in. (70.5 x 62.9 x 62.2 cm)
+
+Credit Line: Fletcher Fund, 1940
+
+---
+
+Artwork Title: As It Might Work
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Boardman Robinson
+Nationality: American, born Canada
+Lifespan: 1876      –1952      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1917–1917
+
+Medium: Pen, ink, and chalk on paper
+Dimensions: 19 1/2 x 15 1/4 in. (49.5 x 38.7 cm)
+
+Credit Line: Fletcher Fund, 1942
+
+---
+
+Artwork Title: Bird by the Sea
+Object Type: Painting
+Classification: Unknown
+
+Artist: Clayton S. Price
+Nationality: American
+Lifespan: 1874      –1950      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1949–1949
+
+Medium: Oil on canvas
+Dimensions: 36 1/4 x 42 in. (92.1 x 106.7 cm)
+
+Credit Line: George A. Hearn Fund, 1949
+
+---
+
+Artwork Title: Delaware Water Gap Village
+Object Type: Painting
+Classification: Unknown
+
+Artist: Louis Michel Eilshemius
+Nationality: American
+Lifespan: 1864      –1941      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1883–1889
+
+Medium: Oil on canvas
+Dimensions: 25 x 29 7/8 in. (63.5 x 75.9 cm)
+
+Credit Line: Arthur Hoppock Hearn Fund, 1950
+
+---
+
+Artwork Title: Thanksgiving Turkey
+Object Type: Painting
+Classification: Unknown
+
+Artist: Anna Mary Robertson "Grandma" Moses
+Nationality: American
+Lifespan: 1860      –1961      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1943–1943
+
+Medium: Oil on wood
+Dimensions: 15 1/8 x 19 1/8 in. (38.4 x 48.6 cm)
+
+Credit Line: Bequest of Mary Stillman Harkness, 1950
+
+---
+
+Artwork Title: World War
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Wallace Morgan
+Nationality: American
+Lifespan: 1873      –1948      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1873–1949
+
+Medium: Charcoal, crayon, and wash on paper
+Dimensions: 12 x 28 in. (30.5 x 71.1 cm)
+
+Credit Line: The Elisha Whittelsey Fund, 1950
+
+---
+
+Artwork Title: Dutch Girl in White
+Object Type: Painting
+Classification: Unknown
+
+Artist: Robert Henri
+Nationality: American
+Lifespan: 1865      –1929      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1907–1907
+
+Medium: Oil on canvas
+Dimensions: 24 x 20 in. (61 x 50.8 cm)
+
+Credit Line: Arthur Hoppock Hearn Fund, 1950
+
+---
+
+Artwork Title: Lear with his Daughter and Fool
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Boardman Robinson
+Nationality: American, born Canada
+Lifespan: 1876      –1952      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1938–1938
+
+Medium: Tempera, pen, and ink on paper
+Dimensions: 17 7/8 x 11 7/8 in. (45.4 x 30.2 cm)
+
+Credit Line: Gift of 134 Artists, 1950
+
+---
+
+Artwork Title: On the Cliff: Gloucester and Edgar
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Boardman Robinson
+Nationality: American, born Canada
+Lifespan: 1876      –1952      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1938–1938
+
+Medium: Tempera and pencil on paper
+Dimensions: 17 7/8 x 11 7/8 in. (45.4 x 30.2 cm)
+
+Credit Line: Gift of 134 Artists, 1950
+
+---
+
+Artwork Title: Lear with Cordelia
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Boardman Robinson
+Nationality: American, born Canada
+Lifespan: 1876      –1952      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1938–1938
+
+Medium: Tempera and charcoal on paper
+Dimensions: 17 7/8 x 11 7/8 in. (45.4 x 30.2 cm)
+
+Credit Line: Gift of 134 Artists, 1950
+
+---
+
+Artwork Title: Nastasya Burns the Money
+Object Type: Painting
+Classification: Unknown
+
+Artist: Boardman Robinson
+Nationality: American, born Canada
+Lifespan: 1876      –1952      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1933–1933
+
+Medium: Tempera on paper
+Dimensions: 13 1/4 x 17 7/8 in. (33.7 x 45.4 cm)
+
+Credit Line: Gift of 134 Artists, 1950
+
+---
+
+Artwork Title: Civil Prisoners
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Boardman Robinson
+Nationality: American, born Canada
+Lifespan: 1876      –1952      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1915–1915
+
+Medium: Tempera on cardboard
+Dimensions: 15 7/8 x 19 3/4 in. (40.3 x 50.2 cm)
+
+Credit Line: Gift of 134 Artists, 1950
+
+---
+
+Artwork Title: Return from Moscow
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Boardman Robinson
+Nationality: American, born Canada
+Lifespan: 1876      –1952      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1918–1918
+
+Medium: Pen, ink, crayon, and tempera on paper
+Dimensions: 14 5/8 x 20 3/4 in. (37.1 x 52.7 cm)
+
+Credit Line: Gift of 134 Artists, 1950
+
+---
+
+Artwork Title: Lear
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Boardman Robinson
+Nationality: American, born Canada
+Lifespan: 1876      –1952      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1938–1938
+
+Medium: Pen, ink, and wash on paper
+Dimensions: 11 x 8 3/4 in. (27.9 x 22.2 cm)
+
+Credit Line: Gift of 134 Artists, 1950
+
+---
+
+Artwork Title: Lear and Kent
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Boardman Robinson
+Nationality: American, born Canada
+Lifespan: 1876      –1952      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1938–1938
+
+Medium: Tempera and charcoal on paper
+Dimensions: 17 7/8 x 11 in. (45.4 x 27.9 cm)
+
+Credit Line: Gift of 134 Artists, 1950
+
+---
+
+Artwork Title: Lear and the Fool on the Heath
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Boardman Robinson
+Nationality: American, born Canada
+Lifespan: 1876      –1952      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1938–1938
+
+Medium: Charcoal, tempera, pen, and ink on paper
+Dimensions: 17 7/8 x 12 in. (45.4 x 30.5 cm)
+
+Credit Line: Gift of 134 Artists, 1950
+
+---
+
+Artwork Title: Circus
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Everett Shinn
+Nationality: American
+Lifespan: 1876      –1953      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1906–1906
+
+Medium: Pastel and monotype on paper
+Dimensions: 3 3/4 x 5 in. (9.5 x 12.7 cm)
+
+Credit Line: George A. Hearn Fund, 1952
+
+---
+
+Artwork Title: Boy with Baseball
+Object Type: Painting
+Classification: Unknown
+
+Artist: George Luks
+Nationality: American
+Lifespan: 1866      –1933      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1922–1928
+
+Medium: Oil on canvas
+Dimensions: 30 x 25 in. (76.2 x 63.5 cm)
+
+Credit Line: The Edward Joseph Gallagher III Memorial Collection, Gift of Edward J. Gallagher Jr., 1954
+
+---
+
+Artwork Title: The Sewing Woman
+Object Type: Painting
+Classification: Unknown
+
+Artist: John Sloan
+Nationality: American
+Lifespan: 1871      –1951      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1901–1901
+
+Medium: Oil on canvas
+Dimensions: 19 x 16 1/8 in. (48.3 x 41 cm)
+
+Credit Line: Bequest of Margaret Seligman Lewisohn, in memory of her husband, Sam A. Lewisohn, 1954
+
+---
+
+Artwork Title: Susan Metcalf Casals
+Object Type: Painting
+Classification: Unknown
+
+Artist: Lydia Field Emmet
+Nationality: American
+Lifespan: 1866      –1952      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1922–1928
+
+Medium: Oil on canvas
+Dimensions: 52 x 40 in. (132.1 x 101.6 cm)
+
+Credit Line: Gift of Rosamond Sherwood, 1954
+
+---
+
+Artwork Title: David Parrish: Interior of a Tavern
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: George Luks
+Nationality: American
+Lifespan: 1866      –1933      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1919–1925
+
+Medium: Watercolor and pencil on paper
+Dimensions: 20 x 14 in. (50.8 x 35.6 cm)
+
+Credit Line: Arthur Hoppock Hearn Fund, 1955
+
+---
+
+Artwork Title: Herald Square
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Everett Shinn
+Nationality: American
+Lifespan: 1876      –1953      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1897–1905
+
+Medium: Pastel, brush and ink, and watercolor on illustration board
+Dimensions: 21 3/4 x 29 3/8 in. (55.2 x 74.6 cm)
+
+Credit Line: Arthur Hoppock Hearn Fund, 1955
+
+---
+
+Artwork Title: Mary Fanton Roberts
+Object Type: Painting
+Classification: Unknown
+
+Artist: Robert Henri
+Nationality: American
+Lifespan: 1865      –1929      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1917–1917
+
+Medium: Oil on canvas
+Dimensions: 32 x 26 in. (81.3 x 66 cm)
+
+Credit Line: Bequest of Mary Fanton Roberts, 1956
+
+---
+
+Artwork Title: The Masquerade Dress
+Object Type: Painting
+Classification: Unknown
+
+Artist: Robert Henri
+Nationality: American
+Lifespan: 1865      –1929      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1911–1911
+
+Medium: Oil on canvas
+Dimensions: 76 1/2 x 36 1/4 in. (194.3 x 92.1 cm)
+
+Credit Line: Arthur Hoppock Hearn Fund, 1958
+
+---
+
+Artwork Title: Seated Woman and Poodle
+Object Type: Drawing
+Classification: Unknown
+
+Artist: George Luks
+Nationality: American
+Lifespan: 1866      –1933      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1919–1925
+
+Medium: Crayon on paper
+Dimensions: 6 5/8 x 4 1/4 in. (16.8 x 10.8 cm)
+
+Credit Line: Rogers Fund, 1958
+
+---
+
+Artwork Title: Man and Woman Dancing
+Object Type: Drawing
+Classification: Unknown
+
+Artist: George Luks
+Nationality: American
+Lifespan: 1866      –1933      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1919–1924
+
+Medium: Conté crayon and ink wash on paper
+Dimensions: 9 1/2 x 7 5/8 in. (24.1 x 19.4 cm)
+
+Credit Line: Rogers Fund, 1958
+
+---
+
+Artwork Title: Two Seated Figures
+Object Type: Drawing
+Classification: Unknown
+
+Artist: George Luks
+Nationality: American
+Lifespan: 1866      –1933      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1919–1924
+
+Medium: Conté crayon on paper
+Dimensions: 9 1/2 x 7 1/2 in. (24.1 x 19.1 cm)
+
+Credit Line: Rogers Fund, 1958
+
+---
+
+Artwork Title: Study for "Bulfinch Houses, Beacon Hill"
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: George Luks
+Nationality: American
+Lifespan: 1866      –1933      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1923–1923
+
+Medium: Watercolor and conté crayon on paper
+Dimensions: 10 1/4 x 7 3/4 in. (26 x 19.7 cm)
+
+Credit Line: Rogers Fund, 1958
+
+---
+
+Artwork Title: Horse Trolley, New York City
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: George Luks
+Nationality: American
+Lifespan: 1866      –1933      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1905–1913
+
+Medium: Watercolor and pencil on paper
+Dimensions: 8 7/16 x 11 in. (21.4 x 27.9 cm)
+
+Credit Line: Rogers Fund, 1958
+
+---
+
+Artwork Title: Paris Night
+Object Type: Painting
+Classification: Unknown
+
+Artist: Robert Henri
+Nationality: American
+Lifespan: 1865      –1929      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1898–1898
+
+Medium: Oil on canvas
+Dimensions: 25 3/4 x 32 in. (65.4 x 81.3 cm)
+
+Credit Line: Arthur Hoppock Hearn Fund, 1963
+
+---
+
+Artwork Title: Amory S. Carhart, Jr.
+Object Type: Painting
+Classification: Unknown
+
+Artist: Ellen Emmet Rand
+Nationality: American
+Lifespan: 1875      –1941      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1903–1903
+
+Medium: Oil on canvas
+Dimensions: 64 1/2 x 32 1/4 in. (163.8 x 81.9 cm)
+
+Credit Line: Gift of Mrs. George S. Amory, 1964
+
+---
+
+Artwork Title: Sailing at Moonlight, Samoa
+Object Type: Painting
+Classification: Unknown
+
+Artist: Louis Michel Eilshemius
+Nationality: American
+Lifespan: 1864      –1941      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1864–1941
+
+Medium: Oil on wood
+Dimensions: 12 3/4 x 15 3/4 in. (32.4 x 40 cm)
+
+Credit Line: Bequest of Charles Iklé, 1963
+
+---
+
+Artwork Title: Morning at Coney Island
+Object Type: Drawing
+Classification: Unknown
+
+Artist: William James Glackens
+Nationality: American
+Lifespan: 1870      –1938      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1902–1912
+
+Medium: Pencil, chalk, and wash on paper
+Dimensions: 8 x 11 1/2 in. (20.3 x 29.2 cm)
+
+Credit Line: Bequest of Charles F. Iklé, 1963
+
+---
+
+Artwork Title: Farmhouse
+Object Type: Painting
+Classification: Unknown
+
+Artist: James Preston
+Nationality: American
+Lifespan: 1873      –1962      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1947–1953
+
+Medium: Oil on wood
+Dimensions: 20 11/16 x 26 11/16 in. (52.5 x 67.8 cm)
+
+Credit Line: Gift of Mrs. William G. Maguire, in memory of her uncle, James Preston, 1965
+
+---
+
+Artwork Title: Nude Kneeling
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Robert Henri
+Nationality: American
+Lifespan: 1865      –1929      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1897–1903
+
+Medium: Brown tempera on paper
+Dimensions: 19 3/16 x 12 1/16 in. (48.7 x 30.6 cm)
+
+Credit Line: Gift of Walter C. Baker, 1967
+
+---
+
+Artwork Title: Landscape
+Object Type: Painting
+Classification: Unknown
+
+Artist: Louis Michel Eilshemius
+Nationality: American
+Lifespan: 1864      –1941      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1889–1889
+
+Medium: Oil on canvas
+Dimensions: 14 1/2 × 20 1/2 in. (36.8 × 52.1 cm)
+Framed: 20 7/8 × 27 1/8 × 3 1/8 in. (53 × 68.9 × 7.9 cm)
+
+Credit Line: Bequest of Susan Vanderpoel Clark, 1967
+
+---
+
+Artwork Title: Crowd at the Seashore
+Object Type: Painting
+Classification: Unknown
+
+Artist: William James Glackens
+Nationality: American
+Lifespan: 1870      –1938      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1907–1913
+
+Medium: Oil on canvas
+Dimensions: 25 x 30 in. (63.5 x 76.2 cm)
+
+Credit Line: Bequest of Miss Adelaide Milton de Groot (1876-1967), 1967
+
+---
+
+Artwork Title: John
+Object Type: Painting
+Classification: Unknown
+
+Artist: Robert Henri
+Nationality: American
+Lifespan: 1865      –1929      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1905–1911
+
+Medium: Oil on canvas
+Dimensions: 24 x 20 1/8 in. (61 x 51.1 cm)
+
+Credit Line: Bequest of Miss Adelaide Milton de Groot (1876-1967), 1967
+
+---
+
+Artwork Title: Harlem River
+Object Type: Painting
+Classification: Unknown
+
+Artist: Ernest Lawson
+Nationality: American, born Canada
+Lifespan: 1873      –1939      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1910–1916
+
+Medium: Oil on canvas
+Dimensions: 25 1/4 x 30 1/8 in. (64.1 x 76.5 cm)
+
+Credit Line: Bequest of Miss Adelaide Milton de Groot (1876-1967), 1967
+
+---
+
+Artwork Title: Boy with Violin
+Object Type: Painting
+Classification: Unknown
+
+Artist: George Luks
+Nationality: American
+Lifespan: 1866      –1933      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1919–1925
+
+Medium: Oil on canvas
+Dimensions: 35 7/8 x 24 in. (91.1 x 61 cm)
+
+Credit Line: Bequest of Miss Adelaide Milton de Groot (1876-1967), 1967
+
+---
+
+Artwork Title: Spanish Music Hall
+Object Type: Painting
+Classification: Unknown
+
+Artist: Everett Shinn
+Nationality: American
+Lifespan: 1876      –1953      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1902–1902
+
+Medium: Oil on canvas board
+Dimensions: 13 3/4 x 17 3/4 in. (34.9 x 45.1 cm)
+
+Credit Line: Bequest of Miss Adelaide Milton de Groot (1876-1967), 1967
+
+---
+
+Artwork Title: The Green Dance Dress
+Object Type: Painting
+Classification: Unknown
+
+Artist: John Sloan
+Nationality: American
+Lifespan: 1871      –1951      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1946–1946
+
+Medium: Oil on Masonite
+Dimensions: 28 7/8 x 23 3/4 in. (73.3 x 60.3 cm)
+
+Credit Line: Bequest of Miss Adelaide Milton de Groot (1876-1967), 1967
+
+---
+
+Artwork Title: Birthplace of the Artist
+Object Type: Painting
+Classification: Unknown
+
+Artist: Louis Michel Eilshemius
+Nationality: American
+Lifespan: 1864      –1941      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1902–1902
+
+Medium: Oil on canvas
+Dimensions: 20 x 30 in. (50.8 x 76.2 cm)
+
+Credit Line: Bequest of Miss Adelaide Milton de Groot (1876-1967), 1967
+
+---
+
+Artwork Title: New York at Night
+Object Type: Painting
+Classification: Unknown
+
+Artist: Louis Michel Eilshemius
+Nationality: American
+Lifespan: 1864      –1941      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1907–1913
+
+Medium: Oil on cardboard, mounted on Masonite
+Dimensions: 28 x 22 1/4 in. (71.1 x 56.5 cm)
+
+Credit Line: Bequest of Miss Adelaide Milton de Groot (1876-1967), 1967
+
+---
+
+Artwork Title: Samoa
+Object Type: Painting
+Classification: Unknown
+
+Artist: Louis Michel Eilshemius
+Nationality: American
+Lifespan: 1864      –1941      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1907–1907
+
+Medium: Oil on canvas
+Dimensions: 23 7/8 x 27 1/2 in. (60.6 x 69.9 cm)
+
+Credit Line: Bequest of Miss Adelaide Milton de Groot (1876-1967), 1967
+
+---
+
+Artwork Title: Tragedy of the Sea
+Object Type: Painting
+Classification: Unknown
+
+Artist: Louis Michel Eilshemius
+Nationality: American
+Lifespan: 1864      –1941      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1916–1916
+
+Medium: Oil on board
+Dimensions: 40 1/2 x 61 1/4 in. (102.9 x 155.6 cm)
+
+Credit Line: Bequest of Miss Adelaide Milton de Groot (1876-1967), 1967
+
+---
+
+Artwork Title: From My Studio Window
+Object Type: Painting
+Classification: Unknown
+
+Artist: John Kane
+Nationality: American, Scottish
+Lifespan: 1860      –1934      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1932–1932
+
+Medium: Oil on canvas
+Dimensions: 22 3/8 x 34 3/8 in. (56.8 x 87.3 cm)
+
+Credit Line: Bequest of Miss Adelaide Milton de Groot (1876-1967), 1967
+
+---
+
+Artwork Title: The Monongahela River Valley, Pennsylvania
+Object Type: Painting
+Classification: Unknown
+
+Artist: John Kane
+Nationality: American, Scottish
+Lifespan: 1860      –1934      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1931–1931
+
+Medium: Oil on canvas
+Dimensions: 28 x 38 in. (71.1 x 96.5 cm)
+
+Credit Line: Bequest of Miss Adelaide Milton de Groot (1876-1967), 1967
+
+---
+
+Artwork Title: The Old Elm
+Object Type: Painting
+Classification: Unknown
+
+Artist: John Kane
+Nationality: American, Scottish
+Lifespan: 1860      –1934      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1924–1931
+
+Medium: Oil on canvas
+Dimensions: 21 1/8 x 25 in. (53.7 x 63.5 cm)
+
+Credit Line: Bequest of Miss Adelaide Milton de Groot (1876-1967), 1967
+
+---
+
+Artwork Title: Head of a Girl
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Elizabeth King Hawley
+Nationality: American
+Lifespan: 1870      –1929      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1934–1940
+
+Medium: Crayon and chalk on paper
+Dimensions: 15 1/16 x 18 3/4 in. (38.3 x 47.6 cm)
+
+Credit Line: Bequest of Miss Adelaide Milton de Groot (1867-1967), 1967
+
+---
+
+Artwork Title: Fishermen
+Object Type: Painting
+Classification: Unknown
+
+Artist: George Luks
+Nationality: American
+Lifespan: 1866      –1933      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1917–1923
+
+Medium: Oil on wood
+Dimensions: 12 3/4 x 16 in. (32.4 x 40.6 cm)
+
+Credit Line: Bequest of Miss Adelaide Milton de Groot (1876-1967), 1967
+
+---
+
+Artwork Title: Fern and Peonies
+Object Type: Painting
+Classification: Unknown
+
+Artist: Adelaide Milton de Groot
+Nationality: American
+Lifespan: 1876      –1967      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1949–1949
+
+Medium: Oil on canvas
+Dimensions: 20 1/8 x 18 1/4 in. (51.1 x 46.4 cm)
+
+Credit Line: Bequest of Miss Adelaide Milton de Groot (1876-1967), 1967
+
+---
+
+Artwork Title: Bain de Soleil
+Object Type: Painting
+Classification: Unknown
+
+Artist: Adelaide Milton de Groot
+Nationality: American
+Lifespan: 1876      –1967      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1930–1930
+
+Medium: Oil on canvas
+Dimensions: 23 1/2 x 28 3/8 in. (59.7 x 72.1 cm)
+
+Credit Line: Bequest of Miss Adelaide Milton de Groot (1876-1967), 1967
+
+---
+
+Artwork Title: Landscape—Catskills
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: Louis Michel Eilshemius
+Nationality: American
+Lifespan: 1864      –1941      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1895–1895
+
+Medium: Watercolor on paper
+Dimensions: Sight: 13 1/2 x 19 1/4 in. (34.3 x 48.9 cm)
+
+Credit Line: Gift of Mr. and Mrs. Roy R. Neuberger, 1967
+
+---
+
+Artwork Title: At the Milliner's
+Object Type: Drawing
+Classification: Unknown
+
+Artist: William James Glackens
+Nationality: American
+Lifespan: 1870      –1938      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1904–1910
+
+Medium: Pastel on paper, mounted on cardboard
+Dimensions: 10 1/8 x 13 1/8 in. (25.7 x 33.3 cm)
+
+Credit Line: Gift of Margaret and Raymond J. Horowitz, 1968
+
+---
+
+Artwork Title: Shoes, Figures, Etc.
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Bill Traylor
+Nationality: American
+Lifespan: 1853      –1949      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1936–1945
+
+Medium: Pencil on cardboard
+Dimensions: 10 x 8 1/4 in. (25.4 x 21 cm)
+
+Credit Line: Gift of Charles E. and Eugenia C. Shannon, 2001
+
+---
+
+Artwork Title: Blue Construction, Orange Figures
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Bill Traylor
+Nationality: American
+Lifespan: 1853      –1949      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1936–1945
+
+Medium: Gouache and pencil on cardboard
+Dimensions: 13 1/4 x 7 1/4 in. (33.7 x 18.4 cm)
+
+Credit Line: Gift of Eugenia and Charles Shannon, 2015
+
+---
+
+Artwork Title: Basket with Bird
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Bill Traylor
+Nationality: American
+Lifespan: 1853      –1949      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1936–1945
+
+Medium: Pencil on cardboard
+Dimensions: 10 7/8 x 8 1/8 in. (27.6 x 20.6 cm)
+
+Credit Line: Gift of Charles E. and Eugenia C. Shannon, 2001
+
+---
+
+Artwork Title: Spotted Cat
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Bill Traylor
+Nationality: American
+Lifespan: 1853      –1949      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1936–1945
+
+Medium: Gouache and pencil on cardboard
+Dimensions: 9 3/4 x 14 in. (24.8 x 35.6 cm)
+
+Credit Line: Gift of Charles E. and Eugenia C. Shannon, 2001
+
+---
+
+Artwork Title: Black Pig
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Bill Traylor
+Nationality: American
+Lifespan: 1853      –1949      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1936–1945
+
+Medium: Gouache and pencil on cardboard
+Dimensions: 11 x 16 5/8 in. (27.9 x 42.2 cm)
+
+Credit Line: Gift of Charles E. and Eugenia C. Shannon, 2001
+
+---
+
+Artwork Title: The Visit
+Object Type: Drawing
+Classification: Unknown
+
+Artist: William James Glackens
+Nationality: American
+Lifespan: 1870      –1938      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1897–1903
+
+Medium: Conté, brush and ink, and gouache on paper
+Dimensions: 10 1/2 x 9 3/8 in. (26.7 x 23.8 cm)
+
+Credit Line: Gift of Mr. and Mrs. Stuart P. Feld, 1981
+
+---
+
+Artwork Title: The Drowning Nymph
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: Louis Michel Eilshemius
+Nationality: American
+Lifespan: 1864      –1941      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1900–1900
+
+Medium: Watercolor on paper
+Dimensions: 12 1/8 x 20 in. (30.8 x 50.8 cm)
+
+Credit Line: Bequest of Scofield Thayer, 1982
+
+---
+
+Artwork Title: Tiles
+Object Type: Tiles
+Classification: Unknown
+
+Artist: Louis C. Tiffany|Tiffany Furnaces
+Nationality: American|American
+Lifespan: 1848      |          –1933      |9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1902–1908
+
+Medium: Favrile glass
+Dimensions: 4 x 4 in. (10.2 x 10.2 cm)
+
+Credit Line: Gift of Jeannette Genius McKean and Hugh Ferguson McKean, in memory of Charles Hosmer Morse, 2006
+
+---
+
+Artwork Title: Teapot
+Object Type: Teapot
+Classification: Unknown
+
+Artist: Tucker Factory
+Nationality: American
+Lifespan: 1826      –1838      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1826–1838
+
+Medium: Porcelain
+Dimensions: 6 x 9 3/4 x 5 3/4 in. (15.2 x 24.8 x 14.6 cm)
+Width with spout. Height to top of handle.
+
+Credit Line: Gift of Ronald S. Kane, 2009
+
+---
+
+Artwork Title: Burnham Beeches
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: Thomas Charles Farrer
+Nationality: American
+Lifespan: 1838      –1891      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1874–1874
+
+Medium: Watercolor and gouache on wove paper mounted on cardboard
+Dimensions: 7 x 10 1/16 in. (17.8 x 25.6 cm)
+
+Credit Line: Morris K. Jesup Fund, 2007
+
+---
+
+Artwork Title: Ewer
+Object Type: Ewer
+Classification: Unknown
+
+Artist: Thomas Fletcher
+Nationality: American
+Lifespan: 1787      –1866      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1830–1840
+
+Medium: Silver
+Dimensions: 14 5/8 x 9 1/4 in. (37.1 x 23.5 cm)
+
+Credit Line: Purchase, William Cullen Bryant Fellows Gifts, 2007
+
+---
+
+Artwork Title: Stove Plate
+Object Type: Stove plate
+Classification: Unknown
+
+Artist: Sally Ann Furnace
+Nationality: American
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1788–1794
+
+Medium: Cast-iron
+Dimensions: 26 x 35 in. (66 x 88.9 cm)
+
+Credit Line: Purchase, The Dobson Foundation Inc. Gift, 2006
+
+---
+
+Artwork Title: Stove Plate
+Object Type: Stove plate
+Classification: Unknown
+
+Artist: Centre Furnace
+Nationality: American
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1792–1798
+
+Medium: Cast-iron
+Dimensions: 19 1/2 x 26 in. (49.5 x 66 cm)
+
+Credit Line: Purchase, The Dobson Foundation Inc. Gift, 2006
+
+---
+
+Artwork Title: Stove Plate
+Object Type: Stove plate
+Classification: Unknown
+
+Artist: Hibernia Furnace
+Nationality: American
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1782–1782
+
+Medium: Cast-iron
+Dimensions: 12 x 29 3/4 in. (30.5 x 75.6 cm)
+
+Credit Line: Purchase, The Dobson Foundation Inc. Gift, 2006
+
+---
+
+Artwork Title: Ring
+Object Type: Ring
+Classification: Unknown
+
+Artist: Marie Zimmermann
+Nationality: American
+Lifespan: 1879      –1972      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1922–1932
+
+Medium: Gold, enamel, and indicolite tourmaline cabochon
+Dimensions: 1 1/16 x 9/16 x 11/16 in. (2.7 x 1.4 x 1.7 cm)
+
+Credit Line: Gift of Jacqueline Loewe Fowler, 2007
+
+---
+
+Artwork Title: Reverend Samuel Brown Wiley
+Object Type: Drawing, miniature
+Classification: Unknown
+
+Artist: John Neagle
+Nationality: American
+Lifespan: 1796      –1865      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1847–1847
+
+Medium: Oil, pen, and ink on paper
+Dimensions: 14 1/4 x 9 in. (36.2 x 22.9 cm)
+
+Credit Line: Purchase, Maria DeWitt Jesup Fund, by exchange, 2007
+
+---
+
+Artwork Title: Williams Middleton
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: Mary Roberts
+Nationality: American
+Lifespan:           –1761      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1752–1758
+
+Medium: Watercolor on ivory
+Dimensions: Oval: 1 1/2 x 1 in. (3.8 x 2.5 cm)
+
+Credit Line: Purchase, Dale T. Johnson Fund and Jan and Warren Adelson Gift, 2007
+
+---
+
+Artwork Title: William Middleton
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: Mary Roberts
+Nationality: American
+Lifespan:           –1761      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1749–1758
+
+Medium: Watercolor on ivory
+Dimensions: 1 1/2 x 1 in. (3.8 x 2.5 cm)
+
+Credit Line: Purchase, Dale T. Johnson Fund and Jan and Warren Adelson Gift, 2007
+
+---
+
+Artwork Title: Thomas Middleton
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: Mary Roberts
+Nationality: American
+Lifespan:           –1761      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1752–1758
+
+Medium: Watercolor on ivory
+Dimensions: 1 1/2 x 1 in. (3.8 x 2.5 cm)
+
+Credit Line: Purchase, Dale T. Johnson Fund and Jan and Warren Adelson Gift, 2007
+
+---
+
+Artwork Title: Hester Middleton
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: Mary Roberts
+Nationality: American
+Lifespan:           –1761      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1752–1758
+
+Medium: Watercolor on ivory
+Dimensions: 1 1/2 x 1 in. (3.8 x 2.5 cm)
+
+Credit Line: Purchase, Dale T. Johnson Fund and Jan and Warren Adelson Gift, 2007
+
+---
+
+Artwork Title: Henrietta Middleton
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: Mary Roberts
+Nationality: American
+Lifespan:           –1761      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1752–1758
+
+Medium: Watercolor on ivory
+Dimensions: 1 1/2 x 1 in. (3.8 x 2.5 cm)
+
+Credit Line: Purchase, Dale T. Johnson Fund and Jan and Warren Adelson Gift, 2007
+
+---
+
+Artwork Title: Portrait of a Man
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Gerrit Schipper
+Nationality: American
+Lifespan: 1775      –1835      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1805–1805
+
+Medium: Pastel on paper
+Dimensions: 21 x 18 in. (53.3 x 45.7 cm)
+
+Credit Line: Purchase, Bequest of John R. Morron, by exchange, 2007
+
+---
+
+Artwork Title: Lamp
+Object Type: Lamp
+Classification: Unknown
+
+Artist: Tiffany Studios
+Nationality:  
+Lifespan: 1902      –1932      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1899–1918
+
+Medium: Lead and glass
+Dimensions: 26 3/4 x 20 1/2 in. (67.9 x 52.1 cm)
+
+Credit Line: Bequest of William S. Lieberman, 2005
+
+---
+
+Artwork Title: Necklace
+Object Type: Necklace
+Classification: Unknown
+
+Artist: Frank Gardner Hale
+Nationality: American
+Lifespan: 1876      –1945      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1920–1920
+
+Medium: 18kt yellow gold, silver, peridots, amethysts, tourmalines, sapphires, and pearls.
+Dimensions: Length: 42 in. (106.7 cm)
+Pendant: 3 1/4 x 1 1/4 in. (8.25 x 3.2 cm)
+
+Credit Line: Gift of Jacqueline Loewe Fowler, 2014
+
+---
+
+Artwork Title: Rising Road with Mount Tamalpais
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: Percy Gray
+Nationality: American
+Lifespan: 1869      –1952      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1907–1913
+
+Medium: Watercolor on white wove paper
+Dimensions: 11 x 14 in. (27.9 x 35.6 cm)
+
+Credit Line: Gift of Donald C. Whitton, in honor of Robert Emory Johnson, 2006
+
+---
+
+Artwork Title: Windswept Tree and Rocks
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: Percy Gray
+Nationality: American
+Lifespan: 1869      –1952      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1920–1920
+
+Medium: Watercolor and gouache on white wove paper
+Dimensions: Sight: 15 1/2 x 19 1/2 in. (39.4 x 49.5 cm)
+
+Credit Line: From the Cleland and Katherine Whitton Collection, Gift of Janet Whitton Pynch and Donald C. Whitton, 2006
+
+---
+
+Artwork Title: Desk
+Object Type: Desk
+Classification: Unknown
+
+Artist: Henry Rust
+Nationality: American
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1770–1770
+
+Medium: Mahogany
+Dimensions: 42 x 37 x 18 1/2 in. (106.7 x 94 x 47 cm)
+
+Credit Line: Gift of the family of Edward and Kaye Scheider, 2007
+
+---
+
+Artwork Title: Embroidered sampler
+Object Type: Sampler
+Classification: Unknown
+
+Artist: Catherine Cassady
+Nationality: American
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1814–1814
+
+Medium: Embroidered silk on linen
+Dimensions: 16 1/2 x 15 1/2 in. (41.9 x 39.4 cm)
+
+Credit Line: Purchase, Mr. and Mrs. William Mitchell Jennings Jr. Gift, 2007
+
+---
+
+Artwork Title: Embroidered sampler
+Object Type: Sampler
+Classification: Unknown
+
+Artist: Margaret Cassady
+Nationality: American
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1826–1826
+
+Medium: Embroidered silk on linen
+Dimensions: 16 1/2 x 15 1/2 in. (41.9 x 39.4 cm)
+
+Credit Line: Purchase, Mr. and Mrs. William Mitchell Jennings Jr. Gift, 2007
+
+---
+
+Artwork Title: Life Mask of Abraham Lincoln
+Object Type: Life mask
+Classification: Unknown
+
+Artist: Leonard Wells Volk|Augustus Saint-Gaudens
+Nationality: American|American
+Lifespan: 1828      |1848      –1895      |1907      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1860–1886
+
+Medium: Bronze
+Dimensions: L. 8 in. (20.3 cm)
+
+Credit Line: Purchase, Jonathan L. Cohen and Allison B. Morrow Gift and Friends of the American Wing Fund, 2007
+
+---
+
+Artwork Title: Right Hand of Abraham Lincoln
+Object Type: Sculpture
+Classification: Unknown
+
+Artist: Leonard Wells Volk|Augustus Saint-Gaudens
+Nationality: American|American
+Lifespan: 1828      |1848      –1895      |1907      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1860–1866
+
+Medium: Bronze
+Dimensions: L. 6 1/4 in. (15.9 cm)
+
+Credit Line: Purchase, Jonathan L. Cohen and Allison B. Morrow Gift and Friends of the American Wing Fund, 2007
+
+---
+
+Artwork Title: Chair
+Object Type: Chair
+Classification: Unknown
+
+Artist: Lockwood de Forest
+Nationality: American
+Lifespan: 1850      –1932      
+
+Cultural Context: Indian (American market)
+Period: Unknown
+Date Range: 1879–1885
+
+Medium: Brass over teak
+Dimensions: 37 x 24 x 24 in. (94 x 61 x 61 cm)
+
+Credit Line: Sansbury-Mills Fund, 2007
+
+---
+
+Artwork Title: Theodore Robinson
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Kenyon Cox
+Nationality: American
+Lifespan: 1856      –1919      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1878–1878
+
+Medium: Pencil on paper
+Dimensions: 11 x 8 1/2 in. (27.9 x 21.6 cm)
+
+Credit Line: Gift of Margaret and Raymond J. Horowitz, 2007
+
+---
+
+Artwork Title: Low Tide, Riverside Yacht Club
+Object Type: Painting
+Classification: Unknown
+
+Artist: Theodore Robinson
+Nationality: American
+Lifespan: 1852      –1896      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1894–1894
+
+Medium: Oil on canvas
+Dimensions: 18 x 24 in. (45.7 x 61 cm)
+
+Credit Line: Gift of Margaret and Raymond J. Horowitz, 2007
+
+---
+
+Artwork Title: Self-Portrait
+Object Type: Painting
+Classification: Unknown
+
+Artist: Theodore Robinson
+Nationality: American
+Lifespan: 1852      –1896      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1881–1887
+
+Medium: Oil on canvas
+Dimensions: 13 1/4 x 10 1/4 in. (33.7 x 26 cm)
+
+Credit Line: Gift of Margaret and Raymond J. Horowitz, 2007
+
+---
+
+Artwork Title: Armchair
+Object Type: Armchair
+Classification: Unknown
+
+Artist: Thomas Affleck
+Nationality: American
+Lifespan: 1740      –1795      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1763–1769
+
+Medium: Mahogany, white oak
+Dimensions: 40 x 27 3/8 x 25 5/8 in. (101.6 x 69.5 x 65.1 cm)
+
+Credit Line: Purchase, John Stewart Kennedy Fund and Rogers Fund, by exchange, 2007
+
+---
+
+Artwork Title: Box
+Object Type: Box
+Classification: Unknown
+
+Artist: Carson and Barnum
+Nationality: American
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1902–1905
+
+Medium: Silver and enamel
+Dimensions: 7/8 x 2 9/16 in. (2.2 x 6.5 cm) 3 oz. 4 dwt (98.8g)
+
+Credit Line: Gift of Jacqueline Loewe Fowler, 2007
+
+---
+
+Artwork Title: Sketch for the Lafayette (verso)
+Object Type: Drawing
+Classification: Unknown
+
+Artist: John Sloan
+Nationality: American
+Lifespan: 1871      –1951      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1927–1927
+
+Medium: Graphite on paper
+Dimensions: 13 x 9 1/4 in. (33 x 23.5 cm)
+
+Credit Line: Gift of Richard M. French, in memory of Allyn French, 2007
+
+---
+
+Artwork Title: Sketch for the Lafayette (recto)
+Object Type: Drawing
+Classification: Unknown
+
+Artist: John Sloan
+Nationality: American
+Lifespan: 1871      –1951      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1927–1927
+
+Medium: Charcoal on paper
+Dimensions: 13 x 9 1/4 in. (33 x 23.5 cm)
+
+Credit Line: Gift of Richard M. French, in memory of Allyn French, 2007
+
+---
+
+Artwork Title: Catherine Augusta Wilmerding
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: Henry Colton Shumway
+Nationality: American
+Lifespan: 1807      –1884      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1843–1843
+
+Medium: Watercolor on ivory
+Dimensions: 6 1/4 x 5 1/2 in. (15.9 x 14 cm)
+Other (watercolor on an ivory support): 3 3/4 x 4 3/4 in. (9.5 x 12.1 cm)
+
+Credit Line: Gift of Elle Shushan, in honor of Allison Eckardt Ledes, 2007
+
+---
+
+Artwork Title: Joseph Barrell, Jr. (1765-1801)
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: Nathaniel Hancock
+Nationality: American
+Lifespan: 1785      –1809      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1790–1790
+
+Medium: Watercolor on ivory
+Dimensions: Portrait: 2 15/16 x 2 3/8 in. (7.5 x 6.1 cm)
+Mount (excluding hanging loop): 3 1/4 x 2 11/16 in. (8.2 x 6.9 cm)
+Memorial: 2 15/16 x 2 3/8 in. (7.5 x 6.1 cm)
+
+Credit Line: Purchase, Bequest of John R. Morron, by exchange, 2007
+
+---
+
+Artwork Title: Pair of Earrings
+Object Type: Earrings
+Classification: Unknown
+
+Artist: Wright, Kay and Company
+Nationality: American
+Lifespan:           –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1877–1880
+
+Medium: Gold, hair
+Dimensions: L. 2 1/4 in. (5.7 cm)
+
+Credit Line: Gift of Margaret Brearley, 1954
+
+---
+
+Artwork Title: Sabatos Rug
+Object Type: Rug
+Classification: Unknown
+
+Artist: Marion Larrabee Volk
+Nationality: American
+Lifespan: 1859      –1925      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1901–1901
+
+Medium: Wool on burlap backing
+Dimensions: 57 1/2 x 33 3/4 in. (146.1 x 85.7 cm)
+
+Credit Line: Purchase, David S. and Elizabeth W. Quackenbush Gift, 2008
+
+---
+
+Artwork Title: Young Faun with Heron
+Object Type: Sculpture
+Classification: Unknown
+
+Artist: Frederick William MacMonnies
+Nationality: American
+Lifespan: 1863      –1937      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1889–1890
+
+Medium: Bronze
+Dimensions: 26 3/4 x 11 x 16 in. (67.9 x 27.9 x 40.6 cm)
+
+Credit Line: Purchase, Diane, Daniel, and Mathew Wolf Gift, in honor of Ms. Thayer Tolles, 2007
+
+---
+
+Artwork Title: Colburn's Butte, South Utah
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: Thomas Moran
+Nationality: American, born England
+Lifespan: 1837      –1926      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1873–1873
+
+Medium: Watercolor, gouache and graphite on off-white wove paper
+Dimensions: Sheet: 13 7/8 x 9 7/16 in. (35.2 x 24 cm)
+Framed: 26 1/2 x 22 1/16 x 3 1/2 in. (67.3 x 56 x 8.9 cm)
+
+Credit Line: Gift of David and Laura Grey, in honor of Kevin J. Avery, 2009
+
+---
+
+Artwork Title: Cincinnati Pottery Club Incised Pitcher
+Object Type: Pitcher
+Classification: Unknown
+
+Artist: Laura A. Fry
+Nationality: American
+Lifespan: 1857      –1857      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1879–1885
+
+Medium: Earthenware with various glazes
+Dimensions: 7 x 5 in. (17.8 x 12.7 cm)
+
+Credit Line: Purchase, Mary Ellen Ball Gift, 2008
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Gorham Manufacturing Company
+Nationality: American
+Lifespan: 1831      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1880–1880
+
+Medium: Silver and copper
+Dimensions: 9 in. (22.9 cm)
+
+Credit Line: Purchase, Judy and John M. Angelo and Robert L. and Ann R. Fromer Gifts, 2008
+
+---
+
+Artwork Title: Three Stereographs
+Object Type: Photograph
+Classification: Unknown
+
+Artist: Thomas Moran
+Nationality: American, born England
+Lifespan: 1837      –1926      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1873–1873
+
+Medium: Three stereographs, mounted at corners on archival paperboard backing framed in Plexiglas
+Dimensions: Sheet (Three stereographs): 15 x 9 1/2 in. (38.1 x 24.1 cm)
+stereo photo No. 1067: 3 3/8 x 6 7/8 in. (8.6 x 17.5 cm)
+two stereo photos: 4 1/2 x 6 15/16 in. (11.4 x 17.6 cm)
+
+Credit Line: Gift of David and Laura Grey, 2010
+
+---
+
+Artwork Title: Letters of Mr. and Mrs. Thomas Moran
+Object Type: Letter
+Classification: Unknown
+
+Artist: Thomas Moran
+Nationality: American, born England
+Lifespan: 1837      –1926      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1878–1878
+
+Medium: Lined wove paper
+Dimensions: Sheet: 9 5/8 x 7 15/16 in. (24.4 x 20.2 cm)
+Other (Envelope): 2 5/8 x 5 in. (6.7 x 12.7 cm)
+Storage (Plexiglass panels): 9 1/2 x 15 in. (24.1 x 38.1 cm)
+
+Credit Line: Gift of David and Laura Grey, 2010
+
+---
+
+Artwork Title: Statement
+Object Type: Photograph
+Classification: Unknown
+
+Artist: Thomas Moran
+Nationality: American, born England
+Lifespan: 1837      –1926      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1927–1927
+
+Medium: Testimonial: graphite on paper; Photograph on paper, mounted on paper backing printed with brown double-line border.
+Dimensions: Other (Testimonial): 6 9/16 x 4 15/16 in. (16.7 x 12.5 cm)
+Other (Photograph): 3 15/16 x 2 3/8 in. (10 x 6 cm)
+
+Credit Line: Gift of David and Laura Grey, 2010
+
+---
+
+Artwork Title: Brooch
+Object Type: Brooch
+Classification: Unknown
+
+Artist: Carson and Barnum
+Nationality: American
+Lifespan:           –          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1900–1950
+
+Medium: Silver, green enamel, and opal
+Dimensions: 1 1/4 in. (3.2 cm)
+
+Credit Line: Gift of Jacqueline Loewe Fowler, 2007
+
+---
+
+Artwork Title: Bedstead
+Object Type: Bedstead
+Classification: Unknown
+
+Artist: Charles-Honoré Lannuier|Jean-Charles Cochois
+Nationality: American| 
+Lifespan: 1779      |1776      –1819      |1776      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1802–1811
+
+Medium: Mahogany, ebony and rosewood (secondary woods: ash and yellow poplar), gilded gesso, die-cut and stamped brass, and iron
+Dimensions: 42 1/2 x 58 x 92 1/2 in. (108 x 147.3 x 235 cm)
+
+Credit Line: Gift of Elizabeth Feld Herzberg and Peter A. Feld, 2007
+
+---
+
+Artwork Title: Cherry Laurel (Mock Orange) Bough
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: Mary Russell Smith
+Nationality: American
+Lifespan: 1842      –1878      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1842–1878
+
+Medium: Watercolor and gouache on paper
+Dimensions: 20 5/8 x 14 5/8 in. (52.4 x 37.1 cm)
+
+Credit Line: Gift of Judith F. Hernstadt, 2007
+
+---
+
+Artwork Title: Cypress Bough
+Object Type: Watercolor
+Classification: Unknown
+
+Artist: Mary Russell Smith
+Nationality: American
+Lifespan: 1842      –1878      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1842–1872
+
+Medium: Watercolor and gouache on paper
+Dimensions: 20 5/8 x 14 5/8 in. (52.4 x 37.1 cm)
+
+Credit Line: Gift of Judith F. Hernstadt, 2007
+
+---
+
+Artwork Title: Landscape sketch
+Object Type: Drawing
+Classification: Unknown
+
+Artist: James M. Hart
+Nationality:  
+Lifespan: 1828      –1901      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1828–1901
+
+Medium: Graphite with ruled graphite border on wove paper
+Dimensions: Sheet #1: 2 1/2 x 4 1/8 in. (6.4 x 10.5 cm)
+Sheet #2: 
+
+Sheet (#3 [folded in quarters]): 16 3/4 x 10 11/16 in. (42.5 x 27.1 cm)
+Other (image size ): 1 15/16 x 3 1/2 in. (4.9 x 8.9 cm)
+
+Credit Line: Gift of Judith F. Hernstadt, 2007
+
+---
+
+Artwork Title: Pier Table
+Object Type: Pier table
+Classification: Unknown
+
+Artist: Charles-Honoré Lannuier
+Nationality: American
+Lifespan: 1779      –1819      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1815–1819
+
+Medium: Mahogany, mahogany veneer, pine, tulip poplar, maple, marble, gilded brass, die-stamped brass, plate glass
+Dimensions: 35 1/4 x 48 1/2 x 21 in. (89.5 x 123.2 x 53.3 cm)
+
+Credit Line: Purchase, Ronald S. Kane Bequest, in memory of Berry B. Tracy, 2018
+
+---
+
+Artwork Title: Card table
+Object Type: Card table
+Classification: Unknown
+
+Artist: Duncan Phyfe
+Nationality: American, born Scotland
+Lifespan: 1770      –1854      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1810–1815
+
+Medium: Mahogany, mahogany veneer, white pine, yellow poplar, rosewood, brass, iron
+Dimensions: 29 5/8 × 36 × 18 1/2 in. (75.2 × 91.4 × 47 cm)
+
+Credit Line: Purchase, Ronald S. Kane Bequest, in memory of Berry B. Tracy, 2018
+
+---
+
+Artwork Title: Bedstead
+Object Type: Bedstead
+Classification: Unknown
+
+Artist: Duncan Phyfe
+Nationality: American, born Scotland
+Lifespan: 1770      –1854      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1815–1825
+
+Medium: Mahogany, mahogany veneer, vert antique, gilded cast brass
+Dimensions: 84 × 63 × 80 in. (213.4 × 160 × 203.2 cm)
+
+Credit Line: Gift of Juliana Curran Terian, 2021
+
+---
+
+Artwork Title: Theodore Roosevelt Special Inaugural Medal
+Object Type: Medal
+Classification: Unknown
+
+Artist: Augustus Saint-Gaudens|Adolph Alexander Weinman
+Nationality: American|American, born Germany
+Lifespan: 1848      |1870      –1907      |1952      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1905–1905
+
+Medium: Bronze
+Dimensions: Diameter: 2 7/8 in. (7.4 cm)
+
+Credit Line: Morris K. Jesup Fund, 2008
+
+---
+
+Artwork Title: Bracelet
+Object Type: Bracelet
+Classification: Unknown
+
+Artist: Edward Everett Oakes
+Nationality: American
+Lifespan: 1891      –1960      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1922–1928
+
+Medium: Gold, lapis, and pearls
+Dimensions: 7 3/4 in. (19.7 cm)
+
+Credit Line: Gift of Jacqueline Loewe Fowler, 2008
+
+---
+
+Artwork Title: Charger
+Object Type: Charger
+Classification: Unknown
+
+Artist: John Bennett
+Nationality: American
+Lifespan: 1840      –1907      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1877–1877
+
+Medium: Painted and glazed earthenware
+Dimensions: 17 in. diameter  x 2 in. deep (43.2 x 5.1 cm)
+
+Credit Line: Purchase, Barrie A. and Deedee Wigmore Foundation Gift, 2008
+
+---
+
+Artwork Title: Portrait of a Lady
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: Frederick R. Spencer
+Nationality: American
+Lifespan: 1806      –1875      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1830–1830
+
+Medium: Watercolor on ivory
+Dimensions: Sight: 2 5/8 x 2 1/4 in. (6.7 x 5.7 cm)
+
+Credit Line: Dale T. Johnson Fund, 2008
+
+---
+
+Artwork Title: The Dodge Children of Detroit
+Object Type: Painting, miniature
+Classification: Unknown
+
+Artist: Mira Edgerly
+Nationality: American
+Lifespan: 1872      –1954      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1926–1926
+
+Medium: Watercolor on ivory
+Dimensions: 4 1/2 x 4 in. (11.4 x 10.2 cm)
+
+Credit Line: Dale T. Johnson Fund, 2008
+
+---
+
+Artwork Title: Dressing table
+Object Type: Dressing table
+Classification: Unknown
+
+Artist: George A. Schastey|George A. Schastey & Co.
+Nationality: American, born Germany|American
+Lifespan: 1839      |1873      –1894      |1897      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1881–1882
+
+Medium: Satinwood, purpleheart, mother-of-pearl, brass, silver-plated brass, and original upholstery
+Dimensions: 30 1/2 × 30 5/8 × 22 1/2 in. (77.5 × 77.8 × 57.2 cm)
+
+Credit Line: Gift of The Museum of the City of New York, 2008
+
+---
+
+Artwork Title: Dressing glass
+Object Type: Dressing glass
+Classification: Unknown
+
+Artist: George A. Schastey & Co.|George A. Schastey
+Nationality: American|American, born Germany
+Lifespan: 1873      |1839      –1897      |1894      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1881–1882
+
+Medium: Satinwood, purpleheart, mother-of-pearl, brass, and mirror glass
+Dimensions: 23 1/4 × 15 3/4 × 10 1/2 in. (59.1 × 40 × 26.7 cm)
+
+Credit Line: Gift of The Museum of the City of New York, 2008
+
+---
+
+Artwork Title: Slipper chair
+Object Type: Armchair
+Classification: Unknown
+
+Artist: George A. Schastey & Co.|George A. Schastey
+Nationality: American|American, born Germany
+Lifespan: 1873      |1839      –1897      |1894      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1881–1882
+
+Medium: Possibly beech, brass castors, and reproduction upholstery
+Dimensions: Seat height: 14 1/2  (36.8 cm)
+Front-to-back: 25 1/2 in. (64.8 cm)
+Crest rail to floor: 25 in. (63.5 cm)
+Seat front s/s: 25 in. (63.5 cm)
+Inside stiles: 14 in. (35.6 cm)
+Outside stiles: 20 in. (50.8 cm)
+
+Credit Line: Gift of The Museum of the City of New York, 2008
+
+---
+
+Artwork Title: Wall bracket
+Object Type: Wall bracket, lights
+Classification: Unknown
+
+Artist: George A. Schastey|George A. Schastey & Co.
+Nationality: American, born Germany|American
+Lifespan: 1839      |1873      –1894      |1897      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1881–1882
+
+Medium: Brass, mother-of-pearl, glass shades, and semi-precious stones
+Dimensions: 37 x 21 in. (94 x 53.3 cm)
+
+Credit Line: Gift of The Museum of the City of New York, 2008
+
+---
+
+Artwork Title: Chandelier
+Object Type: Chandelier
+Classification: Unknown
+
+Artist: George A. Schastey & Co.|George A. Schastey
+Nationality: American|American, born Germany
+Lifespan: 1873      |1839      –1897      |1894      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1881–1882
+
+Medium: Brass, mother-of-pearl, glass shades, and semi-precious stones
+Dimensions: 75 in. (190.5 cm)
+
+Credit Line: Gift of The Museum of the City of New York, 2008
+
+---
+
+Artwork Title: Decanter with stopper
+Object Type: Decanter with stopper
+Classification: Unknown
+
+Artist: Baccarat
+Nationality: French
+Lifespan: 1764      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1890–1900
+
+Medium: Glass, wheel cut
+Dimensions: 8 7/8 × 3 3/8 × 3 3/8 in. (22.5 × 8.6 × 8.6 cm)
+
+Credit Line: Gift of The Museum of the City of New York, 2008
+
+---
+
+Artwork Title: Decanter with stopper
+Object Type: Decanter with stopper
+Classification: Unknown
+
+Artist: Baccarat
+Nationality: French
+Lifespan: 1764      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1890–1900
+
+Medium: Glass, wheel cut
+Dimensions: 8 7/8 x 3 3/8 x 3 3/8 in. (22.5 x 8.6 x 8.6 cm)
+
+Credit Line: Gift of The Museum of the City of New York, 2008
+
+---
+
+Artwork Title: Decanter with stopper
+Object Type: Decanter with stopper
+Classification: Unknown
+
+Artist: Baccarat
+Nationality: French
+Lifespan: 1764      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1890–1900
+
+Medium: Glass, wheel cut
+Dimensions: 8 7/8 × 3 3/8 × 3 3/8 in. (22.5 × 8.6 × 8.6 cm)
+
+Credit Line: Gift of The Museum of the City of New York, 2008
+
+---
+
+Artwork Title: Decanter with stopper
+Object Type: Decanter with stopper
+Classification: Unknown
+
+Artist: Baccarat
+Nationality: French
+Lifespan: 1764      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1890–1900
+
+Medium: Glass, wheel cut
+Dimensions: 8 7/8 × 3 3/8 × 3 3/8 in. (22.5 × 8.6 × 8.6 cm)
+
+Credit Line: Gift of The Museum of the City of New York, 2008
+
+---
+
+Artwork Title: Sconce
+Object Type: Wall light
+Classification: Unknown
+
+Artist: George A. Schastey & Co.|George A. Schastey & Co.|George A. Schastey
+Nationality: American|American|American, born Germany
+Lifespan: 1873      |1873      |1839      –1897      |1897      |1894      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1881–1882
+
+Medium: Brass, mother-of-pearl, glass shades, and semi-precious stones
+Dimensions: 15 x 10 in. (38.1 x 25.4 cm)
+
+Credit Line: Gift of The Museum of the City of New York, 2008
+
+---
+
+Artwork Title: Frances Folsom Cleveland
+Object Type: Medal
+Classification: Unknown
+
+Artist: Augustus Saint-Gaudens
+Nationality: American
+Lifespan: 1848      –1907      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1887–1892
+
+Medium: Bronze
+Dimensions: Diameter: 5 1/2 in. (14 cm)
+
+Credit Line: Friends of the American Wing Fund, 2008
+
+---
+
+Artwork Title: Porringer
+Object Type: Porringer
+Classification: Unknown
+
+Artist: Arthur J. Stone
+Nationality: American
+Lifespan: 1847      –1938      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1910–1929
+
+Medium: Silver
+Dimensions: 11/16 x 2 7/8 in. (1.7 x 7.3 cm) Bowl: 1 5/8 in. (4.1 cm) 16 dwt (25.3 g)
+
+Credit Line: Gift of Jacqueline Loewe Fowler, 2008
+
+---
+
+Artwork Title: Reynold Keen
+Object Type: Painting
+Classification: Unknown
+
+Artist: Matthew Pratt
+Nationality: American
+Lifespan: 1734      –1805      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1768–1770
+
+Medium: Oil on Canvas
+Dimensions: Sight: 30 x 25 in. (76.2 x 63.5 cm)
+
+Credit Line: Morris K. Jesup Fund, 2008
+
+---
+
+Artwork Title: Christiana Stille Keen
+Object Type: Painting
+Classification: Unknown
+
+Artist: Matthew Pratt
+Nationality: American
+Lifespan: 1734      –1805      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1768–1770
+
+Medium: Oil on canvas
+Dimensions: Sight: 30 x 25 in. (76.2 x 63.5 cm)
+
+Credit Line: Purchase, Maria Jesup Fund, 2008
+
+---
+
+Artwork Title: Floral Applique Quilt
+Object Type: Quilt
+Classification: Unknown
+
+Artist: Emeline Travis Ludington
+Nationality: American
+Lifespan: 1820      –1887      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1847–1853
+
+Medium: Cotton
+Dimensions: 86 x 98 in. (218.4 x 248.9 cm)
+
+Credit Line: Purchase, William Cullen Bryant Fellows Gifts, 2008
+
+---
+
+Artwork Title: Cypriote Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Louis C. Tiffany
+Nationality: American
+Lifespan: 1848      –1933      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1880–1900
+
+Medium: Favrile glass
+Dimensions: 15 in. (38.1 cm)
+
+Credit Line: Gift of the Corcoran Family, in memory of Joyce M. Corcoran, 2008
+
+---
+
+Artwork Title: Ring
+Object Type: Ring
+Classification: Unknown
+
+Artist: Florence Koehler
+Nationality: American
+Lifespan: 1861      –1944      
+
+Cultural Context: Unknown
+Period: Unknown
+Date Range: 1902–1908
+
+Medium: Gold, emerald, sapphire, and enamel
+Dimensions: 1 in. (2.5 cm)
+
+Credit Line: Purchase, Lee Paula Miller Gift, 2008
+
+---
+
+Artwork Title: Form drawing for pitcher
+Object Type: Drawing
+Classification: Unknown
+
+Artist: Tiffany & Co.
+Nationality:  
+Lifespan: 1837      –9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1837–2000
+
+Medium: Ink and graphite on paper
+Dimensions: 29 1/4 x 19 1/4 in. (74.3 x 48.9 cm)
+
+Credit Line: Gift of Tiffany and Co., 1987
+
+---
+
+Artwork Title: James DeLancey
+Object Type: Painting
+Classification: Unknown
+
+Artist: Gilbert Stuart
+Nationality: American
+Lifespan: 1755      –1828      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1782–1788
+
+Medium: Oil on canvas
+Dimensions: Sight size: 30 x 24 in. (76.2 x 61 cm)
+Framed: 40 x 35 x 2 3/8 in. (101.6 x 88.9 x 6 cm)
+
+Credit Line: Bequest of George D. Harris Jr., 2008
+
+---
+
+Artwork Title: Pilgrim vase
+Object Type: Pilgrim vase
+Classification: Unknown
+
+Artist: Karl L. H. Müller|Union Porcelain Works|Karl L. H. Müller
+Nationality: American|American|American
+Lifespan: 1820      |1863      |1820      –1890      |1922      |1890      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1876–1876
+
+Medium: Stoneware
+Dimensions: 6 9/16 x 6 x 1 3/4 in. (16.7 x 15.2 x 4.4 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Jardinière
+Object Type: Jardinière
+Classification: Unknown
+
+Artist: Karl L. H. Müller|Union Porcelain Works|Karl L. H. Müller
+Nationality: American|American|American
+Lifespan: 1820      |1863      |1820      –1890      |1922      |1890      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1876–1876
+
+Medium: Porcelain
+Dimensions: 13 5/16 x 13 in., 20lb. (33.8 x 33 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Lekythos
+Object Type: Lekythos
+Classification: Unknown
+
+Artist: Chelsea Keramic Art Works|John G. Low
+Nationality: American| 
+Lifespan: 1872      |1835      –1889      |1835      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1872–1880
+
+Medium: Earthenware
+Dimensions: 8 x 3 in. (20.3 x 7.6 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Susan S. G. Frackelton
+Nationality: American
+Lifespan: 1848      –1932      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1879–1879
+
+Medium: Stoneware
+Dimensions: 7 1/8 x 5 1/8 in. (18.1 x 13 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Ewer on stand
+Object Type: Ewer on stand
+Classification: Unknown
+
+Artist: Hugh C. Robertson|Chelsea Keramic Art Works
+Nationality:  |American
+Lifespan: 1844      |1872      –1908      |1889      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1872–1883
+
+Medium: Earthenware
+Dimensions: 14 5/16 x 7 3/4 in. (36.4 x 19.7 cm)
+Base diameter: 8 1/2 in. (8 1/2 in.)
+Body diameter: 7 3/4 in. (19.7 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Hugh C. Robertson|Chelsea Keramic Art Works
+Nationality:  |American
+Lifespan: 1844      |1872      –1908      |1889      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1874–1888
+
+Medium: Earthenware
+Dimensions: 12 5/8 x 5 5/8 in. (32.1 x 14.3 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Caroline H. Rimmer
+Nationality:  
+Lifespan: 1851      –1851      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1898–1898
+
+Medium: Earthenware
+Dimensions: 11 15/16 in. (30.3 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Wilhelmina Post|Grueby Pottery
+Nationality: American| 
+Lifespan: 1867      |1899      –1967      |1916      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1895–1912
+
+Medium: Earthenware
+Dimensions: 11 15/16 in. (30.3 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Umbrella stand
+Object Type: Umbrella stand
+Classification: Unknown
+
+Artist: Wheatley Pottery Company
+Nationality:  
+Lifespan: 1903      –1903      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1900–1910
+
+Medium: Earthenware
+Dimensions: 22 1/2 in., 28lb. (57.2 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Plaque
+Object Type: Plaque
+Classification: Unknown
+
+Artist: Charles Volkmar
+Nationality: American
+Lifespan: 1841      –1914      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1877–1877
+
+Medium: Earthenware or lava
+Dimensions: Framed: 24 7/8 x 14 7/8 in. (63.2 x 37.8 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Charles Volkmar|Charles Houry Pottery
+Nationality: American| 
+Lifespan: 1841      |1868      –1914      |1928      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1874–1882
+
+Medium: Earthenware
+Dimensions: 26 in. (66 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Jardinière
+Object Type: Jardinière
+Classification: Unknown
+
+Artist: Edouard Gilles Pottery|Charles Volkmar
+Nationality:  |American
+Lifespan: 1869      |1841      –1900      |1914      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1874–1882
+
+Medium: Earthenware
+Dimensions: 16 x 25 1/4 in. (40.6 x 64.1 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: M. Louise McLaughlin
+Nationality: American
+Lifespan: 1847      –1939      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1878–1878
+
+Medium: Earthenware
+Dimensions: 12 3/8 x 6 3/4 in. (31.4 x 17.1 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Thomas J. Wheatley
+Nationality: American
+Lifespan: 1853      –1853      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1879–1879
+
+Medium: Earthenware
+Dimensions: 13 1/4 x 11 3/16 in. (33.7 x 28.4 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: T. J. Wheatley & Company
+Nationality:  
+Lifespan: 1880      –1880      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1877–1885
+
+Medium: Earthenware
+Dimensions: 12 1/8 x 7 15/16 x 3 1/4 in. (30.8 x 20.2 x 8.3 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Rookwood Pottery Company|Maria Longworth Nichols
+Nationality: American|American
+Lifespan: 1880      |1849      –1967      |1932      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1881–1881
+
+Medium: Earthenware
+Dimensions: 11 13/16 x 11 in. (30 x 27.9 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: John Bennett
+Nationality: American
+Lifespan: 1840      –1907      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1882–1882
+
+Medium: Earthenware
+Dimensions: 25 1/2 in. (64.8 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Odell & Booth Brothers|Adolph Taunay
+Nationality: American| 
+Lifespan: 1880      |1848      –1880      |          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1877–1887
+
+Medium: Earthenware
+Dimensions: 8 7/8 x 9 3/8 x 3 1/8 in. (22.5 x 23.8 x 7.9 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Laura A. Fry|Rookwood Pottery Company
+Nationality: American|American
+Lifespan: 1857      |1880      –1857      |1967      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1884–1884
+
+Medium: Earthenware
+Dimensions: 18 3/16 x 9 1/16 in. (46.2 x 23 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Matthew A. Daly|Matt Morgan Art Pottery
+Nationality:  | 
+Lifespan: 1860      |1882      –1937      |1884      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1879–1885
+
+Medium: Earthenware
+Dimensions: 21 5/8 x 18 11/16 in. (54.9 x 47.5 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Kataro Shirayamadani|Rookwood Pottery Company
+Nationality: American, born Japan|American
+Lifespan: 1865      |1880      –1948      |1967      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1888–1888
+
+Medium: Earthenware
+Dimensions: 12 13/16 x 13 1/8 in. (32.5 x 33.3 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Matthew A. Daly|Rookwood Pottery Company
+Nationality:  |American
+Lifespan: 1860      |1880      –1937      |1967      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1897–1903
+
+Medium: Earthenware
+Dimensions: 13 7/8 x 5 1/16 in. (35.2 x 12.9 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: John D. Wareham|Rookwood Pottery Company
+Nationality:  |American
+Lifespan: 1871      |1880      –1954      |1967      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1900–1900
+
+Medium: Earthenware
+Dimensions: 12 5/16 x 6 11/16 in. (31.3 x 17 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Quiet Reflections
+Object Type: Plaque
+Classification: Unknown
+
+Artist: Rookwood Pottery Company|Carl Schmidt
+Nationality: American|American
+Lifespan: 1880      |1875      –1967      |1959      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1916–1916
+
+Medium: Earthenware
+Dimensions: Framed: 14 13/16 x 20 1/8 in. (37.6 x 51.1 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Chelsea Keramic Art Works|Hugh C. Robertson
+Nationality: American| 
+Lifespan: 1872      |1844      –1889      |1908      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1882–1892
+
+Medium: Stoneware
+Dimensions: 11 3/8 x 6 9/16 in. (28.9 x 16.6 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Hugh C. Robertson|Chelsea Keramic Art Works
+Nationality:  |American
+Lifespan: 1844      |1872      –1908      |1889      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1882–1892
+
+Medium: Stoneware
+Dimensions: 12 13/16 x 4 15/16 in. (32.5 x 12.5 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Chelsea Keramic Art Works|Hugh C. Robertson
+Nationality: American| 
+Lifespan: 1872      |1844      –1889      |1908      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1882–1892
+
+Medium: Stoneware
+Dimensions: 9 1/8 in. (23.2 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Chelsea Keramic Art Works|Hugh C. Robertson
+Nationality: American| 
+Lifespan: 1872      |1844      –1889      |1908      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1883–1892
+
+Medium: Stoneware
+Dimensions: 7 3/8 x 3 5/8 in. (18.7 x 9.2 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Hugh C. Robertson|Dedham Pottery
+Nationality:  |American
+Lifespan: 1844      |1895      –1908      |1943      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1893–1911
+
+Medium: Stoneware
+Dimensions: 14 3/4 in., 11lb. (37.5 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Dedham Pottery|Hugh C. Robertson
+Nationality: American| 
+Lifespan: 1895      |1844      –1943      |1908      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1893–1911
+
+Medium: Stoneware
+Dimensions: 9 13/16 x 9 in., 10lb. (24.9 x 22.9 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Dedham Pottery|Hugh C. Robertson
+Nationality: American| 
+Lifespan: 1895      |1844      –1943      |1908      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1893–1911
+
+Medium: Stoneware
+Dimensions: 7 1/8 in. (18.1 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Dedham Pottery|Hugh C. Robertson
+Nationality: American| 
+Lifespan: 1895      |1844      –1943      |1908      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1893–1911
+
+Medium: Stoneware
+Dimensions: 8 5/8 x 5 1/4 in. (21.9 x 13.3 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Hugh C. Robertson|Dedham Pottery
+Nationality:  |American
+Lifespan: 1844      |1895      –1908      |1943      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1893–1911
+
+Medium: Stoneware
+Dimensions: 9 3/4 x 5 1/16 in. (24.8 x 12.9 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Hugh C. Robertson|Dedham Pottery
+Nationality:  |American
+Lifespan: 1844      |1895      –1908      |1943      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1893–1911
+
+Medium: Stoneware
+Dimensions: 11 1/8 x 5 5/8 in. (28.3 x 14.3 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Hugh C. Robertson|Dedham Pottery
+Nationality:  |American
+Lifespan: 1844      |1895      –1908      |1943      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1893–1911
+
+Medium: Stoneware
+Dimensions: 7 3/8 x 5 5/8 in. (18.7 x 14.3 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Van Briggle Pottery Company|Artus Van Briggle
+Nationality: American|American
+Lifespan: 1901      |1869      –9999      |1904      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1901–1901
+
+Medium: Earthenware
+Dimensions: 7 3/4 in. (19.7 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Artus Van Briggle|Van Briggle Pottery Company
+Nationality: American|American
+Lifespan: 1869      |1901      –1904      |9999      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1903–1903
+
+Medium: Earthenware
+Dimensions: 13 11/16 in. (34.8 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: M. Louise McLaughlin
+Nationality: American
+Lifespan: 1847      –1939      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1897–1907
+
+Medium: Porcelain
+Dimensions: 7 5/8 in. (19.4 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: M. Louise McLaughlin
+Nationality: American
+Lifespan: 1847      –1939      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1897–1907
+
+Medium: Porcelain
+Dimensions: 4 1/4 x 5 1/2 in. (10.8 x 14 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Susan S. G. Frackelton
+Nationality: American
+Lifespan: 1848      –1932      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1892–1908
+
+Medium: Stoneware
+Dimensions: 6 1/4 x 4 3/4 in. (15.9 x 12.1 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: George E. Ohr
+Nationality: American
+Lifespan: 1857      –1918      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1894–1903
+
+Medium: Earthenware
+Dimensions: 9 9/16 x 7 in. (24.3 x 17.8 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: George E. Ohr
+Nationality: American
+Lifespan: 1857      –1918      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1897–1900
+
+Medium: Earthenware
+Dimensions: 9 1/4 x 4 1/2 in. (23.5 x 11.4 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: George E. Ohr
+Nationality: American
+Lifespan: 1857      –1918      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1900–1900
+
+Medium: Earthenware
+Dimensions: 11 7/16 x 6 3/8 in. (29.1 x 16.2 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2017
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: George E. Ohr
+Nationality: American
+Lifespan: 1857      –1918      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1892–1899
+
+Medium: Earthenware
+Dimensions: 9 x 5 3/4 in. (22.9 x 14.6 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: George E. Ohr
+Nationality: American
+Lifespan: 1857      –1918      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1894–1903
+
+Medium: Earthenware
+Dimensions: 6 13/16 x 4 1/4 in. (17.3 x 10.8 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: George E. Ohr
+Nationality: American
+Lifespan: 1857      –1918      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1894–1903
+
+Medium: Earthenware
+Dimensions: 7 3/4 x 4 3/8 in. (19.7 x 11.1 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2017
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: George E. Ohr
+Nationality: American
+Lifespan: 1857      –1918      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1894–1903
+
+Medium: Earthenware
+Dimensions: 7 9/16 in. (19.2 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Theophilus A. Brouwer|Brouwer Pottery of Theoophilus A. Brouwer|Middle Lane Pottery of Theophilus A. Brouwer
+Nationality:  | |American
+Lifespan: 1864      |1902      |1894      –1932      |1902      |1902      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1898–1928
+
+Medium: Earthenware
+Dimensions: 12 15/16 in. (33 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Edith Penman|Byrdcliffe Pottery|Elizabeth Hardenbergh
+Nationality:  | | 
+Lifespan: 1860      |1903      |1858      –1929      |1927      |1934      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1900–1925
+
+Medium: Earthenware
+Dimensions: 11 x 8 3/8 in. (27.9 x 21.3 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Albert L. Cusick|Avon Faience Company|Frederick Hurten Rhead
+Nationality:  | |American, born England
+Lifespan: 1881      |1902      |1880      –1946      |1902      |1942      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1899–1908
+
+Medium: Earthenware
+Dimensions: 8 15/16 in. (22.7 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: J. B. Owens Pottery Company
+Nationality: American
+Lifespan: 1891      –1907      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1900–1905
+
+Medium: Earthenware (“Henri Deux” line)
+Dimensions: 9 13/16 in. (24.9 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Roseville Pottery|Frederick Hurten Rhead
+Nationality:  |American, born England
+Lifespan: 1892      |1880      –1954      |1942      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1901–1911
+
+Medium: Earthenware
+Dimensions: 11 1/2 in. (29.2 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Roseville Pottery|Frederick Hurten Rhead
+Nationality:  |American, born England
+Lifespan: 1892      |1880      –1954      |1942      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1901–1911
+
+Medium: Earthenware
+Dimensions: 11 15/16 in. (30.3 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Jervis Pottery|Frederick Hurten Rhead
+Nationality: American|American, born England
+Lifespan: 1908      |1880      –1912      |1942      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1905–1912
+
+Medium: Earthenware
+Dimensions: 3 15/16 in. (10 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Frederick Hurten Rhead|Jervis Pottery
+Nationality: American, born England|American
+Lifespan: 1880      |1908      –1942      |1912      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1905–1912
+
+Medium: Earthenware
+Dimensions: 10 1/16 in. (25.6 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: University City Pottery|Frederick Hurten Rhead|Agnes Marie Rhead
+Nationality:  |American, born England| 
+Lifespan: 1909      |1880      |1877      –1914      |1942      |          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1910–1910
+
+Medium: Earthenware
+Dimensions: 9 1/8 in. (23.2 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2017
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Arequipa Pottery
+Nationality:  
+Lifespan: 1911      –1918      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1912–1912
+
+Medium: Earthenware
+Dimensions: 11 7/8 in. (30.2 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Grueby Pottery|George P. Kendrick
+Nationality:  | 
+Lifespan: 1899      |1850      –1916      |1850      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1888–1904
+
+Medium: Earthenware
+Dimensions: 17 5/8 x 7 1/4 in. (44.8 x 18.4 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Grueby Pottery|George P. Kendrick
+Nationality:  | 
+Lifespan: 1899      |1850      –1916      |1850      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1894–1904
+
+Medium: Earthenware
+Dimensions: 18 1/4 x 8 5/8 in. (46.4 x 21.9 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Charles Volkmar
+Nationality: American
+Lifespan: 1841      –1914      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1897–1913
+
+Medium: Earthenware
+Dimensions: 21 1/8 x 10 3/16 in. (53.7 x 25.9 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Fritz W. Albert|Gates Potteries (Teco Pottery)
+Nationality:  |American
+Lifespan: 1865      |1887      –1865      |1927      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1899–1908
+
+Medium: Earthenware
+Dimensions: 17 x 6 7/8 in. (43.2 x 17.5 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Northwestern Terra Cotta Company
+Nationality:  
+Lifespan: 1886      –1925      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1904–1923
+
+Medium: Stoneware
+Dimensions: 13 15/16 in. (35.4 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Bowl
+Object Type: Bowl
+Classification: Unknown
+
+Artist: Rose Valley Pottery|William P. Jervis
+Nationality: American|American, born England
+Lifespan: 1904      |1851      –1905      |1925      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1901–1908
+
+Medium: Earthenware
+Dimensions: 3 1/2 x 6 in. (8.9 x 15.2 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Denver China and Pottery Company|William A. Long
+Nationality:  | 
+Lifespan: 1901      |1844      –1905      |1918      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1903–1903
+
+Medium: Earthenware
+Dimensions: 5 x 5 5/16 in. (12.7 x 13.5 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Pewabic Pottery|Mary Chase Perry
+Nationality: American|American
+Lifespan: 1903      |1867      –1961      |1961      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1901–1907
+
+Medium: Earthenware
+Dimensions: 18 3/4 x 11 5/8 in., 20lb. (47.6 x 29.5 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Hampshire Pottery
+Nationality:  
+Lifespan: 1871      –1923      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1901–1917
+
+Medium: Earthenware
+Dimensions: 15 x 7 1/8 in. (38.1 x 18.1 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Louis C. Tiffany|Tiffany Studios
+Nationality: American| 
+Lifespan: 1848      |1902      –1933      |1932      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1901–1917
+
+Medium: Earthenware
+Dimensions: 14 3/8 in. (36.5 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: William J. Walley
+Nationality:  
+Lifespan: 1852      –1919      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1895–1921
+
+Medium: Stoneware
+Dimensions: 4 3/4 x 8 3/8 in. (12.1 x 21.3 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Ouachita Pottery
+Nationality:  
+Lifespan: 1906      –1908      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1903–1911
+
+Medium: Earthenware
+Dimensions: 11 1/8 in. (28.3 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Inkwell
+Object Type: Inkwell
+Classification: Unknown
+
+Artist: Lucy F. Perkins|Brush Guild Pottery
+Nationality:  | 
+Lifespan: 1875      |1897      –1949      |1897      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1907–1907
+
+Medium: Earthenware
+Dimensions: 5 1/2 x 6 in. (14 x 15.2 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: William J. Walley
+Nationality:  
+Lifespan: 1852      –1919      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1895–1921
+
+Medium: Stoneware
+Dimensions: 13 3/8 in. (34 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Frederick Hurten Rhead|S. A. Weller Pottery
+Nationality: American, born England| 
+Lifespan: 1880      |1888      –1942      |1948      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1901–1907
+
+Medium: Earthenware
+Dimensions: 7 5/8 in. (19.4 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Frederick Hurten Rhead|S. A. Weller Pottery
+Nationality: American, born England| 
+Lifespan: 1880      |1888      –1942      |1948      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1901–1907
+
+Medium: Earthenware
+Dimensions: 9 3/4 in. (24.8 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: S. A. Weller Pottery|Frederick Hurten Rhead
+Nationality:  |American, born England
+Lifespan: 1888      |1880      –1948      |1942      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1901–1907
+
+Medium: Earthenware
+Dimensions: 7 3/16 in. (18.3 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Marie Medora Ross|Newcomb Pottery
+Nationality:  |American
+Lifespan: 1844      |1894      –1844      |1940      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1902–1902
+
+Medium: Earthenware
+Dimensions: 16 1/8 x 8 7/16 in. (41 x 21.4 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2017
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Henrietta Davidson Bailey|Newcomb Pottery
+Nationality:  |American
+Lifespan: 1874      |1894      –1874      |1940      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1905–1905
+
+Medium: Earthenware
+Dimensions: 15 3/16 x 8 3/8 in. (38.6 x 21.3 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Pitcher
+Object Type: Pitcher
+Classification: Unknown
+
+Artist: Harriet Coulter Joor|Newcomb Pottery
+Nationality: American|American
+Lifespan: 1875      |1894      –1965      |1940      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1902–1902
+
+Medium: Earthenware
+Dimensions: 6 1/8 x 7 3/4 in. (15.6 x 19.7 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Marblehead Pottery
+Nationality:  
+Lifespan: 1905      –1936      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1907–1923
+
+Medium: Earthenware
+Dimensions: 13 1/4 in., 8lb., 7 3/4 in. (33.7 cm, 19.7 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2017
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Marblehead Pottery|Sarah Tutt|Arthur Irwin Hennessey
+Nationality:  |American|American
+Lifespan: 1905      |1859      |1882      –1936      |1859      |1923      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1905–1923
+
+Medium: Earthenware
+Dimensions: 14 1/2 in., 9lb., 6 1/4 in. (36.8 cm, 15.9 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Frederick E. Walrath
+Nationality:  
+Lifespan: 1870      –1921      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1905–1918
+
+Medium: Earthenware
+Dimensions: 13 5/8 x 6 in. (34.6 x 15.2 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Paul Revere Pottery|Saturday Evening Girls
+Nationality: American| 
+Lifespan: 1908      |1908      –1942      |1942      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1915–1915
+
+Medium: Earthenware
+Dimensions: 13 3/4 x 6 5/8 in. (34.9 x 16.8 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2017
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: J. B. Owens Pottery Company
+Nationality: American
+Lifespan: 1891      –1907      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1891–1891
+
+Medium: Cream colored earthenware
+Dimensions: 8 3/8 in. (21.3 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Marblehead Pottery|Arthur E. Baggs
+Nationality:  |American
+Lifespan: 1905      |1886      –1936      |1947      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1917–1933
+
+Medium: Earthenware
+Dimensions: 7 1/4 x 6 in. (18.4 x 15.2 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Mary Chase Perry|Pewabic Pottery
+Nationality: American|American
+Lifespan: 1867      |1903      –1961      |1961      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1915–1928
+
+Medium: Stoneware
+Dimensions: 12 1/8 in. (30.8 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Bowl
+Object Type: Bowl
+Classification: Unknown
+
+Artist: Craven Art Pottery|William P. Jervis
+Nationality:  |American, born England
+Lifespan: 1905      |1851      –1915      |1925      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1902–1911
+
+Medium: Earthenware
+Dimensions: 2 3/8 x 5 3/16 in. (6 x 13.2 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Clifton Art Pottery
+Nationality: American
+Lifespan: 1905      –1911      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1906–1906
+
+Medium: Porcelaneous stoneware
+Dimensions: 9 9/16 in. (24.3 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Charles Fergus Binns
+Nationality: American, born England
+Lifespan: 1857      –1934      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1907–1907
+
+Medium: Stoneware
+Dimensions: 13 5/8 in. (34.6 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Mary Chase Perry|Pewabic Pottery
+Nationality: American|American
+Lifespan: 1867      |1903      –1961      |1961      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1904–1913
+
+Medium: Earthenware
+Dimensions: 12 3/8 in. (31.4 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Roblin Pottery|Linna Vogel von Fogelstein Irelan|Alexander William Robertson
+Nationality:  | | 
+Lifespan: 1898      |1846      |1840      –1906      |1935      |1925      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1905–1905
+
+Medium: Stoneware
+Dimensions: 3 7/8 in. (9.8 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Merrimac Pottery
+Nationality:  
+Lifespan: 1900      –1908      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1897–1911
+
+Medium: Earthenware
+Dimensions: 15 1/8 in. (38.4 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: University City Pottery|Agnes Marie Rhead
+Nationality:  | 
+Lifespan: 1909      |1877      –1914      |          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1907–1914
+
+Medium: Porcelain
+Dimensions: 10 1/4 in. (26 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: University City Pottery|Taxile Doat
+Nationality:  |French
+Lifespan: 1909      |1851      –1914      |1938      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1912–1913
+
+Medium: Porcelain
+Dimensions: 12 3/4 in. (32.4 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Roseville Pottery|Frederick Hurten Rhead
+Nationality:  |American, born England
+Lifespan: 1892      |1880      –1954      |1942      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1901–1911
+
+Medium: Earthenware
+Dimensions: 12 1/4 in. (31.1 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Fred H. Robertson
+Nationality:  
+Lifespan: 1869      –1869      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1910–1924
+
+Medium: Stoneware
+Dimensions: 8 in. (20.3 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Grand Feu Pottery
+Nationality:  
+Lifespan: 1912      –1912      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1909–1919
+
+Medium: Stoneware
+Dimensions: 10 3/8 in. (26.4 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Fulper Pottery Company
+Nationality: American
+Lifespan: 1899      –1935      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1907–1914
+
+Medium: Stoneware
+Dimensions: 14 in., 8lb. (35.6 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Fulper Pottery Company
+Nationality: American
+Lifespan: 1899      –1935      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1908–1920
+
+Medium: Stoneware
+Dimensions: 12 1/2 in., 5lb. (31.8 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Fulper Pottery Company
+Nationality: American
+Lifespan: 1899      –1935      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1906–1919
+
+Medium: Stoneware
+Dimensions: 12 7/16 x 4 1/2 in., 7lb. (31.6 x 11.4 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Fulper Pottery Company
+Nationality: American
+Lifespan: 1899      –1935      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1915–1926
+
+Medium: Stoneware
+Dimensions: 20 5/8 in., 18lb. (52.4 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Ewer
+Object Type: Ewer
+Classification: Unknown
+
+Artist: Fulper Pottery Company
+Nationality: American
+Lifespan: 1899      –1935      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1911–1920
+
+Medium: Stoneware
+Dimensions: 14 7/8 in., 10lb. (37.8 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Globe
+Object Type: Vase
+Classification: Unknown
+
+Artist: Charles Fergus Binns
+Nationality: American, born England
+Lifespan: 1857      –1934      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1930–1930
+
+Medium: Stoneware
+Dimensions: 9 5/8 x 9 5/8 in., 5lb. (24.4 x 24.4 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Otto Natzler|Gertrud Natzler
+Nationality: American, born Austria|American, born Austria
+Lifespan: 1908      |1908      –2007      |1971      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1956–1956
+
+Medium: Earthenware
+Dimensions: 16 5/8 in., 3lb. (42.2 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2017
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Adelaide Alsop Robineau
+Nationality: American
+Lifespan: 1865      –1929      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1904–1911
+
+Medium: Porcelain
+Dimensions: 11 5/8 in. (29.5 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2017
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Arthur E. Baggs
+Nationality: American
+Lifespan: 1886      –1947      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1922–1922
+
+Medium: Earthenware
+Dimensions: 6 1/8 in. (15.6 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Rhoda Robbins|Threshold Pottery
+Nationality:  | 
+Lifespan:           |          –          |          
+
+Cultural Context: American
+Period: Unknown
+Date Range: 0–0
+
+Medium: Earthenware
+Dimensions: 6 1/2 in. (16.5 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Waylande Gregory|Cowan Pottery
+Nationality: American| 
+Lifespan: 1905      |1920      –1971      |1931      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1927–1933
+
+Medium: Earthenware
+Dimensions: 8 1/4 in. (21 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Bowl
+Object Type: Bowl
+Classification: Unknown
+
+Artist: Henry Varnum Poor
+Nationality: American
+Lifespan: 1887      –1970      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1928–1928
+
+Medium: Earthenware
+Dimensions: 9 1/8 x 11 5/8 in., 5lb. (23.2 x 29.5 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Charger
+Object Type: Charger
+Classification: Unknown
+
+Artist: Wilhelm Hunt Diederich
+Nationality: American, born Hungary
+Lifespan: 1884      –1953      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1922–1938
+
+Medium: Earthenware
+Dimensions: 2 5/8 x 16 5/8 in., 2lb. (6.7 x 42.2 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Charger
+Object Type: Charger
+Classification: Unknown
+
+Artist: Charles M. Harder
+Nationality:  
+Lifespan: 1889      –1889      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1934–1934
+
+Medium: Earthenware
+Dimensions: 3 1/2 x 16 3/8 in., 8lb. (8.9 x 41.6 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Arthur E. Baggs
+Nationality: American
+Lifespan: 1886      –1947      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1935–1935
+
+Medium: Earthenware
+Dimensions: 7 5/8 in. (19.4 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: William E. Hentschel|Rookwood Pottery Company
+Nationality:  |American
+Lifespan: 1892      |1880      –1962      |1967      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1931–1931
+
+Medium: Earthenware
+Dimensions: 7 1/4 in. (18.4 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Maija Grotell
+Nationality: American, born Finland
+Lifespan: 1899      –1973      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1937–1953
+
+Medium: Stoneware
+Dimensions: 16 5/8 in., 14lb. (42.2 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2017
+
+---
+
+Artwork Title: Vase
+Object Type: Vase
+Classification: Unknown
+
+Artist: Antonio Prieto
+Nationality: American, born Spain
+Lifespan: 1913      –1967      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1947–1958
+
+Medium: Stoneware
+Dimensions: 8 3/8 in., 3lb. (21.3 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Bowl
+Object Type: Bowl
+Classification: Unknown
+
+Artist: Rudolf Staffel
+Nationality: American
+Lifespan: 1911      –2002      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1954–1954
+
+Medium: Stoneware
+Dimensions: 6 5/8 x 8 in., 3lb. (16.8 x 20.3 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018
+
+---
+
+Artwork Title: Bowl
+Object Type: Bowl
+Classification: Unknown
+
+Artist: Edwin Scheier|Mary Scheier
+Nationality:  | 
+Lifespan: 1910      |1908      –1910      |2008      
+
+Cultural Context: American
+Period: Unknown
+Date Range: 1937–1953
+
+Medium: Stoneware
+Dimensions: 11 x 14 1/4 in., 9lb. (27.9 x 36.2 cm)
+
+Credit Line: Gift of Robert A. Ellison Jr., 2018

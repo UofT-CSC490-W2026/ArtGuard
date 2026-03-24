@@ -1,21 +1,63 @@
+"""Deterministic, stratified data splitting for k-fold cross-validation.
+
+Provides functions to assign images to outer folds and produce
+train/val/test splits that are:
+- **Deterministic**: Same seeds always produce the same splits.
+- **Stratified**: Each split preserves the ratio of sublabels
+  (original / forgery / imitation).
+
+Uses SHA-256 hashing keyed by (seed, image_id) to avoid any dependency
+on item ordering.
+"""
+
 from __future__ import annotations
-from typing import Dict, List, Tuple, Optional
+
 import hashlib
+from typing import Dict, List, Tuple
 
 
 def _stable_int(seed: int, image_id: str, salt: str = "") -> int:
-    """
-    This provides a deterministic approach to reproduce splits.
+    """Compute a deterministic integer hash from a seed, image_id, and optional salt.
+
+    Uses SHA-256 to produce a stable ordering of items that is reproducible
+    across runs, regardless of insertion order.
+
+    >>> _stable_int(42, "img-001")
+    70762790482105753
+    >>> _stable_int(42, "img-001") == _stable_int(42, "img-001")
+    True
+    >>> _stable_int(42, "img-001") != _stable_int(99, "img-001")
+    True
+
+    Args:
+        seed:     Integer seed for reproducibility.
+        image_id: The image's unique identifier.
+        salt:     Optional additional string to differentiate contexts.
+
+    Returns:
+        A deterministic non-negative integer.
     """
     msg = f"{seed}:{salt}:{image_id}".encode("utf-8")
     h = hashlib.sha256(msg).hexdigest()
-    return int(h[:16], 16)  
+    return int(h[:16], 16)
 
 
 def _get_stratum_value(item: dict, stratify_on: str) -> str:
-    """
-    This method ensures that each ImageRecord has a sublabel (original vs. forgery vs.
-    AI-imitation).
+    """Extract the stratification group from an image record.
+
+    Returns ``"UNKNOWN"`` if the stratification field is missing or empty.
+
+    >>> _get_stratum_value({"sublabel": "forgery"}, "sublabel")
+    'forgery'
+    >>> _get_stratum_value({}, "sublabel")
+    'UNKNOWN'
+
+    Args:
+        item:         A dict representing an ImageRecord.
+        stratify_on:  The field name to stratify on (e.g. ``"sublabel"``).
+
+    Returns:
+        The stratum value as a string.
     """
     sublabel = item.get(stratify_on)
     if sublabel is None or sublabel == "":
@@ -23,12 +65,24 @@ def _get_stratum_value(item: dict, stratify_on: str) -> str:
     return str(sublabel)
 
 
-def _group_by_stratum(items: List[dict], stratify_on: str) -> Dict[str, List[dict]]:
-    """
-    This method groups images based on their sublabels.
-    groups["original"] = original images
-    groups["forgery"] = forged images
-    groups["imitations"] = AI-imitations
+def _group_by_stratum(
+    items: List[dict], stratify_on: str
+) -> Dict[str, List[dict]]:
+    """Group image records by their stratification field value.
+
+    >>> items = [{"sublabel": "original"}, {"sublabel": "forgery"}, {"sublabel": "original"}]
+    >>> groups = _group_by_stratum(items, "sublabel")
+    >>> sorted(groups.keys())
+    ['forgery', 'original']
+    >>> len(groups["original"])
+    2
+
+    Args:
+        items:        List of ImageRecord dicts.
+        stratify_on:  Field name to group by.
+
+    Returns:
+        A dict mapping stratum values to lists of items.
     """
     groups: Dict[str, List[dict]] = {}
     for item in items:
@@ -41,18 +95,40 @@ def assign_folds(
     items: List[dict],
     k_folds: int,
     outer_seed: int,
-    inner_seed: int,  
+    inner_seed: int,
     stratify_on: str = "sublabel",
 ) -> Dict[str, int]:
-    """
-    This method assigns an outer fold to each image deterministically, while maintaining stratification
-    (i.e., equal ratio of original/forgery/imitation in train and test set).
+    """Assign each image to an outer fold deterministically with stratification.
+
+    Within each stratum (sublabel group), images are sorted by a stable hash
+    and assigned to folds in round-robin order, ensuring each fold has an
+    approximately equal ratio of each sublabel.
+
+    >>> items = [{"image_id": f"img-{i}", "sublabel": "original"} for i in range(10)]
+    >>> folds = assign_folds(items, k_folds=5, outer_seed=17, inner_seed=99)
+    >>> all(0 <= f < 5 for f in folds.values())
+    True
+    >>> len(folds)
+    10
+
+    Args:
+        items:        List of ImageRecord dicts (must contain ``image_id``).
+        k_folds:      Number of outer folds.
+        outer_seed:   Seed for deterministic fold assignment.
+        inner_seed:   Seed for inner splits (unused here, kept for API symmetry).
+        stratify_on:  Field name to stratify on (default ``"sublabel"``).
+
+    Returns:
+        A dict mapping image_id to fold index (0 to k_folds - 1).
     """
     groups = _group_by_stratum(items, stratify_on=stratify_on)
 
     assignment: Dict[str, int] = {}
     for sublabel, group_items in groups.items():
-        ordered = sorted(group_items, key=lambda item: _stable_int(outer_seed, item["image_id"], salt="outer"))
+        ordered = sorted(
+            group_items,
+            key=lambda item: _stable_int(outer_seed, item["image_id"], salt="outer"),
+        )
         for i, item in enumerate(ordered):
             assignment[item["image_id"]] = i % k_folds
 
@@ -68,25 +144,28 @@ def train_val_test_splits(
     val_fraction: float = 0.2,
     stratify_on: str = "sublabel",
 ) -> Tuple[List[str], List[str], List[str]]:
+    """Produce deterministic, stratified train/val/test splits for one outer fold.
+
+    - **Test**: All items assigned to ``fold_id`` by ``assign_folds``.
+    - **Val**: ~``val_fraction`` of the remaining items, stratified.
+    - **Train**: Everything else.
+
+    Uses SHA-256 hashing keyed by (inner_seed, fold_id, image_id) so the
+    validation selection is reproducible and differs across folds.
+
+    Args:
+        items:         List of ImageRecord dicts.
+        assignment:    Fold assignments from ``assign_folds``.
+        fold_id:       Which outer fold to use as the test set.
+        k_folds:       Total number of outer folds.
+        inner_seed:    Seed for deterministic train/val splitting.
+        val_fraction:  Fraction of the training pool to hold out for validation.
+        stratify_on:   Field name to stratify on.
+
+    Returns:
+        A tuple of (train_ids, val_ids, test_ids) where each is a sorted
+        list of image_id strings.
     """
-    For a given outer fold, produce train, validation and test splits.
-
-    For a given outer fold_id, produce deterministic, stratified:
-      train_ids, val_ids, test_ids
-
-    Outer split:
-      - test_ids: all items with assignment == fold_id
-      - train_pool: all other items
-
-    Inner split (within train_pool):
-      - val_ids: ~val_fraction of train_pool, selected STRATIFIED by `stratify_on`
-      - train_ids: remaining
-
-    Determinism:
-      - Uses SHA-256 stable hashing keyed by (inner_seed, fold_id, image_id)
-        so the validation selection is reproducible AND can differ across folds.
-    """
-    # Partition into train + test using fold_id.
     train_pool: List[dict] = []
     test_ids: List[str] = []
 
@@ -98,13 +177,10 @@ def train_val_test_splits(
         else:
             train_pool.append(item)
 
-    # Training and validation should have an equal ratio of original/forgery/imitation;
-    # stratification
     groups = _group_by_stratum(train_pool, stratify_on=stratify_on)
     train_ids: List[str] = []
     val_ids: List[str] = []
 
-    # Make training + validation set deterministic.
     fold_salt = f"inner:fold={fold_id}"
     for sublabel, group_items in groups.items():
         ordered = sorted(
@@ -135,17 +211,28 @@ def all_nested_splits(
     val_fraction: float = 0.2,
     stratify_on: str = "sublabel",
 ) -> Dict[int, Dict[str, List[str]]]:
-    """
-    Compute splits for every outer fold.
+    """Compute train/val/test splits for every outer fold.
+
+    Calls ``train_val_test_splits`` for each fold_id in ``range(k_folds)``.
+
+    >>> items = [{"image_id": f"img-{i}", "sublabel": "original"} for i in range(20)]
+    >>> folds = assign_folds(items, 5, 17, 99)
+    >>> splits = all_nested_splits(items, folds, 5, 99)
+    >>> sorted(splits.keys())
+    [0, 1, 2, 3, 4]
+    >>> sorted(splits[0].keys())
+    ['test', 'train', 'val']
+
+    Args:
+        items:         List of ImageRecord dicts.
+        assignment:    Fold assignments from ``assign_folds``.
+        k_folds:       Total number of outer folds.
+        inner_seed:    Seed for deterministic train/val splitting.
+        val_fraction:  Fraction of the training pool to hold out for validation.
+        stratify_on:   Field name to stratify on.
+
     Returns:
-      {
-        fold_id: {
-          "train": [...],
-          "val":   [...],
-          "test":  [...]
-        },
-        ...
-      }
+        A dict mapping fold_id to ``{"train": [...], "val": [...], "test": [...]}``.
     """
     out: Dict[int, Dict[str, List[str]]] = {}
     for fid in range(k_folds):

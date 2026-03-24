@@ -23,6 +23,20 @@ function handler(event) {
 EOF
 }
 
+# FastAPI routes (no /api prefix). Viewer uses HTTPS → CloudFront → ALB on HTTP :80.
+locals {
+  cf_alb_path_patterns = [
+    "/auth/*",
+    "/inference*",   # POST /inference + /inferences/*
+    "/train*",
+    "/evaluate*",
+    "/health*",
+    "/process_data*",
+    "/rag-query*",
+    "/api/*",        # optional future prefixed routes
+  ]
+}
+
 # Origin Access Control for S3
 resource "aws_cloudfront_origin_access_control" "frontend" {
   name                              = "${local.project_name}-frontend-oac"
@@ -85,26 +99,29 @@ resource "aws_cloudfront_distribution" "frontend" {
     }
   }
 
-  # Cache behavior for API requests - route to ALB
-  ordered_cache_behavior {
-    path_pattern     = "/api/*"
-    allowed_methods  = ["DELETE", "GET", "HEAD", "OPTIONS", "PATCH", "POST", "PUT"]
-    cached_methods   = ["GET", "HEAD"]
-    target_origin_id = "ALB-Backend"
+  # Route backend paths to ALB (same host as frontend → HTTPS, no mixed content).
+  dynamic "ordered_cache_behavior" {
+    for_each = toset(local.cf_alb_path_patterns)
+    content {
+      path_pattern     = ordered_cache_behavior.value
+      allowed_methods  = ["DELETE", "GET", "HEAD", "OPTIONS", "PATCH", "POST", "PUT"]
+      cached_methods   = ["GET", "HEAD"]
+      target_origin_id = "ALB-Backend"
 
-    forwarded_values {
-      query_string = true
-      headers      = ["Authorization", "Accept", "Content-Type", "Origin"]
-      cookies {
-        forward = "all"
+      forwarded_values {
+        query_string = true
+        headers      = ["Authorization", "Accept", "Content-Type", "Origin"]
+        cookies {
+          forward = "all"
+        }
       }
-    }
 
-    viewer_protocol_policy = "redirect-to-https"
-    min_ttl                = 0
-    default_ttl            = 0
-    max_ttl                = 0
-    compress               = true
+      viewer_protocol_policy = "redirect-to-https"
+      min_ttl                = 0
+      default_ttl            = 0
+      max_ttl                = 0
+      compress               = true
+    }
   }
 
   # Cache behavior for static assets 

@@ -5,32 +5,17 @@ set -e
 # Usage: ./bootstrap.sh [environment]
 # Example: ./bootstrap.sh dev
 
-# Ensure AWS CLI is in PATH (for pip-installed versions)
-# Add user local bin to PATH if it exists
-# if [ -d "$HOME/.local/bin" ]; then
-#   export PATH="$HOME/.local/bin:$PATH"
-# fi
-# # Also check for AWS CLI in common locations
-# if ! command -v aws &> /dev/null; then
-#   if [ -f "$HOME/.local/bin/aws" ]; then
-#     export PATH="$HOME/.local/bin:$PATH"
-#   elif [ -f "/usr/local/bin/aws" ]; then
-#     export PATH="/usr/local/bin:$PATH"
-#   fi
-# fi
+source "$(dirname "$0")/_colors.sh"
 
 ENVIRONMENT=${1:-dev}
 AWS_REGION=${AWS_REGION:-ca-central-1}
 
-# Store the root directory before changing
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ROOT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
 
-echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-echo "Terraform Bootstrap - ONE TIME SETUP"
-echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-echo "Environment: $ENVIRONMENT"
-echo "Region: $AWS_REGION"
+header "Terraform Bootstrap - ONE TIME SETUP"
+echo -e "  Environment: ${CYAN}$ENVIRONMENT${NC}"
+echo -e "  Region:      ${CYAN}$AWS_REGION${NC}"
 echo ""
 echo "This will:"
 echo "  1. Create S3 bucket for Terraform state"
@@ -44,7 +29,7 @@ echo ""
 read -p "Type 'BOOTSTRAP' to confirm: " CONFIRM
 
 if [ "$CONFIRM" != "BOOTSTRAP" ]; then
-  echo "❌ Aborted"
+  error "Aborted"
   exit 1
 fi
 
@@ -55,9 +40,8 @@ BUCKET_NAME="artguard-terraform-state"
 STATE_KEY="$ENVIRONMENT/terraform.tfstate"
 
 echo ""
-echo "🔍 Checking existing infrastructure..."
+step "Checking existing infrastructure..."
 
-# Try to check backend using Python (more reliable than AWS CLI)
 if command -v python3 &> /dev/null; then
   python3 -c "
 import boto3
@@ -65,80 +49,37 @@ import sys
 s3 = boto3.client('s3', region_name='$AWS_REGION')
 try:
     s3.head_bucket(Bucket='$BUCKET_NAME')
-    print('⚠️  S3 bucket already exists: $BUCKET_NAME')
+    print('  S3 bucket already exists: $BUCKET_NAME')
 except:
-    print('✅ S3 bucket does not exist yet')
+    print('  S3 bucket does not exist yet')
 try:
     s3.head_object(Bucket='$BUCKET_NAME', Key='$STATE_KEY')
-    print('⚠️  State file already exists: $STATE_KEY')
-    print('⚠️  This environment may already be bootstrapped')
+    print('  State file already exists: $STATE_KEY')
+    print('  This environment may already be bootstrapped')
     sys.exit(1)
 except:
-    print('✅ State file does not exist yet')
+    print('  State file does not exist yet')
 " 2>/dev/null || {
     echo ""
     read -p "Continue anyway? (yes/no): " CONTINUE
     if [ "$CONTINUE" != "yes" ]; then
-      echo "❌ Aborted"
+      echo "Aborted"
       exit 1
     fi
   }
 else
-  # Fallback: skip checks if Python not available
-  echo "⚠️  Python3 not available, skipping backend checks"
-  echo "   Will attempt to create backend if needed"
+  echo "  Python3 not available, skipping backend checks"
 fi
 
-# Setup backend (S3 + DynamoDB)
+# Validate Terraform configuration
 echo ""
-echo "Setting up backend..."
-# Try Python script first (works even if AWS CLI is broken)
-# From infra/terraform, scripts are at ../../scripts/
-if [ -f "../../scripts/setup-backend.py" ]; then
-  echo "Using Python backend setup script..."
-  python3 ../../scripts/setup-backend.py
-elif [ -f "../scripts/setup-backend.py" ]; then
-  echo "Using Python backend setup script..."
-  python3 ../scripts/setup-backend.py
-elif [ -f "setup-backend.py" ]; then
-  echo "Using Python backend setup script..."
-  python3 setup-backend.py
-elif [ -f "../../scripts/setup-backend.sh" ]; then
-  chmod +x ../../scripts/setup-backend.sh
-  ../../scripts/setup-backend.sh
-elif [ -f "../scripts/setup-backend.sh" ]; then
-  chmod +x ../scripts/setup-backend.sh
-  ../scripts/setup-backend.sh
-elif [ -f "setup-backend.sh" ]; then
-  chmod +x setup-backend.sh
-  ./setup-backend.sh
-else
-  echo "⚠️  No backend setup script found!"
-  echo "   Please create the backend manually:"
-  echo "   1. S3 bucket: artguard-terraform-state"
-  echo "   2. DynamoDB table: artguard-terraform-locks"
-  echo ""
-  read -p "Continue anyway? (yes/no): " CONTINUE
-  if [ "$CONTINUE" != "yes" ]; then
-    echo "❌ Aborted"
-    exit 1
-  fi
-fi
-
-# Initialize Terraform
-echo ""
-echo "🔧 Initializing Terraform..."
-terraform init -backend-config="key=$STATE_KEY" -backend-config="region=$AWS_REGION"
-
-# Validate
-echo ""
-echo "✅ Validating Terraform configuration..."
+step "Validating Terraform configuration..."
 terraform validate
 
 # Plan
 echo ""
-echo "Creating Terraform plan..."
-# Check if tfvars file exists in current directory, parent, or root
+step "Creating Terraform plan..."
+
 if [ -f "$ENVIRONMENT.tfvars" ]; then
   TFVARS_FILE="$ENVIRONMENT.tfvars"
 elif [ -f "../$ENVIRONMENT.tfvars" ]; then
@@ -152,36 +93,88 @@ else
   echo "   Checked: $ROOT_DIR/$ENVIRONMENT.tfvars"
   exit 1
 fi
+
 echo "Using variables file: $TFVARS_FILE"
 terraform plan -var-file=$TFVARS_FILE -out=tfplan
 
 echo ""
-echo "⚠️  IMPORTANT: Review the plan above before proceeding"
+warn "IMPORTANT: Review the plan above before proceeding"
 echo ""
 read -p "Apply this plan? (yes/no): " APPLY
 
 if [ "$APPLY" != "yes" ]; then
-  echo "❌ Aborted"
+  error "Aborted"
   exit 1
 fi
 
+# Pre-apply: import any AWS resources that already exist (e.g. from a failed destroy)
+echo ""
+echo "Checking for existing resources that need importing..."
+
+# DynamoDB tables
+for tbl_suffix in users inference-records image-records patch-records run-records config-records; do
+  tbl_name="artguard-${tbl_suffix}-${ENVIRONMENT}"
+  tf_resource="aws_dynamodb_table.${tbl_suffix//-/_}"
+  if aws dynamodb describe-table --table-name "$tbl_name" --region "$AWS_REGION" >/dev/null 2>&1; then
+    terraform import -var-file="$TFVARS_FILE" "$tf_resource" "$tbl_name" 2>/dev/null \
+      && echo "  Imported existing table: $tbl_name" \
+      || echo "  Already in state: $tbl_name"
+  fi
+done
+
+# S3 buckets
+for bucket_suffix in images-raw knowledge-base frontend images-processed; do
+  bucket_name="artguard-${bucket_suffix}-${ENVIRONMENT}"
+  tf_resource="aws_s3_bucket.${bucket_suffix//-/_}"
+  if aws s3api head-bucket --bucket "$bucket_name" --region "$AWS_REGION" 2>/dev/null; then
+    terraform import -var-file="$TFVARS_FILE" "$tf_resource" "$bucket_name" 2>/dev/null \
+      && echo "  Imported existing bucket: $bucket_name" \
+      || echo "  Already in state: $bucket_name"
+  fi
+done
+
+# Secrets (may be pending deletion or already exist)
+echo ""
+echo "Checking for existing secrets (pending deletion or active)..."
+for secret_suffix in "modal-api-key" "jwt-secret"; do
+  secret_name="artguard/${secret_suffix}-${ENVIRONMENT}"
+  # Restore if pending deletion
+  aws secretsmanager restore-secret \
+    --secret-id "$secret_name" \
+    --region "$AWS_REGION" 2>/dev/null \
+    && echo "  Restored pending-deletion secret: $secret_name" || true
+  # Import into terraform state if it exists in AWS but not in state
+  secret_arn=$(aws secretsmanager describe-secret \
+    --secret-id "$secret_name" \
+    --region "$AWS_REGION" \
+    --query 'ARN' --output text 2>/dev/null) || true
+  if [[ -n "$secret_arn" && "$secret_arn" != "None" ]]; then
+    tf_resource="aws_secretsmanager_secret.${secret_suffix//-/_}"
+    terraform import "$tf_resource" "$secret_arn" 2>/dev/null \
+      && echo "  Imported existing secret: $secret_name" \
+      || echo "  Secret already in state: $secret_name"
+  fi
+done
+
+# Re-plan after potential imports
+echo ""
+echo "Re-planning after secret imports..."
+terraform plan -var-file=$TFVARS_FILE -out=tfplan
+
 # Apply
 echo ""
-echo "Applying Terraform configuration..."
+step "Applying Terraform configuration..."
 terraform apply -auto-approve tfplan
 
 echo ""
-echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-echo "✅ Bootstrap Complete!"
-echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+header "Bootstrap Complete!"
 echo ""
-echo "Key Outputs:"
+info "Key Outputs:"
 echo ""
-echo "Frontend:"
-terraform output cloudfront_distribution_url || echo "  Not available"
+echo -e "  ${BOLD}Frontend:${NC}"
+terraform output cloudfront_distribution_url || echo -e "  ${DIM}Not available${NC}"
 echo ""
-echo "Backend API:"
-terraform output backend_url || echo "  Not available"
+echo -e "  ${BOLD}Backend API:${NC}"
+terraform output backend_url || echo -e "  ${DIM}Not available${NC}"
 echo ""
-echo "🎉 Your $ENVIRONMENT environment is ready!"
-echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+success "Your $ENVIRONMENT environment is ready!"

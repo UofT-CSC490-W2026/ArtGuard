@@ -43,3 +43,10 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
+
+# Training/test/val image data (too large for Git)
+data/
+
+# Frontend (Node / Vite)
+node_modules/
+src/apps/frontend/dist/
