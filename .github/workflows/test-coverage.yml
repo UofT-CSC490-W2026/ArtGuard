@@ -30,13 +30,14 @@ jobs:
 
       - name: Run tests with coverage
         env:
+          PYTHONPATH: .
           ENVIRONMENT: dev
           AWS_REGION: us-east-1
           AWS_DEFAULT_REGION: us-east-1
           AWS_ACCESS_KEY_ID: testing
           AWS_SECRET_ACCESS_KEY: testing
         run: |
-          pytest tests/ \
+          pytest \
             --cov=src \
             --cov-report=xml:coverage.xml \
             --cov-report=term-missing \
