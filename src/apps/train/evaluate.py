@@ -103,11 +103,26 @@ def _print_metrics(title: str, m: dict) -> None:
     print(f"      [FN={cm[1][0]:>5}  TP={cm[1][1]:>5}]")
 
 
+def _image_id_from_patch_path(patch_path: str) -> str:
+    """
+    Derive ``image_id`` from a bare patch S3 key.
+
+    Expected layout (from preprocess/driver):
+      {prefix}/{image_id}/{patch_type}/{patch_filename}
+
+    For that layout, ``image_id`` is the third-from-last path segment.
+    """
+    parts = Path(patch_path).parts
+    if len(parts) < 4:
+        raise ValueError(f"Unexpected patch_path format: {patch_path!r}")
+    return parts[-3]
+
+
 # ---------------------------------------------------------------------------
 # Core evaluation logic
 # ---------------------------------------------------------------------------
 
-def _evaluate(variant: str, checkpoint_path: str) -> tuple[dict, list[dict]]:
+def _evaluate(variant: str, checkpoint_path: str) -> tuple[dict, list[dict], list[dict]]:
     """
     Returns:
         metrics_results : aggregated metrics dict (saved as _metrics.json)
@@ -221,7 +236,7 @@ def _evaluate(variant: str, checkpoint_path: str) -> tuple[dict, list[dict]]:
     img_sublabel: dict[str, str] = {}
 
     for prob, lbl, sl, patch_path in zip(all_probs, all_labels, all_sublabels, all_patch_paths):
-        image_id = Path(patch_path).parent.name
+        image_id = _image_id_from_patch_path(patch_path)
         img_probs[image_id].append(prob)
         img_label[image_id] = lbl
         img_sublabel[image_id] = sl if sl else "unlabelled"
@@ -229,12 +244,25 @@ def _evaluate(variant: str, checkpoint_path: str) -> tuple[dict, list[dict]]:
     painting_labels: list[int] = []
     painting_preds: list[int] = []
     painting_sublabels: list[str] = []
+    image_log: list[dict] = []
 
     for image_id, probs in img_probs.items():
         mean_prob = sum(probs) / len(probs)
         painting_labels.append(img_label[image_id])
-        painting_preds.append(1 if mean_prob > 0.5 else 0)
+        pred = 1 if mean_prob > 0.5 else 0
+        painting_preds.append(pred)
         painting_sublabels.append(img_sublabel[image_id])
+        image_log.append(
+            {
+                "image_id": image_id,
+                "true_label": img_label[image_id],
+                "pred_label": pred,
+                "mean_prob": round(mean_prob, 6),
+                "correct": img_label[image_id] == pred,
+                "sublabel": img_sublabel[image_id],
+                "n_patches": len(probs),
+            }
+        )
 
     painting_overall = _compute_metrics(painting_labels, painting_preds)
 
@@ -290,7 +318,7 @@ def _evaluate(variant: str, checkpoint_path: str) -> tuple[dict, list[dict]]:
     patch_log = [
         {
             "patch_path": patch_path,
-            "image_id": Path(patch_path).parent.name,
+            "image_id": _image_id_from_patch_path(patch_path),
             "true_label": lbl,
             "pred_label": pred,
             "prob": round(prob, 6),
@@ -302,7 +330,7 @@ def _evaluate(variant: str, checkpoint_path: str) -> tuple[dict, list[dict]]:
         )
     ]
 
-    return metrics_results, patch_log
+    return metrics_results, patch_log, image_log
 
 
 # ---------------------------------------------------------------------------
@@ -340,7 +368,9 @@ def main(
     if variant not in ("tiny", "base"):
         raise ValueError(f"variant must be 'tiny' or 'base', got '{variant}'")
 
-    metrics, patch_log = evaluate.remote(variant=variant, checkpoint_path=checkpoint)
+    metrics, patch_log, image_log = evaluate.remote(
+        variant=variant, checkpoint_path=checkpoint
+    )
 
     stem = Path(checkpoint).stem
     output_path = Path(output_dir)
@@ -348,6 +378,7 @@ def main(
 
     metrics_file = output_path / f"eval_{variant}_{stem}_metrics.json"
     patches_file = output_path / f"eval_{variant}_{stem}_patches.json"
+    images_file = output_path / f"eval_{variant}_{stem}_images.json"
 
     with open(metrics_file, "w") as f:
         json.dump(metrics, f, indent=2)
@@ -357,3 +388,6 @@ def main(
 
     print(f"Metrics saved to  : {metrics_file}")
     print(f"Patch log saved to: {patches_file}")
+    with open(images_file, "w") as f:
+        json.dump(image_log, f, indent=2)
+    print(f"Image log saved to: {images_file}")

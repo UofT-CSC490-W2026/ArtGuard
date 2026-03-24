@@ -71,6 +71,7 @@ echo
 python3 - <<'PY'
 import csv
 import os
+import re
 from typing import Dict, List, Optional, Tuple
 
 import boto3
@@ -136,7 +137,18 @@ def upload_file(s3, local_path: str, bucket: str, key: str) -> None:
     )
 
 
-def to_ddb_item(row: dict, s3_uri: str) -> dict:
+def infer_split_from_path(path: str) -> Optional[str]:
+    p = normalize_relpath(path).lower()
+    if re.search(r"(^|[/_.-])(train)([/_.-]|$)", p):
+        return "train"
+    if re.search(r"(^|[/_.-])(val|valid|validation)([/_.-]|$)", p):
+        return "val"
+    if re.search(r"(^|[/_.-])(test)([/_.-]|$)", p):
+        return "test"
+    return None
+
+
+def to_ddb_item(row: dict, s3_uri: str, local_relpath: Optional[str] = None) -> dict:
     """
     Build a DynamoDB ImageRecord item from a CSV row.
     Uses the actual uploaded S3 URI (not the CSV's original path).
@@ -148,6 +160,11 @@ def to_ddb_item(row: dict, s3_uri: str) -> dict:
         v = str(v).strip()
         return v if v != "" else None
 
+    # Prefer path relative to DATA_DIR (actual on-disk location), then CSV image_name.
+    split_from_path = infer_split_from_path(local_relpath or "")
+    if split_from_path is None:
+        split_from_path = infer_split_from_path(row.get("image_name") or "")
+
     item = {
         "image_id": row["image_id"],
         "created_at": int(row["created_at"]) if row.get("created_at") else 0,
@@ -156,7 +173,7 @@ def to_ddb_item(row: dict, s3_uri: str) -> dict:
         "image_width": int(row["image_width"]) if row.get("image_width") else 0,
         "image_height": int(row["image_height"]) if row.get("image_height") else 0,
         "label": row.get("label", ""),
-        "split": row.get("split", "unassigned") or "unassigned",
+        "split": split_from_path or (row.get("split", "unassigned") or "unassigned"),
     }
 
     for k in ["sublabel", "run_id", "fold_id", "attributed_creator", "actual_creator"]:
@@ -277,7 +294,8 @@ def main() -> int:
                 else:
                     skipped_upload_exists += 1
 
-            item = to_ddb_item(row, s3_uri)
+            local_relpath = normalize_relpath(os.path.relpath(local_path, DATA_DIR))
+            item = to_ddb_item(row, s3_uri, local_relpath=local_relpath)
 
             if DRY_RUN:
                 print(

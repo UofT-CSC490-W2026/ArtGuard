@@ -12,17 +12,51 @@ Endpoints:
 
 from __future__ import annotations
 
+import json
 import os
-from dataclasses import asdict
 from typing import Optional
 
 import boto3
+import modal
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
 
 from src.apps.data_pipeline.schemas import RunRecord
+from src.apps.train.config import DEFAULT_CONFIG, MODAL_EVAL_APP, MODAL_TRAINING_APP
 
 router = APIRouter()
+
+
+def _ensure_modal_credentials() -> bool:
+    """
+    Modal's client uses MODAL_TOKEN_ID + MODAL_TOKEN_SECRET (see Modal docs).
+    ECS injects MODAL_API_KEY from Secrets Manager — accept JSON or two-line text.
+    """
+    if os.environ.get("MODAL_TOKEN_ID") and os.environ.get("MODAL_TOKEN_SECRET"):
+        return True
+    raw = (os.environ.get("MODAL_API_KEY") or "").strip()
+    if not raw:
+        return False
+    if raw.startswith("{"):
+        try:
+            d = json.loads(raw)
+        except json.JSONDecodeError:
+            return False
+        tid = d.get("token_id")
+        sec = d.get("token_secret")
+        if tid and sec:
+            os.environ["MODAL_TOKEN_ID"] = str(tid)
+            os.environ["MODAL_TOKEN_SECRET"] = str(sec)
+            return True
+        # Legacy doc shape: {"api_key": "..."} — not usable without id/secret split
+        return False
+    if "\n" in raw:
+        first, rest = raw.split("\n", 1)
+        if first.strip() and rest.strip():
+            os.environ["MODAL_TOKEN_ID"] = first.strip()
+            os.environ["MODAL_TOKEN_SECRET"] = rest.strip()
+            return True
+    return bool(os.environ.get("MODAL_TOKEN_ID") and os.environ.get("MODAL_TOKEN_SECRET"))
 
 
 # ---------------------------------------------------------------------------
@@ -59,8 +93,6 @@ async def start_training(body: TrainRequest):
         variant : echoed back
         status  : "started"
     """
-    from src.apps.train.train import DEFAULT_CONFIG, train_swin_base, train_swin_tiny
-
     if body.variant not in ("tiny", "base"):
         raise HTTPException(
             status_code=400,
@@ -76,21 +108,25 @@ async def start_training(body: TrainRequest):
     # Merge caller config with defaults
     config = {**DEFAULT_CONFIG, **(body.config or {})}
 
-    # Write RunRecord to DynamoDB
-    run = RunRecord()
-    run.status            = "running"
-    run.modal_volume_path = f"/checkpoints/{body.variant}"
+    run = RunRecord(
+        status="running",
+        modal_volume_path=f"/checkpoints/{body.variant}",
+    )
 
     ddb        = boto3.resource("dynamodb", region_name=region)
     runs_table = ddb.Table(runs_table_name)
-    runs_table.put_item(Item=asdict(run))
+    runs_table.put_item(Item=run.to_dynamo_item())
 
-    # Spawn Modal Function (non-blocking)
+    # Spawn deployed Modal function by name (matches modal deploy of train.py)
+    fn_name = "train_swin_tiny" if body.variant == "tiny" else "train_swin_base"
     try:
-        if body.variant == "tiny":
-            train_swin_tiny.spawn(config)
-        else:
-            train_swin_base.spawn(config)
+        if not _ensure_modal_credentials():
+            raise RuntimeError(
+                "Modal credentials missing. Set MODAL_TOKEN_ID and MODAL_TOKEN_SECRET, "
+                "or set MODAL_API_KEY as JSON with token_id/token_secret."
+            )
+        train_fn = modal.Function.from_name(MODAL_TRAINING_APP, fn_name)
+        await train_fn.spawn.aio(config)
     except Exception as exc:
         runs_table.update_item(
             Key={"run_id": run.run_id},
@@ -138,8 +174,6 @@ async def start_evaluation(body: EvaluateRequest):
         checkpoint : echoed back
         status     : "started"
     """
-    from src.apps.train.evaluate import evaluate
-    
     if body.variant not in ("tiny", "base"):
         raise HTTPException(
             status_code=400,
@@ -153,7 +187,13 @@ async def start_evaluation(body: EvaluateRequest):
         )
 
     try:
-        evaluate.spawn(variant=body.variant, checkpoint_path=body.checkpoint)
+        if not _ensure_modal_credentials():
+            raise RuntimeError(
+                "Modal credentials missing. Set MODAL_TOKEN_ID and MODAL_TOKEN_SECRET, "
+                "or set MODAL_API_KEY as JSON with token_id/token_secret."
+            )
+        eval_fn = modal.Function.from_name(MODAL_EVAL_APP, "evaluate")
+        await eval_fn.spawn.aio(variant=body.variant, checkpoint_path=body.checkpoint)
     except Exception as exc:
         raise HTTPException(status_code=500, detail=f"Failed to spawn Modal evaluation: {exc}")
 
