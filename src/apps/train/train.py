@@ -447,8 +447,9 @@ def _train(variant: str, config: dict) -> None:
     volumes={CHECKPOINT_DIR: volume},
     secrets=[aws_secret, wandb_secret],
 )
-def train_swin_tiny(config: Optional[dict] = None) -> None:
+def train_swin_tiny() -> None:
     """Modal Function: train the Swin-Tiny (28M param) variant."""
+    config = DEFAULT_CONFIG.copy()
     _train(variant="tiny", config=config or DEFAULT_CONFIG)
 
 
@@ -459,8 +460,9 @@ def train_swin_tiny(config: Optional[dict] = None) -> None:
     volumes={CHECKPOINT_DIR: volume},
     secrets=[aws_secret, wandb_secret],
 )
-def train_swin_base(config: Optional[dict] = None) -> None:
+def train_swin_base() -> None:
     """Modal Function: train the Swin-Base (88M param) variant."""
+    config = DEFAULT_CONFIG.copy()
     _train(variant="base", config=config or DEFAULT_CONFIG)
 
 # ---------------------------------------------------------------------------
