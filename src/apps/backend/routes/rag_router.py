@@ -55,8 +55,9 @@ class RAGQueryResponse(BaseModel):
 async def rag_query(body: RAGQueryRequest) -> RAGQueryResponse:
     """Query the Bedrock Knowledge Base and return the generated answer with sources.
 
-    Uses the Bedrock ``retrieve_and_generate`` API with the Claude 3 Haiku
-    foundation model. Extracts source citations from the response and returns
+    Uses the Bedrock ``retrieve_and_generate`` API with the configured Claude
+    foundation model (or a Bedrock inference profile for that model, if set).
+    Extracts source citations from the response and returns
     truncated snippets (up to 200 characters each).
 
     Raises:

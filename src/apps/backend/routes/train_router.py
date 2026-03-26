@@ -132,8 +132,7 @@ async def start_training(body: TrainRequest) -> TrainResponse:
     run.status            = "running"
     run.modal_volume_path = f"/checkpoints/{body.variant}"
 
-    ddb        = boto3.resource("dynamodb", region_name=region)
-    runs_table = ddb.Table(runs_table_name)
+    runs_table = get_table(DDB_RUNS_TABLE)
     runs_table.put_item(Item=asdict(run))
 
     # Spawn Modal Function (non-blocking)

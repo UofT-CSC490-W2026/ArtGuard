@@ -314,12 +314,12 @@ class TestBoto3Compatibility:
 class TestModelConfiguration:
     """Verify the RAG query uses a model available in ca-central-1."""
 
-    def test_rag_query_uses_haiku_not_sonnet(self):
-        """main.py should use claude-3-haiku, not claude-sonnet-4-5.
+    def test_rag_query_uses_sonnet(self):
+        """main.py/config should use claude-sonnet-4-5 (Claude 4.5 Sonnet).
 
-        Root cause: claude-sonnet-4-5 requires a cross-region inference profile
-        in ca-central-1 and cannot be invoked directly by model ID. claude-3-haiku
-        works with on-demand throughput in ca-central-1.
+        Note: Claude Sonnet 4.5 often requires a Bedrock inference profile
+        (commonly cross-region) in ca-central-1. The code supports routing via
+        `BEDROCK_INFERENCE_PROFILE_ARN` when configured.
         """
         # Model ID may be in main.py or config.py
         content = ""
@@ -328,9 +328,9 @@ class TestModelConfiguration:
                 with open(path, "r") as f:
                     content += f.read()
 
-        assert "claude-3-haiku" in content, (
-            "Backend should use anthropic.claude-3-haiku-20240307-v1:0 for RAG. "
-            "Claude Sonnet requires inference profiles in ca-central-1."
+        assert "claude-sonnet-4-5" in content, (
+            "Backend should use anthropic.claude-sonnet-4-5-* for RAG. "
+            "Configure `BEDROCK_INFERENCE_PROFILE_ARN` if Sonnet requires it."
         )
 
     def test_no_hardcoded_sonnet_in_rag_endpoint(self):
@@ -342,7 +342,8 @@ class TestModelConfiguration:
         rag_section = content[content.find("def rag_query"):]
         assert "claude-sonnet-4-5" not in rag_section, (
             "rag_query function uses claude-sonnet-4-5 which requires inference "
-            "profiles in ca-central-1. Use claude-3-haiku instead."
+            "profiles in ca-central-1. Use the configured model/inference profile "
+            "(via config/env) rather than hardcoding it in the endpoint."
         )
 
 

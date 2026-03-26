@@ -141,11 +141,32 @@ S3_IMAGES_PROCESSED_BUCKET = "S3_IMAGES_PROCESSED_BUCKET"
 # Bedrock model ARN
 # ---------------------------------------------------------------------------
 
-BEDROCK_MODEL_ID = "anthropic.claude-3-haiku-20240307-v1:0"
+BEDROCK_MODEL_ID = "anthropic.claude-sonnet-4-5-20250929-v1:0"
+
+# Sonnet 4.5 (and sometimes other Claude models) may require a Bedrock
+# inference profile (often a cross-region profile) rather than direct
+# foundation-model invocation in certain regions. If this env var is set,
+# we route both RAG + multimodal generation through the inference profile.
+BEDROCK_INFERENCE_PROFILE_ARN = os.getenv("BEDROCK_INFERENCE_PROFILE_ARN", "").strip()
+
+def bedrock_invoke_model_id() -> str:
+    """Return the value for Bedrock Runtime `modelId`.
+
+    If `BEDROCK_INFERENCE_PROFILE_ARN` is configured, Bedrock accepts the
+    inference profile ARN in `modelId` and routes the request accordingly.
+    Otherwise we fall back to the foundation model id.
+    """
+    if BEDROCK_INFERENCE_PROFILE_ARN:
+        return BEDROCK_INFERENCE_PROFILE_ARN
+    return BEDROCK_MODEL_ID
 
 
 def bedrock_model_arn() -> str:
     """Return the full Bedrock foundation model ARN for the configured region."""
+    # Bedrock KnowledgeBaseRetrieveAndGenerate accepts either a foundation-model
+    # ARN or an inference profile ARN.
+    if BEDROCK_INFERENCE_PROFILE_ARN:
+        return BEDROCK_INFERENCE_PROFILE_ARN
     region = get_region()
     return f"arn:aws:bedrock:{region}::foundation-model/{BEDROCK_MODEL_ID}"
 

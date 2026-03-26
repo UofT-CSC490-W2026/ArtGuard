@@ -3,7 +3,7 @@
 Pipeline:
 1) Retrieve top-k knowledge chunks from Bedrock KB.
 2) Build structured generation input from inference context.
-3) Call Bedrock Runtime (Claude Haiku) with top patch images + text context
+3) Call Bedrock Runtime (Claude Sonnet) with top patch images + text context
    to generate the final explanation.
 """
 
@@ -16,7 +16,7 @@ from typing import Any, Optional
 
 import boto3
 
-from src.apps.backend.config import BEDROCK_MODEL_ID, get_region
+from src.apps.backend.config import bedrock_invoke_model_id, get_region
 from src.apps.rag_pipeline.format_input import build_generation_input, top_k_patch_evidence
 from src.apps.rag_pipeline.knowledge_base import retrieve_top_chunks
 
@@ -45,25 +45,31 @@ Explain how the model arrived at its authenticity score using the provided evide
 
 <response_requirements>
 <requirement>
-For each important patch, describe where it appears in the painting (for example sky, tree, face, background, lower-left region).
+For each patch you discuss (choose 3-6 of the highest-ranked patches from the provided “Top Patch Evidence”), write one sentence that starts with:
+`Patch #<rank> (<region_hint>, <patch_type>)`.
 </requirement>
 <requirement>
-For each important patch, describe only concrete visual observations that are directly visible in the provided patch images.
+In that same sentence, include at least one concrete visual observation category that is directly visible in the patch image.
+Use one or more of: contrast (high/low), texture (smooth/coarse), edges (sharp/soft), color transitions (broad/abrupt).
 </requirement>
 <requirement>
-Use patches and metadata together to explain which specific regions support authenticity and which reduce authenticity.
+If the provided `region_hint` is `unknown-position`, determine the patch's rough location by visually matching it against the attached overall image, and report a rough position such as `top-left`, `top-right`, `center`, `bottom-left`, or `bottom-right` (or `position uncertain` if you cannot reliably match).
 </requirement>
 <requirement>
-Use the confidence score to communicate certainty or uncertainty of the decision.
+If `region_hint` is `unknown-position` and the input says `Overall image attached: False`, then you must output `position uncertain` for the location (do not guess `center` / corners).
+</requirement>
+<requirement>
+Use patches and the confidence score together to explain which regions support authenticity and which reduce it.
 </requirement>
 <requirement>
 Write clear, well-structured paragraphs for an end user.
 </requirement>
 <requirement>
-Cite patch references explicitly as [P1], [P2], etc. for every visual claim.
+Do not use patch tokens like `P1` / `P2` in the final answer.
+Instead, connect each visual claim to the patch region by using the `region_hint` (provided in the “Top Patch Evidence”) and the concrete visual observation from that patch image.
 </requirement>
 <requirement>
-For any metadata claim (title, series, date, provenance, museum ownership, artist-period linkage), cite retrieved chunk references as [K1], [K2], etc.
+For any metadata/history claim (title, series, date, provenance, museum ownership, artist-period linkage), include the source filename from the retrieved knowledge (e.g., `(source: met_data_part27.txt)`).
 </requirement>
 </response_requirements>
 
@@ -83,7 +89,7 @@ For any metadata claim (title, series, date, provenance, museum ownership, artis
 <claim>Do not claim specific art-historical traits (e.g., "Van Gogh's characteristic brushstroke pattern") unless the claim is explicitly supported by retrieved metadata and linked to visible evidence.</claim>
 <claim>Do not describe stroke direction, impasto, or other fine-grained technique unless clearly visible in the provided patches.</claim>
 <claim>Do not infer provenance, materials, or history unless explicitly stated in retrieved metadata.</claim>
-<claim>Do not assert a specific artwork title, series, or museum ownership unless that exact fact is explicitly present in retrieved chunks and cited with [K#].</claim>
+<claim>Do not assert a specific artwork title, series, or museum ownership unless that exact fact is explicitly present in retrieved chunks and you include the corresponding source filename in the response.</claim>
 <claim>Do not use named examples (e.g., "Sunflowers", "The Potato Eaters") unless the retrieved chunks explicitly contain them and they are directly relevant.</claim>
 </forbidden_claims>
 
@@ -94,24 +100,26 @@ If metadata evidence is missing, weak, or conflicting, explicitly state that met
 </evidence_policy>
 
 <output_contract>
-- Every visual claim must include at least one [P#] citation.
-- Every metadata/history claim must include at least one [K#] citation.
-- If no valid [K#] support exists, omit the metadata claim.
+- Every visual claim must use the `Patch #<rank> (<region_hint>, <patch_type>)` format for at least one patch and include at least one visual observation category (contrast/texture/edges/color transitions).
+- Every metadata/history claim must include the source filename (e.g., `(source: met_data_part27.txt)`).
+- If no retrieved knowledge provides source-file support for a metadata/history claim, omit the metadata/history claim.
 </output_contract>
 
 <example_grounded_non_authentic>
 <input>
 Score: 0
 Confidence: 68
-Patches include:
-- p_44 -> tree region (center-right)
-- p_91 -> background sky (upper area)
-- p_12 -> foreground detail
+Top Patch Evidence (example):
+- #1 (region_hint=middle-right, patch_type=center_crop_orig)
+- #2 (region_hint=top-center, patch_type=downsample_orig)
+- #3 (region_hint=bottom-left, patch_type=center_crop_orig)
 Metadata: limited artist context available
 </input>
 <output>
 The model predicts that this painting is likely non-authentic, with a moderate level of confidence.
-In the center-right tree region [P1], the visible texture appears relatively smooth with limited local contrast, which provides evidence against authenticity. In the upper background region [P2], color transitions appear gradual with fewer distinct high-frequency details, which also points away from authenticity. A foreground patch [P3] shows somewhat stronger local variation, which partially supports authenticity, but this is outweighed by the stronger non-authentic signals in other key regions.
+Patch #1 (middle-right, center_crop_orig): texture appears relatively smooth with low local contrast, which provides evidence against authenticity.
+Patch #2 (top-center, downsample_orig): color transitions look broad and gradual rather than abrupt, which also points away from authenticity.
+Patch #3 (bottom-left, center_crop_orig): local variation is stronger, partially supporting authenticity, but this signal is outweighed by the other patch observations above.
 Overall, the confidence score indicates moderate certainty rather than absolute certainty. The evidence is directionally consistent across multiple patches, but the available metadata is limited, so the conclusion should be treated as model-supported rather than definitive.
 </output>
 </example_grounded_non_authentic>
@@ -285,7 +293,9 @@ def _generate_with_claude(
         ],
     }
     resp = runtime.invoke_model(
-        modelId=BEDROCK_MODEL_ID,
+        # `modelId` supports both foundation model ids and inference profile
+        # ARNs. We choose based on env configuration in `backend.config`.
+        modelId=bedrock_invoke_model_id(),
         body=json.dumps(body),
         accept="application/json",
         contentType="application/json",
@@ -325,17 +335,19 @@ def generate_explanation(
     )
     kb_snippets = [c.snippet for c in kb_chunks]
 
+    overall_image_attached = bool(include_overall_image and source_image.startswith("s3://"))
     formatted_input = build_generation_input(
         source_image=source_image,
         prediction=prediction,
         mean_prob=mean_prob,
         patches_info=patches_info,
         patch_probs=patch_probs,
-        retrieved_kb_chunks=kb_snippets,
+        retrieved_kb_chunks=kb_chunks,
         top_k_patches=top_k_patches,
         max_kb_chars=500,
         artist_name=artist_name,
         artwork_name=artwork_name,
+        overall_image_attached=overall_image_attached,
     )
 
     selected_evidence = top_k_patch_evidence(

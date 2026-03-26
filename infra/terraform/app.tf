@@ -289,6 +289,10 @@ resource "aws_ecs_task_definition" "backend" {
           name  = "KNOWLEDGE_BASE_ID"
           value = aws_bedrockagent_knowledge_base.main.id
         },
+        {
+          name  = "BEDROCK_INFERENCE_PROFILE_ARN"
+          value = var.bedrock_inference_profile_arn
+        },
         # Monitoring
         {
           name  = "AWS_XRAY_TRACING_ENABLED"

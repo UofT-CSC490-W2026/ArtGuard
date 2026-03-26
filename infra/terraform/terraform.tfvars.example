@@ -79,6 +79,11 @@ enable_xray_tracing = false # Enable X-Ray distributed tracing (optional)
 # Bedrock Knowledge Base Configuration (RAG)
 bedrock_embedding_model           = "amazon.titan-embed-text-v1" # Embedding model
 
+# Bedrock inference profile (optional)
+# For Sonnet 4.5 global system-defined profile:
+# bedrock_inference_profile_arn = "arn:aws:bedrock:ca-central-1:672015620900:inference-profile/global.anthropic.claude-sonnet-4-5-20250929-v1:0"
+bedrock_inference_profile_arn = "" # leave empty to use the foundation model id directly
+
 bedrock_chunking_strategy         = "FIXED_SIZE" # How documents are split
 # Options: "FIXED_SIZE" (recommended) or "NONE" (use whole document)
 
