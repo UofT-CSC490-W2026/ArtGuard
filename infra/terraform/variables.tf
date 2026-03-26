@@ -94,6 +94,12 @@ variable "bedrock_embedding_model" {
   default     = "amazon.titan-embed-text-v2:0"
 }
 
+variable "bedrock_inference_profile_arn" {
+  description = "Optional Bedrock inference profile ARN for Claude (e.g., Sonnet). If set, the app will use this profile ARN for both RAG generation and multimodal explanation."
+  type        = string
+  default     = ""
+}
+
 variable "bedrock_chunking_strategy" {
   description = "Document chunking strategy for Knowledge Base"
   type        = string
