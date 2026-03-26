@@ -12,7 +12,7 @@ import time
 import uuid
 from decimal import Decimal
 from io import BytesIO
-from typing import Optional
+from typing import Any, Optional
 
 import boto3
 from PIL import Image
@@ -24,7 +24,6 @@ from src.apps.backend.config import (
     InferenceStatus,
     S3_IMAGES_PROCESSED_BUCKET,
     S3_IMAGES_RAW_BUCKET,
-    bedrock_model_arn,
     get_region,
     get_table,
     require_env,
@@ -281,47 +280,83 @@ def save_patch_predictions(
             )
 
 
-def query_rag_explanation(prediction: int, score: float) -> Optional[str]:
-    """Query the Bedrock Knowledge Base for an explanation of the inference result.
+def query_rag_explanation(
+    prediction: int,
+    score: float,
+    *,
+    raw_s3_uri: str,
+    patches_info: list[dict[str, Any]],
+    patch_probs: list[float],
+    artist_name: str = "",
+    artwork_name: str = "",
+) -> Optional[str]:
+    """Run the RAG pipeline (KB retrieve + multimodal generation) for an explanation.
 
-    Returns None if no Knowledge Base is configured. Returns a fallback
-    message if the Bedrock call fails (does not raise).
+    Uses ``src.apps.rag_pipeline.generate_response.generate_explanation``:
+    retrieves knowledge chunks, formats inference context with top patch evidence,
+    and attaches overall + patch images when possible.
+
+    Returns None if no Knowledge Base is configured. Returns a fallback message
+    if the pipeline fails (does not raise).
 
     Args:
-        prediction: 1 = authentic, 0 = forgery.
-        score:      Mean patch probability (0-1).
+        prediction:    1 = authentic, 0 = forgery.
+        score:         Mean patch probability (0-1).
+        raw_s3_uri:    S3 URI of the uploaded source image.
+        patches_info:  Patch metadata dicts (patch_id, patch_path, bbox, etc.).
+        patch_probs:   Per-patch probability scores aligned with ``patches_info``.
+        artist_name:   User-provided artist name (used as the KB retrieval query).
+        artwork_name:  User-provided artwork title (used as the KB retrieval query).
 
     Returns:
         Explanation text, or None if KB is not configured.
     """
-    knowledge_base_id = os.getenv("KNOWLEDGE_BASE_ID")
+    knowledge_base_id = os.getenv("KNOWLEDGE_BASE_ID", "").strip()
     if not knowledge_base_id:
         return None
 
-    rag_prompt = rag_explanation_prompt(prediction, score)
+    parts = [artist_name.strip(), artwork_name.strip()]
+    retrieval_query = " ".join(p for p in parts if p).strip()
+    if not retrieval_query:
+        logger.warning("KB retrieval query empty (artist/artwork); using prediction context fallback")
+        retrieval_query = rag_explanation_prompt(prediction, score)
 
     start = time.perf_counter()
     try:
-        region = get_region()
-        bedrock = boto3.client("bedrock-agent-runtime", region_name=region)
-        rag_resp = bedrock.retrieve_and_generate(
-            input={"text": rag_prompt},
-            retrieveAndGenerateConfiguration={
-                "type": "KNOWLEDGE_BASE",
-                "knowledgeBaseConfiguration": {
-                    "knowledgeBaseId": knowledge_base_id,
-                    "modelArn": bedrock_model_arn(),
-                },
-            },
+        from src.apps.rag_pipeline.generate_response import generate_explanation
+
+        result = generate_explanation(
+            source_image=raw_s3_uri,
+            prediction=prediction,
+            mean_prob=score,
+            patches_info=patches_info,
+            patch_probs=patch_probs,
+            retrieval_query=retrieval_query,
+            top_k_patches=8,
+            top_k_kb=7,
+            kb_candidate_k=40,
+            kb_search_type="HYBRID",
+            artist_name=artist_name.strip() or None,
+            artwork_name=artwork_name.strip() or None,
+            max_generation_tokens=700,
+            temperature=0.2,
+            include_patch_images=True,
+            max_patch_images=8,
+            include_overall_image=True,
+            strict_patch_images=False,
         )
         duration = time.perf_counter() - start
-        logger.info("RAG explanation generated in %.2fs", duration)
+        logger.info(
+            "RAG explanation generated in %.2fs (patches_attached=%s)",
+            duration,
+            len(result.used_patch_image_uris),
+        )
         emit_metric("ArtGuard", "RAGLatency", duration, "Seconds",
                      {"Endpoint": "rag"})
-        return rag_resp.get("output", {}).get("text", "")
+        return result.response_text or "Explanation unavailable at this time."
     except Exception:
         duration = time.perf_counter() - start
-        logger.warning("Bedrock RAG query failed after %.2fs", duration, exc_info=True)
+        logger.warning("RAG pipeline failed after %.2fs", duration, exc_info=True)
         emit_metric("ArtGuard", "RAGError", 1, "Count", {"Endpoint": "rag"})
         return "Explanation unavailable at this time."
 

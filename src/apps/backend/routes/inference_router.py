@@ -162,7 +162,15 @@ async def infer(
         patches_info, modal_result["patch_probs"], modal_result["patch_preds"],
     )
 
-    explanation = inference_service.query_rag_explanation(prediction, score)
+    explanation = inference_service.query_rag_explanation(
+        prediction,
+        score,
+        raw_s3_uri=raw_s3_uri,
+        patches_info=patches_info,
+        patch_probs=modal_result["patch_probs"],
+        artist_name=artist_name,
+        artwork_name=artwork_name,
+    )
 
     inference_service.finalize_inference(inference_id, score, prediction, explanation)
 
