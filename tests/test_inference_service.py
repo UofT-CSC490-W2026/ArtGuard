@@ -167,17 +167,28 @@ class TestQueryRagExplanation:
 
     def test_returns_none_when_no_kb(self, monkeypatch):
         monkeypatch.delenv("KNOWLEDGE_BASE_ID", raising=False)
-        result = inference_service.query_rag_explanation(1, 0.9)
+        result = inference_service.query_rag_explanation(
+            1,
+            0.9,
+            raw_s3_uri="s3://bucket/raw.jpg",
+            patches_info=[],
+            patch_probs=[],
+        )
         assert result is None
 
     def test_returns_fallback_on_error(self, monkeypatch):
         monkeypatch.setenv("KNOWLEDGE_BASE_ID", "kb-123")
-        with patch("src.apps.backend.services.inference_service.boto3") as mock_boto3:
-            mock_client = MagicMock()
-            mock_client.retrieve_and_generate.side_effect = Exception("Bedrock down")
-            mock_boto3.client.return_value = mock_client
-
-            result = inference_service.query_rag_explanation(1, 0.9)
+        with patch(
+            "src.apps.rag_pipeline.generate_response.generate_explanation",
+            side_effect=Exception("pipeline failed"),
+        ):
+            result = inference_service.query_rag_explanation(
+                1,
+                0.9,
+                raw_s3_uri="s3://bucket/raw.jpg",
+                patches_info=[{"patch_id": "p1", "patch_path": "s3://bucket/p1.jpg"}],
+                patch_probs=[0.9],
+            )
             assert result is not None
             assert "unavailable" in result.lower()
 
