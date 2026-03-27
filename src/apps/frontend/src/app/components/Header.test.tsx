@@ -111,7 +111,7 @@ describe("Header", () => {
 
   it("has correct header structure", () => {
     mockUnauthenticated();
-    render(<MemoryRouter><Header /></MemoryRouter>);
+    render(<MemoryRouter><Header showAuthLinks={true} authLinkText="Sign In" authLinkTo="/login" /></MemoryRouter>);
     
     const header = screen.getByRole("banner");
     expect(header).toHaveClass("border-b", "border-border", "bg-background");
@@ -132,13 +132,10 @@ describe("Header", () => {
       changePassword: vi.fn(),
     });
 
-    render(
-      <MemoryRouter>
-        <Header showAuthLinks authLinkText="Sign Up" authLinkTo="/signup" />
-      </MemoryRouter>,
-    );
+    render(<MemoryRouter><Header showAuthLinks={true} authLinkText="Sign In" authLinkTo="/login" /></MemoryRouter>);
 
-    expect(screen.getByRole("link", { name: "Sign Up" })).toBeInTheDocument();
+    // Should show auth links but not user menu
+    expect(screen.getByRole("link", { name: "Sign In" })).toBeInTheDocument();
     expect(screen.queryByText("testuser")).not.toBeInTheDocument();
   });
 
@@ -154,7 +151,7 @@ describe("Header", () => {
       changePassword: vi.fn(),
     });
 
-    render(<MemoryRouter><Header showAuthLinks={true} /></MemoryRouter>);
+    render(<MemoryRouter><Header showAuthLinks={true} authLinkText="Sign In" authLinkTo="/login" /></MemoryRouter>);
 
     // Should not crash when user is null but authenticated
     expect(screen.queryByText("testuser")).not.toBeInTheDocument();

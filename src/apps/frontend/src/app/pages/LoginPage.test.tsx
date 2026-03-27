@@ -65,7 +65,9 @@ describe("LoginPage", () => {
     await user.click(getLoginSubmitButton());
 
     await waitFor(() => {
-      expect(screen.getByText(/invalid email or password/i)).toBeInTheDocument();
+      const alert = screen.getByRole("alert");
+      expect(alert).toBeInTheDocument();
+      expect(alert).toHaveTextContent("Invalid email or password");
     });
   });
 
