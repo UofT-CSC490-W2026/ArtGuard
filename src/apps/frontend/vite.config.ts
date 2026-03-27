@@ -36,7 +36,8 @@ export default defineConfig({
     fileParallelism: false,
     coverage: {
       provider: 'v8',
-      reporter: ['text', 'html'],
+      /** json-summary: coverage-summary.json for CI badge (tj-actions/coverage-badge-js) */
+      reporter: ['text', 'html', 'json-summary'],
       include: ['src/app/**/*.{ts,tsx}'],
       exclude: ['src/app/components/ui/**'],
       thresholds: {

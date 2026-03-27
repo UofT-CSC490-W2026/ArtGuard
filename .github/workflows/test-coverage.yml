@@ -50,9 +50,9 @@ jobs:
 
       - name: Generate coverage badge
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'
-        uses: tj-actions/coverage-badge-py@v2
-        with:
-          output: coverage.svg
+        run: |
+          pip install 'setuptools<82' coverage-badge
+          coverage-badge -f -o coverage.svg
 
       - name: Commit coverage badge
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'
