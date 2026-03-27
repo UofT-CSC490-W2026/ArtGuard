@@ -20,6 +20,7 @@ from moto import mock_aws
 def _set_test_env(monkeypatch):
     """Set required environment variables for all tests."""
     monkeypatch.setenv("ENVIRONMENT", "dev")
+    monkeypatch.setenv("PYTHONPATH", ".")
     monkeypatch.setenv("AWS_REGION", "us-east-1")
     monkeypatch.setenv("AWS_DEFAULT_REGION", "us-east-1")
     monkeypatch.setenv("AWS_ACCESS_KEY_ID", "testing")

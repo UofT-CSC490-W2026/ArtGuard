@@ -217,15 +217,22 @@ class TestInferenceServiceErrorBranches:
 
         monkeypatch.setenv("KNOWLEDGE_BASE_ID", "kb-test")
 
-        mock_bedrock = MagicMock()
-        mock_bedrock.retrieve_and_generate.return_value = {
-            "output": {"text": "This artwork appears authentic based on..."}
-        }
+        mock_result = MagicMock()
+        mock_result.response_text = "This artwork appears authentic based on..."
+        mock_result.used_patch_image_uris = []
 
-        with patch("src.apps.backend.services.inference_service.boto3") as mock_boto3:
-            mock_boto3.client.return_value = mock_bedrock
+        with patch(
+            "src.apps.rag_pipeline.generate_response.generate_explanation",
+            return_value=mock_result,
+        ):
             with patch("src.apps.backend.services.inference_service.emit_metric"):
-                result = inference_service.query_rag_explanation(1, 0.92)
+                result = inference_service.query_rag_explanation(
+                    1,
+                    0.92,
+                    raw_s3_uri="s3://bucket/raw.jpg",
+                    patches_info=[{"patch_id": "p1", "patch_path": "s3://bucket/p1.jpg"}],
+                    patch_probs=[0.92],
+                )
                 assert "authentic" in result.lower()
 
 

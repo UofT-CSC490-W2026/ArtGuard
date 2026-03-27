@@ -1,0 +1,109 @@
+Tue Mar 24 17:30:00 2026    profiling_results/preprocess_small_image_run3.prof
+
+         112867 function calls in 0.733 seconds
+
+   Ordered by: cumulative time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    0.733    0.733 profiling_senarios.py:375(run_scenario)
+        1    0.001    0.001    0.733    0.733 profiling_senarios.py:191(scenario_preprocess_small_image)
+      150    0.002    0.000    0.717    0.005 preprocess.py:427(process_image_to_patches)
+      600    0.002    0.000    0.698    0.001 preprocess.py:367(_process_single_grid_patch)
+      600    0.001    0.000    0.508    0.001 preprocess.py:189(downsample_to_square)
+      600    0.003    0.000    0.507    0.001 Image.py:2220(resize)
+      600    0.501    0.001    0.501    0.001 {method 'resize' of 'ImagingCore' objects}
+      600    0.003    0.000    0.175    0.000 preprocess.py:320(_add_patch_record)
+      600    0.001    0.000    0.166    0.000 preprocess.py:283(_upload_patch)
+      600    0.001    0.000    0.165    0.000 preprocess.py:269(_encode_jpeg)
+      600    0.008    0.000    0.163    0.000 Image.py:2476(save)
+      600    0.008    0.000    0.145    0.000 JpegImagePlugin.py:663(_save)
+      600    0.003    0.000    0.131    0.000 ImageFile.py:641(_save)
+      600    0.003    0.000    0.125    0.000 ImageFile.py:669(_encode_tile)
+      600    0.118    0.000    0.118    0.000 {method 'encode' of 'ImagingEncoder' objects}
+      150    0.001    0.000    0.017    0.000 preprocess.py:136(extract_grid_patches)
+      600    0.001    0.000    0.014    0.000 Image.py:1267(crop)
+      150    0.001    0.000    0.013    0.000 Image.py:3072(new)
+      600    0.001    0.000    0.013    0.000 preprocess.py:228(generate_patch_variants)
+      600    0.000    0.000    0.012    0.000 preprocess.py:212(rotate_patch)
+      600    0.001    0.000    0.012    0.000 Image.py:1254(copy)
+      150    0.011    0.000    0.011    0.000 {built-in method PIL._imaging.fill}
+      600    0.002    0.000    0.009    0.000 Image.py:1293(_crop)
+      600    0.007    0.000    0.007    0.000 {method 'copy' of 'ImagingCore' objects}
+      600    0.007    0.000    0.007    0.000 {method 'crop' of 'ImagingCore' objects}
+      750    0.001    0.000    0.007    0.000 uuid.py:714(uuid4)
+     3000    0.003    0.000    0.007    0.000 Image.py:868(load)
+     1950    0.004    0.000    0.006    0.000 Image.py:577(_new)
+      750    0.004    0.000    0.005    0.000 uuid.py:142(__init__)
+    11881    0.003    0.000    0.004    0.000 {built-in method builtins.isinstance}
+      600    0.002    0.000    0.004    0.000 Image.py:428(_getencoder)
+     5400    0.002    0.000    0.003    0.000 Image.py:542(im)
+    11400    0.002    0.000    0.002    0.000 {method 'get' of 'dict' objects}
+      600    0.001    0.000    0.002    0.000 <frozen posixpath>:117(splitext)
+     2100    0.001    0.000    0.002    0.000 Image.py:532(__init__)
+      600    0.000    0.000    0.002    0.000 _util.py:12(is_path)
+      750    0.002    0.000    0.002    0.000 uuid.py:283(__str__)
+      150    0.001    0.000    0.001    0.000 preprocess.py:107(compute_grid_boxes)
+      600    0.001    0.000    0.001    0.000 {built-in method PIL._imaging.jpeg_encoder}
+     1200    0.001    0.000    0.001    0.000 <frozen abc>:117(__instancecheck__)
+     3000    0.001    0.000    0.001    0.000 {method 'pixel_access' of 'ImagingCore' objects}
+      600    0.001    0.000    0.001    0.000 <frozen genericpath>:157(_splitext)
+      601    0.001    0.000    0.001    0.000 <frozen importlib._bootstrap>:1390(_handle_fromlist)
+      600    0.001    0.000    0.001    0.000 Image.py:3437(_decompression_bomb_check)
+     6600    0.001    0.000    0.001    0.000 Image.py:561(size)
+     3000    0.001    0.000    0.001    0.000 Image.py:569(readonly)
+     1500    0.001    0.000    0.001    0.000 Image.py:553(width)
+     1200    0.001    0.000    0.001    0.000 {built-in method _abc._abc_instancecheck}
+      600    0.001    0.000    0.001    0.000 {method 'sort' of 'list' objects}
+      600    0.001    0.000    0.001    0.000 typing.py:426(inner)
+      600    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap>:645(parent)
+     2401    0.001    0.000    0.001    0.000 {built-in method builtins.hasattr}
+     1500    0.000    0.000    0.001    0.000 Image.py:557(height)
+     2100    0.001    0.000    0.001    0.000 {built-in method builtins.round}
+     2400    0.001    0.000    0.001    0.000 {method 'append' of 'list' objects}
+      600    0.000    0.000    0.001    0.000 <string>:1(<lambda>)
+     1800    0.001    0.000    0.001    0.000 {built-in method builtins.getattr}
+     1950    0.001    0.000    0.001    0.000 {method 'copy' of 'dict' objects}
+      600    0.000    0.000    0.001    0.000 Image.py:2605(_attach_default_encoderinfo)
+      750    0.001    0.000    0.001    0.000 {built-in method posix.urandom}
+      600    0.000    0.000    0.000    0.000 {method 'fileno' of '_io._IOBase' objects}
+     1800    0.000    0.000    0.000    0.000 {built-in method builtins.max}
+      600    0.000    0.000    0.000    0.000 {method 'setimage' of 'ImagingEncoder' objects}
+     1500    0.000    0.000    0.000    0.000 {built-in method builtins.len}
+     3150    0.000    0.000    0.000    0.000 Image.py:565(mode)
+     1200    0.000    0.000    0.000    0.000 {method 'upper' of 'str' objects}
+      750    0.000    0.000    0.000    0.000 {method 'count' of 'list' objects}
+      750    0.000    0.000    0.000    0.000 {built-in method from_bytes}
+     2100    0.000    0.000    0.000    0.000 Image.py:573(readonly)
+      600    0.000    0.000    0.000    0.000 {method 'write' of '_io.BytesIO' objects}
+     1200    0.000    0.000    0.000    0.000 {method 'rfind' of 'str' objects}
+     1950    0.000    0.000    0.000    0.000 Image.py:549(im)
+      600    0.000    0.000    0.000    0.000 {built-in method __new__ of type object at 0x7fda030facc0}
+      150    0.000    0.000    0.000    0.000 Image.py:3053(_check_size)
+      600    0.000    0.000    0.000    0.000 {method 'rpartition' of 'str' objects}
+      600    0.000    0.000    0.000    0.000 {method 'cleanup' of 'ImagingEncoder' objects}
+      600    0.000    0.000    0.000    0.000 {method 'pop' of 'dict' objects}
+     1200    0.000    0.000    0.000    0.000 {built-in method builtins.abs}
+      600    0.000    0.000    0.000    0.000 {method 'lower' of 'str' objects}
+      600    0.000    0.000    0.000    0.000 {method 'getvalue' of '_io.BytesIO' objects}
+      600    0.000    0.000    0.000    0.000 ImageFile.py:97(_tilesort)
+      600    0.000    0.000    0.000    0.000 {method 'flush' of '_io.BytesIO' objects}
+      150    0.000    0.000    0.000    0.000 preprocess.py:83(choose_grid_size)
+      600    0.000    0.000    0.000    0.000 {built-in method posix.fspath}
+      600    0.000    0.000    0.000    0.000 JpegImagePlugin.py:716(validate_qtables)
+      600    0.000    0.000    0.000    0.000 Image.py:327(preinit)
+      600    0.000    0.000    0.000    0.000 profiling_senarios.py:169(put_object)
+        1    0.000    0.000    0.000    0.000 profiling_senarios.py:49(configure_profiling_environment)
+      600    0.000    0.000    0.000    0.000 typing.py:2383(cast)
+       15    0.000    0.000    0.000    0.000 <frozen os>:754(setdefault)
+       30    0.000    0.000    0.000    0.000 <frozen os>:712(__getitem__)
+      150    0.000    0.000    0.000    0.000 preprocess.py:47(__init__)
+      150    0.000    0.000    0.000    0.000 {built-in method builtins.min}
+       15    0.000    0.000    0.000    0.000 <frozen _collections_abc>:815(__contains__)
+      150    0.000    0.000    0.000    0.000 <string>:2(__init__)
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+       30    0.000    0.000    0.000    0.000 <frozen os>:794(encode)
+       30    0.000    0.000    0.000    0.000 <frozen os>:798(decode)
+       30    0.000    0.000    0.000    0.000 {method 'decode' of 'bytes' objects}
+       30    0.000    0.000    0.000    0.000 {method 'encode' of 'str' objects}
+
+

@@ -1,0 +1,11 @@
+Benchmark: 5 run(s) per scenario
+
+Scenario                                    Mean (s)     Std (s)     Min (s)     Max (s)   Runs
+------------------------------------------------------------------------------------------
+auth_crypto_burst                            12.2958      0.0871     12.1960     12.4190      5
+inference_patch_pipeline_full                 0.3356      0.0741      0.2950      0.4670      5
+preprocess_high_resolution                    5.7802      0.0707      5.7090      5.8760      5
+preprocess_small_image                        0.7392      0.0048      0.7330      0.7460      5
+s3_inference_metadata_burst                   0.9296      0.0938      0.8370      1.0770      5
+split_stratified_large_n                      0.0408      0.0024      0.0390      0.0450      5
+
