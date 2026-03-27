@@ -1,6 +1,7 @@
 # ArtGuard
 
 ![Test Coverage](coverage.svg)
+![Frontend Coverage](frontend-coverage.svg)
 
 Art forgery detection system using Swin Vision Transformers, with a FastAPI backend, React frontend, and AWS cloud infrastructure.
 

@@ -10,6 +10,29 @@ class ResizeObserverStub {
 
 globalThis.ResizeObserver = ResizeObserverStub;
 
+// Mock crypto.subtle for password hashing in tests
+if (!globalThis.crypto?.subtle) {
+  const mockSubtleCrypto = {
+    digest: vi.fn().mockResolvedValue(new ArrayBuffer(32)),
+    decrypt: vi.fn(),
+    deriveBits: vi.fn(),
+    deriveKey: vi.fn(),
+    encrypt: vi.fn(),
+    exportKey: vi.fn(),
+    generateKey: vi.fn(),
+    importKey: vi.fn(),
+    sign: vi.fn(),
+    unwrapKey: vi.fn(),
+    verify: vi.fn(),
+    wrapKey: vi.fn(),
+  };
+  
+  globalThis.crypto = {
+    ...globalThis.crypto,
+    subtle: mockSubtleCrypto,
+  };
+}
+
 if (typeof Element !== "undefined") {
   if (!Element.prototype.setPointerCapture) {
     Element.prototype.setPointerCapture = vi.fn() as typeof Element.prototype.setPointerCapture;

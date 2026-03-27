@@ -9,6 +9,8 @@ import {
   isInferenceFailed,
   matchesAuthenticFilter,
   matchesForgedFilter,
+  matchesUncertainFilter,
+  matchesFailedInferenceFilter,
   NO_EXPLANATION,
   primaryScoreDescription,
   primaryScoreTitle,

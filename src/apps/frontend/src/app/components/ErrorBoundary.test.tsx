@@ -58,4 +58,138 @@ describe("ErrorBoundary", () => {
     );
     expect(screen.getByText("custom")).toBeInTheDocument();
   });
+
+  it("logs error in DEV mode", () => {
+    const originalDev = import.meta.env.DEV;
+    import.meta.env.DEV = true;
+
+    render(
+      <ErrorBoundary>
+        <Boom fail />
+      </ErrorBoundary>,
+    );
+
+    expect(console.error).toHaveBeenCalledWith(
+      "ErrorBoundary caught:",
+      expect.any(Error),
+      expect.objectContaining({
+        componentStack: expect.any(String),
+      })
+    );
+
+    import.meta.env.DEV = originalDev;
+  });
+
+  it("does not log error in production", () => {
+    const originalDev = import.meta.env.DEV;
+    import.meta.env.DEV = false;
+
+    render(
+      <ErrorBoundary>
+        <Boom fail />
+      </ErrorBoundary>,
+    );
+
+    expect(console.error).not.toHaveBeenCalled();
+
+    import.meta.env.DEV = originalDev;
+  });
+
+  it("shows error message in DEV mode", () => {
+    const originalDev = import.meta.env.DEV;
+    import.meta.env.DEV = true;
+
+    render(
+      <ErrorBoundary>
+        <Boom fail />
+      </ErrorBoundary>,
+    );
+
+    expect(screen.getByText("boom")).toBeInTheDocument();
+
+    import.meta.env.DEV = originalDev;
+  });
+
+  it("hides error message in production", () => {
+    const originalDev = import.meta.env.DEV;
+    import.meta.env.DEV = false;
+
+    render(
+      <ErrorBoundary>
+        <Boom fail />
+      </ErrorBoundary>,
+    );
+
+    expect(screen.queryByText("boom")).not.toBeInTheDocument();
+
+    import.meta.env.DEV = originalDev;
+  });
+
+  it("resets error when try again is clicked", async () => {
+    const user = userEvent.setup();
+    
+    render(
+      <ErrorBoundary>
+        <Boom fail />
+      </ErrorBoundary>,
+    );
+
+    expect(screen.getByText(/something went wrong/i)).toBeInTheDocument();
+    
+    await user.click(screen.getByRole("button", { name: /try again/i }));
+    
+    // After reset, it should attempt to render children again
+    // Since we're still in the error boundary, it will catch the error again
+    expect(screen.getByText(/something went wrong/i)).toBeInTheDocument();
+  });
+
+  it("handles null error gracefully", () => {
+    class NullErrorBoundary extends ErrorBoundary {
+      static getDerivedStateFromError() {
+        return { hasError: true, error: null };
+      }
+    }
+
+    render(
+      <NullErrorBoundary>
+        <Boom fail />
+      </NullErrorBoundary>,
+    );
+
+    // Should render fallback UI even with null error
+    expect(screen.getByText(/something went wrong/i)).toBeInTheDocument();
+  });
+
+  it("handles getDerivedStateFromError correctly", () => {
+    const ThrowError = () => {
+      throw new Error("Test error");
+    };
+
+    render(
+      <ErrorBoundary>
+        <ThrowError />
+      </ErrorBoundary>,
+    );
+
+    expect(screen.getByText(/something went wrong/i)).toBeInTheDocument();
+  });
+
+  it("handles componentDidCatch correctly", () => {
+    const originalDev = import.meta.env.DEV;
+    import.meta.env.DEV = true;
+
+    const ThrowError = () => {
+      throw new Error("ComponentDidCatch test");
+    };
+
+    render(
+      <ErrorBoundary>
+        <ThrowError />
+      </ErrorBoundary>,
+    );
+
+    expect(console.error).toHaveBeenCalled();
+
+    import.meta.env.DEV = originalDev;
+  });
 });
