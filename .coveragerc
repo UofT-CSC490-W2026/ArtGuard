@@ -9,6 +9,8 @@ omit =
     src/apps/train/inference.py
     src/apps/train/dataset.py
     src/apps/train/model.py
+    # One-off Wikidata scraper (module-level I/O); not imported by the app.
+    src/apps/data_pipeline/wikidata_paintings.py
 
 [report]
 exclude_lines =
