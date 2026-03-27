@@ -3,6 +3,7 @@
 from unittest.mock import MagicMock, patch
 
 import pytest
+from botocore.exceptions import ClientError
 
 
 class TestProcessData:
@@ -17,26 +18,24 @@ class TestProcessData:
         assert "not properly configured" in resp.json()["detail"].lower()
 
     @pytest.mark.asyncio
-    async def test_sts_failure_500(self, client, monkeypatch):
+    async def test_ecs_exception_500(self, client, monkeypatch):
         monkeypatch.setenv("ECS_PRIVATE_SUBNETS", "subnet-abc")
         monkeypatch.setenv("ECS_TASK_SECURITY_GROUPS", "sg-123")
 
         with patch("src.apps.backend.routes.process_data_router.boto3") as mock_boto3:
-            mock_sts = MagicMock()
-            mock_sts.get_caller_identity.side_effect = Exception("STS down")
-            mock_boto3.client.return_value = mock_sts
+            mock_ecs = MagicMock()
+            mock_ecs.run_task.side_effect = Exception("ECS down")
+            mock_boto3.client.return_value = mock_ecs
 
             resp = await client.post("/process_data")
             assert resp.status_code == 500
-            assert "credentials" in resp.json()["detail"].lower()
+            assert "failed to launch" in resp.json()["detail"].lower()
 
     @pytest.mark.asyncio
     async def test_successful_launch(self, client, monkeypatch):
         monkeypatch.setenv("ECS_PRIVATE_SUBNETS", "subnet-abc")
         monkeypatch.setenv("ECS_TASK_SECURITY_GROUPS", "sg-123")
-
-        mock_sts = MagicMock()
-        mock_sts.get_caller_identity.return_value = {"Account": "123456789012"}
+        monkeypatch.setenv("ECS_PROCESS_TASK_FAMILY", "artguard-backend")
 
         mock_ecs = MagicMock()
         mock_ecs.run_task.return_value = {
@@ -45,22 +44,19 @@ class TestProcessData:
         }
 
         with patch("src.apps.backend.routes.process_data_router.boto3") as mock_boto3:
-            # First call is STS, second is ECS
-            mock_boto3.client.side_effect = [mock_sts, mock_ecs]
+            mock_boto3.client.return_value = mock_ecs
 
             resp = await client.post("/process_data")
             assert resp.status_code == 200
             data = resp.json()
             assert "run_id" in data
             assert "task_arn" in data
+            assert mock_ecs.run_task.call_args.kwargs["taskDefinition"] == "artguard-backend"
 
     @pytest.mark.asyncio
     async def test_ecs_failures_500(self, client, monkeypatch):
         monkeypatch.setenv("ECS_PRIVATE_SUBNETS", "subnet-abc")
         monkeypatch.setenv("ECS_TASK_SECURITY_GROUPS", "sg-123")
-
-        mock_sts = MagicMock()
-        mock_sts.get_caller_identity.return_value = {"Account": "123456789012"}
 
         mock_ecs = MagicMock()
         mock_ecs.run_task.return_value = {
@@ -69,7 +65,7 @@ class TestProcessData:
         }
 
         with patch("src.apps.backend.routes.process_data_router.boto3") as mock_boto3:
-            mock_boto3.client.side_effect = [mock_sts, mock_ecs]
+            mock_boto3.client.return_value = mock_ecs
 
             resp = await client.post("/process_data")
             assert resp.status_code == 500
@@ -79,14 +75,11 @@ class TestProcessData:
         monkeypatch.setenv("ECS_PRIVATE_SUBNETS", "subnet-abc")
         monkeypatch.setenv("ECS_TASK_SECURITY_GROUPS", "sg-123")
 
-        mock_sts = MagicMock()
-        mock_sts.get_caller_identity.return_value = {"Account": "123456789012"}
-
         mock_ecs = MagicMock()
         mock_ecs.run_task.return_value = {"tasks": [], "failures": []}
 
         with patch("src.apps.backend.routes.process_data_router.boto3") as mock_boto3:
-            mock_boto3.client.side_effect = [mock_sts, mock_ecs]
+            mock_boto3.client.return_value = mock_ecs
 
             resp = await client.post("/process_data")
             assert resp.status_code == 500
@@ -97,15 +90,30 @@ class TestProcessData:
         monkeypatch.setenv("ECS_PRIVATE_SUBNETS", "subnet-abc")
         monkeypatch.setenv("ECS_TASK_SECURITY_GROUPS", "sg-123")
 
-        mock_sts = MagicMock()
-        mock_sts.get_caller_identity.return_value = {"Account": "123456789012"}
-
         mock_ecs = MagicMock()
         mock_ecs.run_task.side_effect = Exception("ECS error")
 
         with patch("src.apps.backend.routes.process_data_router.boto3") as mock_boto3:
-            mock_boto3.client.side_effect = [mock_sts, mock_ecs]
+            mock_boto3.client.return_value = mock_ecs
 
             resp = await client.post("/process_data")
             assert resp.status_code == 500
             assert "try again" in resp.json()["detail"].lower()
+
+    @pytest.mark.asyncio
+    async def test_ecs_client_error_returns_400(self, client, monkeypatch):
+        monkeypatch.setenv("ECS_PRIVATE_SUBNETS", "subnet-abc")
+        monkeypatch.setenv("ECS_TASK_SECURITY_GROUPS", "sg-123")
+
+        mock_ecs = MagicMock()
+        mock_ecs.run_task.side_effect = ClientError(
+            error_response={"Error": {"Code": "ClientException", "Message": "task missing"}},
+            operation_name="RunTask",
+        )
+
+        with patch("src.apps.backend.routes.process_data_router.boto3") as mock_boto3:
+            mock_boto3.client.return_value = mock_ecs
+
+            resp = await client.post("/process_data")
+            assert resp.status_code == 400
+            assert "configuration" in resp.json()["detail"].lower()
