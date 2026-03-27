@@ -104,6 +104,18 @@ describe("filters", () => {
     expect(matchesForgedFilter(baseResult({ prediction: 0 }))).toBe(true);
     expect(matchesAuthenticFilter(baseResult({ inferenceStatus: "failed" }))).toBe(false);
   });
+
+  it("matchesUncertainFilter returns true when prediction is not 0 or 1", () => {
+    expect(matchesUncertainFilter(baseResult({ prediction: -1, score: 0.5, explanation: "x" }))).toBe(true);
+    expect(matchesUncertainFilter(baseResult({ prediction: 1 }))).toBe(false);
+    expect(matchesUncertainFilter(baseResult({ prediction: 0 }))).toBe(false);
+    expect(matchesUncertainFilter(baseResult({ inferenceStatus: "failed" }))).toBe(false);
+  });
+
+  it("matchesFailedInferenceFilter returns true only for failed runs", () => {
+    expect(matchesFailedInferenceFilter(baseResult({ inferenceStatus: "failed" }))).toBe(true);
+    expect(matchesFailedInferenceFilter(baseResult({ inferenceStatus: "completed", prediction: 1 }))).toBe(false);
+  });
 });
 
 describe("resolveDisplayedExplanation", () => {
@@ -141,5 +153,20 @@ describe("getBatchIndicator", () => {
   it("returns Unavailable when prediction is neither 0 nor 1", () => {
     const b = getBatchIndicator(baseResult({ prediction: -1, score: 0.5, explanation: "x" }));
     expect(b.label).toBe("Unavailable");
+  });
+
+  it("returns Authentic for prediction 1", () => {
+    const b = getBatchIndicator(baseResult({ prediction: 1, score: 0.9 }));
+    expect(b.label).toBe("Authentic");
+  });
+
+  it("returns Forgery for prediction 0", () => {
+    const b = getBatchIndicator(baseResult({ prediction: 0, score: 0.1 }));
+    expect(b.label).toBe("Forgery");
+  });
+
+  it("returns Error for failed inference", () => {
+    const b = getBatchIndicator(baseResult({ inferenceStatus: "failed" }));
+    expect(b.label).toBe("Error");
   });
 });

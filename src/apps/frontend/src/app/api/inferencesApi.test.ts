@@ -39,6 +39,38 @@ describe("inferenceToAnalysisResult", () => {
     expect(r.prediction).toBeUndefined();
     expect(r.inferenceError).toBeUndefined();
   });
+
+  it("coerces unknown inference_status to undefined", () => {
+    const r = inferenceToAnalysisResult({
+      inference_id: "x",
+      created_at: 0,
+      score: 0,
+      artist_name: "a",
+      artwork_name: "b",
+      image_name: "c",
+      file_size: 0,
+      image_url: "",
+      inference_status: "unknown_status",
+    });
+    expect(r.inferenceStatus).toBeUndefined();
+  });
+
+  it("maps all valid inference_status values", () => {
+    for (const status of ["processing", "completed", "failed"] as const) {
+      const r = inferenceToAnalysisResult({
+        inference_id: "x",
+        created_at: 0,
+        score: 0,
+        artist_name: "a",
+        artwork_name: "b",
+        image_name: "c",
+        file_size: 0,
+        image_url: "",
+        inference_status: status,
+      });
+      expect(r.inferenceStatus).toBe(status);
+    }
+  });
 });
 
 describe("inferences API functions", () => {

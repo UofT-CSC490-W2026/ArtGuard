@@ -31,6 +31,9 @@ describe("hasAllowedImageExtension", () => {
 describe("constants", () => {
   it("IMAGE_EXTENSIONS matches backend-aligned set", () => {
     expect(IMAGE_EXTENSIONS.has(".jpeg")).toBe(true);
+    expect(IMAGE_EXTENSIONS.has(".bmp")).toBe(true);
+    expect(IMAGE_EXTENSIONS.has(".tiff")).toBe(true);
+    expect(IMAGE_EXTENSIONS.has(".webp")).toBe(true);
     expect(MAX_UPLOAD_BYTES).toBe(20 * 1024 * 1024);
   });
 });

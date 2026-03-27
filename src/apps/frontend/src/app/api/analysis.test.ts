@@ -119,4 +119,26 @@ describe("analyzeArtwork", () => {
     },
     15_000,
   );
+
+  it(
+    "handles Image onerror in mock mode (loadImageDimensions fallback)",
+    async () => {
+      // Image that fires onerror — dimensions should fall back to 1x1
+      class ErrImg {
+        naturalWidth = 0;
+        naturalHeight = 0;
+        onerror: (() => void) | null = null;
+        set src(_: string) {
+          queueMicrotask(() => this.onerror?.());
+        }
+      }
+      vi.stubGlobal("Image", ErrImg);
+
+      const file = new File([new Uint8Array([1])], "a.png", { type: "image/png" });
+      await expect(
+        analyzeArtwork({ file, artistName: "X", artworkName: "Y", userId: "z" }),
+      ).rejects.toThrow("Failed to read image dimensions");
+    },
+    15_000,
+  );
 });

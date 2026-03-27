@@ -8,4 +8,15 @@ describe("artAsset", () => {
     vi.stubEnv("BASE_URL", "/app/");
     expect(artAsset("a.jpg")).toBe("/app/art/a.jpg");
   });
+
+  it("handles BASE_URL without trailing slash", () => {
+    vi.stubEnv("BASE_URL", "/app");
+    expect(artAsset("b.jpg")).toBe("/app/art/b.jpg");
+  });
+
+  it("handles empty BASE_URL", () => {
+    vi.stubEnv("BASE_URL", "");
+    const result = artAsset("c.jpg");
+    expect(result).toContain("art/c.jpg");
+  });
 });
