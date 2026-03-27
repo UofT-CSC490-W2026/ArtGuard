@@ -445,10 +445,10 @@ class TestQueryRagExplanation:
         )
         assert result is None
 
-    def test_returns_fallback_on_error(self, monkeypatch):
-        """Negative: generate_explanation raises → stable fallback string; no exception to route.
+    def test_returns_none_on_pipeline_error(self, monkeypatch):
+        """Negative: generate_explanation raises → None; no exception to route.
 
-        Why: RAG failures must not 500 the inference request.
+        Why: RAG failures must not 500 the inference request; UI shows neutral copy, not invented text.
         """
         monkeypatch.setenv("KNOWLEDGE_BASE_ID", "kb-123")
         with patch(
@@ -459,13 +459,12 @@ class TestQueryRagExplanation:
                 result = inference_service.query_rag_explanation(
                     1, 0.9, **_sample_rag_call_kwargs(),
                 )
-        assert result is not None
-        assert "unavailable" in result.lower()
+        assert result is None
 
-    def test_empty_pipeline_response_uses_fallback_message(self, monkeypatch):
-        """Positive / boundary: empty response_text from pipeline → same fallback as hard failure.
+    def test_empty_pipeline_response_returns_none(self, monkeypatch):
+        """Boundary: empty response_text from pipeline → None (no substitute narrative).
 
-        Why: users must not see a blank explanation when the model returns "".
+        Why: missing RAG output must not be replaced with fabricated explanation text.
         """
         monkeypatch.setenv("KNOWLEDGE_BASE_ID", "kb-empty")
         empty_result = GenerationResult(
@@ -482,7 +481,7 @@ class TestQueryRagExplanation:
                 result = inference_service.query_rag_explanation(
                     0, 0.5, **_sample_rag_call_kwargs(),
                 )
-        assert "unavailable" in result.lower()
+        assert result is None
 
     def test_success_returns_pipeline_text(self, monkeypatch):
         """Positive: non-empty GenerationResult.response_text returned; artist/artwork forwarded.

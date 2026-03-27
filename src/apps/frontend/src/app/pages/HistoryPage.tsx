@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { useNavigate, Link } from "react-router";
 import { useAuth } from "../contexts/AuthContext";
 import { Header } from "../components/Header";
+import { PageHeader } from "../components/PageHeader";
+import { BrushDivider } from "../components/BrushDivider";
 import { Button } from "../components/ui/button";
 import { Input } from "../components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle } from "../components/ui/card";
@@ -35,7 +37,6 @@ import {
   matchesFailedInferenceFilter,
   matchesForgedFilter,
   matchesUncertainFilter,
-  usesAuthenticitySemantics,
 } from "../lib/analysisDisplay";
 import {
   deleteAllInferences,
@@ -115,7 +116,7 @@ export function HistoryPage() {
       );
     }
 
-    // Score filter (per-item semantics: API = authenticity; old localStorage = legacy forgery scale)
+    // Score / prediction filter (binary model labels + failed runs)
     if (scoreFilter !== "all") {
       filtered = filtered.filter((item) => {
         if (scoreFilter === "failed") return matchesFailedInferenceFilter(item);
@@ -145,16 +146,16 @@ export function HistoryPage() {
   }, [searchQuery, scoreFilter, sortBy, history]);
 
   const getHistoryBadge = (item: AnalysisResult) => {
-    const { icon, color, label } = getBatchIndicator(item, item.score);
+    const { icon, color, label } = getBatchIndicator(item);
     const classNameByColor: Record<string, string> = {
-      "text-green-600": "bg-green-100 text-green-700 hover:bg-green-100",
-      "text-yellow-600": "bg-yellow-100 text-yellow-700 hover:bg-yellow-100",
-      "text-red-600": "bg-red-100 text-red-700 hover:bg-red-100",
-      "text-gray-700": "bg-gray-200 text-gray-800 hover:bg-gray-200",
+      "text-positive": "bg-positive-muted text-positive hover:bg-positive-muted",
+      "text-caution": "bg-caution-muted text-caution hover:bg-caution-muted",
+      "text-negative": "bg-negative-muted text-negative hover:bg-negative-muted",
+      "text-muted-foreground": "bg-muted text-foreground hover:bg-muted",
     };
     return {
       label,
-      className: classNameByColor[color] ?? "bg-gray-100 text-gray-700 hover:bg-gray-100",
+      className: classNameByColor[color] ?? "bg-muted text-foreground hover:bg-muted",
       icon,
     };
   };
@@ -216,47 +217,48 @@ export function HistoryPage() {
     <div className="min-h-screen bg-background">
       <Header />
 
+      <PageHeader
+        title="Analysis history"
+        description="View and manage your past analyses. Scores are mean patch authenticity probabilities; badges reflect the model label when available."
+        contentClassName="max-w-6xl mx-auto"
+        actions={
+          history.length > 0 && !isLoading ? (
+            <AlertDialog>
+              <AlertDialogTrigger asChild>
+                <Button variant="outline">
+                  <Trash2 className="size-4 mr-2" />
+                  Clear All
+                </Button>
+              </AlertDialogTrigger>
+              <AlertDialogContent>
+                <AlertDialogHeader>
+                  <AlertDialogTitle>Clear all history?</AlertDialogTitle>
+                  <AlertDialogDescription>
+                    This will permanently delete all your analysis history. This action cannot be undone.
+                  </AlertDialogDescription>
+                </AlertDialogHeader>
+                <AlertDialogFooter>
+                  <AlertDialogCancel>Cancel</AlertDialogCancel>
+                  <AlertDialogAction onClick={() => void clearAllHistory()}>
+                    Clear All
+                  </AlertDialogAction>
+                </AlertDialogFooter>
+              </AlertDialogContent>
+            </AlertDialog>
+          ) : null
+        }
+      />
+
+      <BrushDivider />
+
       <main className="container mx-auto px-4 py-8">
         <div className="max-w-6xl mx-auto">
-          <div className="mb-8 flex items-center justify-between">
-            <div>
-              <h1 className="text-3xl mb-2">Analysis History</h1>
-              <p className="text-gray-600">
-                View and manage your past analyses (authenticity confidence from the API, or legacy score scale for older saves)
-              </p>
-            </div>
-            {history.length > 0 && !isLoading && (
-              <AlertDialog>
-                <AlertDialogTrigger asChild>
-                  <Button variant="outline">
-                    <Trash2 className="size-4 mr-2" />
-                    Clear All
-                  </Button>
-                </AlertDialogTrigger>
-                <AlertDialogContent>
-                  <AlertDialogHeader>
-                    <AlertDialogTitle>Clear all history?</AlertDialogTitle>
-                    <AlertDialogDescription>
-                      This will permanently delete all your analysis history. This action cannot be undone.
-                    </AlertDialogDescription>
-                  </AlertDialogHeader>
-                  <AlertDialogFooter>
-                    <AlertDialogCancel>Cancel</AlertDialogCancel>
-                    <AlertDialogAction onClick={() => void clearAllHistory()}>
-                      Clear All
-                    </AlertDialogAction>
-                  </AlertDialogFooter>
-                </AlertDialogContent>
-              </AlertDialog>
-            )}
-          </div>
-
           {/* Filters */}
           <Card className="mb-6">
             <CardContent className="pt-6">
               <div className="grid md:grid-cols-3 gap-4">
                 <div className="relative">
-                  <Search className="absolute left-3 top-1/2 -translate-y-1/2 size-4 text-gray-400" />
+                  <Search className="absolute left-3 top-1/2 -translate-y-1/2 size-4 text-muted-foreground" />
                   <Input
                     placeholder="Search artist, artwork, or filename..."
                     value={searchQuery}
@@ -314,13 +316,13 @@ export function HistoryPage() {
           {!isLoading && filteredHistory.length === 0 ? (
             <Card>
               <CardContent className="py-16 text-center">
-                <div className="text-gray-400 mb-4">
+                <div className="text-muted-foreground mb-4">
                   <Calendar className="size-16 mx-auto" />
                 </div>
-                <h3 className="text-xl mb-2">
+                <h3 className="font-serif text-xl font-semibold text-foreground mb-2">
                   {history.length === 0 ? "No analysis history yet" : "No results found"}
                 </h3>
-                <p className="text-gray-500 mb-6">
+                <p className="text-muted-foreground mb-6">
                   {history.length === 0
                     ? "Upload an artwork to start analyzing"
                     : "Try adjusting your filters"}
@@ -342,7 +344,7 @@ export function HistoryPage() {
                   <Card key={item.id} className="hover:shadow-md transition-shadow">
                     <CardContent className="p-4">
                       <div className="flex gap-4">
-                        <div className="size-24 flex-shrink-0 rounded overflow-hidden bg-gray-100">
+                        <div className="size-24 flex-shrink-0 rounded overflow-hidden bg-muted">
                           {item.image ? (
                             <img
                               src={item.image}
@@ -359,10 +361,10 @@ export function HistoryPage() {
                         <div className="flex-1 min-w-0">
                           <div className="flex items-start justify-between gap-4 mb-2">
                             <div className="flex-1 min-w-0">
-                              <h3 className="font-semibold truncate">
+                              <h3 className="font-semibold truncate text-foreground">
                                 {item.artworkName}
                               </h3>
-                              <p className="text-sm text-gray-600 truncate">
+                              <p className="text-sm text-muted-foreground truncate">
                                 by {item.artistName}
                               </p>
                             </div>
@@ -372,13 +374,11 @@ export function HistoryPage() {
                             </Badge>
                           </div>
 
-                          <div className="flex items-center gap-4 text-sm text-gray-500 mb-3">
+                          <div className="flex items-center gap-4 text-sm text-muted-foreground mb-3">
                             <span>
                               {isInferenceFailed(item)
                                 ? "No score — inference failed"
-                                : usesAuthenticitySemantics(item)
-                                  ? `Authenticity: ${formatAnalysisScorePercent(item)}%`
-                                  : `Score: ${formatAnalysisScorePercent(item)}%`}
+                                : `Mean patch authenticity: ${formatAnalysisScorePercent(item)}%`}
                             </span>
                             <span>•</span>
                             <span>
@@ -434,7 +434,7 @@ export function HistoryPage() {
           ) : null}
 
           {!isLoading && filteredHistory.length > 0 && (
-            <div className="mt-6 text-center text-sm text-gray-500">
+            <div className="mt-6 text-center text-sm text-muted-foreground">
               Showing {filteredHistory.length} of {history.length} results
             </div>
           )}

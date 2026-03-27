@@ -1,3 +1,4 @@
+/// <reference types="vitest/config" />
 import { defineConfig } from 'vite'
 import path from 'path'
 import tailwindcss from '@tailwindcss/vite'
@@ -26,5 +27,18 @@ export default defineConfig({
       },
     },
     chunkSizeWarningLimit: 600,
+  },
+  test: {
+    environment: 'jsdom',
+    setupFiles: ['./src/test/setup.ts'],
+    include: ['src/**/*.{test,spec}.{ts,tsx}'],
+    /** Avoid cross-file localStorage races in Auth tests */
+    fileParallelism: false,
+    coverage: {
+      provider: 'v8',
+      reporter: ['text', 'html'],
+      include: ['src/app/**/*.{ts,tsx}'],
+      exclude: ['src/app/components/ui/**'],
+    },
   },
 })

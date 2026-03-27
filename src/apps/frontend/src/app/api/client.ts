@@ -15,6 +15,16 @@ function getBaseUrl(): string {
   throw new Error("API client used without VITE_API_URL");
 }
 
+/**
+ * Join `VITE_API_URL` with a route path. Strips a leading slash from `path` and resolves relative to
+ * the base so `https://host/api` + `/inference` → `https://host/api/inference` (plain `new URL` would drop `/api`).
+ */
+function resolveApiUrl(base: string, path: string): URL {
+  const root = `${base.replace(/\/?$/, "/")}`;
+  const segment = path.replace(/^\/+/, "");
+  return new URL(segment, root);
+}
+
 /** Persist JWT from /auth/login | /auth/signup | /auth/profile */
 export function setAccessToken(token: string | null): void {
   if (token) {
@@ -98,7 +108,7 @@ export async function postFormData<T>(
   config?: { skipAuth?: boolean }
 ): Promise<T> {
   const base = getBaseUrl();
-  const url = new URL(path, base).toString();
+  const url = resolveApiUrl(base, path).toString();
   const headers: Record<string, string> = {};
   if (!config?.skipAuth) {
     const token = getAccessToken();

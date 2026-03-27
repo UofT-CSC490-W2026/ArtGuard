@@ -13,14 +13,21 @@ export interface AuthApiResponse {
   user: User;
 }
 
-/** How to interpret `score` for display and filters. */
-export type ScoreSemantics = "authenticity" | "legacy_forgery";
-
 /** DynamoDB inference_status (camelCase on the client). */
 export type InferenceStatus = "processing" | "completed" | "failed";
 
+/** Per-patch box and authenticity probability (0–1) from POST /inference. */
+export interface PatchData {
+  x: number;
+  y: number;
+  w: number;
+  h: number;
+  prob: number;
+}
+
 export interface AnalysisResult {
   id: string;
+  /** Mean per-patch probability of authenticity (0–1), aligned with the backend Modal pipeline. */
   score: number;
   image: string;
   artistName: string;
@@ -38,14 +45,13 @@ export interface AnalysisResult {
   explanation?: string | null;
   /**
    * Backend Modal: 1 = authentic, 0 = forgery, -1 = unknown/pending.
-   * Omitted on legacy/mock analyses that used the old score scale only.
    */
   prediction?: number | null;
-  /**
-   * `authenticity`: `score` is mean patch probability of authenticity (higher = more authentic).
-   * `legacy_forgery`: older saved results where higher `score` meant stronger forgery signal.
-   */
-  scoreSemantics?: ScoreSemantics;
+  /** Original image dimensions (pixels), from API when available. */
+  imageWidth?: number;
+  imageHeight?: number;
+  /** Per-patch authenticity probabilities aligned with backend patch grid. */
+  patchData?: PatchData[];
 }
 
 export interface ApiError {
