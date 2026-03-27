@@ -123,22 +123,23 @@ class TestStreamPatch:
         with pytest.raises(ValueError, match="fallback_bucket required"):
             _stream_patch_from_s3(mock_s3, "training/img/patch.jpg", fallback_bucket="")
 
-    def test_no_such_key_raises_file_not_found(self):
-        mock_s3 = MagicMock()
-        mock_s3.exceptions = MagicMock()
-        mock_s3.exceptions.NoSuchKey = type("NoSuchKey", (Exception,), {})
-        mock_s3.get_object.side_effect = mock_s3.exceptions.NoSuchKey("not found")
+    def test_no_such_key_propagates(self):
+        from botocore.exceptions import ClientError
 
-        with pytest.raises(FileNotFoundError, match="Patch not found"):
+        mock_s3 = MagicMock()
+        mock_s3.get_object.side_effect = ClientError(
+            {"Error": {"Code": "NoSuchKey", "Message": "not found"}},
+            "GetObject",
+        )
+
+        with pytest.raises(ClientError):
             _stream_patch_from_s3(mock_s3, "s3://bucket/missing.jpg")
 
-    def test_generic_error_raises_io_error(self):
+    def test_generic_error_propagates(self):
         mock_s3 = MagicMock()
-        mock_s3.exceptions = MagicMock()
-        mock_s3.exceptions.NoSuchKey = type("NoSuchKey", (Exception,), {})
         mock_s3.get_object.side_effect = RuntimeError("connection timeout")
 
-        with pytest.raises(IOError, match="Failed to read patch"):
+        with pytest.raises(RuntimeError, match="connection timeout"):
             _stream_patch_from_s3(mock_s3, "s3://bucket/bad.jpg")
 
 
@@ -337,9 +338,10 @@ class TestPatchDataset:
             split="train",
         )
         assert len(ds) == 1
-        # Verify FilterExpression was passed to scan
+        # Split filtering happens in Python after scan (no DynamoDB FilterExpression).
         call_kwargs = mock_img_table.scan.call_args[1]
-        assert "FilterExpression" in call_kwargs
+        assert "FilterExpression" not in call_kwargs
+        assert "ProjectionExpression" in call_kwargs
 
     @patch("src.apps.train.dataset.boto3")
     def test_getitem(self, mock_boto3):

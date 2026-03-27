@@ -12,6 +12,35 @@ import pytest
 
 
 # ---------------------------------------------------------------------------
+# config.py — bedrock_invoke_model_id / bedrock_model_arn (inference profile)
+# ---------------------------------------------------------------------------
+
+
+class TestConfigBedrockInferenceProfile:
+    """Cover branches when BEDROCK_INFERENCE_PROFILE_ARN is set."""
+
+    def test_bedrock_invoke_model_id_returns_profile_arn(self):
+        from src.apps.backend import config
+
+        arn = "arn:aws:bedrock:us-east-1:123456789012:inference-profile/test"
+        with patch.object(config, "BEDROCK_INFERENCE_PROFILE_ARN", arn):
+            assert config.bedrock_invoke_model_id() == arn
+
+    def test_bedrock_model_arn_returns_profile_arn(self):
+        from src.apps.backend import config
+
+        arn = "arn:aws:bedrock:us-east-1:123456789012:inference-profile/test"
+        with patch.object(config, "BEDROCK_INFERENCE_PROFILE_ARN", arn):
+            assert config.bedrock_model_arn() == arn
+
+    def test_bedrock_invoke_model_id_falls_back_without_profile(self):
+        from src.apps.backend import config
+
+        with patch.object(config, "BEDROCK_INFERENCE_PROFILE_ARN", ""):
+            assert config.bedrock_invoke_model_id() == config.BEDROCK_MODEL_ID
+
+
+# ---------------------------------------------------------------------------
 # logging_config.py — lines 45, 55 (context var getters)
 # ---------------------------------------------------------------------------
 
