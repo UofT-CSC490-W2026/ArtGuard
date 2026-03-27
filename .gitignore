@@ -50,3 +50,6 @@ data/
 # Frontend (Node / Vite)
 node_modules/
 src/apps/frontend/dist/
+src/apps/frontend/coverage/
+src/apps/frontend/test-results/
+src/apps/frontend/playwright-report/

@@ -6,9 +6,9 @@ import { Button } from "../components/ui/button";
 import { Loader2 } from "lucide-react";
 import type { AnalysisResult } from "../types";
 import {
-  generateFallbackExplanation,
   getAnalysisVerdict,
   isInferenceFailed,
+  resolveDisplayedExplanation,
 } from "../lib/analysisDisplay";
 
 export function ResultsPage() {
@@ -29,11 +29,7 @@ export function ResultsPage() {
       const parsed = JSON.parse(stored) as AnalysisResult;
       setResult(parsed);
 
-      if (parsed.explanation) {
-        setExplanation(parsed.explanation);
-      } else {
-        setExplanation(generateFallbackExplanation(parsed));
-      }
+      setExplanation(resolveDisplayedExplanation(parsed));
     } catch {
       navigate("/upload");
     } finally {

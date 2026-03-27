@@ -116,7 +116,10 @@ export async function buildAnalysisPdf(input: PdfReportInput): Promise<Blob> {
   y += 6;
   doc.setFont("helvetica", "normal");
   doc.setFontSize(10);
-  const explLines = doc.splitTextToSize(input.explanation || "(none)", pageWidth - margin * 2);
+  const explLines = doc.splitTextToSize(
+    input.explanation?.trim() ? input.explanation : "No explanation",
+    pageWidth - margin * 2,
+  );
   for (let i = 0; i < explLines.length; i++) {
     if (y > pageBottom) newPage();
     doc.text(explLines[i], margin, y);

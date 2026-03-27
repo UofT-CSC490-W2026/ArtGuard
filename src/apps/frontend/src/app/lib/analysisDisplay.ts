@@ -138,29 +138,19 @@ export function getBatchIndicator(r: AnalysisResult) {
   return { icon: AlertTriangle, color: "text-caution", label: "Unavailable" };
 }
 
-export function generateFallbackExplanation(r: AnalysisResult): string {
+/** Shown when the backend did not return RAG explanation text (we do not invent one). */
+export const NO_EXPLANATION = "No explanation";
+
+/**
+ * Text to show in the explanation panel: real `explanation` from the API when present;
+ * otherwise a factual inference-failure line, or {@link NO_EXPLANATION} — never score-based narrative as a substitute for RAG.
+ */
+export function resolveDisplayedExplanation(r: AnalysisResult): string {
+  const raw = r.explanation != null ? String(r.explanation).trim() : "";
+  if (raw) return raw;
   if (isInferenceFailed(r)) {
     const detail = r.inferenceError?.trim();
-    return detail
-      ? `Inference did not complete. ${detail}`
-      : "Inference did not complete (for example the model service was unavailable). This entry does not contain a real authenticity score—try analyzing again later.";
+    return detail ? `Inference did not complete. ${detail}` : "Inference did not complete.";
   }
-
-  const s = r.score;
-  const p = r.prediction;
-
-  if (p === 1) {
-    return `Patch-level analysis suggests cues more consistent with authentic work (mean authenticity probability ${(s * 100).toFixed(1)}%). This is not a certificate of authenticity—consult experts for high-value pieces.`;
-  }
-  if (p === 0) {
-    return `Patch-level analysis suggests cues more consistent with forgery or reproduction (mean authenticity probability ${(s * 100).toFixed(1)}%). False positives occur; seek professional verification before conclusions.`;
-  }
-
-  if (s > 0.7) {
-    return `Mean patch authenticity probability is ${(s * 100).toFixed(1)}%, but a binary model label was not available. Treat as indicative only and seek expert review.`;
-  }
-  if (s < 0.3) {
-    return `Mean patch authenticity probability is ${(s * 100).toFixed(1)}%, but a binary model label was not available. False positives occur; seek professional verification before conclusions.`;
-  }
-  return `Results are mixed or borderline (mean authenticity probability ${(s * 100).toFixed(1)}%). A binary model label was not available—we recommend further review by qualified conservators or forensic specialists.`;
+  return NO_EXPLANATION;
 }

@@ -1,0 +1,145 @@
+import { describe, expect, it } from "vitest";
+import type { AnalysisResult } from "../types";
+import {
+  formatAnalysisScorePercent,
+  getAnalysisBarColor,
+  getAnalysisVerdict,
+  getAuthenticityBarColor,
+  getBatchIndicator,
+  isInferenceFailed,
+  matchesAuthenticFilter,
+  matchesForgedFilter,
+  NO_EXPLANATION,
+  primaryScoreDescription,
+  primaryScoreTitle,
+  resolveDisplayedExplanation,
+} from "./analysisDisplay";
+
+function baseResult(overrides: Partial<AnalysisResult> = {}): AnalysisResult {
+  return {
+    id: "1",
+    score: 0.75,
+    image: "",
+    artistName: "A",
+    artworkName: "B",
+    timestamp: "",
+    fileName: "f.jpg",
+    fileSize: 1,
+    ...overrides,
+  };
+}
+
+describe("isInferenceFailed", () => {
+  it("returns true for explicit failed status", () => {
+    expect(isInferenceFailed(baseResult({ inferenceStatus: "failed" }))).toBe(true);
+  });
+
+  it("returns false for completed or processing", () => {
+    expect(isInferenceFailed(baseResult({ inferenceStatus: "completed" }))).toBe(false);
+    expect(isInferenceFailed(baseResult({ inferenceStatus: "processing" }))).toBe(false);
+  });
+
+  it("returns true for placeholder failed row", () => {
+    expect(
+      isInferenceFailed(
+        baseResult({
+          prediction: -1,
+          score: 0,
+          explanation: "",
+        }),
+      ),
+    ).toBe(true);
+  });
+});
+
+describe("getAnalysisVerdict", () => {
+  it("returns Authentic for prediction 1 when not failed", () => {
+    const v = getAnalysisVerdict(baseResult({ prediction: 1, score: 0.8 }));
+    expect(v.text).toBe("Authentic");
+  });
+
+  it("returns Forgery for prediction 0", () => {
+    const v = getAnalysisVerdict(baseResult({ prediction: 0, score: 0.2 }));
+    expect(v.text).toBe("Forgery");
+  });
+
+  it("returns Unavailable when prediction is not 0 or 1", () => {
+    const v = getAnalysisVerdict(baseResult({ prediction: -1, score: 0.5, explanation: "x" }));
+    expect(v.text).toBe("Unavailable");
+  });
+
+  it("returns Error when inference failed", () => {
+    const v = getAnalysisVerdict(baseResult({ inferenceStatus: "failed", score: 0 }));
+    expect(v.text).toBe("Error");
+  });
+});
+
+describe("score helpers", () => {
+  it("getAuthenticityBarColor buckets score", () => {
+    expect(getAuthenticityBarColor(0.8)).toBe("bg-bar-positive");
+    expect(getAuthenticityBarColor(0.1)).toBe("bg-bar-negative");
+    expect(getAuthenticityBarColor(0.5)).toBe("bg-bar-caution");
+  });
+
+  it("getAnalysisBarColor uses muted when failed", () => {
+    expect(getAnalysisBarColor(baseResult({ inferenceStatus: "failed" }))).toBe("bg-bar-muted");
+  });
+
+  it("formatAnalysisScorePercent shows em dash when failed", () => {
+    expect(formatAnalysisScorePercent(baseResult({ inferenceStatus: "failed" }))).toBe("—");
+    expect(formatAnalysisScorePercent(baseResult({ score: 0.333 }))).toBe("33.3");
+  });
+
+  it("primaryScoreTitle and description reflect failure", () => {
+    expect(primaryScoreTitle(baseResult({ inferenceStatus: "failed" }))).toBe("Inference failed");
+    expect(primaryScoreDescription(baseResult({ inferenceStatus: "failed" }))).toContain(
+      "did not return a score",
+    );
+  });
+});
+
+describe("filters", () => {
+  it("matchesAuthenticFilter and matchesForgedFilter", () => {
+    expect(matchesAuthenticFilter(baseResult({ prediction: 1 }))).toBe(true);
+    expect(matchesForgedFilter(baseResult({ prediction: 0 }))).toBe(true);
+    expect(matchesAuthenticFilter(baseResult({ inferenceStatus: "failed" }))).toBe(false);
+  });
+});
+
+describe("resolveDisplayedExplanation", () => {
+  it("returns API explanation when present", () => {
+    expect(resolveDisplayedExplanation(baseResult({ explanation: "  RAG text  " }))).toBe("RAG text");
+  });
+
+  it("returns NO_EXPLANATION when completed run has no explanation text", () => {
+    expect(
+      resolveDisplayedExplanation(
+        baseResult({ inferenceStatus: "completed", prediction: 1, score: 0.9 }),
+      ),
+    ).toBe(NO_EXPLANATION);
+  });
+
+  it("treats whitespace-only explanation as missing", () => {
+    expect(resolveDisplayedExplanation(baseResult({ explanation: "   " }))).toBe(NO_EXPLANATION);
+  });
+
+  it("includes inference error when failed with detail", () => {
+    const text = resolveDisplayedExplanation(
+      baseResult({ inferenceStatus: "failed", inferenceError: "timeout" }),
+    );
+    expect(text).toContain("timeout");
+  });
+
+  it("returns short message when failed without detail", () => {
+    expect(resolveDisplayedExplanation(baseResult({ inferenceStatus: "failed" }))).toBe(
+      "Inference did not complete.",
+    );
+  });
+});
+
+describe("getBatchIndicator", () => {
+  it("returns Unavailable when prediction is neither 0 nor 1", () => {
+    const b = getBatchIndicator(baseResult({ prediction: -1, score: 0.5, explanation: "x" }));
+    expect(b.label).toBe("Unavailable");
+  });
+});

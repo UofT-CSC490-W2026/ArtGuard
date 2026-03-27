@@ -296,8 +296,8 @@ def query_rag_explanation(
     retrieves knowledge chunks, formats inference context with top patch evidence,
     and attaches overall + patch images when possible.
 
-    Returns None if no Knowledge Base is configured. Returns a fallback message
-    if the pipeline fails (does not raise).
+    Returns None if no Knowledge Base is configured, if generation yields no text,
+    or if the pipeline raises (does not invent substitute explanation text).
 
     Args:
         prediction:    1 = authentic, 0 = forgery.
@@ -353,12 +353,16 @@ def query_rag_explanation(
         )
         emit_metric("ArtGuard", "RAGLatency", duration, "Seconds",
                      {"Endpoint": "rag"})
-        return result.response_text or "Explanation unavailable at this time."
+        text = (result.response_text or "").strip()
+        if not text:
+            logger.warning("RAG returned empty explanation text")
+            return None
+        return text
     except Exception:
         duration = time.perf_counter() - start
         logger.warning("RAG pipeline failed after %.2fs", duration, exc_info=True)
         emit_metric("ArtGuard", "RAGError", 1, "Count", {"Endpoint": "rag"})
-        return "Explanation unavailable at this time."
+        return None
 
 
 def finalize_inference(
