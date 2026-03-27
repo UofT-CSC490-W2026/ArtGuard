@@ -1,7 +1,7 @@
 import { Link } from "react-router";
 import { useAuth } from "../contexts/AuthContext";
 import { Button } from "./ui/button";
-import { Shield, User, LogOut, Upload, History, UserCircle, Sparkles, Terminal } from "lucide-react";
+import { User, LogOut, UserCircle } from "lucide-react";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -16,71 +16,55 @@ interface HeaderProps {
   authLinkTo?: string;
 }
 
+const navLink =
+  "font-sans text-sm text-muted-foreground transition-colors hover:text-foreground";
+
 export function Header({ showAuthLinks = false, authLinkText, authLinkTo }: HeaderProps) {
   const { user, isAuthenticated, logout } = useAuth();
 
   return (
-    <header className="border-b border-border bg-card">
-      <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <Link to="/" className="flex items-center gap-2">
-          <Shield className="size-7 text-accent-warm" strokeWidth={1.5} />
-          <span className="font-serif text-2xl font-semibold text-foreground">ArtGuard</span>
+    <header className="border-b border-border bg-background">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-6">
+        <Link to="/" className="font-serif text-xl font-normal tracking-tight text-foreground">
+          ArtGuard
         </Link>
 
-        <div className="flex items-center gap-4 font-sans">
+        <div className="flex items-center gap-6 md:gap-8">
           {showAuthLinks && authLinkText && authLinkTo && (
-            <Link to={authLinkTo}>
-              <Button variant="ghost" className="rounded-md">{authLinkText}</Button>
+            <Link to={authLinkTo} className={navLink}>
+              {authLinkText}
             </Link>
           )}
 
           {isAuthenticated && user && (
             <>
-              <nav className="flex items-center gap-2">
-                <Button variant="ghost" asChild className="rounded-md">
-                  <Link to="/upload">
-                    <Upload className="size-4 mr-2" />
-                    Upload
-                  </Link>
-                </Button>
-                <Button variant="ghost" asChild className="rounded-md">
-                  <Link to="/history">
-                    <History className="size-4 mr-2" />
-                    History
-                  </Link>
-                </Button>
-                <Button variant="ghost" asChild className="rounded-md">
-                  <Link to="/advanced">
-                    <Sparkles className="size-4 mr-2" />
-                    Batch Analysis
-                  </Link>
-                </Button>
-                <Button variant="ghost" asChild className="rounded-md">
-                  <Link to="/developer">
-                    <Terminal className="size-4 mr-2" />
-                    API tools
-                  </Link>
-                </Button>
+              <nav className="flex flex-wrap items-center justify-end gap-x-5 gap-y-2">
+                <Link to="/upload" className={navLink}>
+                  Upload
+                </Link>
+                <Link to="/history" className={navLink}>
+                  History
+                </Link>
               </nav>
 
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
-                  <Button variant="outline" className="flex items-center gap-2 rounded-md border-border">
-                    <User className="size-4" />
+                  <Button variant="ghost" className="h-auto rounded-none px-0 font-sans text-sm text-muted-foreground hover:bg-transparent hover:text-foreground">
+                    <User className="size-4 mr-2 opacity-60" />
                     {user.username}
                   </Button>
                 </DropdownMenuTrigger>
-                <DropdownMenuContent align="end">
+                <DropdownMenuContent align="end" className="rounded-none border-border">
                   <DropdownMenuItem asChild>
-                    <Link to="/profile" className="cursor-pointer">
-                      <UserCircle className="size-4 mr-2" />
-                      Profile Settings
+                    <Link to="/profile" className="cursor-pointer font-sans">
+                      <UserCircle className="size-4 mr-2 opacity-60" />
+                      Profile
                     </Link>
                   </DropdownMenuItem>
                   <DropdownMenuSeparator />
-                  <DropdownMenuItem onClick={logout}>
-                    <LogOut className="size-4 mr-2" />
-                    Logout
+                  <DropdownMenuItem onClick={logout} className="font-sans">
+                    <LogOut className="size-4 mr-2 opacity-60" />
+                    Log out
                   </DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
