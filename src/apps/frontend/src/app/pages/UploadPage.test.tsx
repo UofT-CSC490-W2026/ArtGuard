@@ -149,4 +149,62 @@ describe("UploadPage", () => {
     await waitFor(() => expect(screen.getByTestId("results-dest")).toBeInTheDocument());
     expect(localStorage.getItem("artguard_history_u1")).toBeNull();
   });
+
+  it("shows error when file exceeds size limit", async () => {
+    renderUpload();
+    await waitFor(() => expect(screen.getByText(/upload artwork/i)).toBeInTheDocument());
+    const input = document.querySelector('input[type="file"]') as HTMLInputElement;
+    const big = new File([new Uint8Array(21 * 1024 * 1024)], "big.png", { type: "image/png" });
+    fireEvent.change(input, { target: { files: [big] } });
+    expect(await screen.findByText(/file too large/i)).toBeInTheDocument();
+  });
+
+  it("accepts file via drop", async () => {
+    const user = userEvent.setup();
+    analyzeArtwork.mockResolvedValue({
+      id: "z",
+      score: 0.5,
+      image: "",
+      artistName: "A",
+      artworkName: "B",
+      timestamp: new Date().toISOString(),
+      fileName: "x.png",
+      fileSize: 8,
+    });
+    const { container } = renderUpload();
+    await waitFor(() => expect(screen.getByText(/upload artwork/i)).toBeInTheDocument());
+    const dropZone = container.querySelector(".group.cursor-pointer");
+    expect(dropZone).toBeTruthy();
+    const file = pngFile();
+    fireEvent.dragOver(dropZone!, { dataTransfer: { files: [] } });
+    fireEvent.drop(dropZone!, { dataTransfer: { files: [file] } });
+    await user.type(artistInput(container), "A");
+    await user.type(titleInput(container), "B");
+    await user.click(screen.getByRole("button", { name: /analyze artwork/i }));
+    await waitFor(() => expect(screen.getByTestId("results-dest")).toBeInTheDocument());
+  });
+
+  it("shows analyze error message when analyzeArtwork rejects", async () => {
+    const user = userEvent.setup();
+    analyzeArtwork.mockRejectedValue(new Error("Inference failed"));
+    const { container } = renderUpload();
+    await waitFor(() => expect(screen.getByText(/upload artwork/i)).toBeInTheDocument());
+    const input = document.querySelector('input[type="file"]') as HTMLInputElement;
+    fireEvent.change(input, { target: { files: [pngFile()] } });
+    await user.type(artistInput(container), "Artist");
+    await user.type(titleInput(container), "Title");
+    await user.click(screen.getByRole("button", { name: /analyze artwork/i }));
+    expect(await screen.findByText(/inference failed/i)).toBeInTheDocument();
+  });
+
+  it("clears selected file when Remove is clicked", async () => {
+    const user = userEvent.setup();
+    const { container } = renderUpload();
+    await waitFor(() => expect(screen.getByText(/upload artwork/i)).toBeInTheDocument());
+    const input = document.querySelector('input[type="file"]') as HTMLInputElement;
+    fireEvent.change(input, { target: { files: [pngFile()] } });
+    expect(screen.getByText(/x\.png/i)).toBeInTheDocument();
+    await user.click(screen.getByRole("button", { name: /^remove$/i }));
+    expect(screen.queryByText(/x\.png/i)).not.toBeInTheDocument();
+  });
 });

@@ -43,6 +43,8 @@ if (typeof Element !== "undefined") {
   if (!Element.prototype.hasPointerCapture) {
     Element.prototype.hasPointerCapture = vi.fn(() => false) as typeof Element.prototype.hasPointerCapture;
   }
+  // Radix Select calls scrollIntoView; jsdom may omit or stub it incompletely.
+  Element.prototype.scrollIntoView = vi.fn() as typeof Element.prototype.scrollIntoView;
 }
 
 afterEach(() => {

@@ -98,6 +98,32 @@ describe("score helpers", () => {
       "did not return a score",
     );
   });
+
+  it("primaryScoreTitle and description for completed inference", () => {
+    const r = baseResult({ inferenceStatus: "completed", prediction: 1, score: 0.8 });
+    expect(primaryScoreTitle(r)).toBe("Authenticity confidence");
+    expect(primaryScoreDescription(r)).toContain("Mean probability across patches");
+  });
+});
+
+describe("getAnalysisBarColor", () => {
+  it("uses muted bar for failed inference", () => {
+    expect(getAnalysisBarColor(baseResult({ inferenceStatus: "failed" }))).toBe("bg-bar-muted");
+  });
+
+  it("maps score to authenticity bar colors when completed", () => {
+    expect(getAnalysisBarColor(baseResult({ inferenceStatus: "completed", score: 0.9 }))).toBe("bg-bar-positive");
+    expect(getAnalysisBarColor(baseResult({ inferenceStatus: "completed", score: 0.1 }))).toBe("bg-bar-negative");
+    expect(getAnalysisBarColor(baseResult({ inferenceStatus: "completed", score: 0.5 }))).toBe("bg-bar-caution");
+  });
+});
+
+describe("getAuthenticityBarColor", () => {
+  it("returns band classes by score", () => {
+    expect(getAuthenticityBarColor(0.8)).toBe("bg-bar-positive");
+    expect(getAuthenticityBarColor(0.2)).toBe("bg-bar-negative");
+    expect(getAuthenticityBarColor(0.5)).toBe("bg-bar-caution");
+  });
 });
 
 describe("filters", () => {

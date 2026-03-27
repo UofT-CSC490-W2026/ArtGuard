@@ -1,10 +1,12 @@
 import { fireEvent, render, screen, waitFor } from "@testing-library/react";
+import userEvent from "@testing-library/user-event";
 import { MemoryRouter, Route, Routes } from "react-router";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 import { AuthProvider } from "../contexts/AuthContext";
 import type { AnalysisResult } from "../types";
 import { HistoryPage } from "./HistoryPage";
 import * as client from "../api/client";
+import * as inferencesApi from "../api/inferencesApi";
 
 function makeResult(overrides: Partial<AnalysisResult> = {}): AnalysisResult {
   return {
@@ -161,6 +163,7 @@ describe("HistoryPage", () => {
   });
 
   it("sort by score-high puts highest score first", async () => {
+    const user = userEvent.setup();
     const results = [
       makeResult({ artworkName: "Low Score", score: 0.2, prediction: 0 }),
       makeResult({ artworkName: "High Score", score: 0.9, prediction: 1 }),
@@ -169,15 +172,18 @@ describe("HistoryPage", () => {
     renderHistory();
     await waitFor(() => expect(screen.getByText("Low Score")).toBeInTheDocument());
 
-    // Change sort to score-high
-    const sortSelect = screen.getAllByRole("combobox")[1];
-    fireEvent.change(sortSelect, { target: { value: "score-high" } });
+    const sortTrigger = screen.getAllByRole("combobox")[1];
+    await user.click(sortTrigger);
+    await user.click(await screen.findByRole("option", { name: /highest score/i }));
 
-    const items = screen.getAllByRole("heading", { level: 3 });
-    expect(items[0].textContent).toBe("High Score");
+    await waitFor(() => {
+      const items = screen.getAllByRole("heading", { level: 3 });
+      expect(items[0].textContent).toBe("High Score");
+    });
   });
 
   it("filter by authentic shows only authentic results", async () => {
+    const user = userEvent.setup();
     const results = [
       makeResult({ artworkName: "Authentic Work", prediction: 1, inferenceStatus: "completed" }),
       makeResult({ artworkName: "Forged Work", prediction: 0, inferenceStatus: "completed" }),
@@ -186,14 +192,15 @@ describe("HistoryPage", () => {
     renderHistory();
     await waitFor(() => expect(screen.getByText("Authentic Work")).toBeInTheDocument());
 
-    const filterSelect = screen.getAllByRole("combobox")[0];
-    fireEvent.change(filterSelect, { target: { value: "authentic" } });
+    await user.click(screen.getAllByRole("combobox")[0]);
+    await user.click(await screen.findByRole("option", { name: /likely authentic/i }));
 
     await waitFor(() => expect(screen.getByText("Authentic Work")).toBeInTheDocument());
     expect(screen.queryByText("Forged Work")).not.toBeInTheDocument();
   });
 
   it("filter by forged shows only forged results", async () => {
+    const user = userEvent.setup();
     const results = [
       makeResult({ artworkName: "Authentic Work", prediction: 1, inferenceStatus: "completed" }),
       makeResult({ artworkName: "Forged Work", prediction: 0, inferenceStatus: "completed" }),
@@ -202,30 +209,38 @@ describe("HistoryPage", () => {
     renderHistory();
     await waitFor(() => expect(screen.getByText("Forged Work")).toBeInTheDocument());
 
-    const filterSelect = screen.getAllByRole("combobox")[0];
-    fireEvent.change(filterSelect, { target: { value: "forged" } });
+    await user.click(screen.getAllByRole("combobox")[0]);
+    await user.click(await screen.findByRole("option", { name: /likely forgery/i }));
 
     await waitFor(() => expect(screen.getByText("Forged Work")).toBeInTheDocument());
     expect(screen.queryByText("Authentic Work")).not.toBeInTheDocument();
   });
 
   it("filter by uncertain shows only uncertain results", async () => {
+    const user = userEvent.setup();
     const results = [
-      makeResult({ artworkName: "Uncertain Work", prediction: -1, score: 0.5, explanation: "x", inferenceStatus: "completed" }),
+      makeResult({
+        artworkName: "Uncertain Work",
+        prediction: -1,
+        score: 0.5,
+        explanation: "x",
+        inferenceStatus: "completed",
+      }),
       makeResult({ artworkName: "Authentic Work", prediction: 1, inferenceStatus: "completed" }),
     ];
     localStorage.setItem("artguard_history_u1", JSON.stringify(results));
     renderHistory();
     await waitFor(() => expect(screen.getByText("Uncertain Work")).toBeInTheDocument());
 
-    const filterSelect = screen.getAllByRole("combobox")[0];
-    fireEvent.change(filterSelect, { target: { value: "uncertain" } });
+    await user.click(screen.getAllByRole("combobox")[0]);
+    await user.click(await screen.findByRole("option", { name: /^uncertain$/i }));
 
     await waitFor(() => expect(screen.getByText("Uncertain Work")).toBeInTheDocument());
     expect(screen.queryByText("Authentic Work")).not.toBeInTheDocument();
   });
 
   it("filter by failed shows only failed results", async () => {
+    const user = userEvent.setup();
     const results = [
       makeResult({ artworkName: "Failed Work", prediction: -1, score: 0, inferenceStatus: "failed" }),
       makeResult({ artworkName: "Good Work", prediction: 1, inferenceStatus: "completed" }),
@@ -234,10 +249,60 @@ describe("HistoryPage", () => {
     renderHistory();
     await waitFor(() => expect(screen.getByText("Failed Work")).toBeInTheDocument());
 
-    const filterSelect = screen.getAllByRole("combobox")[0];
-    fireEvent.change(filterSelect, { target: { value: "failed" } });
+    await user.click(screen.getAllByRole("combobox")[0]);
+    await user.click(await screen.findByRole("option", { name: /inference failed/i }));
 
     await waitFor(() => expect(screen.getByText("Failed Work")).toBeInTheDocument());
     expect(screen.queryByText("Good Work")).not.toBeInTheDocument();
+  });
+});
+
+describe("HistoryPage API backend", () => {
+  beforeEach(() => {
+    localStorage.clear();
+    vi.restoreAllMocks();
+    vi.spyOn(client, "hasApiBackend").mockReturnValue(true);
+    vi.spyOn(client, "getAccessToken").mockReturnValue("tok");
+    vi.spyOn(client.api, "get").mockResolvedValue({
+      id: "u1",
+      username: "test",
+      email: "t@t.com",
+    });
+  });
+
+  it("shows error when list inferences fails", async () => {
+    vi.spyOn(inferencesApi, "listInferences").mockRejectedValue(new Error("Service unavailable"));
+    renderHistory();
+    await waitFor(() => expect(screen.getByText(/service unavailable/i)).toBeInTheDocument());
+  });
+
+  it("renders list from API and loads more with cursor", async () => {
+    const user = userEvent.setup();
+    const baseItem: inferencesApi.InferenceListItem = {
+      inference_id: "inf-1",
+      created_at: Date.now(),
+      score: 0.8,
+      prediction: 1,
+      artist_name: "API Artist",
+      artwork_name: "API Work",
+      image_name: "a.png",
+      file_size: 100,
+      image_url: "",
+      inference_status: "completed",
+    };
+    const listSpy = vi
+      .spyOn(inferencesApi, "listInferences")
+      .mockResolvedValueOnce({ items: [baseItem], next_cursor: "c2" })
+      .mockResolvedValueOnce({
+        items: [{ ...baseItem, inference_id: "inf-2", artwork_name: "Second Work" }],
+        next_cursor: null,
+      });
+
+    renderHistory();
+    await waitFor(() => expect(screen.getByText("API Work")).toBeInTheDocument());
+    await user.click(screen.getByRole("button", { name: /load more/i }));
+    await waitFor(() => expect(screen.getByText("Second Work")).toBeInTheDocument());
+    expect(listSpy).toHaveBeenCalledWith(50);
+    expect(listSpy).toHaveBeenCalledWith(50, "c2");
   });
 });

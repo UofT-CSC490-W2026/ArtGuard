@@ -220,7 +220,11 @@ describe("ProtectedRoute", () => {
         <Routes>
           <Route
             path="/"
-            element={<ProtectedRoute />}
+            element={
+              <ProtectedRoute>
+                <div>child</div>
+              </ProtectedRoute>
+            }
           />
         </Routes>
       </MemoryRouter>,

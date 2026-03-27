@@ -94,6 +94,21 @@ describe("inferences API functions", () => {
     expect(url).toContain("cursor=cur");
   });
 
+  it("listInferences omits cursor param when not provided", async () => {
+    vi.stubEnv("VITE_API_URL", "http://127.0.0.1/api");
+    vi.resetModules();
+    const fetchMock = vi.fn().mockResolvedValue({
+      ok: true,
+      json: async () => ({ items: [], next_cursor: null }),
+    });
+    vi.stubGlobal("fetch", fetchMock);
+    const { listInferences } = await import("./inferencesApi");
+    await listInferences(25);
+    const url = fetchMock.mock.calls[0][0] as string;
+    expect(url).toContain("limit=25");
+    expect(url).not.toContain("cursor=");
+  });
+
   it("getInference, deleteInference, deleteAllInferences, getInferenceStats hit routes", async () => {
     vi.stubEnv("VITE_API_URL", "http://127.0.0.1/api");
     vi.resetModules();

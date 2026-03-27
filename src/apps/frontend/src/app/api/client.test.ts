@@ -44,6 +44,20 @@ describe("client token helpers", () => {
     expect(init.body).toBe(form);
   });
 
+  it("postFormData omits Authorization when no token is set", async () => {
+    vi.stubEnv("VITE_API_URL", "http://127.0.0.1/api");
+    vi.resetModules();
+    const fetchMock = vi.fn().mockResolvedValue({
+      ok: true,
+      json: async () => ({}),
+    });
+    vi.stubGlobal("fetch", fetchMock);
+    const { postFormData } = await import("./client");
+    await postFormData("/inference", new FormData());
+    const init = fetchMock.mock.calls[0][1] as RequestInit;
+    expect((init.headers as Record<string, string>).Authorization).toBeUndefined();
+  });
+
   it("api.get parses JSON on success", async () => {
     vi.stubEnv("VITE_API_URL", "http://127.0.0.1/api");
     vi.resetModules();

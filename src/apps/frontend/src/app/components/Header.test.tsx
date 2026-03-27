@@ -100,13 +100,13 @@ describe("Header", () => {
     expect(mockLogout).toHaveBeenCalledOnce();
   });
 
-  it("dropdown contains Profile link", async () => {
+  it("dropdown contains Profile entry", async () => {
     const user = userEvent.setup();
     mockAuthenticated();
     render(<MemoryRouter><Header /></MemoryRouter>);
 
     await user.click(screen.getByText("testuser"));
-    expect(screen.getByRole("link", { name: /profile/i })).toBeInTheDocument();
+    expect(screen.getByRole("menuitem", { name: /^profile$/i })).toBeInTheDocument();
   });
 
   it("has correct header structure", () => {
@@ -132,9 +132,12 @@ describe("Header", () => {
       changePassword: vi.fn(),
     });
 
-    render(<MemoryRouter><Header showAuthLinks={true} /></MemoryRouter>);
+    render(
+      <MemoryRouter>
+        <Header showAuthLinks authLinkText="Sign Up" authLinkTo="/signup" />
+      </MemoryRouter>,
+    );
 
-    // Should still show auth links but not user menu
     expect(screen.getByRole("link", { name: "Sign Up" })).toBeInTheDocument();
     expect(screen.queryByText("testuser")).not.toBeInTheDocument();
   });
@@ -185,11 +188,10 @@ describe("Header", () => {
     mockUnauthenticated();
     render(
       <MemoryRouter>
-        <Header showAuthLinks={true} authLinkText="Sign In" />
-      </MemoryRouter>
+        <Header showAuthLinks authLinkText="Sign In" />
+      </MemoryRouter>,
     );
-    
-    // Should show auth link without href
-    expect(screen.getByRole("link", { name: "Sign In" })).toBeInTheDocument();
+
+    expect(screen.queryByRole("link", { name: "Sign In" })).not.toBeInTheDocument();
   });
 });

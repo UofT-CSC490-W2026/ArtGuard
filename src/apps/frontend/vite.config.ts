@@ -39,6 +39,12 @@ export default defineConfig({
       reporter: ['text', 'html'],
       include: ['src/app/**/*.{ts,tsx}'],
       exclude: ['src/app/components/ui/**'],
+      thresholds: {
+        lines: 96,
+        statements: 96,
+        branches: 86,
+        functions: 93,
+      },
     },
   },
 })

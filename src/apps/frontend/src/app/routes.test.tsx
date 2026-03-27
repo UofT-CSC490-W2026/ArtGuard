@@ -3,7 +3,7 @@
  * and that protected routes wrap the correct pages.
  */
 import { render, screen, waitFor } from "@testing-library/react";
-import { RouterProvider, createMemoryRouter } from "react-router";
+import { Outlet, RouterProvider, createMemoryRouter } from "react-router";
 import { describe, expect, it, vi } from "vitest";
 
 // Mock all pages so we don't need full rendering context
@@ -15,10 +15,11 @@ vi.mock("./pages/ResultsPage", () => ({ ResultsPage: () => <div data-testid="res
 vi.mock("./pages/HistoryPage", () => ({ HistoryPage: () => <div data-testid="history-page" /> }));
 vi.mock("./pages/ProfilePage", () => ({ ProfilePage: () => <div data-testid="profile-page" /> }));
 vi.mock("./components/RootLayout", () => ({
-  RootLayout: () => {
-    const { Outlet } = require("react-router");
-    return <div data-testid="root-layout"><Outlet /></div>;
-  },
+  RootLayout: () => (
+    <div data-testid="root-layout">
+      <Outlet />
+    </div>
+  ),
 }));
 vi.mock("./components/ProtectedRoute", () => ({
   ProtectedRoute: ({ children }: { children: React.ReactNode }) => (

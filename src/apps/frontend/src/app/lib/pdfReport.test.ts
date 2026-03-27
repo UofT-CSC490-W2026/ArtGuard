@@ -63,4 +63,18 @@ describe("buildAnalysisPdf", () => {
     });
     expect(blob.size).toBeGreaterThan(5000);
   });
+
+  it("uses default explanation line when text is empty", async () => {
+    const blob = await buildAnalysisPdf({
+      artworkName: "W",
+      artistName: "A",
+      fileName: "f.png",
+      analyzedAt: "2024-01-01",
+      scoreLine: "S",
+      predLine: "",
+      verdict: "V",
+      explanation: "",
+    });
+    expect(blob.size).toBeGreaterThan(100);
+  });
 });

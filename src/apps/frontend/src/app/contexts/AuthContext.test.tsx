@@ -3,7 +3,7 @@
  * signup, login, logout, updateProfile, changePassword, legacy user migration,
  * corrupted localStorage, and the useAuth guard.
  */
-import { act, render, renderHook, screen, waitFor } from "@testing-library/react";
+import { act, render, renderHook, waitFor } from "@testing-library/react";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 import { AuthProvider, useAuth } from "./AuthContext";
 import * as client from "../api/client";
@@ -84,10 +84,8 @@ describe("AuthContext — mock mode", () => {
       await waitFor(() => expect(result.current.isLoading).toBe(false));
 
       await expect(
-        act(async () => {
-          await result.current.signup("newuser", "existing@example.com", "password123");
-        }),
-      ).rejects.toThrow(/email already in use/i);
+        result.current.signup("newuser", "existing@example.com", "password123"),
+      ).rejects.toThrow(/email already registered/i);
     });
   });
 
@@ -115,11 +113,9 @@ describe("AuthContext — mock mode", () => {
       const { result } = renderHook(() => useAuth(), { wrapper });
       await waitFor(() => expect(result.current.isLoading).toBe(false));
 
-      await expect(
-        act(async () => {
-          await result.current.login("nonexistent@example.com", "wrongpass");
-        }),
-      ).rejects.toThrow(/invalid email or password/i);
+      await expect(result.current.login("nonexistent@example.com", "wrongpass")).rejects.toThrow(
+        /invalid email or password/i,
+      );
     });
   });
 
@@ -171,11 +167,9 @@ describe("AuthContext — mock mode", () => {
       const { result } = renderHook(() => useAuth(), { wrapper });
       await waitFor(() => expect(result.current.isLoading).toBe(false));
 
-      await expect(
-        act(async () => {
-          await result.current.updateProfile("newname", "user2@example.com");
-        }),
-      ).rejects.toThrow(/email already in use/i);
+      await expect(result.current.updateProfile("newname", "user2@example.com")).rejects.toThrow(
+        /email is already in use/i,
+      );
     });
   });
 
@@ -213,21 +207,23 @@ describe("AuthContext — mock mode", () => {
       const { result } = renderHook(() => useAuth(), { wrapper });
       await waitFor(() => expect(result.current.isLoading).toBe(false));
 
-      await expect(
-        act(async () => {
-          await result.current.changePassword("wrongpass", "newpass123");
-        }),
-      ).rejects.toThrow(/incorrect current password/i);
+      await expect(result.current.changePassword("wrongpass", "newpass123")).rejects.toThrow(
+        /current password is incorrect/i,
+      );
     });
   });
 });
 
 describe("useAuth guard", () => {
   it("throws when used outside AuthProvider", () => {
-    // Suppress console.error for this test
     const consoleSpy = vi.spyOn(console, "error").mockImplementation(() => {});
 
-    expect(() => renderHook(() => useAuth())).toThrow(/must be used within an AuthProvider/i);
+    function Bad() {
+      useAuth();
+      return null;
+    }
+
+    expect(() => render(<Bad />)).toThrow(/must be used within an AuthProvider/i);
     consoleSpy.mockRestore();
   });
 });
@@ -276,5 +272,85 @@ describe("AuthContext — API backend mode", () => {
     expect(mockSetToken).toHaveBeenCalledWith(null);
     expect(result.current.user).toBeNull();
     expect(result.current.isAuthenticated).toBe(false);
+  });
+
+  it("signup calls API and persists session", async () => {
+    const post = vi.spyOn(client.api, "post").mockResolvedValue({
+      access_token: "jwt",
+      user: { id: "a1", username: "newu", email: "new@example.com" },
+    });
+    const { result } = renderHook(() => useAuth(), { wrapper });
+    await waitFor(() => expect(result.current.isLoading).toBe(false));
+
+    await act(async () => {
+      await result.current.signup("newu", "new@example.com", "secret12");
+    });
+
+    expect(post).toHaveBeenCalledWith(
+      "/auth/signup",
+      { username: "newu", email: "new@example.com", password: "secret12" },
+      { skipAuth: true },
+    );
+    expect(result.current.user?.username).toBe("newu");
+  });
+
+  it("login calls API and persists session", async () => {
+    vi.spyOn(client.api, "post").mockResolvedValue({
+      access_token: "jwt",
+      user: { id: "a1", username: "u", email: "u@example.com" },
+    });
+    const { result } = renderHook(() => useAuth(), { wrapper });
+    await waitFor(() => expect(result.current.isLoading).toBe(false));
+
+    await act(async () => {
+      await result.current.login("u@example.com", "secret12");
+    });
+
+    expect(result.current.isAuthenticated).toBe(true);
+  });
+
+  it("updateProfile calls API when session is active", async () => {
+    vi.spyOn(client, "getAccessToken").mockReturnValue("tok");
+    vi.spyOn(client.api, "get").mockResolvedValue({
+      id: "a1",
+      username: "old",
+      email: "old@example.com",
+    });
+    const put = vi.spyOn(client.api, "put").mockResolvedValue({
+      access_token: "jwt2",
+      user: { id: "a1", username: "newname", email: "new@example.com" },
+    });
+
+    const { result } = renderHook(() => useAuth(), { wrapper });
+    await waitFor(() => expect(result.current.isLoading).toBe(false));
+
+    await act(async () => {
+      await result.current.updateProfile("newname", "new@example.com");
+    });
+
+    expect(put).toHaveBeenCalledWith("/auth/profile", { username: "newname", email: "new@example.com" });
+    expect(result.current.user?.username).toBe("newname");
+  });
+
+  it("changePassword calls API when session is active", async () => {
+    vi.spyOn(client, "getAccessToken").mockReturnValue("tok");
+    vi.spyOn(client.api, "get").mockResolvedValue({
+      id: "a1",
+      username: "u",
+      email: "u@example.com",
+    });
+    const post = vi.spyOn(client.api, "post").mockResolvedValue(undefined);
+
+    const { result } = renderHook(() => useAuth(), { wrapper });
+    await waitFor(() => expect(result.current.isLoading).toBe(false));
+
+    await act(async () => {
+      await result.current.changePassword("oldpass", "newpass9");
+    });
+
+    expect(post).toHaveBeenCalledWith("/auth/change-password", {
+      currentPassword: "oldpass",
+      newPassword: "newpass9",
+    });
   });
 });

@@ -3,6 +3,11 @@ import userEvent from "@testing-library/user-event";
 import { Component, type ReactNode } from "react";
 import { beforeEach, afterEach, describe, expect, it, vi } from "vitest";
 import { ErrorBoundary } from "./ErrorBoundary";
+import { isDev } from "../lib/env";
+
+vi.mock("../lib/env", () => ({
+  isDev: vi.fn(() => true),
+}));
 
 class Boom extends Component<{ fail?: boolean }> {
   render(): ReactNode {
@@ -16,6 +21,7 @@ describe("ErrorBoundary", () => {
 
   beforeEach(() => {
     console.error = vi.fn();
+    vi.mocked(isDev).mockReturnValue(true);
   });
 
   afterEach(() => {
@@ -60,8 +66,7 @@ describe("ErrorBoundary", () => {
   });
 
   it("logs error in DEV mode", () => {
-    const originalDev = import.meta.env.DEV;
-    import.meta.env.DEV = true;
+    vi.mocked(isDev).mockReturnValue(true);
 
     render(
       <ErrorBoundary>
@@ -74,15 +79,12 @@ describe("ErrorBoundary", () => {
       expect.any(Error),
       expect.objectContaining({
         componentStack: expect.any(String),
-      })
+      }),
     );
-
-    import.meta.env.DEV = originalDev;
   });
 
-  it("does not log error in production", () => {
-    const originalDev = import.meta.env.DEV;
-    import.meta.env.DEV = false;
+  it("does not log ErrorBoundary diagnostics in production", () => {
+    vi.mocked(isDev).mockReturnValue(false);
 
     render(
       <ErrorBoundary>
@@ -90,14 +92,14 @@ describe("ErrorBoundary", () => {
       </ErrorBoundary>,
     );
 
-    expect(console.error).not.toHaveBeenCalled();
-
-    import.meta.env.DEV = originalDev;
+    const boundaryLogs = vi.mocked(console.error).mock.calls.filter(
+      (call) => call[0] === "ErrorBoundary caught:",
+    );
+    expect(boundaryLogs).toHaveLength(0);
   });
 
   it("shows error message in DEV mode", () => {
-    const originalDev = import.meta.env.DEV;
-    import.meta.env.DEV = true;
+    vi.mocked(isDev).mockReturnValue(true);
 
     render(
       <ErrorBoundary>
@@ -106,13 +108,10 @@ describe("ErrorBoundary", () => {
     );
 
     expect(screen.getByText("boom")).toBeInTheDocument();
-
-    import.meta.env.DEV = originalDev;
   });
 
   it("hides error message in production", () => {
-    const originalDev = import.meta.env.DEV;
-    import.meta.env.DEV = false;
+    vi.mocked(isDev).mockReturnValue(false);
 
     render(
       <ErrorBoundary>
@@ -121,8 +120,6 @@ describe("ErrorBoundary", () => {
     );
 
     expect(screen.queryByText("boom")).not.toBeInTheDocument();
-
-    import.meta.env.DEV = originalDev;
   });
 
   it("resets error when try again is clicked", async () => {
@@ -175,8 +172,7 @@ describe("ErrorBoundary", () => {
   });
 
   it("handles componentDidCatch correctly", () => {
-    const originalDev = import.meta.env.DEV;
-    import.meta.env.DEV = true;
+    vi.mocked(isDev).mockReturnValue(true);
 
     const ThrowError = () => {
       throw new Error("ComponentDidCatch test");
@@ -189,7 +185,5 @@ describe("ErrorBoundary", () => {
     );
 
     expect(console.error).toHaveBeenCalled();
-
-    import.meta.env.DEV = originalDev;
   });
 });

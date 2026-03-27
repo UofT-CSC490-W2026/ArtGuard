@@ -23,6 +23,7 @@ describe("analyzeArtwork", () => {
 
   afterEach(() => {
     vi.useRealTimers();
+    vi.unstubAllGlobals();
     vi.restoreAllMocks();
   });
 
@@ -67,6 +68,46 @@ describe("analyzeArtwork", () => {
     });
     expect(r.artistName).toBe("Unknown");
     expect(r.artworkName).toBe("Untitled");
+  });
+
+  it("maps API response without optional image dimensions or patch data", async () => {
+    hoisted.hasBackend = true;
+    hoisted.postFormData.mockResolvedValue({
+      inference_id: "i2",
+      score: 0.3,
+      image_url: "",
+      patch_data: undefined,
+    });
+    const file = new File([new Uint8Array([1])], "f.png", { type: "image/png" });
+    const r = await analyzeArtwork({
+      file,
+      artistName: "A",
+      artworkName: "B",
+      userId: "u",
+    });
+    expect(r.id).toBe("i2");
+    expect(r.imageWidth).toBeUndefined();
+    expect(r.patchData).toBeUndefined();
+  });
+
+  it("rejects when preview image dimensions fail to load", async () => {
+    class BadImg {
+      onerror: (() => void) | null = null;
+      set src(_: string) {
+        queueMicrotask(() => this.onerror?.());
+      }
+    }
+    vi.stubGlobal("Image", BadImg);
+
+    const file = new File([new Uint8Array([1])], "a.png", { type: "image/png" });
+    await expect(
+      analyzeArtwork({
+        file,
+        artistName: "X",
+        artworkName: "Y",
+        userId: "z",
+      }),
+    ).rejects.toThrow("Failed to read image dimensions");
   });
 
   it(

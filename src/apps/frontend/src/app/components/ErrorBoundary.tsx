@@ -2,6 +2,7 @@ import { Component, type ErrorInfo, type ReactNode } from "react";
 import { Button } from "./ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
 import { AlertCircle } from "lucide-react";
+import { isDev } from "../lib/env";
 
 interface Props {
   children: ReactNode;
@@ -21,7 +22,7 @@ export class ErrorBoundary extends Component<Props, State> {
   }
 
   componentDidCatch(error: Error, errorInfo: ErrorInfo): void {
-    if (import.meta.env.DEV) {
+    if (isDev()) {
       console.error("ErrorBoundary caught:", error, errorInfo);
     }
   }
@@ -31,7 +32,7 @@ export class ErrorBoundary extends Component<Props, State> {
   };
 
   render(): ReactNode {
-    if (this.state.hasError && this.state.error) {
+    if (this.state.hasError) {
       if (this.props.fallback) return this.props.fallback;
       return (
         <div className="min-h-screen bg-background flex items-center justify-center p-4">
@@ -46,9 +47,9 @@ export class ErrorBoundary extends Component<Props, State> {
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
-              {import.meta.env.DEV && (
+              {isDev() && (
                 <pre className="text-xs bg-muted p-3 rounded overflow-auto max-h-32">
-                  {this.state.error.message}
+                  {this.state.error?.message ?? "Unknown error"}
                 </pre>
               )}
               <div className="flex gap-2">
