@@ -78,7 +78,7 @@ jobs:
         if: github.event_name == 'pull_request'
         uses: orgoro/coverage@v3.2
         with:
-          coverageFile: src/apps/frontend/coverage/lcov.info
+          coverageFile: src/apps/frontend/coverage/cobertura-coverage.xml
           token: ${{ secrets.GITHUB_TOKEN }}
           thresholdAll: 1.0
 

@@ -37,8 +37,8 @@ export default defineConfig({
     fileParallelism: false,
     coverage: {
       provider: 'v8',
-      /** json-summary: badge step; lcov: orgoro/coverage PR comments in CI */
-      reporter: ['text', 'html', 'json-summary', 'lcov'],
+      /** json-summary: badge step; cobertura XML: orgoro/coverage PR comments in CI */
+      reporter: ['text', 'html', 'json-summary', 'lcov', 'cobertura'],
       include: ['src/app/**/*.{ts,tsx}'],
       exclude: ['src/app/components/ui/**'],
       thresholds: {
