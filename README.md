@@ -182,7 +182,7 @@ ArtGuard/
 │   ├── disaster-recovery.sh  #   One-command DR demo (destroy → prove → recover)
 │   ├── recover-prod.sh       #   Recovery script (import orphans → rebuild → verify)
 │   └── ...                   #   bootstrap, build-docker, deploy-ecs, upload-rag, etc.
-├── tests/                     # pytest test suite (395 tests, 100% coverage)
+├── tests/                     # pytest test suite (600+ tests, 100% coverage)
 │   ├── conftest.py           #   Shared fixtures (mocked AWS, FastAPI test client)
 │   ├── test_routes_*.py      #   API route tests (auth, inference, rag, train, etc.)
 │   ├── test_model.py         #   Swin Transformer model tests (CPU, no pretrained weights)
@@ -213,7 +213,7 @@ ArtGuard/
 The fastest way to verify the codebase works. Only requires Python 3.11+ and `pip install -r requirements.txt`.
 
 ```bash
-# Run full test suite (395 tests, 100% coverage)
+# Run full test suite
 pytest tests/ -v
 
 # Run with coverage report
@@ -301,7 +301,7 @@ pytest tests/test_load.py -m load -v
 locust -f tests/locustfile.py --host http://localhost:8000
 ```
 
-**Test suite:** 616 tests, 100% code coverage (1781 statements, 0 missed). See [tests/README.md](tests/README.md) for full testing methodology.
+**Test suite:** 600+ tests, 100% code coverage (1781 statements, 0 missed). See [tests/README.md](tests/README.md) and CI for the latest exact count.
 
 | Category | Files | Tests |
 |----------|-------|-------|
@@ -334,7 +334,7 @@ npm run test:e2e
 npm run typecheck
 ```
 
-**Test suite:** 247 unit/component tests (29 files) plus **66** Playwright E2E tests (7 spec files). Coverage is enforced on `src/app/**/*.{ts,tsx}` (see `vite.config.ts`). See [src/apps/frontend/tests/README.md](src/apps/frontend/tests/README.md) for layout, DOM stubs, and how CI splits mock vs full-stack E2E.
+**Test suite:** 238 unit/component tests (28 files) plus **66** Playwright E2E tests (7 spec files). Coverage is enforced on `src/app/**/*.{ts,tsx}` (see `vite.config.ts`). See [src/apps/frontend/tests/README.md](src/apps/frontend/tests/README.md) for layout, DOM stubs, and how CI splits mock vs full-stack E2E.
 
 | Category | Files / areas | Tests |
 |----------|---------------|-------|

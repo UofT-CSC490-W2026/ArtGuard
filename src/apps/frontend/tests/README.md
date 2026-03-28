@@ -2,7 +2,7 @@
 
 ## Overview
 
-The ArtGuard frontend uses **Vitest** with **jsdom**, **Testing Library** (React + user-event + jest-dom matchers), and **Playwright** for end-to-end flows. Unit and component tests live under `tests/app/`; Playwright specs live under `tests/e2e/`. As of the last full run, there are **247** unit/component tests across **29** files (see `vite.config.ts` for includes and coverage settings).
+The ArtGuard frontend uses **Vitest** with **jsdom**, **Testing Library** (React + user-event + jest-dom matchers), and **Playwright** for end-to-end flows. Unit and component tests live under `tests/app/`; Playwright specs live under `tests/e2e/`. As of the last full run, there are **238** unit/component tests across **28** files (see `vite.config.ts` for includes and coverage settings).
 
 Unit tests run in CI via **`frontend-test.yml`** (with **`frontend-coverage.yml`** for coverage badges and reports). E2E runs in the same workflow against a **Vite preview** build, with optional **full-stack** tests when a real FastAPI backend is available.
 
@@ -52,7 +52,6 @@ tests/
 │   │   ├── ProtectedRoute.test.tsx
 │   │   ├── RootLayout.test.tsx
 │   │   └── ui/
-│   │       ├── use-mobile.test.ts
 │   │       └── utils.test.ts
 │   ├── contexts/
 │   │   └── AuthContext.test.tsx  # Mock + API auth, validation, localStorage users
