@@ -54,10 +54,18 @@ export interface AnalysisResult {
   patchData?: PatchData[];
 }
 
-export interface ApiError {
-  message: string;
-  code?: string;
-  status?: number;
+/** Raw JSON shape returned by POST /inference. */
+export interface InferenceApiResponse {
+  inference_id: string;
+  /** 1 = authentic, 0 = forgery, -1 = pending (from Modal / DynamoDB). */
+  prediction?: number | null;
+  score: number;
+  explanation?: string | null;
+  /** Presigned GET for the raw upload (short-lived). */
+  image_url?: string | null;
+  image_width?: number;
+  image_height?: number;
+  patch_data?: PatchData[] | null;
 }
 
 export function getErrorMessage(error: unknown): string {

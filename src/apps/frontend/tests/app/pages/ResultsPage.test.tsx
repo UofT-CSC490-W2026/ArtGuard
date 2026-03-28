@@ -58,7 +58,7 @@ describe("ResultsPage", () => {
     );
   });
 
-  it("shows No explanation when RAG text is missing", async () => {
+  it("shows fallback explanation when RAG text is missing", async () => {
     const result: AnalysisResult = {
       id: "1",
       score: 0.5,
@@ -73,7 +73,7 @@ describe("ResultsPage", () => {
     };
     localStorage.setItem("artguard_latest_result", JSON.stringify(result));
     renderAtResults();
-    await waitFor(() => expect(screen.getByText("No explanation")).toBeInTheDocument());
+    await waitFor(() => expect(screen.getByText(/retrieval-augmented explanation was not available/)).toBeInTheDocument());
   });
 
   it("shows dash for failed inference score", async () => {
