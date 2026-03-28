@@ -285,6 +285,8 @@ Output is written to `src/apps/data_pipeline/output/`.
 
 ## Testing
 
+### Backend tests
+
 ```bash
 # Run all tests
 pytest tests/ -v
@@ -299,7 +301,7 @@ pytest tests/test_load.py -m load -v
 locust -f tests/locustfile.py --host http://localhost:8000
 ```
 
-**Test suite:** 495 tests, 100% code coverage (1781 statements, 0 missed). See [tests/README.md](tests/README.md) for full testing methodology.
+**Test suite:** 616 tests, 100% code coverage (1781 statements, 0 missed). See [tests/README.md](tests/README.md) for full testing methodology.
 
 | Category | Files | Tests |
 |----------|-------|-------|
@@ -310,6 +312,39 @@ locust -f tests/locustfile.py --host http://localhost:8000
 | ML pipeline | model, dataset, train, evaluate, inference (CPU, mocked) | 90+ |
 | Load tests | Concurrency, latency, throughput, mixed workload | 14 |
 | Error handling | Error branches, bad data, missing config, AWS failures | 30+ |
+
+### Frontend tests
+
+```bash
+cd src/apps/frontend
+
+# Unit and component tests (Vitest + jsdom + Testing Library)
+npm test
+
+# With coverage (thresholds in vite.config.ts)
+npm run test:coverage
+
+# Watch mode
+npm run test:watch
+
+# End-to-end (Playwright; builds and serves vite preview)
+npm run test:e2e
+
+# TypeScript check (also run in CI with coverage)
+npm run typecheck
+```
+
+**Test suite:** 247 unit/component tests (29 files) plus **66** Playwright E2E tests (7 spec files). Coverage is enforced on `src/app/**/*.{ts,tsx}` (see `vite.config.ts`). See [src/apps/frontend/tests/README.md](src/apps/frontend/tests/README.md) for layout, DOM stubs, and how CI splits mock vs full-stack E2E.
+
+| Category | Files / areas | Tests |
+|----------|---------------|-------|
+| Page UI | Home, Upload, Results, History, Login, SignUp, Profile | 81 |
+| API & fetch layer | analysis, client, inferencesApi, backendApi | 25 |
+| Auth & session | AuthContext (mock users + API paths) | 25 |
+| Shared components | Header, PatchOverlay, ErrorBoundary, ProtectedRoute, layout, ui helpers | 61 |
+| Libraries | analysisDisplay, uploadLimits, pdfReport, artAssets, env | 41 |
+| App shell & types | App, routes, types | 14 |
+| E2E (Playwright) | auth, navigation, upload, history, profile, smoke, full-stack API | 66 |
 
 ---
 
@@ -428,6 +463,7 @@ export VITE_API_URL=$(terraform -chdir=infra/terraform output -raw cloudfront_di
 | Document | Description |
 |----------|-------------|
 | [src/apps/frontend/README.md](src/apps/frontend/README.md) | Frontend setup and development |
+| [src/apps/frontend/tests/README.md](src/apps/frontend/tests/README.md) | Frontend testing (Vitest, Playwright, coverage, CI) |
 | [src/apps/frontend/ATTRIBUTIONS.md](src/apps/frontend/ATTRIBUTIONS.md) | Third-party component attributions |
 
 ---

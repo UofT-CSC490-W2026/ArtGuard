@@ -2,11 +2,11 @@
 
 ## Overview
 
-ArtGuard uses **pytest** with **moto** (AWS mocks), **httpx** (async API testing), and **Locust** (load testing) to achieve **495 tests at 100% code coverage** across all Python modules in `src/` — including the ML training pipeline.
+ArtGuard uses **pytest** with **moto** (AWS mocks), **httpx** (async API testing), and **Locust** (load testing) to achieve **616 tests at 100% code coverage** across all Python modules in `src/` — including the ML training pipeline.
 
 Modal GPU modules (training, evaluation, inference, dataset, model) are tested on CPU with mocked datasets, checkpoints, and AWS calls. No PyTorch + CUDA is required in CI. The test files (`test_model.py`, `test_train.py`, `test_evaluate.py`, `test_dataset.py`, `test_inference_modal.py`) cover all logic including error handling branches, early stopping, checkpoint saving, and metric computation.
 
-All tests run in CI via the `test-coverage.yml` GitHub Actions workflow on every push to `main` and every pull request.
+All tests run in CI via the `test-coverage.yml` GitHub Actions workflow on every push to `main` and every pull request (with `-m "not slow"`; there are currently no tests marked `slow`). Locally, `test_evaluate.py` may skip one collection item if `sklearn` is not installed; CI installs full `requirements.txt`.
 
 ```bash
 # Run all tests
@@ -27,8 +27,11 @@ pytest tests/test_routes_auth.py -v
 tests/
 ├── conftest.py              # Shared fixtures (mocked AWS, test client, factories)
 ├── test_routes_auth.py      # Auth endpoints (signup, login, profile, password)
+├── test_routes_auth_extended.py # Extra auth route branches and edge cases
 ├── test_routes_inference.py # POST /inference (upload, validate, predict)
+├── test_routes_inference_extended.py # Extra inference route coverage
 ├── test_routes_inferences.py# Inference history (list, get, delete, stats)
+├── test_routes_inferences_extended.py # Extra inferences route coverage
 ├── test_routes_rag.py       # POST /rag-query (Bedrock Knowledge Base)
 ├── test_routes_train.py     # POST /train and /evaluate (Modal dispatch)
 ├── test_routes_process_data.py # POST /process_data (ECS task launch)
@@ -39,13 +42,14 @@ tests/
 ├── test_validation.py       # Data contracts, sanitization, field limits
 ├── test_schemas.py          # DynamoDB dataclass __post_init__ validation
 ├── test_main.py             # App setup, CORS, health endpoint, router registration
+├── test_main_extended.py    # Additional app wiring and startup edge cases
 ├── test_logging_config.py   # Structured JSON logging, EMF metrics, middleware
 ├── test_s3_presign.py       # S3 URI parsing, presigned URL generation
-├── test_split.py            # Deterministic stratified k-fold splitting
-├── test_preprocess.py       # Image → 224x224 patch pipeline
+├── test_preprocess.py     # Image → 224x224 patch pipeline
 ├── test_driver.py           # ECS Fargate processing task (unit)
 ├── test_driver_main.py      # ECS Fargate processing task (integration)
 ├── test_pipelines.py        # MET Museum + Wikidata data ingestion
+├── test_rag_pipeline.py     # RAG formatting, KB queries, response generation (mocked)
 ├── test_coverage_gaps.py    # Targeted tests for hard-to-reach error branches
 ├── test_model.py            # Swin Transformer model (CPU, no pretrained weights)
 ├── test_train.py            # Training loop (mocked dataset, early stopping)
@@ -97,7 +101,6 @@ Test business logic independently from HTTP routing:
 
 ### Data Pipeline Tests
 - **Image patching**: grid computation for various resolutions, RGBA-to-RGB conversion, S3 upload verification, patch metadata structure
-- **Deterministic splitting**: SHA-256 hash stability across runs, stratification preserves sublabel ratios, k-fold reproducibility
 - **MET Museum pipeline**: CSV download and filtering, JSONL output format, MAX_RECORDS limit, progress logging at 10,000 records
 - **Wikidata pipeline**: SPARQL response parsing, multi-value field collection (movements, genres, occupations, influences, notable works), `main()` orchestrator, empty results handling
 - **ECS Fargate driver**: end-to-end processing, empty bucket handling, pre-existing image record updates, error recovery (continues to next image on failure, marks run as `completed_with_errors`)
@@ -152,7 +155,7 @@ The `conftest.py` fixtures also provide:
 ## Coverage
 
 ```
-495 tests | 100% line coverage | 1781 statements, 0 missed
+616 tests | 100% line coverage | 1781 statements, 0 missed
 ```
 
 Coverage is measured across all `src/` Python modules **except** the 5 ML modules (`train.py`, `evaluate.py`, `inference.py`, `dataset.py`, `model.py`) which are omitted in `.coveragerc` because they require PyTorch (not in `requirements.txt` — it's installed inside Modal containers). These modules have dedicated test files that achieve 100% coverage locally and are auto-skipped in CI via `pytest.importorskip("torch")`. Modal-specific decorators (`@app.function`, `@app.local_entrypoint`, `.spawn()`, `.remote()`) are also excluded since they require the Modal runtime.

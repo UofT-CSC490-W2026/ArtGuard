@@ -11,6 +11,8 @@ npm run dev
 
 Scripts: `build`, `preview`, `typecheck`, `test`, `test:coverage`, `test:e2e`.
 
+Testing layout, commands, mocking, coverage thresholds, and CI are documented in [tests/README.md](tests/README.md).
+
 ## Features
 
 - **Home (`/`)** — Hero, artwork mosaic (public-domain images from `public/art/`), short pipeline overview, and calls to action that depend on auth state (sign up, log in, or go to upload).
