@@ -43,10 +43,11 @@ jobs:
 
       - name: Commit coverage badge
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        working-directory: .
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add src/apps/frontend/frontend-coverage.svg || true
+          git add frontend-coverage.svg || true
           git diff --staged --quiet || git commit -m "Update frontend coverage badge [skip ci]"
           git push || true
 
@@ -65,4 +66,4 @@ jobs:
           name: frontend-coverage-report
           path: |
             src/apps/frontend/coverage/
-            src/apps/frontend/frontend-coverage.svg
+            frontend-coverage.svg
