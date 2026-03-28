@@ -146,7 +146,6 @@ These scripts are designed to do one thing well. They are called by the entry po
 Training, test, and validation images (`data/`) are **not stored in the Git repo** — they are too large (~2.1 GB) for Git or Git LFS free tier.
 
 **What's included in the repo (cloned automatically):**
-- `vangogh/` — sample test image (1.8 MB)
 - `src/apps/data_pipeline/output/` — RAG knowledge base text/jsonl
 - All source code, Terraform configs, scripts, etc.
 
