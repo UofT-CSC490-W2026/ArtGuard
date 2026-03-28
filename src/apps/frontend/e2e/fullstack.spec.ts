@@ -29,6 +29,7 @@ function uniqueUser() {
 }
 
 test.describe("Full-stack: auth → inference → history pipeline", () => {
+  test.describe.configure({ timeout: 120_000 });
   test.skip(!hasBackend, "Skipped: no backend URL set (set VITE_API_URL or E2E_BACKEND_URL)");
 
   test("signup creates account via real API and returns JWT", async ({ page, request }) => {
@@ -197,10 +198,10 @@ test.describe("Full-stack: auth → inference → history pipeline", () => {
     await page.waitForURL("**/upload", { timeout: 20_000 });
 
     await page.goto("/profile");
-    await expect(page.getByDisplayValue(username)).toBeVisible({ timeout: 5_000 });
+    await expect(page.locator("#username")).toHaveValue(username, { timeout: 5_000 });
 
     const newUsername = `updated${Date.now()}`;
-    await page.getByDisplayValue(username).fill(newUsername);
+    await page.locator("#username").fill(newUsername);
     await page.getByRole("button", { name: /save changes/i }).click();
 
     // Verify backend reflects the update
