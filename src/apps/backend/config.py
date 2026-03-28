@@ -150,9 +150,10 @@ BEDROCK_MODEL_ID = "anthropic.claude-sonnet-4-5-20250929-v1:0"
 # Sonnet 4.5+ requires an inference profile for on-demand invocation.
 # Default to the US cross-region profile if not explicitly configured.
 _DEFAULT_INFERENCE_PROFILE = "us.anthropic.claude-sonnet-4-5-20250929-v1:0"
-BEDROCK_INFERENCE_PROFILE_ARN = os.getenv(
-    "BEDROCK_INFERENCE_PROFILE_ARN", _DEFAULT_INFERENCE_PROFILE
-).strip()
+BEDROCK_INFERENCE_PROFILE_ARN = (
+    os.getenv("BEDROCK_INFERENCE_PROFILE_ARN", "").strip()
+    or _DEFAULT_INFERENCE_PROFILE
+)
 
 def bedrock_invoke_model_id() -> str:
     """Return the value for Bedrock Runtime `modelId`.

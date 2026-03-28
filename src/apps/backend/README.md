@@ -108,7 +108,7 @@ These drive CloudWatch alarms for error volume spikes.
 
 ```bash
 # Set your API base URL (no trailing slash)
-export API_BASE="https://YOUR_CLOUDFRONT_OR_ALB_HOST"
+export API_BASE="https://https://d1b5yxlog377uv.cloudfront.net"
 ```
 
 All **authenticated** routes require a JWT token:

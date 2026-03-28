@@ -49,9 +49,9 @@ Please see the [Documentation Index](#documentation-index) for detailed document
 
 ## Live Application
 
-> **Frontend:** [https://d3od26qfht8ggi.cloudfront.net](https://d3od26qfht8ggi.cloudfront.net)
+> **Frontend:** [https://d1b5yxlog377uv.cloudfront.net](https://d1b5yxlog377uv.cloudfront.net)
 >
-> **Backend API:** `https://d3od26qfht8ggi.cloudfront.net/api`
+> **Backend API:** `https://d1b5yxlog377uv.cloudfront.net/api`
 >
 > Sign up for a free account, upload an artwork image, and get a forgery detection result with an AI-generated explanation.
 
