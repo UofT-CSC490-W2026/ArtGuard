@@ -54,12 +54,6 @@ export interface AnalysisResult {
   patchData?: PatchData[];
 }
 
-export interface ApiError {
-  message: string;
-  code?: string;
-  status?: number;
-}
-
 export function getErrorMessage(error: unknown): string {
   if (error instanceof Error) return error.message;
   if (typeof error === "object" && error !== null && "message" in error) {

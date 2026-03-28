@@ -2,18 +2,13 @@ import { describe, expect, it } from "vitest";
 import type { AnalysisResult } from "@/app/types";
 import {
   formatAnalysisScorePercent,
-  getAnalysisBarColor,
   getAnalysisVerdict,
-  getAuthenticityBarColor,
   getBatchIndicator,
   isInferenceFailed,
   matchesAuthenticFilter,
   matchesForgedFilter,
   matchesUncertainFilter,
   matchesFailedInferenceFilter,
-  NO_EXPLANATION,
-  primaryScoreDescription,
-  primaryScoreTitle,
   resolveDisplayedExplanation,
 } from "@/app/lib/analysisDisplay";
 
@@ -77,52 +72,9 @@ describe("getAnalysisVerdict", () => {
 });
 
 describe("score helpers", () => {
-  it("getAuthenticityBarColor buckets score", () => {
-    expect(getAuthenticityBarColor(0.8)).toBe("bg-bar-positive");
-    expect(getAuthenticityBarColor(0.1)).toBe("bg-bar-negative");
-    expect(getAuthenticityBarColor(0.5)).toBe("bg-bar-caution");
-  });
-
-  it("getAnalysisBarColor uses muted when failed", () => {
-    expect(getAnalysisBarColor(baseResult({ inferenceStatus: "failed" }))).toBe("bg-bar-muted");
-  });
-
   it("formatAnalysisScorePercent shows em dash when failed", () => {
     expect(formatAnalysisScorePercent(baseResult({ inferenceStatus: "failed" }))).toBe("—");
     expect(formatAnalysisScorePercent(baseResult({ score: 0.333 }))).toBe("33.3");
-  });
-
-  it("primaryScoreTitle and description reflect failure", () => {
-    expect(primaryScoreTitle(baseResult({ inferenceStatus: "failed" }))).toBe("Inference failed");
-    expect(primaryScoreDescription(baseResult({ inferenceStatus: "failed" }))).toContain(
-      "did not return a score",
-    );
-  });
-
-  it("primaryScoreTitle and description for completed inference", () => {
-    const r = baseResult({ inferenceStatus: "completed", prediction: 1, score: 0.8 });
-    expect(primaryScoreTitle(r)).toBe("Authenticity confidence");
-    expect(primaryScoreDescription(r)).toContain("Mean probability across patches");
-  });
-});
-
-describe("getAnalysisBarColor", () => {
-  it("uses muted bar for failed inference", () => {
-    expect(getAnalysisBarColor(baseResult({ inferenceStatus: "failed" }))).toBe("bg-bar-muted");
-  });
-
-  it("maps score to authenticity bar colors when completed", () => {
-    expect(getAnalysisBarColor(baseResult({ inferenceStatus: "completed", score: 0.9 }))).toBe("bg-bar-positive");
-    expect(getAnalysisBarColor(baseResult({ inferenceStatus: "completed", score: 0.1 }))).toBe("bg-bar-negative");
-    expect(getAnalysisBarColor(baseResult({ inferenceStatus: "completed", score: 0.5 }))).toBe("bg-bar-caution");
-  });
-});
-
-describe("getAuthenticityBarColor", () => {
-  it("returns band classes by score", () => {
-    expect(getAuthenticityBarColor(0.8)).toBe("bg-bar-positive");
-    expect(getAuthenticityBarColor(0.2)).toBe("bg-bar-negative");
-    expect(getAuthenticityBarColor(0.5)).toBe("bg-bar-caution");
   });
 });
 
@@ -151,16 +103,16 @@ describe("resolveDisplayedExplanation", () => {
     expect(resolveDisplayedExplanation(baseResult({ explanation: "  RAG text  " }))).toBe("RAG text");
   });
 
-  it("returns NO_EXPLANATION when completed run has no explanation text", () => {
+  it("returns fallback when completed run has no explanation text", () => {
     expect(
       resolveDisplayedExplanation(
         baseResult({ inferenceStatus: "completed", prediction: 1, score: 0.9 }),
       ),
-    ).toBe(NO_EXPLANATION);
+    ).toContain("retrieval-augmented explanation was not available");
   });
 
   it("treats whitespace-only explanation as missing", () => {
-    expect(resolveDisplayedExplanation(baseResult({ explanation: "   " }))).toBe(NO_EXPLANATION);
+    expect(resolveDisplayedExplanation(baseResult({ explanation: "   " }))).toContain("retrieval-augmented explanation was not available");
   });
 
   it("includes inference error when failed with detail", () => {

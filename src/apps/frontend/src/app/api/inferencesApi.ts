@@ -66,18 +66,10 @@ export async function listInferences(
   });
 }
 
-export async function getInference(inferenceId: string): Promise<InferenceListItem> {
-  return api.get<InferenceListItem>(`/inferences/${inferenceId}`);
-}
-
 export async function deleteInference(inferenceId: string): Promise<void> {
   await api.delete(`/inferences/${inferenceId}`);
 }
 
 export async function deleteAllInferences(): Promise<DeleteAllInferencesResponse> {
   return api.delete<DeleteAllInferencesResponse>("/inferences");
-}
-
-export async function getInferenceStats(): Promise<{ count: number }> {
-  return api.get<{ count: number }>("/inferences/stats");
 }
