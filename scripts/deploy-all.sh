@@ -135,8 +135,8 @@ echo ""
 step "Step 6/7: Upload Training Data"
 
 # Check if local images are real files or LFS pointers
-SAMPLE_IMG=$(find data/ -name "*.jpg" -o -name "*.png" 2>/dev/null | head -1)
-if [[ -n "$SAMPLE_IMG" ]] && file "$SAMPLE_IMG" | grep -q "image"; then
+SAMPLE_IMG=$(find ./data -name "*.jpg" -o -name "*.png" 2>/dev/null | head -1 || true)
+if [[ -n "$SAMPLE_IMG" ]] && file "$SAMPLE_IMG" 2>/dev/null | grep -q "image"; then
   info "Uploading training images to S3 and writing metadata to DynamoDB..."
   S3_IMAGES_RAW_BUCKET=$(terraform -chdir=infra/terraform output -raw s3_images_raw_bucket)
   DDB_IMAGES_TABLE=$(terraform -chdir=infra/terraform output -raw dynamodb_image_records_table_name)
