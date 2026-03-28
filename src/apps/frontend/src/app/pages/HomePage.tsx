@@ -32,11 +32,26 @@ const ARTWORKS = [
   },
 ] as const;
 
-const PIPELINE_LINES = [
-  "Upload — image with artist name and title for retrieval.",
-  "Patches — 224 × 224 px grid per Schaerf et al. (2023).",
-  "Swin Transformer — per-patch scores, mean-pooled to a painting-level signal.",
-  "Explanation — RAG-grounded narrative where enabled (Claude, Bedrock, OpenSearch).",
+const PIPELINE_STEPS = [
+  {
+    label: "Upload",
+    detail: "Image with artist name and artwork title.",
+  },
+  {
+    label: "Patch",
+    detail:
+      "Resolution-dependent grid (up to 4\u00d74), each cell producing two 224\u00d7224 patches via center crop and bicubic downsample.",
+  },
+  {
+    label: "Score",
+    detail:
+      "Swin Transformer classifies each patch independently; painting score = mean of patch probabilities.",
+  },
+  {
+    label: "Explain",
+    detail:
+      "RAG retrieves art-historical context and generates a grounded narrative.",
+  },
 ] as const;
 
 /** Full-bleed image cell: no gap, credits overlaid at top. */
@@ -135,15 +150,15 @@ export function HomePage() {
         authLinkTo="/login"
       />
 
-      {/* Editorial title — generous whitespace, reference-style tracking */}
       <section className="border-b border-border">
         <div className="mx-auto max-w-4xl px-6 py-20 md:py-28 lg:py-36">
           <h1 className="text-center font-serif text-[1.65rem] font-normal uppercase leading-[1.2] tracking-[0.14em] text-foreground md:text-3xl lg:text-4xl">
-            Shaping tomorrow&apos;s art authentication with AI
+            Authenticate art. Understand why.
           </h1>
-          <p className="mx-auto mt-12 max-w-md text-center font-sans text-sm leading-relaxed text-muted-foreground md:mt-14 md:text-base">
-            Patch-level vision scoring and grounded explanations — a transparent
-            layer between images and expert judgment.
+          <p className="mx-auto mt-12 max-w-lg text-center font-sans text-sm leading-relaxed text-muted-foreground md:mt-14 md:text-base">
+            ArtGuard gives you per-patch authenticity probabilities you can
+            inspect and retrieval-grounded explanations you can trace — full
+            transparency from pixel to verdict.
           </p>
           <p className="mt-10 text-center font-sans text-sm text-muted-foreground">
             <Link
@@ -167,40 +182,47 @@ export function HomePage() {
 
       {/* Gapless 4-column mosaic — B&W tile backgrounds */}
       <section className="w-full border-b border-border">
-        {/* Row 1: image | image — text spans half grid (2 cols) */}
+        {/* Row 1: image | per-patch transparency */}
         <MosaicRow>
           <MosaicImage art={ARTWORKS[0]} className="md:col-span-2" />
           <MosaicTextTile
-            title="ArtGuard"
+            title="Per-patch transparency"
             className="bg-neutral-100 md:col-span-2"
           >
             <p>
-              Our system evaluates authenticity using proprietary patch-level
-              models and retrieval-grounded explanations — published methods,
-              structured outputs, and no substitute for connoisseurship.
+              Every image is split into a resolution-dependent grid of
+              224&times;224 patches. A Swin Transformer scores each patch
+              independently, so you see the authenticity probability for every
+              region — not just a single opaque number. A heatmap overlay
+              visualizes which areas the model considers authentic (green) versus
+              suspicious (red), and the painting-level score is the transparent
+              mean of all patch probabilities — fully auditable.
             </p>
           </MosaicTextTile>
         </MosaicRow>
 
-        {/* Row 2: two text tiles | wide image */}
+        {/* Row 2: RAG explanation tiles | wide image */}
         <MosaicRow>
           <MosaicTextTile
-            title="Digital workflow"
+            title="Grounded explanations, not black-box verdicts"
             className="border-t border-border bg-background md:col-span-1 md:border-t-0 md:border-r md:border-border"
           >
             <p>
-              Upload photographs with metadata, run analyses, and keep a
-              searchable history for catalogues and due diligence.
+              The system generates a human-readable narrative using
+              Retrieval-Augmented Generation. Explanations are grounded in
+              retrieved knowledge about artist techniques, provenance patterns,
+              and art-historical context — not hallucinated.
             </p>
           </MosaicTextTile>
           <MosaicTextTile
-            title="Fast, objective signal"
+            title="Context-aware reasoning"
             className="border-t border-border bg-neutral-200 md:col-span-1 md:border-t-0 md:border-r md:border-border"
           >
             <p>
-              Receive model-driven scores and narratives without shipping
-              physical works — then pair results with qualified experts where it
-              matters.
+              The RAG pipeline retrieves relevant documents from curated
+              art-historical sources — Metropolitan Museum records, Wikidata
+              artist data — and uses them to explain <em>why</em> the model
+              scored the artwork the way it did.
             </p>
           </MosaicTextTile>
           <MosaicImage
@@ -209,34 +231,58 @@ export function HomePage() {
           />
         </MosaicRow>
 
-        {/* Row 3: wide image | two text tiles */}
+        {/* Row 3: wide image | technical foundation tiles */}
         <MosaicRow>
           <MosaicImage
             art={ARTWORKS[2]}
             className="border-t border-border md:col-span-2 md:border-t-0 md:border-r md:border-border"
           />
           <MosaicTextTile
-            title="Workflow"
+            title="Peer-reviewed foundation"
             className="border-t border-border bg-background md:col-span-1 md:border-t-0 md:border-r md:border-border"
           >
             <p>
-              Upload, analyze at patch resolution, and review reports with
-              scores, context, and explanation where enabled.
+              Built on{" "}
+              <em>Art Authentication with Vision Transformers</em>{" "}
+              (Schaerf&nbsp;et&nbsp;al.,&nbsp;2023). Swin-Tiny and Swin-Base
+              backbones pretrained on ImageNet-1K, fully fine-tuned with
+              He-normal initialization and BCEWithLogitsLoss with imitation
+              weighting.
             </p>
           </MosaicTextTile>
           <MosaicTextTile
-            title="Use & limitations"
+            title="Rigorous evaluation"
             className="border-t border-border bg-neutral-300/60 md:col-span-1 md:border-t-0"
           >
             <p>
-              Outputs support decisions; they are not certificates of
-              authenticity.
-              .
+              Metrics at both patch-level and painting-level — accuracy,
+              precision, recall, and F1.
             </p>
           </MosaicTextTile>
         </MosaicRow>
+      </section>
 
-
+      <section className="border-b border-border bg-neutral-50">
+        <div className="mx-auto max-w-5xl px-6 py-14 md:py-20">
+          <h2 className="mb-10 text-center font-serif text-xl font-normal text-foreground md:text-2xl">
+            How it works
+          </h2>
+          <ol className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+            {PIPELINE_STEPS.map((step, i) => (
+              <li key={step.label} className="flex flex-col">
+                <span className="font-mono text-xs text-muted-foreground/60">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <span className="mt-1 font-serif text-base font-normal text-foreground">
+                  {step.label}
+                </span>
+                <p className="mt-2 font-sans text-sm leading-relaxed text-muted-foreground">
+                  {step.detail}
+                </p>
+              </li>
+            ))}
+          </ol>
+        </div>
       </section>
 
       <footer className="border-t border-border">

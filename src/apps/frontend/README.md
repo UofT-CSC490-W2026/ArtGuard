@@ -9,7 +9,9 @@ npm install
 npm run dev
 ```
 
-Scripts: `build`, `preview`, `typecheck`, `test`, `test:coverage`, `test:e2e`.
+Scripts: `build`, `preview`, `typecheck`, `test`, `test:watch`, `test:coverage`, `test:e2e`.
+
+Testing layout, commands, mocking, coverage thresholds, and CI are documented in [tests/README.md](tests/README.md).
 
 ## Features
 

@@ -46,7 +46,7 @@ describe("HomePage", () => {
     render(<HomePage />, { wrapper });
 
     expect(
-      screen.getByRole("heading", { name: /shaping tomorrow's art authentication with ai/i }),
+      screen.getByRole("heading", { name: /authenticate art\. understand why\./i }),
     ).toBeInTheDocument();
     expect(screen.getAllByText(/^ArtGuard$/).length).toBeGreaterThan(0);
   });
@@ -66,8 +66,8 @@ describe("HomePage", () => {
     mockUseAuth.mockReturnValue(anonUser);
     render(<HomePage />, { wrapper });
 
-    expect(screen.getByRole("heading", { name: /^Digital workflow$/i })).toBeInTheDocument();
-    expect(screen.getByRole("heading", { name: /^Fast, objective signal$/i })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: /grounded explanations/i })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: /^Context-aware reasoning$/i })).toBeInTheDocument();
   });
 
   it("renders hero primary and secondary links for guests", () => {
@@ -114,7 +114,7 @@ describe("HomePage", () => {
     render(<HomePage />, { wrapper });
 
     expect(
-      screen.getByRole("heading", { name: /shaping tomorrow's art authentication with ai/i }),
+      screen.getByRole("heading", { name: /authenticate art\. understand why\./i }),
     ).toBeInTheDocument();
   });
 
