@@ -425,6 +425,39 @@ VITE_API_URL=http://localhost:8000 npm run test:e2e
 
 See [tests/README.md](tests/README.md) for full backend testing methodology.
 
+### Frontend tests
+
+```bash
+cd src/apps/frontend
+
+# Unit and component tests (Vitest + jsdom + Testing Library)
+npm test
+
+# With coverage (thresholds in vite.config.ts)
+npm run test:coverage
+
+# Watch mode
+npm run test:watch
+
+# End-to-end (Playwright; builds and serves vite preview)
+npm run test:e2e
+
+# TypeScript check (also run in CI with coverage)
+npm run typecheck
+```
+
+**Test suite:** 238 unit/component tests (28 files) plus **66** Playwright E2E tests (7 spec files). Coverage is enforced on `src/app/**/*.{ts,tsx}` (see `vite.config.ts`). See [src/apps/frontend/tests/README.md](src/apps/frontend/tests/README.md) for layout, DOM stubs, and how CI splits mock vs full-stack E2E.
+
+| Category | Files / areas | Tests |
+|----------|---------------|-------|
+| Page UI | Home, Upload, Results, History, Login, SignUp, Profile | 81 |
+| API & fetch layer | analysis, client, inferencesApi, backendApi | 25 |
+| Auth & session | AuthContext (mock users + API paths) | 25 |
+| Shared components | Header, PatchOverlay, ErrorBoundary, ProtectedRoute, layout, ui helpers | 52 |
+| Libraries | analysisDisplay, uploadLimits, pdfReport, artAssets, env | 41 |
+| App shell & types | App, routes, types | 14 |
+| E2E (Playwright) | auth, navigation, upload, history, profile, smoke, full-stack API | 66 |
+
 ---
 
 ## Benchmarking
@@ -545,6 +578,7 @@ export VITE_API_URL=$(terraform -chdir=infra/terraform output -raw cloudfront_di
 | Document | Description |
 |----------|-------------|
 | [src/apps/frontend/README.md](src/apps/frontend/README.md) | Frontend setup and development |
+| [src/apps/frontend/tests/README.md](src/apps/frontend/tests/README.md) | Frontend testing (Vitest, Playwright, coverage, CI) |
 | [src/apps/frontend/ATTRIBUTIONS.md](src/apps/frontend/ATTRIBUTIONS.md) | Third-party component attributions |
 
 ---
