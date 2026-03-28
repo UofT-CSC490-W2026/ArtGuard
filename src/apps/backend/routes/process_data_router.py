@@ -11,6 +11,7 @@ import os
 import uuid
 
 import boto3
+from botocore.exceptions import ClientError
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
 
@@ -56,16 +57,12 @@ async def process_data() -> ProcessDataResponse:
             detail="Data processing service is not properly configured.",
         )
 
-    try:
-        account_id = boto3.client("sts").get_caller_identity()["Account"]
-    except Exception as exc:
-        logger.error("STS GetCallerIdentity failed: %s", exc, exc_info=True)
+    task_def = os.getenv("ECS_PROCESS_TASK_FAMILY", "artguard-backend").strip()
+    if not task_def:
         raise HTTPException(
             status_code=500,
-            detail="Unable to verify AWS credentials. Please contact support.",
+            detail="Data processing service is not properly configured.",
         )
-
-    task_def = f"arn:aws:ecs:{region}:{account_id}:task-definition/artguard-backend"
     run_id = str(uuid.uuid4())
     command = ["python", "-m", "src.apps.data_pipeline.driver", "--run_id", run_id]
 
@@ -91,6 +88,12 @@ async def process_data() -> ProcessDataResponse:
                     }
                 ]
             },
+        )
+    except ClientError as exc:
+        logger.error("ECS RunTask client error: %s", exc, exc_info=True)
+        raise HTTPException(
+            status_code=400,
+            detail="Data processing task configuration is invalid or inactive.",
         )
     except Exception as exc:
         logger.error("ECS RunTask failed: %s", exc, exc_info=True)
