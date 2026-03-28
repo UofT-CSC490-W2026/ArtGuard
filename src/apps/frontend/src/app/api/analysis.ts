@@ -1,7 +1,7 @@
 import type { AnalysisResult, PatchData, InferenceApiResponse } from "../types";
 import { hasApiBackend, postFormData } from "./client";
 
-export interface AnalyzeInput {
+interface AnalyzeInput {
   file: File;
   artistName: string;
   artworkName: string;

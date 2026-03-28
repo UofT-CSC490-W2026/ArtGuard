@@ -7,7 +7,7 @@
 import type { AnalysisResult } from "../types";
 import { AlertCircle, AlertTriangle, CheckCircle, type LucideIcon } from "lucide-react";
 
-export type VerdictDisplay = {
+type VerdictDisplay = {
   text: string;
   icon: LucideIcon;
   color: string;

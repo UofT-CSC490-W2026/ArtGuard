@@ -54,15 +54,6 @@ export interface AnalysisResult {
   patchData?: PatchData[];
 }
 
-/** Per-patch coordinates and authenticity probability from the inference API response. */
-export interface InferencePatchApi {
-  x: number;
-  y: number;
-  w: number;
-  h: number;
-  prob: number;
-}
-
 /** Raw JSON shape returned by POST /inference. */
 export interface InferenceApiResponse {
   inference_id: string;
@@ -74,7 +65,7 @@ export interface InferenceApiResponse {
   image_url?: string | null;
   image_width?: number;
   image_height?: number;
-  patch_data?: InferencePatchApi[] | null;
+  patch_data?: PatchData[] | null;
 }
 
 export function getErrorMessage(error: unknown): string {

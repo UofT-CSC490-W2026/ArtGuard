@@ -42,7 +42,7 @@ export function getAccessToken(): string | null {
   }
 }
 
-export interface RequestConfig extends RequestInit {
+interface RequestConfig extends RequestInit {
   params?: Record<string, string>;
   /** Skip attaching Bearer token (for public auth routes if needed) */
   skipAuth?: boolean;

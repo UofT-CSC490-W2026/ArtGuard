@@ -20,12 +20,12 @@ export interface InferenceListItem {
   image_url: string;
 }
 
-export interface InferenceListResponse {
+interface InferenceListResponse {
   items: InferenceListItem[];
   next_cursor?: string | null;
 }
 
-export interface DeleteAllInferencesResponse {
+interface DeleteAllInferencesResponse {
   deleted: number;
 }
 
