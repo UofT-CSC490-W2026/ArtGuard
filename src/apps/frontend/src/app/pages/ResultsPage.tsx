@@ -16,7 +16,6 @@ export function ResultsPage() {
   const [result, setResult] = useState<AnalysisResult | null>(null);
   const [explanation, setExplanation] = useState("");
   const [isLoading, setIsLoading] = useState(true);
-  const [showHeatmap, setShowHeatmap] = useState(false);
 
   useEffect(() => {
     const stored = localStorage.getItem("artguard_latest_result");
@@ -58,7 +57,7 @@ export function ResultsPage() {
         <div className="mb-10">
           {result.image && (
             <div className="relative inline-block">
-              {showHeatmap && result.patchData ? (
+              {result.patchData?.length ? (
                 <PatchOverlay
                   imageSrc={result.image}
                   patchData={result.patchData}
@@ -73,17 +72,6 @@ export function ResultsPage() {
                 />
               )}
             </div>
-          )}
-
-          {/* Heatmap toggle */}
-          {result.patchData && (
-            <button
-              type="button"
-              onClick={() => setShowHeatmap(!showHeatmap)}
-              className="mt-4 text-xs text-muted-foreground hover:text-foreground transition"
-            >
-              {showHeatmap ? "Hide patch heatmap" : "Show patch heatmap"}
-            </button>
           )}
         </div>
 
@@ -133,23 +121,9 @@ export function ResultsPage() {
             <Link to="/upload">Analyze another artwork</Link>
           </Button>
 
-          <div className="flex gap-3">
-            <Button
-              variant="outline"
-              className="flex-1"
-              onClick={() => navigator.clipboard.writeText(explanation)}
-            >
-              Share
-            </Button>
-
-            <Button
-              variant="outline"
-              className="flex-1"
-              onClick={() => window.print()}
-            >
-              Download
-            </Button>
-          </div>
+          <Button variant="outline" className="w-full" type="button" onClick={() => window.print()}>
+            Download
+          </Button>
         </div>
       </main>
     </div>

@@ -14,7 +14,7 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
-  assetsInclude: ['**/*.svg', '**/*.csv'],
+  assetsInclude: ['**/*.svg'],
   build: {
     sourcemap: false,
     minify: 'esbuild',
@@ -32,6 +32,7 @@ export default defineConfig({
     environment: 'jsdom',
     setupFiles: ['./tests/setup.ts'],
     include: ['tests/**/*.{test,spec}.{ts,tsx}'],
+    exclude: ['tests/e2e/**', 'node_modules/**'],
     /** Avoid cross-file localStorage races in Auth tests */
     fileParallelism: false,
     coverage: {

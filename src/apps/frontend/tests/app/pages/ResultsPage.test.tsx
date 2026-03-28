@@ -35,7 +35,7 @@ describe("ResultsPage", () => {
     await waitFor(() => expect(screen.getByTestId("upload-dest")).toBeInTheDocument());
   });
 
-  it("renders stored analysis with explanation and toggles heatmap", async () => {
+  it("renders stored analysis with explanation and patch overlay when patch data exists", async () => {
     const result: AnalysisResult = {
       id: "1",
       score: 0.72,
@@ -53,9 +53,9 @@ describe("ResultsPage", () => {
     renderAtResults();
     await waitFor(() => expect(screen.getByText("AUTHENTICITY CONFIDENCE")).toBeInTheDocument());
     expect(screen.getByText("From API")).toBeInTheDocument();
-    await waitFor(() => expect(screen.getByText(/show patch heatmap/i)).toBeInTheDocument());
-    fireEvent.click(screen.getByRole("button", { name: /show patch heatmap/i }));
-    expect(screen.getByText(/hide patch heatmap/i)).toBeInTheDocument();
+    await waitFor(() =>
+      expect(screen.getByText(/patch authenticity heatmap/i)).toBeInTheDocument(),
+    );
   });
 
   it("shows No explanation when RAG text is missing", async () => {
@@ -95,9 +95,7 @@ describe("ResultsPage", () => {
     await waitFor(() => expect(screen.getByText("—")).toBeInTheDocument());
   });
 
-  it("share copies explanation and download calls print", async () => {
-    const writeText = vi.fn().mockResolvedValue(undefined);
-    vi.stubGlobal("navigator", { ...navigator, clipboard: { writeText } });
+  it("download calls print", async () => {
     const print = vi.fn();
     vi.stubGlobal("print", print);
 
@@ -114,9 +112,7 @@ describe("ResultsPage", () => {
     };
     localStorage.setItem("artguard_latest_result", JSON.stringify(result));
     renderAtResults();
-    await waitFor(() => expect(screen.getByRole("button", { name: /^share$/i })).toBeInTheDocument());
-    fireEvent.click(screen.getByRole("button", { name: /^share$/i }));
-    expect(writeText).toHaveBeenCalled();
+    await waitFor(() => expect(screen.getByRole("button", { name: /^download$/i })).toBeInTheDocument());
     fireEvent.click(screen.getByRole("button", { name: /^download$/i }));
     expect(print).toHaveBeenCalled();
     vi.unstubAllGlobals();

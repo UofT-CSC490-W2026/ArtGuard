@@ -26,7 +26,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "../components/ui/select";
-import { Search, Filter, Calendar, Trash2, Eye } from "lucide-react";
+import { Search, Filter, Calendar, Trash2, Eye, Loader2 } from "lucide-react";
 import type { AnalysisResult } from "../types";
 import { hasApiBackend } from "../api/client";
 import {
@@ -45,7 +45,6 @@ import {
   listInferences,
 } from "../api/inferencesApi";
 import { getErrorMessage } from "../types";
-import { Loader2 } from "lucide-react";
 
 export function HistoryPage() {
   const navigate = useNavigate();

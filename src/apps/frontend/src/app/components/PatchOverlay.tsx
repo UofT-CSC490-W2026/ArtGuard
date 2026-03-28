@@ -2,7 +2,9 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import type { PatchData } from "../types";
 import { Label } from "./ui/label";
 import { Switch } from "./ui/switch";
-import { Slider } from "./ui/slider";
+
+/** Peak overlay strength (matches previous slider at 100%). */
+const OVERLAY_FILL_ALPHA = 0.65;
 
 interface PatchOverlayProps {
   imageSrc: string;
@@ -30,7 +32,6 @@ export function PatchOverlay({
   const imgRef = useRef<HTMLImageElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [showOverlay, setShowOverlay] = useState(true);
-  const [opacity, setOpacity] = useState(0.55);
   const [tooltip, setTooltip] = useState<{ x: number; y: number; prob: number } | null>(null);
 
   const hasPatches = Boolean(patchData?.length);
@@ -64,7 +65,7 @@ export function PatchOverlay({
 
     const sx = cw / nw;
     const sy = ch / nh;
-    const a = opacity * 0.65;
+    const a = OVERLAY_FILL_ALPHA;
 
     for (const p of patchData) {
       const x = p.x * sx;
@@ -77,7 +78,7 @@ export function PatchOverlay({
       ctx.lineWidth = 1;
       ctx.strokeRect(x + 0.5, y + 0.5, w - 1, h - 1);
     }
-  }, [hasPatches, patchData, propW, propH, showOverlay, opacity]);
+  }, [hasPatches, patchData, propW, propH, showOverlay]);
 
   useEffect(() => {
     draw();
@@ -168,24 +169,11 @@ export function PatchOverlay({
         ) : null}
       </div>
       {hasPatches ? (
-        <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-          <div className="flex items-center gap-2">
-            <Switch id="patch-overlay" checked={showOverlay} onCheckedChange={setShowOverlay} />
-            <Label htmlFor="patch-overlay" className="text-sm font-normal cursor-pointer">
-              Patch authenticity heatmap
-            </Label>
-          </div>
-          <div className="flex flex-1 items-center gap-3 min-w-0 max-w-xs">
-            <span className="text-xs text-muted-foreground shrink-0">Opacity</span>
-            <Slider
-              value={[opacity * 100]}
-              onValueChange={(v) => setOpacity((v[0] ?? 55) / 100)}
-              min={15}
-              max={100}
-              step={5}
-              className="flex-1"
-            />
-          </div>
+        <div className="flex items-center gap-2">
+          <Switch id="patch-overlay" checked={showOverlay} onCheckedChange={setShowOverlay} />
+          <Label htmlFor="patch-overlay" className="text-sm font-normal cursor-pointer">
+            Patch authenticity heatmap
+          </Label>
         </div>
       ) : null}
     </div>
