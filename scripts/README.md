@@ -163,7 +163,7 @@ Training, test, and validation images (`data/`) are **not stored in the Git repo
 
 This downloads a zip from Google Drive and extracts it to `data/`. Requires `gdown` (`pip install gdown`).
 
-> **Note:** The deployed application works without `data/` — training images are already in S3 and model weights are on Modal. The download is only needed for local training/evaluation or dataset inspection.
+> **Note:** The deployed application works without `data/` — training images are already in S3 and model weights are on Modal. The download is only needed for local training/evaluation or dataset inspection. Google drive link: https://drive.google.com/file/d/1-MJgGpVtHQ1FDDy5Cy7puf2pmErSTFJZ/view?usp=drive_link
 
 ---
 
