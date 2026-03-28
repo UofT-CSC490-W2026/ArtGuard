@@ -10,6 +10,7 @@
 6. [GitHub Actions CI/CD](#github-actions-cicd)
 7. [Common Operations](#common-operations)
 8. [Troubleshooting](#troubleshooting)
+9. [Deployment Automation Details](#deployment-automation-details)
 
 ---
 
@@ -375,7 +376,9 @@ Set these in **Settings > Secrets and variables > Actions**:
 | `terraform-bootstrap.yml` | Manual dispatch | First-time infrastructure setup |
 | `terraform-destroy.yml` | Manual dispatch | Tear down infrastructure |
 | `ecs-manage.yml` | Manual dispatch | Deploy, scale, status, logs |
-| `test-coverage.yml` | Push to main / PRs | Run pytest, post coverage badge + PR comment |
+| `test-coverage.yml` | Push to main / PRs | Run pytest (backend), post coverage badge + PR comment |
+| `frontend-coverage.yml` | Push to main / PRs | Run vitest with coverage, generate badge, post PR comment |
+| `frontend-test.yml` | Push to main / PRs | Frontend unit tests (vitest) + E2E tests (Playwright) |
 | `secret.yml` | Manual dispatch | DR secret recovery |
 
 ---
@@ -481,3 +484,27 @@ modal volume ls artguard-checkpoints /checkpoints/tiny/
 1. Check GitHub Secrets are set (Settings > Secrets)
 2. Verify AWS credentials haven't expired: `aws sts get-caller-identity`
 3. Check workflow logs in the Actions tab for specific error messages
+
+---
+
+## Deployment Automation Details
+
+A full deployment from an empty AWS account to a running production system is executable via a single command (`deploy-all.sh`), which orchestrates seven sequential stages:
+
+1. **Infrastructure Bootstrap** (~15-20 min): Runs `terraform apply` to create all AWS resources (VPC, subnets, NAT Gateways, ALB, ECS cluster, S3 buckets, DynamoDB tables, ECR repository, CloudFront distribution, OpenSearch collection, Bedrock Knowledge Base, IAM roles, and security groups). The bootstrap script handles idempotency by detecting already-existing resources (from a previous partial run) and importing them into Terraform state rather than failing with "already exists" errors.
+
+2. **Secrets Configuration**: Prompts for the Modal API key and stores it in AWS Secrets Manager as a JSON object (`{"token_id": "...", "token_secret": "..."}`).
+
+3. **Docker Build and Push** (~5-10 min): Builds the backend Docker image (Python 3.11-slim base, application code, dependencies) for `linux/amd64`, tags it with a versioned identifier and `latest`, and pushes both tags to ECR.
+
+4. **ECS Deployment** (~2-3 min): Forces a rolling ECS deployment — starts new tasks with the latest image, waits for health checks to pass, drains old tasks, and stops them.
+
+5. **Health Verification**: Polls the `/health` endpoint via the CloudFront URL (up to 20 retries at 15-second intervals) until the backend returns HTTP 200.
+
+6. **RAG Data Upload** (~10-20 min): Converts JSONL pipeline output to chunked TXT files, uploads them to the knowledge-base S3 bucket, and triggers Bedrock Knowledge Base ingestion. The script polls ingestion status every 30 seconds until the job reaches `COMPLETE`, `FAILED`, or `STOPPED`.
+
+7. **Verification**: Confirms the vector count in OpenSearch is non-zero, re-checks the health endpoint, and optionally runs a test RAG query.
+
+The frontend is deployed separately via `deploy-frontend.sh`, which requires the `VITE_API_URL` environment variable (the CloudFront URL from step 1) to be set before the Vite build, as the API URL is compiled into the JavaScript bundle at build time.
+
+All deployment scripts source a shared `_colors.sh` utility for consistent colored output (`info`, `success`, `warn`, `error`, `step` helpers), validate required CLI tools at startup (`require_tool`), and disable color output when piped or running in CI environments.
