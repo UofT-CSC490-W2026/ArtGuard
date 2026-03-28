@@ -51,8 +51,6 @@ export function inferenceToAnalysisResult(row: InferenceListItem): AnalysisResul
         : undefined,
     explanation: row.explanation ?? undefined,
     prediction: typeof row.prediction === "number" ? row.prediction : undefined,
-    /** All rows from GET /inferences share backend Modal semantics (score = authenticity). */
-    scoreSemantics: "authenticity",
   };
 }
 

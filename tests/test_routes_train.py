@@ -42,50 +42,46 @@ class TestStartTraining:
 
     @pytest.mark.asyncio
     async def test_successful_training(self, client, dynamodb, mock_train_spawns):
-        """Verify response has valid run_id (UUID), correct variant, and started status."""
+        """Verify response has valid run_id (UUID), correct variant, and started status.
+
+        Uses real DynamoDB fixture so lines 128-157 (DDB write + Modal spawn) are covered.
+        """
         import uuid
 
-        with patch("src.apps.backend.routes.train_router.get_table") as mock_get_table:
-            mock_tbl = MagicMock()
-            mock_get_table.return_value = mock_tbl
+        resp = await client.post("/train", json={"variant": "tiny"})
+        assert resp.status_code == 200
+        data = resp.json()
+        assert data["status"] == "started"
+        assert data["variant"] == "tiny"
+        uuid.UUID(data["run_id"])
 
-            resp = await client.post("/train", json={"variant": "tiny"})
-            assert resp.status_code == 200
-            data = resp.json()
-            assert data["status"] == "started"
-            assert data["variant"] == "tiny"
-            # run_id must be a valid UUID-4
-            uuid.UUID(data["run_id"])
+        # Verify the RunRecord was actually written to DynamoDB
+        table = dynamodb.Table("test-runs")
+        items = table.scan()["Items"]
+        assert len(items) == 1
+        assert items[0]["status"] == "running"
 
     @pytest.mark.asyncio
     async def test_base_variant(self, client, dynamodb, mock_train_spawns):
-        """Both 'tiny' and 'base' variants are accepted."""
+        """Both 'tiny' and 'base' variants are accepted; covers the else branch in spawn."""
         import uuid
 
-        with patch("src.apps.backend.routes.train_router.get_table") as mock_get_table:
-            mock_tbl = MagicMock()
-            mock_get_table.return_value = mock_tbl
-
-            resp = await client.post("/train", json={"variant": "base"})
-            assert resp.status_code == 200
-            data = resp.json()
-            assert data["variant"] == "base"
-            assert data["status"] == "started"
-            uuid.UUID(data["run_id"])
+        resp = await client.post("/train", json={"variant": "base"})
+        assert resp.status_code == 200
+        data = resp.json()
+        assert data["variant"] == "base"
+        assert data["status"] == "started"
+        uuid.UUID(data["run_id"])
 
     @pytest.mark.asyncio
     async def test_with_custom_config(self, client, dynamodb, mock_train_spawns):
-        """Custom config is accepted without error; run is started."""
-        with patch("src.apps.backend.routes.train_router.get_table") as mock_get_table:
-            mock_tbl = MagicMock()
-            mock_get_table.return_value = mock_tbl
-
-            resp = await client.post("/train", json={
-                "variant": "tiny",
-                "config": {"lr": 0.001, "batch_size": 16},
-            })
-            assert resp.status_code == 200
-            assert resp.json()["status"] == "started"
+        """Custom config is merged with DEFAULT_CONFIG and run is started."""
+        resp = await client.post("/train", json={
+            "variant": "tiny",
+            "config": {"lr": 0.001, "batch_size": 16},
+        })
+        assert resp.status_code == 200
+        assert resp.json()["status"] == "started"
 
     @pytest.mark.asyncio
     async def test_empty_body_defaults_to_tiny(self, client, dynamodb):
@@ -96,15 +92,18 @@ class TestStartTraining:
 
     @pytest.mark.asyncio
     async def test_modal_spawn_failure_500(self, client, dynamodb):
-        with patch("src.apps.backend.routes.train_router.get_table") as mock_get_table:
-            mock_tbl = MagicMock()
-            mock_get_table.return_value = mock_tbl
+        """Modal spawn failure marks run as FAILED in DynamoDB and returns 500."""
+        with patch("src.apps.train.train.train_swin_tiny") as tiny:
+            tiny.spawn.aio = AsyncMock(side_effect=Exception("Modal down"))
+            resp = await client.post("/train", json={"variant": "tiny"})
+            assert resp.status_code == 500
+            assert "try again" in resp.json()["detail"].lower()
 
-            with patch("src.apps.train.train.train_swin_tiny") as tiny:
-                tiny.spawn.aio = AsyncMock(side_effect=Exception("Modal down"))
-                resp = await client.post("/train", json={"variant": "tiny"})
-                assert resp.status_code == 500
-                assert "try again" in resp.json()["detail"].lower()
+        # Verify the run was marked as failed in DynamoDB
+        table = dynamodb.Table("test-runs")
+        items = table.scan()["Items"]
+        assert len(items) == 1
+        assert items[0]["status"] == "failed"
 
     @pytest.mark.asyncio
     async def test_missing_runs_table_500(self, client, monkeypatch):

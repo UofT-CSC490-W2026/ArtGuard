@@ -160,6 +160,15 @@ class TestGetCurrentUserId:
         result = get_current_user_id(f"Bearer {token}")
         assert result == "user-42"
 
+    def test_valid_bearer_token_sets_context_user_id(self):
+        """Successful auth sets the logging context user_id (lines 58-60 in auth.py)."""
+        from src.apps.backend.logging_config import get_context_user_id, set_context_user_id
+        set_context_user_id("")  # reset
+        token = create_access_token("user-ctx-99")
+        get_current_user_id(f"Bearer {token}")
+        assert get_context_user_id() == "user-ctx-99"
+        set_context_user_id("")  # cleanup
+
     def test_missing_header_raises_401(self):
         from fastapi import HTTPException
         with pytest.raises(HTTPException) as exc_info:
