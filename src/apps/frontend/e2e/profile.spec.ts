@@ -27,8 +27,8 @@ async function signUpAndGoToProfile(page: import("@playwright/test").Page) {
 test.describe("Profile page", () => {
   test("shows user info pre-filled", async ({ page }) => {
     const { username, email } = await signUpAndGoToProfile(page);
-    await expect(page.getByDisplayValue(username)).toBeVisible({ timeout: 5_000 });
-    await expect(page.getByDisplayValue(email)).toBeVisible();
+    await expect(page.getByLabel("Username")).toHaveValue(username, { timeout: 5_000 });
+    await expect(page.getByLabel("Email Address")).toHaveValue(email);
   });
 
   test("save changes button is disabled when nothing changed", async ({ page }) => {
@@ -37,15 +37,15 @@ test.describe("Profile page", () => {
   });
 
   test("save changes button enables when username is modified", async ({ page }) => {
-    const { username } = await signUpAndGoToProfile(page);
-    const usernameInput = page.getByDisplayValue(username);
+    await signUpAndGoToProfile(page);
+    const usernameInput = page.getByLabel("Username");
     await usernameInput.fill("newusername123");
     await expect(page.getByRole("button", { name: /save changes/i })).toBeEnabled();
   });
 
   test("shows error for too-short username on save", async ({ page }) => {
-    const { username } = await signUpAndGoToProfile(page);
-    await page.getByDisplayValue(username).fill("ab");
+    await signUpAndGoToProfile(page);
+    await page.getByLabel("Username").fill("ab");
     await page.getByRole("button", { name: /save changes/i }).click();
     await expect(page.getByText(/at least 3 characters/i)).toBeVisible({ timeout: 5_000 });
   });

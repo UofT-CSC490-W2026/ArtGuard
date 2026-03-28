@@ -24,7 +24,7 @@ test.describe("Home page", () => {
   test("shows Get started link for unauthenticated users", async ({ page }) => {
     await page.goto("/");
     await expect(page.getByRole("link", { name: /get started/i })).toBeVisible();
-    await expect(page.getByRole("link", { name: /log in/i })).toBeVisible();
+    await expect(page.getByRole("link", { name: /log in/i }).first()).toBeVisible();
   });
 
   test("shows Analyze artwork link for authenticated users", async ({ page }) => {
@@ -38,7 +38,7 @@ test.describe("Home page", () => {
 
     await page.goto("/");
     await expect(page.getByRole("link", { name: /analyze artwork/i })).toBeVisible();
-    await expect(page.getByRole("link", { name: /history/i })).toBeVisible();
+    await expect(page.getByRole("banner").getByRole("link", { name: /^history$/i })).toBeVisible();
   });
 
   test("Get started navigates to signup", async ({ page }) => {
@@ -70,7 +70,9 @@ test.describe("Home page", () => {
 test.describe("Header navigation", () => {
   test("header shows Sign Up and Log In for unauthenticated users", async ({ page }) => {
     await page.goto("/login");
-    await expect(page.getByRole("link", { name: /sign up/i })).toBeVisible();
+    await expect(page.getByRole("banner").getByRole("link", { name: /^sign up$/i })).toBeVisible();
+    await page.goto("/signup");
+    await expect(page.getByRole("banner").getByRole("link", { name: /^log in$/i })).toBeVisible();
   });
 
   test("header shows navigation for authenticated users", async ({ page }) => {

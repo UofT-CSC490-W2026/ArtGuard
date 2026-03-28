@@ -5,6 +5,7 @@
 import path from "path";
 import { fileURLToPath } from "url";
 import { expect, test } from "@playwright/test";
+import { clearMockAuthSession } from "./auth-helpers";
 
 const e2eDir = path.dirname(fileURLToPath(import.meta.url));
 const tinyPng = path.join(e2eDir, "fixtures", "tiny.png");
@@ -90,8 +91,9 @@ test.describe("Signup flow", () => {
 
   test("signup page has link to login", async ({ page }) => {
     await page.goto("/signup");
-    await expect(page.getByRole("link", { name: /log in/i })).toBeVisible();
-    await page.getByRole("link", { name: /log in/i }).click();
+    const formLink = page.getByRole("link", { name: "Log in", exact: true });
+    await expect(formLink).toBeVisible();
+    await formLink.click();
     await expect(page).toHaveURL(/\/login$/);
   });
 });
@@ -108,8 +110,7 @@ test.describe("Login flow", () => {
     await page.getByRole("button", { name: /^sign up$/i }).click();
     await page.waitForURL("**/upload", { timeout: 20_000 });
 
-    // Logout by clearing storage and going to login
-    await page.evaluate(() => localStorage.clear());
+    await clearMockAuthSession(page);
     await page.goto("/login");
 
     await page.getByLabel("Email").fill(email);
@@ -131,7 +132,7 @@ test.describe("Login flow", () => {
     await page.getByRole("button", { name: /^sign up$/i }).click();
     await page.waitForURL("**/upload", { timeout: 20_000 });
 
-    await page.evaluate(() => localStorage.clear());
+    await clearMockAuthSession(page);
     await page.goto("/login");
 
     await page.getByLabel("Email").fill(email);
@@ -152,8 +153,9 @@ test.describe("Login flow", () => {
 
   test("login page has link to signup", async ({ page }) => {
     await page.goto("/login");
-    await expect(page.getByRole("link", { name: /sign up/i })).toBeVisible();
-    await page.getByRole("link", { name: /sign up/i }).click();
+    const formLink = page.getByRole("link", { name: "Sign up", exact: true });
+    await expect(formLink).toBeVisible();
+    await formLink.click();
     await expect(page).toHaveURL(/\/signup$/);
   });
 
