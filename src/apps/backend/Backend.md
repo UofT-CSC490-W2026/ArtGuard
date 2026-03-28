@@ -1,4 +1,4 @@
-# API Reference
+# Backend
 
 Guide for team members to manually test and verify all ArtGuard API endpoints using `curl`. Useful for local development, debugging, and verifying deployed environments.
 
