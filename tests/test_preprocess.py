@@ -2,7 +2,9 @@
 
 from unittest.mock import MagicMock, patch
 
+import boto3
 import pytest
+from botocore.stub import ANY, Stubber
 from PIL import Image
 
 from src.apps.data_pipeline.preprocess import (
@@ -310,3 +312,25 @@ class TestUploadPatchErrorHandling:
         img = Image.new("RGB", (224, 224), color="red")
         with pytest.raises(IOError, match="Failed to upload patch"):
             _upload_patch(mock_s3, "bucket", "key.jpg", img)
+
+    def test_upload_patch_includes_server_side_encryption(self):
+        s3 = boto3.client("s3", region_name="us-east-1")
+        stubber = Stubber(s3)
+        img = Image.new("RGB", (224, 224), color="red")
+
+        stubber.add_response(
+            "put_object",
+            service_response={},
+            expected_params={
+                "Bucket": "bucket",
+                "Key": "key.jpg",
+                "Body": ANY,
+                "ContentType": "image/jpeg",
+                "ServerSideEncryption": "AES256",
+            },
+        )
+
+        with stubber:
+            s3_uri = _upload_patch(s3, "bucket", "key.jpg", img)
+
+        assert s3_uri == "s3://bucket/key.jpg"
