@@ -18,6 +18,16 @@ class TestProcessData:
         assert "not properly configured" in resp.json()["detail"].lower()
 
     @pytest.mark.asyncio
+    async def test_empty_task_family_500(self, client, monkeypatch):
+        monkeypatch.setenv("ECS_PRIVATE_SUBNETS", "subnet-abc")
+        monkeypatch.setenv("ECS_TASK_SECURITY_GROUPS", "sg-123")
+        monkeypatch.setenv("ECS_PROCESS_TASK_FAMILY", "   ")
+
+        resp = await client.post("/process_data")
+        assert resp.status_code == 500
+        assert "not properly configured" in resp.json()["detail"].lower()
+
+    @pytest.mark.asyncio
     async def test_ecs_exception_500(self, client, monkeypatch):
         monkeypatch.setenv("ECS_PRIVATE_SUBNETS", "subnet-abc")
         monkeypatch.setenv("ECS_TASK_SECURITY_GROUPS", "sg-123")
