@@ -123,23 +123,21 @@ export function HistoryPage() {
         if (isInferenceFailed(item)) return false;
         if (scoreFilter === "authentic") return matchesAuthenticFilter(item);
         if (scoreFilter === "uncertain") return matchesUncertainFilter(item);
-        if (scoreFilter === "forged") return matchesForgedFilter(item);
-        return true;
+        return matchesForgedFilter(item);
       });
     }
 
     // Sort
     filtered.sort((a, b) => {
-      if (sortBy === "newest") {
-        return new Date(b.timestamp).getTime() - new Date(a.timestamp).getTime();
-      } else if (sortBy === "oldest") {
+      if (sortBy === "oldest") {
         return new Date(a.timestamp).getTime() - new Date(b.timestamp).getTime();
       } else if (sortBy === "score-high") {
         return b.score - a.score;
       } else if (sortBy === "score-low") {
         return a.score - b.score;
       }
-      return 0;
+      // Default: newest first
+      return new Date(b.timestamp).getTime() - new Date(a.timestamp).getTime();
     });
 
     setFilteredHistory(filtered);

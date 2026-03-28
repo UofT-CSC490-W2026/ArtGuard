@@ -50,6 +50,18 @@ describe("AuthContext — mock mode", () => {
       expect(result.current.isAuthenticated).toBe(true);
     });
 
+    it("handles corrupted artguard_users gracefully during signup", async () => {
+      localStorage.setItem("artguard_users", "{bad-json{{");
+      const { result } = renderHook(() => useAuth(), { wrapper });
+      await waitFor(() => expect(result.current.isLoading).toBe(false));
+
+      // Signup should still work — getStoredUsers() returns [] on parse error
+      await act(async () => {
+        await result.current.signup("fresh", "fresh@example.com", "password1");
+      });
+      expect(result.current.user?.username).toBe("fresh");
+    });
+
     it("ignores corrupted artguard_user in localStorage", async () => {
       localStorage.setItem("artguard_user", "{bad json{{");
       const { result } = renderHook(() => useAuth(), { wrapper });
@@ -109,6 +121,28 @@ describe("AuthContext — mock mode", () => {
       expect(result.current.isAuthenticated).toBe(true);
     });
 
+    it("migrates legacy user with plaintext password on login", async () => {
+      // Legacy user stored with plain `password` instead of `passwordHash`
+      const legacyUsers = [
+        { id: "u-legacy", username: "olduser", email: "old@example.com", password: "plaintext" },
+      ];
+      localStorage.setItem("artguard_users", JSON.stringify(legacyUsers));
+
+      const { result } = renderHook(() => useAuth(), { wrapper });
+      await waitFor(() => expect(result.current.isLoading).toBe(false));
+
+      await act(async () => {
+        await result.current.login("old@example.com", "plaintext");
+      });
+
+      expect(result.current.user?.username).toBe("olduser");
+      expect(result.current.isAuthenticated).toBe(true);
+      // Verify migration: stored user should now have passwordHash
+      const stored = JSON.parse(localStorage.getItem("artguard_users")!) as Array<Record<string, string>>;
+      expect(stored[0].passwordHash).toBeDefined();
+      expect(stored[0].password).toBeUndefined();
+    });
+
     it("rejects invalid credentials", async () => {
       const { result } = renderHook(() => useAuth(), { wrapper });
       await waitFor(() => expect(result.current.isLoading).toBe(false));
@@ -156,6 +190,31 @@ describe("AuthContext — mock mode", () => {
       expect(result.current.user?.email).toBe("new@example.com");
     });
 
+    it("updates stored users array when profile changes", async () => {
+      localStorage.setItem(
+        "artguard_user",
+        JSON.stringify({ id: "u1", username: "old", email: "old@example.com" }),
+      );
+      const users = [
+        { id: "u1", username: "old", email: "old@example.com", passwordHash: "hash1" },
+        { id: "u2", username: "other", email: "other@example.com", passwordHash: "hash2" },
+      ];
+      localStorage.setItem("artguard_users", JSON.stringify(users));
+
+      const { result } = renderHook(() => useAuth(), { wrapper });
+      await waitFor(() => expect(result.current.isLoading).toBe(false));
+
+      await act(async () => {
+        await result.current.updateProfile("newname", "new@example.com");
+      });
+
+      expect(result.current.user?.username).toBe("newname");
+      // Verify stored users are updated correctly
+      const stored = JSON.parse(localStorage.getItem("artguard_users")!) as Array<Record<string, string>>;
+      expect(stored[0].username).toBe("newname");
+      expect(stored[1].username).toBe("other"); // unchanged
+    });
+
     it("rejects duplicate email", async () => {
       localStorage.setItem(
         "artguard_user",
@@ -193,6 +252,41 @@ describe("AuthContext — mock mode", () => {
       // Verify password was changed (user should still be logged in)
       expect(result.current.user?.username).toBe("test");
       expect(result.current.isAuthenticated).toBe(true);
+    });
+
+    it("rejects wrong current password for legacy user", async () => {
+      // Legacy user with plain password
+      localStorage.setItem(
+        "artguard_user",
+        JSON.stringify({ id: "u1", username: "test", email: "test@example.com" }),
+      );
+      const users = [{ id: "u1", username: "test", email: "test@example.com", password: "legacypass" }];
+      localStorage.setItem("artguard_users", JSON.stringify(users));
+
+      const { result } = renderHook(() => useAuth(), { wrapper });
+      await waitFor(() => expect(result.current.isLoading).toBe(false));
+
+      await expect(result.current.changePassword("wrongpass", "newpass123")).rejects.toThrow(
+        /current password is incorrect/i,
+      );
+    });
+
+    it("changes password for legacy user successfully", async () => {
+      localStorage.setItem(
+        "artguard_user",
+        JSON.stringify({ id: "u1", username: "test", email: "test@example.com" }),
+      );
+      const users = [{ id: "u1", username: "test", email: "test@example.com", password: "legacypass" }];
+      localStorage.setItem("artguard_users", JSON.stringify(users));
+
+      const { result } = renderHook(() => useAuth(), { wrapper });
+      await waitFor(() => expect(result.current.isLoading).toBe(false));
+
+      await act(async () => {
+        await result.current.changePassword("legacypass", "newpass123");
+      });
+
+      expect(result.current.user?.username).toBe("test");
     });
 
     it("rejects wrong current password", async () => {

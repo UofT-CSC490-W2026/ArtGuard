@@ -71,6 +71,51 @@ describe("LoginPage", () => {
     });
   });
 
+  it("clears error when user types after failed login", async () => {
+    const user = userEvent.setup();
+    await seedLocalUser("alice", "alice@example.com", "correctpass");
+
+    renderLogin();
+
+    await waitFor(() => {
+      expect(screen.getAllByRole("heading", { name: /welcome back/i }).length).toBeGreaterThan(0);
+    });
+
+    await user.type(screen.getByLabelText(/^email$/i), "alice@example.com");
+    await user.type(screen.getByLabelText(/^password$/i), "wrongpass");
+    await user.click(getLoginSubmitButton());
+
+    await waitFor(() => {
+      expect(screen.getByRole("alert")).toBeInTheDocument();
+    });
+
+    // Type in email field to clear the error
+    await user.type(screen.getByLabelText(/^email$/i), "x");
+    await waitFor(() => {
+      expect(screen.queryByRole("alert")).not.toBeInTheDocument();
+    });
+  });
+
+  it("toggles password visibility", async () => {
+    const user = userEvent.setup();
+    renderLogin();
+
+    await waitFor(() => {
+      expect(screen.getAllByRole("heading", { name: /welcome back/i }).length).toBeGreaterThan(0);
+    });
+
+    const passwordInput = screen.getByLabelText(/^password$/i);
+    expect(passwordInput).toHaveAttribute("type", "password");
+
+    // Click the toggle button (the Eye/EyeOff button near the password field)
+    const toggleBtn = passwordInput.parentElement!.querySelector("button")!;
+    await user.click(toggleBtn);
+    expect(passwordInput).toHaveAttribute("type", "text");
+
+    await user.click(toggleBtn);
+    expect(passwordInput).toHaveAttribute("type", "password");
+  });
+
   it("navigates to upload after successful login", async () => {
     const user = userEvent.setup();
     await seedLocalUser("bob", "bob@example.com", "secret12");

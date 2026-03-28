@@ -197,6 +197,24 @@ describe("UploadPage", () => {
     expect(await screen.findByText(/inference failed/i)).toBeInTheDocument();
   });
 
+  it("resets dragging state on drag leave", async () => {
+    renderUpload();
+    await waitFor(() => expect(screen.getByText(/upload artwork/i)).toBeInTheDocument());
+    const dropZone = document.querySelector(".group.cursor-pointer");
+    expect(dropZone).toBeTruthy();
+    fireEvent.dragOver(dropZone!, { dataTransfer: { files: [] } });
+    fireEvent.dragLeave(dropZone!);
+  });
+
+  it("shows error when submitting without selecting a file", async () => {
+    const { container } = renderUpload();
+    await waitFor(() => expect(screen.getByText(/upload artwork/i)).toBeInTheDocument());
+    // Submit form without selecting any file
+    const form = container.querySelector("form");
+    fireEvent.submit(form!);
+    expect(await screen.findByText(/please select an image file/i)).toBeInTheDocument();
+  });
+
   it("clears selected file when Remove is clicked", async () => {
     const user = userEvent.setup();
     const { container } = renderUpload();

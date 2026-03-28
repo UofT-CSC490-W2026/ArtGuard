@@ -76,6 +76,25 @@ describe("ResultsPage", () => {
     await waitFor(() => expect(screen.getByText("No explanation")).toBeInTheDocument());
   });
 
+  it("shows dash for failed inference score", async () => {
+    const result: AnalysisResult = {
+      id: "1",
+      score: 0,
+      image: "",
+      artistName: "A",
+      artworkName: "B",
+      timestamp: new Date().toISOString(),
+      fileName: "f.png",
+      fileSize: 10,
+      prediction: -1,
+      inferenceStatus: "failed",
+      inferenceError: "Model unavailable",
+    };
+    localStorage.setItem("artguard_latest_result", JSON.stringify(result));
+    renderAtResults();
+    await waitFor(() => expect(screen.getByText("—")).toBeInTheDocument());
+  });
+
   it("share copies explanation and download calls print", async () => {
     const writeText = vi.fn().mockResolvedValue(undefined);
     vi.stubGlobal("navigator", { ...navigator, clipboard: { writeText } });

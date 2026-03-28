@@ -60,6 +60,25 @@ describe("HistoryPage", () => {
     expect(screen.getByText(/van gogh/i)).toBeInTheDocument();
   });
 
+  it("shows image thumbnail when item has image data", async () => {
+    const result = makeResult({
+      artworkName: "With Image",
+      image: "data:image/png;base64,AAAA",
+    });
+    localStorage.setItem("artguard_history_u1", JSON.stringify([result]));
+    renderHistory();
+    await waitFor(() => expect(screen.getByText("With Image")).toBeInTheDocument());
+    expect(screen.getByAltText("With Image")).toBeInTheDocument();
+  });
+
+  it("shows no preview placeholder when item has no image", async () => {
+    const result = makeResult({ artworkName: "No Image", image: "" });
+    localStorage.setItem("artguard_history_u1", JSON.stringify([result]));
+    renderHistory();
+    await waitFor(() => expect(screen.getByText("No Image")).toBeInTheDocument());
+    expect(screen.getByText(/no preview/i)).toBeInTheDocument();
+  });
+
   it("shows score percentage for completed inference", async () => {
     const result = makeResult({ score: 0.85, prediction: 1, inferenceStatus: "completed" });
     localStorage.setItem("artguard_history_u1", JSON.stringify([result]));
@@ -149,6 +168,20 @@ describe("HistoryPage", () => {
     await waitFor(() => expect(screen.getByText(/showing 2 of 2/i)).toBeInTheDocument());
   });
 
+  it("clears all history in mock mode via confirmation dialog", async () => {
+    const user = userEvent.setup();
+    const results = [makeResult({ artworkName: "Art1" }), makeResult({ artworkName: "Art2" })];
+    localStorage.setItem("artguard_history_u1", JSON.stringify(results));
+    renderHistory();
+    await waitFor(() => expect(screen.getByText("Art1")).toBeInTheDocument());
+
+    await user.click(screen.getByRole("button", { name: /clear all/i }));
+    // Click confirm in dialog
+    await user.click(await screen.findByRole("button", { name: /^clear all$/i }));
+    await waitFor(() => expect(screen.getByText(/no analysis history yet/i)).toBeInTheDocument());
+    expect(localStorage.getItem("artguard_history_u1")).toBeNull();
+  });
+
   it("clear all button appears when history has items", async () => {
     const result = makeResult();
     localStorage.setItem("artguard_history_u1", JSON.stringify([result]));
@@ -179,6 +212,46 @@ describe("HistoryPage", () => {
     await waitFor(() => {
       const items = screen.getAllByRole("heading", { level: 3 });
       expect(items[0].textContent).toBe("High Score");
+    });
+  });
+
+  it("sort by oldest puts earliest first", async () => {
+    const user = userEvent.setup();
+    const results = [
+      makeResult({ artworkName: "Newer", timestamp: "2024-06-01T00:00:00Z" }),
+      makeResult({ artworkName: "Older", timestamp: "2024-01-01T00:00:00Z" }),
+    ];
+    localStorage.setItem("artguard_history_u1", JSON.stringify(results));
+    renderHistory();
+    await waitFor(() => expect(screen.getByText("Newer")).toBeInTheDocument());
+
+    const sortTrigger = screen.getAllByRole("combobox")[1];
+    await user.click(sortTrigger);
+    await user.click(await screen.findByRole("option", { name: /oldest first/i }));
+
+    await waitFor(() => {
+      const items = screen.getAllByRole("heading", { level: 3 });
+      expect(items[0].textContent).toBe("Older");
+    });
+  });
+
+  it("sort by score-low puts lowest score first", async () => {
+    const user = userEvent.setup();
+    const results = [
+      makeResult({ artworkName: "High Score", score: 0.9, prediction: 1 }),
+      makeResult({ artworkName: "Low Score", score: 0.2, prediction: 0 }),
+    ];
+    localStorage.setItem("artguard_history_u1", JSON.stringify(results));
+    renderHistory();
+    await waitFor(() => expect(screen.getByText("Low Score")).toBeInTheDocument());
+
+    const sortTrigger = screen.getAllByRole("combobox")[1];
+    await user.click(sortTrigger);
+    await user.click(await screen.findByRole("option", { name: /lowest score/i }));
+
+    await waitFor(() => {
+      const items = screen.getAllByRole("heading", { level: 3 });
+      expect(items[0].textContent).toBe("Low Score");
     });
   });
 
@@ -268,6 +341,137 @@ describe("HistoryPage API backend", () => {
       username: "test",
       email: "t@t.com",
     });
+  });
+
+  it("shows loading spinner while fetching from API", async () => {
+    // Make listInferences hang so we can see the loading state
+    vi.spyOn(inferencesApi, "listInferences").mockReturnValue(new Promise(() => {}));
+    renderHistory();
+    await waitFor(() => expect(screen.getByText(/loading history/i)).toBeInTheDocument());
+  });
+
+  it("deletes item successfully in API mode", async () => {
+    const baseItem: inferencesApi.InferenceListItem = {
+      inference_id: "inf-1",
+      created_at: Date.now(),
+      score: 0.8,
+      prediction: 1,
+      artist_name: "Artist",
+      artwork_name: "ToDelete",
+      image_name: "a.png",
+      file_size: 100,
+      image_url: "",
+      inference_status: "completed",
+    };
+    vi.spyOn(inferencesApi, "listInferences").mockResolvedValue({
+      items: [baseItem],
+      next_cursor: null,
+    });
+    vi.spyOn(inferencesApi, "deleteInference").mockResolvedValue(undefined);
+    renderHistory();
+    await waitFor(() => expect(screen.getByText("ToDelete")).toBeInTheDocument());
+    fireEvent.click(screen.getByRole("button", { name: /delete/i }));
+    await waitFor(() => expect(screen.queryByText("ToDelete")).not.toBeInTheDocument());
+  });
+
+  it("clears all history in API mode", async () => {
+    const user = userEvent.setup();
+    const baseItem: inferencesApi.InferenceListItem = {
+      inference_id: "inf-1",
+      created_at: Date.now(),
+      score: 0.8,
+      prediction: 1,
+      artist_name: "Artist",
+      artwork_name: "Work",
+      image_name: "a.png",
+      file_size: 100,
+      image_url: "",
+      inference_status: "completed",
+    };
+    vi.spyOn(inferencesApi, "listInferences").mockResolvedValue({
+      items: [baseItem],
+      next_cursor: null,
+    });
+    vi.spyOn(inferencesApi, "deleteAllInferences").mockResolvedValue(undefined);
+    renderHistory();
+    await waitFor(() => expect(screen.getByText("Work")).toBeInTheDocument());
+    await user.click(screen.getByRole("button", { name: /clear all/i }));
+    // Confirm dialog
+    await user.click(await screen.findByRole("button", { name: /^clear all$/i }));
+    await waitFor(() => expect(screen.getByText(/no analysis history yet/i)).toBeInTheDocument());
+  });
+
+  it("shows error when clear all fails in API mode", async () => {
+    const user = userEvent.setup();
+    const baseItem: inferencesApi.InferenceListItem = {
+      inference_id: "inf-1",
+      created_at: Date.now(),
+      score: 0.8,
+      prediction: 1,
+      artist_name: "Artist",
+      artwork_name: "Work",
+      image_name: "a.png",
+      file_size: 100,
+      image_url: "",
+      inference_status: "completed",
+    };
+    vi.spyOn(inferencesApi, "listInferences").mockResolvedValue({
+      items: [baseItem],
+      next_cursor: null,
+    });
+    vi.spyOn(inferencesApi, "deleteAllInferences").mockRejectedValue(new Error("Clear failed"));
+    renderHistory();
+    await waitFor(() => expect(screen.getByText("Work")).toBeInTheDocument());
+    await user.click(screen.getByRole("button", { name: /clear all/i }));
+    await user.click(await screen.findByRole("button", { name: /^clear all$/i }));
+    await waitFor(() => expect(screen.getByText(/clear failed/i)).toBeInTheDocument());
+  });
+
+  it("shows error when load more fails", async () => {
+    const user = userEvent.setup();
+    const baseItem: inferencesApi.InferenceListItem = {
+      inference_id: "inf-1",
+      created_at: Date.now(),
+      score: 0.8,
+      prediction: 1,
+      artist_name: "Artist",
+      artwork_name: "Work",
+      image_name: "a.png",
+      file_size: 100,
+      image_url: "",
+      inference_status: "completed",
+    };
+    vi.spyOn(inferencesApi, "listInferences")
+      .mockResolvedValueOnce({ items: [baseItem], next_cursor: "c2" })
+      .mockRejectedValueOnce(new Error("Load more failed"));
+    renderHistory();
+    await waitFor(() => expect(screen.getByText("Work")).toBeInTheDocument());
+    await user.click(screen.getByRole("button", { name: /load more/i }));
+    await waitFor(() => expect(screen.getByText(/load more failed/i)).toBeInTheDocument());
+  });
+
+  it("shows error when delete inference fails in API mode", async () => {
+    const baseItem: inferencesApi.InferenceListItem = {
+      inference_id: "inf-1",
+      created_at: Date.now(),
+      score: 0.8,
+      prediction: 1,
+      artist_name: "Artist",
+      artwork_name: "Work",
+      image_name: "a.png",
+      file_size: 100,
+      image_url: "",
+      inference_status: "completed",
+    };
+    vi.spyOn(inferencesApi, "listInferences").mockResolvedValue({
+      items: [baseItem],
+      next_cursor: null,
+    });
+    vi.spyOn(inferencesApi, "deleteInference").mockRejectedValue(new Error("Delete failed"));
+    renderHistory();
+    await waitFor(() => expect(screen.getByText("Work")).toBeInTheDocument());
+    fireEvent.click(screen.getByRole("button", { name: /delete/i }));
+    await waitFor(() => expect(screen.getByText(/delete failed/i)).toBeInTheDocument());
   });
 
   it("shows error when list inferences fails", async () => {

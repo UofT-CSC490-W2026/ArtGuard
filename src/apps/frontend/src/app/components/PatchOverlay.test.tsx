@@ -105,6 +105,65 @@ describe("PatchOverlay", () => {
     fireEvent.load(img);
   });
 
+  it("hides canvas and controls when no patches provided", () => {
+    render(
+      <PatchOverlay imageSrc={dataUrl} patchData={[]} imageWidth={1} imageHeight={1} />,
+    );
+    expect(screen.getByRole("img", { name: /analyzed artwork/i })).toBeInTheDocument();
+    // No canvas or heatmap controls when patchData is empty
+    expect(screen.queryByText(/patch authenticity heatmap/i)).not.toBeInTheDocument();
+    expect(screen.queryByRole("switch")).not.toBeInTheDocument();
+  });
+
+  it("sets tooltip to null on mousemove when overlay is off", async () => {
+    const user = userEvent.setup();
+    render(
+      <PatchOverlay
+        imageSrc={dataUrl}
+        patchData={[{ x: 0, y: 0, w: 100, h: 100, prob: 0.5 }]}
+        imageWidth={100}
+        imageHeight={100}
+      />,
+    );
+    const img = screen.getByRole("img", { name: /analyzed artwork/i });
+    fireEvent.load(img);
+    // Turn off overlay via switch
+    await user.click(screen.getByRole("switch"));
+    const wrap = img.parentElement!;
+    // Mousemove should now trigger the early return with setTooltip(null)
+    fireEvent.mouseMove(wrap, { clientX: 50, clientY: 50 });
+    // No tooltip should appear (tooltip format is "XX.X% authenticity")
+    expect(screen.queryByText(/\d+\.\d+% authenticity/)).not.toBeInTheDocument();
+  });
+
+  it("clears tooltip when pointer moves outside all patches", async () => {
+    render(
+      <PatchOverlay
+        imageSrc={dataUrl}
+        patchData={[{ x: 0, y: 0, w: 10, h: 10, prob: 0.5 }]}
+        imageWidth={100}
+        imageHeight={100}
+      />,
+    );
+    const img = screen.getByRole("img", { name: /analyzed artwork/i });
+    Object.defineProperty(img, "clientWidth", { value: 100, configurable: true });
+    Object.defineProperty(img, "clientHeight", { value: 100, configurable: true });
+    Object.defineProperty(img, "naturalWidth", { value: 100, configurable: true });
+    Object.defineProperty(img, "naturalHeight", { value: 100, configurable: true });
+    vi.spyOn(img, "getBoundingClientRect").mockReturnValue({
+      left: 0, top: 0, width: 100, height: 100, bottom: 100, right: 100, x: 0, y: 0, toJSON: () => ({}),
+    } as DOMRect);
+    const wrap = img.parentElement!;
+    vi.spyOn(wrap, "getBoundingClientRect").mockReturnValue({
+      left: 0, top: 0, width: 100, height: 100, bottom: 100, right: 100, x: 0, y: 0, toJSON: () => ({}),
+    } as DOMRect);
+    fireEvent.load(img);
+    // Move pointer to area outside the small 10x10 patch (patch is at 0,0 to 10,10)
+    fireEvent.mouseMove(wrap, { clientX: 90, clientY: 90 });
+    // Tooltip should not appear since we're outside the patch (tooltip format is "XX.X% authenticity")
+    expect(screen.queryByText(/\d+\.\d+% authenticity/)).not.toBeInTheDocument();
+  });
+
   it("adjusts opacity via slider", async () => {
     const user = userEvent.setup();
     render(

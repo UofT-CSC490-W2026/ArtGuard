@@ -58,6 +58,13 @@ describe("ProfilePage", () => {
     await waitFor(() => expect(screen.getByText("3")).toBeInTheDocument());
   });
 
+  it("shows zero analyses when localStorage history is corrupt", async () => {
+    seedUser("u1");
+    localStorage.setItem("artguard_history_u1", "{bad-json{{");
+    renderProfile();
+    await waitFor(() => expect(screen.getByText("0")).toBeInTheDocument());
+  });
+
   it("shows total analyses count from API when backend is available", async () => {
     vi.spyOn(client, "hasApiBackend").mockReturnValue(true);
     vi.spyOn(client, "getAccessToken").mockReturnValue("token");
@@ -194,6 +201,67 @@ describe("ProfilePage", () => {
 
     await waitFor(() =>
       expect(screen.getByText(/enter your current password/i)).toBeInTheDocument()
+    );
+  });
+
+  it("successfully updates profile when form is submitted", async () => {
+    const user = userEvent.setup();
+    seedUser("u1", "testuser", "test@example.com");
+    await seedLocalUserWithHash("u1", "testuser", "test@example.com", "password123");
+    renderProfile();
+    await waitFor(() => expect(screen.getByDisplayValue("testuser")).toBeInTheDocument());
+
+    const usernameInput = screen.getByDisplayValue("testuser");
+    await user.clear(usernameInput);
+    await user.type(usernameInput, "updateduser");
+
+    const saveBtn = screen.getByRole("button", { name: /save changes/i });
+    await user.click(saveBtn);
+
+    // After success, username should be updated
+    await waitFor(() => expect(screen.getByDisplayValue("updateduser")).toBeInTheDocument());
+  });
+
+  it("shows error when updateProfile rejects", async () => {
+    const user = userEvent.setup();
+    seedUser("u1", "testuser", "test@example.com");
+    // Store a second user with the target email so updateProfile throws "Email is already in use"
+    const users = [
+      { id: "u1", username: "testuser", email: "test@example.com", passwordHash: "hash1" },
+      { id: "u2", username: "other", email: "taken@example.com", passwordHash: "hash2" },
+    ];
+    localStorage.setItem("artguard_users", JSON.stringify(users));
+    renderProfile();
+    await waitFor(() => expect(screen.getByDisplayValue("testuser")).toBeInTheDocument());
+
+    const emailInput = screen.getByDisplayValue("test@example.com");
+    await user.clear(emailInput);
+    await user.type(emailInput, "taken@example.com");
+
+    const saveBtn = screen.getByRole("button", { name: /save changes/i });
+    await user.click(saveBtn);
+
+    await waitFor(() =>
+      expect(screen.getByText(/email is already in use/i)).toBeInTheDocument()
+    );
+  });
+
+  it("shows error when changePassword rejects in form", async () => {
+    const user = userEvent.setup();
+    seedUser("u1", "testuser", "test@example.com");
+    await seedLocalUserWithHash("u1", "testuser", "test@example.com", "correctpass");
+    renderProfile();
+    await waitFor(() => expect(screen.getByLabelText(/current password/i)).toBeInTheDocument());
+
+    await user.type(screen.getByLabelText(/current password/i), "wrongpass");
+    await user.type(screen.getByLabelText(/^new password$/i), "newpass123");
+    await user.type(screen.getByLabelText(/confirm new password/i), "newpass123");
+
+    const form = screen.getByLabelText(/confirm new password/i).closest("form");
+    fireEvent.submit(form!);
+
+    await waitFor(() =>
+      expect(screen.getByText(/current password is incorrect/i)).toBeInTheDocument()
     );
   });
 

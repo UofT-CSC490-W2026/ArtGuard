@@ -51,8 +51,8 @@ export function SignUpPage() {
       ...formData,
       [e.target.name]: e.target.value,
     });
-    if (errors[e.target.name]) {
-      setErrors({ ...errors, [e.target.name]: "" });
+    if (errors.general) {
+      setErrors({});
     }
   };
 
@@ -99,9 +99,6 @@ export function SignUpPage() {
                     onChange={handleChange}
                     disabled={isLoading || success}
                   />
-                  {errors.username && (
-                    <p className="text-sm text-destructive">{errors.username}</p>
-                  )}
                 </div>
 
                 <div className="space-y-2">
@@ -116,7 +113,6 @@ export function SignUpPage() {
                     onChange={handleChange}
                     disabled={isLoading || success}
                   />
-                  {errors.email && <p className="text-sm text-destructive">{errors.email}</p>}
                 </div>
 
                 <div className="space-y-2">
@@ -140,9 +136,6 @@ export function SignUpPage() {
                       {showPassword ? <EyeOff className="size-4" /> : <Eye className="size-4" />}
                     </button>
                   </div>
-                  {errors.password && (
-                    <p className="text-sm text-destructive">{errors.password}</p>
-                  )}
                 </div>
 
                 <Button type="submit" className="w-full" disabled={isLoading || success}>
