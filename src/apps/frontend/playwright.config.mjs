@@ -3,7 +3,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 
 const frontendDir = path.dirname(fileURLToPath(import.meta.url));
-const e2eDir = path.join(frontendDir, "e2e");
+const e2eDir = path.join(frontendDir, "tests", "e2e");
 
 export default defineConfig({
   testDir: e2eDir,

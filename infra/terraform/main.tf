@@ -25,9 +25,6 @@ terraform {
     region         = "ca-central-1"
     encrypt        = true
     dynamodb_table = "artguard-terraform-locks"
-    # Key is specified per environment using -backend-config flag:
-    #   Dev:  terraform init -backend-config=backend-dev.hcl
-    #   Prod: terraform init -backend-config=backend-prod.hcl
   }
 }
 

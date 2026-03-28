@@ -1,8 +1,110 @@
-# Backend
+# ArtGuard Backend
 
-Guide for team members to manually test and verify all ArtGuard API endpoints using `curl`. Useful for local development, debugging, and verifying deployed environments.
+Python FastAPI backend serving the ArtGuard art forgery detection API. Handles authentication, image upload, inference orchestration (Modal GPU + Bedrock RAG), inference history, and training/evaluation job management.
 
-## Setup
+## Table of Contents
+
+1. [Architecture](#architecture)
+2. [Authentication & Security](#authentication--security)
+3. [Structured Logging](#structured-logging)
+4. [API Reference](#api-reference)
+5. [Environment Variables](#environment-variables)
+6. [Troubleshooting](#troubleshooting)
+
+---
+
+## Architecture
+
+```
+src/apps/backend/
+├── main.py              # FastAPI app, CORS, middleware, route registration
+├── config.py            # Environment variable loading and validation
+├── validation.py        # Shared input validation (field limits, filename sanitization)
+├── logging_config.py    # Structured JSON logging + CloudWatch EMF metrics
+├── prompts.py           # RAG prompt templates for Bedrock
+├── security/
+│   ├── auth.py          # JWT creation/validation, bcrypt password hashing
+│   └── ...
+├── services/
+│   ├── inference_service.py  # Inference pipeline (S3 upload → Modal → Bedrock RAG)
+│   ├── user_service.py       # User CRUD (DynamoDB)
+│   └── ...
+├── routes/
+│   ├── auth.py          # /auth/* endpoints (signup, login, profile, password)
+│   ├── inference.py     # /inference, /inferences/* endpoints
+│   ├── rag.py           # /rag-query endpoint
+│   └── ...
+└── deps/                # FastAPI dependency injection (auth, AWS clients)
+```
+
+---
+
+## Authentication & Security
+
+User authentication uses **stateless JWT tokens** (HS256 algorithm) with **bcrypt-hashed passwords**. The JWT secret is stored in AWS Secrets Manager and loaded at container startup; a development-only fallback secret is provided for local testing, while production strictly requires the Secrets Manager value.
+
+### How It Works
+
+1. **Signup/Login**: User provides credentials → password verified against bcrypt hash → JWT issued with `user_id` and expiry
+2. **Protected routes**: FastAPI dependency (`get_current_user_id`) extracts the Bearer token, validates signature and expiry, injects the authenticated `user_id` into the request context
+3. **Failure**: Missing, expired, or invalid tokens return HTTP 401
+
+### Input Validation
+
+Input validation is centralized in `validation.py`, enforcing:
+- Field length limits (username, email, artwork/artist names)
+- Score clamping to [0.0, 1.0]
+- Prediction value validation ({-1, 0, 1})
+- Filename sanitization (path-traversal prevention, null-byte removal)
+
+### Encryption
+
+- **At rest**: AES-256 (S3), AWS-managed KMS keys (DynamoDB, Secrets Manager, OpenSearch)
+- **In transit**: TLS 1.2+ (CloudFront enforces HTTPS; ECS communicates with AWS services via SDK default HTTPS)
+
+---
+
+## Structured Logging
+
+All application logs are emitted as single-line JSON objects to stdout, forwarded by the ECS Fargate logging driver to CloudWatch Logs. This enables CloudWatch Logs Insights queries (filter by `request_id`, aggregate error rates, compute latency percentiles).
+
+### Log Entry Fields
+
+| Field | Description |
+|-------|-------------|
+| `timestamp` | ISO 8601 with millisecond precision |
+| `level` | DEBUG, INFO, WARNING, ERROR |
+| `logger` | Python logger name |
+| `message` | Human-readable log message |
+| `request_id` | 8-char UUID prefix, per-request (from `X-Request-ID` header or generated) |
+| `user_id` | Authenticated user's ID (empty for unauthenticated) |
+| `source` | File path and line number (WARNING+ only) |
+| `exc_info` | Full traceback (only when handling exceptions) |
+
+`request_id` and `user_id` use Python `ContextVar` instances (async-safe, request-scoped). The `RequestLoggingMiddleware` sets these at request start and resets after response.
+
+### CloudWatch Embedded Metrics (EMF)
+
+Custom metrics emitted inline in log entries — CloudWatch automatically extracts them without `PutMetricData` API calls:
+
+- **`InferenceLatency`** (Seconds): End-to-end Modal inference duration
+- **`RAGLatency`** (Seconds): Bedrock RetrieveAndGenerate call duration
+- **`InferenceSuccess`** / **`InferenceError`** (Count): Success/failure counters
+- **`RAGError`** (Count): Bedrock call failure counter
+
+### Log Metric Filters
+
+- **`ApplicationErrors`**: `$.level = "ERROR"`
+- **`ApplicationWarnings`**: `$.level = "WARNING"`
+- **`AuthFailures`**: `$.status = 401`
+
+These drive CloudWatch alarms for error volume spikes.
+
+---
+
+## API Reference
+
+### Setup
 
 ```bash
 # Set your API base URL (no trailing slash)
@@ -19,7 +121,7 @@ Get a token from `POST /auth/signup` or `POST /auth/login`.
 
 ---
 
-## Public Endpoints (no auth required)
+### Public Endpoints (no auth required)
 
 ### Health Check
 
