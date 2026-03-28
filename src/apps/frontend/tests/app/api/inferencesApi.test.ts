@@ -109,29 +109,24 @@ describe("inferences API functions", () => {
     expect(url).not.toContain("cursor=");
   });
 
-  it("getInference, deleteInference, deleteAllInferences, getInferenceStats hit routes", async () => {
+  it("deleteInference and deleteAllInferences hit routes", async () => {
     vi.stubEnv("VITE_API_URL", "http://127.0.0.1/api");
     vi.resetModules();
     const fetchMock = vi.fn().mockResolvedValue({
       ok: true,
-      json: async () => ({ deleted: 2, count: 5 }),
+      json: async () => ({ deleted: 2 }),
     });
     vi.stubGlobal("fetch", fetchMock);
 
     const {
       deleteAllInferences,
       deleteInference,
-      getInference,
-      getInferenceStats,
     } = await import("@/app/api/inferencesApi");
-    await getInference("abc");
     await deleteInference("abc");
     await deleteAllInferences();
-    await getInferenceStats();
 
     const urls = fetchMock.mock.calls.map((c) => c[0] as string);
-    expect(urls.some((u) => u.includes("/inferences/abc") && !u.includes("/stats"))).toBe(true);
+    expect(urls.some((u) => u.includes("/inferences/abc"))).toBe(true);
     expect(urls.some((u) => u.includes("/inferences"))).toBe(true);
-    expect(urls.some((u) => u.includes("/stats"))).toBe(true);
   });
 });

@@ -7,7 +7,7 @@
 import type { AnalysisResult } from "../types";
 import { AlertCircle, AlertTriangle, CheckCircle, type LucideIcon } from "lucide-react";
 
-export type VerdictDisplay = {
+type VerdictDisplay = {
   text: string;
   icon: LucideIcon;
   color: string;
@@ -78,32 +78,9 @@ export function getAnalysisVerdict(r: AnalysisResult): VerdictDisplay {
   return verdictUnavailable();
 }
 
-export function getAuthenticityBarColor(score: number): string {
-  if (score >= 0.7) return "bg-bar-positive";
-  if (score <= 0.3) return "bg-bar-negative";
-  return "bg-bar-caution";
-}
-
-export function getAnalysisBarColor(r: AnalysisResult): string {
-  if (isInferenceFailed(r)) return "bg-bar-muted";
-  return getAuthenticityBarColor(r.score);
-}
-
 export function formatAnalysisScorePercent(r: AnalysisResult): string {
   if (isInferenceFailed(r)) return "—";
   return (r.score * 100).toFixed(1);
-}
-
-export function primaryScoreTitle(r: AnalysisResult): string {
-  if (isInferenceFailed(r)) return "Inference failed";
-  return "Authenticity confidence";
-}
-
-export function primaryScoreDescription(r: AnalysisResult): string {
-  if (isInferenceFailed(r)) {
-    return "The model did not return a score for this upload. See below for details or try again later.";
-  }
-  return "Mean probability across patches that the artwork is authentic (higher = stronger authenticity cues). The model also returns a binary prediction (Authentic or Forgery).";
 }
 
 export function matchesAuthenticFilter(r: AnalysisResult): boolean {
@@ -138,12 +115,9 @@ export function getBatchIndicator(r: AnalysisResult) {
   return { icon: AlertTriangle, color: "text-caution", label: "Unavailable" };
 }
 
-/** Shown when the backend did not return RAG explanation text (we do not invent one). */
-export const NO_EXPLANATION = "No explanation";
-
 /**
  * Text to show in the explanation panel: real `explanation` from the API when present;
- * otherwise a factual inference-failure line, or {@link NO_EXPLANATION} — never score-based narrative as a substitute for RAG.
+ * otherwise a factual inference-failure line, or a fallback — never score-based narrative as a substitute for RAG.
  */
 export function resolveDisplayedExplanation(r: AnalysisResult): string {
   const raw = r.explanation != null ? String(r.explanation).trim() : "";
@@ -152,5 +126,5 @@ export function resolveDisplayedExplanation(r: AnalysisResult): string {
     const detail = r.inferenceError?.trim();
     return detail ? `Inference did not complete. ${detail}` : "Inference did not complete.";
   }
-  return NO_EXPLANATION;
+  return "A retrieval-augmented explanation was not available for this analysis. Refer to the authenticity score and patch heatmap above for the model\u2019s quantitative assessment.";
 }

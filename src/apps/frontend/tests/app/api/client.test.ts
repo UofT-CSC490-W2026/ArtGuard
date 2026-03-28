@@ -129,7 +129,7 @@ describe("client token helpers", () => {
     await expect(api.get("/b")).rejects.toThrow("oops");
   });
 
-  it("api.put and api.delete succeed", async () => {
+  it("api.post, api.put and api.delete succeed", async () => {
     vi.stubEnv("VITE_API_URL", "http://127.0.0.1/api");
     vi.resetModules();
     const fetchMock = vi.fn().mockResolvedValue({
@@ -138,8 +138,10 @@ describe("client token helpers", () => {
     });
     vi.stubGlobal("fetch", fetchMock);
     const { api } = await import("@/app/api/client");
+    await api.post("/p", { x: 1 });
     await api.put("/p", { a: 1 });
     await api.delete("/d");
+    expect(fetchMock.mock.calls.some((c) => (c[1] as RequestInit).method === "POST")).toBe(true);
     expect(fetchMock.mock.calls.some((c) => (c[1] as RequestInit).method === "PUT")).toBe(true);
     expect(fetchMock.mock.calls.some((c) => (c[1] as RequestInit).method === "DELETE")).toBe(
       true,
