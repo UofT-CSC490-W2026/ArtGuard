@@ -14,7 +14,7 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
-  assetsInclude: ['**/*.svg', '**/*.csv'],
+  assetsInclude: ['**/*.svg'],
   build: {
     sourcemap: false,
     minify: 'esbuild',
@@ -32,13 +32,13 @@ export default defineConfig({
     environment: 'jsdom',
     setupFiles: ['./tests/setup.ts'],
     include: ['tests/app/**/*.{test,spec}.{ts,tsx}'],
-    exclude: ['tests/e2e/**'],
+    exclude: ['tests/e2e/**', 'node_modules/**'],
     /** Avoid cross-file localStorage races in Auth tests */
     fileParallelism: false,
     coverage: {
       provider: 'v8',
-      /** json-summary: badge step; lcov: orgoro/coverage PR comments in CI */
-      reporter: ['text', 'html', 'json-summary', 'lcov'],
+      /** json-summary: badge step; cobertura XML: orgoro/coverage PR comments in CI */
+      reporter: ['text', 'html', 'json-summary', 'lcov', 'cobertura'],
       include: ['src/app/**/*.{ts,tsx}'],
       exclude: ['src/app/components/ui/**'],
       thresholds: {

@@ -117,7 +117,7 @@ test.describe("Upload page", () => {
     await expect(page.getByRole("link", { name: /analyze another artwork/i })).toBeVisible();
   });
 
-  test("results page heatmap toggle works when patch data available", async ({ page }) => {
+  test("results page shows patch overlay when mock returns patch data", async ({ page }) => {
     await signUpAndGoToUpload(page);
 
     await page.locator('input[type="file"]').setInputFiles(tinyPng);
@@ -126,14 +126,7 @@ test.describe("Upload page", () => {
     await page.getByRole("button", { name: /analyze artwork/i }).click();
 
     await page.waitForURL("**/results", { timeout: 60_000 });
-
-    // If patch data is available, heatmap toggle should be visible
-    const heatmapBtn = page.getByRole("button", { name: /show patch heatmap/i });
-    const hasHeatmap = await heatmapBtn.isVisible().catch(() => false);
-    if (hasHeatmap) {
-      await heatmapBtn.click();
-      await expect(page.getByRole("button", { name: /hide patch heatmap/i })).toBeVisible();
-    }
+    await expect(page.getByText(/patch authenticity heatmap/i)).toBeVisible();
   });
 });
 

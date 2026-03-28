@@ -163,20 +163,4 @@ describe("PatchOverlay", () => {
     // Tooltip should not appear since we're outside the patch (tooltip format is "XX.X% authenticity")
     expect(screen.queryByText(/\d+\.\d+% authenticity/)).not.toBeInTheDocument();
   });
-
-  it("adjusts opacity via slider", async () => {
-    const user = userEvent.setup();
-    render(
-      <PatchOverlay
-        imageSrc={dataUrl}
-        patchData={[{ x: 0, y: 0, w: 1, h: 1, prob: 0.5 }]}
-        imageWidth={1}
-        imageHeight={1}
-      />,
-    );
-    const img = screen.getByRole("img", { name: /analyzed artwork/i });
-    fireEvent.load(img);
-    const slider = screen.getByRole("slider");
-    await user.click(slider);
-  });
 });

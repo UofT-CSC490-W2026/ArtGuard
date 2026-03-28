@@ -1,6 +1,6 @@
+import type { ReactNode } from "react";
 import { Navigate } from "react-router";
 import { useAuth } from "../contexts/AuthContext";
-import { ReactNode } from "react";
 import { Loader2 } from "lucide-react";
 
 export function ProtectedRoute({ children }: { children: ReactNode }) {
