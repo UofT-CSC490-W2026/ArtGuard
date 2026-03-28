@@ -757,8 +757,6 @@ Recovery is executed via `recover-prod.sh`, which re-imports the orphaned resour
 
 The entire disaster recovery cycle — destruction, verification that data survives, and full recovery — is executable via a single command (`disaster-recovery.sh`) for demonstration purposes.
 
-**Video demo**: [Disaster Recovery Demo](./disaster_recovery.mp4)
-
 For full details including manual recovery steps and post-recovery verification, see [DISASTER_RECOVERY.md](../DISASTER_RECOVERY.md).
 
 ---

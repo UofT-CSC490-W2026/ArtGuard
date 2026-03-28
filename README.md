@@ -42,7 +42,7 @@ Please see the [Documentation Index](#documentation-index) for detailed document
 - **PDF Report Export** — Users can download a printable PDF report of any analysis including the heatmap, score, and explanation
 - **User Authentication** — JWT-based signup/login with bcrypt password hashing, profile management, and password changes
 - **Full CI/CD Pipeline** — 11 GitHub Actions workflows for backend/frontend testing, coverage badges, Docker builds, S3/CloudFront deployment, and Terraform infrastructure management
-- **100% Test Coverage** — 646+ backend tests (pytest) and 247+ frontend unit tests (vitest) with 100% line coverage on both, plus 7 Playwright E2E test suites
+- **100% Test Coverage** — 626+ backend tests (pytest) and 247+ frontend unit tests (vitest) with 100% line coverage on both, plus 7 Playwright E2E test suites
 - **Disaster Recovery** — Script-driven DR using Terraform state manipulation, with single-command destroy/verify/recover demo preserving all user data
 
 ---
@@ -70,7 +70,7 @@ ArtGuard analyses artwork images to detect potential forgeries. Users upload an 
 
 | Layer | Technology |
 |-------|-----------|
-| **Frontend** | React 19, TypeScript, Vite, Tailwind CSS, Shadcn/ui |
+| **Frontend** | React 18, TypeScript, Vite, Tailwind CSS, Shadcn/ui |
 | **Backend API** | Python 3.11, FastAPI, Uvicorn |
 | **Authentication** | JWT (HS256), bcrypt |
 | **ML Model** | Swin-Tiny / Swin-Base (PyTorch), trained on Modal GPUs (A10G) |
@@ -150,13 +150,13 @@ curl -sS -X POST "${API_BASE}/rag-query" \
   -d '{"query": "How are art forgeries detected?"}' | jq .
 ```
 
-For the full list of all 17 endpoints see [src/apps/backend/README.md](src/apps/backend/README.md). For deployment and service management see [DEPLOYMENT.md](DEPLOYMENT.md).
+For the full API reference with curl examples for all endpoints, see [src/apps/backend/README.md](src/apps/backend/README.md). For deployment and service management see [DEPLOYMENT.md](DEPLOYMENT.md).
 
 ---
 
 ## Architecture
 
-For detailed architecture diagrams, component breakdown, security, monitoring, and cost analysis see [infra/INFRA_README.md](infra/INFRA_README.md).
+For detailed architecture diagrams, component breakdown, security, monitoring, and cost analysis see [infra/README.md](infra/README.md).
 
 ---
 
@@ -170,7 +170,7 @@ ArtGuard/
 │   │   ├── config.py          #   AWS clients, enums, constants
 │   │   ├── validation.py      #   Shared data contracts and field limits
 │   │   ├── prompts.py         #   RAG/LLM prompt templates
-│   ��   ├── logging_config.py  #   JSON structured logging, CloudWatch EMF metrics
+│   │   ├── logging_config.py  #   JSON structured logging, CloudWatch EMF metrics
 │   │   ├── routes/            #   Route handlers (auth, inference, train, rag, process_data)
 │   │   ├── services/          #   Business logic (inference pipeline, users, S3 presign)
 │   │   ├── security/          #   JWT tokens, bcrypt password hashing
@@ -198,7 +198,7 @@ ArtGuard/
 │       │   └── lib/           #   Utilities (PDF report, analysis display, env, upload limits)
 │       └── tests/
 │           ├── setup.ts       #   Vitest test setup (jsdom, mocks)
-│           ├── app/           #   Unit tests (29 files, mirrors src/app/ structure)
+│           ├── app/           #   Unit tests (28 files, mirrors src/app/ structure)
 │           └── e2e/           #   Playwright E2E tests (7 spec files + fixtures)
 ├── infra/
 │   └── terraform/             # Infrastructure as Code (15+ .tf files)
@@ -216,7 +216,7 @@ ArtGuard/
 │   ├── disaster-recovery.sh   #   One-command DR demo (destroy → prove → recover)
 │   ├── recover-prod.sh        #   Recovery script (import orphans → rebuild → verify)
 │   └── ...                    #   bootstrap, build-docker, deploy-ecs, upload-rag, etc.
-├── tests/                     # Backend pytest test suite (646 tests, 100% coverage)
+├── tests/                     # Backend pytest test suite (626 tests, 100% coverage)
 │   ├── conftest.py            #   Shared fixtures (mocked AWS, FastAPI test client)
 │   ├── test_routes_*.py       #   API route tests (auth, inference, rag, train, etc.)
 │   ├── test_model.py          #   Swin Transformer model tests (CPU, no pretrained weights)
@@ -239,7 +239,7 @@ ArtGuard/
 The fastest way to verify the codebase works. Only requires Python 3.11+ and Node.js 20+.
 
 ```bash
-# Backend: Run full test suite (646 tests, 100% coverage)
+# Backend: Run full test suite (626 tests, 100% coverage)
 pytest tests/ -v
 
 # Backend: Run with coverage report
@@ -255,7 +255,7 @@ cd src/apps/frontend && npm run test:coverage && cd ../../..
 cd src/apps/frontend && npx playwright install chromium && npm run test:e2e && cd ../../..
 ```
 
-All backend AWS services (S3, DynamoDB, STS) are mocked via [moto](https://github.com/getmoto/moto) — no AWS credentials needed. Frontend tests run against mock API responses — no backend required.
+All backend AWS services (S3, DynamoDB, STS) are mocked via [moto](https://github.com/getmoto/moto) — no AWS credentials needed. Frontend unit tests run against the app's built-in mock mode — no backend required. E2E fullstack tests require a running backend (the CI workflow starts one automatically).
 
 ### Run Backend Locally
 
@@ -295,17 +295,17 @@ curl -X POST http://localhost:8000/auth/signup \
 
 ### Run Frontend Locally
 
-Requires Node.js 20+. Connects to the backend API (or runs in mock mode without one):
+Requires Node.js 20+. When `VITE_API_URL` is set, the frontend connects to the backend API. When it's not set, the app runs in **mock mode** — auth uses localStorage, inference generates simulated results, and history is stored locally. This is how the E2E tests run without a backend.
 
 ```bash
 cd src/apps/frontend
 
-# With backend connection
+# With backend connection (full functionality)
 export VITE_API_URL=http://localhost:8000
 npm run dev
 # Opens at http://localhost:5173
 
-# Without backend (mock mode — all features work with simulated data)
+# Without backend (mock mode — auth, upload, results all work with simulated data)
 npm run dev
 ```
 
@@ -356,7 +356,7 @@ locust -f tests/locustfile.py --host http://localhost:8000
 
 All backend AWS services are mocked via [moto](https://github.com/getmoto/moto) — no AWS credentials needed.
 
-**Backend test suite:** 646 tests across 32 test files, 100% line coverage (1,837 statements, 0 missed).
+**Backend test suite:** 626 tests across 32 test files, 100% line coverage (1,781 statements, 0 missed).
 
 | Category | Description | Tests |
 |----------|-------------|-------|
@@ -384,7 +384,7 @@ npm run test:coverage
 npm run test:watch
 ```
 
-**Frontend unit test suite:** 247 tests across 29 test files, 100% line coverage.
+**Frontend unit test suite:** 247 tests across 28 test files, 100% line coverage.
 
 | Category | Description | Tests |
 |----------|-------------|-------|
@@ -429,7 +429,7 @@ See [tests/README.md](tests/README.md) for full backend testing methodology.
 
 ## Benchmarking
 
-For full methodology, data split strategy, and reproducibility instructions, see [BENCHMARKS.md](BENCHMARKS.md).
+For full methodology, data split strategy, and reproducibility instructions, see [MODEL.md](MODEL.md).
 
 ### Quick Reproduce
 
@@ -522,7 +522,7 @@ export VITE_API_URL=$(terraform -chdir=infra/terraform output -raw cloudfront_di
 |----------|-------------|
 | [DEPLOYMENT.md](DEPLOYMENT.md) | Step-by-step deployment guide (prerequisites, first-time setup, ongoing workflow) |
 | [DISASTER_RECOVERY.md](DISASTER_RECOVERY.md) | Disaster recovery guide, demo instructions, and manual recovery steps |
-| [BENCHMARKS.md](BENCHMARKS.md) | Model evaluation methodology, training config, reproducibility instructions |
+| [MODEL.md](MODEL.md) | Model evaluation methodology, training config, reproducibility instructions |
 | [tests/README.md](tests/README.md) | Testing methodology, what is tested, coverage breakdown, CI integration |
 | [scripts/README.md](scripts/README.md) | All deployment and operations scripts with usage examples |
 
@@ -531,7 +531,7 @@ export VITE_API_URL=$(terraform -chdir=infra/terraform output -raw cloudfront_di
 | Document | Description |
 |----------|-------------|
 | [.github/workflows/README.md](.github/workflows/README.md) | CI/CD workflows — all 11 GitHub Actions (triggers, what they do, required secrets) |
-| [infra/INFRA_README.md](infra/INFRA_README.md) | Infrastructure overview, component breakdown, architecture decisions, security, logging, monitoring, costs |
+| [infra/README.md](infra/README.md) | Infrastructure overview, component breakdown, architecture decisions, security, logging, monitoring, costs |
 
 ### Backend and API
 
@@ -545,7 +545,6 @@ export VITE_API_URL=$(terraform -chdir=infra/terraform output -raw cloudfront_di
 | Document | Description |
 |----------|-------------|
 | [src/apps/frontend/README.md](src/apps/frontend/README.md) | Frontend setup and development |
-| [src/apps/frontend/ATTRIBUTIONS.md](src/apps/frontend/ATTRIBUTIONS.md) | Third-party component attributions |
 
 ---
 

@@ -6,21 +6,13 @@
 - Terraform >= 1.10.0
 - Docker Desktop running
 - Python 3.9+
-- Git LFS installed (`brew install git-lfs && git lfs install`)
 - Modal account with Token ID and Token Secret
 
-> **Git LFS note:** This repo uses Git LFS for large files (images, JSONL data). If the
-> org's LFS budget is exceeded, `git lfs pull` will fail. This does **not** block the DR demo:
->
-> - The RAG `.txt` files are already committed as real files — `deploy-all.sh` works without LFS.
+> - The RAG `.txt` files are already committed.
 > - Training images are already uploaded to S3 from a prior deploy. The DR demo preserves
 >   them in S3, so no local image files are needed.
-> - `deploy-all.sh` step 6 automatically detects LFS pointers and skips image upload gracefully.
 >
-> **For the DR demo, the TA does not need working Git LFS.** Just ensure prod has been
-> deployed at least once (by the team) with real images before running `disaster-recovery.sh`.
->
-> If a fresh deploy with training images is needed and LFS is unavailable, download the
+> If a fresh deploy with training images is needed, download the
 > dataset from Google Drive: **[ArtGuard Training Data](https://drive.google.com/file/d/1-VELhmPI-4uAOl4bY9Bh33UktfWrS-Oo/view?usp=sharing)**
 > Extract into the repo root so the `data/` folder contains the images, then run `deploy-all.sh`.
 > Or run `./scripts/download-data.sh` to download and extract automatically.
@@ -34,8 +26,6 @@
 | Deploy from scratch | `./scripts/deploy-all.sh prod` |
 | Run DR demo (destroy + prove + recover) | `./scripts/disaster-recovery.sh prod` |
 | Clean up after demo | `./scripts/destroy-all.sh prod` |
-| Dev teardown (destroys everything) | `./scripts/destroy-all.sh dev` |
-| Dev redeploy | `./scripts/deploy-all.sh dev` |
 
 ---
 
