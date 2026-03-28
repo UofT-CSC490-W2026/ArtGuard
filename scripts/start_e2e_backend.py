@@ -8,7 +8,6 @@ Usage:
     python scripts/start_e2e_backend.py
 """
 import os
-import sys
 
 # Must be set before any boto3/moto imports
 os.environ.setdefault("AWS_ACCESS_KEY_ID", "testing")
@@ -99,6 +98,26 @@ ddb.create_table(
 )
 
 print("E2E backend: AWS resources created", flush=True)
+
+# Mock Modal inference so full-stack E2E tests don't need real Modal credentials
+import random
+from src.apps.backend.services import inference_service
+
+def _mock_run_modal_inference(patch_s3_uris: list[str]) -> dict:
+    n = len(patch_s3_uris) or 1
+    probs = [round(random.uniform(0.6, 0.95), 4) for _ in range(n)]
+    mean_prob = sum(probs) / n
+    prediction = 1 if mean_prob >= 0.5 else 0
+    preds = [1 if p >= 0.5 else 0 for p in probs]
+    return {
+        "mean_prob": mean_prob,
+        "prediction": prediction,
+        "patch_probs": probs,
+        "patch_preds": preds,
+    }
+
+inference_service.run_modal_inference = _mock_run_modal_inference
+print("E2E backend: Modal inference mocked", flush=True)
 
 # Start uvicorn
 import uvicorn
