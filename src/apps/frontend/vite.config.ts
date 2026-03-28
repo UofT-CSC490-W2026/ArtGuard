@@ -31,7 +31,8 @@ export default defineConfig({
   test: {
     environment: 'jsdom',
     setupFiles: ['./tests/setup.ts'],
-    include: ['tests/**/*.{test,spec}.{ts,tsx}'],
+    include: ['tests/app/**/*.{test,spec}.{ts,tsx}'],
+    exclude: ['tests/e2e/**'],
     /** Avoid cross-file localStorage races in Auth tests */
     fileParallelism: false,
     coverage: {
