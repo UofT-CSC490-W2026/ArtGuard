@@ -392,7 +392,7 @@ describe("HistoryPage API backend", () => {
       items: [baseItem],
       next_cursor: null,
     });
-    vi.spyOn(inferencesApi, "deleteAllInferences").mockResolvedValue(undefined);
+    vi.spyOn(inferencesApi, "deleteAllInferences").mockResolvedValue({ deleted: 1 });
     renderHistory();
     await waitFor(() => expect(screen.getByText("Work")).toBeInTheDocument());
     await user.click(screen.getByRole("button", { name: /clear all/i }));
