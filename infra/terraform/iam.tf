@@ -136,7 +136,8 @@ resource "aws_iam_policy" "ecs_task_policy" {
         Effect = "Allow"
         Action = [
           "bedrock:InvokeModel",
-          "bedrock:InvokeModelWithResponseStream"
+          "bedrock:InvokeModelWithResponseStream",
+          "bedrock:GetInferenceProfile"
         ]
         Resource = "*"
       },
