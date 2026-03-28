@@ -579,7 +579,6 @@ export VITE_API_URL=$(terraform -chdir=infra/terraform output -raw cloudfront_di
 |----------|-------------|
 | [src/apps/frontend/README.md](src/apps/frontend/README.md) | Frontend setup and development |
 | [src/apps/frontend/tests/README.md](src/apps/frontend/tests/README.md) | Frontend testing (Vitest, Playwright, coverage, CI) |
-| [src/apps/frontend/ATTRIBUTIONS.md](src/apps/frontend/ATTRIBUTIONS.md) | Third-party component attributions |
 
 ---
 
