@@ -1,0 +1,86 @@
+_wandb:
+    value:
+        cli_version: 0.25.0
+        e:
+            gfi8wgkscootomfwb90sd3vxgh1w46ut:
+                apple:
+                    ecpuCores: 2
+                    gpuCores: 14
+                    memoryGb: 32
+                    name: Apple M1 Pro
+                    pcpuCores: 6
+                    ramTotalBytes: "34359738368"
+                    swapTotalBytes: "16106127360"
+                args:
+                    - --cov=src
+                    - --cov-report=term-missing
+                    - -m
+                    - not slow
+                    - --tb=short
+                cpu_count: 8
+                cpu_count_logical: 8
+                disk:
+                    /:
+                        total: "494384795648"
+                        used: "189263478784"
+                email: soheegoo09@gmail.com
+                executable: /Users/sgoo/miniconda3/bin/python
+                git:
+                    commit: 414538db8a26a993b6f1b9bf8b6f4c3c6dfa8783
+                    remote: https://github.com/UofT-CSC490-W2026/ArtGuard.git
+                host: TE1297
+                memory:
+                    total: "34359738368"
+                os: macOS-26.2-arm64-arm-64bit-Mach-O
+                program: /Users/sgoo/miniconda3/bin/pytest
+                python: CPython 3.13.5
+                root: /Users/sgoo/CSC490/ArtGuard
+                startedAt: "2026-03-28T00:59:16.828396Z"
+                writerId: gfi8wgkscootomfwb90sd3vxgh1w46ut
+        m: []
+        python_version: 3.13.5
+        t:
+            "1":
+                - 1
+                - 5
+                - 41
+                - 53
+            "2":
+                - 1
+                - 5
+                - 41
+                - 53
+            "3":
+                - 2
+                - 13
+                - 15
+                - 16
+                - 62
+            "4": 3.13.5
+            "5": 0.25.0
+            "12": 0.25.0
+            "13": darwin-arm64
+batch_size:
+    value: 4
+early_stop_min_delta:
+    value: 0.001
+early_stop_patience:
+    value: 5
+imitation_weight:
+    value: 10
+lr:
+    value: 0.0001
+num_epochs:
+    value: 1
+num_workers:
+    value: 0
+val_split:
+    value: 0.5
+wandb_enabled:
+    value: true
+wandb_entity:
+    value: null
+wandb_project:
+    value: artguard-training
+wandb_run_name:
+    value: akshaya-artguard-training-baseline-v2

@@ -28,6 +28,49 @@ class TestMetMain:
         with pytest.raises(RuntimeError, match="Failed to download MET CSV"):
             met_main()
 
+    def test_skips_rows_without_artist_name(self, tmp_path, monkeypatch):
+        """Rows with empty/missing Artist Display Name are skipped (line 120: continue)."""
+        import csv
+        from contextlib import contextmanager
+
+        src_dir = tmp_path / "src"
+        src_dir.mkdir()
+        temp_dir = tmp_path / "temp"
+        temp_dir.mkdir()
+
+        csv_path = str(src_dir / "MetObjects.csv")
+        fieldnames = ["Artist Display Name", "Title"]
+        with open(csv_path, "w", newline="", encoding="utf-8") as f:
+            writer = csv.DictWriter(f, fieldnames=fieldnames)
+            writer.writeheader()
+            writer.writerow({"Artist Display Name": "", "Title": "No Artist Work"})
+            writer.writerow({"Artist Display Name": "   ", "Title": "Whitespace Artist"})
+            writer.writerow({"Artist Display Name": "Van Gogh", "Title": "Starry Night"})
+
+        output_file = str(tmp_path / "output.jsonl")
+        monkeypatch.setattr("src.apps.data_pipeline.met_pipeline.OUTPUT_FILE", output_file)
+        monkeypatch.setattr("src.apps.data_pipeline.met_pipeline.MAX_RECORDS", 100)
+
+        @contextmanager
+        def mock_urlopen(url):
+            yield open(csv_path, "rb")
+
+        monkeypatch.setattr(
+            "src.apps.data_pipeline.met_pipeline.urllib.request.urlopen",
+            mock_urlopen,
+        )
+        monkeypatch.setattr("tempfile.gettempdir", lambda: str(temp_dir))
+
+        from src.apps.data_pipeline.met_pipeline import main
+        main()
+
+        import json
+        with open(output_file) as f:
+            lines = f.readlines()
+        # Only the Van Gogh row should be written (2 rows skipped)
+        assert len(lines) == 1
+        assert "Starry Night" in json.loads(lines[0])["text"]
+
 
 class TestMetBuildRagDocument:
     """Tests for met_pipeline.build_rag_document."""

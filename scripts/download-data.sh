@@ -15,7 +15,8 @@ set -e
 source "$(dirname "$0")/_colors.sh" 2>/dev/null || true
 
 # ── Configuration ─────────────────────────────────────────────────
-GDRIVE_FILE_ID="1-VELhmPI-4uAOl4bY9Bh33UktfWrS-Oo"
+GDRIVE_LINK="https://drive.google.com/file/d/1-MJgGpVtHQ1FDDy5Cy7puf2pmErSTFJZ/view?usp=drive_link"
+GDRIVE_FILE_ID="1-MJgGpVtHQ1FDDy5Cy7puf2pmErSTFJZ"
 ZIP_NAME="data.zip"
 DEST_DIR="data"
 # ──────────────────────────────────────────────────────────────────

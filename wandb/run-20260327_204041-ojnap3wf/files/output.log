@@ -1,0 +1,14 @@
+[tiny] Weights & Biases logging enabled.
+[tiny] Train patches: 8  |  Val patches: 8
+[tiny] Train authentic: 4  |  Train contrast: 4
+[tiny] Val authentic: 4  |  Val contrast: 4
+[tiny] Training plan: 1 epochs | batch_size=4 | lr=0.0001 | early_stop_patience=5
+[tiny] Initializing Swin-tiny model (pretrained=True)...
+[tiny] Model initialized and moved to cpu.
+[tiny] Epoch 1 train: 100%|██████████| 2/2 [00:00<00:00,  2.44it/s]
+[tiny] Epoch 1/1 — train done: loss=6.9508 acc=0.3750 (0.8s)
+[tiny] Epoch 1/1 — running validation on 8 patches...
+[tiny] Epoch 1/1 — VAL loss=0.8974 acc=0.5000 | train_loss=6.9508 train_acc=0.3750 | epoch_wall=1.1s
+[tiny]   ✓ New best val_loss=0.8974 val_acc=0.5000 — saved to /var/folders/kq/frwwj0l10nd1r9yt0plhvjkc0000gp/T/tmpj_yi4fd3/tiny/best.pt
+[tiny] Training complete. Best val_loss=0.8974 (last val_loss=0.8974 val_acc=0.5000)
+[tiny] Checkpoints saved to Modal Volume at /var/folders/kq/frwwj0l10nd1r9yt0plhvjkc0000gp/T/tmpj_yi4fd3/tiny/

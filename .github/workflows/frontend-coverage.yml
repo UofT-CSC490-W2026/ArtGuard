@@ -1,0 +1,92 @@
+name: Frontend Test Coverage
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  frontend-coverage:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: src/apps/frontend
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: src/apps/frontend/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run tests with coverage
+        run: npm run test:coverage
+
+      - name: Generate and commit coverage badge
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        working-directory: .
+        run: |
+          # Read coverage percentage from vitest json-summary output
+          PCT=$(node -e "const c=require('./src/apps/frontend/coverage/coverage-summary.json'); console.log(Math.round(c.total.statements.pct))")
+          echo "Coverage: ${PCT}%"
+
+          # Pick badge color: green ≥90, yellow ≥70, red <70
+          if [ "$PCT" -ge 90 ]; then COLOR="#4c1";
+          elif [ "$PCT" -ge 70 ]; then COLOR="#dfb317";
+          else COLOR="#e05d44"; fi
+
+          # Generate shields.io-style SVG
+          cat > frontend-coverage.svg <<SVGEOF
+          <svg xmlns="http://www.w3.org/2000/svg" width="106" height="20">
+            <linearGradient id="b" x2="0" y2="100%">
+              <stop offset="0" stop-color="#bbb" stop-opacity=".1"/>
+              <stop offset="1" stop-opacity=".1"/>
+            </linearGradient>
+            <mask id="a"><rect width="106" height="20" rx="3" fill="#fff"/></mask>
+            <g mask="url(#a)">
+              <path fill="#555" d="M0 0h63v20H0z"/>
+              <path fill="${COLOR}" d="M63 0h43v20H63z"/>
+              <path fill="url(#b)" d="M0 0h106v20H0z"/>
+            </g>
+            <g fill="#fff" text-anchor="middle" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="11">
+              <text x="31.5" y="15" fill="#010101" fill-opacity=".3">frontend</text>
+              <text x="31.5" y="14">frontend</text>
+              <text x="83.5" y="15" fill="#010101" fill-opacity=".3">${PCT}%</text>
+              <text x="83.5" y="14">${PCT}%</text>
+            </g>
+          </svg>
+          SVGEOF
+
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add frontend-coverage.svg
+          git diff --staged --quiet || git commit -m "Update frontend coverage badge [skip ci]"
+          git push
+
+      - name: Post coverage comment on PR
+        if: github.event_name == 'pull_request'
+        uses: orgoro/coverage@v3.2
+        with:
+          coverageFile: src/apps/frontend/coverage/lcov.info
+          token: ${{ secrets.GITHUB_TOKEN }}
+          thresholdAll: 1.0
+
+      - name: Upload coverage artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: frontend-coverage-report
+          path: |
+            src/apps/frontend/coverage/
+            frontend-coverage.svg

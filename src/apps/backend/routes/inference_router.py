@@ -16,7 +16,7 @@ from __future__ import annotations
 import logging
 import uuid
 from io import BytesIO
-from typing import Optional
+from typing import List, Optional
 
 from fastapi import APIRouter, Depends, File, Form, HTTPException, UploadFile
 from PIL import Image
@@ -40,6 +40,16 @@ router = APIRouter(tags=["inference"])
 # Pydantic response model
 # ---------------------------------------------------------------------------
 
+class PatchResult(BaseModel):
+    """Per-patch bounding box and authenticity probability (0–1)."""
+
+    x: int
+    y: int
+    w: int
+    h: int
+    prob: float
+
+
 class InferenceResponse(BaseModel):
     """Response from a successful POST /inference call.
 
@@ -49,6 +59,9 @@ class InferenceResponse(BaseModel):
         score:        Mean patch probability of authenticity (0-1).
         explanation:  RAG-generated explanation, or None.
         image_url:    Presigned S3 GET URL for the uploaded image, or None.
+        image_width:  Original image width in pixels.
+        image_height: Original image height in pixels.
+        patch_data:   Per-patch boxes and probabilities (aligned with patches_info order).
     """
 
     inference_id: str
@@ -56,6 +69,9 @@ class InferenceResponse(BaseModel):
     score: float
     explanation: Optional[str] = None
     image_url: Optional[str] = None
+    image_width: int = 0
+    image_height: int = 0
+    patch_data: Optional[List[PatchResult]] = None
 
 
 # ---------------------------------------------------------------------------
@@ -176,10 +192,24 @@ async def infer(
 
     image_url = inference_service.generate_image_url(raw_s3_uri)
 
+    patch_data = [
+        PatchResult(
+            x=int(p["patch_x"]),
+            y=int(p["patch_y"]),
+            w=int(p["patch_width"]),
+            h=int(p["patch_height"]),
+            prob=float(prob),
+        )
+        for p, prob in zip(patches_info, modal_result["patch_probs"])
+    ]
+
     return InferenceResponse(
         inference_id=inference_id,
         prediction=prediction,
         score=score,
         explanation=explanation,
         image_url=image_url,
+        image_width=w,
+        image_height=h,
+        patch_data=patch_data,
     )

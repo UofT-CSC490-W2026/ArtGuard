@@ -1,0 +1,21 @@
+2026-03-27 20:57:41,406 INFO    MainThread:64977 [wandb_init.py:setup_run_log_directory():717] Logging user logs to /Users/sgoo/CSC490/ArtGuard/wandb/run-20260327_205741-w6zqbxmv/logs/debug.log
+2026-03-27 20:57:41,406 INFO    MainThread:64977 [wandb_init.py:setup_run_log_directory():718] Logging internal logs to /Users/sgoo/CSC490/ArtGuard/wandb/run-20260327_205741-w6zqbxmv/logs/debug-internal.log
+2026-03-27 20:57:41,406 INFO    MainThread:64977 [wandb_init.py:init():844] calling init triggers
+2026-03-27 20:57:41,406 INFO    MainThread:64977 [wandb_init.py:init():849] wandb.init called with sweep_config: {}
+config: {'num_epochs': 100, 'batch_size': 4, 'lr': 0.0001, 'early_stop_patience': 2, 'early_stop_min_delta': 10000000000.0, 'imitation_weight': 10.0, 'val_split': 0.5, 'num_workers': 0, 'wandb_enabled': True, 'wandb_project': 'artguard-training', 'wandb_entity': None, 'wandb_run_name': 'akshaya-artguard-training-baseline-v2', '_wandb': {}}
+2026-03-27 20:57:41,406 INFO    MainThread:64977 [wandb_init.py:init():892] starting backend
+2026-03-27 20:57:41,406 INFO    MainThread:64977 [wandb_init.py:init():895] sending inform_init request
+2026-03-27 20:57:41,408 INFO    MainThread:64977 [wandb_init.py:init():903] backend started and connected
+2026-03-27 20:57:41,410 INFO    MainThread:64977 [wandb_init.py:init():973] updated telemetry
+2026-03-27 20:57:41,471 INFO    MainThread:64977 [wandb_init.py:init():997] communicating run to backend with 90.0 second timeout
+2026-03-27 20:57:41,810 INFO    MainThread:64977 [wandb_init.py:init():1042] starting run threads in backend
+2026-03-27 20:57:41,995 INFO    MainThread:64977 [wandb_run.py:_console_start():2524] atexit reg
+2026-03-27 20:57:41,995 INFO    MainThread:64977 [wandb_run.py:_redirect():2373] redirect: wrap_raw
+2026-03-27 20:57:41,995 INFO    MainThread:64977 [wandb_run.py:_redirect():2442] Wrapping output streams.
+2026-03-27 20:57:41,995 INFO    MainThread:64977 [wandb_run.py:_redirect():2465] Redirects installed.
+2026-03-27 20:57:41,996 INFO    MainThread:64977 [wandb_init.py:init():1082] run started, returning control to user process
+2026-03-27 20:57:45,860 INFO    MainThread:64977 [wandb_run.py:_finish():2291] finishing run soheegoo09-university-of-toronto/artguard-training/w6zqbxmv
+2026-03-27 20:57:45,861 INFO    MainThread:64977 [wandb_run.py:_atexit_cleanup():2490] got exitcode: 0
+2026-03-27 20:57:45,861 INFO    MainThread:64977 [wandb_run.py:_restore():2472] restore
+2026-03-27 20:57:45,861 INFO    MainThread:64977 [wandb_run.py:_restore():2478] restore done
+2026-03-27 20:57:46,729 INFO    MainThread:64977 [wandb_run.py:_footer_sync_info():3868] logging synced files

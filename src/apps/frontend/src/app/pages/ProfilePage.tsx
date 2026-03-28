@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { useAuth } from "../contexts/AuthContext";
 import { hasApiBackend, api } from "../api/client";
 import { Header } from "../components/Header";
+import { PageHeader } from "../components/PageHeader";
+import { BrushDivider } from "../components/BrushDivider";
 import { Button } from "../components/ui/button";
 import { Input } from "../components/ui/input";
 import { Label } from "../components/ui/label";
@@ -129,15 +131,16 @@ export function ProfilePage() {
     <div className="min-h-screen bg-background">
       <Header />
 
+      <PageHeader
+        title="Profile settings"
+        description="Manage your account information and security."
+        contentClassName="max-w-2xl mx-auto"
+      />
+
+      <BrushDivider />
+
       <main className="container mx-auto px-4 py-8">
         <div className="max-w-2xl mx-auto">
-          <div className="mb-8">
-            <h1 className="text-3xl mb-2">Profile Settings</h1>
-            <p className="text-gray-600">
-              Manage your account information and security
-            </p>
-          </div>
-
           <div className="space-y-6">
             {/* Profile Information */}
             <Card>
@@ -205,12 +208,12 @@ export function ProfilePage() {
               <CardContent>
                 <div className="space-y-3">
                   <div className="flex justify-between items-center">
-                    <span className="text-gray-600">Account ID</span>
+                    <span className="text-muted-foreground">Account ID</span>
                     <span className="font-mono text-sm">{user?.id}</span>
                   </div>
                   <Separator />
                   <div className="flex justify-between items-center">
-                    <span className="text-gray-600">Total Analyses</span>
+                    <span className="text-muted-foreground">Total Analyses</span>
                     <span className="font-semibold">
                       {totalAnalyses === null ? "—" : totalAnalyses}
                     </span>
