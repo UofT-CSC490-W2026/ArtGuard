@@ -46,7 +46,7 @@ describe("HomePage", () => {
     render(<HomePage />, { wrapper });
 
     expect(
-      screen.getByRole("heading", { name: /every score, explained\. every patch, visible\./i }),
+      screen.getByRole("heading", { name: /authenticate art\. understand why\./i }),
     ).toBeInTheDocument();
     expect(screen.getAllByText(/^ArtGuard$/).length).toBeGreaterThan(0);
   });
@@ -114,7 +114,7 @@ describe("HomePage", () => {
     render(<HomePage />, { wrapper });
 
     expect(
-      screen.getByRole("heading", { name: /every score, explained\. every patch, visible\./i }),
+      screen.getByRole("heading", { name: /authenticate art\. understand why\./i }),
     ).toBeInTheDocument();
   });
 

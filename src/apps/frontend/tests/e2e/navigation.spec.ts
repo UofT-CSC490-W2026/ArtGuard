@@ -16,7 +16,7 @@ test.describe("Home page", () => {
   test("shows ArtGuard branding and hero text", async ({ page }) => {
     await page.goto("/");
     await expect(
-      page.getByRole("heading", { name: /every score, explained\. every patch, visible\./i }),
+      page.getByRole("heading", { name: /authenticate art\. understand why\./i }),
     ).toBeVisible();
     await expect(page.getByRole("link", { name: "ArtGuard" })).toBeVisible();
   });

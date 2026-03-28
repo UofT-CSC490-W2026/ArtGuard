@@ -10,7 +10,7 @@ test.describe("mock mode (no VITE_API_URL)", () => {
     await page.goto("/");
     await expect(
       page.getByRole("heading", {
-        name: /every score, explained\. every patch, visible\./i,
+        name: /authenticate art\. understand why\./i,
       }),
     ).toBeVisible();
     await expect(page.getByRole("link", { name: "ArtGuard" })).toBeVisible();

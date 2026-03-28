@@ -153,7 +153,7 @@ export function HomePage() {
       <section className="border-b border-border">
         <div className="mx-auto max-w-4xl px-6 py-20 md:py-28 lg:py-36">
           <h1 className="text-center font-serif text-[1.65rem] font-normal uppercase leading-[1.2] tracking-[0.14em] text-foreground md:text-3xl lg:text-4xl">
-            Every score, explained. Every patch, visible.
+            Authenticate art. Understand why.
           </h1>
           <p className="mx-auto mt-12 max-w-lg text-center font-sans text-sm leading-relaxed text-muted-foreground md:mt-14 md:text-base">
             ArtGuard gives you per-patch authenticity probabilities you can
