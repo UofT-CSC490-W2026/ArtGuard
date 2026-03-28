@@ -1,6 +1,5 @@
-import type { AnalysisResult, PatchData } from "../types";
+import type { AnalysisResult, PatchData, InferenceApiResponse } from "../types";
 import { hasApiBackend, postFormData } from "./client";
-import type { InferenceApiResponse } from "./backendApi";
 
 export interface AnalyzeInput {
   file: File;
