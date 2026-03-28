@@ -2,7 +2,7 @@
 
 ## Overview
 
-ArtGuard uses **pytest** with **moto** (AWS mocks), **httpx** (async API testing), and **Locust** (load testing) to achieve **600+ tests at 100% code coverage** across all Python modules in `src/` — including the ML training pipeline.
+ArtGuard uses **pytest** with **moto** (AWS mocks), **httpx** (async API testing), and **Locust** (load testing) to achieve **616 tests at 100% code coverage** across all Python modules in `src/` — including the ML training pipeline.
 
 Modal GPU modules (training, evaluation, inference, dataset, model) are tested on CPU with mocked datasets, checkpoints, and AWS calls. No PyTorch + CUDA is required in CI. The test files (`test_model.py`, `test_train.py`, `test_evaluate.py`, `test_dataset.py`, `test_inference_modal.py`) cover all logic including error handling branches, early stopping, checkpoint saving, and metric computation.
 
@@ -155,7 +155,7 @@ The `conftest.py` fixtures also provide:
 ## Coverage
 
 ```
-600+ tests | 100% line coverage | 1781 statements, 0 missed
+616 tests | 100% line coverage | 1781 statements, 0 missed
 ```
 
 Coverage is measured across all `src/` Python modules **except** the 5 ML modules (`train.py`, `evaluate.py`, `inference.py`, `dataset.py`, `model.py`) which are omitted in `.coveragerc` because they require PyTorch (not in `requirements.txt` — it's installed inside Modal containers). These modules have dedicated test files that achieve 100% coverage locally and are auto-skipped in CI via `pytest.importorskip("torch")`. Modal-specific decorators (`@app.function`, `@app.local_entrypoint`, `.spawn()`, `.remote()`) are also excluded since they require the Modal runtime.
@@ -167,7 +167,7 @@ Coverage is measured across all `src/` Python modules **except** the 5 ML module
 | Backend config, auth, security, validation, prompts | 100% |
 | All route handlers (auth, inference, inferences, train, rag, process_data) | 100% |
 | Inference service, users service, S3 presign | 100% |
-| Data pipeline (preprocess, schemas, split, driver, met, wikidata) | 100% |
+| Data pipeline (preprocess, schemas, driver, met, wikidata) | 100% |
 | Structured logging and middleware | 100% |
 | ML modules (model, dataset, train, evaluate, inference) | 100% |
 | **Total (1781 statements)** | **100%** |
@@ -193,6 +193,13 @@ The `test-coverage.yml` GitHub Actions workflow:
 4. Uploads the HTML coverage report as a downloadable GitHub Actions artifact
 
 ```yaml
-# .github/workflows/test-coverage.yml
-pytest tests/ --cov=src --cov-report=xml --cov-report=html
+# .github/workflows/test-coverage.yml (excerpt)
+pytest \
+  --cov=src \
+  --cov-report=xml:coverage.xml \
+  --cov-report=term-missing \
+  --cov-report=html:htmlcov \
+  --cov-fail-under=100 \
+  -m "not slow" \
+  -v
 ```

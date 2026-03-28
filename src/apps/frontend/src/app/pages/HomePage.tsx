@@ -256,9 +256,7 @@ export function HomePage() {
           >
             <p>
               Metrics at both patch-level and painting-level — accuracy,
-              precision, recall, and F1. Deterministic SHA-256 data splits
-              ensure reproducibility. Stratified k-fold cross-validation
-              preserves class balance across folds.
+              precision, recall, and F1.
             </p>
           </MosaicTextTile>
         </MosaicRow>

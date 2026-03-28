@@ -182,13 +182,13 @@ ArtGuard/
 │   ├── disaster-recovery.sh  #   One-command DR demo (destroy → prove → recover)
 │   ├── recover-prod.sh       #   Recovery script (import orphans → rebuild → verify)
 │   └── ...                   #   bootstrap, build-docker, deploy-ecs, upload-rag, etc.
-├── tests/                     # pytest test suite (600+ tests, 100% coverage)
+├── tests/                     # pytest test suite (616 tests, 100% coverage)
 │   ├── conftest.py           #   Shared fixtures (mocked AWS, FastAPI test client)
 │   ├── test_routes_*.py      #   API route tests (auth, inference, rag, train, etc.)
 │   ├── test_model.py         #   Swin Transformer model tests (CPU, no pretrained weights)
 │   ├── test_train.py         #   Training loop tests (mocked dataset, early stopping)
 │   ├── locustfile.py         #   Load testing with Locust
-│   └── ...                   #   28 test files covering all src/ modules
+│   └── ...                   #   32 test_*.py modules + locustfile (see tests/README.md)
 ├── data/                      # Training dataset
 │   ├── metadata.csv          #   Image metadata (labels, splits, creators)
 │   ├── train/                #   Training images (class_0=forgery, class_1=authentic)
@@ -213,7 +213,7 @@ ArtGuard/
 The fastest way to verify the codebase works. Only requires Python 3.11+ and `pip install -r requirements.txt`.
 
 ```bash
-# Run full test suite
+# Run full test suite (616 tests, 100% coverage)
 pytest tests/ -v
 
 # Run with coverage report
@@ -301,11 +301,11 @@ pytest tests/test_load.py -m load -v
 locust -f tests/locustfile.py --host http://localhost:8000
 ```
 
-**Test suite:** 600+ tests, 100% code coverage (1781 statements, 0 missed). See [tests/README.md](tests/README.md) and CI for the latest exact count.
+**Test suite:** 616 tests, 100% code coverage (1781 statements, 0 missed). See [tests/README.md](tests/README.md) for full testing methodology.
 
 | Category | Files | Tests |
 |----------|-------|-------|
-| Unit tests | config, security, validation, schemas, split, preprocess | 100+ |
+| Unit tests | config, security, validation, schemas, preprocess | 100+ |
 | Service tests | inference_service, users_service, s3_presign | 30+ |
 | Route integration | auth, inference, inferences, train, rag, process_data | 60+ |
 | AWS integration | S3 upload/download, DynamoDB CRUD (via moto mocks) | 40+ |
@@ -341,7 +341,7 @@ npm run typecheck
 | Page UI | Home, Upload, Results, History, Login, SignUp, Profile | 81 |
 | API & fetch layer | analysis, client, inferencesApi, backendApi | 25 |
 | Auth & session | AuthContext (mock users + API paths) | 25 |
-| Shared components | Header, PatchOverlay, ErrorBoundary, ProtectedRoute, layout, ui helpers | 61 |
+| Shared components | Header, PatchOverlay, ErrorBoundary, ProtectedRoute, layout, ui helpers | 52 |
 | Libraries | analysisDisplay, uploadLimits, pdfReport, artAssets, env | 41 |
 | App shell & types | App, routes, types | 14 |
 | E2E (Playwright) | auth, navigation, upload, history, profile, smoke, full-stack API | 66 |
