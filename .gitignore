@@ -53,3 +53,11 @@ src/apps/frontend/dist/
 src/apps/frontend/coverage/
 src/apps/frontend/test-results/
 src/apps/frontend/playwright-report/
+
+# Python coverage artifacts
+.coverage
+coverage.xml
+htmlcov/
+
+# Weights & Biases
+wandb/
