@@ -283,7 +283,7 @@ describe("HistoryPage", () => {
     await waitFor(() => expect(screen.getByText("Forged Work")).toBeInTheDocument());
 
     await user.click(screen.getAllByRole("combobox")[0]);
-    await user.click(await screen.findByRole("option", { name: /likely forgery/i }));
+    await user.click(await screen.findByRole("option", { name: /likely inauthentic/i }));
 
     await waitFor(() => expect(screen.getByText("Forged Work")).toBeInTheDocument());
     expect(screen.queryByText("Authentic Work")).not.toBeInTheDocument();

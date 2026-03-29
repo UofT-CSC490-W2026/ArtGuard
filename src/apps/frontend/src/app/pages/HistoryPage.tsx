@@ -273,7 +273,7 @@ export function HistoryPage() {
                     <SelectItem value="all">All Results</SelectItem>
                     <SelectItem value="authentic">Likely authentic</SelectItem>
                     <SelectItem value="uncertain">Uncertain</SelectItem>
-                    <SelectItem value="forged">Likely forgery / forged</SelectItem>
+                    <SelectItem value="forged">Likely inauthentic</SelectItem>
                     <SelectItem value="failed">Inference failed</SelectItem>
                   </SelectContent>
                 </Select>

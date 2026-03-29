@@ -90,7 +90,7 @@ test.describe("Upload page", () => {
     await expect(page.locator("main")).toContainText("%");
   });
 
-  test("results page shows verdict (Authentic or Forgery)", async ({ page }) => {
+  test("results page shows verdict (Authentic or Inauthentic)", async ({ page }) => {
     await signUpAndGoToUpload(page);
 
     await page.locator('input[type="file"]').setInputFiles(tinyPng);
@@ -100,7 +100,7 @@ test.describe("Upload page", () => {
 
     await page.waitForURL("**/results", { timeout: 60_000 });
     await expect(page.locator("main")).toContainText(
-      /Authentic|Forgery|Unavailable|Error/,
+      /Authentic|Inauthentic|Unavailable|Error/,
       { timeout: 10_000 },
     );
   });
