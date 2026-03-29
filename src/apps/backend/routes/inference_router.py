@@ -188,7 +188,9 @@ async def infer(
         artwork_name=artwork_name,
     )
 
-    inference_service.finalize_inference(inference_id, score, prediction, explanation)
+    confidence = abs(score - 0.5)/0.5 * 100
+
+    inference_service.finalize_inference(inference_id, confidence, prediction, explanation)
 
     image_url = inference_service.generate_image_url(raw_s3_uri)
 
