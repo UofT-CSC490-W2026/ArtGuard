@@ -87,7 +87,7 @@ describe("PatchOverlay", () => {
     } as DOMRect);
     fireEvent.load(img);
     fireEvent.mouseMove(wrap, { clientX: 25, clientY: 25 });
-    await waitFor(() => expect(screen.getByText(/73\.0% patch authenticity/)).toBeInTheDocument());
+    await waitFor(() => expect(screen.getByText(/Patch #1: 73\.0% authenticity/)).toBeInTheDocument());
   });
 
   it("skips canvas draw when getContext returns null", () => {
@@ -132,8 +132,8 @@ describe("PatchOverlay", () => {
     const wrap = img.parentElement!;
     // Mousemove should now trigger the early return with setTooltip(null)
     fireEvent.mouseMove(wrap, { clientX: 50, clientY: 50 });
-    // No tooltip should appear (tooltip format is "XX.X% patch authenticity")
-    expect(screen.queryByText(/\d+\.\d+% patch authenticity/)).not.toBeInTheDocument();
+    // No tooltip should appear (tooltip format includes "Patch #N")
+    expect(screen.queryByText(/Patch #\d+:\s*\d+\.\d+% authenticity/)).not.toBeInTheDocument();
   });
 
   it("draws overlay rects when canvas 2d context is available", async () => {
@@ -148,6 +148,8 @@ describe("PatchOverlay", () => {
       strokeStyle: "",
       lineWidth: 1,
       strokeRect,
+      measureText: vi.fn().mockReturnValue({ width: 8 }),
+      fillText: vi.fn(),
     } as unknown as CanvasRenderingContext2D);
 
     render(
@@ -169,6 +171,38 @@ describe("PatchOverlay", () => {
     await user.click(screen.getByRole("switch"));
     expect(fillRect.mock.calls.length).toBeGreaterThan(0);
     expect(strokeRect.mock.calls.length).toBeGreaterThan(0);
+  });
+
+  it("uses stable patch numbering order for same row and position", async () => {
+    render(
+      <PatchOverlay
+        imageSrc={dataUrl}
+        patchData={[
+          { x: 70, y: 70, w: 20, h: 20, prob: 0.3 },
+          { x: 10, y: 10, w: 20, h: 20, prob: 0.8 },
+          { x: 10, y: 10, w: 20, h: 20, prob: 0.6 },
+        ]}
+        imageWidth={100}
+        imageHeight={100}
+      />,
+    );
+    const img = screen.getByRole("img", { name: /analyzed artwork/i });
+    Object.defineProperty(img, "clientWidth", { value: 100, configurable: true });
+    Object.defineProperty(img, "clientHeight", { value: 100, configurable: true });
+    Object.defineProperty(img, "naturalWidth", { value: 100, configurable: true });
+    Object.defineProperty(img, "naturalHeight", { value: 100, configurable: true });
+    vi.spyOn(img, "getBoundingClientRect").mockReturnValue({
+      left: 0, top: 0, width: 100, height: 100, bottom: 100, right: 100, x: 0, y: 0, toJSON: () => ({}),
+    } as DOMRect);
+    const wrap = img.parentElement!;
+    vi.spyOn(wrap, "getBoundingClientRect").mockReturnValue({
+      left: 0, top: 0, width: 100, height: 100, bottom: 100, right: 100, x: 0, y: 0, toJSON: () => ({}),
+    } as DOMRect);
+    fireEvent.load(img);
+    fireEvent.mouseMove(wrap, { clientX: 15, clientY: 15 });
+    await waitFor(() => {
+      expect(screen.getByText(/Patch #2:\s*60\.0% authenticity/)).toBeInTheDocument();
+    });
   });
 
   it("clears tooltip when pointer maps outside image patch coordinates", async () => {
@@ -195,6 +229,6 @@ describe("PatchOverlay", () => {
     fireEvent.load(img);
     // After grid aggregation the overlay covers the full image; use coords left of the image so nx < 0
     fireEvent.mouseMove(wrap, { clientX: -5, clientY: 50 });
-    expect(screen.queryByText(/\d+\.\d+% patch authenticity/)).not.toBeInTheDocument();
+    expect(screen.queryByText(/Patch #\d+:\s*\d+\.\d+% authenticity/)).not.toBeInTheDocument();
   });
 });

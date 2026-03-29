@@ -2,7 +2,7 @@
 
 ## Overview
 
-The ArtGuard frontend uses **Vitest** with **jsdom**, **Testing Library** (React + user-event + jest-dom matchers), and **Playwright** for end-to-end flows. Unit and component tests live under `tests/app/`; Playwright specs live under `tests/e2e/`. As of the last full run, there are **238** unit/component tests across **28** files (see `vite.config.ts` for includes and coverage settings).
+The ArtGuard frontend uses **Vitest** with **jsdom**, **Testing Library** (React + user-event + jest-dom matchers), and **Playwright** for end-to-end flows. Unit and component tests live under `tests/app/`; Playwright specs live under `tests/e2e/`. As of the last full run, there are **248** unit/component tests across **30** files (see `vite.config.ts` for includes and coverage settings; run `npm test` for the current count).
 
 Unit tests run in CI via **`frontend-test.yml`** (with **`frontend-coverage.yml`** for coverage badges and reports). E2E runs in the same workflow against a **Vite preview** build, with optional **full-stack** tests when a real FastAPI backend is available.
 
@@ -40,12 +40,12 @@ tests/
 │   ├── routes.test.tsx           # Route table / navigation wiring
 │   ├── api/
 │   │   ├── analysis.test.ts      # Analyze flow (mock + real response mapping)
-│   │   ├── backendApi.test.ts    # Backend URL helpers
 │   │   ├── client.test.ts        # Fetch wrapper, auth headers, errors
-│   │   └── inferencesApi.test.ts # History CRUD, stats, pagination
+│   │   └── inferencesApi.test.ts # History list mapping, delete helpers, query params
 │   ├── components/
 │   │   ├── BrushDivider.test.tsx
 │   │   ├── ErrorBoundary.test.tsx
+│   │   ├── ExplanationContent.test.tsx
 │   │   ├── Header.test.tsx
 │   │   ├── PageHeader.test.tsx
 │   │   ├── PatchOverlay.test.tsx
@@ -59,16 +59,18 @@ tests/
 │   │   ├── analysisDisplay.test.ts
 │   │   ├── artAssets.test.ts
 │   │   ├── env.test.ts
-│   │   ├── pdfReport.test.ts
+│   │   ├── inferenceGrid.test.ts
 │   │   └── uploadLimits.test.ts
 │   ├── pages/
 │   │   ├── HistoryPage.test.tsx
 │   │   ├── HomePage.test.tsx
 │   │   ├── LoginPage.test.tsx
+│   │   ├── LoginPage.errorMessage.test.tsx
 │   │   ├── ProfilePage.test.tsx
 │   │   ├── ResultsPage.test.tsx
 │   │   ├── SignUpPage.test.tsx
-│   │   └── UploadPage.test.tsx
+│   │   ├── UploadPage.test.tsx
+│   │   └── formatReportDate.test.ts  # helpers exported with ResultsPage
 │   └── types/
 │       └── index.test.ts
 └── e2e/
@@ -110,7 +112,7 @@ Rendered with **`MemoryRouter`**, **`AuthProvider`**, and route stubs where need
 
 - **Shared UI** — header, layout, error boundary, small presentational components.
 - **`PatchOverlay`** — image load, overlay toggle, tooltips, canvas draw guards (with mocked canvas context).
-- **Pure utilities** — `analysisDisplay`, `uploadLimits`, `env`, `pdfReport`, `artAssets`, `cn` / UI helpers.
+- **Pure utilities** — `analysisDisplay`, `inferenceGrid`, `uploadLimits`, `env`, `artAssets`, `cn` / UI helpers.
 
 ### Context tests (`AuthContext`)
 
@@ -118,6 +120,7 @@ Exercises both **mock mode** (localStorage-backed users) and **API mode** (mocke
 
 ### End-to-end tests (Playwright)
 
+- **Login errors** — Specs assert the **user-visible** copy on the login form (e.g. **“Incorrect password. Try again.”** when credentials fail), not the raw `Invalid email or password` string thrown inside `AuthContext`.
 - **Default configuration** — `playwright.config.mjs` builds the app, serves **`vite preview`** on `127.0.0.1:4173`, and runs **Chromium** only.
 - **Mock-mode specs** — Most files under `e2e/` assume **no** `VITE_API_URL` in the built bundle (pure frontend + localStorage). CI runs these with `--grep-invert "Full-stack"`.
 - **`fullstack.spec.ts`** — Hits a **real** backend (`VITE_API_URL` / `E2E_BACKEND_URL`). Skipped locally when those are unset; in CI the workflow starts **`scripts/start_e2e_backend.py`** and runs tests matching **`Full-stack`**.

@@ -96,7 +96,9 @@ test.describe("Full-stack: auth → inference → history pipeline", () => {
     await page.getByLabel("Password", { exact: true }).fill("wrongpassword");
     await page.getByRole("button", { name: /^log in$/i }).click();
 
-    await expect(page.getByText(/invalid email or password/i)).toBeVisible({ timeout: 5_000 });
+    await expect(page.getByText(/incorrect password\. try again/i)).toBeVisible({
+      timeout: 5_000,
+    });
   });
 
   test("full inference pipeline: upload → backend processes → results page shows score", async ({ page, request }) => {

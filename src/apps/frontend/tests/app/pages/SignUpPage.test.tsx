@@ -145,4 +145,25 @@ describe("SignUpPage", () => {
       expect(screen.getByText(/email already registered/i)).toBeInTheDocument();
     });
   });
+
+  it("toggles password visibility", async () => {
+    const user = userEvent.setup();
+    render(
+      <MemoryRouter initialEntries={["/signup"]}>
+        <AuthProvider>
+          <Routes>
+            <Route path="/signup" element={<SignUpPage />} />
+          </Routes>
+        </AuthProvider>
+      </MemoryRouter>,
+    );
+
+    const passwordInput = screen.getByLabelText(/^password$/i);
+    expect(passwordInput).toHaveAttribute("type", "password");
+    const toggleBtn = passwordInput.parentElement!.querySelector("button")!;
+    await user.click(toggleBtn);
+    expect(passwordInput).toHaveAttribute("type", "text");
+    await user.click(toggleBtn);
+    expect(passwordInput).toHaveAttribute("type", "password");
+  });
 });

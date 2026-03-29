@@ -16,11 +16,13 @@ describe("inferenceToAnalysisResult", () => {
       image_name: "i.png",
       file_size: 12,
       image_url: "https://x",
+      confidence_percent: 87,
     };
     const r = inferenceToAnalysisResult(row);
     expect(r.id).toBe("id1");
     expect(r.inferenceStatus).toBe("processing");
     expect(r.inferenceError).toBe("err");
+    expect(r.confidencePercent).toBe(87);
   });
 
   it("omits prediction when not a number and clears empty error", () => {
@@ -88,7 +90,12 @@ describe("inferenceToAnalysisResult", () => {
     });
     expect(r.imageWidth).toBe(100);
     expect(r.imageHeight).toBe(200);
-    expect(r.patchData).toEqual([{ x: 0, y: 0, w: 10, h: 10, prob: 0.9 }]);
+    expect(r.patchData).toEqual([
+      { x: 0, y: 0, w: 50, h: 100, prob: 0.9 },
+      { x: 50, y: 0, w: 50, h: 100, prob: 0.9 },
+      { x: 0, y: 100, w: 50, h: 100, prob: 0.9 },
+      { x: 50, y: 100, w: 50, h: 100, prob: 0.9 },
+    ]);
   });
 });
 

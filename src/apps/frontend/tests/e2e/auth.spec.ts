@@ -139,7 +139,9 @@ test.describe("Login flow", () => {
     await page.getByLabel("Password", { exact: true }).fill("wrongpassword");
     await page.getByRole("button", { name: /^log in$/i }).click();
 
-    await expect(page.getByText(/invalid email or password/i)).toBeVisible({ timeout: 5_000 });
+    await expect(page.getByText(/incorrect password\. try again/i)).toBeVisible({
+      timeout: 5_000,
+    });
   });
 
   test("unknown email shows error", async ({ page }) => {
@@ -148,7 +150,9 @@ test.describe("Login flow", () => {
     await page.getByLabel("Password", { exact: true }).fill("password123");
     await page.getByRole("button", { name: /^log in$/i }).click();
 
-    await expect(page.getByText(/invalid email or password/i)).toBeVisible({ timeout: 5_000 });
+    await expect(page.getByText(/incorrect password\. try again/i)).toBeVisible({
+      timeout: 5_000,
+    });
   });
 
   test("login page has link to signup", async ({ page }) => {

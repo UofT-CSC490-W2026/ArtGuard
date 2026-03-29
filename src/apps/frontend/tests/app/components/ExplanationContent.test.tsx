@@ -41,6 +41,12 @@ Patch #1 (middle-right, center_crop_orig): texture appears smooth.`;
     expect(screen.getByText("(source: met_data_part27.txt)")).toBeInTheDocument();
   });
 
+  it("renders markdown bold fragments as strong text", () => {
+    const text = "This is **important** evidence.";
+    render(<ExplanationContent text={text} />);
+    expect(screen.getByText("important").tagName.toLowerCase()).toBe("strong");
+  });
+
   it("returns null when there is no prose or patch content", () => {
     const { container } = render(<ExplanationContent text="   " />);
     expect(container.firstChild).toBeNull();

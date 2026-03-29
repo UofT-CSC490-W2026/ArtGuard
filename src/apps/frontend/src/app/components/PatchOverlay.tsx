@@ -111,7 +111,8 @@ export function PatchOverlay({
 
       const label = String(p.displayNumber);
       ctx.font = "600 12px ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto";
-      const textW = ctx.measureText(label).width;
+      const textW =
+        typeof ctx.measureText === "function" ? ctx.measureText(label).width : label.length * 8;
       const labelW = Math.ceil(textW + 12);
       const labelH = 18;
       const lx = Math.max(0, Math.min(cw - labelW, x + 2));
@@ -120,7 +121,9 @@ export function PatchOverlay({
       ctx.fillRect(lx, ly, labelW, labelH);
       ctx.fillStyle = "rgba(255,255,255,0.96)";
       ctx.textBaseline = "middle";
-      ctx.fillText(label, lx + 6, ly + labelH / 2);
+      if (typeof ctx.fillText === "function") {
+        ctx.fillText(label, lx + 6, ly + labelH / 2);
+      }
     }
   }, [hasPatches, numberedPatches, propW, propH, showOverlay]);
 

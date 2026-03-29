@@ -49,7 +49,7 @@ Shared rules used for both **mock mode** (localStorage-backed users) and **API m
 | Action | Rules |
 |--------|--------|
 | **Sign up** | Username length ≥ 3; email must match a simple pattern (`/^[^\s@]+@[^\s@]+\.[^\s@]+$/`); password length ≥ 6. Mock mode also rejects duplicate emails. |
-| **Login** | Credentials checked against the API or stored users; failures surface as `Invalid email or password` in mock mode. |
+| **Login** | Credentials checked against the API or stored users. The context still throws `Invalid email or password` for bad credentials; **`LoginPage`** maps that to the user-visible message **“Incorrect password. Try again.”** Other failures show the error text from `getErrorMessage()`. |
 | **Update profile** | Same username and email rules as sign up; mock mode rejects email already used by another user. |
 | **Change password** | New password length ≥ 6 (also re-checked on the profile page together with confirm-password matching). |
 

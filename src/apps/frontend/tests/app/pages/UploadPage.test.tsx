@@ -225,4 +225,36 @@ describe("UploadPage", () => {
     await user.click(screen.getByRole("button", { name: /^remove$/i }));
     expect(screen.queryByText(/x\.png/i)).not.toBeInTheDocument();
   });
+
+  it("stores history under authenticated user key in mock mode", async () => {
+    const user = userEvent.setup();
+    analyzeArtwork.mockResolvedValue({
+      id: "z2",
+      score: 0.8,
+      image: "u",
+      artistName: "A",
+      artworkName: "B",
+      timestamp: new Date().toISOString(),
+      fileName: "x.png",
+      fileSize: 8,
+    });
+
+    localStorage.setItem(
+      "artguard_user",
+      JSON.stringify({ id: "u1", username: "alice", email: "a@b.c" }),
+    );
+    localStorage.setItem("artguard_users", "[]");
+
+    const { container } = renderUpload();
+    await waitFor(() => expect(screen.getByText(/upload artwork/i)).toBeInTheDocument());
+    const input = document.querySelector('input[type="file"]') as HTMLInputElement;
+    fireEvent.change(input, { target: { files: [pngFile()] } });
+    await user.type(artistInput(container), "Artist");
+    await user.type(titleInput(container), "Title");
+    await user.click(screen.getByRole("button", { name: /analyze artwork/i }));
+
+    await waitFor(() => expect(screen.getByTestId("results-dest")).toBeInTheDocument());
+    const history = JSON.parse(localStorage.getItem("artguard_history_u1") || "[]");
+    expect(history[0]?.id).toBe("z2");
+  });
 });

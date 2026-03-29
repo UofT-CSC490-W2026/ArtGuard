@@ -4,6 +4,7 @@
 
 import { api } from "./client";
 import type { AnalysisResult, InferenceStatus, PatchData } from "../types";
+import { aggregatePatchDataToInferenceGrid } from "../lib/inferenceGrid";
 
 export interface InferenceListItem {
   inference_id: string;
@@ -39,10 +40,14 @@ function coerceInferenceStatus(raw: string | null | undefined): InferenceStatus 
 }
 
 export function inferenceToAnalysisResult(row: InferenceListItem): AnalysisResult {
-  const patchData =
+  const rawPatchData =
     Array.isArray(row.patch_data) && row.patch_data.length > 0 ? row.patch_data : undefined;
   const iw = row.image_width;
   const ih = row.image_height;
+  const patchData =
+    rawPatchData && typeof iw === "number" && iw > 0 && typeof ih === "number" && ih > 0
+      ? aggregatePatchDataToInferenceGrid(rawPatchData, iw, ih)
+      : rawPatchData;
   return {
     id: row.inference_id,
     score: row.score,
