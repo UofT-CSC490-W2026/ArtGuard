@@ -16,11 +16,13 @@ describe("inferenceToAnalysisResult", () => {
       image_name: "i.png",
       file_size: 12,
       image_url: "https://x",
+      confidence_percent: 87,
     };
     const r = inferenceToAnalysisResult(row);
     expect(r.id).toBe("id1");
     expect(r.inferenceStatus).toBe("processing");
     expect(r.inferenceError).toBe("err");
+    expect(r.confidencePercent).toBe(87);
   });
 
   it("omits prediction when not a number and clears empty error", () => {

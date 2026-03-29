@@ -92,6 +92,23 @@ describe("analyzeArtwork", () => {
     expect(r.patchData).toBeUndefined();
   });
 
+  it("maps confidence_percent from API response", async () => {
+    hoisted.hasBackend = true;
+    hoisted.postFormData.mockResolvedValue({
+      inference_id: "i3",
+      score: 0.61,
+      confidence_percent: 61,
+    });
+    const file = new File([new Uint8Array([1])], "f.png", { type: "image/png" });
+    const r = await analyzeArtwork({
+      file,
+      artistName: "A",
+      artworkName: "B",
+      userId: "u",
+    });
+    expect(r.confidencePercent).toBe(61);
+  });
+
   it("rejects when preview image dimensions fail to load", async () => {
     class BadImg {
       onerror: (() => void) | null = null;
