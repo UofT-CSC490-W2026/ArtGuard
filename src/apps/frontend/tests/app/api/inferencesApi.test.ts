@@ -88,7 +88,12 @@ describe("inferenceToAnalysisResult", () => {
     });
     expect(r.imageWidth).toBe(100);
     expect(r.imageHeight).toBe(200);
-    expect(r.patchData).toEqual([{ x: 0, y: 0, w: 10, h: 10, prob: 0.9 }]);
+    expect(r.patchData).toEqual([
+      { x: 0, y: 0, w: 50, h: 100, prob: 0.9 },
+      { x: 50, y: 0, w: 50, h: 100, prob: 0.9 },
+      { x: 0, y: 100, w: 50, h: 100, prob: 0.9 },
+      { x: 50, y: 100, w: 50, h: 100, prob: 0.9 },
+    ]);
   });
 });
 
