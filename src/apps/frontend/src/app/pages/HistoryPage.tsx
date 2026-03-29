@@ -130,10 +130,6 @@ export function HistoryPage() {
     filtered.sort((a, b) => {
       if (sortBy === "oldest") {
         return new Date(a.timestamp).getTime() - new Date(b.timestamp).getTime();
-      } else if (sortBy === "score-high") {
-        return b.score - a.score;
-      } else if (sortBy === "score-low") {
-        return a.score - b.score;
       }
       // Default: newest first
       return new Date(b.timestamp).getTime() - new Date(a.timestamp).getTime();
@@ -271,10 +267,10 @@ export function HistoryPage() {
                   </SelectTrigger>
                   <SelectContent>
                     <SelectItem value="all">All Results</SelectItem>
-                    <SelectItem value="authentic">Likely authentic</SelectItem>
+                    <SelectItem value="authentic">Authentic</SelectItem>
                     <SelectItem value="uncertain">Uncertain</SelectItem>
-                    <SelectItem value="forged">Likely inauthentic</SelectItem>
-                    <SelectItem value="failed">Inference failed</SelectItem>
+                    <SelectItem value="forged">Inauthentic</SelectItem>
+                    <SelectItem value="failed">Error</SelectItem>
                   </SelectContent>
                 </Select>
 
@@ -286,8 +282,6 @@ export function HistoryPage() {
                   <SelectContent>
                     <SelectItem value="newest">Newest First</SelectItem>
                     <SelectItem value="oldest">Oldest First</SelectItem>
-                    <SelectItem value="score-high">Highest Score</SelectItem>
-                    <SelectItem value="score-low">Lowest Score</SelectItem>
                   </SelectContent>
                 </Select>
               </div>

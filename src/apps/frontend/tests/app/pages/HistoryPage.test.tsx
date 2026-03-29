@@ -195,26 +195,6 @@ describe("HistoryPage", () => {
     await waitFor(() => expect(screen.getByText(/no analysis history yet/i)).toBeInTheDocument());
   });
 
-  it("sort by score-high puts highest score first", async () => {
-    const user = userEvent.setup();
-    const results = [
-      makeResult({ artworkName: "Low Score", score: 0.2, prediction: 0 }),
-      makeResult({ artworkName: "High Score", score: 0.9, prediction: 1 }),
-    ];
-    localStorage.setItem("artguard_history_u1", JSON.stringify(results));
-    renderHistory();
-    await waitFor(() => expect(screen.getByText("Low Score")).toBeInTheDocument());
-
-    const sortTrigger = screen.getAllByRole("combobox")[1];
-    await user.click(sortTrigger);
-    await user.click(await screen.findByRole("option", { name: /highest score/i }));
-
-    await waitFor(() => {
-      const items = screen.getAllByRole("heading", { level: 3 });
-      expect(items[0].textContent).toBe("High Score");
-    });
-  });
-
   it("sort by oldest puts earliest first", async () => {
     const user = userEvent.setup();
     const results = [
@@ -235,26 +215,6 @@ describe("HistoryPage", () => {
     });
   });
 
-  it("sort by score-low puts lowest score first", async () => {
-    const user = userEvent.setup();
-    const results = [
-      makeResult({ artworkName: "High Score", score: 0.9, prediction: 1 }),
-      makeResult({ artworkName: "Low Score", score: 0.2, prediction: 0 }),
-    ];
-    localStorage.setItem("artguard_history_u1", JSON.stringify(results));
-    renderHistory();
-    await waitFor(() => expect(screen.getByText("Low Score")).toBeInTheDocument());
-
-    const sortTrigger = screen.getAllByRole("combobox")[1];
-    await user.click(sortTrigger);
-    await user.click(await screen.findByRole("option", { name: /lowest score/i }));
-
-    await waitFor(() => {
-      const items = screen.getAllByRole("heading", { level: 3 });
-      expect(items[0].textContent).toBe("Low Score");
-    });
-  });
-
   it("filter by authentic shows only authentic results", async () => {
     const user = userEvent.setup();
     const results = [
@@ -266,13 +226,13 @@ describe("HistoryPage", () => {
     await waitFor(() => expect(screen.getByText("Authentic Work")).toBeInTheDocument());
 
     await user.click(screen.getAllByRole("combobox")[0]);
-    await user.click(await screen.findByRole("option", { name: /likely authentic/i }));
+    await user.click(await screen.findByRole("option", { name: /^authentic$/i }));
 
     await waitFor(() => expect(screen.getByText("Authentic Work")).toBeInTheDocument());
     expect(screen.queryByText("Forged Work")).not.toBeInTheDocument();
   });
 
-  it("filter by forged shows only forged results", async () => {
+  it("filter by inauthentic shows only inauthentic results", async () => {
     const user = userEvent.setup();
     const results = [
       makeResult({ artworkName: "Authentic Work", prediction: 1, inferenceStatus: "completed" }),
@@ -283,7 +243,7 @@ describe("HistoryPage", () => {
     await waitFor(() => expect(screen.getByText("Forged Work")).toBeInTheDocument());
 
     await user.click(screen.getAllByRole("combobox")[0]);
-    await user.click(await screen.findByRole("option", { name: /likely inauthentic/i }));
+    await user.click(await screen.findByRole("option", { name: /^inauthentic$/i }));
 
     await waitFor(() => expect(screen.getByText("Forged Work")).toBeInTheDocument());
     expect(screen.queryByText("Authentic Work")).not.toBeInTheDocument();
@@ -323,7 +283,7 @@ describe("HistoryPage", () => {
     await waitFor(() => expect(screen.getByText("Failed Work")).toBeInTheDocument());
 
     await user.click(screen.getAllByRole("combobox")[0]);
-    await user.click(await screen.findByRole("option", { name: /inference failed/i }));
+    await user.click(await screen.findByRole("option", { name: /^error$/i }));
 
     await waitFor(() => expect(screen.getByText("Failed Work")).toBeInTheDocument());
     expect(screen.queryByText("Good Work")).not.toBeInTheDocument();
