@@ -87,7 +87,13 @@ if [[ "$PRESERVE_DATA" == "--preserve-data" ]]; then
   echo ""
 fi
 
-step "[2/2] Cleaning up secrets before destroy..."
+step "Stopping Modal inference app..."
+modal app stop artguard-inference 2>/dev/null \
+  && success "Modal app 'artguard-inference' stopped." \
+  || echo -e "  ${DIM}Modal app not found or already stopped${NC}"
+echo ""
+
+step "Cleaning up secrets before destroy..."
 for secret_suffix in "modal-api-key" "jwt-secret"; do
   secret_name="${PROJECT_NAME}/${secret_suffix}-${ENVIRONMENT}"
   aws secretsmanager restore-secret \
