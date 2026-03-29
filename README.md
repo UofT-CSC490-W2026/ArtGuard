@@ -42,7 +42,7 @@ Please see the [Documentation Index](#documentation-index) for detailed document
 - **PDF Report Export** — Users can download a printable PDF report of any analysis including the heatmap, score, and explanation
 - **User Authentication** — JWT-based signup/login with bcrypt password hashing, profile management, and password changes
 - **Full CI/CD Pipeline** — 11 GitHub Actions workflows for backend/frontend testing, coverage badges, Docker builds, S3/CloudFront deployment, and Terraform infrastructure management
-- **100% Test Coverage** — 626+ backend tests (pytest) and 247+ frontend unit tests (vitest) with 100% line coverage on both, plus 7 Playwright E2E test suites
+- **100% Test Coverage** — 626+ backend tests (pytest) and 248+ frontend unit tests (vitest) with 100% line coverage on both, plus 7 Playwright E2E test suites
 - **Disaster Recovery** — Script-driven DR using Terraform state manipulation, with single-command destroy/verify/recover demo preserving all user data
 
 ---
@@ -195,10 +195,10 @@ ArtGuard/
 │       │   ├── api/           #   Typed API client (auth, inference, inferences)
 │       │   ├── components/    #   UI components (Header, ErrorBoundary, PatchOverlay, etc.)
 │       │   ├── contexts/      #   React contexts (auth state)
-│       │   └── lib/           #   Utilities (PDF report, analysis display, env, upload limits)
+│       │   └── lib/           #   Utilities (analysis display, inference grid, env, upload limits, art assets)
 │       └── tests/
 │           ├── setup.ts       #   Vitest test setup (jsdom, mocks)
-│           ├── app/           #   Unit tests (28 files, mirrors src/app/ structure)
+│           ├── app/           #   Unit tests (~30 files, mirrors src/app/ structure)
 │           └── e2e/           #   Playwright E2E tests (7 spec files + fixtures)
 ├── infra/
 │   └── terraform/             # Infrastructure as Code (15+ .tf files)
@@ -446,15 +446,15 @@ npm run test:e2e
 npm run typecheck
 ```
 
-**Test suite:** 238 unit/component tests (28 files) plus **66** Playwright E2E tests (7 spec files). Coverage is enforced on `src/app/**/*.{ts,tsx}` (see `vite.config.ts`). See [src/apps/frontend/tests/README.md](src/apps/frontend/tests/README.md) for layout, DOM stubs, and how CI splits mock vs full-stack E2E.
+**Test suite:** **248** unit/component tests (**30** files) plus **66** Playwright E2E tests (7 spec files). Coverage is enforced on `src/app/**/*.{ts,tsx}` (see `vite.config.ts`). See [src/apps/frontend/tests/README.md](src/apps/frontend/tests/README.md) for layout, DOM stubs, and how CI splits mock vs full-stack E2E.
 
 | Category | Files / areas | Tests |
 |----------|---------------|-------|
-| Page UI | Home, Upload, Results, History, Login, SignUp, Profile | 81 |
-| API & fetch layer | analysis, client, inferencesApi, backendApi | 25 |
+| Page UI | Home, Upload, Results, History, Login, SignUp, Profile | 91 |
+| API & fetch layer | analysis, client, inferencesApi | 25 |
 | Auth & session | AuthContext (mock users + API paths) | 25 |
 | Shared components | Header, PatchOverlay, ErrorBoundary, ProtectedRoute, layout, ui helpers | 52 |
-| Libraries | analysisDisplay, uploadLimits, pdfReport, artAssets, env | 41 |
+| Libraries | analysisDisplay, inferenceGrid, uploadLimits, artAssets, env | 41 |
 | App shell & types | App, routes, types | 14 |
 | E2E (Playwright) | auth, navigation, upload, history, profile, smoke, full-stack API | 66 |
 

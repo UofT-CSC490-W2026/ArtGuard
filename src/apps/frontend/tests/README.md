@@ -112,7 +112,7 @@ Rendered with **`MemoryRouter`**, **`AuthProvider`**, and route stubs where need
 
 - **Shared UI** — header, layout, error boundary, small presentational components.
 - **`PatchOverlay`** — image load, overlay toggle, tooltips, canvas draw guards (with mocked canvas context).
-- **Pure utilities** — `analysisDisplay`, `uploadLimits`, `env`, `pdfReport`, `artAssets`, `cn` / UI helpers.
+- **Pure utilities** — `analysisDisplay`, `inferenceGrid`, `uploadLimits`, `env`, `artAssets`, `cn` / UI helpers.
 
 ### Context tests (`AuthContext`)
 
