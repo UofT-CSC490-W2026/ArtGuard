@@ -244,6 +244,32 @@ Run evaluation on the held-out test set to generate accuracy, F1, precision, rec
 # Results saved to benchmarks/eval_tiny_best_metrics.json
 ```
 
+#### Step 11 (Optional): Evaluate Test-Set Explanations With Current Prompt
+
+Run LLM explanation evals on `data/test` using the prompt currently deployed in your backend:
+
+```bash
+# 1) Export Langfuse credentials (required for trace/score logging)
+export LANGFUSE_PUBLIC_KEY="<your-langfuse-public-key>"
+export LANGFUSE_SECRET_KEY="<your-langfuse-secret-key>"
+# Optional: only needed if you're not using Langfuse Cloud
+# export LANGFUSE_BASE_URL="https://cloud.langfuse.com"
+
+# 2) Export Bedrock knowledge base id (used by faithfulness checks)
+export KNOWLEDGE_BASE_ID=$(terraform -chdir=infra/terraform output -raw knowledge_base_id)
+
+# 3) Download test data if needed (creates data/test, data/train, data/val)
+./scripts/download-data.sh
+
+# 4) Run evals against the deployed website URL
+export DEPLOYED_URL=$(terraform -chdir=infra/terraform output -raw cloudfront_distribution_url)
+python3 scripts/eval_inference_llm.py \
+  --api-base "$DEPLOYED_URL" \
+  --data-dir data/test
+
+# Reports are written to artifacts/llm_evals/
+```
+
 #### Verify Deployment
 
 ```bash

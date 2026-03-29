@@ -1,5 +1,4 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { aggregatePatchDataToInferenceGrid } from "../lib/inferenceGrid";
 import type { PatchData } from "../types";
 import { Label } from "./ui/label";
 import { Switch } from "./ui/switch";
@@ -22,6 +21,26 @@ function probToRgba(prob: number, alpha: number): string {
   return `rgba(${r},${g},0,${alpha})`;
 }
 
+type NumberedPatch = PatchData & { displayNumber: number };
+
+// Stable display ordering: left-to-right within each row, then next row.
+function numberPatchesLeftToRight(patches: PatchData[]): NumberedPatch[] {
+  const indexed = patches.map((p, idx) => ({ ...p, _idx: idx }));
+  indexed.sort((a, b) => {
+    if (a.y !== b.y) return a.y - b.y;
+    if (a.x !== b.x) return a.x - b.x;
+    return a._idx - b._idx;
+  });
+  return indexed.map((p, i) => ({
+    x: p.x,
+    y: p.y,
+    w: p.w,
+    h: p.h,
+    prob: p.prob,
+    displayNumber: i + 1,
+  }));
+}
+
 export function PatchOverlay({
   imageSrc,
   patchData,
@@ -33,26 +52,26 @@ export function PatchOverlay({
   const imgRef = useRef<HTMLImageElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [showOverlay, setShowOverlay] = useState(true);
-  const [tooltip, setTooltip] = useState<{ x: number; y: number; prob: number } | null>(null);
-  const [naturalSize, setNaturalSize] = useState<{ w: number; h: number } | null>(null);
+  const [tooltip, setTooltip] = useState<{
+    x: number;
+    y: number;
+    prob: number;
+    patchNumber: number;
+  } | null>(null);
+  const displayPatches = patchData;
 
-  const effW = propW && propW > 0 ? propW : naturalSize?.w;
-  const effH = propH && propH > 0 ? propH : naturalSize?.h;
+  const numberedPatches = useMemo<NumberedPatch[] | undefined>(() => {
+    if (!displayPatches?.length) return undefined;
+    return numberPatchesLeftToRight(displayPatches);
+  }, [displayPatches]);
 
-  const displayPatches = useMemo(() => {
-    if (!patchData?.length || !effW || !effH) {
-      return patchData;
-    }
-    return aggregatePatchDataToInferenceGrid(patchData, effW, effH);
-  }, [patchData, effW, effH]);
-
-  const hasPatches = Boolean(displayPatches?.length);
+  const hasPatches = Boolean(numberedPatches?.length);
 
   const draw = useCallback(() => {
     const wrap = wrapRef.current;
     const img = imgRef.current;
     const canvas = canvasRef.current;
-    if (!wrap || !img || !canvas || !hasPatches || !displayPatches) return;
+    if (!wrap || !img || !canvas || !hasPatches || !numberedPatches) return;
 
     const cw = img.clientWidth;
     const ch = img.clientHeight;
@@ -79,7 +98,7 @@ export function PatchOverlay({
     const sy = ch / nh;
     const a = OVERLAY_FILL_ALPHA;
 
-    for (const p of displayPatches) {
+    for (const p of numberedPatches) {
       const x = p.x * sx;
       const y = p.y * sy;
       const w = p.w * sx;
@@ -89,8 +108,21 @@ export function PatchOverlay({
       ctx.strokeStyle = "rgba(0,0,0,0.12)";
       ctx.lineWidth = 1;
       ctx.strokeRect(x + 0.5, y + 0.5, w - 1, h - 1);
+
+      const label = String(p.displayNumber);
+      ctx.font = "600 12px ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto";
+      const textW = ctx.measureText(label).width;
+      const labelW = Math.ceil(textW + 12);
+      const labelH = 18;
+      const lx = Math.max(0, Math.min(cw - labelW, x + 2));
+      const ly = Math.max(0, Math.min(ch - labelH, y + 2));
+      ctx.fillStyle = "rgba(0,0,0,0.62)";
+      ctx.fillRect(lx, ly, labelW, labelH);
+      ctx.fillStyle = "rgba(255,255,255,0.96)";
+      ctx.textBaseline = "middle";
+      ctx.fillText(label, lx + 6, ly + labelH / 2);
     }
-  }, [hasPatches, displayPatches, propW, propH, showOverlay]);
+  }, [hasPatches, numberedPatches, propW, propH, showOverlay]);
 
   useEffect(() => {
     draw();
@@ -102,7 +134,7 @@ export function PatchOverlay({
   }, [draw, imageSrc]);
 
   const onMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (!hasPatches || !displayPatches || !showOverlay) {
+    if (!hasPatches || !numberedPatches || !showOverlay) {
       setTooltip(null);
       return;
     }
@@ -122,13 +154,14 @@ export function PatchOverlay({
     const nx = (mx / cw) * nw;
     const ny = (my / ch) * nh;
 
-    for (let i = displayPatches.length - 1; i >= 0; i--) {
-      const p = displayPatches[i];
+    for (let i = numberedPatches.length - 1; i >= 0; i--) {
+      const p = numberedPatches[i];
       if (nx >= p.x && nx <= p.x + p.w && ny >= p.y && ny <= p.y + p.h) {
         setTooltip({
           x: e.clientX - wrap.getBoundingClientRect().left,
           y: e.clientY - wrap.getBoundingClientRect().top,
           prob: p.prob,
+          patchNumber: p.displayNumber,
         });
         return;
       }
@@ -159,10 +192,6 @@ export function PatchOverlay({
           src={imageSrc}
           alt={alt}
           className="size-full object-cover"
-          onLoad={(e) => {
-            const el = e.currentTarget;
-            setNaturalSize({ w: el.naturalWidth, h: el.naturalHeight });
-          }}
         />
         {hasPatches ? (
           <canvas
@@ -179,7 +208,7 @@ export function PatchOverlay({
               top: Math.max(tooltip.y - 36, 8),
             }}
           >
-            {`${(tooltip.prob * 100).toFixed(1)}% patch authenticity`}
+            {`Patch #${tooltip.patchNumber}: ${(tooltip.prob * 100).toFixed(1)}% authenticity`}
           </div>
         ) : null}
       </div>

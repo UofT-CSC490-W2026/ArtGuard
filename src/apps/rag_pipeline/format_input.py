@@ -129,13 +129,27 @@ def top_k_patch_evidence(
     Contribution is measured as distance from 0.5 within that side.
     """
     pred = int(prediction)
-    same_side_rows: list[tuple[dict[str, Any], float, float]] = []
-    all_rows: list[tuple[dict[str, Any], float, float]] = []
+    same_side_rows: list[tuple[int, dict[str, Any], float, float]] = []
+    all_rows: list[tuple[int, dict[str, Any], float, float]] = []
 
-    for patch, prob in zip(patches_info, patch_probs):
+    # Global display numbering used by both RAG text and frontend cells:
+    # row-major over unique grid cells (patch variants in same cell share rank).
+    unique_cell_keys = {
+        (
+            int(_to_float(p.get("patch_x", 0))),
+            int(_to_float(p.get("patch_y", 0))),
+            int(_to_float(p.get("patch_width", 0))),
+            int(_to_float(p.get("patch_height", 0))),
+        )
+        for p in patches_info
+    }
+    sorted_cells = sorted(unique_cell_keys, key=lambda c: (c[1], c[0], c[2], c[3]))
+    cell_rank_by_key = {cell: rank for rank, cell in enumerate(sorted_cells, start=1)}
+
+    for idx, (patch, prob) in enumerate(zip(patches_info, patch_probs)):
         p = _to_float(prob)
         contribution = abs(p - 0.5)
-        row = (patch, p, contribution)
+        row = (idx, patch, p, contribution)
         all_rows.append(row)
 
         if pred == 1 and p >= 0.5:
@@ -146,11 +160,11 @@ def top_k_patch_evidence(
     # Prefer patches that support the predicted label.
     rows = same_side_rows if same_side_rows else all_rows
 
-    rows.sort(key=lambda t: t[2], reverse=True)
+    rows.sort(key=lambda t: t[3], reverse=True)
     selected = rows[: max(1, int(top_k))]
 
     out: list[PatchEvidence] = []
-    for i, (patch, prob, contrib) in enumerate(selected, start=1):
+    for orig_idx, patch, prob, contrib in selected:
         patch_x = int(_to_float(patch.get("patch_x", 0)))
         patch_y = int(_to_float(patch.get("patch_y", 0)))
         region_hint = _region_hint_from_patch_coords(
@@ -163,7 +177,17 @@ def top_k_patch_evidence(
         )
         out.append(
             PatchEvidence(
-                rank=i,
+                rank=int(
+                    cell_rank_by_key.get(
+                        (
+                            int(_to_float(patch.get("patch_x", 0))),
+                            int(_to_float(patch.get("patch_y", 0))),
+                            int(_to_float(patch.get("patch_width", 0))),
+                            int(_to_float(patch.get("patch_height", 0))),
+                        ),
+                        orig_idx + 1,
+                    )
+                ),
                 patch_id=str(patch.get("patch_id", "")),
                 patch_path=str(patch.get("patch_path", "")),
                 patch_type=str(patch.get("patch_type", "")),
