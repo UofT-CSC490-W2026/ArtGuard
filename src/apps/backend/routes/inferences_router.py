@@ -26,6 +26,7 @@ from src.apps.backend.config import (
     s3_client,
 )
 from src.apps.backend.deps.auth import get_current_user_id
+from src.apps.backend.routes.inference_router import PatchResult
 from src.apps.backend.services.s3_presign import presigned_get_url
 
 logger = logging.getLogger(__name__)
@@ -111,6 +112,9 @@ class InferenceListItem(BaseModel):
         image_name:       Original filename of the uploaded image.
         file_size:        Upload file size in bytes.
         image_url:        Presigned S3 GET URL for the raw uploaded image.
+        image_width:      Original image width in pixels when patch data was stored.
+        image_height:     Original image height in pixels when patch data was stored.
+        patch_data:       Per-patch authenticity heatmap data when stored on completion.
     """
 
     inference_id: str
@@ -125,6 +129,9 @@ class InferenceListItem(BaseModel):
     image_name: str
     file_size: int = Field(default=0, ge=0)
     image_url: str
+    image_width: int = Field(default=0, ge=0)
+    image_height: int = Field(default=0, ge=0)
+    patch_data: Optional[list[PatchResult]] = None
 
 
 class InferenceListResponse(BaseModel):
@@ -169,6 +176,32 @@ def _item_to_list_item(item: dict[str, Any], s3) -> InferenceListItem:
     status_raw = item.get("inference_status")
     inference_status: Optional[str] = str(status_raw) if status_raw is not None else None
 
+    iw = int(item.get("image_width") or 0)
+    ih = int(item.get("image_height") or 0)
+    patch_data: Optional[list[PatchResult]] = None
+    raw_patches = item.get("patch_data")
+    if isinstance(raw_patches, list) and len(raw_patches) > 0:
+        parsed: list[PatchResult] = []
+        for p in raw_patches:
+            if not isinstance(p, dict):
+                continue
+            try:
+                prob_raw = p.get("prob")
+                prob_f = float(prob_raw) if isinstance(prob_raw, Decimal) else float(prob_raw)
+                parsed.append(
+                    PatchResult(
+                        x=int(p["x"]),
+                        y=int(p["y"]),
+                        w=int(p["w"]),
+                        h=int(p["h"]),
+                        prob=prob_f,
+                    )
+                )
+            except (TypeError, KeyError, ValueError):
+                continue
+        if parsed:
+            patch_data = parsed
+
     return InferenceListItem(
         inference_id=item["inference_id"],
         created_at=int(item["created_at"]),
@@ -182,6 +215,9 @@ def _item_to_list_item(item: dict[str, Any], s3) -> InferenceListItem:
         image_name=str(item.get("image_name") or ""),
         file_size=int(item.get("file_size") or 0),
         image_url=url,
+        image_width=iw,
+        image_height=ih,
+        patch_data=patch_data,
     )
 
 

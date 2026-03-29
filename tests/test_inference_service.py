@@ -572,6 +572,35 @@ class TestFinalizeInference:
         assert item["inference_status"] == "completed"
         assert float(item["score"]) == pytest.approx(0.92)
         assert item["explanation"] == "Looks authentic"
+        assert item.get("image_width") == 0
+        assert item.get("image_height") == 0
+        assert "patch_data" not in item
+
+    def test_finalize_persists_patch_data_and_dimensions(self, s3, dynamodb):
+        """Patch grid and image size are written for history heatmap replay."""
+        table = dynamodb.Table("test-inferences")
+        table.put_item(Item={
+            "inference_id": "fin-patches",
+            "inference_status": "processing",
+        })
+        rows = [
+            {"x": 0, "y": 0, "w": 50, "h": 50, "prob": 0.88},
+            {"x": 50, "y": 0, "w": 50, "h": 50, "prob": 0.12},
+        ]
+        inference_service.finalize_inference(
+            "fin-patches",
+            0.5,
+            1,
+            None,
+            image_width=640,
+            image_height=480,
+            patch_data=rows,
+        )
+        item = table.get_item(Key={"inference_id": "fin-patches"})["Item"]
+        assert item["image_width"] == 640
+        assert item["image_height"] == 480
+        assert len(item["patch_data"]) == 2
+        assert float(item["patch_data"][0]["prob"]) == pytest.approx(0.88)
 
     def test_finalize_without_explanation(self, s3, dynamodb):
         """Positive: explanation=None → no explanation attribute on item (optional RAG).

@@ -370,6 +370,10 @@ def finalize_inference(
     score: float,
     prediction: int,
     explanation: Optional[str],
+    *,
+    image_width: int = 0,
+    image_height: int = 0,
+    patch_data: Optional[list[dict[str, Any]]] = None,
 ) -> None:
     """Update the inference record in DynamoDB with final results.
 
@@ -378,20 +382,40 @@ def finalize_inference(
         score:        Final mean probability score.
         prediction:   Final 0/1 prediction.
         explanation:  RAG explanation text, or None.
+        image_width:  Original image width in pixels (for history / heatmap alignment).
+        image_height: Original image height in pixels.
+        patch_data:   Per-patch boxes and probabilities for history views, or None to skip.
     """
     inference_table = get_table(DDB_INFERENCES_TABLE)
     clamped_score = clamp_score(score)
     valid_prediction = validate_prediction(prediction)
 
-    update_expr = "SET score = :s, prediction = :p, inference_status = :ist"
+    update_expr = (
+        "SET score = :s, prediction = :p, inference_status = :ist, "
+        "image_width = :iw, image_height = :ih"
+    )
     expr_values: dict = {
         ":s": Decimal(str(clamped_score)),
         ":p": valid_prediction,
         ":ist": InferenceStatus.COMPLETED.value,
+        ":iw": max(0, int(image_width)),
+        ":ih": max(0, int(image_height)),
     }
     if explanation is not None:
         update_expr += ", explanation = :e"
         expr_values[":e"] = truncate(explanation, EXPLANATION_MAX)
+    if patch_data is not None:
+        update_expr += ", patch_data = :pd"
+        expr_values[":pd"] = [
+            {
+                "x": int(row["x"]),
+                "y": int(row["y"]),
+                "w": int(row["w"]),
+                "h": int(row["h"]),
+                "prob": Decimal(str(row["prob"])),
+            }
+            for row in patch_data
+        ]
 
     try:
         inference_table.update_item(
