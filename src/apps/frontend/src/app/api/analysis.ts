@@ -1,4 +1,9 @@
 import type { AnalysisResult, PatchData, InferenceApiResponse } from "../types";
+import {
+  aggregatePatchDataToInferenceGrid,
+  chooseGridSize,
+  computeGridCells,
+} from "../lib/inferenceGrid";
 import { hasApiBackend, postFormData } from "./client";
 
 interface AnalyzeInput {
@@ -19,21 +24,13 @@ function loadImageDimensions(src: string): Promise<{ w: number; h: number }> {
 }
 
 function generateMockPatchData(w: number, h: number, meanScore: number): PatchData[] {
-  const cols = Math.max(2, Math.min(8, Math.ceil(w / 224)));
-  const rows = Math.max(2, Math.min(8, Math.ceil(h / 224)));
-  const patches: PatchData[] = [];
-  for (let r = 0; r < rows; r++) {
-    for (let c = 0; c < cols; c++) {
-      const x = Math.floor((c * w) / cols);
-      const y = Math.floor((r * h) / rows);
-      const pw = Math.min(w - x, Math.ceil(w / cols));
-      const ph = Math.min(h - y, Math.ceil(h / rows));
-      const jitter = (Math.random() - 0.5) * 0.25;
-      const prob = Math.max(0, Math.min(1, meanScore + jitter));
-      patches.push({ x, y, w: pw, h: ph, prob });
-    }
-  }
-  return patches;
+  const gridSize = chooseGridSize(w, h);
+  const cells = computeGridCells(w, h, gridSize);
+  return cells.map((cell, i) => {
+    const jitter = Math.sin(i * 1.7) * 0.12 + (Math.random() - 0.5) * 0.1;
+    const prob = Math.max(0, Math.min(1, meanScore + jitter));
+    return { ...cell, prob };
+  });
 }
 
 function mapInferenceToResult(
@@ -41,16 +38,30 @@ function mapInferenceToResult(
   input: AnalyzeInput
 ): AnalysisResult {
   const presigned = raw.image_url?.trim();
-  const patchData = raw.patch_data?.map((p) => ({
+  const iw =
+    typeof raw.image_width === "number" && raw.image_width > 0
+      ? raw.image_width
+      : undefined;
+  const ih =
+    typeof raw.image_height === "number" && raw.image_height > 0
+      ? raw.image_height
+      : undefined;
+  const rawPatches: PatchData[] | undefined = raw.patch_data?.map((p) => ({
     x: p.x,
     y: p.y,
     w: p.w,
     h: p.h,
     prob: p.prob,
   }));
+  const patchData =
+    rawPatches && iw !== undefined && ih !== undefined
+      ? aggregatePatchDataToInferenceGrid(rawPatches, iw, ih)
+      : rawPatches;
   return {
     id: raw.inference_id,
     score: raw.score,
+    confidencePercent:
+      typeof raw.confidence_percent === "number" ? raw.confidence_percent : undefined,
     image: presigned ?? "",
     artistName: input.artistName || "Unknown",
     artworkName: input.artworkName || "Untitled",
@@ -59,8 +70,8 @@ function mapInferenceToResult(
     fileSize: input.file.size,
     explanation: raw.explanation ?? undefined,
     prediction: typeof raw.prediction === "number" ? raw.prediction : undefined,
-    imageWidth: typeof raw.image_width === "number" ? raw.image_width : undefined,
-    imageHeight: typeof raw.image_height === "number" ? raw.image_height : undefined,
+    imageWidth: iw,
+    imageHeight: ih,
     patchData,
   };
 }

@@ -1,7 +1,8 @@
 /**
  * Display logic aligned with backend Modal inference:
- * - `score` = mean patch probability of **authenticity** (0–1), higher = more authentic.
- * - `prediction` = 1 authentic, 0 forgery, -1 / missing = no binary label yet.
+ * - Per-patch `prob` = authenticity probability (0–1).
+ * - `score` = **prediction confidence**: mean of patch authenticity probs (0–1).
+ * - `prediction` = 1 authentic, 0 inauthentic, -1 / missing = no binary label yet.
  */
 
 import type { AnalysisResult } from "../types";
@@ -51,7 +52,7 @@ function verdictUnavailable(): VerdictDisplay {
   };
 }
 
-/** Binary model label: Authentic, Forgery, Error (inference failed), or Unavailable (no 0/1 yet). */
+/** Binary model label: Authentic, Inauthentic, Error (inference failed), or Unavailable (no 0/1 yet). */
 export function getAnalysisVerdict(r: AnalysisResult): VerdictDisplay {
   if (isInferenceFailed(r)) return verdictError();
 
@@ -67,7 +68,7 @@ export function getAnalysisVerdict(r: AnalysisResult): VerdictDisplay {
   }
   if (p === 0) {
     return {
-      text: "Forgery",
+      text: "Inauthentic",
       icon: AlertCircle,
       color: "text-negative",
       bgColor: "bg-negative-muted",
@@ -79,8 +80,10 @@ export function getAnalysisVerdict(r: AnalysisResult): VerdictDisplay {
 }
 
 export function formatAnalysisScorePercent(r: AnalysisResult): string {
-  if (isInferenceFailed(r)) return "—";
-  return (r.score * 100).toFixed(1);
+  if (isInferenceFailed(r)) return "-";
+  const percent =
+    typeof r.confidencePercent === "number" ? r.confidencePercent : r.score * 100;
+  return percent.toFixed(1);
 }
 
 export function matchesAuthenticFilter(r: AnalysisResult): boolean {
@@ -110,7 +113,7 @@ export function getBatchIndicator(r: AnalysisResult) {
     return { icon: CheckCircle, color: "text-positive", label: "Authentic" };
   }
   if (r.prediction === 0) {
-    return { icon: AlertCircle, color: "text-negative", label: "Forgery" };
+    return { icon: AlertCircle, color: "text-negative", label: "Inauthentic" };
   }
   return { icon: AlertTriangle, color: "text-caution", label: "Unavailable" };
 }
@@ -126,5 +129,5 @@ export function resolveDisplayedExplanation(r: AnalysisResult): string {
     const detail = r.inferenceError?.trim();
     return detail ? `Inference did not complete. ${detail}` : "Inference did not complete.";
   }
-  return "A retrieval-augmented explanation was not available for this analysis. Refer to the authenticity score and patch heatmap above for the model\u2019s quantitative assessment.";
+  return "A retrieval-augmented explanation was not available for this analysis. Refer to the prediction confidence and patch heatmap above for the model\u2019s quantitative assessment.";
 }

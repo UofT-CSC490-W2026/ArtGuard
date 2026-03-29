@@ -67,6 +67,7 @@ class InferenceResponse(BaseModel):
     inference_id: str
     prediction: int
     score: float
+    confidence_percent: float
     explanation: Optional[str] = None
     image_url: Optional[str] = None
     image_width: int = 0
@@ -188,10 +189,6 @@ async def infer(
         artwork_name=artwork_name,
     )
 
-    inference_service.finalize_inference(inference_id, score, prediction, explanation)
-
-    image_url = inference_service.generate_image_url(raw_s3_uri)
-
     patch_data = [
         PatchResult(
             x=int(p["patch_x"]),
@@ -203,10 +200,26 @@ async def infer(
         for p, prob in zip(patches_info, modal_result["patch_probs"])
     ]
 
+    patch_rows_for_ddb = [
+        {"x": pr.x, "y": pr.y, "w": pr.w, "h": pr.h, "prob": pr.prob} for pr in patch_data
+    ]
+    inference_service.finalize_inference(
+        inference_id,
+        score,
+        prediction,
+        explanation,
+        image_width=w,
+        image_height=h,
+        patch_data=patch_rows_for_ddb,
+    )
+
+    image_url = inference_service.generate_image_url(raw_s3_uri)
+
     return InferenceResponse(
         inference_id=inference_id,
         prediction=prediction,
         score=score,
+        confidence_percent=abs(score - 0.5) / 0.5 * 100.0,
         explanation=explanation,
         image_url=image_url,
         image_width=w,

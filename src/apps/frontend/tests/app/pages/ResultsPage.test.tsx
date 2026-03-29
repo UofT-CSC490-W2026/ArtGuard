@@ -51,10 +51,12 @@ describe("ResultsPage", () => {
     };
     localStorage.setItem("artguard_latest_result", JSON.stringify(result));
     renderAtResults();
-    await waitFor(() => expect(screen.getByText("AUTHENTICITY CONFIDENCE")).toBeInTheDocument());
+    await waitFor(() =>
+      expect(screen.getByText("PREDICTION CONFIDENCE", { exact: true })).toBeInTheDocument(),
+    );
     expect(screen.getByText("From API")).toBeInTheDocument();
     await waitFor(() =>
-      expect(screen.getByText(/patch authenticity heatmap/i)).toBeInTheDocument(),
+      expect(screen.getByText(/per-patch authenticity heatmap/i)).toBeInTheDocument(),
     );
   });
 
@@ -92,7 +94,7 @@ describe("ResultsPage", () => {
     };
     localStorage.setItem("artguard_latest_result", JSON.stringify(result));
     renderAtResults();
-    await waitFor(() => expect(screen.getByText("—")).toBeInTheDocument());
+    await waitFor(() => expect(screen.getByText("-")).toBeInTheDocument());
   });
 
   it("download calls print", async () => {
@@ -116,5 +118,24 @@ describe("ResultsPage", () => {
     fireEvent.click(screen.getByRole("button", { name: /^download$/i }));
     expect(print).toHaveBeenCalled();
     vi.unstubAllGlobals();
+  });
+
+  it("uses confidencePercent when provided", async () => {
+    const result: AnalysisResult = {
+      id: "1",
+      score: 0.5,
+      confidencePercent: 88.2,
+      image: "",
+      artistName: "A",
+      artworkName: "B",
+      timestamp: new Date().toISOString(),
+      fileName: "f.png",
+      fileSize: 10,
+      prediction: 0,
+      inferenceStatus: "completed",
+    };
+    localStorage.setItem("artguard_latest_result", JSON.stringify(result));
+    renderAtResults();
+    await waitFor(() => expect(screen.getByText("88%")).toBeInTheDocument());
   });
 });

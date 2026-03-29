@@ -1,4 +1,5 @@
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { aggregatePatchDataToInferenceGrid } from "../lib/inferenceGrid";
 import type { PatchData } from "../types";
 import { Label } from "./ui/label";
 import { Switch } from "./ui/switch";
@@ -14,7 +15,7 @@ interface PatchOverlayProps {
   alt?: string;
 }
 
-/** Heatmap overlay: red = low authenticity, green = high. */
+/** Heatmap: per-patch authenticity probability — red = low, green = high. */
 function probToRgba(prob: number, alpha: number): string {
   const r = Math.round(255 * (1 - prob));
   const g = Math.round(255 * prob);
@@ -33,14 +34,25 @@ export function PatchOverlay({
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [showOverlay, setShowOverlay] = useState(true);
   const [tooltip, setTooltip] = useState<{ x: number; y: number; prob: number } | null>(null);
+  const [naturalSize, setNaturalSize] = useState<{ w: number; h: number } | null>(null);
 
-  const hasPatches = Boolean(patchData?.length);
+  const effW = propW && propW > 0 ? propW : naturalSize?.w;
+  const effH = propH && propH > 0 ? propH : naturalSize?.h;
+
+  const displayPatches = useMemo(() => {
+    if (!patchData?.length || !effW || !effH) {
+      return patchData;
+    }
+    return aggregatePatchDataToInferenceGrid(patchData, effW, effH);
+  }, [patchData, effW, effH]);
+
+  const hasPatches = Boolean(displayPatches?.length);
 
   const draw = useCallback(() => {
     const wrap = wrapRef.current;
     const img = imgRef.current;
     const canvas = canvasRef.current;
-    if (!wrap || !img || !canvas || !hasPatches || !patchData) return;
+    if (!wrap || !img || !canvas || !hasPatches || !displayPatches) return;
 
     const cw = img.clientWidth;
     const ch = img.clientHeight;
@@ -67,7 +79,7 @@ export function PatchOverlay({
     const sy = ch / nh;
     const a = OVERLAY_FILL_ALPHA;
 
-    for (const p of patchData) {
+    for (const p of displayPatches) {
       const x = p.x * sx;
       const y = p.y * sy;
       const w = p.w * sx;
@@ -78,7 +90,7 @@ export function PatchOverlay({
       ctx.lineWidth = 1;
       ctx.strokeRect(x + 0.5, y + 0.5, w - 1, h - 1);
     }
-  }, [hasPatches, patchData, propW, propH, showOverlay]);
+  }, [hasPatches, displayPatches, propW, propH, showOverlay]);
 
   useEffect(() => {
     draw();
@@ -90,7 +102,7 @@ export function PatchOverlay({
   }, [draw, imageSrc]);
 
   const onMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (!hasPatches || !patchData || !showOverlay) {
+    if (!hasPatches || !displayPatches || !showOverlay) {
       setTooltip(null);
       return;
     }
@@ -110,8 +122,8 @@ export function PatchOverlay({
     const nx = (mx / cw) * nw;
     const ny = (my / ch) * nh;
 
-    for (let i = patchData.length - 1; i >= 0; i--) {
-      const p = patchData[i];
+    for (let i = displayPatches.length - 1; i >= 0; i--) {
+      const p = displayPatches[i];
       if (nx >= p.x && nx <= p.x + p.w && ny >= p.y && ny <= p.y + p.h) {
         setTooltip({
           x: e.clientX - wrap.getBoundingClientRect().left,
@@ -147,7 +159,10 @@ export function PatchOverlay({
           src={imageSrc}
           alt={alt}
           className="size-full object-cover"
-          onLoad={draw}
+          onLoad={(e) => {
+            const el = e.currentTarget;
+            setNaturalSize({ w: el.naturalWidth, h: el.naturalHeight });
+          }}
         />
         {hasPatches ? (
           <canvas
@@ -164,7 +179,7 @@ export function PatchOverlay({
               top: Math.max(tooltip.y - 36, 8),
             }}
           >
-            {(tooltip.prob * 100).toFixed(1)}% authenticity
+            {`${(tooltip.prob * 100).toFixed(1)}% patch authenticity`}
           </div>
         ) : null}
       </div>
@@ -172,7 +187,7 @@ export function PatchOverlay({
         <div className="flex items-center gap-2">
           <Switch id="patch-overlay" checked={showOverlay} onCheckedChange={setShowOverlay} />
           <Label htmlFor="patch-overlay" className="text-sm font-normal cursor-pointer">
-            Patch authenticity heatmap
+            Per-patch authenticity heatmap
           </Label>
         </div>
       ) : null}

@@ -215,7 +215,7 @@ export function ProfilePage() {
                   <div className="flex justify-between items-center">
                     <span className="text-muted-foreground">Total Analyses</span>
                     <span className="font-semibold">
-                      {totalAnalyses === null ? "—" : totalAnalyses}
+                      {totalAnalyses === null ? "-" : totalAnalyses}
                     </span>
                   </div>
                 </div>

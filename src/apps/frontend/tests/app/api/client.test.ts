@@ -44,6 +44,22 @@ describe("client token helpers", () => {
     expect(init.body).toBe(form);
   });
 
+  it("postFormData omits Authorization when skipAuth is true", async () => {
+    vi.stubEnv("VITE_API_URL", "http://127.0.0.1/api");
+    vi.resetModules();
+    const fetchMock = vi.fn().mockResolvedValue({
+      ok: true,
+      json: async () => ({}),
+    });
+    vi.stubGlobal("fetch", fetchMock);
+    const { postFormData, setAccessToken } = await import("@/app/api/client");
+    setAccessToken("jwt-token");
+    const form = new FormData();
+    await postFormData("/inference", form, { skipAuth: true });
+    const init = fetchMock.mock.calls[0][1] as RequestInit;
+    expect((init.headers as Record<string, string>).Authorization).toBeUndefined();
+  });
+
   it("postFormData omits Authorization when no token is set", async () => {
     vi.stubEnv("VITE_API_URL", "http://127.0.0.1/api");
     vi.resetModules();
@@ -140,12 +156,28 @@ describe("client token helpers", () => {
     const { api } = await import("@/app/api/client");
     await api.post("/p", { x: 1 });
     await api.put("/p", { a: 1 });
+    await api.post("/no-body");
+    await api.put("/no-body-either");
     await api.delete("/d");
     expect(fetchMock.mock.calls.some((c) => (c[1] as RequestInit).method === "POST")).toBe(true);
     expect(fetchMock.mock.calls.some((c) => (c[1] as RequestInit).method === "PUT")).toBe(true);
     expect(fetchMock.mock.calls.some((c) => (c[1] as RequestInit).method === "DELETE")).toBe(
       true,
     );
+    const postWithoutBody = fetchMock.mock.calls.find(
+      (c) =>
+        (c[1] as RequestInit).method === "POST" &&
+        (c[1] as RequestInit).body === undefined &&
+        String(c[0]).endsWith("/no-body"),
+    );
+    const putWithoutBody = fetchMock.mock.calls.find(
+      (c) =>
+        (c[1] as RequestInit).method === "PUT" &&
+        (c[1] as RequestInit).body === undefined &&
+        String(c[0]).endsWith("/no-body-either"),
+    );
+    expect(postWithoutBody).toBeDefined();
+    expect(putWithoutBody).toBeDefined();
   });
 
   it("postFormData throws on non-ok response", async () => {

@@ -55,9 +55,9 @@ describe("getAnalysisVerdict", () => {
     expect(v.text).toBe("Authentic");
   });
 
-  it("returns Forgery for prediction 0", () => {
+  it("returns Inauthentic for prediction 0", () => {
     const v = getAnalysisVerdict(baseResult({ prediction: 0, score: 0.2 }));
-    expect(v.text).toBe("Forgery");
+    expect(v.text).toBe("Inauthentic");
   });
 
   it("returns Unavailable when prediction is not 0 or 1", () => {
@@ -72,8 +72,8 @@ describe("getAnalysisVerdict", () => {
 });
 
 describe("score helpers", () => {
-  it("formatAnalysisScorePercent shows em dash when failed", () => {
-    expect(formatAnalysisScorePercent(baseResult({ inferenceStatus: "failed" }))).toBe("—");
+  it("formatAnalysisScorePercent shows dash when failed", () => {
+    expect(formatAnalysisScorePercent(baseResult({ inferenceStatus: "failed" }))).toBe("-");
     expect(formatAnalysisScorePercent(baseResult({ score: 0.333 }))).toBe("33.3");
   });
 });
@@ -140,9 +140,9 @@ describe("getBatchIndicator", () => {
     expect(b.label).toBe("Authentic");
   });
 
-  it("returns Forgery for prediction 0", () => {
+  it("returns Inauthentic for prediction 0", () => {
     const b = getBatchIndicator(baseResult({ prediction: 0, score: 0.1 }));
-    expect(b.label).toBe("Forgery");
+    expect(b.label).toBe("Inauthentic");
   });
 
   it("returns Error for failed inference", () => {

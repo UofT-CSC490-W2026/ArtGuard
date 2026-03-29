@@ -3,12 +3,13 @@
  */
 
 import { api } from "./client";
-import type { AnalysisResult, InferenceStatus } from "../types";
+import type { AnalysisResult, InferenceStatus, PatchData } from "../types";
 
 export interface InferenceListItem {
   inference_id: string;
   created_at: number;
   score: number;
+  confidence_percent?: number;
   prediction?: number | null;
   explanation?: string | null;
   inference_status?: string | null;
@@ -18,6 +19,9 @@ export interface InferenceListItem {
   image_name: string;
   file_size: number;
   image_url: string;
+  image_width?: number;
+  image_height?: number;
+  patch_data?: PatchData[] | null;
 }
 
 interface InferenceListResponse {
@@ -35,9 +39,15 @@ function coerceInferenceStatus(raw: string | null | undefined): InferenceStatus 
 }
 
 export function inferenceToAnalysisResult(row: InferenceListItem): AnalysisResult {
+  const patchData =
+    Array.isArray(row.patch_data) && row.patch_data.length > 0 ? row.patch_data : undefined;
+  const iw = row.image_width;
+  const ih = row.image_height;
   return {
     id: row.inference_id,
     score: row.score,
+    confidencePercent:
+      typeof row.confidence_percent === "number" ? row.confidence_percent : undefined,
     image: row.image_url,
     artistName: row.artist_name,
     artworkName: row.artwork_name,
@@ -51,6 +61,9 @@ export function inferenceToAnalysisResult(row: InferenceListItem): AnalysisResul
         : undefined,
     explanation: row.explanation ?? undefined,
     prediction: typeof row.prediction === "number" ? row.prediction : undefined,
+    ...(typeof iw === "number" && iw > 0 ? { imageWidth: iw } : {}),
+    ...(typeof ih === "number" && ih > 0 ? { imageHeight: ih } : {}),
+    ...(patchData ? { patchData } : {}),
   };
 }
 

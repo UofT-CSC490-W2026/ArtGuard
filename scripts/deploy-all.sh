@@ -26,26 +26,26 @@ echo -e "  Region:      ${CYAN}$AWS_REGION${NC}"
 echo ""
 
 # ─── Step 1: Bootstrap Infrastructure (~15-20 min) ───
-step "Step 1/7: Bootstrap Infrastructure"
+step "Step 1/8: Bootstrap Infrastructure"
 echo -e "  ${DIM}Creates all AWS resources (VPC, ECS, S3, DynamoDB, OpenSearch, Bedrock KB, etc.)${NC}"
 echo ""
 ./scripts/bootstrap.sh "$ENVIRONMENT"
 echo ""
 
 # ─── Step 2: Store Secrets ───
-step "Step 2/7: Store Secrets"
+step "Step 2/8: Store Secrets"
 info "You will be prompted for your Modal API key."
 echo ""
 ./scripts/setup-secrets.sh "$ENVIRONMENT"
 echo ""
 
 # ─── Step 3: Build Docker Image (~5-10 min) ───
-step "Step 3/7: Build and Push Docker Image"
+step "Step 3/8: Build and Push Docker Image"
 ./scripts/build-and-push-docker.sh "$ENVIRONMENT"
 echo ""
 
 # ─── Step 4: Deploy to ECS (~2-3 min) ───
-step "Step 4/7: Deploy to ECS"
+step "Step 4/8: Deploy to ECS"
 ./scripts/deploy-ecs.sh "$ENVIRONMENT"
 echo ""
 
@@ -74,7 +74,7 @@ fi
 echo ""
 
 # ─── Step 5: Upload RAG Data and Ingest (~10-20 min) ───
-step "Step 5/7: Upload RAG Data"
+step "Step 5/8: Upload RAG Data"
 info "Converting JSONL to TXT and uploading to S3..."
 ./scripts/upload-rag-data.sh
 echo ""
@@ -132,7 +132,7 @@ fi
 echo ""
 
 # ─── Step 6: Upload Training Data ───
-step "Step 6/7: Upload Training Data"
+step "Step 6/8: Upload Training Data"
 
 # Check if local images are real files or LFS pointers
 SAMPLE_IMG=$(find ./data -name "*.jpg" -o -name "*.png" 2>/dev/null | head -1 || true)
@@ -155,8 +155,15 @@ else
 fi
 echo ""
 
-# ─── Step 7: Verify ───
-step "Step 7/7: Verification"
+# ─── Step 7: Deploy Inference Model to Modal ───
+step "Step 7/8: Deploy Inference Model"
+info "Deploying artguard-inference app to Modal..."
+modal deploy src/apps/train/inference.py
+success "Modal inference model deployed."
+echo ""
+
+# ─── Step 8: Verify ───
+step "Step 8/8: Verification"
 echo ""
 
 # Check vector count

@@ -86,11 +86,11 @@ test.describe("Upload page", () => {
     await page.getByRole("button", { name: /analyze artwork/i }).click();
 
     await page.waitForURL("**/results", { timeout: 60_000 });
-    await expect(page.getByText("AUTHENTICITY CONFIDENCE")).toBeVisible();
+    await expect(page.getByText("PREDICTION CONFIDENCE", { exact: true })).toBeVisible();
     await expect(page.locator("main")).toContainText("%");
   });
 
-  test("results page shows verdict (Authentic or Forgery)", async ({ page }) => {
+  test("results page shows verdict (Authentic or Inauthentic)", async ({ page }) => {
     await signUpAndGoToUpload(page);
 
     await page.locator('input[type="file"]').setInputFiles(tinyPng);
@@ -100,7 +100,7 @@ test.describe("Upload page", () => {
 
     await page.waitForURL("**/results", { timeout: 60_000 });
     await expect(page.locator("main")).toContainText(
-      /Authentic|Forgery|Unavailable|Error/,
+      /Authentic|Inauthentic|Unavailable|Error/,
       { timeout: 10_000 },
     );
   });
@@ -126,7 +126,7 @@ test.describe("Upload page", () => {
     await page.getByRole("button", { name: /analyze artwork/i }).click();
 
     await page.waitForURL("**/results", { timeout: 60_000 });
-    await expect(page.getByText(/patch authenticity heatmap/i)).toBeVisible();
+    await expect(page.getByText(/per-patch authenticity heatmap/i)).toBeVisible();
   });
 });
 
