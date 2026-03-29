@@ -51,7 +51,7 @@ describe("ResultsPage", () => {
     };
     localStorage.setItem("artguard_latest_result", JSON.stringify(result));
     renderAtResults();
-    await waitFor(() => expect(screen.getByText("AUTHENTICITY CONFIDENCE")).toBeInTheDocument());
+    await waitFor(() => expect(screen.getByText("PREDICTION CONFIDENCE")).toBeInTheDocument());
     expect(screen.getByText("From API")).toBeInTheDocument();
     await waitFor(() =>
       expect(screen.getByText(/patch authenticity heatmap/i)).toBeInTheDocument(),
