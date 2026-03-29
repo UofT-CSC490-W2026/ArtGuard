@@ -86,7 +86,7 @@ test.describe("Upload page", () => {
     await page.getByRole("button", { name: /analyze artwork/i }).click();
 
     await page.waitForURL("**/results", { timeout: 60_000 });
-    await expect(page.getByText("PREDICTION CONFIDENCE")).toBeVisible();
+    await expect(page.getByText("PREDICTION CONFIDENCE", { exact: true })).toBeVisible();
     await expect(page.locator("main")).toContainText("%");
   });
 
@@ -126,7 +126,7 @@ test.describe("Upload page", () => {
     await page.getByRole("button", { name: /analyze artwork/i }).click();
 
     await page.waitForURL("**/results", { timeout: 60_000 });
-    await expect(page.getByText(/patch authenticity heatmap/i)).toBeVisible();
+    await expect(page.getByText(/per-patch authenticity heatmap/i)).toBeVisible();
   });
 });
 

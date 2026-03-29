@@ -216,7 +216,7 @@ export function HistoryPage() {
 
       <PageHeader
         title="Analysis history"
-        description="View and manage your past analyses. Scores are mean patch authenticity probabilities; badges reflect the model label when available."
+        description="View and manage your past analyses."
         contentClassName="max-w-6xl mx-auto"
         actions={
           history.length > 0 && !isLoading ? (
@@ -375,7 +375,7 @@ export function HistoryPage() {
                             <span>
                               {isInferenceFailed(item)
                                 ? "No score, inference failed"
-                                : `Mean patch authenticity: ${formatAnalysisScorePercent(item)}%`}
+                                : `Prediction confidence: ${formatAnalysisScorePercent(item)}%`}
                             </span>
                             <span>•</span>
                             <span>

@@ -46,7 +46,7 @@ const PIPELINE_STEPS = [
   {
     label: "Score",
     detail:
-      "Every region receives an independent authenticity rating, giving you a transparent, auditable result.",
+      "Per-patch authenticity rolls up to a prediction along with a prediction confidence, indicating how certain the model is about the prediction.",
   },
   {
     label: "Explain",
@@ -157,9 +157,9 @@ export function HomePage() {
             Authenticate art. Understand why.
           </h1>
           <p className="mx-auto mt-12 max-w-lg text-center font-sans text-sm leading-relaxed text-muted-foreground md:mt-14 md:text-base">
-            ArtGuard gives you per-patch authenticity probabilities you can
-            inspect and retrieval-grounded explanations you can trace, with full
-            transparency from pixel to verdict.
+            ArtGuard gives you per-patch authenticity probabilities, an overall
+            prediction confidence, and retrieval-grounded explanations you can
+            trace, with full transparency from pixel to verdict.
           </p>
           <p className="mt-10 text-center font-sans text-sm text-muted-foreground">
             <Link
@@ -196,8 +196,7 @@ export function HomePage() {
               independently, so you see the authenticity probability for every
               region, not just a single opaque number. A heatmap overlay
               visualizes which areas the model considers authentic (green) versus
-              suspicious (red), and the painting-level score is the transparent
-              mean of all patch probabilities, fully auditable.
+              suspicious (red). The painting-level prediction is shown along with its overall confidence.
             </p>
           </MosaicTextTile>
         </MosaicRow>
