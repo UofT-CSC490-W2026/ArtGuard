@@ -87,7 +87,7 @@ describe("PatchOverlay", () => {
     } as DOMRect);
     fireEvent.load(img);
     fireEvent.mouseMove(wrap, { clientX: 25, clientY: 25 });
-    await waitFor(() => expect(screen.getByText(/73\.0% patch authenticity/)).toBeInTheDocument());
+    await waitFor(() => expect(screen.getByText(/Patch #1: 73\.0% authenticity/)).toBeInTheDocument());
   });
 
   it("skips canvas draw when getContext returns null", () => {
@@ -132,8 +132,8 @@ describe("PatchOverlay", () => {
     const wrap = img.parentElement!;
     // Mousemove should now trigger the early return with setTooltip(null)
     fireEvent.mouseMove(wrap, { clientX: 50, clientY: 50 });
-    // No tooltip should appear (tooltip format is "XX.X% patch authenticity")
-    expect(screen.queryByText(/\d+\.\d+% patch authenticity/)).not.toBeInTheDocument();
+    // No tooltip should appear (tooltip format includes "Patch #N")
+    expect(screen.queryByText(/Patch #\d+:\s*\d+\.\d+% authenticity/)).not.toBeInTheDocument();
   });
 
   it("draws overlay rects when canvas 2d context is available", async () => {
@@ -195,6 +195,6 @@ describe("PatchOverlay", () => {
     fireEvent.load(img);
     // After grid aggregation the overlay covers the full image; use coords left of the image so nx < 0
     fireEvent.mouseMove(wrap, { clientX: -5, clientY: 50 });
-    expect(screen.queryByText(/\d+\.\d+% patch authenticity/)).not.toBeInTheDocument();
+    expect(screen.queryByText(/Patch #\d+:\s*\d+\.\d+% authenticity/)).not.toBeInTheDocument();
   });
 });
