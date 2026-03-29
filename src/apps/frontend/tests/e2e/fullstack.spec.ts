@@ -120,7 +120,7 @@ test.describe("Full-stack: auth → inference → history pipeline", () => {
     await page.waitForURL("**/results", { timeout: 60_000 });
 
     // Results page must show score
-    await expect(page.getByText("AUTHENTICITY CONFIDENCE")).toBeVisible();
+    await expect(page.getByText("PREDICTION CONFIDENCE")).toBeVisible();
     await expect(page.locator("main")).toContainText("%");
 
     // Verify inference was stored in backend

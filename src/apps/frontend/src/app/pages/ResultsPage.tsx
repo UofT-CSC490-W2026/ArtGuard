@@ -131,7 +131,7 @@ export function ResultsPage() {
           </div>
 
           <p className="mt-3 text-xs text-muted-foreground tracking-wide print:text-left">
-            AUTHENTICITY CONFIDENCE
+            PREDICTION CONFIDENCE
           </p>
           <p className="mt-2 text-xs text-muted-foreground/80 max-w-md mx-auto leading-relaxed print:mx-0 print:text-left">
             Mean of per-patch authenticity scores

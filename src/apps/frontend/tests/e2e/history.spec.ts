@@ -62,7 +62,7 @@ test.describe("History page", () => {
 
     await page.getByRole("button", { name: /view details/i }).first().click();
     await expect(page).toHaveURL(/\/results$/);
-    await expect(page.getByText("AUTHENTICITY CONFIDENCE")).toBeVisible();
+    await expect(page.getByText("PREDICTION CONFIDENCE")).toBeVisible();
   });
 
   test("delete single analysis removes it from history", async ({ page }) => {
