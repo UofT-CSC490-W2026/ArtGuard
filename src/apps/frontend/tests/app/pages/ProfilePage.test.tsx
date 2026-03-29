@@ -87,7 +87,7 @@ describe("ProfilePage", () => {
     });
     seedUser("u1", "testuser", "test@example.com");
     renderProfile();
-    await waitFor(() => expect(screen.getByText("—")).toBeInTheDocument());
+    await waitFor(() => expect(screen.getByText("-")).toBeInTheDocument());
   });
 
   it("save changes button is disabled when nothing changed", async () => {

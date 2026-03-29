@@ -35,22 +35,23 @@ const ARTWORKS = [
 const PIPELINE_STEPS = [
   {
     label: "Upload",
-    detail: "Image with artist name and artwork title.",
+    detail:
+      "Submit your artwork image along with the artist name and title.",
   },
   {
-    label: "Patch",
+    label: "Analyse",
     detail:
-      "Resolution-dependent grid (up to 4\u00d74), each cell producing two 224\u00d7224 patches via center crop and bicubic downsample.",
+      "The image is examined region by region, so no detail goes unscrutinised.",
   },
   {
     label: "Score",
     detail:
-      "Swin Transformer classifies each patch independently; painting score = mean of patch probabilities.",
+      "Every region receives an independent authenticity rating, giving you a transparent, auditable result.",
   },
   {
     label: "Explain",
     detail:
-      "RAG retrieves art-historical context and generates a grounded narrative.",
+      "A detailed report grounds the findings in art-historical research, provenance, and the artist's known techniques.",
   },
 ] as const;
 
@@ -157,7 +158,7 @@ export function HomePage() {
           </h1>
           <p className="mx-auto mt-12 max-w-lg text-center font-sans text-sm leading-relaxed text-muted-foreground md:mt-14 md:text-base">
             ArtGuard gives you per-patch authenticity probabilities you can
-            inspect and retrieval-grounded explanations you can trace — full
+            inspect and retrieval-grounded explanations you can trace, with full
             transparency from pixel to verdict.
           </p>
           <p className="mt-10 text-center font-sans text-sm text-muted-foreground">
@@ -193,10 +194,10 @@ export function HomePage() {
               Every image is split into a resolution-dependent grid of
               224&times;224 patches. A Swin Transformer scores each patch
               independently, so you see the authenticity probability for every
-              region — not just a single opaque number. A heatmap overlay
+              region, not just a single opaque number. A heatmap overlay
               visualizes which areas the model considers authentic (green) versus
               suspicious (red), and the painting-level score is the transparent
-              mean of all patch probabilities — fully auditable.
+              mean of all patch probabilities, fully auditable.
             </p>
           </MosaicTextTile>
         </MosaicRow>
@@ -205,24 +206,15 @@ export function HomePage() {
         <MosaicRow>
           <MosaicTextTile
             title="Grounded explanations, not black-box verdicts"
-            className="border-t border-border bg-background md:col-span-1 md:border-t-0 md:border-r md:border-border"
+            className="border-t border-border bg-background md:col-span-2 md:border-t-0 md:border-r md:border-border"
           >
             <p>
               The system generates a human-readable narrative using
-              Retrieval-Augmented Generation. Explanations are grounded in
-              retrieved knowledge about artist techniques, provenance patterns,
-              and art-historical context — not hallucinated.
-            </p>
-          </MosaicTextTile>
-          <MosaicTextTile
-            title="Context-aware reasoning"
-            className="border-t border-border bg-neutral-200 md:col-span-1 md:border-t-0 md:border-r md:border-border"
-          >
-            <p>
-              The RAG pipeline retrieves relevant documents from curated
-              art-historical sources — Metropolitan Museum records, Wikidata
-              artist data — and uses them to explain <em>why</em> the model
-              scored the artwork the way it did.
+              Retrieval-Augmented Generation. The RAG pipeline retrieves
+              relevant documents from curated art-historical sources,
+              including Metropolitan Museum records, Wikidata artist data,
+              artist techniques, and provenance patterns, then explains{" "}
+              <em>why</em> the model scored the artwork the way it did.
             </p>
           </MosaicTextTile>
           <MosaicImage
@@ -255,28 +247,29 @@ export function HomePage() {
             className="border-t border-border bg-neutral-300/60 md:col-span-1 md:border-t-0"
           >
             <p>
-              Metrics at both patch-level and painting-level — accuracy,
-              precision, recall, and F1.
+              Patch- and painting-level accuracy, precision, recall, and F1,
+              with confusion matrices summarising how predictions line up with
+              ground truth.
             </p>
           </MosaicTextTile>
         </MosaicRow>
       </section>
 
       <section className="border-b border-border bg-neutral-50">
-        <div className="mx-auto max-w-5xl px-6 py-14 md:py-20">
-          <h2 className="mb-10 text-center font-serif text-xl font-normal text-foreground md:text-2xl">
+        <div className="mx-auto max-w-6xl px-6 py-20 md:py-28 lg:py-36">
+          <h2 className="mb-14 text-center font-serif text-2xl font-normal text-foreground md:mb-16 md:text-3xl lg:text-4xl">
             How it works
           </h2>
-          <ol className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          <ol className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-4 lg:gap-10">
             {PIPELINE_STEPS.map((step, i) => (
               <li key={step.label} className="flex flex-col">
-                <span className="font-mono text-xs text-muted-foreground/60">
+                <span className="font-mono text-sm text-muted-foreground/60">
                   {String(i + 1).padStart(2, "0")}
                 </span>
-                <span className="mt-1 font-serif text-base font-normal text-foreground">
+                <span className="mt-2 font-serif text-lg font-normal text-foreground md:text-xl">
                   {step.label}
                 </span>
-                <p className="mt-2 font-sans text-sm leading-relaxed text-muted-foreground">
+                <p className="mt-3 font-sans text-[0.9375rem] leading-relaxed text-muted-foreground md:text-base">
                   {step.detail}
                 </p>
               </li>
