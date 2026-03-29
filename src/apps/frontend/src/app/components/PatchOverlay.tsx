@@ -179,7 +179,7 @@ export function PatchOverlay({
               top: Math.max(tooltip.y - 36, 8),
             }}
           >
-            {(tooltip.prob * 100).toFixed(1)}% authenticity
+            {`${(tooltip.prob * 100).toFixed(1)}% patch authenticity`}
           </div>
         ) : null}
       </div>
