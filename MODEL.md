@@ -105,7 +105,12 @@ Weights are **binary** (authentic vs inauthentic), matching the paper’s emphas
 | Authentic (`label == 1`) | 1.0 |
 | Inauthentic (`label == 0`) | `imitation_weight` (default 10.0, paper w_im) |
 
-Sublabel (`original`, `forgery`, `imitation`, `proxy`) is stored for metrics and analysis but does not change the loss weight — all inauthentic patches share the same weight.
+| Sublabel | Description | Sample Weight |
+|----------|-------------|---------------|
+| `original` | Genuine artwork | 1.0 |
+| `forgery` | Human-made fake | 10.0 (wim) |
+| `imitation` | AI-generated imitation | 10.0 (wim) |
+| `proxy` | Proxy artwork | 10.0 (wim) |
 
 ### Reproducibility
 
