@@ -67,6 +67,7 @@ class InferenceResponse(BaseModel):
     inference_id: str
     prediction: int
     score: float
+    confidence_percent: float
     explanation: Optional[str] = None
     image_url: Optional[str] = None
     image_width: int = 0
@@ -188,8 +189,6 @@ async def infer(
         artwork_name=artwork_name,
     )
 
-    confidence = abs(score - 0.5)/0.5 * 100
-
     patch_data = [
         PatchResult(
             x=int(p["patch_x"]),
@@ -206,7 +205,7 @@ async def infer(
     ]
     inference_service.finalize_inference(
         inference_id,
-        confidence,
+        score,
         prediction,
         explanation,
         image_width=w,
@@ -220,6 +219,7 @@ async def infer(
         inference_id=inference_id,
         prediction=prediction,
         score=score,
+        confidence_percent=abs(score - 0.5) / 0.5 * 100.0,
         explanation=explanation,
         image_url=image_url,
         image_width=w,

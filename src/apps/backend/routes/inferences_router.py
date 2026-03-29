@@ -120,6 +120,7 @@ class InferenceListItem(BaseModel):
     inference_id: str
     created_at: int = Field(..., ge=0)
     score: float = Field(default=0.0, ge=0.0, le=1.0)
+    confidence_percent: float = Field(default=0.0, ge=0.0, le=100.0)
     prediction: Optional[int] = Field(default=None, ge=-1, le=1)
     explanation: Optional[str] = None
     inference_status: Optional[str] = None
@@ -206,6 +207,7 @@ def _item_to_list_item(item: dict[str, Any], s3) -> InferenceListItem:
         inference_id=item["inference_id"],
         created_at=int(item["created_at"]),
         score=_float_score(item.get("score")),
+        confidence_percent=abs(_float_score(item.get("score")) - 0.5) / 0.5 * 100.0,
         prediction=prediction,
         explanation=item.get("explanation"),
         inference_status=inference_status,

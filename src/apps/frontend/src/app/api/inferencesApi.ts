@@ -9,6 +9,7 @@ export interface InferenceListItem {
   inference_id: string;
   created_at: number;
   score: number;
+  confidence_percent?: number;
   prediction?: number | null;
   explanation?: string | null;
   inference_status?: string | null;
@@ -45,6 +46,8 @@ export function inferenceToAnalysisResult(row: InferenceListItem): AnalysisResul
   return {
     id: row.inference_id,
     score: row.score,
+    confidencePercent:
+      typeof row.confidence_percent === "number" ? row.confidence_percent : undefined,
     image: row.image_url,
     artistName: row.artist_name,
     artworkName: row.artwork_name,

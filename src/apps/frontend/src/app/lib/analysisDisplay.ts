@@ -81,7 +81,9 @@ export function getAnalysisVerdict(r: AnalysisResult): VerdictDisplay {
 
 export function formatAnalysisScorePercent(r: AnalysisResult): string {
   if (isInferenceFailed(r)) return "-";
-  return (r.score * 100).toFixed(1);
+  const percent =
+    typeof r.confidencePercent === "number" ? r.confidencePercent : r.score * 100;
+  return percent.toFixed(1);
 }
 
 export function matchesAuthenticFilter(r: AnalysisResult): boolean {

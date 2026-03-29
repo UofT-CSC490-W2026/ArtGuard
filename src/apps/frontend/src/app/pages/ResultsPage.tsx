@@ -56,7 +56,13 @@ export function ResultsPage() {
   }
 
   const failed = isInferenceFailed(result);
-  const scorePercent = failed ? null : Math.round(result.score * 100);
+  const scorePercent = failed
+    ? null
+    : Math.round(
+        typeof result.confidencePercent === "number"
+          ? result.confidencePercent
+          : result.score * 100
+      );
   const verdict = getAnalysisVerdict(result);
 
   return (
