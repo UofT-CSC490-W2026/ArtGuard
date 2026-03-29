@@ -66,8 +66,11 @@ describe("HomePage", () => {
     mockUseAuth.mockReturnValue(anonUser);
     render(<HomePage />, { wrapper });
 
-    expect(screen.getByRole("heading", { name: /grounded explanations/i })).toBeInTheDocument();
-    expect(screen.getByRole("heading", { name: /^Context-aware reasoning$/i })).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", {
+        name: /grounded explanations, not black-box verdicts/i,
+      }),
+    ).toBeInTheDocument();
   });
 
   it("renders hero primary and secondary links for guests", () => {
