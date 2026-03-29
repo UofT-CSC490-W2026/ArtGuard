@@ -40,7 +40,7 @@ test.describe("mock mode (no VITE_API_URL)", () => {
     await page.getByRole("button", { name: /analyze artwork/i }).click();
 
     await page.waitForURL("**/results", { timeout: 60_000 });
-    await expect(page.getByText("AUTHENTICITY CONFIDENCE")).toBeVisible();
+    await expect(page.getByText("PREDICTION CONFIDENCE")).toBeVisible();
     await expect(page.locator("main")).toContainText("%");
   });
 
