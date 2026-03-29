@@ -50,4 +50,20 @@ describe("inferenceGrid", () => {
     expect(topLeft?.h).toBe(384);
     expect(topLeft?.prob).toBeCloseTo(0.5, 5);
   });
+
+  it("returns patches unchanged when list is empty or dimensions invalid", () => {
+    expect(aggregatePatchDataToInferenceGrid([], 100, 100)).toEqual([]);
+    const one = [{ x: 0, y: 0, w: 1, h: 1, prob: 0.5 }];
+    expect(aggregatePatchDataToInferenceGrid(one, 0, 100)).toBe(one);
+    expect(aggregatePatchDataToInferenceGrid(one, 100, 0)).toBe(one);
+  });
+
+  it("uses overall mean when patch center falls outside grid cells", () => {
+    const patches = [{ x: 500, y: 500, w: 10, h: 10, prob: 0.25 }];
+    const out = aggregatePatchDataToInferenceGrid(patches, 100, 100);
+    expect(out.length).toBeGreaterThan(0);
+    for (const cell of out) {
+      expect(cell.prob).toBe(0.25);
+    }
+  });
 });

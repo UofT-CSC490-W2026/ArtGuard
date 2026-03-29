@@ -163,4 +163,45 @@ describe("analyzeArtwork", () => {
     15_000,
   );
 
+  it("mock pipeline uses Unknown and Untitled when names are blank", async () => {
+    class Img {
+      naturalWidth = 100;
+      naturalHeight = 100;
+      onload: (() => void) | null = null;
+      set src(_: string) {
+        queueMicrotask(() => this.onload?.());
+      }
+    }
+    vi.stubGlobal("Image", Img);
+    const file = new File([new Uint8Array([1])], "a.png", { type: "image/png" });
+    const r = await analyzeArtwork({
+      file,
+      artistName: "",
+      artworkName: "",
+      userId: "z",
+    });
+    expect(r.artistName).toBe("Unknown");
+    expect(r.artworkName).toBe("Untitled");
   });
+
+  it("loadImageDimensions uses 1 when natural dimensions are zero", async () => {
+    class Img {
+      naturalWidth = 0;
+      naturalHeight = 0;
+      onload: (() => void) | null = null;
+      set src(_: string) {
+        queueMicrotask(() => this.onload?.());
+      }
+    }
+    vi.stubGlobal("Image", Img);
+    const file = new File([new Uint8Array([1])], "a.png", { type: "image/png" });
+    const r = await analyzeArtwork({
+      file,
+      artistName: "A",
+      artworkName: "B",
+      userId: "z",
+    });
+    expect(r.imageWidth).toBe(1);
+    expect(r.imageHeight).toBe(1);
+  });
+});

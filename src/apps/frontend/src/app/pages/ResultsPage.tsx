@@ -12,7 +12,7 @@ import {
   resolveDisplayedExplanation,
 } from "../lib/analysisDisplay";
 
-function formatReportDate(iso: string): string {
+export function formatReportDate(iso: string): string {
   try {
     const d = new Date(iso);
     if (Number.isNaN(d.getTime())) return iso;

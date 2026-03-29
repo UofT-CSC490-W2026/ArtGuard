@@ -34,4 +34,15 @@ Patch #1 (middle-right, center_crop_orig): texture appears smooth.`;
       screen.getByText(/Patch #1 \(middle-right, center_crop_orig\)/),
     ).toBeInTheDocument();
   });
+
+  it("renders (source: …) citations with styled spans", () => {
+    const text = "Claim text (source: met_data_part27.txt) continues.";
+    render(<ExplanationContent text={text} />);
+    expect(screen.getByText("(source: met_data_part27.txt)")).toBeInTheDocument();
+  });
+
+  it("returns null when there is no prose or patch content", () => {
+    const { container } = render(<ExplanationContent text="   " />);
+    expect(container.firstChild).toBeNull();
+  });
 });
