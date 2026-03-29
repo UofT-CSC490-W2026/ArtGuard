@@ -65,7 +65,7 @@ function ProseParagraphs({ body }: { body: string }) {
         <p
           key={i}
           className={cn(
-            "text-sm leading-relaxed text-muted-foreground print:text-neutral-800",
+            "text-justify text-sm leading-relaxed text-muted-foreground print:text-neutral-800",
             i < paras.length - 1 && "mb-4",
           )}
         >
@@ -99,7 +99,7 @@ export function ExplanationContent({
         ) : (
           <div
             key={`patch-${i}`}
-            className="border-l-2 border-foreground/15 pl-4 text-sm leading-relaxed text-muted-foreground print:break-inside-avoid print:border-l-2 print:border-neutral-400 print:text-neutral-800"
+            className="border-l-2 border-foreground/15 pl-4 text-justify text-sm leading-relaxed text-muted-foreground print:break-inside-avoid print:border-l-2 print:border-neutral-400 print:text-neutral-800"
           >
             <InlineWithSources text={block.body} />
           </div>

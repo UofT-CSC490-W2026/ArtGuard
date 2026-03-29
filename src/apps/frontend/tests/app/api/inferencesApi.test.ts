@@ -71,6 +71,25 @@ describe("inferenceToAnalysisResult", () => {
       expect(r.inferenceStatus).toBe(status);
     }
   });
+
+  it("maps patch_data and image dimensions for heatmap on history", () => {
+    const r = inferenceToAnalysisResult({
+      inference_id: "p1",
+      created_at: 0,
+      score: 0.5,
+      artist_name: "a",
+      artwork_name: "b",
+      image_name: "c.png",
+      file_size: 1,
+      image_url: "https://img",
+      image_width: 100,
+      image_height: 200,
+      patch_data: [{ x: 0, y: 0, w: 10, h: 10, prob: 0.9 }],
+    });
+    expect(r.imageWidth).toBe(100);
+    expect(r.imageHeight).toBe(200);
+    expect(r.patchData).toEqual([{ x: 0, y: 0, w: 10, h: 10, prob: 0.9 }]);
+  });
 });
 
 describe("inferences API functions", () => {

@@ -119,6 +119,45 @@ class TestGetInference:
         assert data["inference_status"] == "completed"
 
     @pytest.mark.asyncio
+    async def test_returns_patch_data_and_dimensions_when_stored(self, client, auth_headers, dynamodb):
+        """Heatmap data persisted on completion is returned for history/detail views."""
+        table = dynamodb.Table("test-inferences")
+        table.put_item(Item={
+            "inference_id": "patch-inf-1",
+            "user_id": "test-user-1",
+            "created_at": int(time.time() * 1000),
+            "score": Decimal("0.72"),
+            "prediction": 1,
+            "inference_status": "completed",
+            "artist_name": "A",
+            "artwork_name": "B",
+            "image_name": "x.jpg",
+            "file_size": 100,
+            "image_path": "",
+            "image_width": 800,
+            "image_height": 600,
+            "patch_data": [
+                {"x": 0, "y": 0, "w": 100, "h": 100, "prob": Decimal("0.9")},
+                {"x": 100, "y": 0, "w": 100, "h": 100, "prob": Decimal("0.1")},
+            ],
+        })
+        resp = await client.get("/inferences/patch-inf-1", headers=auth_headers)
+        assert resp.status_code == 200
+        data = resp.json()
+        assert data["image_width"] == 800
+        assert data["image_height"] == 600
+        assert len(data["patch_data"]) == 2
+        assert data["patch_data"][0]["prob"] == pytest.approx(0.9)
+        assert data["patch_data"][1]["x"] == 100
+
+        list_resp = await client.get("/inferences", headers=auth_headers)
+        assert list_resp.status_code == 200
+        items = list_resp.json()["items"]
+        assert len(items) == 1
+        assert items[0]["image_width"] == 800
+        assert len(items[0]["patch_data"]) == 2
+
+    @pytest.mark.asyncio
     async def test_pending_inference_returns_prediction_negative_one(self, client, auth_headers, dynamodb):
         """Inference records still processing have prediction=-1 (pending)."""
         _create_inference(dynamodb, "pending-1", prediction=-1, inference_status="processing")
