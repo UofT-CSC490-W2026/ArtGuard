@@ -48,7 +48,9 @@ describe("analyzeArtwork", () => {
     });
     expect(r.id).toBe("inf-1");
     expect(r.image).toBe("https://x");
-    expect(r.patchData).toHaveLength(1);
+    // One API patch → expanded to full preprocess grid (2×2 for 400×300)
+    expect(r.patchData).toHaveLength(4);
+    expect(r.patchData?.every((p) => p.prob === 0.5)).toBe(true);
     expect(r.prediction).toBe(1);
   });
 

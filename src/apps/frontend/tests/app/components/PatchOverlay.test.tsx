@@ -136,7 +136,7 @@ describe("PatchOverlay", () => {
     expect(screen.queryByText(/\d+\.\d+% authenticity/)).not.toBeInTheDocument();
   });
 
-  it("clears tooltip when pointer moves outside all patches", async () => {
+  it("clears tooltip when pointer maps outside image patch coordinates", async () => {
     render(
       <PatchOverlay
         imageSrc={dataUrl}
@@ -158,9 +158,8 @@ describe("PatchOverlay", () => {
       left: 0, top: 0, width: 100, height: 100, bottom: 100, right: 100, x: 0, y: 0, toJSON: () => ({}),
     } as DOMRect);
     fireEvent.load(img);
-    // Move pointer to area outside the small 10x10 patch (patch is at 0,0 to 10,10)
-    fireEvent.mouseMove(wrap, { clientX: 90, clientY: 90 });
-    // Tooltip should not appear since we're outside the patch (tooltip format is "XX.X% authenticity")
+    // After grid aggregation the overlay covers the full image; use coords left of the image so nx < 0
+    fireEvent.mouseMove(wrap, { clientX: -5, clientY: 50 });
     expect(screen.queryByText(/\d+\.\d+% authenticity/)).not.toBeInTheDocument();
   });
 });
