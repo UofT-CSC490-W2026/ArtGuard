@@ -22,8 +22,8 @@ We implement two variants from the paper:
 
 | Variant | Backbone | Pretrained On | Parameters | Classification Head |
 |---------|----------|---------------|------------|-------------------|
-| **Swin-Tiny** | Swin-T | ImageNet-1K | 28M | He-normal init, 768 -> 1 |
-| **Swin-Base** | Swin-B | ImageNet-1K | 88M | He-normal init, 1024 -> 1 |
+| **Swin-Tiny** | Swin-T | ImageNet-1K | 28M | He-normal init, 768 → 1 |
+| **Swin-Base** | Swin-B | ImageNet-1K | 88M | He-normal init, 1024 → 1 |
 
 Both variants use **full fine-tuning** (variant iii from the paper) — all layers are unfrozen, with only the classification head randomly initialised using He normal.
 
@@ -31,14 +31,14 @@ Both variants use **full fine-tuning** (variant iii from the paper) — all laye
 
 Images are processed following the paper's approach:
 
-1. **Grid splitting**: Images are divided into an NxN grid based on resolution:
-   - min side > 1024px: 4x4 grid (16 cells)
-   - min side > 512px: 2x2 grid (4 cells)
-   - otherwise: 2x2 grid
+1. **Grid splitting**: Images are divided into an N×N grid based on resolution:
+   - min side > 1024px: 4×4 grid (16 cells)
+   - min side > 512px: 2×2 grid (4 cells)
+   - otherwise: 2×2 grid
 
-2. **Patch extraction**: Each grid cell produces two 224x224 patches:
-   - **Center crop**: Take the central 224x224 region (if cell is large enough)
-   - **Bicubic downsample**: Resize the full cell to 224x224
+2. **Patch extraction**: Each grid cell produces two 224×224 patches:
+   - **Center crop**: Take the central 224×224 region (if the cell is large enough)
+   - **Bicubic downsample**: Resize the full cell to 224×224
 
 3. **Normalisation**: ImageNet mean/std normalisation applied to all patches
 
@@ -48,68 +48,69 @@ Images are processed following the paper's approach:
 
 ## Training Configuration
 
-Hyperparameters follow the paper (Section 3.3):
+Implementation: `src/apps/train/train.py` (Modal app `artguard-training`). Default hyperparameters are defined in `DEFAULT_CONFIG`.
 
-| Parameter | Value | Source |
-|-----------|-------|--------|
-| Optimiser | Adam | Paper Section 3.3 |
+Hyperparameters aligned with the paper (Sections 3.2–3.3) plus training-loop extras:
+
+| Parameter | Default | Notes |
+|-----------|---------|--------|
+| Optimiser | Adam | Via `ArtAuthenticator.configure_optimizer` |
 | Learning rate | 1e-4 | Paper Section 3.3 |
+| LR scheduler | `ReduceLROnPlateau` | `mode=min`, `factor=0.5`, `patience=5`, `min_lr=1e-6`, stepped on validation loss |
 | Batch size | 32 | Paper Section 3.3 |
-| Loss function | BCEWithLogitsLoss | Paper Section 3.3 |
-| Imitation weight (wim) | 10.0 | Paper Section 3.2 |
-| Max epochs | 100 | |
-| Early stopping patience | 20 epochs | |
-| Early stopping min delta | 1e-3 | |
-| Validation split | 10% | |
+| Training loss | Weighted BCE with logits | `BCEWithLogitsLoss(reduction="none")`, then sample-weighted mean (see [Data Split Strategy](#data-split-strategy)) |
+| Validation loss | Unweighted mean BCE | Same logits loss, **no** per-sample weights on the val set |
+| Imitation / contrast weight (w_im) | 10.0 | Applied to **all** inauthentic (label 0) training samples; authentic = 1.0 |
+| Max epochs | 50 | Upper bound before early stop |
+| Early stopping | patience 10 epochs | Triggers when validation loss does not beat the best by more than `early_stop_min_delta` (1e-3) |
+| Fallback val fraction | 0.1 | Only used when split-based train/val is empty (see below) |
 
-Training runs on **Modal A10G GPUs** with checkpoints saved to a persistent Modal Volume after each epoch. The best checkpoint (lowest validation loss) is saved as `best.pt`.
+Training runs on **Modal A10G** GPUs. Checkpoint directory on the volume: `/checkpoints/{tiny|base}/`.
+
+- Each epoch writes `epoch_{NNN}.pt` (full state dict + optimizer state + metrics).
+- When validation loss improves (by at least `early_stop_min_delta`), `best.pt` is written (state dict + val metrics + config snapshot).
+
+Optional **Weights & Biases** logging uses the `artguard-wandb` secret (`WANDB_API_KEY`); if init fails, training continues without W&B.
 
 ---
 
 ## Data Split Strategy
 
-Data splitting is **deterministic and stratified**, implemented in `src/apps/data_pipeline/split.py`:
+### Runtime behaviour (`PatchDataset` + `train.py`)
 
-### Outer Split (K-Fold Cross-Validation)
+Training reads **patch rows from DynamoDB** (Images + Patches) and **filters by the ImageRecord `split` field**:
 
-- **K = 5** outer folds
-- **Stratified by sublabel**: Each fold preserves the ratio of `original` / `forgery` / `imitation` samples
-- **Deterministic**: Uses SHA-256 hashing keyed by `(outer_split_seed=17, image_id)` — no dependency on item ordering
+1. **Preferred path**: Build a separate `PatchDataset` for `split="train"` and `split="val"`. Patches inherit their parent image’s split.
+2. **Fallback**: If either dataset is empty (e.g. legacy data without `split` set), the code loads all patches into one dataset and uses PyTorch `random_split` with fraction `val_split` from config (default **10%** validation).
 
-### Inner Split (Train/Validation)
+Evaluation (`src/apps/train/evaluate.py`) loads `split="test"` only; it errors if that set is empty.
 
-- Within each outer fold's training pool, **20% is held out for validation**
-- Also stratified by sublabel
-- Deterministic via `(inner_split_seed=99, fold_id, image_id)` hashing
+### Schema context (DynamoDB)
 
-### Label Convention
+`ImageRecord` supports `split` (`train` / `val` / `test` / `unassigned`) and `fold_id` for cross-validation-style metadata (see `DATA.md`). The **Modal training loop** consumes `split` as above; it does not iterate outer folds by `fold_id`.
+
+### Label convention
 
 | Label | Value | Description |
 |-------|-------|-------------|
 | Authentic | 1 | Original artwork by the attributed artist |
 | Inauthentic | 0 | Forgery, imitation, or proxy |
 
-| Sublabel | Description | Sample Weight |
-|----------|-------------|---------------|
-| `original` | Genuine artwork | 1.0 |
-| `forgery` | Human-made fake | 10.0 (wim) |
-| `imitation` | AI-generated imitation | 10.0 (wim) |
-| `proxy` | Proxy artwork | 10.0 (wim) |
+### Sample weights (training)
 
-### Reproducibility Guarantee
+Weights are **binary** (authentic vs inauthentic), matching the paper’s emphasis on up-weighting the contrast set:
 
-```python
-# Same seeds + same dataset = identical splits every time
-assignment = assign_folds(items, k_folds=5, outer_seed=17, inner_seed=99)
-train_ids, val_ids, test_ids = train_val_test_splits(
-    items, assignment, fold_id=0, k_folds=5, inner_seed=99,
-)
-```
+| Condition | Training weight |
+|-----------|-----------------|
+| Authentic (`label == 1`) | 1.0 |
+| Inauthentic (`label == 0`) | `imitation_weight` (default 10.0, paper w_im) |
 
-The splitting algorithm uses SHA-256 hashing (not random shuffling), so:
-- Order of items in the database does not affect the split
-- Adding new items does not change existing assignments
-- Results are reproducible across machines and Python versions
+Sublabel (`original`, `forgery`, `imitation`, `proxy`) is stored for metrics and analysis but does not change the loss weight — all inauthentic patches share the same weight.
+
+### Reproducibility
+
+- With **train/val/test** assigned in DynamoDB, splits are stable and ordering-independent for a given dataset.
+- If the code falls back to `random_split`, repeatability depends on PyTorch RNG unless you fix seeds separately (not done in `train.py` today).
 
 ---
 
@@ -117,66 +118,68 @@ The splitting algorithm uses SHA-256 hashing (not random shuffling), so:
 
 ### A note on data
 
-Training images are **not** stored in the Git repo (they are ~2.1 GB). They are already uploaded to S3 via the data pipeline, and model weights are stored on a Modal volume (`artguard-checkpoints/tiny/best.pt`).
+Training images are **not** stored in the Git repo (they are large). They are expected in S3 via the data pipeline, with metadata in DynamoDB. Model weights are stored on the Modal volume (`artguard-checkpoints`, paths under `/checkpoints/{variant}/`).
 
-**You do not need the raw images to clone, deploy, or run inference.** The deployed app works end-to-end without them.
+**You do not need the raw images to clone, deploy, or run inference** if your backend only serves inference. Retraining requires AWS access to the Images/Patches tables and processed bucket.
 
-If you want to retrain or inspect the dataset locally, run:
+If you want to download or inspect the dataset locally:
 
 ```bash
 ./scripts/download-data.sh
 ```
 
-This downloads the dataset zip from Google Drive and extracts it to `data/`. See `scripts/README.md` for details.
+See `scripts/README.md` for details.
 
 ### Prerequisites
 
-1. **Modal account** with `artguard-aws` secret configured (AWS credentials for S3/DynamoDB access)
-2. **Training data** uploaded to S3 via `scripts/update-data.sh` (already done — only needed if re-uploading)
-3. **DynamoDB tables** populated with image metadata (label, sublabel, split fields set)
+1. **Modal account** with `artguard-aws` secret: `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, `AWS_REGION`, `DDB_IMAGES_TABLE`, `DDB_PATCHES_TABLE`, `S3_IMAGES_PROCESSED_BUCKET`
+2. Optional: `artguard-wandb` with `WANDB_API_KEY` for experiment tracking
+3. DynamoDB ImageRecords with `split` populated for train/val (and test for evaluation), and Patches rows for each image
 
 ### Run Training + Evaluation
 
 ```bash
-# Both variants
+# Both variants (train then evaluate)
 ./scripts/run-benchmarks.sh
 
 # Or individually
 ./scripts/run-benchmarks.sh tiny
 ./scripts/run-benchmarks.sh base
+
+# Evaluate only (checkpoint must exist on the volume)
+./scripts/run-benchmarks.sh tiny eval
 ```
+
+### Run Training Only
+
+```bash
+modal run src/apps/train/train.py::train_swin_tiny
+modal run src/apps/train/train.py::train_swin_base
+
+# Local entrypoint: both variants in parallel
+modal run src/apps/train/train.py
+```
+
+The API can also start training via `POST /train` (`src/apps/backend/routes/train_router.py`), merging optional JSON overrides into `train.py`’s `DEFAULT_CONFIG`.
 
 ### Run Evaluation Only (existing checkpoint)
 
 ```bash
-# Evaluate Swin-Tiny against the test split
 modal run src/apps/train/evaluate.py \
   --variant tiny \
   --checkpoint /checkpoints/tiny/best.pt \
   --output-dir benchmarks/
 ```
 
-### Run Training Only
-
-```bash
-# Train Swin-Tiny
-modal run src/apps/train/train.py::train_swin_tiny
-
-# Train Swin-Base
-modal run src/apps/train/train.py::train_swin_base
-
-# Both in parallel
-modal run src/apps/train/train.py
-```
-
 ### Output Files
 
-After evaluation, results are saved as JSON:
+After evaluation, results are saved as JSON (checkpoint filename stem appears in the name, e.g. `best` for `best.pt`):
 
 ```
 benchmarks/
 ├── eval_tiny_best_metrics.json   # Aggregated metrics
-└── eval_tiny_best_patches.json   # Per-patch prediction log
+├── eval_tiny_best_patches.json   # Per-patch prediction log
+└── eval_tiny_best_images.json    # Painting-level aggregation log
 ```
 
 ### View Results
@@ -193,7 +196,8 @@ Evaluation (`src/apps/train/evaluate.py`) computes metrics at two levels:
 
 ### Patch-Level Metrics
 
-Each 224x224 patch is classified independently. Metrics computed:
+Each 224×224 patch is classified independently. Metrics computed:
+
 - **Accuracy**: Overall correct predictions / total patches
 - **Precision**: True positives / (true positives + false positives)
 - **Recall**: True positives / (true positives + false negatives)
@@ -203,6 +207,7 @@ Each 224x224 patch is classified independently. Metrics computed:
 ### Painting-Level Metrics
 
 Patch predictions are aggregated per painting by averaging probabilities:
+
 - For each painting: `mean_prob = average(patch_probabilities)`
 - Painting prediction: `1 (authentic)` if `mean_prob > 0.5`, else `0 (forgery)`
 - Same metrics (accuracy, precision, recall, F1, confusion matrix) computed on painting-level predictions
