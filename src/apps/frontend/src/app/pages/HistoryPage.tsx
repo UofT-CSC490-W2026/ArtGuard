@@ -374,7 +374,7 @@ export function HistoryPage() {
                           <div className="flex items-center gap-4 text-sm text-muted-foreground mb-3">
                             <span>
                               {isInferenceFailed(item)
-                                ? "No score — inference failed"
+                                ? "No score, inference failed"
                                 : `Mean patch authenticity: ${formatAnalysisScorePercent(item)}%`}
                             </span>
                             <span>•</span>

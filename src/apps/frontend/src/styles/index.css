@@ -1,2 +1,14 @@
 @import './tailwind.css';
 @import './theme.css';
+
+/* Printable reports (Results page → Download / print to PDF) */
+@media print {
+  @page {
+    margin: 1.25cm;
+  }
+
+  html {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}

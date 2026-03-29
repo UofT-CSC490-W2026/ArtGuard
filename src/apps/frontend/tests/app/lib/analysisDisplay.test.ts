@@ -72,8 +72,8 @@ describe("getAnalysisVerdict", () => {
 });
 
 describe("score helpers", () => {
-  it("formatAnalysisScorePercent shows em dash when failed", () => {
-    expect(formatAnalysisScorePercent(baseResult({ inferenceStatus: "failed" }))).toBe("—");
+  it("formatAnalysisScorePercent shows dash when failed", () => {
+    expect(formatAnalysisScorePercent(baseResult({ inferenceStatus: "failed" }))).toBe("-");
     expect(formatAnalysisScorePercent(baseResult({ score: 0.333 }))).toBe("33.3");
   });
 });

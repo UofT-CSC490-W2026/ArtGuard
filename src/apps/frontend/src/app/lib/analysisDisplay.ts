@@ -79,7 +79,7 @@ export function getAnalysisVerdict(r: AnalysisResult): VerdictDisplay {
 }
 
 export function formatAnalysisScorePercent(r: AnalysisResult): string {
-  if (isInferenceFailed(r)) return "—";
+  if (isInferenceFailed(r)) return "-";
   return (r.score * 100).toFixed(1);
 }
 

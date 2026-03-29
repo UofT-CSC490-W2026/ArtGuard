@@ -136,6 +136,41 @@ describe("PatchOverlay", () => {
     expect(screen.queryByText(/\d+\.\d+% authenticity/)).not.toBeInTheDocument();
   });
 
+  it("draws overlay rects when canvas 2d context is available", async () => {
+    const user = userEvent.setup();
+    const fillRect = vi.fn();
+    const strokeRect = vi.fn();
+    vi.spyOn(HTMLCanvasElement.prototype, "getContext").mockReturnValue({
+      setTransform: vi.fn(),
+      clearRect: vi.fn(),
+      fillStyle: "",
+      fillRect,
+      strokeStyle: "",
+      lineWidth: 1,
+      strokeRect,
+    } as unknown as CanvasRenderingContext2D);
+
+    render(
+      <PatchOverlay
+        imageSrc={dataUrl}
+        patchData={[{ x: 0, y: 0, w: 10, h: 10, prob: 0.25 }]}
+        imageWidth={100}
+        imageHeight={100}
+      />,
+    );
+    const img = screen.getByRole("img", { name: /analyzed artwork/i });
+    Object.defineProperty(img, "clientWidth", { value: 100, configurable: true });
+    Object.defineProperty(img, "clientHeight", { value: 100, configurable: true });
+    Object.defineProperty(img, "naturalWidth", { value: 100, configurable: true });
+    Object.defineProperty(img, "naturalHeight", { value: 100, configurable: true });
+    fireEvent.load(img);
+    // First draw may run before layout width is visible; toggling overlay forces a redraw with dimensions set.
+    await user.click(screen.getByRole("switch"));
+    await user.click(screen.getByRole("switch"));
+    expect(fillRect.mock.calls.length).toBeGreaterThan(0);
+    expect(strokeRect.mock.calls.length).toBeGreaterThan(0);
+  });
+
   it("clears tooltip when pointer maps outside image patch coordinates", async () => {
     render(
       <PatchOverlay
