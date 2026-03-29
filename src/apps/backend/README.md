@@ -326,7 +326,7 @@ curl -sS -X POST "${API_BASE}/process_data" | jq .
 ## Quick Start: end-to-end test
 
 ```bash
-API_BASE="https://dxxxx.cloudfront.net"   # edit
+API_BASE="https://d1b5yxlog377uv.cloudfront.net"
 
 # 1. Health check
 curl -sS "${API_BASE}/health" | jq .

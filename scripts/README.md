@@ -331,10 +331,10 @@ export VITE_API_URL="https://YOUR_CLOUDFRONT_OR_API_BASE"   # required, no trail
 
 **Examples:**
 ```bash
-export VITE_API_URL="https://d1234567890.cloudfront.net/api"
+export VITE_API_URL="https://d1b5yxlog377uv.cloudfront.net/api"
 ./scripts/deploy-frontend.sh dev
 
-export VITE_API_URL="https://d1234567890.cloudfront.net/api"
+export VITE_API_URL="https://d1b5yxlog377uv.cloudfront.net/api"
 ./scripts/deploy-frontend.sh prod
 ```
 

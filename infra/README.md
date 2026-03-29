@@ -380,7 +380,7 @@ All 6 tables use on-demand billing, AWS-managed CMK encryption, and PITR enabled
 3. **Indexing**: Embeddings stored in OpenSearch Serverless
 4. **Retrieval**: API queries Bedrock with user question
 5. **Ranking**: OpenSearch returns top-k relevant chunks
-6. **Generation**: Claude 3.5 Sonnet generates answer with context
+6. **Generation**: Claude 4.5 Sonnet generates answer with context
 
 **Files**: [terraform/bedrock.tf](terraform/bedrock.tf)
 
@@ -536,7 +536,7 @@ All 6 tables use on-demand billing, AWS-managed CMK encryption, and PITR enabled
 
 ### 1. Why Both AWS Bedrock and Modal
 
-**Bedrock (Claude 3.5 Sonnet)**:
+**Bedrock (Claude 4.5 Sonnet)**:
 - Native AWS integration (no VPC egress needed)
 - RAG support with Knowledge Base
 - High accuracy for general forgery detection
