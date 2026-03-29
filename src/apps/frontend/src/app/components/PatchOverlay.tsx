@@ -15,7 +15,7 @@ interface PatchOverlayProps {
   alt?: string;
 }
 
-/** Heatmap overlay: red = low authenticity, green = high. */
+/** Heatmap: per-patch authenticity probability — red = low, green = high. */
 function probToRgba(prob: number, alpha: number): string {
   const r = Math.round(255 * (1 - prob));
   const g = Math.round(255 * prob);
@@ -187,7 +187,7 @@ export function PatchOverlay({
         <div className="flex items-center gap-2">
           <Switch id="patch-overlay" checked={showOverlay} onCheckedChange={setShowOverlay} />
           <Label htmlFor="patch-overlay" className="text-sm font-normal cursor-pointer">
-            Patch authenticity heatmap
+            Per-patch authenticity heatmap
           </Label>
         </div>
       ) : null}

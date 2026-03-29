@@ -112,14 +112,23 @@ export function ResultsPage() {
           )}
         </div>
 
-        {/* Score: mean of per-patch authenticity probabilities */}
-        <div className="mb-6 print:mb-8">
-          <div className="text-6xl font-serif tabular-nums text-foreground print:text-5xl">
+        {/* Model prediction */}
+        <div className="mb-6 print:mb-6">
+          <p className={`text-5xl font-serif font-normal ${verdict.color}`}>
+            {verdict.text}
+          </p>
+        </div>
+
+        {/* Prediction confidence */}
+        <div className="mb-8 print:mb-8">
+          <p className="mb-2 text-xs text-muted-foreground tracking-wide print:text-left">
+            PREDICTION CONFIDENCE
+          </p>
+          <div className="text-4xl font-serif tabular-nums text-foreground print:text-3xl">
             {scorePercent !== null ? `${scorePercent}%` : "-"}
           </div>
 
-          {/* Scientific progress bar */}
-          <div className="mt-4 mx-auto w-full max-w-md">
+          <div className="mt-3 mx-auto w-full max-w-md">
             <div className="h-[2px] bg-border relative">
               <div
                 className="absolute top-0 left-0 h-full bg-foreground/80 transition-all"
@@ -129,20 +138,6 @@ export function ResultsPage() {
               />
             </div>
           </div>
-
-          <p className="mt-3 text-xs text-muted-foreground tracking-wide print:text-left">
-            PREDICTION CONFIDENCE
-          </p>
-          <p className="mt-2 text-xs text-muted-foreground/80 max-w-md mx-auto leading-relaxed print:mx-0 print:text-left">
-            Mean of per-patch authenticity scores
-          </p>
-        </div>
-
-        {/* Verdict */}
-        <div className="mb-8 print:mb-6">
-          <p className={`text-lg font-medium ${verdict.color}`}>
-            {verdict.text}
-          </p>
         </div>
 
         {/* Explanation (structured: prose + per-patch evidence lines from RAG) */}

@@ -54,7 +54,7 @@ describe("ResultsPage", () => {
     await waitFor(() => expect(screen.getByText("PREDICTION CONFIDENCE")).toBeInTheDocument());
     expect(screen.getByText("From API")).toBeInTheDocument();
     await waitFor(() =>
-      expect(screen.getByText(/patch authenticity heatmap/i)).toBeInTheDocument(),
+      expect(screen.getByText(/per-patch authenticity heatmap/i)).toBeInTheDocument(),
     );
   });
 

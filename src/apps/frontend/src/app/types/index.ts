@@ -27,7 +27,10 @@ export interface PatchData {
 
 export interface AnalysisResult {
   id: string;
-  /** Mean per-patch probability of authenticity (0–1), aligned with the backend Modal pipeline. */
+  /**
+   * Prediction confidence (0–1): mean of per-patch authenticity probabilities.
+   * Aligned with the backend Modal pipeline.
+   */
   score: number;
   image: string;
   artistName: string;

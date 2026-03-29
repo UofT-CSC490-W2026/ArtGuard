@@ -1,6 +1,7 @@
 /**
  * Display logic aligned with backend Modal inference:
- * - `score` = mean patch probability of **authenticity** (0–1), higher = more authentic.
+ * - Per-patch `prob` = authenticity probability (0–1).
+ * - `score` = **prediction confidence**: mean of patch authenticity probs (0–1).
  * - `prediction` = 1 authentic, 0 forgery, -1 / missing = no binary label yet.
  */
 
@@ -126,5 +127,5 @@ export function resolveDisplayedExplanation(r: AnalysisResult): string {
     const detail = r.inferenceError?.trim();
     return detail ? `Inference did not complete. ${detail}` : "Inference did not complete.";
   }
-  return "A retrieval-augmented explanation was not available for this analysis. Refer to the authenticity score and patch heatmap above for the model\u2019s quantitative assessment.";
+  return "A retrieval-augmented explanation was not available for this analysis. Refer to the prediction confidence and patch heatmap above for the model\u2019s quantitative assessment.";
 }
