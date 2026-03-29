@@ -123,7 +123,7 @@ Weights are **binary** (authentic vs inauthentic), matching the paper’s emphas
 
 ### A note on data
 
-Training images are **not** stored in the Git repo (they are large). They are expected in S3 via the data pipeline, with metadata in DynamoDB. Model weights are stored on the Modal volume (`artguard-checkpoints`, paths under `/checkpoints/{variant}/`).
+Training images are **not** stored in the Git repo (they are large). They are expected in S3 via the data pipeline, with metadata in DynamoDB. Model weights are stored on the Modal volume (`artguard-checkpoints`, paths under `/checkpoints/{variant}/`). If you would like to use our model weights to reproduce the exact same model, the weights can be downloaded from the following link: https://drive.google.com/file/d/1hoLMyUZWo_eTzAJfs1i6vmw9P87Tg4Gn/view?usp=sharing.
 
 **You do not need the raw images to clone, deploy, or run inference** if your backend only serves inference. Retraining requires AWS access to the Images/Patches tables and processed bucket.
 
