@@ -41,7 +41,12 @@ export function LoginPage() {
       await login(formData.email, formData.password);
       navigate("/upload");
     } catch (err) {
-      setError(getErrorMessage(err));
+      const message = getErrorMessage(err);
+      if (message.toLowerCase().includes("invalid email or password")) {
+        setError("Incorrect password. Try again.");
+      } else {
+        setError(message);
+      }
     } finally {
       setIsLoading(false);
     }

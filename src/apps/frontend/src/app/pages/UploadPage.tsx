@@ -10,7 +10,7 @@ import { Alert, AlertDescription } from "../components/ui/alert";
 import { getErrorMessage } from "../types";
 import { analyzeArtwork } from "../api/analysis";
 import { hasApiBackend } from "../api/client";
-import { Upload } from "lucide-react";
+import { Loader2, Upload } from "lucide-react";
 import { MAX_UPLOAD_BYTES, MAX_UPLOAD_MB, hasAllowedImageExtension } from "../lib/uploadLimits";
 
 export function UploadPage() {
@@ -238,7 +238,14 @@ export function UploadPage() {
             className="w-full"
             disabled={!isFormValid || isUploading}
           >
-            {isUploading ? "Analyzing…" : "Analyze artwork"}
+            {isUploading ? (
+              <span className="inline-flex items-center gap-2">
+                <Loader2 className="size-4 animate-spin" />
+                <span>Analyzing</span>
+              </span>
+            ) : (
+              "Analyze artwork"
+            )}
           </Button>
         </form>
       </main>

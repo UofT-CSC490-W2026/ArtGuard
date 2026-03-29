@@ -2,7 +2,7 @@ import type { ReactNode } from "react";
 import { cn } from "./ui/utils";
 
 /** Lines the RAG emits that describe individual patch evidence. */
-const PATCH_LINE = /^\s*Patch #\d+/;
+const PATCH_LINE = /^\s*(?:\*\*)?Patch #\d+(?:\*\*)?/;
 
 export type ExplanationBlock =
   | { type: "prose"; body: string }
@@ -33,6 +33,16 @@ export function parseExplanationBlocks(text: string): ExplanationBlock[] {
 }
 
 /** Inline citations like `(source: met_data_part27.txt)` from the RAG contract. */
+function renderBoldMarkdown(text: string): ReactNode[] {
+  const parts = text.split(/(\*\*[^*]+\*\*)/g);
+  return parts.map((part, i) => {
+    if (/^\*\*[^*]+\*\*$/.test(part)) {
+      return <strong key={i}>{part.slice(2, -2)}</strong>;
+    }
+    return <span key={i}>{part}</span>;
+  });
+}
+
 function InlineWithSources({ text }: { text: string }): ReactNode {
   const segments = text.split(/(\(source:[^)]+\))/g);
   return (
@@ -46,7 +56,7 @@ function InlineWithSources({ text }: { text: string }): ReactNode {
             {seg}
           </span>
         ) : (
-          <span key={i}>{seg}</span>
+          <span key={i}>{renderBoldMarkdown(seg)}</span>
         ),
       )}
     </>

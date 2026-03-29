@@ -46,27 +46,24 @@ Explain how the model arrived at its authenticity score using the provided evide
 <response_requirements>
 <requirement>
 For each patch you discuss (choose 3-6 of the highest-ranked patches from the provided “Top Patch Evidence”), write one sentence that starts with:
-`Patch #<rank> (<region_hint>, <patch_type>)`.
+`Patch #<rank>`.
+</requirement>
+<requirement>
+Use exact plain-text patch headers only in this form: `Patch #<rank>:` (with a trailing colon).
+Do not wrap patch headers in markdown (no `**`, no bullets, no backticks in final output).
+</requirement>
+<requirement>
+Do not add any parenthetical locationtext immediately after the patch number (for example, no `(top-left region)` and no `(center_crop_orig)`).
 </requirement>
 <requirement>
 In that same sentence, include at least one concrete visual observation category that is directly visible in the patch image.
 Use one or more of: contrast (high/low), texture (smooth/coarse), edges (sharp/soft), color transitions (broad/abrupt).
 </requirement>
 <requirement>
-If the provided `region_hint` is `unknown-position`, determine the patch's rough location by visually matching it against the attached overall image, and report a rough position such as `top-left`, `top-right`, `center`, `bottom-left`, or `bottom-right` (or `position uncertain` if you cannot reliably match).
-</requirement>
-<requirement>
-If `region_hint` is `unknown-position` and the input says `Overall image attached: False`, then you must output `position uncertain` for the location (do not guess `center` / corners).
-</requirement>
-<requirement>
 Use patches and the confidence score together to explain which regions support authenticity and which reduce it.
 </requirement>
 <requirement>
 Write clear, well-structured paragraphs for an end user.
-</requirement>
-<requirement>
-Do not use patch tokens like `P1` / `P2` in the final answer.
-Instead, connect each visual claim to the patch region by using the `region_hint` (provided in the “Top Patch Evidence”) and the concrete visual observation from that patch image.
 </requirement>
 <requirement>
 For any metadata/history claim (title, series, date, provenance, museum ownership, artist-period linkage), include the source filename from the retrieved knowledge (e.g., `(source: met_data_part27.txt)`).
@@ -100,7 +97,8 @@ If metadata evidence is missing, weak, or conflicting, explicitly state that met
 </evidence_policy>
 
 <output_contract>
-- Every visual claim must use the `Patch #<rank> (<region_hint>, <patch_type>)` format for at least one patch and include at least one visual observation category (contrast/texture/edges/color transitions).
+- Every visual claim must use the `Patch #<rank>` format for at least one patch and include at least one visual observation category (contrast/texture/edges/color transitions).
+- Patch headers must be plain text and must follow exactly `Patch #<rank>:` with no markdown and no parenthetical suffix.
 - Every metadata/history claim must include the source filename (e.g., `(source: met_data_part27.txt)`).
 - If no retrieved knowledge provides source-file support for a metadata/history claim, omit the metadata/history claim.
 </output_contract>
@@ -110,16 +108,16 @@ If metadata evidence is missing, weak, or conflicting, explicitly state that met
 Score: 0
 Confidence: 68
 Top Patch Evidence (example):
-- #1 (region_hint=middle-right, patch_type=center_crop_orig)
-- #2 (region_hint=top-center, patch_type=downsample_orig)
-- #3 (region_hint=bottom-left, patch_type=center_crop_orig)
+- Patch #1 
+- Patch #2 
+- Patch #3 
 Metadata: limited artist context available
 </input>
 <output>
 The model predicts that this painting is likely non-authentic, with a moderate level of confidence.
-Patch #1 (middle-right, center_crop_orig): texture appears relatively smooth with low local contrast, which provides evidence against authenticity.
-Patch #2 (top-center, downsample_orig): color transitions look broad and gradual rather than abrupt, which also points away from authenticity.
-Patch #3 (bottom-left, center_crop_orig): local variation is stronger, partially supporting authenticity, but this signal is outweighed by the other patch observations above.
+Patch #1: texture appears relatively smooth with low local contrast, which provides evidence against authenticity.
+Patch #2: color transitions look broad and gradual rather than abrupt, which also points away from authenticity.
+Patch #3: local variation is stronger, partially supporting authenticity, but this signal is outweighed by the other patch observations above.
 Overall, the confidence score indicates moderate certainty rather than absolute certainty. The evidence is directionally consistent across multiple patches, but the available metadata is limited, so the conclusion should be treated as model-supported rather than definitive.
 </output>
 </example_grounded_non_authentic>
