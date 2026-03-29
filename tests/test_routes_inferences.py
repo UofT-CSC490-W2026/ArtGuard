@@ -158,6 +158,60 @@ class TestGetInference:
         assert len(items[0]["patch_data"]) == 2
 
     @pytest.mark.asyncio
+    async def test_patch_data_skips_non_dict_and_malformed_entries(self, client, auth_headers, dynamodb):
+        """Non-dict patch rows are ignored; malformed dicts are skipped without failing the request."""
+        table = dynamodb.Table("test-inferences")
+        table.put_item(Item={
+            "inference_id": "patch-skip-1",
+            "user_id": "test-user-1",
+            "created_at": int(time.time() * 1000),
+            "score": Decimal("0.5"),
+            "prediction": 1,
+            "inference_status": "completed",
+            "artist_name": "A",
+            "artwork_name": "B",
+            "image_name": "x.jpg",
+            "file_size": 100,
+            "image_path": "",
+            "image_width": 10,
+            "image_height": 10,
+            "patch_data": [
+                "not-a-dict",
+                {"x": 0, "y": 0, "w": 5, "h": 5, "prob": Decimal("0.7")},
+                {"x": 1, "y": 1},
+                {"x": 0, "y": 0, "w": 1, "h": 1, "prob": "not-a-float"},
+            ],
+        })
+        resp = await client.get("/inferences/patch-skip-1", headers=auth_headers)
+        assert resp.status_code == 200
+        data = resp.json()
+        assert data["patch_data"] is not None
+        assert len(data["patch_data"]) == 1
+        assert data["patch_data"][0]["prob"] == pytest.approx(0.7)
+
+    @pytest.mark.asyncio
+    async def test_patch_data_all_invalid_yields_null(self, client, auth_headers, dynamodb):
+        """When every patch entry is unusable, patch_data is omitted from the response."""
+        table = dynamodb.Table("test-inferences")
+        table.put_item(Item={
+            "inference_id": "patch-all-bad",
+            "user_id": "test-user-1",
+            "created_at": int(time.time() * 1000),
+            "score": Decimal("0.5"),
+            "prediction": 1,
+            "inference_status": "completed",
+            "artist_name": "A",
+            "artwork_name": "B",
+            "image_name": "x.jpg",
+            "file_size": 100,
+            "image_path": "",
+            "patch_data": [42, {"w": 1}],
+        })
+        resp = await client.get("/inferences/patch-all-bad", headers=auth_headers)
+        assert resp.status_code == 200
+        assert resp.json().get("patch_data") in (None, [])
+
+    @pytest.mark.asyncio
     async def test_pending_inference_returns_prediction_negative_one(self, client, auth_headers, dynamodb):
         """Inference records still processing have prediction=-1 (pending)."""
         _create_inference(dynamodb, "pending-1", prediction=-1, inference_status="processing")
