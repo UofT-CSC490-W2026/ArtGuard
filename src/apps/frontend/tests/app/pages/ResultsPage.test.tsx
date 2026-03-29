@@ -92,7 +92,7 @@ describe("ResultsPage", () => {
     };
     localStorage.setItem("artguard_latest_result", JSON.stringify(result));
     renderAtResults();
-    await waitFor(() => expect(screen.getByText("—")).toBeInTheDocument());
+    await waitFor(() => expect(screen.getByText("-")).toBeInTheDocument());
   });
 
   it("download calls print", async () => {

@@ -61,12 +61,24 @@ class TestGetRegion:
 class TestBedrockModelArn:
     """Tests for bedrock_model_arn."""
 
-    def test_contains_region(self, monkeypatch):
+    def test_returns_inference_profile_id_by_default(self, monkeypatch):
+        """Default config uses the cross-region inference profile id in modelId/ARN slots."""
         monkeypatch.setenv("AWS_REGION", "us-east-1")
         arn = bedrock_model_arn()
+        assert arn == "us.anthropic.claude-sonnet-4-5-20250929-v1:0"
+        assert "anthropic.claude" in arn
+
+    def test_returns_foundation_model_arn_when_profile_cleared(self, monkeypatch):
+        """Without an inference profile, build a regional foundation-model ARN."""
+        import src.apps.backend.config as config
+
+        monkeypatch.setenv("AWS_REGION", "us-east-1")
+        monkeypatch.setattr(config, "BEDROCK_INFERENCE_PROFILE_ARN", "")
+        arn = config.bedrock_model_arn()
         assert "us-east-1" in arn
         assert "foundation-model/" in arn
         assert arn.startswith("arn:aws:bedrock:")
+        assert config.BEDROCK_MODEL_ID in arn
 
 
 class TestInferenceStatus:
