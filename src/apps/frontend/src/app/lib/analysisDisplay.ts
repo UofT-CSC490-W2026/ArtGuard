@@ -2,7 +2,7 @@
  * Display logic aligned with backend Modal inference:
  * - Per-patch `prob` = authenticity probability (0–1).
  * - `score` = **prediction confidence**: mean of patch authenticity probs (0–1).
- * - `prediction` = 1 authentic, 0 forgery, -1 / missing = no binary label yet.
+ * - `prediction` = 1 authentic, 0 inauthentic, -1 / missing = no binary label yet.
  */
 
 import type { AnalysisResult } from "../types";
@@ -52,7 +52,7 @@ function verdictUnavailable(): VerdictDisplay {
   };
 }
 
-/** Binary model label: Authentic, Forgery, Error (inference failed), or Unavailable (no 0/1 yet). */
+/** Binary model label: Authentic, Inauthentic, Error (inference failed), or Unavailable (no 0/1 yet). */
 export function getAnalysisVerdict(r: AnalysisResult): VerdictDisplay {
   if (isInferenceFailed(r)) return verdictError();
 
@@ -68,7 +68,7 @@ export function getAnalysisVerdict(r: AnalysisResult): VerdictDisplay {
   }
   if (p === 0) {
     return {
-      text: "Forgery",
+      text: "Inauthentic",
       icon: AlertCircle,
       color: "text-negative",
       bgColor: "bg-negative-muted",
@@ -81,7 +81,9 @@ export function getAnalysisVerdict(r: AnalysisResult): VerdictDisplay {
 
 export function formatAnalysisScorePercent(r: AnalysisResult): string {
   if (isInferenceFailed(r)) return "-";
-  return (r.score * 100).toFixed(1);
+  const percent =
+    typeof r.confidencePercent === "number" ? r.confidencePercent : r.score * 100;
+  return percent.toFixed(1);
 }
 
 export function matchesAuthenticFilter(r: AnalysisResult): boolean {
@@ -111,7 +113,7 @@ export function getBatchIndicator(r: AnalysisResult) {
     return { icon: CheckCircle, color: "text-positive", label: "Authentic" };
   }
   if (r.prediction === 0) {
-    return { icon: AlertCircle, color: "text-negative", label: "Forgery" };
+    return { icon: AlertCircle, color: "text-negative", label: "Inauthentic" };
   }
   return { icon: AlertTriangle, color: "text-caution", label: "Unavailable" };
 }

@@ -60,6 +60,8 @@ function mapInferenceToResult(
   return {
     id: raw.inference_id,
     score: raw.score,
+    confidencePercent:
+      typeof raw.confidence_percent === "number" ? raw.confidence_percent : undefined,
     image: presigned ?? "",
     artistName: input.artistName || "Unknown",
     artworkName: input.artworkName || "Untitled",

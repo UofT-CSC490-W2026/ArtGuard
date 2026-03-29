@@ -32,6 +32,8 @@ export interface AnalysisResult {
    * Aligned with the backend Modal pipeline.
    */
   score: number;
+  /** Prediction confidence percent (0-100) from backend when available. */
+  confidencePercent?: number;
   image: string;
   artistName: string;
   artworkName: string;
@@ -63,6 +65,7 @@ export interface InferenceApiResponse {
   /** 1 = authentic, 0 = forgery, -1 = pending (from Modal / DynamoDB). */
   prediction?: number | null;
   score: number;
+  confidence_percent?: number;
   explanation?: string | null;
   /** Presigned GET for the raw upload (short-lived). */
   image_url?: string | null;
