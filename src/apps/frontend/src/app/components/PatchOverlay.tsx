@@ -92,6 +92,11 @@ export function PatchOverlay({
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     ctx.clearRect(0, 0, cw, ch);
 
+    // Draw the base image into the same canvas so print/PDF never loses the image layer.
+    if (typeof ctx.drawImage === "function") {
+      ctx.drawImage(img, 0, 0, cw, ch);
+    }
+
     if (!showOverlay) return;
 
     const sx = cw / nw;
@@ -135,6 +140,26 @@ export function PatchOverlay({
     ro.observe(wrap);
     return () => ro.disconnect();
   }, [draw, imageSrc]);
+
+  useEffect(() => {
+    const handleBeforePrint = () => draw();
+    window.addEventListener("beforeprint", handleBeforePrint);
+
+    // Some browsers update print styles through media-query changes first.
+    const supportsMatchMedia = typeof window.matchMedia === "function";
+    const mql = supportsMatchMedia ? window.matchMedia("print") : null;
+    const handlePrintMediaChange = () => draw();
+    if (mql) {
+      mql.addEventListener("change", handlePrintMediaChange);
+    }
+
+    return () => {
+      window.removeEventListener("beforeprint", handleBeforePrint);
+      if (mql) {
+        mql.removeEventListener("change", handlePrintMediaChange);
+      }
+    };
+  }, [draw]);
 
   const onMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     if (!hasPatches || !numberedPatches || !showOverlay) {
@@ -187,6 +212,9 @@ export function PatchOverlay({
       <div
         ref={wrapRef}
         className="relative aspect-square w-full overflow-hidden rounded-lg bg-muted"
+        style={{
+          aspectRatio: propW && propH && propW > 0 && propH > 0 ? `${propW} / ${propH}` : undefined,
+        }}
         onMouseMove={onMouseMove}
         onMouseLeave={onMouseLeave}
       >
@@ -194,7 +222,7 @@ export function PatchOverlay({
           ref={imgRef}
           src={imageSrc}
           alt={alt}
-          className="size-full object-cover"
+          className="size-full object-contain"
         />
         {hasPatches ? (
           <canvas
@@ -216,7 +244,7 @@ export function PatchOverlay({
         ) : null}
       </div>
       {hasPatches ? (
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 print:hidden">
           <Switch id="patch-overlay" checked={showOverlay} onCheckedChange={setShowOverlay} />
           <Label htmlFor="patch-overlay" className="text-sm font-normal cursor-pointer">
             Per-patch authenticity heatmap
