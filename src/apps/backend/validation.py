@@ -34,7 +34,7 @@ RAG_QUERY_MAX = 2_000
 # ---------------------------------------------------------------------------
 
 # Frontend pre-check: src/apps/frontend/src/app/lib/uploadLimits.ts (keep in sync).
-MAX_UPLOAD_SIZE_BYTES = 20 * 1024 * 1024  # 20 MB
+MAX_UPLOAD_SIZE_BYTES = 5 * 1024 * 1024  # 5 MB
 ALLOWED_IMAGE_CONTENT_TYPES = {
     "image/jpeg",
     "image/png",

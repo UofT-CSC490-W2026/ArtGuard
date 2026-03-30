@@ -105,7 +105,7 @@ class TestConstants:
     """Verify key constants have sensible values."""
 
     def test_max_upload_size(self):
-        assert MAX_UPLOAD_SIZE_BYTES == 20 * 1024 * 1024
+        assert MAX_UPLOAD_SIZE_BYTES == 5 * 1024 * 1024
 
     def test_string_limits_positive(self):
         assert USERNAME_MAX > 0

@@ -209,7 +209,7 @@ Upload an artwork image for forgery detection. Returns a prediction (1=authentic
 
 | Field | Type | Notes |
 |---|---|---|
-| `file` | file | Image upload (JPEG/PNG, max 20 MB) |
+| `file` | file | Image upload (JPEG/PNG, max 5 MB) |
 | `artist_name` | string | Required, non-empty |
 | `artwork_name` | string | Required, non-empty |
 
