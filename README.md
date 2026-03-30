@@ -147,7 +147,7 @@ curl -sS -X POST "${API_BASE}/inference" \
 # Query the RAG knowledge base
 curl -sS -X POST "${API_BASE}/rag-query" \
   -H "Content-Type: application/json" \
-  -d '{"query": "How are art forgeries detected?"}' | jq .
+  -d '{"query": "List 5 artworks with artist name, period, and medium"}' | jq .
 ```
 
 For the full API reference with curl examples for all endpoints, see [src/apps/backend/README.md](src/apps/backend/README.md). For deployment and service management see [DEPLOYMENT.md](DEPLOYMENT.md).
