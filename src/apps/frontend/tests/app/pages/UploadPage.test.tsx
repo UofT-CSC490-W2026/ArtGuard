@@ -154,7 +154,7 @@ describe("UploadPage", () => {
     renderUpload();
     await waitFor(() => expect(screen.getByText(/upload artwork/i)).toBeInTheDocument());
     const input = document.querySelector('input[type="file"]') as HTMLInputElement;
-    const big = new File([new Uint8Array(21 * 1024 * 1024)], "big.png", { type: "image/png" });
+    const big = new File([new Uint8Array(6 * 1024 * 1024)], "big.png", { type: "image/png" });
     fireEvent.change(input, { target: { files: [big] } });
     expect(await screen.findByText(/file too large/i)).toBeInTheDocument();
   });

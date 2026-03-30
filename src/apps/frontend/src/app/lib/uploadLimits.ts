@@ -1,7 +1,7 @@
 /**
  * Must match `MAX_UPLOAD_SIZE_BYTES` in `src/apps/backend/validation.py`.
  */
-export const MAX_UPLOAD_BYTES = 20 * 1024 * 1024;
+export const MAX_UPLOAD_BYTES = 5 * 1024 * 1024;
 
 export const MAX_UPLOAD_MB = MAX_UPLOAD_BYTES / (1024 * 1024);
 

@@ -47,9 +47,9 @@ class TestInferenceEndpoint:
 
     @pytest.mark.asyncio
     async def test_oversized_file_400(self, client, auth_headers):
-        """Files exceeding MAX_UPLOAD_SIZE_BYTES (20 MB) are rejected."""
-        # Create a 21 MB payload — larger than the 20 MB limit
-        oversized = b"x" * (21 * 1024 * 1024)
+        """Files exceeding MAX_UPLOAD_SIZE_BYTES (5 MB) are rejected."""
+        # Create a 6 MB payload — larger than the 5 MB limit
+        oversized = b"x" * (6 * 1024 * 1024)
         resp = await client.post(
             "/inference",
             data={"artist_name": "Monet", "artwork_name": "Lilies"},

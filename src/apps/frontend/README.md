@@ -64,7 +64,7 @@ The **sign up** and **login** pages rely on the context for semantic validation;
 
 - **File extension** must be one of `.jpg`, `.jpeg`, `.png`, `.bmp`, `.tiff`, `.webp` (case-insensitive), via `hasAllowedImageExtension()`—aligned with backend expectations.
 - **MIME type** must start with `image/`.
-- **Size** must not exceed **20 MB** (`MAX_UPLOAD_BYTES`), documented to match backend `MAX_UPLOAD_SIZE_BYTES`.
+- **Size** must not exceed **5 MB** (`MAX_UPLOAD_BYTES`), documented to match backend `MAX_UPLOAD_SIZE_BYTES`.
 - **Artist name** and **artwork name** must be non-empty after trim.
 - The submit button’s enabled state mirrors the same requirements (file + both names).
 
