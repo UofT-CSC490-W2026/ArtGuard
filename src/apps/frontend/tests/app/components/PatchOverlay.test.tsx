@@ -143,6 +143,7 @@ describe("PatchOverlay", () => {
     vi.spyOn(HTMLCanvasElement.prototype, "getContext").mockReturnValue({
       setTransform: vi.fn(),
       clearRect: vi.fn(),
+      drawImage: vi.fn(),
       fillStyle: "",
       fillRect,
       strokeStyle: "",
@@ -203,6 +204,35 @@ describe("PatchOverlay", () => {
     await waitFor(() => {
       expect(screen.getByText(/Patch #2:\s*60\.0% authenticity/)).toBeInTheDocument();
     });
+  });
+
+  it("registers matchMedia print listener when available and removes on unmount", () => {
+    const addListener = vi.fn();
+    const removeListener = vi.fn();
+    const mql = {
+      addEventListener: addListener,
+      removeEventListener: removeListener,
+    };
+    vi.stubGlobal(
+      "matchMedia",
+      vi.fn().mockImplementation(() => mql),
+    );
+
+    const { unmount } = render(
+      <PatchOverlay
+        imageSrc={dataUrl}
+        patchData={[{ x: 0, y: 0, w: 1, h: 1, prob: 0.5 }]}
+        imageWidth={1}
+        imageHeight={1}
+      />,
+    );
+    const img = screen.getByRole("img", { name: /analyzed artwork/i });
+    fireEvent.load(img);
+
+    expect(addListener).toHaveBeenCalledWith("change", expect.any(Function));
+
+    unmount();
+    expect(removeListener).toHaveBeenCalledWith("change", expect.any(Function));
   });
 
   it("clears tooltip when pointer maps outside image patch coordinates", async () => {
