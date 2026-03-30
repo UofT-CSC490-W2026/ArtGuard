@@ -99,7 +99,7 @@ export function ResultsPage() {
         {/* Image */}
         <div className="mb-10 print:mb-8 print:break-inside-avoid">
           {result.image && (
-            <div className="relative inline-block print:max-w-md">
+            <div className="relative inline-block w-full print:max-w-md">
               {result.patchData?.length ? (
                 <PatchOverlay
                   imageSrc={result.image}
